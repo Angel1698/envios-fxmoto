@@ -91,7 +91,19 @@ nav.tabs a[aria-current="page"]{background:var(--accent);color:#fff}
 .legend a.chip{text-decoration:none}
 .pedtag{display:inline-block;background:var(--accent);color:#fff;border-radius:6px;padding:2px 10px;font-size:.75em;vertical-align:middle;margin-right:6px}
 .pedtag.sm{font-size:12px;padding:1px 7px;margin-right:2px}
-.dl{font-size:13.5px;line-height:1.5}.dl.ok{color:var(--now)}.dl.no{color:var(--muted)}
+.dl{font-size:13.5px;line-height:1.5;margin:2px 0}.dl.dok{color:var(--now)}
+.dl.dpen{display:inline-block;background:#5B6773;color:#FFFFFF;border-radius:6px;padding:1px 8px}.dl.dpen .mono{color:#E4E9ED}
+.dl.dpar{background:var(--later-soft);color:var(--ink);border-radius:6px;padding:1px 8px}.dl.dpar a{color:inherit;font-weight:600}
+.envto{}.envto.none{color:var(--muted);font-size:12.5px}
+.envlk{display:inline-block;margin-left:4px;padding:0 7px;border-radius:999px;background:var(--now-soft);color:var(--now);font-weight:600;font-size:12.5px;text-decoration:none;border:1px solid color-mix(in srgb,var(--now) 40%,transparent)}
+.envlk:hover{text-decoration:underline}
+.elay{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,460px);gap:22px;align-items:start}
+.eside{position:sticky;top:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;max-height:calc(100vh - 24px);overflow:auto}
+.esmeta{display:flex;flex-wrap:wrap;gap:4px 14px;color:var(--muted);font-size:13.5px;margin-bottom:10px}.esmeta b{color:var(--ink)}
+.estab{width:100%;min-width:0;font-size:13.5px}.estab td{padding:5px 8px}.estab .bsum td{border-top:1px solid var(--line);padding-top:9px}.estab .fsub td:first-child{padding-left:22px}
+.estab .blogo{margin-right:6px}.eside .btn{margin-top:12px;display:inline-block;background:var(--accent);color:#fff;border-color:var(--accent)}
+.chip.sel{outline:3px solid var(--accent);outline-offset:1px}
+@media (max-width:900px){.elay{grid-template-columns:1fr}.eside{position:static;max-height:none}}
 .blogo{width:82px;height:24px;object-fit:contain;border-radius:4px;border:1px solid var(--line);vertical-align:middle;margin-right:8px;display:inline-block;flex:none}
 h1 .blogo{width:120px;height:35px;border-radius:6px}
 h2 .blogo{width:96px;height:28px}
@@ -117,6 +129,8 @@ h2 .blogo{width:96px;height:28px}
 .no{display:inline-block;background:var(--ink);color:var(--bg);border-radius:5px;padding:0 6px;margin-right:7px;font-size:13px}
 .dim{opacity:.55}
 .mini{font-size:12.5px;color:var(--muted)}
+.xnote{margin-top:8px;padding:8px 10px;border-radius:8px;background:color-mix(in srgb,#e8a33d 18%,transparent);border:1px solid color-mix(in srgb,#e8a33d 55%,transparent);font-size:13px;line-height:1.35}
+.nohere{color:#c2410c}
 .sechead{margin-top:6px;font-size:16px;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
 /* buscador */
 .tools{position:static}
@@ -327,12 +341,17 @@ function renderEnvio(num,root,sec){
  const id=e=>e.cml+'|'+e.comps.map(c=>c.code).join('+');const cj=e=>e.comps[0].caja||'~';
  const C={fact:(a,b)=>a.no-b.no,caja:(a,b)=>cj(a).localeCompare(cj(b),undefined,{numeric:true})||a.comps[0].code.localeCompare(b.comps[0].code),code:(a,b)=>a.comps[0].code.localeCompare(b.comps[0].code),cml:(a,b)=>a.cml.localeCompare(b.cml),qmax:(a,b)=>b.u-a.u,qmin:(a,b)=>a.u-b.u};
  const count=()=>{const d=env.filter(e=>done[id(e)]);const u=d.reduce((s,e)=>s+e.u,0);const p=tot?Math.floor(u/tot*100):0;root.querySelector('.dn').textContent=d.length;root.querySelector('.du').textContent=fmt(u);root.querySelector('.dp').textContent=p+'%';const pi=root.querySelector('.dpi');pi.style.width=p+'%';pi.parentNode.setAttribute('aria-valuenow',p);pi.classList.toggle('ok',p>=100)};
+const fsn=f=>ftitle(f).replace(/^Pedido [^·]+·\s*/,'');
+const xnote=e=>{const fks=[...new Set(e.comps.map(c=>c.fk))];if(e.tp!=='C'||fks.length<2)return '';
+ if(!sec)return `<div class="xnote"><b>Compuesto de ${fks.length} facturas.</b> Cada pieza se saca de su factura (${fks.map(f=>esc(fsn(f))).join(' y ')}). Junta las piezas y pon una sola etiqueta por juego.</div>`;
+ const mine=fks.includes(sec),others=fks.filter(f=>f!==sec).map(f=>esc(fsn(f))).join(' y ');
+ return `<div class="xnote"><b>Ojo: este compuesto también aparece en la sección ${others}.</b> Aquí solo saca la pieza de ${esc(fsn(sec))}; la otra se saca en la sección ${others}. No saques nada dos veces. ${e.fk===sec?'Aquí se juntan las piezas y se pone la etiqueta.':'Lleva tu pieza a la sección '+esc(fsn(e.fk))+': ahí se juntan y se etiqueta.'}</div>`};
  const card=e=>{const sp=e.tp!=='I';const pz=e.comps.reduce((s,c)=>s+c.pz,0);
   return `<article class="card${sp?' sp '+TPC[e.tp]:''}${done[id(e)]?' done':''}">${sp?tband(e.tp,e.nf,tpHelp(e.tp,e.nf,e.comps.length)):''}${img(e.img,e.tit,e.big)}<div style="min-width:0">
    <div class="top"><span class="code"><span class="no">#${e.no}</span>${e.cml}</span><span class="qty">${fmt(e.u)} <small>u. ML${e.tp==='P'||e.tp==='S'?' = '+fmt(pz)+' pz':''}</small></span></div>
    <div class="desc">${esc(e.tit)}</div>
-   <div class="rows">${e.comps.map((c,ix)=>{const other=sec&&c.fk!==sec;return `<div class="row c-next${other?' dim':''}"><span class="lbl mono">${e.tp==='C'?`Pieza ${ix+1}: `:''}${esc(c.code)}</span><span class="det">${c.caja?'Caja '+esc(c.caja)+' · ':''}${blogo(ftitle(c.fk))}${esc(ftitle(c.fk))}${other?' · viene de otra factura':''}</span><span class="pz">${fmt(c.pz)} pz</span></div>`}).join('')}</div>
-   ${sec&&e.fk!==sec?`<div class="mini">La etiqueta de este compuesto se imprime con la sección ${esc(fab(e.fk))}.</div>`:''}
+   <div class="rows">${e.comps.map((c,ix)=>{const other=sec&&c.fk!==sec;return `<div class="row c-next${other?' dim':''}"><span class="lbl mono">${e.tp==='C'?`Pieza ${ix+1}: `:''}${esc(c.code)}</span><span class="det">${c.caja?'Caja '+esc(c.caja)+' · ':''}${blogo(ftitle(c.fk))}${esc(ftitle(c.fk))}${other?` · <b class="nohere">NO la saques aquí: se saca en la sección ${esc(fsn(c.fk))}</b>`:''}</span><span class="pz">${fmt(c.pz)} pz</span></div>`}).join('')}</div>
+   ${xnote(e)}
    ${obsView(OB.get(id(e)))}<div class="cfoot"><label class="tick"><input type="checkbox" data-k="${esc(id(e))}" ${done[id(e)]?'checked':''}> Surtido</label>${obsBtn(id(e),'#'+e.no+' '+e.cml+' · '+e.comps.map(c=>c.code).join(' + '))}</div></div></article>`};
  function draw(){
   const s=q.value.trim().toUpperCase();const sn=s.replace(/^#/,'');
@@ -556,6 +575,8 @@ function renderResumen(root){
   <div class="note" style="border-left-color:var(--stay)"><b>Se queda en bodega:</b> cada factura lo marca en morado y por bodega. Eso no sale en ningún envío.</div>`;
 }
 /* ---------- listas ---------- */
+let _EF=null;function envsOf(fk){if(!fk)return '';if(!_EF){_EF={};for(const k of Object.keys(DATA.envios).sort())for(const l of DATA.envios[k].lines)for(const c of l.comps)(_EF[c.fk]=_EF[c.fk]||new Set()).add(k)}
+ const es=[...(_EF[fk]||[])];return es.length?` <span class="envto">→ ${es.map(k=>`<a class="envlk" href="${link('e',k)}">Envío ${k}</a>`).join(' ')}</span>`:` <span class="envto none">→ sin envío asignado</span>`}
 function pedStatus(){
  const P=DATA.peds;const g={};P.forEach(r=>{const k=r[0]+'|'+r[1]+'|'+r[2];(g[k]=g[k]||[]).push(r)});
  const peds=[...new Set(P.map(r=>r[0]))];
@@ -565,7 +586,7 @@ function pedStatus(){
    const keys=Object.keys(g).filter(k=>k.startsWith(p+'|'+b+'|'));
    const rows=keys.map(k=>{const L=g[k];const n=L.length,ll=L.filter(r=>r[5]).length;const exp=L.reduce((s,r)=>s+(r[4]||0),0),got=L.filter(r=>r[5]).reduce((s,r)=>s+(r[4]||0),0);
      const part=L.some(r=>r[7]);const st=ll===n&&!part?['Completo','c-now']:ll>0?['Parcial','c-later']:['Sin llegar','c-stay'];
-     const det=L.map(r=>r[5]?`<div class="dl ${r[7]?'no':'ok'}">${r[7]?'◐':'✓'} ${r[6]?`<a href="${link('f',r[6])}">${esc(r[3])}</a>`:esc(r[3])} <span class="mono">· ${fmt(r[4])} pz · llegó ${esc(r[5])}</span></div>`:`<div class="dl no">◻ ${esc(r[3])} <span class="mono">· ${r[4]==null?'—':fmt(r[4])+' pz'} · pendiente</span></div>`).join('');
+     const det=L.map(r=>r[5]?`<div class="dl ${r[7]?'dpar':'dok'}">${r[7]?'◐':'✓'} ${r[6]?`<a href="${link('f',r[6])}">${esc(r[3])}</a>`:esc(r[3])} <span class="mono">· ${fmt(r[4])} pz · llegó ${esc(r[5])}</span>${envsOf(r[6])}</div>`:`<div class="dl dpen">◻ ${esc(r[3])} <span class="mono">· ${r[4]==null?'—':fmt(r[4])+' pz'} · pendiente</span></div>`).join('');
      return {st,html:`<tr><td style="white-space:nowrap">${blogo(L[0][2])}<b>${esc(L[0][2])}</b></td><td class="n">${ll} / ${n}</td><td class="n">${exp?fmt(got)+' / '+fmt(exp):'—'}</td><td style="min-width:90px"><div class="prog"><i style="width:${exp?got/exp*100:0}%"></i></div></td><td><span class="status ${st[1]}">${st[0]}</span></td><td>${det}</td></tr>`}});
    const order={'Sin llegar':0,'Parcial':1,'Completo':2};rows.sort((a,b)=>order[a.st[0]]-order[b.st[0]]);
    return `<h3 style="margin:12px 0 6px">${b}</h3><div class="tbl"><table style="min-width:760px"><thead><tr><th>Marca</th><th style="text-align:right">Documentos</th><th style="text-align:right">Piezas llegadas</th><th>Avance</th><th>Estado</th><th>Documentos</th></tr></thead><tbody>${rows.map(r=>r.html).join('')}</tbody></table></div>`}).join('')}).join('');
@@ -575,9 +596,24 @@ function renderFacturas(root){
  root.innerHTML=`<div class="docHead"><div><div class="eyebrow">Recepción</div><h1>Cómo van llegando los pedidos</h1></div></div>`+pedStatus()+
   `<div class="group" style="margin-top:26px"><h2>Facturas que llegaron (detalle por producto)</h2></div>`+['CUERNAVACA','EDOMEX'].map(b=>`<h3 style="margin:10px 0 6px">${b==='EDOMEX'?'Edo. Méx.':'Cuernavaca'}</h3><div class="legend">${ks.filter(k=>DATA.facturas[k].bod===b).map(k=>{const F=DATA.facturas[k];return `<a class="chip" href="${link('f',k)}"><span class="pedtag sm">Pedido ${esc(F.pedido)}</span> ${blogo(F.title)}${esc(F.title)} · ${esc(F.llego)} <span class="n">${fmt(F.items.reduce((s,i)=>s+i.qty,0))} pz</span></a>`}).join('')}</div>`).join('');
 }
+function envSummary(k){const E=DATA.envios[k],M=EM[k];const fx={};let tu=0;const tc={C:0,P:0,S:0,I:0};
+ for(const l of E.lines){tu+=l.u;tc[l.tp]=(tc[l.tp]||0)+1;const seen=new Set();for(const c of l.comps){const f=fx[c.fk]=fx[c.fk]||{pubs:0,u:0,pz:0,shared:0};f.pz+=c.pz;if(!seen.has(c.fk)){seen.add(c.fk);f.pubs++;f.u+=l.u;if(new Set(l.comps.map(x=>x.fk)).size>1)f.shared++}}}
+ const br={};for(const fk in fx){const t=DATA.facturas[fk]?DATA.facturas[fk].title:fk;const b=t.split(' · ')[0];(br[b]=br[b]||{u:0,pz:0,pubs:0,fs:[]}).fs.push(fk);br[b].u+=fx[fk].u;br[b].pz+=fx[fk].pz;br[b].pubs+=fx[fk].pubs}
+ const bs=Object.keys(br).sort((a,b)=>br[b].u-br[a].u);const sh=Object.values(fx).some(f=>f.shared);
+ const rows=bs.map(b=>`<tr class="bsum"><td>${blogo(b)}<b>${esc(b)}</b></td><td class="n">${br[b].pubs}</td><td class="n">${fmt(br[b].u)}</td><td class="n">${fmt(br[b].pz)}</td></tr>`+br[b].fs.sort((x,y)=>fx[y].u-fx[x].u).map(fk=>{const F=DATA.facturas[fk]||{};const num=(F.title||fk).split(' · ').slice(1).join(' · ');return `<tr class="fsub"><td><a href="${link('f',fk)}">${esc(num||fk)}</a> <span class="mini">· Pedido ${esc(F.pedido||'')}${F.doc?' · '+esc(F.doc):''}</span>${fx[fk].shared?` <span class="mini">· ${fx[fk].shared} comp. compartidos</span>`:''}</td><td class="n">${fx[fk].pubs}</td><td class="n">${fmt(fx[fk].u)}</td><td class="n">${fmt(fx[fk].pz)}</td></tr>`}).join('')).join('');
+ const esp=(tc.C||0)+(tc.P||0)+(tc.S||0);
+ return `<div class="eyebrow">${M.bod==='EDOMEX'?'Edo. Méx.':'Cuernavaca'}${M.size?' · '+(M.size==='G'?'grandes':'pequeños y medianos'):''}</div><h2 style="margin:2px 0 6px">Envío ${k}</h2>
+ <div class="esmeta"><span><b>${esc(M.dia)}</b></span><span>Destino <b>${esc(M.dest)}</b></span><span><b>${fmt(tu)}</b> u${M.meta?` de meta ${fmt(M.meta)}`:''}</span><span><b>${E.lines.length}</b> publicaciones</span>${esp?`<span><b>${esp}</b> especiales (${tc.C||0} comp. · ${tc.P||0} por · ${tc.S||0} sobre)</span>`:''}</div>
+ <div class="tbl"><table class="estab"><thead><tr><th>Marca / factura</th><th style="text-align:right">Publ.</th><th style="text-align:right">u. ML</th><th style="text-align:right">Piezas</th></tr></thead><tbody>${rows}</tbody></table></div>
+ ${sh?'<p class="mini">Un compuesto con piezas de dos facturas cuenta en las dos.</p>':''}
+ <a class="btn primary" href="${link('e',k)}">Abrir envío ${k}</a>`}
 function renderEnvios(root){
- const ks=Object.keys(DATA.envios).sort();
- root.innerHTML=`<div class="docHead"><div><div class="eyebrow">Envíos a Full</div><h1>Envíos</h1></div></div>`+['CUERNAVACA','EDOMEX'].map(b=>`<div class="group"><h2>${b==='EDOMEX'?'Edo. Méx.':'Cuernavaca'}</h2></div><div class="legend">${ks.filter(k=>EM[k].bod===b).map(k=>{const nc=DATA.envios[k].lines.filter(l=>l.tp!=='I').length;return `<a class="chip ${PCLS[phase(k)]}" href="${link('e',k)}">Envío ${k} · ${EM[k].dia} · ${EM[k].dest} <span class="n">${fmt(DATA.envios[k].lines.reduce((s,l)=>s+l.u,0))} u</span>${nc?` <span class="ttag tc">${nc} esp.</span>`:''}</a>`}).join('')}</div>`).join('');
+ const ks=Object.keys(DATA.envios).sort();let sel=ks.find(k=>phase(k)==='now')||ks[0];
+ root.innerHTML=`<div class="docHead"><div><div class="eyebrow">Envíos a Full</div><h1>Envíos</h1></div><div class="meta">Toca un envío para ver de qué facturas se compone.</div></div><div class="elay"><div>`+['CUERNAVACA','EDOMEX'].map(b=>`<div class="group"><h2>${b==='EDOMEX'?'Edo. Méx.':'Cuernavaca'}</h2></div><div class="legend">${ks.filter(k=>EM[k].bod===b).map(k=>{const nc=DATA.envios[k].lines.filter(l=>l.tp!=='I').length;return `<a class="chip ${PCLS[phase(k)]}" data-k="${k}" href="${link('e',k)}">Envío ${k} · ${EM[k].dia} · ${EM[k].dest} <span class="n">${fmt(DATA.envios[k].lines.reduce((s,l)=>s+l.u,0))} u</span>${nc?` <span class="ttag tc">${nc} esp.</span>`:''}</a>`}).join('')}</div>`).join('')+`</div><aside class="eside"></aside></div>`;
+ const side=root.querySelector('.eside');
+ const show=k=>{sel=k;side.innerHTML=envSummary(k);root.querySelectorAll('.chip[data-k]').forEach(c=>c.classList.toggle('sel',c.dataset.k===k))};
+ root.querySelectorAll('.chip[data-k]').forEach(c=>c.onclick=e=>{if(e.ctrlKey||e.metaKey)return;e.preventDefault();show(c.dataset.k);if(innerWidth<900)side.scrollIntoView({behavior:'smooth',block:'start'})});
+ show(sel);
 }
 /* ---------- compartir (solo oficina) ---------- */
 function shareBar(kind,key,title){const url=isoUrl(kind+':'+key);
