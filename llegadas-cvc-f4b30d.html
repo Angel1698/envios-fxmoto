@@ -411,6 +411,13 @@ h3.rl-h{font-size:12px}
 .rl-errs{color:var(--accent);font-size:12.5px}
 /* resumen por grupo */
 .rl-grp{border-top:5px solid var(--g)}
+.rl-ped{display:grid;gap:10px;margin-top:6px}.rl-ped>header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 10px;padding:0 2px}.rl-ped>header h2{font-size:20px;font-weight:600}.rl-ped>header span{color:var(--muted);font-size:14px}.rl-ped>header b{color:var(--accent)}
+.rl-gbar{display:grid;gap:8px}
+.rl-gchips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.rl-gchip{flex:none;font:inherit;font-size:13.5px;font-weight:600;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:7px 12px;display:inline-flex;align-items:center;gap:6px;cursor:pointer;font-family:var(--mono)}
+.rl-gchip i{width:10px;height:10px;border-radius:50%;background:var(--g)}.rl-gchip small{color:var(--muted);font-weight:400}
+.rl-gchip.on{border-color:var(--g);box-shadow:0 0 0 2px color-mix(in srgb,var(--g) 30%,transparent)}
+.rl-gnew{display:grid;grid-template-columns:1fr 1fr;gap:8px}.rl-gnew .rl-btn{border:1.5px dashed color-mix(in srgb,var(--ink) 30%,transparent);font-size:15px;padding:11px 8px}
 .rl-grp header{display:flex;justify-content:space-between;gap:8px;margin-bottom:10px}.rl-grp header span{font-family:var(--mono);font-size:14px}
 .rl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:5px}
 .rl-grid button{font:inherit;font-family:var(--mono);font-size:13px;height:38px;border-radius:10px;border:1px dashed color-mix(in srgb,var(--ink) 25%,transparent);background:transparent;color:var(--muted);cursor:pointer;padding:0}
@@ -1067,7 +1074,7 @@ function renderLlegadas(bod,root){
   const band=G?(()=>{const [fg,bg]=gCol(C.g);const k=B.filter(x=>x.p===G.p&&x.a===G.a).length;return `<button class="rl-band" style="--g:${fg};--gb:${bg}" data-grp><span class="rl-mini">Etiqueta que estás capturando · toca para cambiar</span><span class="rl-bandrow"><span><small>Pedido</small><b>${esc(G.p)}</b></span><span><small>Almacén</small><b>${esc(G.a)}</b></span><span><small>Llevas</small><b>${k} de ${G.t}</b></span></span></button>`})():'';
   shell(top(`${esc(C.prov)} · conteo de cajas`,`${esc(C.doc||'')} · ${esc(U.nombre)}`,0,0,'home')+
    `<div class="rl-prog"><div><b>${n}</b> de ${tot||'?'} cajas</div>${subiendo()}<span class="rl-bar"><i style="width:${tot?Math.min(100,n/tot*100):0}%"></i></span></div>
-   ${G?band+`<div class="rl-card rl-capt">
+   ${G?band+gbar()+`<div class="rl-card rl-capt">
      <label class="rl-shot${foto?' has':''}">${foto?`<img src="${foto.mini}" alt="Foto de la etiqueta">`:`${RL_ICO.cam}<b>1. Foto de la etiqueta</b><span class="rl-mini">obligatoria</span>`}<input type="file" accept="image/*" capture="environment" hidden></label>
      <label class="rl-num"><span>2. Número de caja</span><span class="rl-numrow"><input class="cnum" inputmode="numeric" pattern="[0-9]*" placeholder="—" aria-label="Número de caja"><em>de ${G.t}</em></span></label>
      <p class="rl-err" role="alert"></p></div>`:`<div class="rl-card rl-note">Escribe los datos de la etiqueta de la primera caja.</div>`}
@@ -1076,6 +1083,8 @@ function renderLlegadas(bod,root){
   window._rlRefresh=()=>{const p=root.querySelector('.rl-prog');if(p){p.querySelector('.rl-up')&&(p.querySelectorAll('.rl-up').forEach(z=>z.remove()),p.querySelector('div').insertAdjacentHTML('afterend',subiendo()))}const l=root.querySelector('.rl-last');if(l)l.innerHTML=B.slice(-6).reverse().map(x=>boxRow(x)).join('')};
   if(!G){grupo(true);return}
   root.querySelector('[data-grp]').onclick=()=>grupo(false);
+  root.querySelectorAll('[data-sw]').forEach(b=>b.onclick=()=>{C.g=+b.dataset.sw;saveC();cajas(foto)});
+  root.querySelector('[data-new=alm]').onclick=()=>grupo(false,'alm',foto);root.querySelector('[data-new=ped]').onclick=()=>grupo(false,'ped',foto);
   const inp=root.querySelector('.cnum'),er=root.querySelector('.rl-err');
   root.querySelector('.rl-shot input').onchange=async ev=>{const fl=ev.target.files[0];if(!fl)return;try{const full=await shrink(fl,1400,.7),mini=await shrink(fl,240,.55);cajas({full,mini})}catch(_){toast('No se pudo leer la foto')}};
   if(foto)setTimeout(()=>inp.focus(),60);
@@ -1087,25 +1096,28 @@ function renderLlegadas(bod,root){
    const dup=B.find(x=>x.p===G.p&&x.a===G.a&&x.c===c);
    if(dup){repetida(dup,{p:G.p,a:G.a,t:G.t,c,foto});return}
    await guardarCaja({p:G.p,a:G.a,t:G.t,c,foto});cajas()}}
+ const gbar=()=>`<div class="rl-gbar">${C.grupos.length>1?`<div class="rl-gchips">${C.grupos.map((g,i)=>{const [fg]=gCol(i);return `<button class="rl-gchip${i===C.g?' on':''}" data-sw="${i}" style="--g:${fg}"><i></i>${esc(g.p)} · ${esc(g.a)} <small>${B.filter(x=>x.p===g.p&&x.a===g.a).length}/${g.t}</small></button>`}).join('')}</div>`:''}
+   <div class="rl-gnew"><button class="rl-btn" data-new="alm">+ Otro almacén</button><button class="rl-btn" data-new="ped">+ Otro pedido</button></div></div>`;
  async function guardarCaja(o){const k=rlId('C');const x={k,p:o.p,a:o.a,t:o.t,c:o.c,mini:o.foto.mini,st:'wait'};B.push(x);
   await RLQ.add(k,{tipo:'caja',...cred,id:C.id,cliente:k,pedido:o.p,alm:o.a,total:o.t,caja:o.c,foto:o.foto.full,mini:o.foto.mini,forzar:!!o.forzar});
   if(navigator.vibrate)try{navigator.vibrate(30)}catch(_){}toast(`Caja ${o.c} de ${o.t} guardada`)}
  const boxRow=x=>{const gi=C.grupos.findIndex(g=>g.p===x.p&&g.a===x.a);const [fg]=gCol(Math.max(0,gi));
   return `<div class="rl-box"><span class="rl-thumb">${x.mini?`<img src="${x.mini}" alt="">`:RL_ICO.box}</span><div><b>Caja ${x.c} <small>de ${x.t}</small></b><span class="rl-mini"><i class="rl-gdot" style="background:${fg}"></i>Pedido ${esc(x.p)} · Alm ${esc(x.a)}</span>${x.st==='err'?`<span class="rl-errs">${esc(x.err||'error')}</span>`:''}</div><span class="rl-st ${x.st}">${x.st==='ok'?'subida':x.st==='err'?'error':'subiendo'}</span></div>`};
  /* elegir o crear el grupo (pedido + almacén + total que trae la etiqueta) */
- function grupo(first){const d=dialog(`<div class="rl rl-dlg"><h2>${first?'Datos de la etiqueta':'¿De qué grupo es la caja?'}</h2>
-   ${C.grupos.length?`<div class="rl-glist">${C.grupos.map((g,i)=>{const [fg,bg]=gCol(i);return `<button class="rl-gopt${i===C.g?' on':''}" data-i="${i}" style="--g:${fg};--gb:${bg}"><b>Pedido ${esc(g.p)}</b><span>Almacén ${esc(g.a)} · ${g.t} cajas · llevas ${B.filter(x=>x.p===g.p&&x.a===g.a).length}</span></button>`}).join('')}</div><h3 class="rl-h">Otro pedido o almacén</h3>`:'<p class="rl-mini">Cópialos de la etiqueta de ALESSIA: el pedido, el almacén (abajo, por ejemplo ALMACEN-200) y el total de cajas (el número después de la diagonal, por ejemplo 54/<b>100</b>).</p>'}
-   <form class="rl-form ng" autocomplete="off"><label class="rl-fl">Pedido (PEDIDO(S) de la etiqueta)<input name="p" inputmode="numeric" required value="${esc(C.grupos.length?'':(C.doc||'').replace(/\D/g,'').slice(0,8))}"></label>
+ function grupo(first,modo,foto){const G0=C.grupos[C.g];const d=dialog(`<div class="rl rl-dlg"><h2>${first?'Datos de la etiqueta':modo==='alm'?`Otro almacén del pedido ${esc(G0?G0.p:'')}`:modo==='ped'?'Otro pedido':'¿De qué grupo es la caja?'}</h2>
+   ${modo?`<p class="rl-mini">${modo==='alm'?'Escribe el almacén (abajo en la etiqueta, por ejemplo ALMACEN-300) y el total de cajas de ese almacén (el número después de la diagonal).':'Escribe el número de pedido que trae la etiqueta, su almacén y el total de cajas (el número después de la diagonal).'}</p>`:C.grupos.length?`<div class="rl-glist">${C.grupos.map((g,i)=>{const [fg,bg]=gCol(i);return `<button class="rl-gopt${i===C.g?' on':''}" data-i="${i}" style="--g:${fg};--gb:${bg}"><b>Pedido ${esc(g.p)}</b><span>Almacén ${esc(g.a)} · ${g.t} cajas · llevas ${B.filter(x=>x.p===g.p&&x.a===g.a).length}</span></button>`}).join('')}</div><h3 class="rl-h">Otro pedido o almacén</h3>`:'<p class="rl-mini">Cópialos de la etiqueta de ALESSIA: el pedido, el almacén (abajo, por ejemplo ALMACEN-200) y el total de cajas (el número después de la diagonal, por ejemplo 54/<b>100</b>).</p>'}
+   <form class="rl-form ng" autocomplete="off"><label class="rl-fl">Pedido (PEDIDO(S) de la etiqueta)<input name="p" inputmode="numeric" required value="${esc(modo==='alm'&&G0?G0.p:modo==='ped'||C.grupos.length?'':(C.doc||'').replace(/\D/g,'').slice(0,8))}"></label>
    <label class="rl-fl">Almacén<select name="a" required><option value="">Elige…</option>${['100','200','300','400','500','600','700','800'].map(a=>`<option>${a}</option>`).join('')}<option value="otro">Otro</option></select></label><input name="ao" placeholder="Escribe el almacén" hidden>
    <label class="rl-fl">Total de cajas de ese almacén (número después de la diagonal)<input name="t" inputmode="numeric" required></label>
    <p class="rl-err" role="alert"></p><div class="rl-acts"><button class="rl-btn pri" type="submit">Usar estos datos</button>${first&&!C.grupos.length?'':'<button class="rl-btn" type="button" data-x>Cancelar</button>'}</div></form></div>`);
   d.querySelectorAll('.rl-gopt').forEach(b=>b.onclick=()=>{C.g=+b.dataset.i;saveC();closeDialog();cajas()});
   const f=d.querySelector('.ng');f.a.onchange=()=>{f.ao.hidden=f.a.value!=='otro'};const x=d.querySelector('[data-x]');if(x)x.onclick=closeDialog;
+  setTimeout(()=>{try{(modo==='alm'?f.a:f.p).focus()}catch(_){}},80);
   f.onsubmit=ev=>{ev.preventDefault();const p=f.p.value.trim().toUpperCase(),a=(f.a.value==='otro'?f.ao.value:f.a.value).trim().toUpperCase(),t=parseInt(f.t.value,10),er=f.querySelector('.rl-err');
    if(!p||!a||!(t>0)){er.textContent='Llena pedido, almacén y total.';return}
    const i=C.grupos.findIndex(g=>g.p===p&&g.a===a);
    if(i>=0){if(C.grupos[i].t!==t&&!confirm(`Ese pedido y almacén ya tenían ${C.grupos[i].t} cajas. ¿Cambiar el total a ${t}?`))return;C.grupos[i].t=t;C.g=i}else{C.grupos.push({p,a,t});C.g=C.grupos.length-1}
-   saveC();closeDialog();cajas()}}
+   saveC();closeDialog();cajas(foto);toast(i>=0?`Capturando pedido ${p} · almacén ${a}`:`Nuevo grupo: pedido ${p} · almacén ${a}`)}}
  /* caja repetida: se ven las dos fotos para decidir */
  function repetida(dup,o){const d=dialog(`<div class="rl rl-dlg"><h2>La caja ${o.c} ya se registró</h2><p class="rl-mini">Pedido ${esc(o.p)} · almacén ${esc(o.a)}. Compara las dos etiquetas: si la nueva es de otro pedido o almacén, cámbialo.</p>
    <div class="rl-pair"><figure><img src="${dup.mini||''}" alt="Foto anterior"><figcaption>Antes</figcaption></figure><figure><img src="${o.foto.mini}" alt="Foto nueva"><figcaption>Ahora</figcaption></figure></div>
@@ -1124,12 +1136,13 @@ function renderLlegadas(bod,root){
   const tot=C.cajas||0,n=B.length;
   const grs=C.grupos.map((g,i)=>{const L=B.filter(x=>x.p===g.p&&x.a===g.a);const have=new Set(L.map(x=>x.c));const miss=[];for(let c=1;c<=g.t;c++)if(!have.has(c))miss.push(c);const dups=L.length-have.size;return {g,i,L,miss,dups}});
   const lst=F.filter(x=>x.clase==='lista');const errs=B.filter(x=>x.st==='err');
+  const peds=[...new Set(C.grupos.map(g=>g.p))];const faltT=grs.reduce((s,x)=>s+x.miss.length,0),dupT=grs.reduce((s,x)=>s+x.dups,0);
   shell(top('Resumen del conteo',`${esc(C.prov)} · ${esc(C.doc||'')}`,0,0,'cap')+
-   `<div class="rl-card rl-sum"><div><span>Cajas que dijo el chofer</span><b>${tot}</b></div><div><span>Cajas capturadas</span><b>${n}</b></div><div><span>Diferencia</span><b class="${n<tot?'neg':n>tot?'pos':''}">${n===tot?'cuadra':n<tot?`faltan ${tot-n}`:`sobran ${n-tot}`}</b></div></div>
+   `<div class="rl-card rl-sum"><div><span>Cajas que dijo el chofer</span><b>${tot}</b></div><div><span>Cajas capturadas</span><b>${n}</b></div><div><span>Diferencia</span><b class="${n<tot?'neg':n>tot?'pos':''}">${n===tot?'cuadra':n<tot?`faltan ${tot-n}`:`sobran ${n-tot}`}</b></div><div><span>Pedidos que llegaron</span><b>${peds.length}</b></div><div><span>Almacenes</span><b>${grs.length}</b></div><div><span>Cajas faltantes según etiquetas</span><b class="${faltT?'neg':''}">${faltT}</b></div><div><span>Cajas repetidas</span><b class="${dupT?'pos':''}">${dupT}</b></div></div>
    ${errs.length?`<div class="rl-note warn"><b>${errs.length} caja(s) no se subieron.</b> ${errs.map(x=>`Caja ${x.c} (${esc(x.err||'')})`).join(' · ')}<div class="rl-acts"><button class="rl-btn sm" data-retry>Reintentar</button></div></div>`:''}
-   ${grs.map(({g,i,L,miss,dups})=>{const [fg,bg]=gCol(i);return `<section class="rl-card rl-grp" style="--g:${fg};--gb:${bg}"><header><b>Pedido ${esc(g.p)} · Almacén ${esc(g.a)}</b><span>${L.length} de ${g.t}</span></header>
+   ${peds.map(p=>{const G=grs.filter(x=>x.g.p===p);const cap=G.reduce((s,x)=>s+x.L.length,0),esp=G.reduce((s,x)=>s+x.g.t,0),fal=G.reduce((s,x)=>s+x.miss.length,0);return `<section class="rl-ped"><header><h2>Pedido ${esc(p)}</h2><span>${cap} de ${esp} cajas · ${G.length} ${G.length>1?'almacenes':'almacén'}${fal?` · <b>faltan ${fal}</b>`:''}</span></header>${G.map(({g,i,L,miss,dups})=>{const [fg,bg]=gCol(i);return `<section class="rl-card rl-grp" style="--g:${fg};--gb:${bg}"><header><b>Almacén ${esc(g.a)}</b><span>${L.length} de ${g.t}</span></header>
     <div class="rl-grid">${Array.from({length:g.t},(_,k)=>{const c=k+1;const has=L.filter(x=>x.c===c);return `<button class="${has.length>1?'dup':has.length?'on':''}" data-gi="${i}" data-c="${c}" aria-label="Caja ${c}${has.length?' capturada':' falta'}">${c}</button>`}).join('')}</div>
-    ${miss.length?`<p class="rl-miss"><b>Faltan ${miss.length}:</b> ${miss.join(', ')}</p>`:'<p class="rl-okline">Completo</p>'}${dups?`<p class="rl-miss"><b>${dups} repetida(s)</b> · tócalas para revisar</p>`:''}</section>`}).join('')}
+    ${miss.length?`<p class="rl-miss"><b>Faltan ${miss.length}:</b> ${miss.join(', ')}</p>`:'<p class="rl-okline">Completo</p>'}${dups?`<p class="rl-miss"><b>${dups} repetida(s)</b> · tócalas para revisar</p>`:''}</section>`}).join('')}</section>`}).join('')}
    <p class="rl-mini">Si de un almacén no bajó ninguna caja, aquí no aparece: lo ves en la diferencia contra lo que dijo el chofer.</p>
    <h2 class="rl-h">Lista de empaque</h2><p class="rl-mini">ALESSIA la manda con la mercancía. Toma foto de <b>todas</b> las hojas, completas y legibles.</p>
    <div class="rl-tiles">${lst.map(x=>`<figure class="rl-tile ph">${x.mini?`<img src="${x.mini}" alt="Hoja ${x.n}">`:`<a href="${esc(x.url||'#')}" target="_blank" rel="noopener">Hoja ${x.n}</a>`}<figcaption>${x.n}</figcaption></figure>`).join('')}<label class="rl-tile add">${RL_ICO.doc}<span>Foto de hoja ${lst.length+1}</span><input type="file" accept="image/*" capture="environment" multiple hidden></label></div>
@@ -1148,10 +1161,10 @@ function renderLlegadas(bod,root){
    if(!B.length){er.textContent='No hay cajas capturadas.';return}
    if(!F.some(x=>x.clase==='lista')&&!C.sinLista){er.textContent='Falta la foto de la lista de empaque (o marca que no vino).';return}
    if(sig.empty()){er.textContent='Falta la firma.';return}
-   const faltan=grs.reduce((s,x)=>s+x.miss.length,0);const txt=[n!==tot?`Chofer: ${tot} cajas · capturadas: ${n}`:'',faltan?grs.filter(x=>x.miss.length).map(x=>`Faltan del pedido ${x.g.p} alm ${x.g.a}: ${x.miss.join(', ')}`).join(' · '):''].filter(Boolean).join(' · ');
+   const faltan=grs.reduce((s,x)=>s+x.miss.length,0);const txt=[n!==tot?`Chofer: ${tot} cajas · capturadas: ${n}`:'',dupT?`${dupT} caja(s) repetida(s)`:'',faltan?grs.filter(x=>x.miss.length).map(x=>`Faltan del pedido ${x.g.p} alm ${x.g.a}: ${x.miss.join(', ')}`).join(' · '):''].filter(Boolean).join(' · ');
    if(!confirm(`¿Cerrar la llegada?${txt?'\n\n'+txt:''}`))return;
    b.disabled=true;b.textContent='Cerrando…';
-   try{await postSync({tipo:'cerrar',...cred,id:C.id,firma:sig.data(),obs:[C.obs,txt].filter(Boolean).join(' · '),sinLista:!!C.sinLista});const o={id:C.id,prov:C.prov,doc:C.doc,txt:`<div class="rl-card rl-sum"><div><span>Cajas capturadas</span><b>${n} de ${tot}</b></div>${grs.map(x=>`<div><span>Pedido ${esc(x.g.p)} · alm ${esc(x.g.a)}</span><b>${x.L.length} de ${x.g.t}${x.miss.length?` · faltan ${x.miss.length}`:''}</b></div>`).join('')}</div>`};listo(o)}
+   try{await postSync({tipo:'cerrar',...cred,id:C.id,firma:sig.data(),obs:[C.obs,txt].filter(Boolean).join(' · '),sinLista:!!C.sinLista});const o={id:C.id,prov:C.prov,doc:C.doc,txt:`<div class="rl-card rl-sum"><div><span>Cajas capturadas</span><b>${n} de ${tot}</b></div><div><span>Pedidos · almacenes</span><b>${peds.length} · ${grs.length}</b></div>${grs.map(x=>`<div><span>Pedido ${esc(x.g.p)} · alm ${esc(x.g.a)}</span><b>${x.L.length} de ${x.g.t}${x.miss.length?` · faltan ${x.miss.length}`:''}${x.dups?` · ${x.dups} repetida(s)`:''}</b></div>`).join('')}</div>`};listo(o)}
    catch(err){er.textContent='No se cerró: '+fail(err);b.disabled=false;b.textContent='Cerrar llegada'}}}
  function verCajas(L){const d=dialog(`<div class="rl rl-dlg"><h2>${L.length>1?'Cajas repetidas':'Caja '+L[0].c}</h2>${L.map(x=>`<div class="rl-vc" data-k="${esc(x.k)}"><img src="${x.mini||''}" alt="">${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" class="rl-mini">Ver foto completa</a>`:''}
    <form class="rl-form ed"><div class="rl-row3"><label class="rl-fl">Pedido<input name="p" value="${esc(x.p)}"></label><label class="rl-fl">Almacén<input name="a" value="${esc(x.a)}"></label><label class="rl-fl">Caja<input name="c" inputmode="numeric" value="${x.c}"></label><label class="rl-fl">Total<input name="t" inputmode="numeric" value="${x.t}"></label></div>
