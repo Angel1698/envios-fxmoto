@@ -1006,7 +1006,7 @@ function renderLlegadas(bod,root){
     <b>${esc(x.prov)} · ${esc(x.doc||x.fact||x.cot||'sin documento')}</b>
     <span class="rl-mini">Llegó ${esc(fdt(x.hora))} · ${esc(x.bultos)} ${esc(x.tbultos)} · recibió ${esc(x.recibio)}${x.pedido?' · pedido '+esc(x.pedido):''}</span>
     ${x.pend?`<span class="rl-pend">Falta: ${esc(x.pend)}</span>`:''}${x.autorizo?`<span class="rl-mini">Autorizó ${esc(x.autorizo)} · ${esc(fdt(x.fautoriza))}${x.dif?' · '+esc(x.dif):''}</span>`:''}
-    <div class="rl-acts">${cap&&canR&&(!C||C.id!==x.id)?`<button class="rl-btn sm" data-tomar="${esc(x.id)}">Seguir esta captura</button>`:''}${/DOCUMENTOS/.test(x.pend||'')&&canR?`<button class="rl-btn sm" data-docs="${esc(x.id)}" data-prov="${esc(x.prov)}">Subir hojas de DOCUMENTOS</button>`:''}${!cap&&!x.autorizo&&canA?`<button class="rl-btn sm pri aut" data-id="${esc(x.id)}" data-b="${esc(x.bultos)}">Autorizar llegada</button>`:''}</div></article>`}).join(''):'<p class="rl-mini">No hay llegadas registradas.</p>';
+    <div class="rl-acts">${cap&&canR&&(!C||C.id!==x.id)?`<button class="rl-btn sm" data-tomar="${esc(x.id)}">Seguir esta captura</button>`:''}${cap&&canR?`<button class="rl-btn sm" data-cancel="${esc(x.id)}">Cancelar captura</button>`:''}${/DOCUMENTOS/.test(x.pend||'')&&canR?`<button class="rl-btn sm" data-docs="${esc(x.id)}" data-prov="${esc(x.prov)}">Subir hojas de DOCUMENTOS</button>`:''}${!cap&&!x.autorizo&&canA?`<button class="rl-btn sm pri aut" data-id="${esc(x.id)}" data-b="${esc(x.bultos)}">Autorizar llegada</button>`:''}</div></article>`}).join(''):'<p class="rl-mini">No hay llegadas registradas.</p>';
    window._rlList=L}
   catch(e){lst.innerHTML=`<p class="rl-mini">No se pudieron leer las llegadas (${esc(e.message)}).</p>`}}
  root.onclick=async e=>{const g=e.target.closest('[data-go]');
@@ -1014,6 +1014,8 @@ function renderLlegadas(bod,root){
   const t=e.target.closest('[data-tomar]');if(t){const x=(window._rlList||[]).find(z=>z.id===t.dataset.tomar);if(!x)return;if(C&&!confirm('Ya hay otra captura abierta en este teléfono. ¿Cambiar a esta?'))return;
    C={id:x.id,prov:x.prov,modo:x.modo||rlModo(x.prov,+x.tarimas||0),cajas:+x.cajas||+x.bultos||0,tarimas:+x.tarimas||0,bolsas:+x.bolsas||0,doc:x.doc||x.fact||'',grupos:[],g:-1};saveC();B=[];F=[];detOk=false;return captura()}
   const d=e.target.closest('[data-docs]');if(d)return docsRefacom(d.dataset.docs,d.dataset.prov);
+  const k=e.target.closest('[data-cancel]');if(k){const id=k.dataset.cancel;if(!confirm('¿Cancelar esta captura? Deja de aparecer en la lista (en la hoja queda como "Cancelada").'))return;k.disabled=true;
+   try{await postSync({tipo:'cancelar',...cred,id});if(C&&C.id===id){C=null;saveC()}const q=(await RLQ.all()).filter(x=>x.body.id===id);for(const x of q)await RLQ.del(x.k);toast('Captura cancelada');home()}catch(err){k.disabled=false;toast('No se canceló: '+fail(err))}return}
   const a=e.target.closest('.aut');if(a)return autorizar(a)};
  /* ---------- paso 1: proveedor ---------- */
  function paso1(){shell(top('Registrar llegada',`Almacén ${bn} · paso 1 de 3`,1,3,'home')+
