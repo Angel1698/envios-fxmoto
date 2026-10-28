@@ -1,0 +1,1546 @@
+{
+  "factura": "288390",
+  "pedido_nuestro": "55",
+  "proforma": "255210",
+  "picking": "CON-184484",
+  "bodega": "EDOMEX",
+  "fecha_fotos": "2026-10-28 10:53",
+  "codigos": 66,
+  "piezas": 915,
+  "bultos": 76,
+  "grupos": [
+    {
+      "grupo": "A",
+      "bultos": 76,
+      "racks": "100, 200, 300, 400, 500, 600, 700",
+      "nota": "Una sola numeración global 1–76; Rack 1 se conserva por código."
+    }
+  ],
+  "estado_recepcion": "Recepción registrada el 27-oct-2026 a las 13:21 por Jesica; conservar diferencias físicas individuales existentes.",
+  "pendientes_caja": [
+    "FAR-152",
+    "HOR-004",
+    "CUV-016",
+    "PAR-078",
+    "SAL-X006"
+  ],
+  "pendientes_distribucion": [],
+  "detalle": [
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "CLC-007",
+      "cantidad_lista": 2,
+      "cajas": "1",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE CLUTCH UNIVERSAL MOTOS-CHINAS 2mts",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "EDI-002",
+      "cantidad_lista": 2,
+      "cajas": "1",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "EJE DE DIRECCION YUGO FORZA 150 06-08 / FT-150G 16-17",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "EDI-010",
+      "cantidad_lista": 3,
+      "cajas": "1",
+      "observacion": "",
+      "cantidad_factura": 3.0,
+      "descripcion": "EJE DE DIRECCION YUGO DT-200 SPORT 17 / FT-180 13-17 / FT-200 14-15 / FT-200 AMARILLA 15/ FT-250 15-16 / FT-250 TS 16-17",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "PAC-A017",
+      "cantidad_lista": 2,
+      "cajas": "1",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "PARADOR CENTRAL IT FT-250GTS GPS",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "POP-055",
+      "cantidad_lista": 5,
+      "cajas": "1",
+      "observacion": "",
+      "cantidad_factura": 5.0,
+      "descripcion": "POSAPIES TRASEROS IT 125-FL 19-23/IT 125-Z 16-25/IT 125-FL GPS 22-25/IT 125-FL PAR 19-20",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "SOP-006",
+      "cantidad_lista": 3,
+      "cajas": "1",
+      "observacion": "",
+      "cantidad_factura": 3.0,
+      "descripcion": "SOPORTE DE MOTOR DS-150 14-18 / DS-150 G 18 / DS-150 VERDE  18 / DS-150 NEGRO 13-15 / DS-125 05-09",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "PAC-A001",
+      "cantidad_lista": 64,
+      "cajas": "2-5",
+      "observacion": "",
+      "cantidad_factura": 64.0,
+      "descripcion": "PARADOR CENTRAL DT-150 SPORT 17 / FORZA 150 0613 / FT-150 1416 / FT-150 AZULP-150G 16-17 / FT-150 GT 11-13 / FT-150",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          2,
+          5
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "EDI-WO008",
+      "cantidad_lista": 20,
+      "cajas": "6-7",
+      "observacion": "",
+      "cantidad_factura": 20.0,
+      "descripcion": "EJE DE DIRECCION YUGO DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / DT-150 CLASICA 17 / DT-150 DELIVERY 17/IT FORZA-125/IT FT-125CL/IT FT-125DEL/IT FT125/IT FT-125SP/FT-125TS/FT-150DEL/IT FT-150S/IT FT-150TSs",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          6,
+          7
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "PAC-A002",
+      "cantidad_lista": 20,
+      "cajas": "8",
+      "observacion": "",
+      "cantidad_factura": 20.0,
+      "descripcion": "PARADOR CENTRAL W-150 17 / WS-150 08-17 / WS-150 NF 13-14 / WS-175 12-16 / DSG-125 17 / VGO-125 15-16/IT W-150 17-25",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "EDI-026",
+      "cantidad_lista": 12,
+      "cajas": "9-10",
+      "observacion": "",
+      "cantidad_factura": 12.0,
+      "descripcion": "EJE DE DIRECCION YUGO VN CROSSMAX PRO-250 21-22",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          9,
+          10
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "EDI-019",
+      "cantidad_lista": 32,
+      "cajas": "11-14",
+      "observacion": "",
+      "cantidad_factura": 32.0,
+      "descripcion": "EJE DE DIRECCION YUGO D-125 16-18",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          11,
+          14
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 6,
+      "almacen": "400",
+      "codigo": "EDI-024",
+      "cantidad_lista": 16,
+      "cajas": "15-16",
+      "observacion": "",
+      "cantidad_factura": 16.0,
+      "descripcion": "EJE DE DIRECCION YUGO WS-150SP 17-22/WS-175SP 18-22",
+      "estado": "Capturado",
+      "hoja": 4,
+      "grupo": "A",
+      "segments": [
+        [
+          15,
+          16
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 06 · hoja 4 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_06.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 1,
+      "almacen": "600",
+      "codigo": "BAJ-003",
+      "cantidad_lista": 5,
+      "cajas": "17",
+      "observacion": "",
+      "cantidad_factura": 5.0,
+      "descripcion": "BARRAS DE SUSPENSION DER / IZQ GRIS AT-110 NEGRA 16-17 / AX-110 16",
+      "estado": "Capturado",
+      "hoja": 6,
+      "grupo": "A",
+      "segments": [
+        [
+          17,
+          17
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 01 · hoja 6 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_01.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 1,
+      "almacen": "600",
+      "codigo": "BAJ-047",
+      "cantidad_lista": 2,
+      "cajas": "18",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "BARRAS DE SUSPENSION DER/IZQ NEGRO IT D-125LT 21-22",
+      "estado": "Capturado",
+      "hoja": 6,
+      "grupo": "A",
+      "segments": [
+        [
+          18,
+          18
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 01 · hoja 6 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_01.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 1,
+      "almacen": "600",
+      "codigo": "PAR-075",
+      "cantidad_lista": 3,
+      "cajas": "18",
+      "observacion": "",
+      "cantidad_factura": 3.0,
+      "descripcion": "DESLIZADOR SLIDER NEGRO MATE SK GIXXER",
+      "estado": "Capturado",
+      "hoja": 6,
+      "grupo": "A",
+      "segments": [
+        [
+          18,
+          18
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 01 · hoja 6 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_01.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-035NE",
+      "cantidad_lista": 40,
+      "cajas": "19-23",
+      "observacion": "",
+      "cantidad_factura": 40.0,
+      "descripcion": "FARO C/BISEL NEGRO 12 Vcc 150-SZ 16-18 / 150-Z 14-16 / 150-Z 19-20 / 170-Z 16-18",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          19,
+          23
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-090",
+      "cantidad_lista": 20,
+      "cajas": "24-25",
+      "observacion": "",
+      "cantidad_factura": 20.0,
+      "descripcion": "FARO 12 Vcc DT-150 SPORT II 17-19 / FIERA 150 18-19 / FT-180 TS 19",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          24,
+          25
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-040NE",
+      "cantidad_lista": 20,
+      "cajas": "26-27",
+      "observacion": "",
+      "cantidad_factura": 20.0,
+      "descripcion": "FARO C/BISEL NEGRO 12 Vcc DM-200 14-20",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          26,
+          27
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-065NE",
+      "cantidad_lista": 4,
+      "cajas": "28",
+      "observacion": "",
+      "cantidad_factura": 4.0,
+      "descripcion": "FARO C/BISEL NEGRO 12 VCC FT-150 GTS 16-18 / FT-150 GTS ROJA 18-20",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          28,
+          28
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "HOR-025",
+      "cantidad_lista": 30,
+      "cajas": "30-35",
+      "observacion": "",
+      "cantidad_factura": 30.0,
+      "descripcion": "HORQUILLA TRASERA 125-Z 16-19/125-FL 19-21/125-FL PAR 19-20",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          30,
+          35
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-129",
+      "cantidad_lista": 40,
+      "cajas": "36-37",
+      "observacion": "",
+      "cantidad_factura": 40.0,
+      "descripcion": "FARO 12 Vcc IT D-125LT 21-22",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          36,
+          37
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-150",
+      "cantidad_lista": 30,
+      "cajas": "38-39",
+      "observacion": "",
+      "cantidad_factura": 30.0,
+      "descripcion": "FARO C/BISEL NEGRO 12 Vcc VN NITROX-250T3 24/VN NITROX-300T3 24",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          38,
+          39
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-062",
+      "cantidad_lista": 2,
+      "cajas": "39",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "FARO C/BISEL Y VISOR NEGRO 12 Vcc NS-200",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          39,
+          39
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-138",
+      "cantidad_lista": 2,
+      "cajas": "39",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "FARO PRINCIPAL 12VCC VN ALPINA-300 22-24",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          39,
+          39
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-030",
+      "cantidad_lista": 7,
+      "cajas": "40",
+      "observacion": "",
+      "cantidad_factura": 7.0,
+      "descripcion": "FARO LED  12 Vcc FT-180 13-17 / FT-200 14-15",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          40,
+          40
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-128",
+      "cantidad_lista": 4,
+      "cajas": "40; 42",
+      "observacion": "Caja 40: 1 pz; caja 42: 3 pz.",
+      "cantidad_factura": 4.0,
+      "descripcion": "FARO 12 VCC VN CROSSMAX PRO-250 21-22/VN CROSSMAX-250 20-22/VN CROSSMAX-200 19-22",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "piezas_segmento": {
+        "40": 1,
+        "42": 3
+      },
+      "segments": [
+        [
+          40,
+          40
+        ],
+        [
+          42,
+          42
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 2,
+      "almacen": "300",
+      "codigo": "BAS-001",
+      "cantidad_lista": 30,
+      "cajas": "41",
+      "observacion": "",
+      "cantidad_factura": 30.0,
+      "descripcion": "BASE DE MANUBRIO DT-150 SPORT 17 / FORZA 150 09-13 / FT-150 14-16 / FT-150 AZULP 13-16 / FT-150 GT 11-13 / FT-150GTS",
+      "estado": "Capturado",
+      "hoja": 3,
+      "grupo": "A",
+      "segments": [
+        [
+          41,
+          41
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 02 · hoja 3 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_02.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 2,
+      "almacen": "300",
+      "codigo": "BFA-012",
+      "cantidad_lista": 5,
+      "cajas": "42",
+      "observacion": "",
+      "cantidad_factura": 5.0,
+      "descripcion": "BASE DE FARO IT FT-125TS 22-25/IT FT-150TS 19-25",
+      "estado": "Capturado",
+      "hoja": 3,
+      "grupo": "A",
+      "segments": [
+        [
+          42,
+          42
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 02 · hoja 3 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_02.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "HOR-019",
+      "cantidad_lista": 1,
+      "cajas": "42",
+      "observacion": "",
+      "cantidad_factura": 1.0,
+      "descripcion": "HORQUILLA TRASERA DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / DT-150 CLASICA 17 / DT-150 DELIVERY 17 /",
+      "estado": "Capturado",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [
+        [
+          42,
+          42
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 8,
+      "almacen": "500",
+      "codigo": "CAS-CH-K018-L",
+      "cantidad_lista": 9,
+      "cajas": "43",
+      "observacion": "",
+      "cantidad_factura": 9.0,
+      "descripcion": "CASCO CACHUCHA ADULTO RACING RED TALLA L",
+      "estado": "Capturado",
+      "hoja": 5,
+      "grupo": "A",
+      "segments": [
+        [
+          43,
+          43
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 08 · hoja 5 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_08.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 8,
+      "almacen": "500",
+      "codigo": "CAS-CH-K018-XL",
+      "cantidad_lista": 6,
+      "cajas": "43; 45",
+      "observacion": "Caja 43: 4 pz; caja 45: 2 pz.",
+      "cantidad_factura": 6.0,
+      "descripcion": "CASCO CACHUCHA ADULTO RACING RED TALLA XL",
+      "estado": "Capturado",
+      "hoja": 5,
+      "grupo": "A",
+      "piezas_segmento": {
+        "43": 4,
+        "45": 2
+      },
+      "segments": [
+        [
+          43,
+          43
+        ],
+        [
+          45,
+          45
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 08 · hoja 5 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_08.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 8,
+      "almacen": "500",
+      "codigo": "CAS-CH-K019-M",
+      "cantidad_lista": 9,
+      "cajas": "43",
+      "observacion": "",
+      "cantidad_factura": 9.0,
+      "descripcion": "CASCO CACHUCHA ADULTO LUKY RED TALLA M",
+      "estado": "Capturado",
+      "hoja": 5,
+      "grupo": "A",
+      "segments": [
+        [
+          43,
+          43
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 08 · hoja 5 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_08.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 8,
+      "almacen": "500",
+      "codigo": "CAS-CH-K017-XL",
+      "cantidad_lista": 30,
+      "cajas": "44",
+      "observacion": "",
+      "cantidad_factura": 30.0,
+      "descripcion": "CASCO CACHUCHA ADULTO SILVER RACING TALLA XL",
+      "estado": "Capturado",
+      "hoja": 5,
+      "grupo": "A",
+      "segments": [
+        [
+          44,
+          44
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 08 · hoja 5 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_08.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 8,
+      "almacen": "500",
+      "codigo": "CAS-CH-K016-L",
+      "cantidad_lista": 2,
+      "cajas": "45",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "CASCO CACHUCHA ADULTO KR´S BEIGE TALLA L",
+      "estado": "Capturado",
+      "hoja": 5,
+      "grupo": "A",
+      "segments": [
+        [
+          45,
+          45
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 08 · hoja 5 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_08.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 8,
+      "almacen": "500",
+      "codigo": "CAS-CH-K016-M",
+      "cantidad_lista": 9,
+      "cajas": "45",
+      "observacion": "",
+      "cantidad_factura": 9.0,
+      "descripcion": "CASCO CACHUCHA ADULTO KR´S BEIGE TALLA M",
+      "estado": "Capturado",
+      "hoja": 5,
+      "grupo": "A",
+      "segments": [
+        [
+          45,
+          45
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 08 · hoja 5 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_08.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAL-033",
+      "cantidad_lista": 100,
+      "cajas": "46-49",
+      "observacion": "",
+      "cantidad_factura": 100.0,
+      "descripcion": "SALPICADERA TRASERA DM-200 14-17",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          46,
+          49
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-090",
+      "cantidad_lista": 25,
+      "cajas": "50",
+      "observacion": "",
+      "cantidad_factura": 25.0,
+      "descripcion": "SALPICADERA DELANTERA AZUL CON NEGRO IT WS-150SP 19-22",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          50,
+          50
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-029",
+      "cantidad_lista": 25,
+      "cajas": "51",
+      "observacion": "",
+      "cantidad_factura": 25.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRO/ ROJO WS-150 15-19",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          51,
+          51
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAL-059NE",
+      "cantidad_lista": 12,
+      "cajas": "52",
+      "observacion": "",
+      "cantidad_factura": 12.0,
+      "descripcion": "SALPICADERA TRASERA NEGRA IT FT-150TS 19-25",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          52,
+          52
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAL-048",
+      "cantidad_lista": 6,
+      "cajas": "53",
+      "observacion": "",
+      "cantidad_factura": 6.0,
+      "descripcion": "SALPICADERA TRASERA CON LUZ 12 Vcc DM-150",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          53,
+          53
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-040NE",
+      "cantidad_lista": 10,
+      "cajas": "54",
+      "observacion": "",
+      "cantidad_factura": 10.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRO MATE DT-150 SPORT II 17-19",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          54,
+          54
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 3,
+      "almacen": "200",
+      "codigo": "RIN-168",
+      "cantidad_lista": 1,
+      "cajas": "55",
+      "observacion": "",
+      "cantidad_factura": 1.0,
+      "descripcion": "RIN DELANTERO 3.5 X 13 NEGRO C/ NARANJA TAMBOR 13 IT DS-150 22-24",
+      "estado": "Capturado",
+      "hoja": 2,
+      "grupo": "A",
+      "segments": [
+        [
+          55,
+          55
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 03 · hoja 2 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_03.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "ASI-040",
+      "cantidad_lista": 10,
+      "cajas": "56",
+      "observacion": "",
+      "cantidad_factura": 10.0,
+      "descripcion": "ASIENTO PILOTO NEGRO VN NITROX-200 20-23/VN NITROX-250 20-23/VN NITROX-250T3 24/VN NITROX-300T3 24",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          56,
+          56
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAL-X002",
+      "cantidad_lista": 80,
+      "cajas": "57-60",
+      "observacion": "",
+      "cantidad_factura": 80.0,
+      "descripcion": "SALPICADERA NEGRA TRASERA UNIVERSAL C/SOPORTE",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          57,
+          60
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "CLJ-021",
+      "cantidad_lista": 7,
+      "cajas": "61",
+      "observacion": "",
+      "cantidad_factura": 7.0,
+      "descripcion": "CUBIERTAS LATERALES DER/IZQ AZUL BLANCO IT 125-Z 19-22",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          61,
+          61
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-065NR",
+      "cantidad_lista": 10,
+      "cajas": "62",
+      "observacion": "",
+      "cantidad_factura": 10.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRA/ROJO DT-200 SPORT 17-18 / FT-250 TS 16-18",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          62,
+          62
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-104",
+      "cantidad_lista": 6,
+      "cajas": "62",
+      "observacion": "",
+      "cantidad_factura": 6.0,
+      "descripcion": "SALPICADERA DELANTERA AZUL NEGRA IT D-150 22-24",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          62,
+          62
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-031",
+      "cantidad_lista": 4,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 4.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRO/ VERDE WS-175 SPORT 18-21",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-035NA",
+      "cantidad_lista": 1,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 1.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRO BRILLANTE / AMARILLO WS-150 SPORT 17-19",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-035NR",
+      "cantidad_lista": 2,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRO BRILLANTE / ROJO WS-150 SPORT 17-19",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-075AZ",
+      "cantidad_lista": 3,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 3.0,
+      "descripcion": "SALPICADERA DE LANTERA AZUL BRILLANTE IT D-125LT 21-22",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-095",
+      "cantidad_lista": 1,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 1.0,
+      "descripcion": "SALPICADERA  DELANTERA ROJO CON NEGRO IT VORT-X 200 18-20",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-116",
+      "cantidad_lista": 2,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 2.0,
+      "descripcion": "SALPICADERA DELANTERA ROJO/NEGRO VN CYCLONE 200 20-23",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-121",
+      "cantidad_lista": 1,
+      "cajas": "63",
+      "observacion": "",
+      "cantidad_factura": 1.0,
+      "descripcion": "SALPICADERA DELANTERA NEGRA/VERDE IT W-150 24-25",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          63,
+          63
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-109",
+      "cantidad_lista": 12,
+      "cajas": "64",
+      "observacion": "",
+      "cantidad_factura": 12.0,
+      "descripcion": "SALPICADERA AZUL/ NEGRO COMPLETA DELANTERA IT AT-110 20-22",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          64,
+          64
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "CFA-025",
+      "cantidad_lista": 20,
+      "cajas": "65",
+      "observacion": "",
+      "cantidad_factura": 20.0,
+      "descripcion": "CUBIERTA CENTRAL DE VENTILACIÓN IT 250-Z 19-22",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          65,
+          65
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAD-036AN",
+      "cantidad_lista": 4,
+      "cajas": "65",
+      "observacion": "",
+      "cantidad_factura": 4.0,
+      "descripcion": "SALPICADERA DELANTERA AMARILLO BRILLANTE / NEGRO FT-200 TS",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          65,
+          65
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAL-X004",
+      "cantidad_lista": 11,
+      "cajas": "65",
+      "observacion": "",
+      "cantidad_factura": 11.0,
+      "descripcion": "SALPICADERA TRASERA GRAFITO UNIVERSAL C/REFLEJANTES",
+      "estado": "Capturado",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [
+        [
+          65,
+          65
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 3,
+      "almacen": "200",
+      "codigo": "RIN-113",
+      "cantidad_lista": 8,
+      "cajas": "66-67",
+      "observacion": "",
+      "cantidad_factura": 8.0,
+      "descripcion": "RIN TRASERO 8 X 10 NEGRO 10 ATV-250 18-21",
+      "estado": "Capturado",
+      "hoja": 2,
+      "grupo": "A",
+      "segments": [
+        [
+          66,
+          67
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 03 · hoja 2 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_03.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 3,
+      "almacen": "200",
+      "codigo": "RIN-031",
+      "cantidad_lista": 28,
+      "cajas": "68-74",
+      "observacion": "",
+      "cantidad_factura": 28.0,
+      "descripcion": "RIN TRASERO 2.15 X 18 NEGRO MATE DT-200 SPORT 17-20 / FT-180 13-18 / FT-200 14-15",
+      "estado": "Capturado",
+      "hoja": 2,
+      "grupo": "A",
+      "segments": [
+        [
+          68,
+          74
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 03 · hoja 2 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_03.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 3,
+      "almacen": "200",
+      "codigo": "RIN-180",
+      "cantidad_lista": 1,
+      "cajas": "75",
+      "observacion": "Caja 75 legible en la nueva foto; corrige lectura previa 55.",
+      "cantidad_factura": 1.0,
+      "descripcion": "RIN DELANTERO 2.75 X 12 DORADO 12 IT VITALIA-150 24",
+      "estado": "Capturado",
+      "hoja": 2,
+      "grupo": "A",
+      "segments": [
+        [
+          75,
+          75
+        ]
+      ],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 03 · hoja 2 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_03.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "CUV-016",
+      "cantidad_lista": 8,
+      "cajas": "",
+      "observacion": "La anotación divide el contenido entre cajas, pero los números y cantidades no son inequívocos. Conserva 8 unidades documentales.",
+      "cantidad_factura": 8.0,
+      "descripcion": "CUBIERTA CENTRAL VENTILACION MOTOR VN CYCLONE-200 20-23/VN CYCLONE-210 24/VN FALKON-200 21/VN FALKON-250 21-23/VN SCREAMER-250SP 22-23/VN STORM-250 21-24/VN TORNADO-250 20-23/VN STORM-300 24",
+      "estado": "Caja por confirmar",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "FAR-152",
+      "cantidad_lista": 3,
+      "cajas": "",
+      "observacion": "Anotación sobreescrita de cajas y piezas: no se confirma la lectura. Conserva 3 unidades documentales.",
+      "cantidad_factura": 3.0,
+      "descripcion": "FARO PRINCIPAL 12 Vcc IT D-150 22-24",
+      "estado": "Caja por confirmar",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 4,
+      "almacen": "100",
+      "codigo": "HOR-004",
+      "cantidad_lista": 10,
+      "cajas": "",
+      "observacion": "Primer número de caja sobreescrito junto a 29; falta confirmar la ubicación completa. Conserva 10 unidades documentales.",
+      "cantidad_factura": 10.0,
+      "descripcion": "HORQUILLA TRASERA FORZA-125 05-12/ FT-125CL 12-16/ FT-125SP 12-15/ FT-125TS 16-20/ FT-150DEL 15-18/ FT-150GR 18-20/ FT",
+      "estado": "Caja por confirmar",
+      "hoja": 1,
+      "grupo": "A",
+      "segments": [],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 04 · hoja 1 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_04.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "PAR-078",
+      "cantidad_lista": 2,
+      "cajas": "",
+      "observacion": "Número de caja corregido/sobreescrito; falta confirmar la ubicación. Conserva 2 unidades documentales.",
+      "cantidad_factura": 2.0,
+      "descripcion": "PARRILLA-SLIDER CUBRE PIERNAS PLATA IT DM-250 22-23",
+      "estado": "Caja por confirmar",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    },
+    {
+      "factura": "288390",
+      "foto": 7,
+      "almacen": "700",
+      "codigo": "SAL-X006",
+      "cantidad_lista": 11,
+      "cajas": "",
+      "observacion": "Anotación de cajas y reparto sobreescrita; no se infiere ubicación ni distribución. Conserva 11 unidades documentales.",
+      "cantidad_factura": 11.0,
+      "descripcion": "SALPICADERA DELANTERA TIPO FIBRA DE CARBONO IT X150 19-22 /IT WS 175SP 15-21/IT WS150 SP19-22",
+      "estado": "Caja por confirmar",
+      "hoja": 7,
+      "grupo": "A",
+      "segments": [],
+      "fuente": "WhatsApp PEDIDOS Fxmoto Alessia · 28-oct-2026 10:53 · foto 07 · hoja 7 de 8",
+      "foto_url": "documentos-28oct-empaque/288390/foto_07.jpg"
+    }
+  ],
+  "fotos": [
+    {
+      "foto": 1,
+      "hoja": 6,
+      "archivo": "foto_01.jpg",
+      "sha256": "eba5ef2d51e9e4d6277b436f0f3b5546571f4f72b3efe72127eb767ac1db7bff"
+    },
+    {
+      "foto": 2,
+      "hoja": 3,
+      "archivo": "foto_02.jpg",
+      "sha256": "96179efe6cb5a117502ad94e285f05991100602524cecf51339293aa6a446857"
+    },
+    {
+      "foto": 3,
+      "hoja": 2,
+      "archivo": "foto_03.jpg",
+      "sha256": "f4241c3065963a91f617de3001708c098e2adba65d542784e8af3c4a55c5fc78"
+    },
+    {
+      "foto": 4,
+      "hoja": 1,
+      "archivo": "foto_04.jpg",
+      "sha256": "9d00a464b5e20582e2e2af64cfc6ac67b4fb097e49e5b431df02bbf13d00ffd7"
+    },
+    {
+      "foto": 5,
+      "hoja": 8,
+      "archivo": "foto_05.jpg",
+      "sha256": "2a4d31607f97443913b791cd55d215bc5d7cfd27ec7ec32813999fda77b5f7b0"
+    },
+    {
+      "foto": 6,
+      "hoja": 4,
+      "archivo": "foto_06.jpg",
+      "sha256": "ff45c23d5812a021570b2fd2f57a4f37282dfe17362b463646d1ec4f35c8a7fd"
+    },
+    {
+      "foto": 7,
+      "hoja": 7,
+      "archivo": "foto_07.jpg",
+      "sha256": "dbe5a9d4bd358b1d8c4fe4d544d4a4d4027a0c933c8558e5422bc6e12c6afb34"
+    },
+    {
+      "foto": 8,
+      "hoja": 5,
+      "archivo": "foto_08.jpg",
+      "sha256": "397627864512d281da2e98df3baf3f96a1437a42a9ebdf0bbdde9112bbb9d193"
+    }
+  ],
+  "cambios": [
+    {
+      "codigo": "FAR-128",
+      "antes": "",
+      "ahora": "40; 42",
+      "foto": 4
+    },
+    {
+      "codigo": "RIN-180",
+      "antes": "55",
+      "ahora": "75",
+      "foto": 3
+    },
+    {
+      "codigo": "CAS-CH-K018-XL",
+      "antes": "",
+      "ahora": "43; 45",
+      "foto": 8
+    }
+  ],
+  "vinculacion": "Hoja 8 identifica factura 288390, proforma 255210 y picking CON-184484. Encabezados EDOMEX, pedido 55. Los 66 códigos y 915 unidades coinciden con el CFDI.",
+  "nota_bultos": "La hoja 8 corrige el total de 75 + 1 = 76 bultos. La caja 76 no está vinculada inequívocamente a códigos en el detalle legible.",
+  "nota_importe": "Resumen de picking: $280,140.99; CFDI original: $280,141.04. Diferencia de $0.05; conservar el importe oficial del CFDI."
+}

@@ -485,6 +485,8 @@ const cjParse=(F,c)=>{if(typeof F==='string')F=DATA.facturas[F];const m=String(c
 const almTxt=p=>p.alm?'Almacén '+p.alm:'almacén por confirmar';
 const cjFmt=(F,c)=>{const p=cjParse(F,c);if(!p)return 'Caja '+c;return `Grupo ${p.g} · ${almTxt(p)} · caja${p.a===p.b?'':'s'} ${p.a===p.b?p.a:p.a+' a '+p.b} de ${p.n}`};
 const cjShort=(F,c)=>{const p=cjParse(F,c);if(!p)return 'Caja '+c;return `${p.alm?'Alm '+p.alm:'Grupo '+p.g} · ${p.a===p.b?p.a:p.a+'-'+p.b}/${p.n}`};
+const cjItemFmt=(F,i)=>{if(typeof F==='string')F=DATA.facturas[F];if(!F.cajas||!F.cajas.globalNumbering)return cjFmt(F,i.caja);const B=F.cajas.blocks.filter(b=>b.code===i.code);if(!B.length)return cjFmt(F,i.caja);return B.map(b=>{const G=F.cajas.groups[b.g],rack=b.rack||(G&&G.alm)||'';return (F.cajas.singleSequence?'':`Grupo ${b.g} · `)+(rack?`Rack 1 ${rack} · `:'')+(b.a===b.b?`caja ${b.a}`:`cajas ${b.a} a ${b.b}`)+(B.length>1&&b.pz>0?` (${fmt(b.pz)} pz)`:'')}).join('; ')};
+const cjItemOrder=(F,a,b)=>{const first=i=>F.cajas.blocks.filter(x=>x.code===i.code).sort((x,y)=>(F.cajas.singleSequence?0:x.g.localeCompare(y.g))||x.a-y.a)[0];const x=first(a),y=first(b);return (!x)-(!y)||(x&&y?((F.cajas.singleSequence?0:x.g.localeCompare(y.g))||x.a-y.a):0)||a.code.localeCompare(b.code)};
 const bxName=(b,F)=>{const G=F&&F.cajas&&F.cajas.groups[b.g];const al=G&&G.alm?`Almacén ${G.alm} · `:'';return al+(b.a===b.b?`Caja ${b.a}`:`Cajas ${b.a} a ${b.b}`)+(G?` de ${G.n}`:'')};
 const bxN=b=>b.b-b.a+1;
 function bxState(F,b){const i=F.items.find(x=>x.code===b.code);if(!i)return {st:'na',i:null,go:0,stay:0,envs:[]};const go=i.qty-i.stay;const envs=[...new Set(i.dest.map(d=>d.env))].sort((a,c)=>ord(a)-ord(c));return {st:i.stay>=i.qty?'queda':i.stay>0?'mixta':'va',i,go,stay:i.stay,envs}}
@@ -533,14 +535,14 @@ function renderFactura(key,root){
    band=tband(i.tp,d.nf,i.tp==='C'?(w.length?`Esta pieza se junta con ${esc(w.join(' + '))} para armar el producto.`:'Se arma con otras piezas.'):tpHelp(i.tp,d.nf))}
   return `<article class="card${i.tp!=='I'?' sp '+TPC[i.tp]:''}${done[i.code]?' done':''}">${band}${img(i.img,i.desc,i.big)}<div style="min-width:0">
    <div class="top"><span class="code">${esc(i.code)}</span><span class="qty">${fmt(i.qty)} <small>${DATA.facturas[key]&&DATA.facturas[key].encamino?"facturadas":"llegaron"}</small></span></div>
-   ${edo?`<div class="bodtag ${i.bod==='G'?'bg':'bm'}">Bodega asignada: ${i.mixed?'grandes y medianos':bodName(i.bod)}</div>`:''}${i.caja?`<div class="bodtag bc">${esc(cjFmt(F,i.caja))}</div>`:''}
+   ${edo?`<div class="bodtag ${i.bod==='G'?'bg':'bm'}">Bodega asignada: ${i.mixed?'grandes y medianos':bodName(i.bod)}</div>`:''}${i.caja?`<div class="bodtag bc">${esc(cjItemFmt(F,i))}</div>`:''}
    <div class="desc">${esc(i.desc)}</div>${pcLine(F,i)}<div class="rows">${rows}</div>
    ${obsView(OB.get(i.code))}<div class="cfoot"><label class="tick"><input type="checkbox" data-c="${esc(i.code)}" ${done[i.code]?'checked':''}> Ya separado</label>${obsBtn(i.code,i.code+' · '+i.desc)}</div></div></article>`}
  function draw(){
   const s=q.value.trim().toUpperCase();const o=so.value;
   const cmp=(x,y)=>o==='code'?x.code.localeCompare(y.code):o==='caja'?(x.caja||'~').localeCompare(y.caja||'~',undefined,{numeric:true}):o==='qmax'?y.qty-x.qty:o==='qmin'?x.qty-y.qty:(first(x)-first(y)||x.code.localeCompare(y.code));
   const list=items.filter(i=>(filt==='all'||i.envs.has(filt))&&(tfil==='all'||i.tp===tfil)&&(show==='all'||(show==='done')===!!done[i.code])&&(!s||i.code.toUpperCase().includes(s)||String(i.desc).toUpperCase().includes(s)||String(i.caja).toUpperCase()===s));
-  if(F.cajas&&F.cajas.globalNumbering){root.querySelector('.cnt').textContent=`${list.length} de ${items.length} códigos`;lst.innerHTML='<div class="list">'+list.sort((a,b)=>(!a.caja)-(!b.caja)||(a.caja||'').localeCompare(b.caja||'',undefined,{numeric:true})).map(card).join('')+'</div>';return}if(view==='caja'){const ok=new Set(list.map(i=>i.code));const bl=F.cajas.blocks.filter(b=>ok.has(b.code));root.querySelector('.cnt').textContent=`${bl.length} de ${F.cajas.blocks.length} grupos de cajas`;lst.innerHTML=boxList(F,bl,bdone)||'<p>No hay cajas con ese filtro.</p>';return}
+  if(F.cajas&&F.cajas.globalNumbering){root.querySelector('.cnt').textContent=`${list.length} de ${items.length} códigos`;lst.innerHTML='<div class="list">'+list.sort((a,b)=>cjItemOrder(F,a,b)).map(card).join('')+'</div>';return}if(view==='caja'){const ok=new Set(list.map(i=>i.code));const bl=F.cajas.blocks.filter(b=>ok.has(b.code));root.querySelector('.cnt').textContent=`${bl.length} de ${F.cajas.blocks.length} grupos de cajas`;lst.innerHTML=boxList(F,bl,bdone)||'<p>No hay cajas con ese filtro.</p>';return}
   root.querySelector('.cnt').textContent=`${list.length} de ${items.length} códigos`;
   const sp=list.filter(i=>i.tp!=='I'),ind=list.filter(i=>i.tp==='I');let h='';
   if(sp.length)h+=`<section class="spblock"><div class="sphead"><h2>Revisar primero</h2><span>Compuestos e individuales por / sobre de esta factura</span></div>`+['C','P','S'].map(t=>{const l=sp.filter(i=>i.tp===t).sort(cmp);if(!l.length)return '';
@@ -603,7 +605,7 @@ const xnote=e=>{const fks=[...new Set(e.comps.map(c=>c.fk))];if(e.tp!=='C'||fks.
   return `<article class="card${sp?' sp '+TPC[e.tp]:''}${done[id(e)]?' done':''}">${sp?tband(e.tp,e.nf,tpHelp(e.tp,e.nf,new Set(e.comps.map(c=>c.code)).size)):''}${img(e.img,e.tit,e.big)}<div style="min-width:0">
    <div class="top"><span class="code"><span class="no">#${e.no}</span>${e.cml}</span><span class="qty">${fmt(e.u)} <small>u. ML${e.tp==='P'||e.tp==='S'?' = '+fmt(pz)+' pz':''}</small></span></div>
    <div class="desc">${esc(e.tit)}</div>
-   <div class="rows">${e.comps.map((c,ix)=>{const other=sec&&c.fk!==sec;return `<div class="row c-next${other?' dim':''}"><span class="lbl mono">${e.tp==='C'?`Pieza ${ix+1}: `:''}${esc(c.code)}</span><span class="det">${c.caja?esc(cjFmt(c.fk,c.caja))+' · ':''}${blogo(ftitle(c.fk))}${esc(ftitle(c.fk))}${other?` · <b class="nohere">NO la saques aquí: se saca en la sección ${esc(fsn(c.fk))}</b>`:''}</span><span class="pz">${fmt(c.pz)} pz</span></div>`}).join('')}</div>
+   <div class="rows">${e.comps.map((c,ix)=>{const other=sec&&c.fk!==sec;return `<div class="row c-next${other?' dim':''}"><span class="lbl mono">${e.tp==='C'?`Pieza ${ix+1}: `:''}${esc(c.code)}</span><span class="det">${c.caja?esc(cjItemFmt(c.fk,c))+' · ':''}${blogo(ftitle(c.fk))}${esc(ftitle(c.fk))}${other?` · <b class="nohere">NO la saques aquí: se saca en la sección ${esc(fsn(c.fk))}</b>`:''}</span><span class="pz">${fmt(c.pz)} pz</span></div>`}).join('')}</div>
    ${xnote(e)}
    ${obsView(OB.get(id(e)))}<div class="cfoot"><label class="tick"><input type="checkbox" data-k="${esc(id(e))}" ${done[id(e)]?'checked':''}> Surtido</label>${obsBtn(id(e),'#'+e.no+' '+e.cml+' · '+e.comps.map(c=>c.code).join(' + '))}</div></div></article>`};
  function draw(){
