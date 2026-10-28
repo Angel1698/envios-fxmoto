@@ -205,5 +205,16 @@
     "pedido_proveedor": "287834",
     "estado": "en camino",
     "uuid": "DD8EDC26-E46A-5A9E-8269-61FE62700D12"
+  },
+  {
+    "proveedor": "SAYTO",
+    "folio": "303626",
+    "bodega": "EDOMEX",
+    "tipo": "Mercancía",
+    "total": "65384.54",
+    "pedido": 56,
+    "pedido_proveedor": "287833",
+    "estado": "en camino",
+    "uuid": "98A4DB0A-4E6D-5692-A2A8-326D11176F12"
   }
 ]
