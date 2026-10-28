@@ -1,0 +1,1363 @@
+{
+  "proveedor": "TMMP / RemoMotos",
+  "bodega": "CUERNAVACA",
+  "pedido": 55,
+  "llegada_id": "L26102815295521",
+  "whatsapp_recepcion": "2026-10-28T13:26:00-06:00",
+  "fecha_hora_registrada": "2026-10-28T15:26:00-06:00",
+  "autorizacion_bultos_observada": "Yuridia 2026-10-28 15:31:19, contó 11",
+  "cajas_compartidas": 11,
+  "pedido_fuentes": {
+    "54": [
+      "7-TMMP-F 54 URGENTE CUERNAVACA 12-10-2026.xlsx",
+      "7-TMMP-F-CYE 54 URGENTE CUERNAVACA 12-10-2026.xlsx"
+    ],
+    "55": [
+      "7-TMMP-F 55 CUERNAVACA 20-10-2026.xlsx",
+      "7-TMMP-F-CYE 55 CUERNAVACA 20-10-2026.xlsx"
+    ],
+    "56": [
+      "7-TMMP-F 56 CUERNAVACA 26-10-2026.xlsx"
+    ]
+  },
+  "cotizaciones_fuente": "COTIZACIONES_55_TMMP_MAZ_vs_PEDIDO_20-10-2026.xlsx",
+  "documentos": [
+    {
+      "folio": "R5732",
+      "tipo": "REMISION",
+      "uuid": null,
+      "cotizacion": "3374307",
+      "fkey": "C-TMMP-3374307",
+      "fecha_emision": "2026-10-24",
+      "total_impreso": "1482.63",
+      "total_cotizacion": "1482.62",
+      "diferencia_total": "0.01",
+      "cantidad": 9,
+      "codigos": 6,
+      "detalle": [
+        {
+          "renglon": 1,
+          "codigo": "REM705",
+          "descripcion": "CLUTCH - PARA FT125 - FT150 GRAFITO -  RC125 - 125Z - 150Z (2014-24) - DM150 ROJA (2018-21",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "162.93",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "118.94",
+          "importe_calculado": "118.94",
+          "bruto": "162.93",
+          "descuento_calculado": "43.99",
+          "pedidos": {
+            "54": {
+              "descripcion": "CLUTCH - PARA FT125 - FT150 GRAFITO -  RC125 - 125Z - 150Z (2014-24) - DM150 ROJA (2018-21) - CARGO125 - TOOL125 _x000D_\n",
+              "precio_catalogo": 201,
+              "cantidad": 2
+            },
+            "55": {
+              "descripcion": "CLUTCH - PARA FT125 - FT150 GRAFITO -  RC125 - 125Z - 150Z (2014-24) - DM150 ROJA (2018-21) - CARGO125 - TOOL125 _x000D_\n",
+              "precio_catalogo": 201,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "CLUTCH (RANIX) - PARA FT125 - FT150 GRAFITO - RC125 - 125Z - 150Z (2014-24) - DM150 ROJA (2018-21) - CARGO125 - TOOL125",
+              "precio_catalogo": 189,
+              "cantidad": 2
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374307",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 2,
+          "codigo": "REM3320",
+          "descripcion": "CAMPANA DE CLUTCH O CREMALLERA - PARA FZ16",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "761.21",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "555.68",
+          "importe_calculado": "555.68",
+          "bruto": "761.21",
+          "descuento_calculado": "205.53",
+          "pedidos": {
+            "54": {
+              "descripcion": "CAMPANA DE CLUTCH O CREMALLERA - PARA FZ16",
+              "precio_catalogo": 943,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "CAMPANA DE CLUTCH O CREMALLERA - PARA FZ16",
+              "precio_catalogo": 943,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "CAMPANA DE CLUTCH O CREMALLERA - PARA FZ16",
+              "precio_catalogo": 883,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374307",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 3,
+          "codigo": "REM3014",
+          "descripcion": "MANDOS - PARA RT200 IZQ. Y DER. (2 PZAS)",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "162.07",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "354.93",
+          "importe_calculado": "354.93",
+          "bruto": "486.21",
+          "descuento_calculado": "131.28",
+          "pedidos": {
+            "54": {
+              "descripcion": "MANDOS - PARA RT200 IZQ. Y DER. (2 PZAS)",
+              "precio_catalogo": 200,
+              "cantidad": 3
+            },
+            "55": {
+              "descripcion": "MANDOS - PARA RT200 IZQ. Y DER. (2 PZAS)",
+              "precio_catalogo": 200,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "MANDO IZQUIERDO Y DERECHO - PARA RT200 (2015-25) - RT250 (2016-20) - RT250 SPORT (2020- 24)",
+              "precio_catalogo": 188,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374307",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 4,
+          "codigo": "REM3113",
+          "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA HOND CB150 INVICTA - CBF125 - SUZU GIXXER150 - GI",
+          "cantidad_documental": 2,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "38.79",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "56.63",
+          "importe_calculado": "56.63",
+          "bruto": "77.58",
+          "descuento_calculado": "20.95",
+          "pedidos": {
+            "54": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA HOND CB150 INVICTA - CBF125 - SUZU GIXXER150 - GIXXER250 _x000D_\n",
+              "precio_catalogo": 47,
+              "cantidad": 2
+            },
+            "55": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA HOND CB150 INVICTA - CBF125 - SUZU GIXXER150 - GIXXER250 _x000D_\n",
+              "precio_catalogo": 47,
+              "cantidad": 2
+            },
+            "56": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) (RANIX) - PARA HOND CB150 INVICTA - CBF125 - SUZU GIXXER150 - GIXXER250 -HUNK150 - HUNK160R BALATA DE FRENO DELANTERO (DISCO) (RANIX) -",
+              "precio_catalogo": 45,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 2,
+            "cotizado": 2,
+            "folio": "3374307",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 5,
+          "codigo": "REM169",
+          "descripcion": "CLUTCH - PARA 250Z,EX200,RT200,DM250,REBELIAN200,MOTOCARRO DAZON200, TORNADO 250, ROCKETMA",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "179.31",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "130.90",
+          "importe_calculado": "130.90",
+          "bruto": "179.31",
+          "descuento_calculado": "48.41",
+          "pedidos": {
+            "54": {
+              "descripcion": "CLUTCH - PARA 250Z,EX200,RT200,DM250,REBELIAN200,MOTOCARRO DAZON200, TORNADO 250, ROCKETMAN 250, (COMPATIBLE CON EL DE 6 TORNILLOS)",
+              "precio_catalogo": 222,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "CLUTCH - PARA 250Z,EX200,RT200,DM250,REBELIAN200,MOTOCARRO DAZON200, TORNADO 250, ROCKETMAN 250, (COMPATIBLE CON EL DE 6 TORNILLOS)",
+              "precio_catalogo": 222,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "CLUTCH (RANIX) - PARA DM200 (2014-24) - DM250 (2020-24) - DM300 - ROCKETMAN250 - TORNADO250 - CROSSMAX250 (COMPATIBLE CON EL DE 6 TORNILLOS)",
+              "precio_catalogo": 208,
+              "cantidad": 2
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374307",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 6,
+          "codigo": "REM2137",
+          "descripcion": "ESPEJOS - PARA 150Z Y 250Z  (10MM)",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "83.62",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "61.04",
+          "importe_calculado": "61.04",
+          "bruto": "83.62",
+          "descuento_calculado": "22.58",
+          "pedidos": {
+            "54": {
+              "descripcion": "ESPEJOS - PARA 150Z Y 250Z  (10MM)",
+              "precio_catalogo": 103,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "ESPEJOS - PARA 150Z Y 250Z  (10MM)",
+              "precio_catalogo": 103,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "ESPEJOS DE 10MM - PARA 150Z - 170Z - 250Z",
+              "precio_catalogo": 97,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374307",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        }
+      ],
+      "subtotal_impreso": "1278.13",
+      "iva_impreso": "204.50",
+      "total_fuente": "pie numérico legible",
+      "subtotal_recalculado": "1278.12",
+      "iva_recalculado_global": "204.50",
+      "iva_recalculado_por_renglon": "204.50",
+      "total_recalculado_global": "1482.62",
+      "total_recalculado_por_renglon": "1482.62",
+      "sin_pedido55": [],
+      "cantidades_coinciden_cotizacion": true,
+      "cfdi_pendiente": true,
+      "subtotal_sin_redondear_renglones": "1278.1278",
+      "total_sin_redondear_renglones": "1482.63"
+    },
+    {
+      "folio": "R5733",
+      "tipo": "REMISION",
+      "uuid": null,
+      "cotizacion": "3374265",
+      "fkey": "C-TMMP-3374265",
+      "fecha_emision": "2026-10-24",
+      "total_impreso": "7259.07",
+      "total_cotizacion": "7259.04",
+      "diferencia_total": "0.03",
+      "cantidad": 93,
+      "codigos": 26,
+      "detalle": [
+        {
+          "renglon": 1,
+          "codigo": "REM1768",
+          "descripcion": "STOP CON LUZ DE DIRECCIONAL - EN AMBAR, STOP EN ROJO Y PLACA EN BLANCO UNIVERSAL (PLASTICO",
+          "cantidad_documental": 2,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "93.10",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "135.93",
+          "importe_calculado": "135.93",
+          "bruto": "186.20",
+          "descuento_calculado": "50.27",
+          "pedidos": {
+            "54": {
+              "descripcion": "STOP CON LUZ DE DIRECCIONAL - EN AMBAR, STOP EN ROJO Y PLACA EN BLANCO UNIVERSAL (PLASTICO)",
+              "precio_catalogo": 114,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "STOP CON LUZ DE DIRECCIONAL - EN AMBAR, STOP EN ROJO Y PLACA EN BLANCO UNIVERSAL (PLASTICO)",
+              "precio_catalogo": 114,
+              "cantidad": 2
+            },
+            "56": {
+              "descripcion": "STOP O CALAVERA CON LUZ DE DIRECCIONAL - EN HUMO UNIVERSAL (PLASTICO)",
+              "precio_catalogo": 108,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 2,
+            "cotizado": 2,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 2,
+          "codigo": "REM1949",
+          "descripcion": "CAPUCHON DE BUJIA - PARA FZ - CRB600 - XR250",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "16.38",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "11.96",
+          "importe_calculado": "11.96",
+          "bruto": "16.38",
+          "descuento_calculado": "4.42",
+          "pedidos": {
+            "54": {
+              "descripcion": "CAPUCHON DE BUJIA - PARA FZ - CRB600 - XR250",
+              "precio_catalogo": 20,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "CAPUCHON DE BUJIA - PARA FZ - CRB600 - XR250",
+              "precio_catalogo": 20,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "CAPUCHON DE BUJIA (RANIX) - PARA FZ - CRB600 - XR250",
+              "precio_catalogo": 19,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 3,
+          "codigo": "REM2375",
+          "descripcion": "CLAXON TIPO CUERNO - UNIVERSAL _x000D_\n",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "58.62",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "128.38",
+          "importe_calculado": "128.38",
+          "bruto": "175.86",
+          "descuento_calculado": "47.48",
+          "pedidos": {
+            "54": {
+              "descripcion": "CLAXON TIPO CUERNO - UNIVERSAL _x000D_\n",
+              "precio_catalogo": 72,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "CLAXON TIPO CUERNO - UNIVERSAL _x000D_\n",
+              "precio_catalogo": 72,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "CLAXON TIPO CUERNO - UNIVERSAL",
+              "precio_catalogo": 68,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 4,
+          "codigo": "REM2343",
+          "descripcion": "DIRECCIONALES DE CALAVERA - EN PLATA",
+          "cantidad_documental": 2,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "125.86",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "183.76",
+          "importe_calculado": "183.76",
+          "bruto": "251.72",
+          "descuento_calculado": "67.96",
+          "pedidos": {
+            "54": {
+              "descripcion": "DIRECCIONALES DE CALAVERA - EN PLATA",
+              "precio_catalogo": 156,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "DIRECCIONALES DE CALAVERA - EN PLATA",
+              "precio_catalogo": 156,
+              "cantidad": 2
+            },
+            "56": {
+              "descripcion": "DIRECCIONALES DE CALAVERA (PAR) - EN PLATA",
+              "precio_catalogo": 146,
+              "cantidad": 2
+            }
+          },
+          "cotizacion": {
+            "pedido55": 2,
+            "cotizado": 2,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 5,
+          "codigo": "REM401",
+          "descripcion": "MANDOS - PARA VENTO TERRA (ADAPTABLES A WS 150)  (JGO 2 PZAS)",
+          "cantidad_documental": 5,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "132.76",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "484.57",
+          "importe_calculado": "484.57",
+          "bruto": "663.80",
+          "descuento_calculado": "179.23",
+          "pedidos": {
+            "54": {
+              "descripcion": "MANDOS - PARA VENTO TERRA (ADAPTABLES A WS 150)  (JGO 2 PZAS)",
+              "precio_catalogo": 164,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "MANDOS - PARA VENTO TERRA (ADAPTABLES A WS 150)  (JGO 2 PZAS)",
+              "precio_catalogo": 164,
+              "cantidad": 5
+            },
+            "56": {
+              "descripcion": "MANDO IZQUIERDO Y DERECHO - PARA TERRA (ADAPTABLES A WS 150)",
+              "precio_catalogo": 154,
+              "cantidad": 10
+            }
+          },
+          "cotizacion": {
+            "pedido55": 5,
+            "cotizado": 5,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 6,
+          "codigo": "REM3513",
+          "descripcion": "AMORTIGUADOR CENTRAL O MONOSHOCK - PARA 250Z",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "845.69",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "617.35",
+          "importe_calculado": "617.35",
+          "bruto": "845.69",
+          "descuento_calculado": "228.34",
+          "pedidos": {
+            "54": {
+              "descripcion": "AMORTIGUADOR CENTRAL O MONOSHOCK - PARA 250Z",
+              "precio_catalogo": 1047,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "AMORTIGUADOR CENTRAL O MONOSHOCK - PARA 250Z",
+              "precio_catalogo": 1047,
+              "cantidad": 0
+            },
+            "56": {
+              "descripcion": "AMORTIGUADOR CENTRAL O MONOSHOCK - PARA 250Z",
+              "precio_catalogo": 981,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 0,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "NO PEDIDO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 7,
+          "codigo": "REM862",
+          "descripcion": "ANILLOS DE PISTON (.25) - PARA ATV150 2005 - DS150 - GS150 - WS150 - VENT PHANTOM - CARA V",
+          "cantidad_documental": 2,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "39.66",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "57.90",
+          "importe_calculado": "57.90",
+          "bruto": "79.32",
+          "descuento_calculado": "21.42",
+          "pedidos": {
+            "54": {
+              "descripcion": "ANILLOS DE PISTON (.25) - PARA ATV150 2005 - DS150 - GS150 - WS150 - VENT PHANTOM - CARA VX150",
+              "precio_catalogo": 49,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "ANILLOS DE PISTON (.25) - PARA ATV150 2005 - DS150 - GS150 - WS150 - VENT PHANTOM - CARA VX150",
+              "precio_catalogo": 49,
+              "cantidad": 2
+            },
+            "56": {
+              "descripcion": "ANILLOS DE PISTON (.25) - PARA ATV150 2005 - DS150 - GS150 - WS150 - VENT PHANTOM - CARA VX150",
+              "precio_catalogo": 46,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 2,
+            "cotizado": 2,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 8,
+          "codigo": "REM810",
+          "descripcion": "BALANCINES LATERALES CON EJE - PARA FT125 - FT150 - FT180 - DT125 - DT150 - DM150 - DM200 ",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "73.28",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "160.48",
+          "importe_calculado": "160.48",
+          "bruto": "219.84",
+          "descuento_calculado": "59.36",
+          "pedidos": {
+            "54": {
+              "descripcion": "BALANCINES LATERALES CON EJE - PARA FT125 - FT150 - FT180 - DT125 - DT150 - DM150 - DM200 - EX200 - TOOL 125 - RYDER150",
+              "precio_catalogo": 90,
+              "cantidad": 2
+            },
+            "55": {
+              "descripcion": "BALANCINES LATERALES CON EJE - PARA FT125 - FT150 - FT180 - DT125 - DT150 - DM150 - DM200 - EX200 - TOOL 125 - RYDER150",
+              "precio_catalogo": 90,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "BALANCINES LATERALES CON EJE - PARA FT125 - FT150 - FT180 - DT125 - DT150 - DM150 - DM200 - EX200 - TOOL 125 - RYDER150",
+              "precio_catalogo": 85,
+              "cantidad": 2
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 9,
+          "codigo": "REM3306",
+          "descripcion": "BALATA DE FRENO (TAMBOR) MOTOCARRO 200CC _x000D_\n",
+          "cantidad_documental": 5,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "58.62",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "213.96",
+          "importe_calculado": "213.96",
+          "bruto": "293.10",
+          "descuento_calculado": "79.14",
+          "pedidos": {
+            "54": {
+              "descripcion": "BALATA DE FRENO (TAMBOR) MOTOCARRO 200CC _x000D_\n",
+              "precio_catalogo": 72,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "BALATA DE FRENO (TAMBOR) MOTOCARRO 200CC _x000D_\n",
+              "precio_catalogo": 72,
+              "cantidad": 5
+            },
+            "56": {
+              "descripcion": "BALATA DE FRENO (TAMBOR) (RANIX) - PARA MOTOCARRO 200CC",
+              "precio_catalogo": 68,
+              "cantidad": 1
+            }
+          },
+          "cotizacion": {
+            "pedido55": 5,
+            "cotizado": 5,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 10,
+          "codigo": "REM3465",
+          "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA DUKE200 - DUKE250 - DUKE390 - DOMINAR250 - DOMINA",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "41.38",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "30.21",
+          "importe_calculado": "30.21",
+          "bruto": "41.38",
+          "descuento_calculado": "11.17",
+          "pedidos": {
+            "54": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA DUKE200 - DUKE250 - DUKE390 - DOMINAR250 - DOMINAR400UG _x000D_\n",
+              "precio_catalogo": 51,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA DUKE200 - DUKE250 - DUKE390 - DOMINAR250 - DOMINAR400UG _x000D_\n",
+              "precio_catalogo": 51,
+              "cantidad": 0
+            },
+            "56": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) (RANIX) - PARA DUKE200 - DUKE250 - DUKE390 - DOMINAR250 - DOMINAR400UG",
+              "precio_catalogo": 48,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 0,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "NO PEDIDO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 11,
+          "codigo": "REM3345",
+          "descripcion": "BALATA DE FRENO TRASERO (DISCO) - PARA VORTX200 - VORTX250 _x000D_\n",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "25.86",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "56.63",
+          "importe_calculado": "56.63",
+          "bruto": "77.58",
+          "descuento_calculado": "20.95",
+          "pedidos": {
+            "54": {
+              "descripcion": "BALATA DE FRENO TRASERO (DISCO) - PARA VORTX200 - VORTX250 _x000D_\n",
+              "precio_catalogo": 32,
+              "cantidad": 3
+            },
+            "55": {
+              "descripcion": "BALATA DE FRENO TRASERO (DISCO) - PARA VORTX200 - VORTX250 _x000D_\n",
+              "precio_catalogo": 32,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "BALATA DE FRENO TRASERO (DISCO) (RANIX) - PARA VORTX200 - VORTX250",
+              "precio_catalogo": 30,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 12,
+          "codigo": "REM2995",
+          "descripcion": "BOMBA DE ACEITE - PARA RC150 (2009-17) - EX200 - RT200 (2009-24) - 250Z (2014-19) - SPTFIR",
+          "cantidad_documental": 2,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "73.28",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "106.99",
+          "importe_calculado": "106.99",
+          "bruto": "146.56",
+          "descuento_calculado": "39.57",
+          "pedidos": {
+            "54": {
+              "descripcion": "BOMBA DE ACEITE - PARA RC150 (2009-17) - EX200 - RT200 (2009-24) - 250Z (2014-19) - SPTFIRE (2019-24) _x000D_\n",
+              "precio_catalogo": 90,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "BOMBA DE ACEITE - PARA RC150 (2009-17) - EX200 - RT200 (2009-24) - 250Z (2014-19) - SPTFIRE (2019-24) _x000D_\n",
+              "precio_catalogo": 90,
+              "cantidad": 2
+            },
+            "56": {
+              "descripcion": "BOMBA DE ACEITE - PARA RC150 (2009-17) - EX200 - RT200 (2009-24) - 250Z (2014-19) - SPTFIRE (2019-24)",
+              "precio_catalogo": 85,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 2,
+            "cotizado": 2,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 13,
+          "codigo": "REM2910",
+          "descripcion": "LLAVE DE CASTILLO - DOBLE",
+          "cantidad_documental": 2,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "53.45",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "78.04",
+          "importe_calculado": "78.04",
+          "bruto": "106.90",
+          "descuento_calculado": "28.86",
+          "pedidos": {
+            "54": {
+              "descripcion": "LLAVE DE CASTILLO - DOBLE",
+              "precio_catalogo": 65,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "LLAVE DE CASTILLO - DOBLE",
+              "precio_catalogo": 65,
+              "cantidad": 2
+            },
+            "56": {
+              "descripcion": "HERRAMIENTA LLAVE DE CASTILLO (RANIX) - DOBLE",
+              "precio_catalogo": 62,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 2,
+            "cotizado": 2,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 14,
+          "codigo": "REM300",
+          "descripcion": "PERNO Y LEVA DE FRENO - PARA RUNNER 150 APRISSA,FORZA 150",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "23.28",
+          "descuento_porcentaje": "27",
+          "importe_impreso": "16.99",
+          "importe_calculado": "16.99",
+          "bruto": "23.28",
+          "descuento_calculado": "6.29",
+          "pedidos": {
+            "54": {
+              "descripcion": "PERNO Y LEVA DE FRENO - PARA RUNNER 150 APRISSA,FORZA 150",
+              "precio_catalogo": 29,
+              "cantidad": 1
+            },
+            "55": {
+              "descripcion": "PERNO Y LEVA DE FRENO - PARA RUNNER 150 APRISSA,FORZA 150",
+              "precio_catalogo": 29,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "PERNO Y LEVA DE FRENO (RANIX) - PARA ST90 - AT110 - XT110 - FT125 GRAFITO -GALAXY - AX100",
+              "precio_catalogo": 27,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 1,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 15,
+          "codigo": "REM1630",
+          "descripcion": "BOMBA DE FRENO CON MANIJA - PARA PULS  NS200 - AS200 _x000D_\n",
+          "cantidad_documental": 4,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "178.45",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "521.07",
+          "bruto": "713.80",
+          "descuento_calculado": "192.73",
+          "pedidos": {
+            "54": {
+              "descripcion": "BOMBA DE FRENO CON MANIJA - PARA PULS  NS200 - AS200 _x000D_\n",
+              "precio_catalogo": 221,
+              "cantidad": 4
+            },
+            "55": {
+              "descripcion": "BOMBA DE FRENO CON MANIJA - PARA PULS  NS200 - AS200 _x000D_\n",
+              "precio_catalogo": 221,
+              "cantidad": 4
+            },
+            "56": {
+              "descripcion": "BOMBA DE FRENO CON MANIJA (RANIX) - PARA PULS NS200 - AS200",
+              "precio_catalogo": 207,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 4,
+            "cotizado": 4,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 16,
+          "codigo": "REM2097",
+          "descripcion": "CHICOTE DE ACELERADOR - PARA YAMAHA FZ",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "25.86",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "56.63",
+          "bruto": "77.58",
+          "descuento_calculado": "20.95",
+          "pedidos": {
+            "54": {
+              "descripcion": "CHICOTE DE ACELERADOR - PARA YAMAHA FZ",
+              "precio_catalogo": 32,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "CHICOTE DE ACELERADOR - PARA YAMAHA FZ",
+              "precio_catalogo": 32,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "CHICOTE DE ACELERADOR (RANIX) - PARA FZ",
+              "precio_catalogo": 30,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 17,
+          "codigo": "REM2138",
+          "descripcion": "JUEGO DE JUNTAS DE MOTOR COMPLETO - PARA GTS175",
+          "cantidad_documental": 4,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "35.34",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "103.19",
+          "bruto": "141.36",
+          "descuento_calculado": "38.17",
+          "pedidos": {
+            "54": {
+              "descripcion": "JUEGO DE JUNTAS DE MOTOR COMPLETO - PARA GTS175",
+              "precio_catalogo": 43,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "JUEGO DE JUNTAS DE MOTOR COMPLETO - PARA GTS175",
+              "precio_catalogo": 43,
+              "cantidad": 4
+            },
+            "56": {
+              "descripcion": "JUNTAS DE MOTOR - PARA GTS175 - WS175",
+              "precio_catalogo": 41,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 4,
+            "cotizado": 4,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 18,
+          "codigo": "REM3285",
+          "descripcion": "TREN PRIMARIO Y SECUNDARIO - PARA  250Z  (2020-22) - RT250 SPORT (2020-24)",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "700.00",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "1533.00",
+          "bruto": "2100.00",
+          "descuento_calculado": "567.00",
+          "pedidos": {
+            "54": {
+              "descripcion": "TREN PRIMARIO Y SECUNDARIO - PARA  250Z  (2020-22) - RT250 SPORT (2020-24)",
+              "precio_catalogo": 867,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "TREN PRIMARIO Y SECUNDARIO - PARA  250Z  (2020-22) - RT250 SPORT (2020-24)",
+              "precio_catalogo": 867,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "TREN PRIMARIO Y SECUNDARIO - PARA 250Z (2020-22) - RT250 SPORT (2020-24)",
+              "precio_catalogo": 812,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 19,
+          "codigo": "REM67",
+          "descripcion": "EJE SECUNDARIO DE ARRANQUE - PARA CS 125 - DS125 - DS150 - GS150 - GTS175 - TS170 - WS150 ",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "83.62",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "183.13",
+          "bruto": "250.86",
+          "descuento_calculado": "67.73",
+          "pedidos": {
+            "54": {
+              "descripcion": "EJE SECUNDARIO DE ARRANQUE - PARA CS 125 - DS125 - DS150 - GS150 - GTS175 - TS170 - WS150 - WS175 - WS175 SPORT - VITALIA - BIT150 -  _x000D_\n",
+              "precio_catalogo": 103,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "EJE SECUNDARIO DE ARRANQUE - PARA CS 125 - DS125 - DS150 - GS150 - GTS175 - TS170 - WS150 - WS175 - WS175 SPORT - VITALIA - BIT150 -  _x000D_\n",
+              "precio_catalogo": 103,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "EJE SECUNDARIO DE ARRANQUE - PARA CS 125 - DS125 - DS150 - GS150 - GTS175 - TS170 - WS150 - WS175 - WS175 SPORT - VITALIA - BIT150",
+              "precio_catalogo": 97,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 20,
+          "codigo": "REM2168",
+          "descripcion": "MANGUERA PARA LIQUIDO DE FRENO - PARA ATV150",
+          "cantidad_documental": 7,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "87.93",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "449.32",
+          "bruto": "615.51",
+          "descuento_calculado": "166.19",
+          "pedidos": {
+            "54": {
+              "descripcion": "MANGUERA PARA LIQUIDO DE FRENO - PARA ATV150",
+              "precio_catalogo": 109,
+              "cantidad": 7
+            },
+            "55": {
+              "descripcion": "MANGUERA PARA LIQUIDO DE FRENO - PARA ATV150",
+              "precio_catalogo": 109,
+              "cantidad": 7
+            },
+            "56": {
+              "descripcion": "MANGUERA PARA LIQUIDO DE FRENO - PARA ATV150",
+              "precio_catalogo": 102,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 7,
+            "cotizado": 7,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 21,
+          "codigo": "REM1964",
+          "descripcion": "MANIJA DE CLUTCH CON BASE - PARA 150Z",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "62.07",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "45.31",
+          "bruto": "62.07",
+          "descuento_calculado": "16.76",
+          "pedidos": {
+            "54": {
+              "descripcion": "MANIJA DE CLUTCH CON BASE - PARA 150Z",
+              "precio_catalogo": 73,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "MANIJA DE CLUTCH CON BASE - PARA 150Z",
+              "precio_catalogo": 73,
+              "cantidad": 0
+            },
+            "56": {
+              "descripcion": "MANIJA DE CLUTCH CON BASE - PARA 150Z - DM200 - 250Z - DM250 - XPRESS170 - LITHIUM190 - NITROX200 - COMPATIBLE CON NK250",
+              "precio_catalogo": 72,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 0,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "NO PEDIDO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 22,
+          "codigo": "REM3724",
+          "descripcion": "MANIJAS AJUSTABLES - PARA 125Z EN AZUL 2PZAS _x000D_\n",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "127.59",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "279.42",
+          "bruto": "382.77",
+          "descuento_calculado": "103.35",
+          "pedidos": {
+            "54": {
+              "descripcion": "MANIJAS AJUSTABLES - PARA 125Z EN AZUL 2PZAS _x000D_\n",
+              "precio_catalogo": 164,
+              "cantidad": 4
+            },
+            "55": {
+              "descripcion": "MANIJAS AJUSTABLES - PARA 125Z EN AZUL 2PZAS _x000D_\n",
+              "precio_catalogo": 164,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "MANIJAS AJUSTABLES (AZUL) (PAR) (RANIX) - PARA 125Z - 125FL",
+              "precio_catalogo": 148,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 23,
+          "codigo": "REM3733",
+          "descripcion": "MANIJAS AJUSTABLES - PARA PULSAR NS200 - AS200 EN NEGRO 2PZAS _x000D_\n",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "132.76",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "96.91",
+          "bruto": "132.76",
+          "descuento_calculado": "35.85",
+          "pedidos": {
+            "54": {
+              "descripcion": "MANIJAS AJUSTABLES - PARA PULSAR NS200 - AS200 EN NEGRO 2PZAS _x000D_\n",
+              "precio_catalogo": 164,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "MANIJAS AJUSTABLES - PARA PULSAR NS200 - AS200 EN NEGRO 2PZAS _x000D_\n",
+              "precio_catalogo": 164,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "MANIJAS AJUSTABLES (NEGRO) (PAR) - PARA NS200 - AS200",
+              "precio_catalogo": 154,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 24,
+          "codigo": "REM1800",
+          "descripcion": "PEDAL DE CAMBIOS DE ALUMINIO - EN ROJO PARA CARGO 125 Y 150 HONDA",
+          "cantidad_documental": 3,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "80.17",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "175.57",
+          "bruto": "240.51",
+          "descuento_calculado": "64.94",
+          "pedidos": {
+            "54": {
+              "descripcion": "PEDAL DE CAMBIOS DE ALUMINIO - EN ROJO PARA CARGO 125 Y 150 HONDA",
+              "precio_catalogo": 99,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "PEDAL DE CAMBIOS DE ALUMINIO - EN ROJO PARA CARGO 125 Y 150 HONDA",
+              "precio_catalogo": 99,
+              "cantidad": 3
+            },
+            "56": {
+              "descripcion": "PEDAL DE CAMBIOS DE ALUMINIO (ROJO) (RANIX) - PARA CARGO125 - CARGO150",
+              "precio_catalogo": 93,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 3,
+            "cotizado": 3,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 25,
+          "codigo": "REM3041",
+          "descripcion": "PORTA VASO - TMMP",
+          "cantidad_documental": 27,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "25.86",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "509.70",
+          "bruto": "698.22",
+          "descuento_calculado": "188.52",
+          "pedidos": {
+            "54": {
+              "descripcion": "PORTA VASO - TMMP",
+              "precio_catalogo": 32,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "PORTA VASO - TMMP",
+              "precio_catalogo": 32,
+              "cantidad": 27
+            },
+            "56": {
+              "descripcion": "PORTA VASO - RANIX",
+              "precio_catalogo": 30,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 27,
+            "cotizado": 27,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        },
+        {
+          "renglon": 26,
+          "codigo": "REM352",
+          "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA ITAL DS150 - GTS175 - VITALIA - MODENA150 - WS-15",
+          "cantidad_documental": 1,
+          "unidad": "PIEZA",
+          "precio_unitario_sin_iva": "29.31",
+          "descuento_porcentaje": "27",
+          "importe_impreso": null,
+          "importe_calculado": "21.40",
+          "bruto": "29.31",
+          "descuento_calculado": "7.91",
+          "pedidos": {
+            "54": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA ITAL DS150 - GTS175 - VITALIA - MODENA150 - WS-150 SPORT - DM150 - VENT LITHIUM - URBAN  _x000D_\n",
+              "precio_catalogo": 36,
+              "cantidad": 0
+            },
+            "55": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) - PARA ITAL DS150 - GTS175 - VITALIA - MODENA150 - WS-150 SPORT - DM150 - VENT LITHIUM - URBAN  _x000D_\n",
+              "precio_catalogo": 36,
+              "cantidad": 1
+            },
+            "56": {
+              "descripcion": "BALATA DE FRENO DELANTERO (DISCO) (RANIX) - PARA DS150 - GTS175 - VITALIA - MODENA150 - WS150SPORT",
+              "precio_catalogo": 34,
+              "cantidad": 0
+            }
+          },
+          "cotizacion": {
+            "pedido55": 1,
+            "cotizado": 1,
+            "folio": "3374265",
+            "estado": "COMPLETO"
+          },
+          "hoja": 2,
+          "cantidad_fisica_confirmada": null,
+          "caja": null
+        }
+      ],
+      "subtotal_impreso": null,
+      "iva_impreso": null,
+      "total_fuente": "importe en letra; extremo derecho del pie numérico cortado",
+      "subtotal_recalculado": "6257.80",
+      "iva_recalculado_global": "1001.25",
+      "iva_recalculado_por_renglon": "1001.24",
+      "total_recalculado_global": "7259.05",
+      "total_recalculado_por_renglon": "7259.04",
+      "sin_pedido55": [
+        "REM3513",
+        "REM3465",
+        "REM1964"
+      ],
+      "cantidades_coinciden_cotizacion": true,
+      "cfdi_pendiente": true,
+      "subtotal_sin_redondear_renglones": "6257.8228",
+      "total_sin_redondear_renglones": "7259.07"
+    }
+  ],
+  "mensajes_enviados": [],
+  "asignacion_full": false,
+  "originales": [
+    {
+      "nombre": "L26102815295521_doc1.jpg",
+      "sha256": "2ff44d8fc8deb726dde35df41b5a352e302fcfcc1c0c6b29751ff477473a8d07",
+      "bytes": 292757
+    },
+    {
+      "nombre": "L26102815295521_doc2.jpg",
+      "sha256": "c8fbf54698fefcb9fe725a37bd6fb49d205b7e517ceeeed08c950fb23e05b8b3",
+      "bytes": 151068
+    },
+    {
+      "nombre": "L26102815295521_doc3.jpg",
+      "sha256": "e75dbb2436c606286a74857db9ab9fa20158210446051b6241eab492ba1431aa",
+      "bytes": 275131
+    },
+    {
+      "nombre": "L26102815295521_doc4.jpg",
+      "sha256": "cc78fc6ad3de4ce126760a48cbb595f065eddab96f0af13befb076cc2298bbbf",
+      "bytes": 285733
+    },
+    {
+      "nombre": "L26102815295521_doc5.jpg",
+      "sha256": "cde76da4f9a2355c2dbee40fa92941c703c541525b936f2b73255eb3d75fc323",
+      "bytes": 258462
+    }
+  ]
+}
