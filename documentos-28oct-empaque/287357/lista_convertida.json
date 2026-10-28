@@ -1,0 +1,143 @@
+{
+  "factura": "287357",
+  "pedido_nuestro": "54 urgente",
+  "proforma": "253069",
+  "picking": "IND-182435",
+  "bodega": "EDOMEX",
+  "fecha_fotos": "2026-10-28 11:03",
+  "codigos": 6,
+  "piezas": 31,
+  "bultos": 7,
+  "estado_recepcion": "Recepción registrada 27-oct-2026 14:00 · Jesica",
+  "notas": [
+    "Resumen: 3 cajas + 4 atados de cajas = 7 bultos; registro físico: 7 bultos. La hoja 5 ubica documentalmente LLA-3067 ×2 en caja 8, fuera de ese total.",
+    "La lista no resuelve si las 2 llantas LLA-3067 de 288403 son reposición de 287357 ni acredita cuatro piezas físicas. Se conserva pendiente solo LLA-3067 y todo el reparto ya autorizado de los demás códigos.",
+    "Picking $23,417.72; CFDI $23,417.73. Diferencia $0.01; se conserva el total oficial."
+  ],
+  "detalle": [
+    {
+      "factura": "287357",
+      "codigo": "BAJ-048",
+      "cantidad_lista": 10,
+      "cantidad_factura": 10,
+      "descripcion": "BARRAS DE SUSPENSION DER/IZQ NEGRO VN CYCLONE-200 21-22/VN CYCLONE-150 21-22/VN FALKON-250 22",
+      "almacen": "200",
+      "cajas": "1-2",
+      "foto": 4,
+      "hoja": 2,
+      "observacion": "",
+      "estado": "Capturado",
+      "foto_url": "documentos-28oct-empaque/287357/foto_04.jpg"
+    },
+    {
+      "factura": "287357",
+      "codigo": "TAG-043",
+      "cantidad_lista": 7,
+      "cantidad_factura": 7,
+      "descripcion": "TANQUE DE GASOLINA AZUL 170-Z 16-18",
+      "almacen": "600",
+      "cajas": "3-6",
+      "foto": 3,
+      "hoja": 3,
+      "observacion": "Cantidad total del código; no se infiere distribución por caja.",
+      "estado": "Capturado",
+      "foto_url": "documentos-28oct-empaque/287357/foto_03.jpg"
+    },
+    {
+      "factura": "287357",
+      "codigo": "TAG-064",
+      "cantidad_lista": 1,
+      "cantidad_factura": 1,
+      "descripcion": "TANQUE DE GASOLINA NEGRO-ROJO VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 22-24/VN CROSSMAX-300PRO 23-24",
+      "almacen": "600",
+      "cajas": "6",
+      "foto": 3,
+      "hoja": 3,
+      "observacion": "",
+      "estado": "Capturado",
+      "foto_url": "documentos-28oct-empaque/287357/foto_03.jpg"
+    },
+    {
+      "factura": "287357",
+      "codigo": "MAB-069",
+      "cantidad_lista": 2,
+      "cantidad_factura": 2,
+      "descripcion": "MANUBRIO NEGRO VN CROSSMAX-150 23/VN CROSSMAX-170 24/VN CROSSMAX-200 22-24/VN CROSSMAX-220 24-25/VN CROSSMAX-200 20-21/VN CROSSMAX-250 20-24/VN CROSSMAX PRO-250 23-24VN CROSSMAX PRO-300 24",
+      "almacen": "100",
+      "cajas": "7",
+      "foto": 2,
+      "hoja": 1,
+      "observacion": "",
+      "estado": "Capturado",
+      "foto_url": "documentos-28oct-empaque/287357/foto_02.jpg"
+    },
+    {
+      "factura": "287357",
+      "codigo": "SAD-103",
+      "cantidad_lista": 9,
+      "cantidad_factura": 9,
+      "descripcion": "SALPICADERA DELANTERA  NEGRO CON VERDE BRILLOSO IT FT-150TS 23-25",
+      "almacen": "700",
+      "cajas": "7",
+      "foto": 5,
+      "hoja": 4,
+      "observacion": "",
+      "estado": "Capturado",
+      "foto_url": "documentos-28oct-empaque/287357/foto_05.jpg"
+    },
+    {
+      "factura": "287357",
+      "codigo": "LLA-3067",
+      "cantidad_lista": 2,
+      "cantidad_factura": 2,
+      "descripcion": "LLANTA PARA MOTOCICLETA 190/55ZR17 RUDOS  BIKER CZ30 73W NO USA CAMARA (TL) TRASERA DEPORTIVA",
+      "almacen": "BODE… (truncado)",
+      "cajas": "8",
+      "foto": 6,
+      "hoja": 5,
+      "observacion": "Caja 8 solo documental; resumen y recepción señalan 7 bultos. Continúa pendiente la confirmación física; no se asigna envío.",
+      "estado": "Pendiente físico",
+      "foto_url": "documentos-28oct-empaque/287357/foto_06.jpg"
+    }
+  ],
+  "fotos": [
+    {
+      "foto": 1,
+      "hoja": 6,
+      "archivo": "foto_01.jpg",
+      "sha256": "e7ea358f3d997d7642072b5632bb54805cd00cccc2a0c83cb1936c65128dea7a"
+    },
+    {
+      "foto": 2,
+      "hoja": 1,
+      "archivo": "foto_02.jpg",
+      "sha256": "f35fb4989d3ccd0fbffd9b4b4999d35b34d8984bb74f911d7fa97b45e914a620"
+    },
+    {
+      "foto": 3,
+      "hoja": 3,
+      "archivo": "foto_03.jpg",
+      "sha256": "17c3f683015b1c2408394f58e055dddd66309d0ad156817256d28c5bbd48186c"
+    },
+    {
+      "foto": 4,
+      "hoja": 2,
+      "archivo": "foto_04.jpg",
+      "sha256": "ad1fa616b52ed826154003175d31dd849a741f04723bd7ed7120b1b42ab2edf7"
+    },
+    {
+      "foto": 5,
+      "hoja": 4,
+      "archivo": "foto_05.jpg",
+      "sha256": "ce9ae34fc748c807c2b5d9f4d375d8f580c4f625af8a5d1bba849446b300f542"
+    },
+    {
+      "foto": 6,
+      "hoja": 5,
+      "archivo": "foto_06.jpg",
+      "sha256": "0152edba0b1be64a013082ea87dfb83f352a895c3a1d5a09788fe4c224f5c71b"
+    }
+  ],
+  "cfdi_total": "23417.73",
+  "vinculacion": "Folio 287357 escrito en la hoja resumen; encabezado pedido 253069, picking IND-182435 y EDOMEX. Todos los códigos y cantidades coinciden con el CFDI."
+}

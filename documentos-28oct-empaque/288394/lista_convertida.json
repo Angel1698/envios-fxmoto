@@ -1,0 +1,47 @@
+{
+  "factura": "288394",
+  "pedido_nuestro": "55",
+  "proforma": "255206",
+  "picking": "IND-184492",
+  "bodega": "EDOMEX",
+  "fecha_fotos": "2026-10-28 10:57",
+  "codigos": 1,
+  "piezas": 2,
+  "bultos": 1,
+  "estado_recepcion": "Recepción registrada 27-oct-2026 14:30 · Jesica",
+  "notas": [
+    "Lista completa: FAR-035, 2 piezas en caja 1, Rack 1 100. Cantidades y envío 290 conservados."
+  ],
+  "detalle": [
+    {
+      "factura": "288394",
+      "codigo": "FAR-035",
+      "cantidad_lista": 2,
+      "cantidad_factura": 2,
+      "descripcion": "FARO 12 Vcc 150S-Z 16-17 / 150-Z 14-16 / 170-Z 16-17",
+      "almacen": "100",
+      "cajas": "1",
+      "foto": 2,
+      "hoja": 1,
+      "observacion": "",
+      "estado": "Capturado",
+      "foto_url": "documentos-28oct-empaque/288394/foto_02.jpg"
+    }
+  ],
+  "fotos": [
+    {
+      "foto": 1,
+      "hoja": 2,
+      "archivo": "foto_01.jpg",
+      "sha256": "68b38878aa76d66530de0b3b36a5ea50e4e220d4585a0288ffbb1d82b2b07ff3"
+    },
+    {
+      "foto": 2,
+      "hoja": 1,
+      "archivo": "foto_02.jpg",
+      "sha256": "cd76a4b7a539b4e00ad9420c6bb8c6b5f732c7ae18f271e85a967a6691cbe8e7"
+    }
+  ],
+  "cfdi_total": "807.34",
+  "vinculacion": "Folio 288394 escrito en la hoja resumen; encabezado pedido 255206, picking IND-184492 y EDOMEX. Todos los códigos y cantidades coinciden con el CFDI."
+}

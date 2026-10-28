@@ -1,0 +1,47 @@
+{
+  "factura": "288388",
+  "pedido_nuestro": "55",
+  "proforma": "255203",
+  "picking": "IND-184474",
+  "bodega": "EDOMEX",
+  "fecha_fotos": "2026-10-28 10:59",
+  "codigos": 1,
+  "piezas": 1,
+  "bultos": 1,
+  "estado_recepcion": "Recepción registrada 27-oct-2026 14:01 · Jesica",
+  "notas": [
+    "POB-012, 1 pieza en caja 1. El detalle dice Rack 1 400 y la hoja resumen dice RACK 500; se conservan ambas evidencias y la ubicación 400 previa sin inferir que se trasladó. Aclarar la identificación del almacén en la etiqueta. No cambia cantidad ni envío 290."
+  ],
+  "detalle": [
+    {
+      "factura": "288388",
+      "codigo": "POB-012",
+      "cantidad_lista": 1,
+      "cantidad_factura": 1,
+      "descripcion": "PORTA BALATA COMPLETO TRASERO NEGRO FT-180 / FT-200 / FT-200 AMARILLA / TC-200 / RC -200 / TC-250 / C-200 CARABELA / BG- 200 BENGALA /",
+      "almacen": "400",
+      "cajas": "1",
+      "foto": 2,
+      "hoja": 1,
+      "observacion": "Detalle Rack 1 400; resumen RACK 500. Identificación de almacén por confirmar.",
+      "estado": "Almacén por confirmar",
+      "foto_url": "documentos-28oct-empaque/288388/foto_02.jpg"
+    }
+  ],
+  "fotos": [
+    {
+      "foto": 1,
+      "hoja": 2,
+      "archivo": "foto_01.jpg",
+      "sha256": "20856f7426d7384ff27d547e3a57e7e8c62b354102d411514fcceecd16acc8c0"
+    },
+    {
+      "foto": 2,
+      "hoja": 1,
+      "archivo": "foto_02.jpg",
+      "sha256": "8c9010b3a24b84d5679b1c13b5f2ede9c950440525734f87e147d05efdca0599"
+    }
+  ],
+  "cfdi_total": "286.51",
+  "vinculacion": "Folio 288388 escrito en la hoja resumen; encabezado pedido 255203, picking IND-184474 y EDOMEX. Todos los códigos y cantidades coinciden con el CFDI."
+}
