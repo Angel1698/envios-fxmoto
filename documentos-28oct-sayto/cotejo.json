@@ -3549,5 +3549,36 @@
     "3-SAYTO-F-CYE 55 CUERNAVACA 20-10-2026.xlsx",
     "3-SAYTO-F 56 CUERNAVACA 26-10-2026.xlsx"
   ],
-  "xml_previa_mismo_contenido": true
+  "xml_previa_mismo_contenido": true,
+  "ajustes_sobre_pedido_original": [
+    {
+      "codigo": "CICN36",
+      "pedido": 6.0,
+      "cotizado": 8,
+      "facturado": 8.0,
+      "adicional": 2.0
+    },
+    {
+      "codigo": "LUCN116",
+      "pedido": 1.0,
+      "cotizado": 2,
+      "facturado": 2.0,
+      "adicional": 1.0
+    },
+    {
+      "codigo": "LUCN127",
+      "pedido": 18.0,
+      "cotizado": 20,
+      "facturado": 20.0,
+      "adicional": 2.0
+    },
+    {
+      "codigo": "LUCN37",
+      "pedido": 66.0,
+      "cotizado": 68,
+      "facturado": 68.0,
+      "adicional": 2.0
+    }
+  ],
+  "observacion_ajustes_pedido": "Frente al pedido original hay 7 unidades adicionales que ya figuraban en la cotización 287834: CICN36 6→8, LUCN116 1→2, LUCN127 18→20 y LUCN37 66→68. La factura conserva esas cantidades cotizadas; no se envió una nueva autorización al proveedor."
 }
