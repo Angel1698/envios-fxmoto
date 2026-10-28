@@ -522,7 +522,7 @@ function renderFactura(key,root){
  items.forEach(i=>{all+=i.qty;stay+=i.stay;i.envs=new Set();i.dest.forEach(d=>{tot[d.env]=(tot[d.env]||0)+d.pz;i.envs.add(d.env)});if(i.stay>0)i.envs.add('queda');Object.assign(i,itemBod(i));i.tp=itemTp(i)});
  const envs=Object.keys(tot).sort((a,b)=>ord(a)-ord(b));
  const nT=t=>items.filter(i=>i.tp===t).length;
- root.innerHTML=`<div class="docHead"><div><div class="eyebrow">Factura · ${edo?'Edo. Méx.':'Cuernavaca'}</div><h1><span class="pedtag">Pedido ${esc(F.pedido)}</span> ${blogo(F.title)}${esc(F.title)}</h1></div>
+ root.innerHTML=`<div class="docHead"><div><div class="eyebrow">${F.tipo_documento==='REMISION'?'Remisión':'Factura'} · ${edo?'Edo. Méx.':'Cuernavaca'}</div><h1><span class="pedtag">Pedido ${esc(F.pedido)}</span> ${blogo(F.title)}${esc(F.title)}</h1></div>
   <div class="meta"><span>Nuestro pedido <b>${esc(F.pedido)}</b></span>${F.doc?`<span><b>${esc(F.doc)}</b></span>`:''}<span>${F.encamino?"Estado":"Llegó"} <b>${esc(F.llego)}</b></span>${F.bultos?`<span><b>${esc(F.bultos)}</b></span>`:''}${F.recibio?`<span>Recibió <b>${esc(F.recibio)}</b></span>`:''}<span><b>${fmt(all)}</b> piezas</span></div></div>
   ${parcialNote([key])}
   ${ADMIN?shareBar('f',key,'Pedido '+F.pedido+' · '+F.title):''}
