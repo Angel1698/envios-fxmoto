@@ -1,0 +1,1821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="288469" Fecha="2026-10-22T14:05:22" Sello="s6w5x80fEqel8XqVNFDgx+k0mBmUVVLpPesbY9TJpV9RWPtdmUosWC1FPCT/QF3YF8JztXGZwbW7hsLVmV0ezeCx3K2x4HS5QAu252w/PnFDiVGjNv9hVOvHNvlSbJK1ILL8kKUC2Ry+wnXmExjG0t2R0kprIdvc7xsYbWH24XAgl26M5dN9QQSxOfNZAASvjJ5Wu/RiRxSfqfgZVT0Z0EAbUxJESYL+ELQfmhT49cK9eTA2i0afIdrFSZeuepa+BKQzH0kzMscGPTpTIppWl9JCLn4JEQtDnDAzyZs6mFNDipf6fXwdpjSBQvFO1UkmVtqH+WPZ3bg5zAzIa+6FDA==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="MIIF/TCCA+WgAwIBAgIUMDAwMDEwMDAwMDA3MTYwNzI0OTkwDQYJKoZIhvcNAQELBQAwggGVMTUwMwYDVQQDDCxBQyBERUwgU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEuMCwGA1UECgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UECwwRU0FULUlFUyBBdXRob3JpdHkxMjAwBgkqhkiG9w0BCQEWI3NlcnZpY2lvc2FsY29udHJpYnV5ZW50ZUBzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMQ0wCwYDVQQIDARDRE1YMRMwEQYDVQQHDApDVUFVSFRFTU9DMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxXDBaBgkqhkiG9w0BCQITTXJlc3BvbnNhYmxlOiBBRE1JTklTVFJBQ0lPTiBDRU5UUkFMIERFIFNFUlZJQ0lPUyBUUklCVVRBUklPUyBBTCBDT05UUklCVVlFTlRFMB4XDTI1MDUyOTE2NTgwOVoXDTI5MDUyOTE2NTgwOVowgboxIDAeBgNVBAMTF0lNUE9SVEFET1IgR1JMIFNBIERFIENWMSAwHgYDVQQpExdJTVBPUlRBRE9SIEdSTCBTQSBERSBDVjEgMB4GA1UEChMXSU1QT1JUQURPUiBHUkwgU0EgREUgQ1YxJTAjBgNVBC0THElHUjA2MTIxMzlVNSAvIEFJQkQ1MjEwMDExTUExHjAcBgNVBAUTFSAvIEFJQkQ1MjEwMDFNREZSUkwwNDELMAkGA1UECxMCQUEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDTlIx1vDKSFzq4NSvlyKk/qxiyYm/5zMPw6NbYKeR7NIWPrZMWAlBqivBaAyeepabDc1y2UZ2A4u72Je1bLk/H2/iUPwGdJmW0ZohdJ2aiHx3qJpeB/cmCBUiODh/gcwJtU6MSi/863Wp8Wex5dDovB4siBZ+NyDV6d3HjaO3ujMffv5lWPxSRSA+DMiHg4LdlUXS39MenpUcqwfp+NVSd4VVPE6c5mz4wFWRPuFx6M+y1FaS16Z1bKfSImdpa85ax3wVjCZzCpsTuMQuuUYMAgKPvcC97IFV3gEMvMUlaYNyV5ILZx6lDNqEwEguCTLwpUz2bUziB72nGonxjYnUNAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQAtYFlUjxg1LMKiqs66WFLHsaXTFwirmjjetlZEJOzCryr02N0p1yxrWER4z2nXa65mr3/hRrL8TZoCkCSs0rNmsfaDJNOefckS3lxqhPtNSjiXE8CjSLgnwHaaGa5EYquvDwlHoBg6TZ4D0WZpKvc3D5beioX6eyR3lQHqaKBJ0eoYNQmduE4NdDYgWBQ3VHbGU/yVZd5upVRaZrvh/M/w0XMiSMUUSgr45Qbv5sD6Vra1qGdSHSRCKP1nPyo2M1InCtpCy2Cx1eeBEdTSS+kTWBG+KJ1wpdQLLNQa1ejCFA8ZjzrspOMvnalcSIbduirxS1R93UvMDko0/xfIucWn8+S5qZVWsgSCMBhJesi25nEwp9T2rZnJyr/GKvKrfXsAmabJR3PUEgTaxQyQ+fRnhUJK5fJ8jgSK0agLOBoUrVBBTww3cbF9qfwxJudzsukoUlMW5k33nx4ylP7tSYfSR+g/jqr+EMsIKsZDSuj0nfuGiidzVIyw1u0h+QbZUFwUZxMNdQNbZdQgwgcoJeleertIfMerHayj+6ZfYOqVmkB/lo70Ja+8Yg12TkhhdEZj2+Hy34QgXARzMLAV7Spoew3AuCeTgR9ZT4TP1NCcd7TB2aIekYVEM0+qj9rpFEzBKetpi5P/CT4j/GOX+QC3J1HN5vCqskjp1PNUJ36oUA==" CondicionesDePago="30 dias" SubTotal="618200.55" Moneda="MXN" TipoCambio="1" Total="717112.88" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="AJC-006" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="AJUSTADOR DE CADENA YA YBR-125/IT FT-110 10-16/IT RC-125 20-23/IT RC-150 16-24/IT RC-200 19-24/IT SPTFIRE 19-22/VN WORKMAN-250 25" ValorUnitario="33.9900" Importe="101.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="101.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="27113300" NoIdentificacion="ALE-112" Cantidad="4" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="EXTRACTOR DE BUJES HORQUILLA TRASERA UNIVERSAL" ValorUnitario="99.9900" Importe="399.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="399.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="63.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-003" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR NEGRO CS-125 14-17 / CS-125 LED 13-16 / D-125 17 / DSG-12517 / CITY-125 05-13 / VGO-125 15-16 / XS-125 10" ValorUnitario="101.9900" Importe="305.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="305.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="48.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-016" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO ROJO ATV-150 / 30cm CON BUJE" ValorUnitario="314.9900" Importe="1574.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1574.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="251.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-063" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR ROJO BUJE / HORQUILLA 370 mm V-200 18-19" ValorUnitario="929.9900" Importe="6509.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6509.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1041.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-076" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR BUJE-BUJE 335mm NEGRO VN CYCLONE-200 21-22/VN CYCLONE-150 21-22" ValorUnitario="201.9900" Importe="201.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="201.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-088" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO VERDE 300MM IT ATV-180 21-24" ValorUnitario="279.9900" Importe="279.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="279.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="44.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-091" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO AMARILLO 321.5MM IT 280-Z 24" ValorUnitario="630.9900" Importe="1261.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1261.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="201.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-003" Cantidad="25" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARNES COMPLETO 12 Vcc EX-200 05-08 / RT-200 09-13 / RT-200 NEGRO 13-15" ValorUnitario="251.9900" Importe="6299.75" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6299.75" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1007.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-008" Cantidad="17" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARNES COMPLETO 12 Vcc GS-150LED/ GTS-175 LED 13" ValorUnitario="202.9900" Importe="3450.83" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3450.83" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="552.13" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-035" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARNES COMPLETO 12 Vcc DT-150CL 17-21/DT-150DEL 17-21/DT-125SP 20-21/FT-150DEL 15-18/FT-150S 15-18/FT-150TS 16-18/FT-150GR" ValorUnitario="260.9900" Importe="1304.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1304.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="208.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-040" Cantidad="19" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARNES COMPLETO 12 Vcc DM-200 14-17" ValorUnitario="277.9900" Importe="5281.81" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5281.81" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="845.09" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-044" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARNES COMPLETO 12 Vcc DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / FORZA-125 12 / FT-125 CLASICA 12-16 / FT" ValorUnitario="248.9900" Importe="995.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="995.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="159.35" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BAF-013F" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="BALATAS DE FRENO DELANTERO KIIRUS (DISCO) AT-110 SPORT 11-15/150-SZ 16-18/150-Z 14-19/170-Z 16-18/200-Z 19/250-Z 14-17/250-" ValorUnitario="18.9900" Importe="18.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="18.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3.04" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BAF-030F" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="BALATAS DE FRENO DELANTERO KIIRUS (DISCO) FZ-16 12-13/PULSAR NS-200/PULSAR NS-160/PULSAR NS-150/PULSAR AS-150/PULSAR-135/DISCOVER-125/DISCOVER" ValorUnitario="19.9900" Importe="59.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="59.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BAF-056F" Cantidad="6" ClaveUnidad="PR" Unidad="Par" Descripcion="BALATAS DE FRENO TRASERO KIIRUS (DISCO) IT 170-Z 16-18/IT 200-Z 19-24/IT 250-Z 19-24/IT 250-Z NEGRA 17-19/IT RT-200 15-16/ IT RT-200 20-24/IT RT-200 GP 17-19/IT V-200 18-24/IT VX-250 21-24/IT VX-250 EFI 18-21/ IT VX-250 ADV 16-18/IT BLACKBI" ValorUnitario="17.9900" Importe="107.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="107.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="17.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BAF-071F" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="BALATAS FRENO DELANTERO KIIRUS DISCO BJ DOMINAR-400/ KTM DUKE-250/ KTM DUKE-200/ KTM DUKE-390/ KTM RC-200/ KTM RC-250/ KTM RC-390/ BMW G-310R" ValorUnitario="34.9900" Importe="34.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="34.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="5.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BAF-073" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="BALATAS DE FRENO TRASERO DISCO VN SCREAMER-250 21-23/VN THUNDERSTAR-250 20-23" ValorUnitario="44.9900" Importe="134.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="134.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="21.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26111700" NoIdentificacion="BAT-ALE-009" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BATERIA GEL YB5L-BS (POSITIVO A LA DER) 5Ah / Altura 13 cm/ Base 120 cm/ ancho 60 cm AR-110 15/AT-110 14-16/AT-110 NE 16-17/AT-110 RT 12-14/AT-110RT LED 14-16/AT-110RT CON" ValorUnitario="281.9900" Importe="1691.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1691.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="270.71" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="BLC-006" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BALANCIN 125-Z / 150-Z / 150-SZ / DT-150CLASSIC / FT-150 DELIVERY" ValorUnitario="183.9900" Importe="1839.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1839.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="294.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="BLC-011" Cantidad="15" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="BALANCIN IT 170-Z 16-18/IT 200-Z 19-24/IT DM-250 16-18/IT RT-250 16-20/IT RT-250SP 20-24/IT 250-Z 19-24/VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 20-24/VN FALKON-25021-23/VNROCKETMAN-25020-23/VNROCKETMAN-25" ValorUnitario="86.9900" Importe="1304.85" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1304.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="208.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="BLC-GYM-01" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BALANCIN SUPERIOR C/SOPORTE IT CS-125 14-18/IT CS-125 LED 13-16/IT D-125 16-20/ VN ATOM-170 24/VN ATOM-150 21-23/VN RUDA-150 20-22/IT DS-125 05-20/IT DS-150 05-20/IT DS-150G 18-19/IT DS-150VE 18-19/IT DS-150NE 13-15/IT CITY-125" ValorUnitario="103.9900" Importe="727.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="727.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="116.47" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="BOB-002" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOBINA DE ENCENDIDO 12 Vcc ATV-150REV 19-22/ATV-150SP 11-12/ATV-150SP REV 12-19/ ATV-180 16-22/ATV-250REV 14-18/ATV-250CAM 21-2" ValorUnitario="64.9900" Importe="454.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="454.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="72.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-041" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO COMPLETA NEGRO WS-150 SPORT 17-20 / WS-175 SPORT 18-20" ValorUnitario="326.9900" Importe="6539.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6539.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1046.37" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-A018" Cantidad="14" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO CON MANIJA AT-125 17-19 / AT-125 RT 20" ValorUnitario="196.9900" Importe="2757.86" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2757.86" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="441.26" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-A019" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO CON MANIJA DM-250 16-18" ValorUnitario="207.9900" Importe="623.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="623.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="99.84" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-C005" Cantidad="50" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO TRASERA IT DM-250X 22-24/IT DM-250 22-24/VN STORM-300 24" ValorUnitario="238.9900" Importe="11949.50" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="11949.50" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1911.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40151524" NoIdentificacion="BOM-015" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE ACEITE COMPLETA 170-Z 16-18/200-Z 19-20/DM-250 16-18/EX-200 05-06" ValorUnitario="56.9900" Importe="398.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="398.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="63.83" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101732" NoIdentificacion="BUJ-ALE-01" Cantidad="4" ClaveUnidad="TP" Unidad="Paquete de diez" Descripcion="BUJIA ALESSIA A-D8EA MOTOS DE TRABAJO UNIVERSAL MOTOS DE TRABAJO" ValorUnitario="142.9900" Importe="571.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="571.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="91.51" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAB-022" Cantidad="16" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABEZA DE CILINDRO COMPLETA DM-200 14-20/DM-200SP 19-20/TC-200 14-16 /TC-200BL 16-18 /TC-200NE 18-20/DT-200SP 17-20/FT-200 14-15" ValorUnitario="891.9900" Importe="14271.84" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="14271.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2283.49" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAB-025" Cantidad="16" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABEZA DE CILINDRO COMPLETA CARGO-150" ValorUnitario="943.9900" Importe="15103.84" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="15103.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2416.61" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAB-042" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABEZA DE CILINDRO COMPLETA VN NITROX-300 T3 23-24" ValorUnitario="1239.9900" Importe="7439.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7439.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1190.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-003HF" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA KIIRUS 428H x 126 REFORZADA DT-150SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/FT-150 GT 1/150-SZ 16-18/150-Z 14-19/DT-200 SPORT 17/FT-180 13-18/FT-200 14-15/FT-200 AMARILLA 15-17" ValorUnitario="88.9900" Importe="1779.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1779.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="284.77" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-004HOF" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 428H x 136 GOLD REFORZADA CON ORING FZ-16/170-Z 16-18/DM-200 07-19/DM-200 SP 19/EX 200 05-08/RC-200 09/RT-200 09-13/RT-200 NE 13-15/DT-150 SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/ FT-150 GT 1" ValorUnitario="233.9900" Importe="9359.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9359.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1497.54" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-001" Cantidad="24" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA MICA ROJA 12 Vcc W-150 17 / WS-150 11-17 / WS-150 NF 13-14 / WS-175 12-16" ValorUnitario="234.9900" Importe="5639.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5639.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="902.36" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-002" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA MICA ROJA 12 Vcc FT-150GT" ValorUnitario="92.9900" Importe="3719.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3719.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="595.14" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-019" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA MICA ROJA 12 Vcc VN XPRESS-150 20-23/ IT DT-125CL 17-21/ IT DT-125DL 17-24/ IT DT-125SP 17-22/ IT DT-150CL 17-24/ IT DT-150DL 17-24" ValorUnitario="86.9900" Importe="5219.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5219.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="835.10" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-020" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA TRASERA LED MICA ROJA/BLANCA 12 Vcc AT-110 RT 12-14 / AT-110RTLED 14-16 / AT-110RT CON LED 16-17ED 14-16 / AT-110RT CON LED 16-17" ValorUnitario="159.9900" Importe="319.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="319.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="51.20" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-052" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA 12 VCC IT DM-250 20 / VN CROSSMAX-250PRO 21-24" ValorUnitario="141.9900" Importe="2839.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2839.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="454.37" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-059" Cantidad="13" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA MICA ROJA 12 VCC FT-150GTS 18-21" ValorUnitario="213.9900" Importe="2781.87" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2781.87" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="445.10" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-061" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA 12 Vcc FT-150TS 19-22" ValorUnitario="141.9900" Importe="5679.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5679.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="908.74" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-001RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 130/60-13 VALVULA TR4 IT BS-250 07-08/ IT DS-150 14-17/ IT DS-150 NEGRO 13-15/ IT DIABOLO-125 05-09/ IT DIABOLO-150 06-13/ IT GS-150" ValorUnitario="42.9900" Importe="42.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="42.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.88" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-005RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 3.00-18 VALVULA TR4 DT-200SP 17/FORZA-125 05-12/FORZA-150 06-13/EX-200 05-08/FT-110 10-16/FT-125 CLASICA 12-16/CARGO-150/YBR-125/EN-125/CGL-125 TOOL/FT-125/FT-150/DT-125/DT-125 CLASICA/DT-125 SP" ValorUnitario="41.9900" Importe="41.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="41.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-008RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 3.50-18 VALVULA TR4 FT-125/FT-150/CARGO-125/MOTOCICLETAS RIN 18/ KURAZAI CLASSIC 125 /DELIVERY MAX 150" ValorUnitario="47.9900" Importe="47.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="47.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.68" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-010RD" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 90/90-18 VALVULA TR4 FT-125/ FT-150/ CARGO-125/ MOTOCICLETAS RIN 18/ YBR-125/ HONDA CARGO-150 / KURAZAI CLASSIC 125 / DE" ValorUnitario="45.9900" Importe="91.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="91.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="14.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-013RD" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 110/90-16 VALVULA TR4 IT RC-200/ IT TC-250/MOTOS CHOPER/MOTOCICLETAS RIN 16" ValorUnitario="49.9900" Importe="99.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="99.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="Cam-017F" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA KIIRUS 4.10-18 Motorcycle Tube / TR4 DM-200 14-15/DT-200 SPORT 17/FT-200 14-15/ FT-200 AMARILLA 15 / FT-250 15-16 / FT-250 TS 16-17 / VX" ValorUnitario="46.9900" Importe="93.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="93.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="15.04" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-018F" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA KIIRUS 110/70-17 Motorcycle Tube TR4 DM-150 / FASER / FZ-16 / NS-200 / MOTOCICLETAS RIN 17" ValorUnitario="48.9900" Importe="48.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="48.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.84" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-018RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 110/70-17 VALVULA TR4 DM-150 / FASER / FZ-16 / NS-200 / MOTOCICLETAS RIN 17" ValorUnitario="54.9900" Importe="54.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="54.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-019F" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA KIIRUS 130/70-17 Motorcycle Tube TR4 FASER/ FZ-16/ NS-200/ MOTOCICLETAS RIN 17" ValorUnitario="56.9900" Importe="56.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="56.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9.12" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-021F" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 90/90-21 Motorcycle Tube TR4 DM-200 / MOTOCICLETAS RIN 21" ValorUnitario="41.9900" Importe="41.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="41.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-022RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 275/300-21 VALVULA TR4 DM-200 / MOTOCICLETAS RIN 21" ValorUnitario="43.9900" Importe="43.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="43.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.04" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-023F" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 325/350-21 Motorcycle Tube TR4 DM-200 / MOTOCICLETAS RIN 21" ValorUnitario="45.9900" Importe="45.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="45.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.36" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-024F" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 120/90-18 Motorcycle Tube TR4 DM-200 / MOTOCICLETAS RIN 18" ValorUnitario="51.9900" Importe="103.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="103.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-026RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 130/90-10 VALVULA TR87 YA BW´S-100/ IT WS-150/ IT WS-175/ MOTOCICLETAS RIN 10" ValorUnitario="45.9900" Importe="45.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="45.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.36" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CAM-027RD" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAMARA 90/90-19 VALVULA TR4 IT DM-150" ValorUnitario="43.9900" Importe="43.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="43.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.04" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAR-018" Cantidad="8" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CARBURADOR DT-200 SPORT 17 / FT-200 14-15 / FT-200 AMA 15 / FT-180 13-17 / RT-180 11-13 / FIERA-200/ 200-Z 19" ValorUnitario="238.9900" Importe="1911.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1911.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="305.91" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAR-CGG-A" Cantidad="80" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CARBURADOR AHOGADOR DE CHICOTE IT DT-150CL 17-24/IT DT-150DEL 17-25/IT FORZA-150 06-13/IT FT-150 14-27/IT FT-150AZULP 13-16/IT FT-150G 16-18/IT FT-150G NEGRA 18-20/IT FT-150GT GRAFITO 13-14/IT FT-150GTI 15-17/IT FT-150GTS 16-18/IT" ValorUnitario="227.9900" Importe="18239.20" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="18239.20" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2918.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAR-GYG-01" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CARBURADOR DS-150 06-20/DS-150G 18-20/DS-150VE 18-19/DS-150NE 13-15/GS-150 10-13/GS-150LED 13-15/WS-150SP 17-18" ValorUnitario="373.9900" Importe="1495.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1495.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="239.35" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101737" NoIdentificacion="CBO-001" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA BOMBA DE ACEITE 250-SZ 15 / DT-200SP 17-20 / DT-250SP 20 / FIERA 200 18-19 / FIERA 250 18-19 / FT-180 13-18 / FT-18" ValorUnitario="25.9900" Importe="77.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="77.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="12.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101737" NoIdentificacion="CDD-012" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA DE DISTRIBUCION 104 ESLABONES ATV-250 C/REVERSA 14-18 /ATV-250 NE 18-20" ValorUnitario="62.9900" Importe="62.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="62.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="10.08" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101737" NoIdentificacion="CDD-014" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA DE DISTRIBUCION 102 ESLABONES IT 200-Z 19-21/IT 280-Z 24-25/BAJAJ N-250/VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 20-24/VN FALKON-250 21-23/VN ROCKETMAN-250 20-23/VN ROCKETMAN-CARRERA-250 22/VN ROCKETMAN-250SP 20-22/VNSCREAMER-25" ValorUnitario="83.9900" Importe="1007.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1007.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="161.26" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="CDI-007" Cantidad="15" ClaveUnidad="H87" Unidad="Pieza" Descripcion="UNIDAD DE CDI 12 Vcc DC GL-150 CARGO" ValorUnitario="148.9900" Importe="2234.85" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2234.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="357.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="CDI-034" Cantidad="14" ClaveUnidad="H87" Unidad="Pieza" Descripcion="UNIDAD DE CDI 12 Vcc DC VN NITROX-250 T3 22-24" ValorUnitario="159.9900" Importe="2239.86" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2239.86" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="358.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="CDI-103" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="UNIDAD DE CDI 12 Vcc AC IT FT-180TS 19-23/IT FT-150GTS 23-25/IT DT-150SP 20-24" ValorUnitario="39.9900" Importe="79.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="79.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="12.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26111903" NoIdentificacion="CEN-004" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CENTRIFUGO VARIADOR COMPLETO IT ATV-200 20-24" ValorUnitario="295.9900" Importe="887.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="887.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="142.08" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-006" Cantidad="18" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO FT-180 13-14 / FT-180 19-20 / RT-180 11-13" ValorUnitario="602.9900" Importe="10853.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="10853.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1736.61" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-009" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO AT-110 RT 12-14 / AT-11ORTLED 14-16 / AT-110RT CON LED 16-20" ValorUnitario="343.9900" Importe="2063.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2063.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="330.23" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-010" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO AT-110 NEGRA 16-18 / AX-110 16 / FT-110 10-16 / XT-110 11-15 / XT-110 GRAFITO 13-17" ValorUnitario="314.9900" Importe="1889.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1889.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="302.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-013" Cantidad="18" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGUEÑAL COMPLETO CARGO-150" ValorUnitario="510.9900" Importe="9197.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9197.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1471.65" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-014" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO 170-Z  16-18" ValorUnitario="742.9900" Importe="2228.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2228.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="356.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-032" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGUEÑAL COMPLETO IT 200-Z 19-23" ValorUnitario="713.9900" Importe="8567.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8567.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1370.86" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-037" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGUEÑAL COMPLETO YA FZ-16 11-17/YA FZ-16 2.0 20-22" ValorUnitario="493.9900" Importe="987.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="987.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="158.08" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-CGG-01" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO FORZA-150cc PERNO 15mm" ValorUnitario="492.9900" Importe="2957.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2957.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="473.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31162500" NoIdentificacion="CIN-003" Cantidad="1" ClaveUnidad="TP" Unidad="Paquete de diez" Descripcion="CINTURON SUJETADOR DE BATERIA DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 /DT-150 CLASICA 17 / DT-150 DELIVERY 17 /" ValorUnitario="46.9900" Importe="46.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="46.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="7.52" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-014" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR ATV-150 SPORT/ATV-150 SPORT C/REVERSA/ATV-180" ValorUnitario="34.9900" Importe="139.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="139.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="22.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-083" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR VN CROSSMAX-200 19-22/VN CROSSMAX-250 21/VN CROSSMAX-250PRO 21-22/YA XR-150 16/IT DM-200 14-23/IT DM-250X 22-23" ValorUnitario="26.9900" Importe="80.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="80.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="12.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-097" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR 880 mm RC-150 09-17 / RC-150 GT 12-15" ValorUnitario="25.9900" Importe="51.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="51.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-103" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR RC-200 19-21" ValorUnitario="24.9900" Importe="49.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="49.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-106" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE ACELERADOR NS-200" ValorUnitario="39.9900" Importe="39.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="39.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.40" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-119" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR VN NITROX-200 20-22 / VN NITROX-250 T2 20-22 / VN NITROX-250 T3 22-24 / VN NITROX-300 T3 23-24 / VN ALPINA-300 23-24" ValorUnitario="27.9900" Importe="139.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="139.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="22.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-127" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR VN GLADIATOR-200 23-24/VN REPTILE-150 20-22/VN REPTILE TREK-200 21-24" ValorUnitario="19.9900" Importe="139.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="139.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="22.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-128" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR 772 mm VN STORM-300 24/VN HYPER-280 20-24" ValorUnitario="19.9900" Importe="79.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="79.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="12.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLA-135" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE ACELERADOR VN CYCLONE-150 20-23/VN CYCLONE-200 20-23/VN CYCLONE-210 24/VN FALKON-200 21-23/VN FALKON-250 21-23" ValorUnitario="31.9900" Importe="63.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="63.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="10.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-029" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH 125-Z 16-17" ValorUnitario="24.9900" Importe="124.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="124.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="19.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-031" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH RC-150 / RC-150AI / RC-200 19" ValorUnitario="27.9900" Importe="83.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="83.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="13.44" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-034" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH BJ NS-200" ValorUnitario="31.9900" Importe="95.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="95.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="15.36" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-044" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH 1040 mm RC-150 09-17 / RC-150 GT 12-15" ValorUnitario="27.9900" Importe="27.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="27.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-059" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH VN NITROX-250 T3 23-25" ValorUnitario="27.9900" Importe="139.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="139.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="22.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-063" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH VN CROSSMAX-250 20-24 / VN CROSSMAX-250PRO 22-24 / VN CROSSMAX-300PRO 24" ValorUnitario="27.9900" Importe="195.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="195.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="31.35" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-066" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH IT 280-Z 24" ValorUnitario="34.9900" Importe="209.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="209.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="33.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-067" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH BJ N-160 24/BJ N-250 24" ValorUnitario="26.9900" Importe="26.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="26.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4.32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-073" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH VN ALPINA-300 23-24" ValorUnitario="26.9900" Importe="53.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="53.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-076" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH 850 mm VN CYCLONE-150 23/VN CYCLONE-190 24/VN CYCLONE-200 22-23/VN CYCLONE-210 24" ValorUnitario="35.9900" Importe="71.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="71.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="11.52" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173815" NoIdentificacion="CLC-079" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE CLUTCH IT FT-200GTS 25" ValorUnitario="20.9900" Importe="41.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="41.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="CLF-006" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE FRENO DT-125 CLASICA 17 / DT-125 SPORT 17 / DT-150 CLASICA 17 / FORZA 125 08-12 /FT-125 CLASICA 12-16 / F" ValorUnitario="30.9900" Importe="185.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="185.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="29.75" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="CLF-040" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE FRENO DELANTERO 1100 mm AT-110 20-22/AT-110 ROJA 17-20/X-110 17-19/XT-110 20-21/XT-125 RT 20-21" ValorUnitario="28.9900" Importe="28.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="28.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLF-046" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE FRENO DELANTERO DT-125 DELIVERY 17 / DT-150 DELIVERY 17 / FORZA 125 05-07 / FT-125 DELIVERY14-16 / FT-125 PLATA 17" ValorUnitario="27.9900" Importe="55.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="55.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="CLF-048" Cantidad="14" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE FRENO DELANTERO YA RAY-ZR" ValorUnitario="61.9900" Importe="867.86" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="867.86" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="138.86" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="CLF-055" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE FRENO TRASERO VN ATOM-170 24/VN ATOM-150 20-24" ValorUnitario="39.9900" Importe="199.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="31.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="CLF-057" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE FRENO DELANTERO VN GLADIATOR-200 23-24/VN REPTILE-150 20-22/VN REPTILE TREK-200 21-24" ValorUnitario="35.9900" Importe="215.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="215.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="34.55" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CLU-021" Cantidad="24" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CLUTCH COMPLETO RT-200 09-16 / FT-180 13-17 / RT-180 11-13 / RT-200 GP 17-18  / RT-200 NEGRO  13-15" ValorUnitario="389.9900" Importe="9359.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9359.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1497.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CLU-059" Cantidad="4" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CLUTCH COMPLETO IT DM-300 24-25" ValorUnitario="413.9900" Importe="1655.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1655.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="264.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-008" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO WS-150 08-17 / WS-150 NF 13-14 / WS-175 12-16 / W-150" ValorUnitario="27.9900" Importe="111.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="111.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="17.91" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-013" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO TC-200/ TC-200 BLANCA/RC -200/TC-250/C-200 CARABELA/ BG-200 BENGALA 14" ValorUnitario="28.9900" Importe="57.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="57.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9.28" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-061" Cantidad="9" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO 125-Z 16-17" ValorUnitario="27.9900" Importe="251.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="251.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="40.31" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-069" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO D-125 16-18 / X-125 18 / CBX150" ValorUnitario="29.9900" Importe="179.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="179.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="28.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-072" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PAS-CABLE DE VELOCIMETRO DM-125 17-19" ValorUnitario="28.9900" Importe="28.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="28.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-078" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO 980 mm AT-125 17-19" ValorUnitario="26.9900" Importe="26.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="26.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4.32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-088" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO DT-125 CLASICA 17/DT-125 SPORT 17/DT-150 CLASICA 17/FORZA 125 08-12 / FT-125 CLASICA 12-16 / FT-125" ValorUnitario="24.9900" Importe="49.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="49.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="CLV-096" Cantidad="9" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABLE DE VELOCIMETRO VN GT-250 20-23/VN WORKMAN-250 20-24" ValorUnitario="24.9900" Importe="224.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="224.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="35.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="COP-A003" Cantidad="1" ClaveUnidad="TP" Unidad="Paquete de diez" Descripcion="BAQUELITA DE COPLE DE CARBURADOR ATV-150 05-11/CS-125 14-18/CS-125LED 13-16/D-125 16-21/DS-125 17-20/DS-150 14-21/DS-150NE 13-15" ValorUnitario="27.9900" Importe="27.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="27.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31261500" NoIdentificacion="CPB-003" Cantidad="16" ClaveUnidad="PR" Unidad="Par" Descripcion="CUBRE POLVO PARA BARRA  largo 200 mm diametro  31 mm FT-150 / FORZA-150 /  KURAZAI CLASSIC 125 7 DELIVERY MAX" ValorUnitario="46.9900" Importe="751.84" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="751.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="120.29" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-001" Cantidad="6" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO AT-110 ROJA 17-19 / X-110 17-19 / XT-110 RT II 17-19" ValorUnitario="258.9900" Importe="1553.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1553.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="248.63" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-006" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO IT FT-110 10-13/VN ZERO 7-125 22/VN INTREPID 125 23/VN SPECTRA 5i-125 20-21/VN SPECTRA 7i-125 23-25/VN INTREPID-125SX 25" ValorUnitario="248.9900" Importe="746.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="746.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="119.52" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-009" Cantidad="24" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO DT-200 SPORT 17-18 / FIERA 200 18 / FIERA 250 18 / FT-200 14-15 / FT-200 AMARILLA 15-17 / FT-250 15" ValorUnitario="351.9900" Importe="8447.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8447.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1351.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-011" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO 250-Z" ValorUnitario="377.9900" Importe="755.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="755.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="120.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-016" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO AT-110 SPORT/ AT-110 / KURAZAI GALAXY/ GT-110 ALESSIA 2005-2012" ValorUnitario="246.9900" Importe="2469.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2469.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="395.18" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-017" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO IT RC-200 19-27/IT SPITFIRE 19-22/IT FT-200 24-27" ValorUnitario="409.9900" Importe="4919.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4919.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="787.18" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-026" Cantidad="8" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO VN NITROX-200 21-22" ValorUnitario="460.9900" Importe="3687.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3687.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="590.07" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="DIR-034" Cantidad="50" ClaveUnidad="PR" Unidad="Par" Descripcion="DIRECCIONALES TRASERAS 12Vcc VITALIA-125 / VITALIA-150" ValorUnitario="179.9900" Importe="8999.50" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8999.50" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1439.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="DIR-208" Cantidad="31" ClaveUnidad="PR" Unidad="Par" Descripcion="DIRECCIONALES 12 IT D-125LT 21-22" ValorUnitario="93.9900" Importe="2913.69" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2913.69" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="466.19" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="DIR-215" Cantidad="7" ClaveUnidad="PR" Unidad="Par" Descripcion="DIRECCIONALES 12 VCC VN ATOM-150 19-24 / VN ATOM-170 22-24" ValorUnitario="241.9900" Importe="1693.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1693.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="271.03" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-008" Cantidad="13" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO TRASERO ATV-150SP 11-12 /ATV-150C/REV 19-23 /ATV-150SP C/REV 12-19 /ATV-180 16-23 /ATV-200 20-23" ValorUnitario="147.9900" Importe="1923.87" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1923.87" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="307.82" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-009" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO FT-180 13-17 / FT-200 AMARILLA 15-17 / RT-180 11-13 / DT-200 SPORT 17-20/ FT-200 14-15/FT-250 15-16" ValorUnitario="204.9900" Importe="4099.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4099.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="655.97" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-012" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO 250-Z/250-Z NEGRA/RT-250/250-SZ 23" ValorUnitario="279.9900" Importe="559.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="559.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="89.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-061" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO TRASERO VN STORM-300 24" ValorUnitario="117.9900" Importe="589.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="589.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="94.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="EJE-130" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="EJE DE PEDAL DE ARRANQUE LARGO GSC-175/GTS-175/GTS-175LEDS/GTS-175LED CAJA/MODENA-150/MODENA-175/TRN-175/TS-170" ValorUnitario="80.9900" Importe="161.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="161.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="25.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172604" NoIdentificacion="ESP-106" Cantidad="32" ClaveUnidad="PR" Unidad="Par" Descripcion="ESPEJOS NEGROS 150S-Z 16-18/150-Z 14-16/170-Z 16-18/250-Z 14-17/250-ZNE 17-19/125-Z 16-20/125-FL 19-20/DM-250 16-18" ValorUnitario="69.9900" Importe="2239.68" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2239.68" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="358.35" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172604" NoIdentificacion="ESP-117" Cantidad="7" ClaveUnidad="PR" Unidad="Par" Descripcion="ESPEJOS NEGROS BJ NS-200" ValorUnitario="83.9900" Importe="587.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="587.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="94.07" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172604" NoIdentificacion="ESP-C03NE" Cantidad="14" ClaveUnidad="PR" Unidad="Par" Descripcion="ESPEJOS REDONDOS CAFE RACER NEGRO " ValorUnitario="114.9900" Importe="1609.86" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1609.86" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="257.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="EST-022" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESTATOR (CORONA) 18 BOBINAS HO CARGO-150" ValorUnitario="298.9900" Importe="298.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="298.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="47.84" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="EST-027" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESTATOR (CORONA) 12 BOBINAS FZ-16" ValorUnitario="255.9900" Importe="3071.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3071.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="491.50" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="EST-029" Cantidad="9" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESTATOR DT-110 DELIVERY 16-18 / FT-115 16-18" ValorUnitario="177.9900" Importe="1601.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1601.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="256.31" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="EST-050" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESTATOR (CORONA) 8 BOBINAS VN NITROX-250 T3 22-24" ValorUnitario="234.9900" Importe="234.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="234.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="37.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161505" NoIdentificacion="FIA-026" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FILTRO DE AIRE ELEMENTO 150-Z 14-21/150-SZ 16-18/170-Z 16-18/200-Z 19-21/250-Z 14-21/250-ZNE 17-19/TC-200NE 18-20" ValorUnitario="36.9900" Importe="36.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="36.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="5.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161505" NoIdentificacion="FIA-074" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FILTRO DE AIRE ELEMENTO D-125 16-18 / X-125 18" ValorUnitario="41.9900" Importe="125.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="125.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="20.16" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161505" NoIdentificacion="FIA-093" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FILTRO DE AIRE ELEMENTO HE HUNK-150" ValorUnitario="41.9900" Importe="41.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="41.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="FIA-B002" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANGUERA DE AIRE DS-125 / DS-150 / IZUKA SL-125 / IZUKA-150 / XS-150" ValorUnitario="55.9900" Importe="671.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="671.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="107.50" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161513" NoIdentificacion="FIG-016" Cantidad="11" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FILTRO DE GASOLINA UNIVERSAL" ValorUnitario="93.9900" Importe="1033.89" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1033.89" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="165.42" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161504" NoIdentificacion="FIL-045" Cantidad="15" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FILTRO DE ACEITE (CEDAZO) BJ NS-200 / BJ RS-200" ValorUnitario="14.9900" Importe="224.85" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="224.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="35.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="GCA-011" Cantidad="4" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="GUIAS DE CADENA DE SINCRONIZACION Y DISTRIBUCION VN ROCKETMAN-250 19-22/VN ROCKETMAN-250SP 21-22/VN WORKMAN-250 25/VN ROCKETMAN-250CR 21-22/VN CROSSMAX-250 19-22/VN CROSSMAX-250 PRO 21-22/VN SCREAMER-250 22/VN FALKON-250 21-22/VN STORM 250 21-22/VN" ValorUnitario="78.9900" Importe="315.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="315.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="50.55" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="GOM-069" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="GOMAS POSAPIE AT-110 14-16/IT ARGENTA-110 05-13/IT DT-110DEL 16-23/IT FT-115 16-19" ValorUnitario="24.9900" Importe="74.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="74.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="12.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="GOM-085" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="GOMAS POSAPIE TRASERO 150-SZ 16-18/150-Z 14-16/150-Z 19-20/170-Z 16-18" ValorUnitario="24.9900" Importe="49.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="49.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="GOM-087" Cantidad="2" ClaveUnidad="PR" Unidad="Par" Descripcion="GOMAS POSAPIE AT-125 17-19 / AT-125 RT 20" ValorUnitario="29.9900" Importe="59.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="59.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="HSO-023" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="GUIA DE CADENA IT DM-150SP 19-21/IT DM-200 14-22/IT DM-200SP 19-21/IT DM-250 20-21/IT RISKY-200/VN CROSSMAX-150 23/VN CROSSMAX-170 24/VN CROSSMAX-200 20-24/VN CROSSMAX-220 24/VN CROSSMAX-250 20-24/VNCROSSMAX-250PRO" ValorUnitario="47.9900" Importe="335.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="335.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="53.75" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F15" Cantidad="17" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO KIIRUS PLATA YBR-125" ValorUnitario="373.9900" Importe="6357.83" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6357.83" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1017.25" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F20" Cantidad="9" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO NEGRO JUEGO: CILINDRO, PERNO, PISTON, ANILLOS, SEGURO, EMPAQUE RT-180 / FT-180" ValorUnitario="369.9900" Importe="3329.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3329.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="532.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR19" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO NEGRO 250-Z 14-17/250-Z NE 17-19/250-SZ 23" ValorUnitario="543.9900" Importe="6527.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6527.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1044.46" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR40" Cantidad="18" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO 125FL 19-20/125FL PARRILLA LARGA 19-20" ValorUnitario="418.9900" Importe="7541.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7541.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1206.69" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR58" Cantidad="6" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO IT 280-Z 24" ValorUnitario="749.9900" Importe="4499.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4499.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="719.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F02" Cantidad="7" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-126L 45T/14T YBR-125" ValorUnitario="208.9900" Importe="1462.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1462.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="234.07" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F10" Cantidad="30" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-118L SPROCKET 41T/14T 150-Z / 150-SZ" ValorUnitario="194.9900" Importe="5849.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5849.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="935.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F17" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-102L SPROCKET 34T/13T 250-Z" ValorUnitario="255.9900" Importe="767.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="767.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="122.88" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F21" Cantidad="100" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-124L SPROCKET 42T/15T FT-180 / DT-200 SPORT / FT-200 / FT-200 AMARILLA / FT-250 / FT-250TS / RT-180 11-13" ValorUnitario="194.9900" Importe="19499.00" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="19499.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3119.84" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F35" Cantidad="5" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-102L 42T/13T DM-150RO 18-21" ValorUnitario="309.9900" Importe="1549.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1549.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="247.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173802" NoIdentificacion="KSP-F43" Cantidad="1" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-110L SPROCKET 44T/14T VX-250 21/VX-250ADV 16-18/VX-250EFI 18-21" ValorUnitario="373.9900" Importe="373.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="373.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="59.84" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173802" NoIdentificacion="KSP-F44" Cantidad="40" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET CADENA REFORZADA 428H-136L SPROCKET 45T/14T V-200 18-21" ValorUnitario="254.9900" Importe="10199.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="10199.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1631.94" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-IR02" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET IRON BOX  CADENA REFORZADA 428H-126L SPROCKET 45T/14T YBR-125" ValorUnitario="242.9900" Importe="485.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="485.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="77.76" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-IR25" Cantidad="7" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET IRON BOX CADENA REFORZADA 428H-120L SPROCKET 48T/14T YA XTZ-125" ValorUnitario="260.9900" Importe="1826.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1826.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="292.31" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-IR57" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET  IRON BOX  CADENA REFORZADA 520H-104L SPROCKET 38T/13T IT DM-300 24-25" ValorUnitario="356.9900" Importe="1070.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1070.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="171.36" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172400" NoIdentificacion="LLV-007" Cantidad="42" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLAVE DE GASOLINA 125-Z 16-22/125-FL 19-22/DT-125CL 17-21/DT-125DEL 17-22 /DT-125SP 17-21/DT-150CL 17-22/SPITFIRE 19-2" ValorUnitario="40.9900" Importe="1721.58" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1721.58" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="275.45" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAG-001" Cantidad="8" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MAGNETO 8 PUNTAS) CS-125 14-17 / CS-125 LED 13-16 / D-125 16-17 / DS-125 17 / DS-150 14-17/ DS-150 NEGRO 13-15 / DSG-" ValorUnitario="155.9900" Importe="1247.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1247.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="199.67" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAG-008" Cantidad="24" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MAGNETO DM-200 14-17" ValorUnitario="299.9900" Importe="7199.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7199.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1151.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAG-016" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MAGNETO VN NITROX-250 T3 22-24" ValorUnitario="278.9900" Importe="836.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="836.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="133.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAJ-117" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANIJA IZQUIERDA CON BASE 250-SZ 15 / VORTX 200 18-19" ValorUnitario="64.9900" Importe="389.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="389.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="62.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAJ-132RO" Cantidad="3" ClaveUnidad="PR" Unidad="Par" Descripcion="MANIJAS ALUMINIO ROJO 150-Z / 170-Z" ValorUnitario="128.9900" Importe="386.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="386.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="61.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAJ-WO052D" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANIJA DER CON BASE FT-125 / KURAZAI CLASSIC 125 08 NEGRA" ValorUnitario="58.9900" Importe="589.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="589.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="94.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-006" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO IZQ  12 Vcc NEGRO WS-150 12-18 / WS-150 NF 13-14 / WS-175 12-14" ValorUnitario="92.9900" Importe="557.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="557.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="89.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-050" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO IZQ  12 Vcc AT-110RT CON LED" ValorUnitario="91.9900" Importe="367.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="367.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="58.87" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-060" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO IZQ  12 Vcc W-150 17-18 / WS-175 15-18 / XW-150 18" ValorUnitario="98.9900" Importe="1979.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1979.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="316.77" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-061" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO DER  12 Vcc W-150 17-18 / WS-175 15-18 / XW-150 18" ValorUnitario="98.9900" Importe="3959.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3959.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="633.54" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-100" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO DER  12 Vcc NEGRO VN CROSSMAX-150 23/VN CROSSMAX-170 24/VN CROSSMAX-200 20-24/VN CROSSMAX-220 24-25/VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 20-24/VN CROSSMAX-300PRO 24" ValorUnitario="71.9900" Importe="143.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="143.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="23.04" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-133" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO IZQ 12VCC VN ROCKETMAN-250 18-24/ VN ROCKETMAN-250SP 20-24/ VN ROCKETMAN-250CR 22-24/ VN SCREAMER-250 21-24" ValorUnitario="105.9900" Importe="105.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="105.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAN-158" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANDO IZQ 12 Vcc IT 280-Z 24" ValorUnitario="116.9900" Importe="116.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="116.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="18.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAR-008" Cantidad="18" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MARCHA 12 Vcc 250-SZ 23/250-Z 14-17/250-Z NG 17-19/RT-200 15-16/RT-200 GP 17-19/RT-200 20-23/SPTFIRE-250 23/ TC-200 14-16/ TC-200 BLANCA 16-18/ TC-200 NEGRA 18-20" ValorUnitario="278.9900" Importe="5021.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5021.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="803.49" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAR-019" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MARCHA 12 Vcc FT-250TS 16-21/FT-250 15-16/DT-250SP 20/250-SZ 15" ValorUnitario="480.9900" Importe="2404.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2404.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="384.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAR-032" Cantidad="25" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MARCHA 12 Vcc BJ BOXER 150 ( 5 VELOCIDADES)" ValorUnitario="239.9900" Importe="5999.75" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5999.75" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="959.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAR-038" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MARCHA 12 Vcc BJ RE-4S 200CC" ValorUnitario="476.9900" Importe="953.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="953.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="152.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAS-017" Cantidad="8" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MAZA RIN DELANTERO DT-125 DELIVERY 17 -18 /  DT-150 DELIVERY 17-18 / FT-125 / FORZA-125 05-07" ValorUnitario="287.9900" Importe="2303.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2303.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="368.63" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAS-030" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MASA TRASERA IT DM-250X 22-24/ IT DM-250 22-24" ValorUnitario="585.9900" Importe="23439.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="23439.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3750.34" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAS-031NE" Cantidad="15" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MASA TRASERA NEGRO VC XEVERUS-250" ValorUnitario="636.9900" Importe="9554.85" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9554.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1528.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="46181706" NoIdentificacion="MCA-WS202-05" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MICA PARA CASCO DE MOTOCICLISTA WS-202 REVO AZUL TRANSPARENTE COMPATIBLE P-30" ValorUnitario="127.9900" Importe="511.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="511.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="81.91" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="46181706" NoIdentificacion="MCA-WS202-09" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MICA PARA CASCO DE MOTOCICLISTA WS-202 REVO ROSA TRANSPARENTE COMPATIBLE P-30" ValorUnitario="127.9900" Importe="255.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="255.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="40.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MNJ-003" Cantidad="13" ClaveUnidad="PR" Unidad="Par" Descripcion="MANDO DER / IZQ 12 VCC VN CYCLONE-150 21-22 / VN CYCLONE-200 21-22 / VN FALKON-250 22" ValorUnitario="195.9900" Importe="2547.87" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2547.87" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="407.66" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="PAC-047" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PARADOR LATERAL DM-200 14-18" ValorUnitario="76.9900" Importe="384.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="384.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="61.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="PAC-069" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PARADOR LATERAL HO NAVI-110 24" ValorUnitario="77.9900" Importe="233.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="233.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="37.44" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="PAL-017" Cantidad="5" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="LEVA DE FRENO DE TAMBOR (PALANCA) DM-200 14-17" ValorUnitario="27.9900" Importe="139.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="139.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="22.39" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="PAS-022" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="PASTAS DE CLUTCH VX-250 ADV 16-18/VX-250 EFI 18-20" ValorUnitario="317.9900" Importe="3179.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3179.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="508.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="PED-A045" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE CAMBIOS CROMADO IT VORT-X300 17-27/IT VORT-X300R 21-25/IT VORT-X300R RACING 25-26" ValorUnitario="200.9900" Importe="200.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.16" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="PED-A055" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE CAMBIOS VN WORKMAN-250 20-24" ValorUnitario="94.9900" Importe="284.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="284.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="45.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="PED-B001" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE FRENO CROMADO DT-150SP 17/FORZA-150 06-13/FT-150 14-16/FT-150AZ 13-16/FT-150G 16-17/FT-150GT" ValorUnitario="77.9900" Importe="779.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="779.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="124.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="PED-B009" Cantidad="9" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE FRENO NEGRO IT DM-150 26/IT DM-150GPS 26/IT DM-200SP 19-21/IT DM-250 20-23/IT DM-150SP 19-21/IT DM-200 14-26/IT DM-200GPS 25-26" ValorUnitario="111.9900" Importe="1007.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1007.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="161.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="PED-B012" Cantidad="19" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE FRENO CROMADO DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / DT-150 CLASICA 17 / DT-150 DELIVERY 17 /" ValorUnitario="83.9900" Importe="1595.81" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1595.81" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="255.33" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="PED-B024" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PEDAL DE FRENO CROMADO IT RC-150 16-24/IT RC-200 19-25/IT RC-250 24-25" ValorUnitario="176.9900" Importe="353.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="353.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="56.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="PIC-IR09" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="PISTON COMPLETO STD ATV-150 05 / DS-150 06-18 / DS-150G 18 / DS-150 VERDE 18 / DS-150 NEGRO 13-15 / GS- 150 10-13 / GS-" ValorUnitario="109.9900" Importe="219.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="219.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="35.20" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="PIÑ-003" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ENGRANE PIÑON 15T DIENTES IT 125-Z/IT DM-125/IT DM-200 14-17/VN WORKMAN-250 25/IT DT-125 CL 17 /IT DT-125 DL 17 /IT DT-125 SP 17/IT DT-150 SP" ValorUnitario="28.9900" Importe="86.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="86.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="13.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="PLA-010" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="PLATOS OPRESORES NS-200" ValorUnitario="248.9900" Importe="497.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="497.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="79.68" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-012A" Cantidad="1" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES UNIVERSAL ALUMINIO AZUL" ValorUnitario="87.9900" Importe="87.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="87.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="14.08" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-015" Cantidad="10" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIE TRASERO ALUMINIO TC-200/TC-200 BLANCA/ RC -200/TC-250/ C-200 CARABELA/BG-200 BENGALA 14" ValorUnitario="96.9900" Importe="969.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="969.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="155.18" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-021" Cantidad="5" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIE DELANTERO IZQ Y DER DM-150 10-17" ValorUnitario="116.9900" Importe="584.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="584.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="93.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-026" Cantidad="18" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIE DELANTERO IT DM-200 14-17/VN CROSSMAX-250PRO 21-22/VN CROSSMAX 250 20-22/VN CROSSMAX 200 19-22/VN CROSSMAX 150 20-22" ValorUnitario="82.9900" Importe="1493.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1493.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="239.01" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-027" Cantidad="60" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIE TRASERO IT DM-200 14-17/ VN CROSSMAX-250PRO 21-22/ VN CROSSMAX 250 20-22/ VN CROSSMAX 200 19-22/ VN CROSSMAX 150 20-22" ValorUnitario="147.9900" Importe="8879.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8879.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1420.70" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-060" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE TRASERO IZQUIERDO COMPLETO BJ NS-200" ValorUnitario="284.9900" Importe="854.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="854.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="136.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-062" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE TRASERO IZQUIERDO CON BASE DM-150 10-19" ValorUnitario="91.9900" Importe="459.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="459.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="73.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-064" Cantidad="50" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BASE POSAPIES DERECHA DT-200 SPORT 17-19/ FT-180 13-18 / FT-200 14-151 / FT-200 AMARILLA 15-17 / FT-250 15-16 / FT-250 TS" ValorUnitario="336.9900" Importe="16849.50" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="16849.50" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2695.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-065" Cantidad="195" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BASE POSAPIES IZQUIERDA DT-200 SPORT 17-19 / FT-180 13-18 / FT-200 14-15 / FT-200 AMARILLA 15-17 / FT-250 15-16/ FT-250TS 16" ValorUnitario="337.9900" Importe="65908.05" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="65908.05" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="10545.29" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-086" Cantidad="12" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES TRASEROS DT-150 SPT II 17-10 / FT-180 TS 19-20" ValorUnitario="71.9900" Importe="863.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="863.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="138.22" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-087" Cantidad="125" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES TRASEROS 150-SZ 16-18 / 150-Z 14-16 / 150-Z 19-23 / 170-Z 16-18" ValorUnitario="126.9900" Importe="15873.75" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="15873.75" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2539.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-089" Cantidad="10" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES TRASEROS FIERA-150 18-19 / FT-200 TS 19-23 / 200-Z 19-23" ValorUnitario="144.9900" Importe="1449.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1449.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="231.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-092" Cantidad="4" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES DELANTEROS PLATA ALUMINIO 250-Z 14-17 / 250-Z NE 17-19" ValorUnitario="222.9900" Importe="891.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="891.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="142.71" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31162500" NoIdentificacion="POP-104" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE TRASERO COMPLETO IZQ AT-125 17-20/AT-125RT 20-21" ValorUnitario="149.9900" Importe="1499.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1499.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="239.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31162500" NoIdentificacion="POP-106" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE TRASERO COMPLETO IZQ DM-150RO 18-21" ValorUnitario="89.9900" Importe="629.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="629.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="100.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-122" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="POSAPIES TRASEROS CON BASE DT-150SP 20-22/DT-150SP II 17-20/FT-180TS 19-22" ValorUnitario="226.9900" Importe="453.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="453.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="72.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-124" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE DERECHO TRASERO VN NITROX-250 18-22" ValorUnitario="177.9900" Importe="3559.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3559.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="569.57" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-131" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE DELANTERO IZQ CON BASE VN ALPINA-300 23-24" ValorUnitario="412.9900" Importe="2890.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2890.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="462.55" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="PSK-004" Cantidad="4" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="PORTA SPROCKET TC-200" ValorUnitario="164.9900" Importe="659.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="659.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="105.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="RCA-003" Cantidad="4" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="REPUESTOS DE CARBURADOR DS-150 NEGRO 13-15 / DS-150 16-17 / GS-150 LED CAJA 14-15 / GS-150LED ELITE 15-17 / GSC-150 15-16 /" ValorUnitario="82.9900" Importe="331.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="331.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="53.11" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="RCA-009" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="REPUESTOS DE CARBURADOR DM-200 14-17" ValorUnitario="63.9900" Importe="191.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="191.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="30.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="REG-004" Cantidad="18" ClaveUnidad="H87" Unidad="Pieza" Descripcion="REGULADOR 4 PUNTAS) 12 Vcc DT-200SP 17-21/FT-180 13-20/FT-180TS 19-22/DT-150SP 20-22/FT-250TS 16-22/AT-110RT LED 14-22/FT-200 1" ValorUnitario="80.9900" Importe="1457.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1457.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="233.25" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="REG-017" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="REGULADOR (6 PUNTAS) 12 Vcc ATV-250 C/ REVERSA" ValorUnitario="115.9900" Importe="811.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="811.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="129.91" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="REG-027" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="REGULADOR (5 PUNTAS) 12 Vcc AC VORTX-200 18-20" ValorUnitario="57.9900" Importe="115.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="115.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="18.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="REG-033" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="REGULADOR 12 VCC VN ALPINA-300 22-24" ValorUnitario="168.9900" Importe="506.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="506.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="81.12" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="REG-036" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="REGULADOR 12 Vcc VN CROSSMAX-250 20-24 / VN CROSSMAX-250 PRO 22-24" ValorUnitario="69.9900" Importe="279.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="279.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="44.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="RES-008" Cantidad="5" ClaveUnidad="TP" Unidad="Paquete de diez" Descripcion="RESORTE RETORNO PEDAL DE FRENO AT-110 RT / AT-110 / RT-110 LED / AT-110 RT LED" ValorUnitario="29.9900" Importe="149.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="149.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="23.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="RES-015" Cantidad="2" ClaveUnidad="TP" Unidad="Paquete de diez" Descripcion="RESORTE DE PARADOR LATERAL NEGRA 125-Z 16-17 / DT-125 CLASICA 17 / DT-125 DELIVERY 17 /DT-125 SPORT 17 / DT-150 CLASICA 17 / DT-150" ValorUnitario="29.9900" Importe="59.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="59.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="9.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="RES-018" Cantidad="1" ClaveUnidad="TP" Unidad="Paquete de diez" Descripcion="RESORTE DE PARADOR CENTRAL 125-Z/ DT-125 CLASICA/ DT-125 DELIVERY/ DT-125SPORT/ DT-150 CLASICA/ DT-150 DELIVERY/ FORZA 125/ FT" ValorUnitario="55.9900" Importe="55.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="55.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="8.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SEL-002" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SELENOIDE RELEVADOR DE ARRANQUE 12 Vcc DT-200 SPORT / FT-180 / FT-200 AMARILLA / FT-250 / FT-250 TS / RT-180" ValorUnitario="59.9900" Importe="1199.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1199.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="191.97" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="SLI-041" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SLIDER PUNTA NYLON SOPORTE DE INSTALACION BJ NS200" ValorUnitario="354.9900" Importe="709.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="709.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="113.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-002" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SPROCKET COMPLETO 38 DIENTES PASO 428 DT-125CL 17-19/DT-125SP 17-20 / FORZA-125 08-12 / FT-125CL 12-16  / FT-125SP 12-15 / FT-125TS 16-20" ValorUnitario="191.9900" Importe="575.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="575.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="92.16" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-009" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SPROCKET COMPLETO 41 DIENTES 150-SZ 16-18 / 150-Z 14-20 / 200-Z 19-20" ValorUnitario="231.9900" Importe="927.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="927.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="148.47" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-026" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SPROCKET COMPLETO 36 DIENTES PASO 428 IT AR-110 15 /IT AT-110 NE 16-18 /IT AX-110 16 /IT XT-110 11-15 /IT XT-110 GRA 13-17/ IT AT-110LT 21-22/IT AT-110ROJA 17-20/" ValorUnitario="222.9900" Importe="891.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="891.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="142.71" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-A010" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SPROCKET TRASERO 41T CON BIRLOS 150-SZ 16-18 / 150-Z 14-20 / 200-Z 19-20" ValorUnitario="101.9900" Importe="203.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="203.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.64" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-A015" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SPROCKET TRASERO 32T CON BIRLOS FT-200 14 / TC-200 14-16 / TC-200 BLANCA 16-18 / TC-200 NEGRA 18-20 / TC-250 16-20" ValorUnitario="98.9900" Importe="197.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="197.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="31.68" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-A023" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SPROCKET PLATA TRASERO 42T-428 SIN BIRLOS VN ROCKETMAN-250 18-22/VN ROCKETMAN-250SP 20-22/VN ROCKETMAN-250CR 22/VN SCREAMER-250 21/VN STORM-250 21-22/VN THUNDERSTAR-250 20-22/VN TORNADO-250 21-22" ValorUnitario="100.9900" Importe="100.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="100.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="16.16" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-025" Cantidad="9" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO CON JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12 Vcc AT-110 /RT 12-14 / AT-110RTLED 14-16 / AT-110RT CON LED 16-17" ValorUnitario="213.9900" Importe="1925.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1925.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="308.15" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-037" Cantidad="5" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO CON JUEGO DE LLAVES TAPON DE GASOLINA 12 Vcc DM-200 16-17" ValorUnitario="205.9900" Importe="1029.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1029.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="164.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-039" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR CON JUEGO DE LLAVES TAPON DE GASOLINA 12 Vcc 250-Z 14-17 /250-Z NEGRA" ValorUnitario="359.9900" Importe="1079.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1079.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="172.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-063" Cantidad="6" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES Y TAPON TANQUE DE GAS 12 Vcc CARGO-150" ValorUnitario="301.9900" Importe="1811.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1811.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="289.91" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="SWI-078" Cantidad="25" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12 Vcc FT-125TS 16-20  / FT-150TS 16-18" ValorUnitario="169.9900" Importe="4249.75" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4249.75" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="679.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="SWI-084" Cantidad="30" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES Y SEGURO DE ASIENTO 12 Vcc WS-150 SPORT 17-20 / WS-175 SPORT 18-20" ValorUnitario="306.9900" Importe="9209.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9209.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1473.55" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="SWI-085" Cantidad="30" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES TAPON DE GASOLINA  12 Vcc 200-Z 19" ValorUnitario="314.9900" Importe="9449.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9449.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1511.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-101" Cantidad="20" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C /JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12 VCC DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / DT-150 CLASICA 17 / DT-150 16" ValorUnitario="168.9900" Importe="3379.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3379.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="540.77" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-110" Cantidad="45" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C /JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12 Vcc AT-125RT 20-21" ValorUnitario="190.9900" Importe="8594.55" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8594.55" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1375.13" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-111" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C /JUEGO DE LLAVES Y SEGURO DE ASIENTO 12 Vcc D-150 19-21/X-150D 19-20" ValorUnitario="233.9900" Importe="2339.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2339.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="374.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-120" Cantidad="8" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12 Vcc IT DM-250X 22-23" ValorUnitario="355.9900" Importe="2847.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2847.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="455.67" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-A006" Cantidad="8" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc FT-180 / FT-200 / FT-200 AMARILLO / FT250" ValorUnitario="169.9900" Importe="1359.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1359.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="217.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-A028" Cantidad="6" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc 125-Z 16-22/125-FL 19-22/Z125 FL PARRILLA LARGA 19-20" ValorUnitario="193.9900" Importe="1163.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1163.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="186.23" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-A029" Cantidad="24" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc 250-Z 14-17/250-Z NE 17/250-SZ 19-23" ValorUnitario="65.9900" Importe="1583.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1583.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="253.40" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-A035" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc IT D-125LT 21-23" ValorUnitario="120.9900" Importe="1209.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1209.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="193.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="TAB-023" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TABLERO 12 Vcc HO CGL-125 TOOL" ValorUnitario="299.9900" Importe="2999.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2999.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="479.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="TAB-041" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TABLERO 12 Vcc FT-125TS 16-20" ValorUnitario="406.9900" Importe="813.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="813.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="130.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="TAB-082" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TABLERO 12 VCC VN ROCKETMAN-250SP 22-24/VN ROCKETMAN CARRERA-250 22-24" ValorUnitario="873.9900" Importe="1747.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1747.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="279.68" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172408" NoIdentificacion="TAP-051" Cantidad="21" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="TAPON TANQUE DE GASOLINA VN NITROX-200 20-23/VN NITROX-250 20-23/VN NITROX-250T3 24/VN NITROX-300T3 24" ValorUnitario="147.9900" Importe="3107.79" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3107.79" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="497.25" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="TAZ-003" Cantidad="1" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="TAZAS DE DIRECCION W-150 17 / WS-150 08-17 / WS-150 NF 13-14 / WS-175 12-16" ValorUnitario="40.9900" Importe="40.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="40.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="TAZ-020" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="TAZAS DE DIRECCION D-125 16-23 / X-125 18-23" ValorUnitario="42.9900" Importe="85.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="85.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="13.76" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="TAZ-025" Cantidad="1" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="TAZAS DE DIRECCION VORTX-200 18-20" ValorUnitario="38.9900" Importe="38.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="38.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40141738" NoIdentificacion="TPN-008" Cantidad="1" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="TAPON DE DRENADO VN ALPINA-300 23-24/VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 20-24/VN FALKON-250 21-23/VN ROCKETMAN-250 20-23/VN ROCKETMAN-300 24/VN ROCKETMAN-250CA 22/VN ROCKETMAN-250SP 20-22/VN SCREAMER-25021-23/" ValorUnitario="13.9900" Importe="13.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="13.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="98912.33">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="618200.55" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="98912.33" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="f4339b92-00db-4536-9d1c-fb8f56ee6365" FechaTimbrado="2026-10-22T14:07:21" RfcProvCertif="ICA050422AA6" SelloCFD="s6w5x80fEqel8XqVNFDgx+k0mBmUVVLpPesbY9TJpV9RWPtdmUosWC1FPCT/QF3YF8JztXGZwbW7hsLVmV0ezeCx3K2x4HS5QAu252w/PnFDiVGjNv9hVOvHNvlSbJK1ILL8kKUC2Ry+wnXmExjG0t2R0kprIdvc7xsYbWH24XAgl26M5dN9QQSxOfNZAASvjJ5Wu/RiRxSfqfgZVT0Z0EAbUxJESYL+ELQfmhT49cK9eTA2i0afIdrFSZeuepa+BKQzH0kzMscGPTpTIppWl9JCLn4JEQtDnDAzyZs6mFNDipf6fXwdpjSBQvFO1UkmVtqH+WPZ3bg5zAzIa+6FDA==" NoCertificadoSAT="00001000000718099104" SelloSAT="ogLePkTl+v6d/HohChKVir0DCTm3+mw3UXFn4yJhW2SLkALb4szdg3YK9Qt0dlOJP5r7KT/fp+k69TDTv7K2F3RdfD6EfI9bKuppHyZ29LJcPQEJMgzTAU4bGWHDnSq0Lj7usFzcUfe+J1KdfnjjN0rVLDPMq8GfP9Oln8WZyyAsZl+cnsMnUJwhw0h9eYg8gM1A19FIZb8upMfpudxHYxyxovs8l94bCSMHr7ocdOhD2+PdZ1J/ZhsJfrlHuqoJn6NIKTSEImaPcjWO7pokwIXp/IicDMtk57g6vKqVIEdlG86H9xwNBPzVylJaQ896BgdrCuwNEnS92WGZ6meySQ==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

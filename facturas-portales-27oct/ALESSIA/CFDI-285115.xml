@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="285115" Fecha="2026-10-10T13:16:36" Sello="nN8iEDAGqHfXmg7thVhcKyh6qWDXjP5vGnKTFJth4YGlDsccJNXLwBmsO6VBa0GbcYKalH+207bg4bQwWJEFrOGjc/4zCRlJINUk4fS2jYfz4eYvQIu7eI1Z3rPQF2y6NP0px92PdfIxg7G/LQK0+sTfCAwaH4EgiUXfWvCqvCtA+PhL2qDnc2P9lHtwVA+bIRXHoS/QdMku70z/XKV0k5MCLqemZ4J+lYTI6b1gw7UNLRj2tkmfyKpDkGTAn+Z4L5+j4Z+dRCF++G0ewF/lTSqjqIgyRINJXOA4AnL9jGNs1mNLGyGxucLGmzckndIVM3/jQA+vQMutNIf3bAUrEg==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="MIIF/TCCA+WgAwIBAgIUMDAwMDEwMDAwMDA3MTYwNzI0OTkwDQYJKoZIhvcNAQELBQAwggGVMTUwMwYDVQQDDCxBQyBERUwgU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEuMCwGA1UECgwlU0VSVklDSU8gREUgQURNSU5JU1RSQUNJT04gVFJJQlVUQVJJQTEaMBgGA1UECwwRU0FULUlFUyBBdXRob3JpdHkxMjAwBgkqhkiG9w0BCQEWI3NlcnZpY2lvc2FsY29udHJpYnV5ZW50ZUBzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMQ0wCwYDVQQIDARDRE1YMRMwEQYDVQQHDApDVUFVSFRFTU9DMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxXDBaBgkqhkiG9w0BCQITTXJlc3BvbnNhYmxlOiBBRE1JTklTVFJBQ0lPTiBDRU5UUkFMIERFIFNFUlZJQ0lPUyBUUklCVVRBUklPUyBBTCBDT05UUklCVVlFTlRFMB4XDTI1MDUyOTE2NTgwOVoXDTI5MDUyOTE2NTgwOVowgboxIDAeBgNVBAMTF0lNUE9SVEFET1IgR1JMIFNBIERFIENWMSAwHgYDVQQpExdJTVBPUlRBRE9SIEdSTCBTQSBERSBDVjEgMB4GA1UEChMXSU1QT1JUQURPUiBHUkwgU0EgREUgQ1YxJTAjBgNVBC0THElHUjA2MTIxMzlVNSAvIEFJQkQ1MjEwMDExTUExHjAcBgNVBAUTFSAvIEFJQkQ1MjEwMDFNREZSUkwwNDELMAkGA1UECxMCQUEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDTlIx1vDKSFzq4NSvlyKk/qxiyYm/5zMPw6NbYKeR7NIWPrZMWAlBqivBaAyeepabDc1y2UZ2A4u72Je1bLk/H2/iUPwGdJmW0ZohdJ2aiHx3qJpeB/cmCBUiODh/gcwJtU6MSi/863Wp8Wex5dDovB4siBZ+NyDV6d3HjaO3ujMffv5lWPxSRSA+DMiHg4LdlUXS39MenpUcqwfp+NVSd4VVPE6c5mz4wFWRPuFx6M+y1FaS16Z1bKfSImdpa85ax3wVjCZzCpsTuMQuuUYMAgKPvcC97IFV3gEMvMUlaYNyV5ILZx6lDNqEwEguCTLwpUz2bUziB72nGonxjYnUNAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQAtYFlUjxg1LMKiqs66WFLHsaXTFwirmjjetlZEJOzCryr02N0p1yxrWER4z2nXa65mr3/hRrL8TZoCkCSs0rNmsfaDJNOefckS3lxqhPtNSjiXE8CjSLgnwHaaGa5EYquvDwlHoBg6TZ4D0WZpKvc3D5beioX6eyR3lQHqaKBJ0eoYNQmduE4NdDYgWBQ3VHbGU/yVZd5upVRaZrvh/M/w0XMiSMUUSgr45Qbv5sD6Vra1qGdSHSRCKP1nPyo2M1InCtpCy2Cx1eeBEdTSS+kTWBG+KJ1wpdQLLNQa1ejCFA8ZjzrspOMvnalcSIbduirxS1R93UvMDko0/xfIucWn8+S5qZVWsgSCMBhJesi25nEwp9T2rZnJyr/GKvKrfXsAmabJR3PUEgTaxQyQ+fRnhUJK5fJ8jgSK0agLOBoUrVBBTww3cbF9qfwxJudzsukoUlMW5k33nx4ylP7tSYfSR+g/jqr+EMsIKsZDSuj0nfuGiidzVIyw1u0h+QbZUFwUZxMNdQNbZdQgwgcoJeleertIfMerHayj+6ZfYOqVmkB/lo70Ja+8Yg12TkhhdEZj2+Hy34QgXARzMLAV7Spoew3AuCeTgR9ZT4TP1NCcd7TB2aIekYVEM0+qj9rpFEzBKetpi5P/CT4j/GOX+QC3J1HN5vCqskjp1PNUJ36oUA==" CondicionesDePago="30 dias" SubTotal="745563.50" Moneda="MXN" TipoCambio="1" Total="864853.55" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-006" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR ROJO LARGO EX -200 05-08 / RT-200 09-13 / RT-200NEGRO 13-15 / 24.5cm CON BUJE" ValorUnitario="385.9900" Importe="1929.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1929.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="308.79" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002473" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-061" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR AMARILLO BUJE / BUJE 330 mm FT-200 TS 19-20" ValorUnitario="186.9900" Importe="1869.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1869.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="299.18" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001692" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR48" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO IT ATV-200 20-23" ValorUnitario="550.9900" Importe="5509.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5509.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="881.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002273" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-039" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO COMPLETA NEGRO DM-150 ROJA 18-20" ValorUnitario="489.9900" Importe="4899.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4899.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="783.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000492" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F36" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-108L 41T/13T VORTX-200 18-20" ValorUnitario="317.9900" Importe="3179.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3179.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="508.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000877" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-004" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR NEGRO DIABOLO-150 11-13 / GS-150 10-13 / GS-150 CON LEDS 13-15 /GS-150 LED CAJA 14-15 / GS-150 LED ELITE" ValorUnitario="174.9900" Importe="2099.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2099.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="335.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001720" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-067" Cantidad="15" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRAS BLANCO BUJE / BUJE 321.5 mm 250-Z 19-21" ValorUnitario="554.9900" Importe="8324.85" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8324.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1331.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002471" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR39" Cantidad="8" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO V-200 18-20" ValorUnitario="720.9900" Importe="5767.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5767.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="922.87" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000474" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-063" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO TRASERA COMPLETA IT VORT-X 250 22-24" ValorUnitario="599.9900" Importe="5999.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5999.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="959.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000344" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-R02" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO MEJORADO 57MM DE DIAMETRO YA YBR-125" ValorUnitario="436.9900" Importe="5243.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5243.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="839.02" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3685  4002653" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="TAB-087" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TABLERO 12 Vcc BJ PULSAR-160 22" ValorUnitario="995.9900" Importe="9959.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9959.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1593.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001692" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAS-031NE" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MASA TRASERA NEGRO VC XEVERUS-250" ValorUnitario="636.9900" Importe="7643.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7643.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1223.02" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3489  4004099" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR13" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO PLATA-(KDC) JUEGO: CILINDRO, PERNO, PISTON, ANILLOS, SEGURO, EMPAQUE CARGO-125 PLATA" ValorUnitario="416.9900" Importe="5003.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5003.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="800.62" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000349" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173802" NoIdentificacion="KSP-F48" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-124L 42T/15T VN NITROX-250T2 20-22/ VN NITROX-200 20-22/ VN V-RACER 250 20-22" ValorUnitario="198.9900" Importe="1989.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1989.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="318.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001684" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="POB-018" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PORTA BALATA COMPLETO TRASERO NEGRO 125-Z / 150-Z / 150-SZ" ValorUnitario="251.9900" Importe="5039.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5039.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="806.37" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002392" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="EST-053" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ESTATOR (CORONA) 8 BOBINAS VN NITROX-300 T3 23-24" ValorUnitario="210.9900" Importe="4219.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4219.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="675.17" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002394" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-102" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO NEGRO 325 MM IT FT-250GTS GPS 24-25" ValorUnitario="499.9900" Importe="9999.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9999.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1599.97" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001265" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-045" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR AMARILLO BUJE / BUJE 295 mm DM-150 17-19" ValorUnitario="599.9900" Importe="5999.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5999.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="959.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002473" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-007" Cantidad="40" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES TRASEROS DT-200 SPORT 17 / FT-180 13-17 / FT-200 14-15 / FT-200 AMARILLA 15 / FT-250 15-16 / FT-250 TS 16-17" ValorUnitario="120.9900" Importe="4839.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4839.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="774.34" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002272" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26111700" NoIdentificacion="BAT-R006" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BATERIA YTX12-BS GEL 12VCC / 10AH LAR: 150MM / ALT: 120MM / ANC: 87MM SK V-STROM-650 / BM F-750" ValorUnitario="568.9900" Importe="3413.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3413.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="546.23" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3489  4004017" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAB-024" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABEZA DE CILINDRO COMPLETA NEGRO IT 250-Z 14-17/IT 250-Z NE 17-19/IT 250-SZ 23-24/IT 250-Z GPS 26/IT 250-Z 23-26/IT RT-250SP 23-24/IT 250-Z 19-20/IT DM-250 16-18/IT RT-250 16-20/IT RT-250 20" ValorUnitario="952.9900" Importe="11435.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="11435.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1829.74" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000879" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR45" Cantidad="24" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO -(KDC) JUEGO: CILINDRO/PERNO/PISTON/ANILLOS/SEGURO/EMPAQUE VN NITROX-200 21-22" ValorUnitario="440.9900" Importe="10583.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="10583.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1693.40" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000058" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-073" Cantidad="15" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR NEGRO BUJE / BUJE 350mm VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 20-24/VN CROSSMAX-300PRO 24/VN CROSSMAX-150 23/CROSSMAX-170 24/CROSSMAX-200 20-24/CROSSMAX-220 24-25" ValorUnitario="485.9900" Importe="7289.85" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7289.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1166.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001187" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-059" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO TRASERA COMPLETA VN NITROX-250 T3 23-24/ VN NITROX-300 T3 23-24" ValorUnitario="478.9900" Importe="4789.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4789.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="766.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001581" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-079" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR ROJO 350mm BUJE/HORQUILLA IT VORT-X300 17-24/IT VORT-X300R 21-24" ValorUnitario="463.9900" Importe="5567.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5567.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="890.86" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000347" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-IR52" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET IRON BOX  CADENA REFORZADA 520H-106L SPROCKET 42T/13T IT 250-Z 19-26/IT RT-250 16-20/IT RT-250SP 20-24/IT DM-250 16-18" ValorUnitario="485.9900" Importe="4859.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4859.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="777.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001840" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-066" Cantidad="30" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA MICA ROJA 12 VCC IT VORTX-300 17-24/ IT VORTX-300R 21-24" ValorUnitario="324.9900" Importe="9749.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9749.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1559.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000398" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F42" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-108L SPROCKET 40T/14T VORTEX-300 17-21/VORTEX-300R 21" ValorUnitario="348.9900" Importe="3489.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3489.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="558.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000877" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-024" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO 125FL 19-20 / 125FL PARRILLA LARGA 19-20" ValorUnitario="415.9900" Importe="4991.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4991.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="798.70" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000725" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAS-029" Cantidad="8" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MASA DELANTERA IT DM-250X 22-24" ValorUnitario="282.9900" Importe="2263.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2263.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="362.23" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000467" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-006F" Cantidad="45" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA KIIRUS 520 X 116 250-SZ 15/250-Z 14-17/250-Z NE 17/DM-150 10-17/DM-250 16/RT-250 16-17/TC-200 14-16/NS-200/CBX-250 TWISTER/HONDA CR-125 10-15" ValorUnitario="124.9900" Importe="5624.55" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5624.55" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="899.93" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002285" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="TAB-035" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TABLERO NEGRO 12 VCC WS-150SP 17-20 / WS-175SP 18-20" ValorUnitario="304.9900" Importe="3049.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3049.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="487.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002105" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="AMO-059" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO NEGRO BUJE/BUJE 364 mm ATV-250 C/REVERSA 14-18" ValorUnitario="473.9900" Importe="2369.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2369.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="379.19" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002282" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-017" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO IT RC-200 19-27/IT SPITFIRE 19-22/IT FT-200 24-27" ValorUnitario="409.9900" Importe="4919.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4919.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="787.18" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001261" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-115" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO ROJO 255 mm VN FALKON-250 21-23/VN FALKON-200 21-23/VN FALKON-220 24" ValorUnitario="424.9900" Importe="2124.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2124.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="339.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000960" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-057" Cantidad="24" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA 12 VCC IT DT-150SP 20-24/IT DT-150SP II 17-20/IT FT-150GTS 23-25/IT FT-180TS 19-23" ValorUnitario="228.9900" Importe="5495.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5495.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="879.32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002393" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173802" NoIdentificacion="KSP-F47" Cantidad="60" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-120L 42T/16T VN ROCKETMAN-250 18-22/ VN ROCKETMAN-250SP 20-22/ VN ROCKETMAN-250CR 22/ VN SCREAMER-250 21/ VN STORM-250 21-22/ VN THUNDERSTAR-250 20-22/ VN TORNADO-250 21-22" ValorUnitario="188.9900" Importe="11339.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="11339.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1814.30" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002274" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31162500" NoIdentificacion="POP-110" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="POSAPIE DELANTERO IZQ CON BASE VORTEX-300 17-21 / VORTEX-300R 21-22" ValorUnitario="395.9900" Importe="7919.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7919.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1267.17" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001710" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="SWI-066" Cantidad="50" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SWITCH INTERRUPTOR COMPLETO  C/ JUEGO DE LLAVES Y SEGURO DE ASIENTO 12 Vcc D-125 16-18" ValorUnitario="131.9900" Importe="6599.50" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6599.50" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1055.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002268" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-006HG" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 520H x 116 GOLD REFORZADA 250-SZ 15/250-Z 14-17/250-Z NE 17/DM-150 10-17/DM-250 16/RT-250 16-17/TC-200 14-16/NS-200/CBX-250 TWISTER/HONDA CR-125 10-15" ValorUnitario="205.9900" Importe="12359.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12359.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1977.50" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001685" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-112" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO KTM DUKE-200 17" ValorUnitario="469.9900" Importe="2349.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2349.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="375.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001563" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-047" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO BJ NS-160 TD 19-22" ValorUnitario="489.9900" Importe="5879.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5879.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="940.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002281" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F09" Cantidad="48" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO KIIRUS NEGRO DT-200SP 17-20/FT-200 14-15/FT-200AM 15-17/FT-200TS 19-21/TC-200 14-16/TC-200BL 16-18 /TC-200NE 18-2" ValorUnitario="446.9900" Importe="21455.52" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="21455.52" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3432.88" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002105" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-078" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR BUJE-BUJE 325mm NEGRO VN ROCKETMAN-250 18-22/ VN URBAN 3.0-200 19-22/ VN TORNADO-250 21-22/ VN WORKMAN-250 25" ValorUnitario="217.9900" Importe="2179.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2179.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="348.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001187" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F29" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-104L 41T/15T FT-150S / FT-150TS" ValorUnitario="182.9900" Importe="1829.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1829.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="292.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002274" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="POB-012" Cantidad="16" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PORTA BALATA COMPLETO TRASERO NEGRO FT-180 / FT-200 / FT-200 AMARILLA / TC-200 / RC -200 / TC-250 / C-200 CARABELA / BG- 200 BENGALA /" ValorUnitario="246.9900" Importe="3951.84" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3951.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="632.29" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002392" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVR-001" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CAJA DE VELOCIDADES REVERSA MOTOCARRO 200cc" ValorUnitario="669.9900" Importe="8039.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8039.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1286.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002662" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-013" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGUEÑAL COMPLETO CARGO-150" ValorUnitario="510.9900" Importe="3065.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3065.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="490.55" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001696" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CLU-048" Cantidad="6" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CLUTCH COMPLETO AT-110RT 12-14/AT-110RT LED 14-21" ValorUnitario="599.9900" Importe="3599.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3599.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="575.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002393" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-IR18" Cantidad="30" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET IRON BOX CADENA REFORZADA 520H-106L SPROCKET 32T/12T IT TC-200 14-16/IT TC-200BL 16-18/IT TC-200NE 18-20/IT TC-250 15-26" ValorUnitario="319.9900" Importe="9599.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9599.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1535.95" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001840" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAB-037" Cantidad="4" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABEZA DE CILINDRO COMPLETA NEGRO VN ROCKETMAN-250 19-22/VN ROCKETMANSP-250 21-22/VN ROCKETMAN CR-250 21-22/VN CROSSMAX-250 19-22/ VN CROSSMAXPRO-250 21-22/VN SCREAMER-250 22/VN FALKON-250 21-22/VN STORM 250 21-22/VN TORNADO-250 21-22" ValorUnitario="1339.9900" Importe="5359.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5359.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="857.59" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000869" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-023" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO DELANTERO 125-Z 16-20 / 12-FL 19-20 / 125 FL PARRILLA LARGA 19-20" ValorUnitario="209.9900" Importe="4199.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4199.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="671.97" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002596" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-052" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO TRASERO IT VORT-X300 17-24/IT VORT-X300R 21-24" ValorUnitario="202.9900" Importe="8119.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8119.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1299.14" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002662" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-IR49" Cantidad="60" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET IRON BOX CADENA REFORZADA 428H-120L SPROCKET 42T/16T VN ROCKETMAN-250 18-22/VN ROCKETMAN-250SP 20-22/VN ROCKETMAN-250CR 22/VN SCREAMER-250 21/VN STORM-250 21-22/VN THUNDERSTAR-250 20-22/VN TORNADO-250 21-22" ValorUnitario="256.9900" Importe="15419.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="15419.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2467.10" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001840" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-009" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO FT-180 13-17 / FT-200 AMARILLA 15-17 / RT-180 11-13 / DT-200 SPORT 17-20/ FT-200 14-15/FT-250 15-16" ValorUnitario="204.9900" Importe="2049.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2049.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="327.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002401" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-027" Cantidad="30" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO VN ROCKETMAN-250 19-22/VN ROCKETMAN-250SP 21-22/VN WORKMAN-250 25/VN ROCKETMAN-250CR 21-22/VN CROSSMAX-250 19-22/VN CROSSMAX-250PRO 21-22/VN SCREAMER-250 22/VN FALKON-250 21-22/VN STORM 250 21-22/VN T" ValorUnitario="632.9900" Importe="18989.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="18989.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3038.35" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002281" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-049" Cantidad="40" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO TRASERO VN NITROX-250 T2 19-24/VN NITROX-250 T3 22-24/VN NITROX-300 T3 23-24" ValorUnitario="149.9900" Importe="5999.60" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5999.60" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="959.94" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002596" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="MAS-013" Cantidad="36" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MAZA DE EJE TRASERO ATV-150SP 11-12 /ATV-150C/REV 19-23 /ATV-150SP C/REV 12-19 /ATV-180 16-23 /ATV-200 20-23" ValorUnitario="643.9900" Importe="23183.64" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="23183.64" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3709.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002473" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173802" NoIdentificacion="KSP-F44" Cantidad="20" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET CADENA REFORZADA 428H-136L SPROCKET 45T/14T V-200 18-21" ValorUnitario="254.9900" Importe="5099.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5099.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="815.97" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001999" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F38" Cantidad="50" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-112L 36T/14T AT-125 17-20/AT-125RT 20-21" ValorUnitario="190.9900" Importe="9549.50" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9549.50" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1527.92" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002274" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="BOF-058" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BOMBA DE FRENO TRASERA COMPLETA IT DM-250X 22-24/IT DM-250 22-24" ValorUnitario="499.9900" Importe="9999.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9999.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1599.97" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002662" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CIG-031" Cantidad="18" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CIGÜEÑAL COMPLETO IT RT-250 16-20/IT DM-250 16-18/IT 250-Z 19-23/IT RT-250SP 20-23" ValorUnitario="718.9900" Importe="12941.82" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12941.82" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2070.69" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002281" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CAB-022" Cantidad="8" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CABEZA DE CILINDRO COMPLETA DM-200 14-20/DM-200SP 19-20/TC-200 14-16 /TC-200BL 16-18 /TC-200NE 18-20/DT-200SP 17-20/FT-200 14-15" ValorUnitario="891.9900" Importe="7135.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="7135.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1141.75" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001583" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CAL-023" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CALAVERA MICA ROJA 12 VCC 125-Z" ValorUnitario="130.9900" Importe="2619.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2619.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="419.17" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001838" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172604" NoIdentificacion="ESP-102" Cantidad="60" ClaveUnidad="PR" Unidad="Par" Descripcion="ESPEJOS CROMADO 102 10mm MOTOS CHOPPER" ValorUnitario="103.9900" Importe="6239.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6239.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="998.30" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000699" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR35" Cantidad="60" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO VN CYCLONE-200 20-22/URBAN-200 3.0 19-22/IT RC-200 19-23/IT SPTFIRE-200 19-22" ValorUnitario="418.9900" Importe="25139.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="25139.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4022.30" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002476" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-028" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR TRASERO NEGRO DM-200 16-17 / SPARTHA 200 19-20/ XEVERUS-250 20-21" ValorUnitario="552.9900" Importe="11059.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="11059.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1769.57" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001840" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F21" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-124L SPROCKET 42T/15T FT-180 / DT-200 SPORT / FT-200 / FT-200 AMARILLA / FT-250 / FT-250TS / RT-180 11-13" ValorUnitario="194.9900" Importe="1949.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1949.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="311.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002274" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CLU-009" Cantidad="24" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CLUTCH COMPLETO ARRANQUE DE PEDAL TITAN-150" ValorUnitario="641.9900" Importe="15407.76" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="15407.76" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2465.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002393" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="DIR-026" Cantidad="30" ClaveUnidad="PR" Unidad="Par" Descripcion="DIRECCIONALES TRASERAS 12 Vcc TC-200/RC-200/TC-250/C-200 CARABELA BG200 BENGALA 14/BG200 BENGALA 14" ValorUnitario="137.9900" Importe="4139.70" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4139.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="662.35" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002393" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-003" Cantidad="72" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO IT DM-200 14-24/IT DM-200SP 19-21/IT DM-250X 22-24/IT DM-250 20-24/VN CROSSMAX 250 20-22/VN CROSSMAX-250PRO 21-22" ValorUnitario="354.9900" Importe="25559.28" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="25559.28" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4089.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002661" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-003HGF" Cantidad="300" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 428H x 126 GOLD REFORZADA DT-150SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/FT-150 GT 1/150-SZ 16-18/150-Z 14-19/DT-200 SPORT 17/FT-180 13-18/FT-200 14-15/FT-200 AMARILLA 15-17" ValorUnitario="103.9900" Importe="31197.00" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="31197.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4991.52" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002285" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="DIS-036" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DISCO DE FRENO TRASERO RT-200 15-16 / RT-200 GP 17-19 / RT-200 20" ValorUnitario="173.9900" Importe="3479.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3479.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="556.77" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002662" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-IR37" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO AT-125 17-20 / AT-125RT 20-21" ValorUnitario="397.9900" Importe="4775.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4775.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="764.14" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001710" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174217" NoIdentificacion="KSP-F13" Cantidad="10" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-104L SPROCKET 36T/14T AR-110 /AT-110 /RT-110 / XT-110 / WAVE-100" ValorUnitario="173.9900" Importe="1739.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1739.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="278.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001833" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="PSK-013" Cantidad="60" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="PORTA SPROCKET RC-150 16-20/RC-200 19-21/SPITFIRE 19-20" ValorUnitario="213.9900" Importe="12839.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="12839.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2054.30" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002667" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="MAG-008" Cantidad="12" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MAGNETO DM-200 14-17" ValorUnitario="299.9900" Importe="3599.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3599.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="575.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001265" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="HSO-021" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="GUIA DE CADENA TC-200 14-16 / TC-200BL 16-18 / TC-250 15-20 / RC-200 09" ValorUnitario="110.9900" Importe="6659.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6659.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1065.50" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000723" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-040" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARNES COMPLETO 12 Vcc DM-200 14-17" ValorUnitario="277.9900" Importe="16679.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="16679.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2668.70" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002273" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26111700" NoIdentificacion="BAT-ALE-011F" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BATERIA GEL KIIRUS 12N5-4B (+/-) 12 Vcc 5 Ah 119*60*128 mm YBR-125/AT-110/AT-110 SP/AT-110 RT/SEMIAUTOMATICAS 110cc/GT-110 ALESSIA" ValorUnitario="260.9900" Importe="15659.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="15659.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2505.50" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001620" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172604" NoIdentificacion="ESP-106" Cantidad="120" ClaveUnidad="PR" Unidad="Par" Descripcion="ESPEJOS NEGROS 150S-Z 16-18/150-Z 14-16/170-Z 16-18/250-Z 14-17/250-ZNE 17-19/125-Z 16-20/125-FL 19-20/DM-250 16-18" ValorUnitario="69.9900" Importe="8398.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8398.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1343.81" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002269" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F18" Cantidad="108" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO KIIRUS NEGRO PISTON BAJO 150-SZ 16-18/150-Z 14-20/DM-150RO 18-20/DT-150 CL 17-18/DT-150DEL 17-18/FT-150DEL 15-18/FT-150TS 15-" ValorUnitario="377.9900" Importe="40822.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="40822.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6531.67" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001581" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-027" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO CARGO-150" ValorUnitario="428.9900" Importe="5147.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5147.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="823.66" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001710" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-065" Cantidad="80" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BASE POSAPIES IZQUIERDA DT-200 SPORT 17-19 / FT-180 13-18 / FT-200 14-15 / FT-200 AMARILLA 15-17 / FT-250 15-16/ FT-250TS 16" ValorUnitario="337.9900" Importe="27039.20" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="27039.20" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4326.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001260" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMO-008" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="AMORTIGUADOR NEGRO BUJE/BUJE 330 mm DT-125CL 17-19/DT-125DEL 17-19/DT-125SP 17-20/DT-150CL 17-20/DT-150DEL 17-21/DT-150 20/DT-150BA 18-2" ValorUnitario="165.9900" Importe="1659.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1659.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="265.58" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001365" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="CVE-007" Cantidad="108" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO DT-125CL 17-18/DT-125SP 17-18/DT-150BA 18/FT-125RO NEW 18/FT-125TS 16-18" ValorUnitario="250.9900" Importe="27106.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="27106.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="4337.11" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001261" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26111700" NoIdentificacion="BAT-ALE-006F" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BATERIA GEL KIIRUS 12N7-3A (-/+) 12 Vcc 6.5 A 136*76.5*124 mm ATV-150SP/ATV-150SP REVERSA/ATV-180/FORZA-150/FT-150/170-Z/DT-150SP/RC-150/TC-200" ValorUnitario="318.9900" Importe="3189.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3189.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.38" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002275" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="POP-087" Cantidad="25" ClaveUnidad="PR" Unidad="Par" Descripcion="POSAPIES TRASEROS 150-SZ 16-18 / 150-Z 14-16 / 150-Z 19-23 / 170-Z 16-18" ValorUnitario="126.9900" Importe="3174.75" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3174.75" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="507.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002104" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-004HOF" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 428H x 136 GOLD REFORZADA CON ORING FZ-16/170-Z 16-18/DM-200 07-19/DM-200 SP 19/EX 200 05-08/RC-200 09/RT-200 09-13/RT-200 NE 13-15/DT-150 SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/ FT-150 GT 1" ValorUnitario="233.9900" Importe="14039.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="14039.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2246.30" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002285" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F02" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO KIIRUS PLATA VN ATOM-170 24/IT DS-150 14-18/IT DS-150G 18/IT DS-150 VERDE 18/IT DS-150 NEGRO 13-15/IT DS-150 06-16/IT GS-150 10-13" ValorUnitario="300.9900" Importe="3611.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3611.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="577.90" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002002" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26111700" NoIdentificacion="BAT-ALE-003" Cantidad="8" ClaveUnidad="H87" Unidad="Pieza" Descripcion="BATERIA GEL YTX7A-BS GEL (POSITIVO A LA IZQ) 250-Z 14-17 / CS-125 14-17 / CS-125 LED 13-16 /DM-150 10-17 / DS-150 14-17 / DS-150 NEGRO 13-15 / C" ValorUnitario="357.9900" Importe="2863.92" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2863.92" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="458.23" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002389" />
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="119290.05">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="745563.50" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="119290.05" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="1fb5d4de-6dc3-4ec7-b53f-217524851c27" FechaTimbrado="2026-10-10T13:16:57" RfcProvCertif="ICA050422AA6" SelloCFD="nN8iEDAGqHfXmg7thVhcKyh6qWDXjP5vGnKTFJth4YGlDsccJNXLwBmsO6VBa0GbcYKalH+207bg4bQwWJEFrOGjc/4zCRlJINUk4fS2jYfz4eYvQIu7eI1Z3rPQF2y6NP0px92PdfIxg7G/LQK0+sTfCAwaH4EgiUXfWvCqvCtA+PhL2qDnc2P9lHtwVA+bIRXHoS/QdMku70z/XKV0k5MCLqemZ4J+lYTI6b1gw7UNLRj2tkmfyKpDkGTAn+Z4L5+j4Z+dRCF++G0ewF/lTSqjqIgyRINJXOA4AnL9jGNs1mNLGyGxucLGmzckndIVM3/jQA+vQMutNIf3bAUrEg==" NoCertificadoSAT="00001000000718099104" SelloSAT="Jt/mETwLswTISqebM5mfY/RfAk3dhlwnqF9gN3mts2L8khYJXlZELkMuQ74wZcdv9HyoFUIAFbXyuP3q118U0vOEtmuNaIWitpjYNa4BpwBLjL7on/Ms21P7bt8t/iO9V/bTIiWExirsgJcVT6RF+XGBJlmucZWEmcdsXPlCm6Po+kCyNP0tSSCvdSrxyEpUIle3HDUjSW/JKvGehHkjS5zItgH2em+r3uQUqgwwvXiZ9B2Lc4XvpD8rg7xeW3x/amfCIS+nEHSMFvw/dJ9ZxKQd0J6MUW5ciLzRAiLieSDcH3gNoFcn8mItlXiKIQb70+Xh62oloB1W+sNG+NK45A==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

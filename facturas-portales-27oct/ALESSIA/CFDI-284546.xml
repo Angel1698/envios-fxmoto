@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="284546" Fecha="2026-10-08T11:22:20" Sello="OYAXUO5BilHfmAHO4YGmBNCNP2dvqPoIKfPmjocL1RMCYYW5geGCTOT8HjJoSKu1xt6mZ+1tFPBFFlyhr4RvulmM2fTYDy7SyLEzqmqTfqJQEo3Bgo9wGjErg6Aq5lCxYxuZbgVU3ByqPzuwObXq9l+waJMz0oeHLSVtHvZhOLl2uXvBIbfXYnTIPuz9TNIxeveXYe0Hc0cw+yE9R1p31Hhjk0HmiShgldfLKBniLMfZRuaBm2K9ud6pV4E3JPU76vdZhh3HkbJlt2D5NMN5kXQwH4s1Oi/lgHlY8iF5VP00EoIX+llspVQnEN2Yx89wDAe8JPgYDTAMOf+ECjLdTA==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="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" CondicionesDePago="30 dias" SubTotal="38617.85" Moneda="MXN" TipoCambio="1" Total="44796.76" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="ARO-006" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="ARO DE RIN 1.4 X 21 DELANTERO NEGRO MATE DM-200 14-20/DM-200SP 19-21" ValorUnitario="205.9900" Importe="205.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="205.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="32.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="BAJ-017" Cantidad="6" ClaveUnidad="PR" Unidad="Par" Descripcion="BARRAS DE SUSPENSIÓN DER / IZQ NEGRO WS-150 11-19/WS-150SP 17-22/WS-150NF 13-14/WS-175 12-14/ WS-175SP 18-20" ValorUnitario="701.9900" Importe="4211.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4211.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="673.91" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="BPO-014" Cantidad="4" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="BARRA POSAPIE COMPLETA Y PARADOR LATERAL IT DT-150 SP II 17-20/ IT FT-180TS 19-23 / IT FT-150 GTS 23-25 / IT DT-150 SP 20-24" ValorUnitario="118.9900" Importe="475.96" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="475.96" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="76.15" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="46181705" NoIdentificacion="CAS-CH-K018-M" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CASCO CACHUCHA ADULTO RACING RED TALLA M" ValorUnitario="109.9900" Importe="1099.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1099.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="175.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="46181705" NoIdentificacion="CAS-CH-K021-M" Cantidad="5" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CASCO CACHUCHA ADULTO LUKY BLACK TALLA M" ValorUnitario="109.9900" Importe="549.95" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="549.95" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="87.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="FAR-155" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="FARO PRINCIPAL 12 Vcc BJ PULSAR N-160 / BJ PULSAR N-250" ValorUnitario="2099.9900" Importe="2099.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2099.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="336.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-052" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 20-10-10 TRASERA PARA CUATRIMOTO 4PR P133A SIN CAMARA IT ATV-150 C/REV 19-20 / IT ATV-150SP C/REV 12-19 / IT ATV-180 16-20 / VN REPTILE TREK-150" ValorUnitario="865.9900" Importe="865.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="865.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="138.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-053" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 22-7-10 PARA CUATRIMOTO 4PR P306 ATV-250 C/REVERSA 14-18 / ATV-250 NEGRA 18-20 / CAN-AM DS-250 20" ValorUnitario="890.9900" Importe="890.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="890.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="142.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-067" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 90/90-18  6 CAPAS PG083/21A USA CAMARA (TT) EX-200 / RT-200 / RT-200 NEGRO" ValorUnitario="324.9900" Importe="324.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="324.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="52.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-070" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 20-10-10 PARA CUATRIMOTO 4PR P361 " ValorUnitario="823.9900" Importe="823.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="823.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="131.84" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-077" Cantidad="45" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 275-17 6 CAPAS A226 CALLE USA CAMARA (TT) MOTOS DE TRABAJO" ValorUnitario="217.9900" Importe="9809.55" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="9809.55" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1569.53" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-2023" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 3.50-18  PREMIUM 6 CAPAS P82 DOBLE PROPOSITO USA CAMARA (TT) FORZA-125/FORZA-150/FT-110/FT-125CL/ FT-125SP/FT-150/CARGO-125/CARGO-150GL/YBR-125/EN-25/CGL-125 TOO" ValorUnitario="393.9900" Importe="787.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="787.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="126.08" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-2054" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 250-18 4 CAPAS P253 TRABAJO USA CAMARA (TT) TRABAJO" ValorUnitario="212.9900" Importe="638.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="638.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="102.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-2068" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA PARA MOTOCICLISTA 130/90-10 PREMIUM 70J P298 NO USA CAMARA (TL)" ValorUnitario="377.9900" Importe="1133.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1133.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="181.44" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3014" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 130/90-10 RUDOS BIKER 4 CAPAS P277 SCOOTER NO USA CAMARA (TL) SCOOTER/DP" ValorUnitario="448.9900" Importe="897.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="897.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="143.68" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3016" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 120/90-10 4 CAPAS P273 SCOOTER NO USA CAMARA (TL) SCOOTER/URBANA" ValorUnitario="383.9900" Importe="767.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="767.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="122.88" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3026" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 180/55ZR17 RUDOS BIKER 4 CAPAS CYR100 CALLE NO USA CAMARA (TL) TRASERA LINEA DEPORTIVA 600-1000cc" ValorUnitario="1500.9900" Importe="4502.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4502.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="720.48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3042" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA 100/80-17 RUDOS BIKER 4 CAPAS P113 CALLE NO USA CAMARA (TL) DELANTERA" ValorUnitario="390.9900" Importe="1172.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1172.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="187.68" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3056" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA PARA MOTOCICLETA 110/80-17 RUDOS BIKER P202 CALLE 4PR NO USA CAMARA (TL) DELANTERA URBANAS" ValorUnitario="509.9900" Importe="1529.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1529.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="244.80" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3058" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA PARA MOTOCICLETA 130/60-13 P148 SCOOTER 4PR NO USA CAMARA (TL) SCOOTER" ValorUnitario="395.9900" Importe="1187.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1187.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="190.08" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3062" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA PARA MOTOCICLETA 130/90-10 RUDOS BIKER P126 SCOOTER 4PR NO USA CAMARA (TL) SCOOTER" ValorUnitario="390.9900" Importe="781.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="781.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="125.12" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="MAB-019" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANUBRIO PLATA 150-SZ 16-18 / 150-Z 14-20 / 170-Z 16-18 / 200-Z 19-20" ValorUnitario="143.9900" Importe="143.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="143.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="23.04" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="MAB-087" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANUBRIO NEGRO IT SPTFIRE-200 19-22" ValorUnitario="134.9900" Importe="134.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="134.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="21.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="MAB-099" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANUBRIO NEGRO MATE IT DM-150 22-23" ValorUnitario="140.9900" Importe="140.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="140.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="22.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="RIN-016" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="RIN TRASERO 2.15 X 10 GRIS TAMBOR 10 CS-125 10-12" ValorUnitario="366.9900" Importe="366.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="366.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="58.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="RIN-YBR-03" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="RIN ALUMINIO (TAMBOR) 1.85 X 18 TRASERO NEGRO 18 YAMAHA YBR-125 18" ValorUnitario="846.9900" Importe="2540.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2540.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="406.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172602" NoIdentificacion="SAL-X005" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SALPICADERA TRASERA GRAFITO UNIVERSAL C/SOPORTE" ValorUnitario="87.9900" Importe="527.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="527.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="84.47" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="6178.91">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="38617.85" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="6178.91" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="771108ed-0e5a-4c49-8553-d0663db927da" FechaTimbrado="2026-10-08T11:22:54" RfcProvCertif="ICA050422AA6" SelloCFD="OYAXUO5BilHfmAHO4YGmBNCNP2dvqPoIKfPmjocL1RMCYYW5geGCTOT8HjJoSKu1xt6mZ+1tFPBFFlyhr4RvulmM2fTYDy7SyLEzqmqTfqJQEo3Bgo9wGjErg6Aq5lCxYxuZbgVU3ByqPzuwObXq9l+waJMz0oeHLSVtHvZhOLl2uXvBIbfXYnTIPuz9TNIxeveXYe0Hc0cw+yE9R1p31Hhjk0HmiShgldfLKBniLMfZRuaBm2K9ud6pV4E3JPU76vdZhh3HkbJlt2D5NMN5kXQwH4s1Oi/lgHlY8iF5VP00EoIX+llspVQnEN2Yx89wDAe8JPgYDTAMOf+ECjLdTA==" NoCertificadoSAT="00001000000718099104" SelloSAT="JsSETwzUl8pVncbPhkxB+rzVOyXtBX/xVit16Bzi7sV4e3O2mtgL7R/J4h97t4zmfYlrYUbdnL6Yk6NQOtaMDR0zWhvqCvvmWT49jojh/BqIaVMgrg8wxmAVIl3H4xqfpSqVHsowiosMpH7xIOj/HkdAFm6yQV3IISdC8KzzTt5OA2aKbq++cVIcaloMWwHr1K/+OAofZPQdDhpajIxjmZ7EskEfUxL+qcgyg9VUaB2WXk8XRQoubLfK14JCJRB0llwLDIdiyK/aAWDiZ1PloK9LJgIPOyDt+WH4qfwUuJXxfza4ACG5h/YkpRB1CwE68RL/D9NBRANlG8D0IX03uw==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

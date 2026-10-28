@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="287560" Fecha="2026-10-20T15:47:57" Sello="VO2vioagbtWDFE89JNrvsDnUgO/Vt6B5lxqsGG/a7ejslgnW8dxRYlmp7AV71X243QuV9HEEIzb1nSA381ogmFaxT5LTfIR6B3/+VwoxNwaz9mcC9U3OvKItdH/EKTlzbHsvJspJr+AqgePo0EfMukObWEcm5+gBrsp/jnYmCgUCnUE1Z7ecfJsuHtLICdqO1c4FpNL+uZ0BWt+jh2ynDuB6Z8lB98VyS1Hi3h8nc6OS9p1DZZcJ64E2em8yDXoT2f0MqB6HY2l7FVUy3XNi9PQo393mLQfR8GNj8B1haqgiBZbqnw0MiZ58mUxMo4vhBFB3Lup90HIQwAJLhHQ26w==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="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" CondicionesDePago="30 dias" SubTotal="8967.63" Moneda="MXN" TipoCambio="1" Total="10402.46" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="27112100" NoIdentificacion="ALE-022" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="DADO CASTILLO DOBLE CORONA ENTRADA ½" ValorUnitario="45.9900" Importe="91.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="91.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="14.72" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002591" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121600" NoIdentificacion="ARN-063" Cantidad="3" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="ARNES COMPLETO 12 V / 20 A RT-200 GP 17-19 / RT-200 20" ValorUnitario="291.9900" Importe="875.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="875.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="140.16" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002471" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-004HOF" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 428H x 136 GOLD REFORZADA CON ORING FZ-16/170-Z 16-18/DM-200 07-19/DM-200 SP 19/EX 200 05-08/RC-200 09/RT-200 09-13/RT-200 NE 13-15/DT-150 SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/ FT-150 GT 1" ValorUnitario="233.9900" Importe="467.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="467.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="74.88" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002285" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F18" Cantidad="14" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO KIIRUS NEGRO PISTON BAJO 150-SZ 16-18/150-Z 14-20/DM-150RO 18-20/DT-150 CL 17-18/DT-150DEL 17-18/FT-150DEL 15-18/FT-150TS 15-" ValorUnitario="377.9900" Importe="5291.86" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5291.86" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="846.70" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001581" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-A008" Cantidad="16" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SPROCKET TRASERO 42T SIN BIRLOS DM-150 ROJA 18-19" ValorUnitario="139.9900" Importe="2239.84" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2239.84" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="358.37" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001696" />
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1434.83">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="8967.63" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1434.83" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="bf87cee9-1d22-4128-90a8-57445865be66" FechaTimbrado="2026-10-20T15:49:17" RfcProvCertif="ICA050422AA6" SelloCFD="VO2vioagbtWDFE89JNrvsDnUgO/Vt6B5lxqsGG/a7ejslgnW8dxRYlmp7AV71X243QuV9HEEIzb1nSA381ogmFaxT5LTfIR6B3/+VwoxNwaz9mcC9U3OvKItdH/EKTlzbHsvJspJr+AqgePo0EfMukObWEcm5+gBrsp/jnYmCgUCnUE1Z7ecfJsuHtLICdqO1c4FpNL+uZ0BWt+jh2ynDuB6Z8lB98VyS1Hi3h8nc6OS9p1DZZcJ64E2em8yDXoT2f0MqB6HY2l7FVUy3XNi9PQo393mLQfR8GNj8B1haqgiBZbqnw0MiZ58mUxMo4vhBFB3Lup90HIQwAJLhHQ26w==" NoCertificadoSAT="00001000000718099104" SelloSAT="pEnNHVidNTWZOkKecxCu1CT5g7D7A0Ez1kwjUGqd5NTs6GoHMYAoC/Zd2a3tl6NmTB8gxESbtolT2yjZWhyDEVLswgjTitJ/8p/rlxpwlp9AzVVRRSx6bZsI0Rv1zrdkFO+/TaYV7T3/8m8dfYAdV1fWOdmDV8na7Ola2j33Fmdnu/0TMz5DBxlyaH7Qc6GPptaVyzW30t7wZz6FXLKAHJ2Roh4+VJ4Ej6D4tN0NbhnN8nkVVdScr0Y6eTWoERO7ohxsQ4zDn0d/D4VyIgCXVXRnvyYdajXs9fr6p716zAmgg96Aw6jJGUu/H6c/inQJo93hJBNJHkUuQW1hv9enWw==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

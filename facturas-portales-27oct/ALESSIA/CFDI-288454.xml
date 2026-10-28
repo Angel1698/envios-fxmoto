@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="288454" Fecha="2026-10-22T13:46:42" Sello="f6OYCASNOP14bxnEngv0L+EAoltYSg9Z77qyDLeMIyNxwOxdqi8vELGC+zqAoR7OyiNT9zNyhJt/l9sI5Fj80xVAzMMGo/0fCLRhy+O1yNFNzl3M/meYnf1BvWK36eQIjJCCF9ACi7oYCDFN6f1FEl9E4AwuVRjtHaVF2uw8tMSfkMAjqqPHzv5PT7WQwlObvG8MHeXexTU6pGyEOAflxDF3/CJzzAtxQw8tQtrnHKht0X70KVSQfaMppztWZkNY/hgzU/Fvanhy1hLOKjc6tlO7rluHwluA3WYqjWo8RbC2kB4ue8kO0qPPwvukYvxXlOG3bbOAf5DF5TFYnOr/7A==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="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" CondicionesDePago="30 dias" SubTotal="21537.43" Moneda="MXN" TipoCambio="1" Total="24983.42" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-003HGF" Cantidad="60" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 428H x 126 GOLD REFORZADA DT-150SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/FT-150 GT 1/150-SZ 16-18/150-Z 14-19/DT-200 SPORT 17/FT-180 13-18/FT-200 14-15/FT-200 AMARILLA 15-17" ValorUnitario="103.9900" Importe="6239.40" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="6239.40" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="998.30" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-004HF" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA KIIRUS 428H x 136 REFORZADA FZ-16/170-Z 16-18/DM-200 07-19/DM-200 SP 19/EX 200 05-08/RC-200 09/RT-200 09-13/RT-200 NE 13-15/DT-150 SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/ FT-150 GT 1" ValorUnitario="87.9900" Importe="1759.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1759.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="281.57" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-004HOF" Cantidad="20" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA 428H x 136 GOLD REFORZADA CON ORING FZ-16/170-Z 16-18/DM-200 07-19/DM-200 SP 19/EX 200 05-08/RC-200 09/RT-200 09-13/RT-200 NE 13-15/DT-150 SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 13-16/FT-150G 16-17/ FT-150 GT 1" ValorUnitario="233.9900" Importe="4679.80" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4679.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="748.77" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173817" NoIdentificacion="CAD-006F" Cantidad="3" ClaveUnidad="H87" Unidad="Pieza" Descripcion="CADENA KIIRUS 520 X 116 250-SZ 15/250-Z 14-17/250-Z NE 17/DM-150 10-17/DM-250 16/RT-250 16-17/TC-200 14-16/NS-200/CBX-250 TWISTER/HONDA CR-125 10-15" ValorUnitario="124.9900" Importe="374.97" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="374.97" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="60.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101900" NoIdentificacion="KDC-F18" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="KIT DE CILINDRO KIIRUS NEGRO PISTON BAJO 150-SZ 16-18/150-Z 14-20/DM-150RO 18-20/DT-150 CL 17-18/DT-150DEL 17-18/FT-150DEL 15-18/FT-150TS 15-" ValorUnitario="377.9900" Importe="4535.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="4535.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="725.74" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174209" NoIdentificacion="SPR-A011" Cantidad="42" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="SPROCKET TRASERO 38T CON BIRLOS 125-Z 16-20" ValorUnitario="93.9900" Importe="3947.58" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3947.58" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="631.61" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="3445.99">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="21537.43" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3445.99" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="328c4767-ad24-4ac8-9302-43c16bccfab6" FechaTimbrado="2026-10-22T13:47:21" RfcProvCertif="ICA050422AA6" SelloCFD="f6OYCASNOP14bxnEngv0L+EAoltYSg9Z77qyDLeMIyNxwOxdqi8vELGC+zqAoR7OyiNT9zNyhJt/l9sI5Fj80xVAzMMGo/0fCLRhy+O1yNFNzl3M/meYnf1BvWK36eQIjJCCF9ACi7oYCDFN6f1FEl9E4AwuVRjtHaVF2uw8tMSfkMAjqqPHzv5PT7WQwlObvG8MHeXexTU6pGyEOAflxDF3/CJzzAtxQw8tQtrnHKht0X70KVSQfaMppztWZkNY/hgzU/Fvanhy1hLOKjc6tlO7rluHwluA3WYqjWo8RbC2kB4ue8kO0qPPwvukYvxXlOG3bbOAf5DF5TFYnOr/7A==" NoCertificadoSAT="00001000000718099104" SelloSAT="dUJYAUxSabDIZNqbJGBcsa42b6XoCWF5EYAIH3tJ/74/UQdgPwRNS3IxHjDDdFBSG5sL02M6gHcwkr+XDkWOLErIyBG8G8+cruTksMjRVmRQp4grCwpYAps4Rtq65rTVXfznULgYC1CTMpE6p/pOsxy5PDBc8jnl3ioCQigOmN5UwZQ9M5UAGPfHbaBev1hJ5Ed+J2z4Pi0ZKz4sBlD2Db/8unOT32amOure/NH+x70BQmzNnYPj3/0YbMG4FVXB2pSgyFwic3F+r2EbV5dfbPMVR3amPwIKEGGERCT2p+awguaHrQDZJ71y/qiApZrXPHhYFllRwL6oFxrtm86I0g==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

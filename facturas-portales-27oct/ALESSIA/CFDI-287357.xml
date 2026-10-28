@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="287357" Fecha="2026-10-20T10:14:52" Sello="h7F6XkS+4gPD9Wp3QJqA7pLA2TFJocHMDw86qia1FyJ1137JqaUmxswIN9xd8eF2uwomF1fgUHXIDaDe2gGDcImuDbWLBUSsWAH0jUQQyFE/eDm3tE5dhCZN286sVHLLbTKk+nOEHK45KIJ+lYT/+fRlAIlFx7+clJc4fwnGpaogdafvSFknmSl339HAXmSiHUm4E/3i19cG7hL7v5D/9GM3aOQVMnime95EtZT/DoWiD6tBbL3VqLs4VuwkIkMIFAI5xqPEmQdkWJxFL3YlK7OlNr6PyVPkjC0e91Sxx1pFKaAjkRy99QYdaLi1IRxjZiW7evSzVhc4XzDm/CwR1g==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="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" CondicionesDePago="30 dias" SubTotal="20187.69" Moneda="MXN" TipoCambio="1" Total="23417.73" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="BAJ-048" Cantidad="10" ClaveUnidad="PR" Unidad="Par" Descripcion="BARRAS DE SUSPENSION DER/IZQ NEGRO VN CYCLONE-200 21-22/VN CYCLONE-150 21-22/VN FALKON-250 22" ValorUnitario="862.9900" Importe="8629.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="8629.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1380.78" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002472" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="LLA-3067" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="LLANTA PARA MOTOCICLETA 190/55ZR17 RUDOS  BIKER CZ30 73W NO USA CAMARA (TL) TRASERA DEPORTIVA" ValorUnitario="1659.9900" Importe="3319.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3319.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="531.20" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000354" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="MAB-069" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="MANUBRIO NEGRO VN CROSSMAX-150 23/VN CROSSMAX-170 24/VN CROSSMAX-200 22-24/VN CROSSMAX-220 24-25/VN CROSSMAX-200 20-21/VN CROSSMAX-250 20-24/VN CROSSMAX PRO-250 23-24VN CROSSMAX PRO-300 24" ValorUnitario="131.9900" Importe="263.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="263.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="42.24" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002002" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172602" NoIdentificacion="SAD-103" Cantidad="9" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SALPICADERA DELANTERA  NEGRO CON VERDE BRILLOSO IT FT-150TS 23-25" ValorUnitario="149.9900" Importe="1349.91" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1349.91" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="215.99" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002590" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172406" NoIdentificacion="TAG-043" Cantidad="7" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TANQUE DE GASOLINA AZUL 170-Z 16-18" ValorUnitario="843.9900" Importe="5907.93" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5907.93" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="945.27" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000877" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172406" NoIdentificacion="TAG-064" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="TANQUE DE GASOLINA NEGRO-ROJO VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 22-24/VN CROSSMAX-300PRO 23-24" ValorUnitario="715.9900" Importe="715.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="715.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="114.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001573" />
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="3230.04">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="20187.69" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3230.04" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="4338b579-2a4c-4697-8d8d-5ba4a935e199" FechaTimbrado="2026-10-20T10:15:17" RfcProvCertif="ICA050422AA6" SelloCFD="h7F6XkS+4gPD9Wp3QJqA7pLA2TFJocHMDw86qia1FyJ1137JqaUmxswIN9xd8eF2uwomF1fgUHXIDaDe2gGDcImuDbWLBUSsWAH0jUQQyFE/eDm3tE5dhCZN286sVHLLbTKk+nOEHK45KIJ+lYT/+fRlAIlFx7+clJc4fwnGpaogdafvSFknmSl339HAXmSiHUm4E/3i19cG7hL7v5D/9GM3aOQVMnime95EtZT/DoWiD6tBbL3VqLs4VuwkIkMIFAI5xqPEmQdkWJxFL3YlK7OlNr6PyVPkjC0e91Sxx1pFKaAjkRy99QYdaLi1IRxjZiW7evSzVhc4XzDm/CwR1g==" NoCertificadoSAT="00001000000718099104" SelloSAT="l6FfuY0ch913+Yv9nWPqYxpys+SyA2cbvuN+cZOXMZElarrsOojF+XB1qfzx35AkJf0ldVZ0X5oAmrKt0rzP9XaR7TuajKvvDbwrESIxT8lLmP5DnJGTgkETTOEKApGK9mAK4XZ9ZDNhsST2BepjL6Nfmc21LjLl9NOPsq+5NRwDy2IwBkYXv5JbLI5HE+pYIJ4JT+8Gyh7PI+TO/bcIs8tdwwJNM4GDSUZpXCT5/k1SXoMID8/niHKTW+PYc1oXsLeb3QThDo5BXD3BVEAGeUdFa04CIEhSWDkJ1VmzHR4ggIB1PtIac8QwTyEyd+x1H61Xif79MGKiWqt/W3lrvA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CFDI" Folio="287428" Fecha="2026-10-20T11:47:40" Sello="XWiCKudIOZcRCKagm0DSFRTK3k3/vq3j52Rt4UkHd8Oihdalv1aIkb4cebb3KrDZx5Uoo7cPuOyB0BWWMNr3aWDT37QUIJ6YhDzrUr+UDYG/aVx9DLpNjoKjSFEQQTpeVJ/kZfsxk9WRevFCworwzav8EFLPEAreZscPS+xL316VjTfkBvfNIlTd2zMv3Ba85kqdUX4y8/RWhpv78KZEQCehqXR/TL2aM1xXREK5nQxIMEdBbPqVuOIQDjodoly4k2hjZU/YmLePEYvVYMfY5rw1YJGPNfXoHBQg4w0TCTZiS0miMbQmV0poVyXannUAzt1IJVT6zaXjAvZi8fehVA==" FormaPago="99" NoCertificado="00001000000716072499" Certificado="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" CondicionesDePago="30 dias" SubTotal="10148.32" Moneda="MXN" TipoCambio="1" Total="11772.05" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="07850" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:Emisor Rfc="IGR0612139U5" Nombre="IMPORTADOR GRL" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="RERA9806168S0" Nombre="ANGEL DANIEL REYES RUIZ" DomicilioFiscalReceptor="62170" RegimenFiscalReceptor="625" UsoCFDI="G01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25172600" NoIdentificacion="BFA-018" Cantidad="2" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="BASE DE FARO IT FT-125TS 16-25/IT FT-150TS 16-18" ValorUnitario="90.9900" Importe="181.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="181.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="29.12" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001265" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31261500" NoIdentificacion="CFA-026" Cantidad="12" ClaveUnidad="PR" Unidad="Par" Descripcion="CUBIERTA CENTRAL DE VENTILACIÓN IT 250-Z 19-24" ValorUnitario="265.9900" Importe="3191.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="3191.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="510.70" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001191" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="EMP-039" Cantidad="12" ClaveUnidad="XKI" Unidad="Kit (Conj de piezas)" Descripcion="EMPAQUES DE MOTOR ATV-180" ValorUnitario="48.9900" Importe="587.88" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="587.88" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="94.06" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001686" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="PAC-A005" Cantidad="23" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PARADOR CENTRAL DT-200 SPORT 17 / FT-180 13-17 / FT-200 14-15 / FT-200 AMARILLA 15 / FT-250 15-16 / FT-250 TS 16-17" ValorUnitario="119.9900" Importe="2759.77" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2759.77" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="441.56" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001705" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174407" NoIdentificacion="PAC-A008" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="PARADOR CENTRAL RC-125 20/RC-150 16-21" ValorUnitario="141.9900" Importe="283.98" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="283.98" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="45.44" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000703" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172602" NoIdentificacion="SAD-031" Cantidad="6" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SALPICADERA DELANTERA NEGRO/ VERDE WS-175 SPORT 18-21" ValorUnitario="196.9900" Importe="1181.94" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1181.94" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="189.11" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6001573" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31162500" NoIdentificacion="SOP-027" Cantidad="10" ClaveUnidad="H87" Unidad="Pieza" Descripcion="SOPORTE DE MOTOR IT WS-150SP 17-25 / IT WS-175SP 18-25" ValorUnitario="184.9900" Importe="1849.90" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1849.90" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="295.98" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6002268" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171700" NoIdentificacion="VAF-019" Cantidad="1" ClaveUnidad="P5" Unidad="Paquete de cinco" Descripcion="VARILLA DE FRENO TRASERO RC-150 16-18" ValorUnitario="110.9900" Importe="110.99" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="110.99" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="17.76" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="26  16  3685  6000342" />
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1623.73">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="10148.32" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1623.73" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="b193d6ef-4a3c-420b-b693-73b1544b99cf" FechaTimbrado="2026-10-20T11:49:17" RfcProvCertif="ICA050422AA6" SelloCFD="XWiCKudIOZcRCKagm0DSFRTK3k3/vq3j52Rt4UkHd8Oihdalv1aIkb4cebb3KrDZx5Uoo7cPuOyB0BWWMNr3aWDT37QUIJ6YhDzrUr+UDYG/aVx9DLpNjoKjSFEQQTpeVJ/kZfsxk9WRevFCworwzav8EFLPEAreZscPS+xL316VjTfkBvfNIlTd2zMv3Ba85kqdUX4y8/RWhpv78KZEQCehqXR/TL2aM1xXREK5nQxIMEdBbPqVuOIQDjodoly4k2hjZU/YmLePEYvVYMfY5rw1YJGPNfXoHBQg4w0TCTZiS0miMbQmV0poVyXannUAzt1IJVT6zaXjAvZi8fehVA==" NoCertificadoSAT="00001000000718099104" SelloSAT="UYbYMGAFysy4aqeyX0MuPRzAvlErC7REsxBdmU4hoFA+NzYM7kIyRPMkofkizeKEZHsJnok8ZNvDyYOQW6BS/kwz1WAtrCXPnxhpWJfSgmdp/ujp86eQXR4a31aImZ4L1lAoo/W6pL1JtTvk/E0X6DuZr3CJ+WYWa/M/zsn+AmelN9kHVTZoIfMJaFaRb4R9ljaSpIKMjhM1qjl5ps5fLzdh3tTLo///ZIBRRpMD7mZubv2jFWE/EE9I+lLrgiph8CLgK+QGYGQKoJmr9bL99+LIEuf2GAaReZ832SVdl6zSFkvxwKztQTR1MbbAceaxxJpkU6nbDwMy174pyj4kzQ==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>
