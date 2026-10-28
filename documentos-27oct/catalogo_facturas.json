@@ -1,0 +1,198 @@
+[
+  {
+    "proveedor": "REFACOM",
+    "folio": "143332",
+    "bodega": "EDOMEX",
+    "tipo": "Mercancía",
+    "total": "58240.09"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143007",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "27044.62"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142899",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "3895.92"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143045",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "45387.72"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "598881",
+    "bodega": "Ver documento",
+    "tipo": "Complemento de pago",
+    "total": "0"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142904",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "17858.68"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142977",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "33620.61"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "116865",
+    "bodega": "EDOMEX",
+    "tipo": "Flete",
+    "total": "9650.58"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142960",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "58443.71"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143001",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "36151.87"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "598882",
+    "bodega": "Ver documento",
+    "tipo": "Complemento de pago",
+    "total": "0"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142983",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "24826.01"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143149",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "91510.50"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142985",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "15643.83"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142905",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "16372.05"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142971",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "21667.55"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142906",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "9995.70"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142969",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "33741.15"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142972",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "14939.59"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143093",
+    "bodega": "EDOMEX",
+    "tipo": "Mercancía",
+    "total": "30015.77"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142925",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "33897.09"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142988",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "25476.62"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143005",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "34343.10"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "142993",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "13525.93"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "116862",
+    "bodega": "Cuernavaca",
+    "tipo": "Flete",
+    "total": "10026.25"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143285",
+    "bodega": "EDOMEX",
+    "tipo": "Mercancía",
+    "total": "35501.33"
+  },
+  {
+    "proveedor": "REFACOM",
+    "folio": "143239",
+    "bodega": "EDOMEX",
+    "tipo": "Mercancía",
+    "total": "29509.15"
+  },
+  {
+    "proveedor": "SAYTO",
+    "folio": "303548",
+    "bodega": "EDOMEX",
+    "tipo": "Mercancía",
+    "total": "77956.56"
+  }
+]
