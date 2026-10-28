@@ -1,0 +1,3553 @@
+{
+  "factura": "303586",
+  "uuid": "DD8EDC26-E46A-5A9E-8269-61FE62700D12",
+  "bodega": "CUERNAVACA",
+  "pedido": 56,
+  "pedido_proveedor": "287834",
+  "referencia": "10049 Angel CVC",
+  "fecha": "2026-10-28T10:40:06",
+  "subtotal": "107824.32",
+  "iva": "17251.89",
+  "total": "125076.21",
+  "codigos": 192,
+  "cantidad_documental": 1219,
+  "cotizado": 1253,
+  "pedido56_cantidad": 1581.0,
+  "bodega_rgp": {
+    "CUERNAVACA": 1179,
+    "SIN PUBLICACION": 4,
+    "CUERNAVACA / EDOMEX": 36
+  },
+  "no_facturado_contra_cotizacion": [
+    {
+      "codigo": "AMCN28",
+      "descripcion": "Base superior de suspension CGL125",
+      "q": 4,
+      "unidad": "pza",
+      "lista": "284.91",
+      "neto": "1139.64"
+    },
+    {
+      "codigo": "ANCN17",
+      "descripcion": "Anillos VS90 STD",
+      "q": 1,
+      "unidad": "jgo",
+      "lista": "39.68",
+      "neto": "35.71"
+    },
+    {
+      "codigo": "ANCN81",
+      "descripcion": "Anillos  FZ16 STD",
+      "q": 1,
+      "unidad": "jgo",
+      "lista": "37.35",
+      "neto": "37.35"
+    },
+    {
+      "codigo": "CLCN03",
+      "descripcion": "Calavera TWISTER 250",
+      "q": 1,
+      "unidad": "pza",
+      "lista": "81.68",
+      "neto": "81.68"
+    },
+    {
+      "codigo": "FICN08",
+      "descripcion": "Filtro de aire BWS 100",
+      "q": 12,
+      "unidad": "pza",
+      "lista": "22.50",
+      "neto": "270.00"
+    },
+    {
+      "codigo": "FICN49",
+      "descripcion": "Filtro de aire RC200/TC200/TC250",
+      "q": 1,
+      "unidad": "pza",
+      "lista": "34.84",
+      "neto": "31.36"
+    },
+    {
+      "codigo": "PECN108",
+      "descripcion": "Pedal de freno XEVERUS 250",
+      "q": 1,
+      "unidad": "pza",
+      "lista": "119.10",
+      "neto": "107.19"
+    },
+    {
+      "codigo": "RACN13",
+      "descripcion": "Rayos traseros 8G X 131/134 DM150",
+      "q": 13,
+      "unidad": "jgo",
+      "lista": "72.41",
+      "neto": "847.20"
+    }
+  ],
+  "diferencias_precio_mayor_2": [],
+  "detalle": [
+    {
+      "codigo": "AMCN127",
+      "descripcion": "Base superior de suspension XEVERUS 250",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "471.477150",
+      "importe_neto": "471.477150",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "554.68",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "AMCN166",
+      "descripcion": "Amortiguador ATV150 c/reversa Verde",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "297.049500",
+      "importe_neto": "891.148500",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "1048.41",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "AMCN174",
+      "descripcion": "Amortiguador trasero rojo DS150 NEGRO 2013-2015",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "326.134800",
+      "importe_neto": "978.404400",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "1151.06",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "AMCN178",
+      "descripcion": "Amortiguador trasero DS150G 2018-2019",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "323.036550",
+      "importe_neto": "646.073100",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "760.09",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "AMCN183",
+      "descripcion": "Barra de suspension X150 2017-2021",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "328.850550",
+      "importe_neto": "657.701100",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "773.77",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN04",
+      "descripcion": "Anillos TX200 0.75",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "34.998750",
+      "importe_neto": "34.998750",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "41.18",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN05",
+      "descripcion": "Anillos Chopper 200 STD",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "33.025050",
+      "importe_neto": "66.050100",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "77.71",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN09",
+      "descripcion": "Anillos EX200/RT200 STD",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "33.277500",
+      "importe_neto": "33.277500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "39.15",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN104",
+      "descripcion": "Anillos 250Z STD",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "38.571300",
+      "importe_neto": "154.285200",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "181.51",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN116",
+      "descripcion": "Anillos DM200 STD",
+      "facturado": 16.0,
+      "unidad": "JGO",
+      "precio_neto": "35.855550",
+      "importe_neto": "573.688800",
+      "cotizado": 16,
+      "cotizacion_importe_antes_volumen": "674.93",
+      "pedido56": 16.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN120",
+      "descripcion": "Anillos 200Z STD",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "27.823050",
+      "importe_neto": "55.646100",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "65.47",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN13",
+      "descripcion": "Anillos RT180/FT180 STD",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "41.118750",
+      "importe_neto": "41.118750",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "48.38",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN37",
+      "descripcion": "Anillos Migaru 110 STD AT110",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "30.125700",
+      "importe_neto": "30.125700",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "35.44",
+      "pedido56": 1.0,
+      "pedido55": 1.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN41",
+      "descripcion": "Anillos FT125 STD",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "30.294000",
+      "importe_neto": "121.176000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "142.56",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN49",
+      "descripcion": "Anillos FT150 09 STD",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "34.203150",
+      "importe_neto": "102.609450",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "120.72",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN51",
+      "descripcion": "Anillos FT150 09 0.50",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "34.203150",
+      "importe_neto": "68.406300",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "80.48",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN52",
+      "descripcion": "Anillos FT150 09 0.75",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "34.203150",
+      "importe_neto": "34.203150",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "40.24",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN57",
+      "descripcion": "Anillos CARGO 150 STD",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "35.521500",
+      "importe_neto": "142.086000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "167.16",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN61",
+      "descripcion": "Anillos PULSAR 200NS STD",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "47.659500",
+      "importe_neto": "47.659500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "56.07",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ANCN97",
+      "descripcion": "Anillos YBR125 STD",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "27.319000",
+      "importe_neto": "27.319000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "32.14",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ARCN25",
+      "descripcion": "Arbol de levas PULSAR 200NS",
+      "facturado": 13.0,
+      "unidad": "PZA",
+      "precio_neto": "139.026000",
+      "importe_neto": "1807.338000",
+      "cotizado": 13,
+      "cotizacion_importe_antes_volumen": "2126.28",
+      "pedido56": 13.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ARCN31",
+      "descripcion": "Arbol de levas BOXER 150",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "124.901550",
+      "importe_neto": "124.901550",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "146.94",
+      "pedido56": 1.0,
+      "pedido55": 3.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ARCN36",
+      "descripcion": "Arbol de levas 250Z",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "160.726500",
+      "importe_neto": "482.179500",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "567.27",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ARCN54",
+      "descripcion": "Arbol de levas VORTX 200",
+      "facturado": 12.0,
+      "unidad": "PZA",
+      "precio_neto": "170.311950",
+      "importe_neto": "2043.743400",
+      "cotizado": 12,
+      "cotizacion_importe_antes_volumen": "2404.40",
+      "pedido56": 12.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "BASA135",
+      "descripcion": "Balatas de freno delantero VX250",
+      "facturado": 6.0,
+      "unidad": "PAR",
+      "precio_neto": "23.851000",
+      "importe_neto": "143.106000",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "168.36",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "BICN08",
+      "descripcion": "Biela 250Z",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "145.097550",
+      "importe_neto": "145.097550",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "170.70",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "BMCN28",
+      "descripcion": "Bomba de freno trasero PULSAR 200NS",
+      "facturado": 18.0,
+      "unidad": "PZA",
+      "precio_neto": "148.240000",
+      "importe_neto": "2668.320000",
+      "cotizado": 18,
+      "cotizacion_importe_antes_volumen": "3139.20",
+      "pedido56": 18.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "BMCN50",
+      "descripcion": "Bomba de aceite ROCKETMAN 250",
+      "facturado": 10.0,
+      "unidad": "PZA",
+      "precio_neto": "78.787350",
+      "importe_neto": "787.873500",
+      "cotizado": 10,
+      "cotizacion_importe_antes_volumen": "926.91",
+      "pedido56": 10.0,
+      "pedido55": 27.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "BOCN25",
+      "descripcion": "Bobina encendido CB1",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "68.884000",
+      "importe_neto": "275.536000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "324.16",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "BOCN26",
+      "descripcion": "Bobina encendido DIO 110",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "76.704000",
+      "importe_neto": "76.704000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "90.24",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CACN145",
+      "descripcion": "Cable acelerador PULSAR 200NS",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "41.718000",
+      "importe_neto": "41.718000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "49.08",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CACN165",
+      "descripcion": "Cable acelerador y retroceso BWS 125",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "65.186500",
+      "importe_neto": "325.932500",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "383.45",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CACN240",
+      "descripcion": "Cable embrague ROCKETMAN 250",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "30.079800",
+      "importe_neto": "120.319200",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "141.55",
+      "pedido56": 4.0,
+      "pedido55": 41.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CACN242",
+      "descripcion": "Cable embrague CROSSMAX PRO 250",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "25.887600",
+      "importe_neto": "77.662800",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "91.37",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CDCN15",
+      "descripcion": "Cadena tiempo CB1",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "18.691500",
+      "importe_neto": "74.766000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "87.96",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CDCN17",
+      "descripcion": "Cadena tiempo CRYPTON 110",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "33.923500",
+      "importe_neto": "33.923500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "39.91",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CGCN16",
+      "descripcion": "Cigüeñal completo CB1",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "463.547500",
+      "importe_neto": "927.095000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "1090.70",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CGCN19",
+      "descripcion": "Cigüeñal completo 250Z 2019 VERDE",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "1095.151050",
+      "importe_neto": "2190.302100",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "2576.83",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CICN14",
+      "descripcion": "CDI AT110RT 12-14/AT110RT LED 14-16",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "35.044650",
+      "importe_neto": "105.133950",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "123.69",
+      "pedido56": 3.0,
+      "pedido55": 1.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CICN15",
+      "descripcion": "CDI GS150/GS150LED/GTS175/GTS175LED",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "64.367100",
+      "importe_neto": "193.101300",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "227.18",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CICN35",
+      "descripcion": "CDI ROCKETMAN 250",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "58.468950",
+      "importe_neto": "58.468950",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "68.79",
+      "pedido56": 1.0,
+      "pedido55": 33.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CICN36",
+      "descripcion": "CDI CROSSMAX PRO 250",
+      "facturado": 8.0,
+      "unidad": "PZA",
+      "precio_neto": "61.475400",
+      "importe_neto": "491.803200",
+      "cotizado": 8,
+      "cotizacion_importe_antes_volumen": "578.59",
+      "pedido56": 6.0,
+      "pedido55": 29.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CKCN40",
+      "descripcion": "Carburador CBF125",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "346.026500",
+      "importe_neto": "1038.079500",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "1221.27",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CLCN05",
+      "descripcion": "Calavera AX100",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "74.247500",
+      "importe_neto": "296.990000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "349.40",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CVCN05",
+      "descripcion": "Dispositivo cuenta kilometros CARGO 150",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "9.010000",
+      "importe_neto": "27.030000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "31.80",
+      "pedido56": 3.0,
+      "pedido55": 17.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CVCN19",
+      "descripcion": "Dispositivo cuenta kilometros CBF125",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "51.195500",
+      "importe_neto": "51.195500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "60.23",
+      "pedido56": 1.0,
+      "pedido55": 2.0,
+      "pedido54": 0,
+      "bodegas_rgp": [],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CVCN28",
+      "descripcion": "Dispositivo cuenta kilometros CROSSMAX PRO 250",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "122.866650",
+      "importe_neto": "122.866650",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "144.55",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN102",
+      "descripcion": "Cilindro completo CBF125",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "358.962361",
+      "importe_neto": "1794.811805",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "2111.54",
+      "pedido56": 5.0,
+      "pedido55": 7.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN105",
+      "descripcion": "Cilindro completo DIO 110 12101-KWP-D00",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "226.931654",
+      "importe_neto": "226.931654",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "266.98",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN120",
+      "descripcion": "Cilindro completo ROCKETMAN 250",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "400.442294",
+      "importe_neto": "800.884588",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "942.22",
+      "pedido56": 2.0,
+      "pedido55": 16.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN31",
+      "descripcion": "Cilindro completo GN125",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "351.174381",
+      "importe_neto": "1755.871907",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "2065.73",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN40",
+      "descripcion": "Cilindro completo BOXER 150",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "276.856472",
+      "importe_neto": "276.856472",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "325.71",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN55",
+      "descripcion": "Cilindro completo AT125",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "314.219798",
+      "importe_neto": "942.659393",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "1109.01",
+      "pedido56": 3.0,
+      "pedido55": 3.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN83",
+      "descripcion": "Cilindro completo CBF160",
+      "facturado": 6.0,
+      "unidad": "JGO",
+      "precio_neto": "450.264927",
+      "importe_neto": "2701.589559",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "3178.34",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN84",
+      "descripcion": "Cilindro completo CB190R",
+      "facturado": 9.0,
+      "unidad": "JGO",
+      "precio_neto": "474.876986",
+      "importe_neto": "4273.892874",
+      "cotizado": 9,
+      "cotizacion_importe_antes_volumen": "5028.11",
+      "pedido56": 9.0,
+      "pedido55": 0,
+      "pedido54": 7.0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN85",
+      "descripcion": "Cilindro completo WAVE 110",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "356.422326",
+      "importe_neto": "1069.266979",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "1257.96",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN89",
+      "descripcion": "Cilindro completo R15",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "386.669175",
+      "importe_neto": "1546.676701",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "1819.62",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN90",
+      "descripcion": "Cilindro completo RAYZ 115",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "418.164144",
+      "importe_neto": "1254.492433",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "1475.87",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN91",
+      "descripcion": "Cilindro completo FZ16 2.0",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "458.950677",
+      "importe_neto": "458.950677",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "539.94",
+      "pedido56": 1.0,
+      "pedido55": 3.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "CYCN94",
+      "descripcion": "Cilindro completo ELITE 125",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "351.043000",
+      "importe_neto": "351.043000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "412.99",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "DFCN17",
+      "descripcion": "Disco de freno delantero GIXXER 155",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "247.800500",
+      "importe_neto": "1239.002500",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "1457.65",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "DICN41",
+      "descripcion": "Centrifugo ZOOMER 110",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "247.469000",
+      "importe_neto": "494.938000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "582.28",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "DICN43",
+      "descripcion": "Centrifugo ELITE 125",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "189.031500",
+      "importe_neto": "378.063000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "444.78",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "DICN44",
+      "descripcion": "Embrague trasero RAY Z",
+      "facturado": 6.0,
+      "unidad": "PZA",
+      "precio_neto": "604.605000",
+      "importe_neto": "3627.630000",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "4267.80",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "DICN45",
+      "descripcion": "Centrifugo RAY Z",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "165.520500",
+      "importe_neto": "496.561500",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "584.19",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "DICN48",
+      "descripcion": "Embrague Trasero NMAX 155",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "583.975500",
+      "importe_neto": "2335.902000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "2748.12",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "EBCN20",
+      "descripcion": "Embrague sin campana YBR125",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "201.671000",
+      "importe_neto": "201.671000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "237.26",
+      "pedido56": 1.0,
+      "pedido55": 9.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "EJCN119",
+      "descripcion": "Eje de salida de trasmision ATV150/ATV150 Sport/ATV180",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "314.017200",
+      "importe_neto": "314.017200",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "369.43",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "EJCN132",
+      "descripcion": "Eje de rueda trasera AT110 SPORT 2011-2015",
+      "facturado": 6.0,
+      "unidad": "PZA",
+      "precio_neto": "19.591650",
+      "importe_neto": "117.549900",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "138.29",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "EMCN55",
+      "descripcion": "Empaque completo ISLO 175",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "36.490500",
+      "importe_neto": "182.452500",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "214.65",
+      "pedido56": 5.0,
+      "pedido55": 4.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "EMCN77",
+      "descripcion": "Empaque completo CB1",
+      "facturado": 7.0,
+      "unidad": "JGO",
+      "precio_neto": "54.918500",
+      "importe_neto": "384.429500",
+      "cotizado": 7,
+      "cotizacion_importe_antes_volumen": "452.27",
+      "pedido56": 7.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "EMCN90",
+      "descripcion": "Empaque completo CBF125",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "38.675000",
+      "importe_neto": "116.025000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "136.50",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ENCN60",
+      "descripcion": "Engrane cadena de levas FZ16",
+      "facturado": 6.0,
+      "unidad": "PZA",
+      "precio_neto": "55.998000",
+      "importe_neto": "335.988000",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "395.28",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ENCN62",
+      "descripcion": "Engrane cadena de levas CBF125",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "34.952000",
+      "importe_neto": "104.856000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "123.36",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ESCN31",
+      "descripcion": "Espejos FZ16",
+      "facturado": 20.0,
+      "unidad": "PAR",
+      "precio_neto": "50.609000",
+      "importe_neto": "1012.180000",
+      "cotizado": 20,
+      "cotizacion_importe_antes_volumen": "1190.80",
+      "pedido56": 20.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ESCN57",
+      "descripcion": "Espejos 125Z",
+      "facturado": 5.0,
+      "unidad": "PAR",
+      "precio_neto": "43.268400",
+      "importe_neto": "216.342000",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "254.52",
+      "pedido56": 5.0,
+      "pedido55": 6.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ETCN29",
+      "descripcion": "Estator AT125 (6 bobinas)",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "135.351450",
+      "importe_neto": "406.054350",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "477.71",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "ETCN41",
+      "descripcion": "Estator CBF125 (8 bobinas)",
+      "facturado": 7.0,
+      "unidad": "PZA",
+      "precio_neto": "216.835000",
+      "importe_neto": "1517.845000",
+      "cotizado": 7,
+      "cotizacion_importe_antes_volumen": "1785.70",
+      "pedido56": 7.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN100",
+      "descripcion": "Filtro de aire SZRR 150",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "60.103500",
+      "importe_neto": "240.414000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "282.84",
+      "pedido56": 4.0,
+      "pedido55": 20.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN102",
+      "descripcion": "Filtro de aire Wave 110 modelo antiguo",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "35.555500",
+      "importe_neto": "35.555500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "41.83",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN104",
+      "descripcion": "Filtro de aire XR150L",
+      "facturado": 16.0,
+      "unidad": "PZA",
+      "precio_neto": "39.329500",
+      "importe_neto": "629.272000",
+      "cotizado": 16,
+      "cotizacion_importe_antes_volumen": "740.32",
+      "pedido56": 16.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN105",
+      "descripcion": "Filtro de aire CB1",
+      "facturado": 11.0,
+      "unidad": "PZA",
+      "precio_neto": "35.555500",
+      "importe_neto": "391.110500",
+      "cotizado": 11,
+      "cotizacion_importe_antes_volumen": "460.13",
+      "pedido56": 11.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN106",
+      "descripcion": "Filtro de aire VORTX 200",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "46.450800",
+      "importe_neto": "46.450800",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "54.65",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN107",
+      "descripcion": "Filtro de aire ELITE 125",
+      "facturado": 9.0,
+      "unidad": "PZA",
+      "precio_neto": "63.342000",
+      "importe_neto": "570.078000",
+      "cotizado": 9,
+      "cotizacion_importe_antes_volumen": "670.68",
+      "pedido56": 9.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN25",
+      "descripcion": "Filtro de aire AT110",
+      "facturado": 12.0,
+      "unidad": "PZA",
+      "precio_neto": "8.315550",
+      "importe_neto": "99.786600",
+      "cotizado": 12,
+      "cotizacion_importe_antes_volumen": "117.40",
+      "pedido56": 12.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN34",
+      "descripcion": "Filtro de aire conico 42 MM",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "36.703000",
+      "importe_neto": "36.703000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "43.18",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN55",
+      "descripcion": "Filtro de aceite BOXER 150",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "14.348000",
+      "importe_neto": "71.740000",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "84.40",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN60",
+      "descripcion": "Filtro de aceite PULSAR 200NS",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "18.411000",
+      "importe_neto": "92.055000",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "108.30",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN68",
+      "descripcion": "Filtro de aire RAY Z",
+      "facturado": 9.0,
+      "unidad": "PZA",
+      "precio_neto": "57.035000",
+      "importe_neto": "513.315000",
+      "cotizado": 9,
+      "cotizacion_importe_antes_volumen": "603.90",
+      "pedido56": 9.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN70",
+      "descripcion": "Filtro de aire CB190",
+      "facturado": 15.0,
+      "unidad": "PZA",
+      "precio_neto": "37.519000",
+      "importe_neto": "562.785000",
+      "cotizado": 15,
+      "cotizacion_importe_antes_volumen": "662.10",
+      "pedido56": 15.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN83",
+      "descripcion": "Filtro de aceite VORTX 200",
+      "facturado": 6.0,
+      "unidad": "PZA",
+      "precio_neto": "32.183550",
+      "importe_neto": "193.101300",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "227.18",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN87",
+      "descripcion": "Filtro aceite TVS King",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "15.172500",
+      "importe_neto": "75.862500",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "89.25",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN92",
+      "descripcion": "Filtro de aire CYGNUS 125ZR",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "40.366500",
+      "importe_neto": "121.099500",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "142.47",
+      "pedido56": 3.0,
+      "pedido55": 17.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "FICN96",
+      "descripcion": "Filtro de aire NINJA 250/NINJA 300",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "19.983500",
+      "importe_neto": "79.934000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "94.04",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GCCN05",
+      "descripcion": "Guias de cadena de tiempo 250Z",
+      "facturado": 11.0,
+      "unidad": "PAR",
+      "precio_neto": "42.128550",
+      "importe_neto": "463.414050",
+      "cotizado": 11,
+      "cotizacion_importe_antes_volumen": "545.19",
+      "pedido56": 11.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GCCN07",
+      "descripcion": "Guias de cadena de tiempo VORTX 200",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "66.027150",
+      "importe_neto": "330.135750",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "388.40",
+      "pedido56": 5.0,
+      "pedido55": 6.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GCCN08",
+      "descripcion": "Guias de cadena de tiempo CRYPTON 110",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "53.184500",
+      "importe_neto": "212.738000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "250.28",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GPCN01",
+      "descripcion": "Posapies traseros FT150",
+      "facturado": 28.0,
+      "unidad": "PAR",
+      "precio_neto": "31.885200",
+      "importe_neto": "892.785600",
+      "cotizado": 28,
+      "cotizacion_importe_antes_volumen": "1050.34",
+      "pedido56": 28.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GPCN21",
+      "descripcion": "Posapies traseros 125Z",
+      "facturado": 1.0,
+      "unidad": "PAR",
+      "precio_neto": "46.213650",
+      "importe_neto": "46.213650",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "54.37",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GPCN24",
+      "descripcion": "Posapies traseros DM150",
+      "facturado": 17.0,
+      "unidad": "PAR",
+      "precio_neto": "63.120150",
+      "importe_neto": "1073.042550",
+      "cotizado": 17,
+      "cotizacion_importe_antes_volumen": "1262.40",
+      "pedido56": 17.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GPCN25",
+      "descripcion": "Posapies traseros AT125",
+      "facturado": 24.0,
+      "unidad": "PAR",
+      "precio_neto": "41.937300",
+      "importe_neto": "1006.495200",
+      "cotizado": 24,
+      "cotizacion_importe_antes_volumen": "1184.11",
+      "pedido56": 24.0,
+      "pedido55": 26.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GPCN26",
+      "descripcion": "Posapies traseros 250Z",
+      "facturado": 17.0,
+      "unidad": "PAR",
+      "precio_neto": "57.596850",
+      "importe_neto": "979.146450",
+      "cotizado": 17,
+      "cotizacion_importe_antes_volumen": "1151.94",
+      "pedido56": 17.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "GPCN51",
+      "descripcion": "Posapies traseros DM250",
+      "facturado": 17.0,
+      "unidad": "JGO",
+      "precio_neto": "96.504750",
+      "importe_neto": "1640.580750",
+      "cotizado": 17,
+      "cotizacion_importe_antes_volumen": "1930.10",
+      "pedido56": 17.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "IDCN07",
+      "descripcion": "Relevador direccionales PULSAR 200NS",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "17.510000",
+      "importe_neto": "17.510000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "20.60",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTCN19",
+      "descripcion": "Repuestos de carburador CBX250",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "143.412000",
+      "importe_neto": "143.412000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "168.72",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTCN34",
+      "descripcion": "Repuestos de carburador 250Z VERDE",
+      "facturado": 21.0,
+      "unidad": "JGO",
+      "precio_neto": "41.103450",
+      "importe_neto": "863.172450",
+      "cotizado": 21,
+      "cotizacion_importe_antes_volumen": "1015.50",
+      "pedido56": 21.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTCN35",
+      "descripcion": "Repuestos de carburador BWS 100",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "43.426500",
+      "importe_neto": "86.853000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "102.18",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTSA13",
+      "descripcion": "Kit engranes y cadena CB250 (33 x 14, 520x106L)",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "175.904695",
+      "importe_neto": "703.618780",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "827.79",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTSA14",
+      "descripcion": "Kit engranes y cadena AX100 (42 x 14, 428x112L)",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "137.585208",
+      "importe_neto": "687.926038",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "809.32",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTSA52",
+      "descripcion": "Kit engranes y cadena CBR250 (14 X 38 X 520H X 108L)",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "237.558926",
+      "importe_neto": "712.676777",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "838.44",
+      "pedido56": 3.0,
+      "pedido55": 7.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTSA55",
+      "descripcion": "Kit engranes y cadena DUKE 200 (42 x 14, 520H x 118L)",
+      "facturado": 14.0,
+      "unidad": "JGO",
+      "precio_neto": "257.594543",
+      "importe_neto": "3606.323608",
+      "cotizado": 14,
+      "cotizacion_importe_antes_volumen": "4242.73",
+      "pedido56": 14.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "KTSA57",
+      "descripcion": "Kit engranes y cadena SZRR 150 (42 x 14, 428H x 126L)",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "134.300680",
+      "importe_neto": "134.300680",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "158.00",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LECN02",
+      "descripcion": "Leva de embrague FT125/FT150",
+      "facturado": 12.0,
+      "unidad": "PZA",
+      "precio_neto": "16.118550",
+      "importe_neto": "193.422600",
+      "cotizado": 12,
+      "cotizacion_importe_antes_volumen": "227.56",
+      "pedido56": 12.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LUCN116",
+      "descripcion": "Luz direccional GIXXER 155",
+      "facturado": 2.0,
+      "unidad": "PAR",
+      "precio_neto": "78.820500",
+      "importe_neto": "157.641000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "185.46",
+      "pedido56": 1.0,
+      "pedido55": 37.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LUCN127",
+      "descripcion": "Luz direccional trasera AVENGER 220",
+      "facturado": 20.0,
+      "unidad": "PZA",
+      "precio_neto": "55.743000",
+      "importe_neto": "1114.860000",
+      "cotizado": 20,
+      "cotizacion_importe_antes_volumen": "1311.60",
+      "pedido56": 18.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LUCN37",
+      "descripcion": "Luz direccional CGL125",
+      "facturado": 68.0,
+      "unidad": "PZA",
+      "precio_neto": "25.066500",
+      "importe_neto": "1704.522000",
+      "cotizado": 68,
+      "cotizacion_importe_antes_volumen": "2005.32",
+      "pedido56": 66.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LUCN55",
+      "descripcion": "Luz direccional delantera derecha FZ16",
+      "facturado": 36.0,
+      "unidad": "PZA",
+      "precio_neto": "31.450000",
+      "importe_neto": "1132.200000",
+      "cotizado": 36,
+      "cotizacion_importe_antes_volumen": "1332.00",
+      "pedido56": 36.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA",
+        "EDOMEX"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LUCN56",
+      "descripcion": "Luz direccional delantera izquierda FZ16",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "31.450000",
+      "importe_neto": "125.800000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "148.00",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LUCN84",
+      "descripcion": "Luz direccional delantera BOXER 150",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "25.100500",
+      "importe_neto": "100.402000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "118.12",
+      "pedido56": 4.0,
+      "pedido55": 32.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "LVCN14",
+      "descripcion": "Llave de gasolina PULSAR200 NS",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "77.426500",
+      "importe_neto": "154.853000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "182.18",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MACN131",
+      "descripcion": "Manija izquierda ATV150 SPORT 2011-2012/ATV150 C/REVERSA 2019-2023/ATV150 SPORT C/REVERSA 2012-2019/",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "38.946150",
+      "importe_neto": "194.730750",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "229.09",
+      "pedido56": 5.0,
+      "pedido55": 3.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MACN132",
+      "descripcion": "Manija derecha ATV150 SPORT 2011-2012/ATV150 C/REVERSA 2019-2023/ATV150 SPORT C/REVERSA 2012-2019/ATV180 2016-2023/ATV200 2020-2023",
+      "facturado": 9.0,
+      "unidad": "PZA",
+      "precio_neto": "36.352800",
+      "importe_neto": "327.175200",
+      "cotizado": 9,
+      "cotizacion_importe_antes_volumen": "384.91",
+      "pedido56": 9.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MACN15",
+      "descripcion": "Manija derecha FT150",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "20.127150",
+      "importe_neto": "60.381450",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "71.04",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MACN46",
+      "descripcion": "Manijas FZ16",
+      "facturado": 21.0,
+      "unidad": "JGO",
+      "precio_neto": "51.289000",
+      "importe_neto": "1077.069000",
+      "cotizado": 21,
+      "cotizacion_importe_antes_volumen": "1267.14",
+      "pedido56": 21.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MECN04",
+      "descripcion": "Medidor de aceite CARGO 150",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "10.344500",
+      "importe_neto": "10.344500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "12.17",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MECN06",
+      "descripcion": "Medidor de aceite 125Z",
+      "facturado": 21.0,
+      "unidad": "PZA",
+      "precio_neto": "7.887150",
+      "importe_neto": "165.630150",
+      "cotizado": 21,
+      "cotizacion_importe_antes_volumen": "194.86",
+      "pedido56": 21.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MECN08",
+      "descripcion": "Medidor de aceite 200Z",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "9.531900",
+      "importe_neto": "19.063800",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "22.43",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MRCN03",
+      "descripcion": "Motor de arranque EN125 HU",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "305.702500",
+      "importe_neto": "611.405000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "719.30",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MRCN27",
+      "descripcion": "Motor de arranque XEVERUS 250",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "403.522200",
+      "importe_neto": "403.522200",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "474.73",
+      "pedido56": 1.0,
+      "pedido55": 7.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "MRCN28",
+      "descripcion": "Motor De arranque ROCKETMAN 250",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "286.178850",
+      "importe_neto": "1144.715400",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "1346.72",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PECN15",
+      "descripcion": "Pedal de freno FT150",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "61.299450",
+      "importe_neto": "122.598900",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "144.23",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PECN39",
+      "descripcion": "Pedal de arranque FZ16",
+      "facturado": 4.0,
+      "unidad": "PZA",
+      "precio_neto": "117.886500",
+      "importe_neto": "471.546000",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "554.76",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PICN15",
+      "descripcion": "Pipeta de Carburador CBF125",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "114.206000",
+      "importe_neto": "228.412000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "268.72",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PICN18",
+      "descripcion": "Pipeta de carburador VORTX 200",
+      "facturado": 28.0,
+      "unidad": "PZA",
+      "precio_neto": "47.858400",
+      "importe_neto": "1340.035200",
+      "cotizado": 28,
+      "cotizacion_importe_antes_volumen": "1576.51",
+      "pedido56": 28.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PICN19",
+      "descripcion": "Pipeta de carburador 250Z VERDE",
+      "facturado": 35.0,
+      "unidad": "PZA",
+      "precio_neto": "51.339150",
+      "importe_neto": "1796.870250",
+      "cotizado": 35,
+      "cotizacion_importe_antes_volumen": "2113.97",
+      "pedido56": 35.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PRCN18",
+      "descripcion": "Parador lateral 150Z",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "39.780000",
+      "importe_neto": "119.340000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "140.40",
+      "pedido56": 3.0,
+      "pedido55": 16.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PRCN22",
+      "descripcion": "Parador lateral DM150",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "49.419000",
+      "importe_neto": "98.838000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "116.28",
+      "pedido56": 2.0,
+      "pedido55": 2.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PRCN34",
+      "descripcion": "Parador lateral 200Z",
+      "facturado": 10.0,
+      "unidad": "PZA",
+      "precio_neto": "38.862000",
+      "importe_neto": "388.620000",
+      "cotizado": 10,
+      "cotizacion_importe_antes_volumen": "457.20",
+      "pedido56": 10.0,
+      "pedido55": 22.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PRCN35",
+      "descripcion": "Parador lateral DM150 ROJA",
+      "facturado": 11.0,
+      "unidad": "PZA",
+      "precio_neto": "42.006150",
+      "importe_neto": "462.067650",
+      "cotizado": 11,
+      "cotizacion_importe_antes_volumen": "543.61",
+      "pedido56": 11.0,
+      "pedido55": 11.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PRCN40",
+      "descripcion": "Parador lateral CBF125",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "37.825000",
+      "importe_neto": "113.475000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "133.50",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PRCN59",
+      "descripcion": "Parador lateral completo VITALIA 125 (2014-2019)",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "37.668600",
+      "importe_neto": "75.337200",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "88.63",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PSCN13",
+      "descripcion": "Porta balatas trasero CG125",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "115.141000",
+      "importe_neto": "345.423000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "406.38",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PSCN16",
+      "descripcion": "Porta balatas trasero completo 125Z",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "186.155100",
+      "importe_neto": "186.155100",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "219.01",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PSCN24",
+      "descripcion": "Porta engrane trasero CARGO 150",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "98.846500",
+      "importe_neto": "197.693000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "232.58",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PSCN32",
+      "descripcion": "Porta balatas trasero CBF125",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "243.907500",
+      "importe_neto": "487.815000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "573.90",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PSCN45",
+      "descripcion": "Porta balatas trasero completo FT180 (2013-2020)",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "206.848350",
+      "importe_neto": "206.848350",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "243.35",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PSCN47",
+      "descripcion": "Porta balatas delanteros completos ATV150 SPORT 2011-2012/ATV150 C/REVERSA 2019-2023/ATV150 SPORT C/REVERSA 2012-2019/ATV180 2016-2023/ATV200 2020-2023",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "212.685300",
+      "importe_neto": "638.055900",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "750.65",
+      "pedido56": 3.0,
+      "pedido55": 18.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PTCN111",
+      "descripcion": "Piston completo AT125 STD",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "66.073050",
+      "importe_neto": "132.146100",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "155.47",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PTCN148",
+      "descripcion": "Piston completo CBF125 STD",
+      "facturado": 9.0,
+      "unidad": "JGO",
+      "precio_neto": "72.828000",
+      "importe_neto": "655.452000",
+      "cotizado": 9,
+      "cotizacion_importe_antes_volumen": "771.12",
+      "pedido56": 9.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PTCN37",
+      "descripcion": "Piston completo EX200/RT200 STD",
+      "facturado": 6.0,
+      "unidad": "JGO",
+      "precio_neto": "98.784450",
+      "importe_neto": "592.706700",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "697.30",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PTCN53",
+      "descripcion": "Piston completo CRYPTON 110 STD",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "93.415000",
+      "importe_neto": "186.830000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "219.80",
+      "pedido56": 2.0,
+      "pedido55": 4.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "PTCN88",
+      "descripcion": "Piston completo FZ16 STD",
+      "facturado": 6.0,
+      "unidad": "JGO",
+      "precio_neto": "94.290500",
+      "importe_neto": "565.743000",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "665.58",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RACN12",
+      "descripcion": "Rayos delanteros 10G X 240 DM200",
+      "facturado": 22.0,
+      "unidad": "JGO",
+      "precio_neto": "52.601400",
+      "importe_neto": "1157.230800",
+      "cotizado": 22,
+      "cotizacion_importe_antes_volumen": "1361.45",
+      "pedido56": 22.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RACN14",
+      "descripcion": "Rayos delanteros 10G X 184/186DM150",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "52.632000",
+      "importe_neto": "105.264000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "123.84",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 46.0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RACN16",
+      "descripcion": "Rayos traseros 8G X 143/144 DM125",
+      "facturado": 13.0,
+      "unidad": "JGO",
+      "precio_neto": "52.364250",
+      "importe_neto": "680.735250",
+      "cotizado": 13,
+      "cotizacion_importe_antes_volumen": "800.87",
+      "pedido56": 13.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RACN17",
+      "descripcion": "Rayos traseros 8G X 193/196 DM 150 ROJA 2018-2019",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "63.189000",
+      "importe_neto": "189.567000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "223.02",
+      "pedido56": 3.0,
+      "pedido55": 16.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RACN18",
+      "descripcion": "Rayos delanteros 9G X 208 DM150 ROJA: 2018 - 2019",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "61.215300",
+      "importe_neto": "122.430600",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "144.04",
+      "pedido56": 2.0,
+      "pedido55": 13.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RACN19",
+      "descripcion": "Rayos delanteros negros 9G X 231.5 XEVERUS 250 jgo (36)",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "103.405050",
+      "importe_neto": "413.620200",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "486.61",
+      "pedido56": 4.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RLCN02",
+      "descripcion": "Relevador de arranque EN125 HU",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "74.970000",
+      "importe_neto": "224.910000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "264.60",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RTCN15",
+      "descripcion": "Retenes de motor CARGO 150",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "11.636500",
+      "importe_neto": "58.182500",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "68.45",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RTCN27",
+      "descripcion": "Retenes de horquilla 250Z",
+      "facturado": 6.0,
+      "unidad": "PAR",
+      "precio_neto": "9.554850",
+      "importe_neto": "57.329100",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "67.45",
+      "pedido56": 6.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RTCN35",
+      "descripcion": "Retenes de horquilla MT07/MT09",
+      "facturado": 2.0,
+      "unidad": "PAR",
+      "precio_neto": "14.229000",
+      "importe_neto": "28.458000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "33.48",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "RTCN40",
+      "descripcion": "Retenes de motor ROCKETMAN 250",
+      "facturado": 19.0,
+      "unidad": "JGO",
+      "precio_neto": "11.329650",
+      "importe_neto": "215.263350",
+      "cotizado": 19,
+      "cotizacion_importe_antes_volumen": "253.25",
+      "pedido56": 19.0,
+      "pedido55": 33.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SNCN08",
+      "descripcion": "Sensor de velocidades DM150",
+      "facturado": 3.0,
+      "unidad": "PZA",
+      "precio_neto": "18.811350",
+      "importe_neto": "56.434050",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "66.39",
+      "pedido56": 3.0,
+      "pedido55": 1.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SNCN36",
+      "descripcion": "Sensor de velocidades ATV150 SPORT 2011-2012 / ATV150 C/REVERSA 2019-2023 / ATV150 SPORT C/REVERSA 2012 -2019 / ATV180 2016-2023 / ATV200 2020-2022",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "25.971750",
+      "importe_neto": "25.971750",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "30.56",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN118",
+      "descripcion": "Mando izquierdo BWS 125",
+      "facturado": 1.0,
+      "unidad": "PZA",
+      "precio_neto": "109.641500",
+      "importe_neto": "109.641500",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "128.99",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN130",
+      "descripcion": "Interruptor de encendido CBF160",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "122.731500",
+      "importe_neto": "368.194500",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "433.17",
+      "pedido56": 3.0,
+      "pedido55": 13.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN162",
+      "descripcion": "Mando izquierdo CROSSMAX PRO 250",
+      "facturado": 39.0,
+      "unidad": "PZA",
+      "precio_neto": "79.269300",
+      "importe_neto": "3091.502700",
+      "cotizado": 39,
+      "cotizacion_importe_antes_volumen": "3637.06",
+      "pedido56": 39.0,
+      "pedido55": 129.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN164",
+      "descripcion": "Mando izquierdo ATV150 SPORT 2011-2012 /ATV150 C/REVERSA 2019-2023 /ATV150 SPORT C/REVERSA 2012-2019 /ATV180 2016-2023",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "97.353900",
+      "importe_neto": "194.707800",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "229.07",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN17",
+      "descripcion": "Juego de cerraduras ST70",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "101.087100",
+      "importe_neto": "202.174200",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "237.85",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN171",
+      "descripcion": "Juego de cerraduras VGO 125 2015-2017",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "109.525050",
+      "importe_neto": "109.525050",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "128.85",
+      "pedido56": 1.0,
+      "pedido55": 7.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "SWCN93",
+      "descripcion": "Switch de encendido AT125",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "148.035150",
+      "importe_neto": "296.070300",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "348.32",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TCCN07",
+      "descripcion": "Tensor cadena tiempo FZ16",
+      "facturado": 8.0,
+      "unidad": "PZA",
+      "precio_neto": "28.322000",
+      "importe_neto": "226.576000",
+      "cotizado": 8,
+      "cotizacion_importe_antes_volumen": "266.56",
+      "pedido56": 8.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN14",
+      "descripcion": "Ajustador de cadena 125Z",
+      "facturado": 7.0,
+      "unidad": "JGO",
+      "precio_neto": "33.721200",
+      "importe_neto": "236.048400",
+      "cotizado": 7,
+      "cotizacion_importe_antes_volumen": "277.70",
+      "pedido56": 7.0,
+      "pedido55": 17.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN15",
+      "descripcion": "Ajustador de cadena 250Z",
+      "facturado": 4.0,
+      "unidad": "JGO",
+      "precio_neto": "71.313300",
+      "importe_neto": "285.253200",
+      "cotizado": 4,
+      "cotizacion_importe_antes_volumen": "335.59",
+      "pedido56": 4.0,
+      "pedido55": 8.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN22",
+      "descripcion": "Ajustador de cadena NXR150",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "55.955500",
+      "importe_neto": "111.911000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "131.66",
+      "pedido56": 2.0,
+      "pedido55": 14.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN23",
+      "descripcion": "Tensor cadena tiempo PULSAR 200NS",
+      "facturado": 2.0,
+      "unidad": "PZA",
+      "precio_neto": "34.943500",
+      "importe_neto": "69.887000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "82.22",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN24",
+      "descripcion": "Ajustador de cadena DM150 ROJA 2018-2019",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "54.261450",
+      "importe_neto": "108.522900",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "127.67",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN28",
+      "descripcion": "Ajustador de cadena YBR125",
+      "facturado": 3.0,
+      "unidad": "JGO",
+      "precio_neto": "24.140000",
+      "importe_neto": "72.420000",
+      "cotizado": 3,
+      "cotizacion_importe_antes_volumen": "85.20",
+      "pedido56": 3.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TLCN45",
+      "descripcion": "Ajustador de cadena ATV150 SPORT 2011-2012 / ATV150 C/REVERSA 2019-2023 / ATV150 SPORT C/REVERSA 2012 -2019 / ATV180 2016-2023 / ATV200 2020-2022",
+      "facturado": 18.0,
+      "unidad": "PZA",
+      "precio_neto": "138.434400",
+      "importe_neto": "2491.819200",
+      "cotizado": 18,
+      "cotizacion_importe_antes_volumen": "2931.55",
+      "pedido56": 18.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TZCN05",
+      "descripcion": "Tazas de direccion CARGO 150",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "46.512000",
+      "importe_neto": "46.512000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "54.72",
+      "pedido56": 1.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TZCN18",
+      "descripcion": "Tazas de direccion DM150/DM250",
+      "facturado": 6.0,
+      "unidad": "JGO",
+      "precio_neto": "154.422900",
+      "importe_neto": "926.537400",
+      "cotizado": 6,
+      "cotizacion_importe_antes_volumen": "1090.04",
+      "pedido56": 6.0,
+      "pedido55": 8.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TZCN20",
+      "descripcion": "Tazas de direccion VORTX 200",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "50.964300",
+      "importe_neto": "254.821500",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "299.79",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "TZCN23",
+      "descripcion": "Tazas de direccion FZ 2.0",
+      "facturado": 2.0,
+      "unidad": "JGO",
+      "precio_neto": "44.769500",
+      "importe_neto": "89.539000",
+      "cotizado": 2,
+      "cotizacion_importe_antes_volumen": "105.34",
+      "pedido56": 2.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "VACN10",
+      "descripcion": "Valvulas de admision y expulsion EN125 HU",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "20.604000",
+      "importe_neto": "103.020000",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "121.20",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "VACN11",
+      "descripcion": "Valvulas de admision y expulsion CARGO 150",
+      "facturado": 16.0,
+      "unidad": "JGO",
+      "precio_neto": "21.658000",
+      "importe_neto": "346.528000",
+      "cotizado": 16,
+      "cotizacion_importe_antes_volumen": "407.68",
+      "pedido56": 16.0,
+      "pedido55": 22.0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "VACN12",
+      "descripcion": "Valvulas de admision y expulsion EX200",
+      "facturado": 5.0,
+      "unidad": "JGO",
+      "precio_neto": "18.153450",
+      "importe_neto": "90.767250",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "106.79",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "VACN24",
+      "descripcion": "Valvulas de admision y expulsion 250Z",
+      "facturado": 26.0,
+      "unidad": "JGO",
+      "precio_neto": "66.868650",
+      "importe_neto": "1738.584900",
+      "cotizado": 26,
+      "cotizacion_importe_antes_volumen": "2045.39",
+      "pedido56": 26.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "VACN27",
+      "descripcion": "Valvulas de admision y expulsion FZ16",
+      "facturado": 1.0,
+      "unidad": "JGO",
+      "precio_neto": "18.989000",
+      "importe_neto": "18.989000",
+      "cotizado": 1,
+      "cotizacion_importe_antes_volumen": "22.34",
+      "pedido56": 1.0,
+      "pedido55": 6.0,
+      "pedido54": 13.0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "WRCN20",
+      "descripcion": "Arnes principal XEVERUS 250",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "253.849950",
+      "importe_neto": "1269.249750",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "1493.23",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "WRCN35",
+      "descripcion": "Arnes principal XT125RT 2020-2021",
+      "facturado": 5.0,
+      "unidad": "PZA",
+      "precio_neto": "234.763200",
+      "importe_neto": "1173.816000",
+      "cotizado": 5,
+      "cotizacion_importe_antes_volumen": "1380.96",
+      "pedido56": 5.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    },
+    {
+      "codigo": "WRCN47",
+      "descripcion": "Arnes principal CROSSMAX PRO 250",
+      "facturado": 16.0,
+      "unidad": "PZA",
+      "precio_neto": "258.929550",
+      "importe_neto": "4142.872800",
+      "cotizado": 16,
+      "cotizacion_importe_antes_volumen": "4873.97",
+      "pedido56": 16.0,
+      "pedido55": 0,
+      "pedido54": 0,
+      "bodegas_rgp": [
+        "CUERNAVACA"
+      ],
+      "recibido": null,
+      "asignado_full": 0
+    }
+  ],
+  "estado": "en camino",
+  "recepcion_confirmada": false,
+  "pdf_original_descargado": false,
+  "origen_xml": "Adjunto base64 de Mostrar versión original de Gmail; contenido completo conservado sin editar",
+  "pedido_files": [
+    "3-SAYTO-F 54 URGENTE CUERNAVACA 12-10-2026.xlsx",
+    "3-SAYTO-F-CYE 54 URGENTE CUERNAVACA 12-10-2026.xlsx",
+    "3-SAYTO-F 55 CUERNAVACA 20-10-2026.xlsx",
+    "3-SAYTO-F-CYE 55 CUERNAVACA 20-10-2026.xlsx",
+    "3-SAYTO-F 56 CUERNAVACA 26-10-2026.xlsx"
+  ],
+  "xml_previa_mismo_contenido": true
+}

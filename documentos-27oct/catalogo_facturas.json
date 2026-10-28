@@ -194,5 +194,16 @@
     "bodega": "EDOMEX",
     "tipo": "Mercancía",
     "total": "77956.56"
+  },
+  {
+    "proveedor": "SAYTO",
+    "folio": "303586",
+    "bodega": "Cuernavaca",
+    "tipo": "Mercancía",
+    "total": "125076.21",
+    "pedido": 56,
+    "pedido_proveedor": "287834",
+    "estado": "en camino",
+    "uuid": "DD8EDC26-E46A-5A9E-8269-61FE62700D12"
   }
 ]
