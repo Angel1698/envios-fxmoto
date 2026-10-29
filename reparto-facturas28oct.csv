@@ -1,0 +1,380 @@
+﻿factura,codigo,facturado,asignado,por_envio,restante,motivo
+C-ALESSIA-288469,AJC-006,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,ALE-112,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,AMO-003,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,AMO-016,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,AMO-063,7.0,7.0,249: 7,0.0,Asignado completo
+C-ALESSIA-288469,AMO-076,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,AMO-088,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,AMO-091,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,ARN-003,25.0,25.0,248: 25,0.0,Asignado completo
+C-ALESSIA-288469,ARN-008,17.0,17.0,249: 17,0.0,Asignado completo
+C-ALESSIA-288469,ARN-035,5.0,5.0,248: 5,0.0,Asignado completo
+C-ALESSIA-288469,ARN-040,19.0,19.0,248: 19,0.0,Asignado completo
+C-ALESSIA-288469,ARN-044,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,BAF-013F,1.0,0.0,,1.0,PNBB54646: Componentes insuficientes para una unidad ML: BAF-056; ERLC55815: Sin venta con stock o compromisos; VLKF55033: Sin venta con stock o compromisos
+C-ALESSIA-288469,BAF-030F,3.0,0.0,,3.0,IBHA53706: Componentes insuficientes para una unidad ML: BAF-075; ZUNA81717: Componentes insuficientes para una unidad ML: BAF-075; IEMB12483: Componentes insuficientes para una unidad ML: 42-4133-001; ETKP13587: Componentes insuficientes para una unidad ML: 71-071-NP; GFLW54549: Componentes insuficientes para una unidad ML: BAF-042
+C-ALESSIA-288469,BAF-056F,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,BAF-071F,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,BAF-073,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,BAT-ALE-009,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,BLC-006,10.0,10.0,249: 10,0.0,Asignado completo
+C-ALESSIA-288469,BLC-011,15.0,15.0,248: 15,0.0,Asignado completo
+C-ALESSIA-288469,BLC-GYM-01,7.0,7.0,249: 7,0.0,Asignado completo
+C-ALESSIA-288469,BOB-002,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,BOF-041,20.0,20.0,248: 20,0.0,Asignado completo
+C-ALESSIA-288469,BOF-A018,14.0,14.0,249: 14,0.0,Asignado completo
+C-ALESSIA-288469,BOF-A019,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,BOF-C005,50.0,50.0,248: 50,0.0,Asignado completo
+C-ALESSIA-288469,BOM-015,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,BUJ-ALE-01,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,CAB-022,16.0,16.0,249: 16,0.0,Asignado completo
+C-ALESSIA-288469,CAB-025,16.0,16.0,249: 16,0.0,Asignado completo
+C-ALESSIA-288469,CAB-042,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,CAD-003HF,20.0,4.0,249: 4,16.0,"UUKH07226: Excedente, Impulsar sin venta, Sin venta con stock o compromisos; CVVJ94034: Evitar descarte; JRFD94579: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov; HVPL97402: Impulsar sin venta, Sin venta con stock o compromisos; YTYE94412: Sin venta con stock o compromisos; JUHT95654: Sin venta con stock o compromisos"
+C-ALESSIA-288469,CAD-004HOF,40.0,40.0,248: 40,0.0,Asignado completo
+C-ALESSIA-288469,CAL-001,24.0,24.0,249: 24,0.0,Asignado completo
+C-ALESSIA-288469,CAL-002,40.0,40.0,249: 40,0.0,Asignado completo
+C-ALESSIA-288469,CAL-019,60.0,60.0,248: 60,0.0,Asignado completo
+C-ALESSIA-288469,CAL-020,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CAL-052,20.0,20.0,249: 20,0.0,Asignado completo
+C-ALESSIA-288469,CAL-059,13.0,13.0,249: 13,0.0,Asignado completo
+C-ALESSIA-288469,CAL-061,40.0,40.0,249: 40,0.0,Asignado completo
+C-ALESSIA-288469,CAM-001RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-005RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-008RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-010RD,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CAM-013RD,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CAM-017F,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CAM-018F,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-018RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-019F,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-021F,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-022RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-023F,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-024F,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CAM-026RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAM-027RD,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CAR-018,8.0,8.0,248: 8,0.0,Asignado completo
+C-ALESSIA-288469,CAR-CGG-A,80.0,80.0,248: 80,0.0,Asignado completo
+C-ALESSIA-288469,CAR-GYG-01,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,CBO-001,3.0,2.0,249: 2,1.0,ZXNJ97117: Sin venta con stock o compromisos
+C-ALESSIA-288469,CDD-012,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CDD-014,12.0,12.0,248: 6; 249: 6,0.0,Asignado completo
+C-ALESSIA-288469,CDI-007,15.0,15.0,248: 13; 249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CDI-034,14.0,14.0,249: 14,0.0,Asignado completo
+C-ALESSIA-288469,CDI-103,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CEN-004,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,CIG-006,18.0,0.0,,18.0,KZIM17253: Evitar descarte
+C-ALESSIA-288469,CIG-009,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,CIG-010,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,CIG-013,18.0,18.0,248: 18,0.0,Asignado completo
+C-ALESSIA-288469,CIG-014,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,CIG-032,12.0,12.0,249: 12,0.0,Asignado completo
+C-ALESSIA-288469,CIG-037,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CIG-CGG-01,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,CIN-003,1.0,0.2,249: 0.2,0.8,HPPR97851: Sin venta con stock o compromisos
+C-ALESSIA-288469,CLA-014,4.0,4.0,248: 4,0.0,Asignado completo
+C-ALESSIA-288469,CLA-083,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,CLA-097,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLA-103,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLA-106,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLA-119,5.0,5.0,248: 4; 250: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLA-127,7.0,7.0,248: 6; 249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLA-128,4.0,4.0,248: 3; 249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLA-135,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLC-029,5.0,5.0,248: 4; 250: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLC-031,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,CLC-034,3.0,2.0,248: 2,1.0,HJMF12113: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+C-ALESSIA-288469,CLC-044,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLC-059,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,CLC-063,7.0,2.0,249: 2,5.0,BIDY81050: Sin venta con stock o compromisos
+C-ALESSIA-288469,CLC-066,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,CLC-067,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLC-073,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLC-076,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLC-079,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLF-006,6.0,5.0,248: 4; 250: 1,1.0,KVVM12372: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+C-ALESSIA-288469,CLF-040,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLF-046,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLF-048,14.0,14.0,248: 10; 249: 4,0.0,Asignado completo
+C-ALESSIA-288469,CLF-055,5.0,5.0,248: 5,0.0,Asignado completo
+C-ALESSIA-288469,CLF-057,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,CLU-021,24.0,24.0,249: 24,0.0,Asignado completo
+C-ALESSIA-288469,CLU-059,4.0,4.0,248: 4,0.0,Asignado completo
+C-ALESSIA-288469,CLV-008,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,CLV-013,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLV-061,9.0,9.0,248: 9,0.0,Asignado completo
+C-ALESSIA-288469,CLV-069,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,CLV-072,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLV-078,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,CLV-088,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,CLV-096,9.0,9.0,249: 9,0.0,Asignado completo
+C-ALESSIA-288469,COP-A003,1.0,0.2,249: 0.2,0.8,UNNB11795: Sin venta con stock o compromisos
+C-ALESSIA-288469,CPB-003,16.0,16.0,248: 16,0.0,Asignado completo
+C-ALESSIA-288469,CVE-001,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,CVE-006,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,CVE-009,24.0,24.0,248: 24,0.0,Asignado completo
+C-ALESSIA-288469,CVE-011,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,CVE-016,10.0,10.0,248: 10,0.0,Asignado completo
+C-ALESSIA-288469,CVE-017,12.0,12.0,248: 12,0.0,Asignado completo
+C-ALESSIA-288469,CVE-026,8.0,8.0,249: 8,0.0,Asignado completo
+C-ALESSIA-288469,DIR-034,50.0,28.0,248: 17; 249: 10; 250: 1,22.0,AOEI84212: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov; EVLS16764: Sin venta con stock o compromisos
+C-ALESSIA-288469,DIR-208,31.0,31.0,248: 31,0.0,Asignado completo
+C-ALESSIA-288469,DIR-215,7.0,7.0,249: 7,0.0,Asignado completo
+C-ALESSIA-288469,DIS-008,13.0,13.0,248: 13,0.0,Asignado completo
+C-ALESSIA-288469,DIS-009,20.0,20.0,249: 20,0.0,Asignado completo
+C-ALESSIA-288469,DIS-012,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,DIS-061,5.0,5.0,248: 5,0.0,Asignado completo
+C-ALESSIA-288469,EJE-130,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,ESP-106,32.0,32.0,248: 17; 249: 15,0.0,Asignado completo
+C-ALESSIA-288469,ESP-117,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,ESP-C03NE,14.0,14.0,248: 14,0.0,Asignado completo
+C-ALESSIA-288469,EST-022,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,EST-027,12.0,12.0,249: 12,0.0,Asignado completo
+C-ALESSIA-288469,EST-029,9.0,9.0,248: 9,0.0,Asignado completo
+C-ALESSIA-288469,EST-050,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,FIA-026,1.0,1.0,248: 1,0.0,Asignado completo
+C-ALESSIA-288469,FIA-074,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,FIA-093,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,FIA-B002,12.0,12.0,249: 12,0.0,Asignado completo
+C-ALESSIA-288469,FIG-016,11.0,11.0,248: 11,0.0,Asignado completo
+C-ALESSIA-288469,FIL-045,15.0,15.0,249: 15,0.0,Asignado completo
+C-ALESSIA-288469,GCA-011,4.0,0.0,,4.0,HQNA95801: Evitar descarte
+C-ALESSIA-288469,GOM-069,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,GOM-085,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,GOM-087,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,HSO-023,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,KDC-F15,17.0,0.0,,17.0,ZKBC41746: Evitar descarte
+C-ALESSIA-288469,KDC-F20,9.0,9.0,249: 9,0.0,Asignado completo
+C-ALESSIA-288469,KDC-IR19,12.0,12.0,248: 12,0.0,Asignado completo
+C-ALESSIA-288469,KDC-IR40,18.0,18.0,248: 13; 249: 5,0.0,Asignado completo
+C-ALESSIA-288469,KDC-IR58,6.0,6.0,248: 6,0.0,Asignado completo
+C-ALESSIA-288469,KSP-F02,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,KSP-F10,30.0,30.0,248: 30,0.0,Asignado completo
+C-ALESSIA-288469,KSP-F17,3.0,2.0,249: 2,1.0,MMMQ35195: Sin venta con stock o compromisos
+C-ALESSIA-288469,KSP-F21,100.0,100.0,248: 100,0.0,Asignado completo
+C-ALESSIA-288469,KSP-F35,5.0,5.0,248: 5,0.0,Asignado completo
+C-ALESSIA-288469,KSP-F43,1.0,1.0,248: 1,0.0,Asignado completo
+C-ALESSIA-288469,KSP-F44,40.0,40.0,249: 40,0.0,Asignado completo
+C-ALESSIA-288469,KSP-IR02,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,KSP-IR25,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,KSP-IR57,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,LLV-007,42.0,42.0,248: 42,0.0,Asignado completo
+C-ALESSIA-288469,MAG-001,8.0,8.0,249: 8,0.0,Asignado completo
+C-ALESSIA-288469,MAG-008,24.0,24.0,249: 24,0.0,Asignado completo
+C-ALESSIA-288469,MAG-016,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,MAJ-117,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,MAJ-132RO,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,MAJ-WO052D,10.0,10.0,248: 10,0.0,Asignado completo
+C-ALESSIA-288469,MAN-006,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,MAN-050,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,MAN-060,20.0,20.0,249: 20,0.0,Asignado completo
+C-ALESSIA-288469,MAN-061,40.0,40.0,249: 40,0.0,Asignado completo
+C-ALESSIA-288469,MAN-100,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,MAN-133,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,MAN-158,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,MAR-008,18.0,18.0,248: 18,0.0,Asignado completo
+C-ALESSIA-288469,MAR-019,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,MAR-032,25.0,25.0,248: 25,0.0,Asignado completo
+C-ALESSIA-288469,MAR-038,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,MAS-017,8.0,8.0,249: 8,0.0,Asignado completo
+C-ALESSIA-288469,MAS-030,40.0,40.0,248: 40,0.0,Asignado completo
+C-ALESSIA-288469,MAS-031NE,15.0,0.0,,15.0,IDMB24460: Evitar descarte
+C-ALESSIA-288469,MCA-WS202-05,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,MCA-WS202-09,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,MNJ-003,13.0,13.0,249: 13,0.0,Asignado completo
+C-ALESSIA-288469,PAC-047,5.0,0.0,,5.0,GZMI11661: Evitar descarte
+C-ALESSIA-288469,PAC-069,3.0,2.0,248: 2,1.0,AABI88159: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+C-ALESSIA-288469,PAL-017,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,PAS-022,10.0,10.0,248: 10,0.0,Asignado completo
+C-ALESSIA-288469,PED-A045,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,PED-A055,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,PED-B001,10.0,10.0,248: 10,0.0,Asignado completo
+C-ALESSIA-288469,PED-B009,9.0,9.0,249: 9,0.0,Asignado completo
+C-ALESSIA-288469,PED-B012,19.0,19.0,249: 19,0.0,Asignado completo
+C-ALESSIA-288469,PED-B024,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,PIC-IR09,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,PIÑ-003,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,PLA-010,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,POP-012A,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,POP-015,10.0,10.0,248: 6; 249: 4,0.0,Asignado completo
+C-ALESSIA-288469,POP-021,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,POP-026,18.0,18.0,248: 18,0.0,Asignado completo
+C-ALESSIA-288469,POP-027,60.0,60.0,249: 60,0.0,Asignado completo
+C-ALESSIA-288469,POP-060,3.0,3.0,248: 2; 249: 1,0.0,Asignado completo
+C-ALESSIA-288469,POP-062,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,POP-064,50.0,50.0,248: 50,0.0,Asignado completo
+C-ALESSIA-288469,POP-065,195.0,195.0,248: 195,0.0,Asignado completo
+C-ALESSIA-288469,POP-086,12.0,12.0,249: 12,0.0,Asignado completo
+C-ALESSIA-288469,POP-087,125.0,125.0,249: 125,0.0,Asignado completo
+C-ALESSIA-288469,POP-089,10.0,10.0,249: 10,0.0,Asignado completo
+C-ALESSIA-288469,POP-092,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,POP-104,10.0,10.0,248: 10,0.0,Asignado completo
+C-ALESSIA-288469,POP-106,7.0,7.0,248: 7,0.0,Asignado completo
+C-ALESSIA-288469,POP-122,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,POP-124,20.0,2.0,249: 2,18.0,MWLE16738: Evitar descarte; MBFQ99029: Sin venta con stock o compromisos
+C-ALESSIA-288469,POP-131,7.0,7.0,249: 7,0.0,Asignado completo
+C-ALESSIA-288469,PSK-004,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,RCA-003,4.0,4.0,248: 4,0.0,Asignado completo
+C-ALESSIA-288469,RCA-009,3.0,3.0,248: 3,0.0,Asignado completo
+C-ALESSIA-288469,REG-004,18.0,18.0,249: 18,0.0,Asignado completo
+C-ALESSIA-288469,REG-017,7.0,0.0,,7.0,"BKVN84869: Impulsar sin venta, Sin venta con stock o compromisos"
+C-ALESSIA-288469,REG-027,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,REG-033,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,REG-036,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,RES-008,5.0,5.0,249: 5,0.0,Asignado completo
+C-ALESSIA-288469,RES-015,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,RES-018,1.0,0.8,248: 0.6; 249: 0.1; 252: 0.1,0.2,QNGZ05923: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+C-ALESSIA-288469,SEL-002,20.0,20.0,249: 20,0.0,Asignado completo
+C-ALESSIA-288469,SLI-041,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,SPR-002,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,SPR-009,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,SPR-026,4.0,4.0,249: 4,0.0,Asignado completo
+C-ALESSIA-288469,SPR-A010,2.0,0.0,,2.0,ORJW99254: Componentes insuficientes para una unidad ML: CAD-003HGF
+C-ALESSIA-288469,SPR-A015,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,SPR-A023,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,SWI-025,9.0,9.0,248: 9,0.0,Asignado completo
+C-ALESSIA-288469,SWI-037,5.0,5.0,248: 5,0.0,Asignado completo
+C-ALESSIA-288469,SWI-039,3.0,3.0,249: 3,0.0,Asignado completo
+C-ALESSIA-288469,SWI-063,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,SWI-078,25.0,25.0,248: 25,0.0,Asignado completo
+C-ALESSIA-288469,SWI-084,30.0,30.0,248: 30,0.0,Asignado completo
+C-ALESSIA-288469,SWI-085,30.0,30.0,248: 30,0.0,Asignado completo
+C-ALESSIA-288469,SWI-101,20.0,20.0,248: 20,0.0,Asignado completo
+C-ALESSIA-288469,SWI-110,45.0,45.0,248: 45,0.0,Asignado completo
+C-ALESSIA-288469,SWI-111,10.0,10.0,249: 10,0.0,Asignado completo
+C-ALESSIA-288469,SWI-120,8.0,8.0,249: 8,0.0,Asignado completo
+C-ALESSIA-288469,SWI-A006,8.0,8.0,249: 8,0.0,Asignado completo
+C-ALESSIA-288469,SWI-A028,6.0,6.0,249: 6,0.0,Asignado completo
+C-ALESSIA-288469,SWI-A029,24.0,24.0,248: 24,0.0,Asignado completo
+C-ALESSIA-288469,SWI-A035,10.0,10.0,249: 10,0.0,Asignado completo
+C-ALESSIA-288469,TAB-023,10.0,0.0,,10.0,RSKE34201: Restriccion ML pendiente
+C-ALESSIA-288469,TAB-041,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,TAB-082,2.0,2.0,249: 2,0.0,Asignado completo
+C-ALESSIA-288469,TAP-051,21.0,21.0,249: 21,0.0,Asignado completo
+C-ALESSIA-288469,TAZ-003,1.0,1.0,249: 1,0.0,Asignado completo
+C-ALESSIA-288469,TAZ-020,2.0,2.0,248: 2,0.0,Asignado completo
+C-ALESSIA-288469,TAZ-025,1.0,0.0,,1.0,VQCF12081: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+C-ALESSIA-288469,TPN-008,1.0,1.0,249: 1,0.0,Asignado completo
+E-ALESSIA-288401,ARO-009,14.0,14.0,289: 14,0.0,Asignado completo
+E-ALESSIA-288401,ARO-016,18.0,18.0,289: 18,0.0,Asignado completo
+E-ALESSIA-288401,ARO-022,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,ARO-025,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,ASI-001,12.0,12.0,291: 12,0.0,Asignado completo
+E-ALESSIA-288401,ASI-010,176.0,176.0,291: 176,0.0,Asignado completo
+E-ALESSIA-288401,ASI-024,72.0,72.0,290: 2; 291: 70,0.0,Asignado completo
+E-ALESSIA-288401,ASI-058,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,ASI-061,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,ASI-067,2.0,2.0,289: 2,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-008,4.0,4.0,289: 4,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-014,4.0,4.0,292: 4,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-039,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-044,32.0,32.0,289: 32,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-058,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-060,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,BAJ-065,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,BPO-007,30.0,30.0,291: 30,0.0,Asignado completo
+E-ALESSIA-288401,BPO-010,15.0,15.0,291: 15,0.0,Asignado completo
+E-ALESSIA-288401,BPO-011,1.0,0.0,,1.0,YSYP99518: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+E-ALESSIA-288401,ESC-013,12.0,12.0,289: 12,0.0,Asignado completo
+E-ALESSIA-288401,ESC-014,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,ESC-026,52.0,52.0,289: 52,0.0,Asignado completo
+E-ALESSIA-288401,ESC-030,4.0,4.0,290: 2; 291: 2,0.0,Asignado completo
+E-ALESSIA-288401,ESC-033,16.0,16.0,291: 16,0.0,Asignado completo
+E-ALESSIA-288401,ESC-036,2.0,2.0,290: 2,0.0,Asignado completo
+E-ALESSIA-288401,ESC-043,1.0,0.0,,1.0,KGVC23513: Sin venta con stock o compromisos
+E-ALESSIA-288401,ESC-049,48.0,48.0,290: 4; 291: 44,0.0,Asignado completo
+E-ALESSIA-288401,ESC-050,16.0,16.0,289: 16,0.0,Asignado completo
+E-ALESSIA-288401,HOR-014,40.0,40.0,289: 40,0.0,Asignado completo
+E-ALESSIA-288401,HOR-024,75.0,75.0,291: 75,0.0,Asignado completo
+E-ALESSIA-288401,HOR-026,25.0,25.0,289: 25,0.0,Asignado completo
+E-ALESSIA-288401,HOR-030,2.0,2.0,292: 2,0.0,Asignado completo
+E-ALESSIA-288401,LLA-066,5.0,5.0,289: 5,0.0,Asignado completo
+E-ALESSIA-288401,LLA-067,15.0,15.0,289: 15,0.0,Asignado completo
+E-ALESSIA-288401,LLA-068,25.0,25.0,289: 25,0.0,Asignado completo
+E-ALESSIA-288401,LLA-079,36.0,36.0,291: 16; 292: 20,0.0,Asignado completo
+E-ALESSIA-288401,LLA-080,1.0,1.0,289: 1,0.0,Asignado completo
+E-ALESSIA-288401,LLA-081,8.0,8.0,289: 8,0.0,Asignado completo
+E-ALESSIA-288401,LLA-083,25.0,25.0,289: 25,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2003,30.0,30.0,289: 30,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2006,1.0,0.0,,1.0,FNEQ93909: Cobertura máxima o prueba de 2 unidades ya cubierta hasta última salida evaluada Sab 7 nov
+E-ALESSIA-288401,LLA-2013,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2015,25.0,25.0,289: 25,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2019,2.0,2.0,291: 2,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2024,25.0,25.0,291: 25,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2028,30.0,30.0,291: 30,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2033,10.0,10.0,289: 10,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2039,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2050,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2052,5.0,5.0,289: 5,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2056,20.0,20.0,289: 6; 291: 14,0.0,Asignado completo
+E-ALESSIA-288401,LLA-2058,2.0,2.0,291: 2,0.0,Asignado completo
+E-ALESSIA-288401,LLA-3043,15.0,15.0,289: 15,0.0,Asignado completo
+E-ALESSIA-288401,LLA-3052,15.0,15.0,289: 15,0.0,Asignado completo
+E-ALESSIA-288401,LLA-3058,2.0,2.0,291: 2,0.0,Asignado completo
+E-ALESSIA-288401,LLA-3070,6.0,6.0,289: 6,0.0,Asignado completo
+E-ALESSIA-288401,MAB-007,14.0,14.0,291: 14,0.0,Asignado completo
+E-ALESSIA-288401,MAB-057,2.0,2.0,289: 2,0.0,Asignado completo
+E-ALESSIA-288401,MAB-085,14.0,14.0,291: 14,0.0,Asignado completo
+E-ALESSIA-288401,MAB-099,3.0,3.0,289: 3,0.0,Asignado completo
+E-ALESSIA-288401,PAR-006,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,PAR-063,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,PAR-090,3.0,3.0,292: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-050,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,RIN-053,2.0,2.0,292: 2,0.0,Asignado completo
+E-ALESSIA-288401,RIN-057,10.0,10.0,289: 10,0.0,Asignado completo
+E-ALESSIA-288401,RIN-063,2.0,2.0,291: 2,0.0,Asignado completo
+E-ALESSIA-288401,RIN-086,3.0,3.0,289: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-087,3.0,3.0,289: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-088,3.0,3.0,291: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-098,4.0,4.0,292: 4,0.0,Asignado completo
+E-ALESSIA-288401,RIN-099,3.0,3.0,291: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-102,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,RIN-103,3.0,3.0,291: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-104,2.0,2.0,289: 2,0.0,Asignado completo
+E-ALESSIA-288401,RIN-105,50.0,50.0,289: 50,0.0,Asignado completo
+E-ALESSIA-288401,RIN-106,32.0,32.0,291: 32,0.0,Asignado completo
+E-ALESSIA-288401,RIN-107,3.0,3.0,292: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-109,8.0,8.0,291: 8,0.0,Asignado completo
+E-ALESSIA-288401,RIN-118,5.0,5.0,291: 2; 292: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-119,6.0,6.0,291: 6,0.0,Asignado completo
+E-ALESSIA-288401,RIN-121,3.0,3.0,289: 3,0.0,Asignado completo
+E-ALESSIA-288401,RIN-127,4.0,4.0,289: 4,0.0,Asignado completo
+E-ALESSIA-288401,RIN-128,8.0,8.0,289: 8,0.0,Asignado completo
+E-ALESSIA-288401,RIN-139,3.0,0.0,,3.0,XPUE23288: Evitar descarte; MROQ23972: Componentes insuficientes para una unidad ML: RIN-138
+E-ALESSIA-288401,RIN-141,5.0,5.0,291: 5,0.0,Asignado completo
+E-ALESSIA-288401,RIN-142,4.0,4.0,289: 2; 292: 2,0.0,Asignado completo
+E-ALESSIA-288401,RIN-146,18.0,18.0,291: 18,0.0,Asignado completo
+E-ALESSIA-288401,RIN-157,18.0,18.0,289: 18,0.0,Asignado completo
+E-ALESSIA-288401,RIN-170,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,RIN-174,2.0,2.0,289: 2,0.0,Asignado completo
+E-ALESSIA-288401,RIN-A001,4.0,4.0,289: 4,0.0,Asignado completo
+E-ALESSIA-288401,RIN-WO025,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,SAD-024,18.0,18.0,291: 18,0.0,Asignado completo
+E-ALESSIA-288401,SAD-037RJ,8.0,8.0,291: 8,0.0,Asignado completo
+E-ALESSIA-288401,SAD-041GR,1.0,1.0,292: 1,0.0,Asignado completo
+E-ALESSIA-288401,SAD-047NE,2.0,2.0,291: 2,0.0,Asignado completo
+E-ALESSIA-288401,SAD-056BL,13.0,13.0,291: 13,0.0,Asignado completo
+E-ALESSIA-288401,SAD-057NE,6.0,6.0,292: 6,0.0,Asignado completo
+E-ALESSIA-288401,SAD-081GN,3.0,3.0,291: 3,0.0,Asignado completo
+E-ALESSIA-288401,SAD-111,5.0,5.0,291: 5,0.0,Asignado completo
+E-ALESSIA-288401,SAD-125,3.0,3.0,291: 3,0.0,Asignado completo
+E-ALESSIA-288401,SAD-141,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,SAL-056RO,56.0,56.0,289: 56,0.0,Asignado completo
+E-ALESSIA-288401,TAG-009,5.0,5.0,289: 5,0.0,Asignado completo
+E-ALESSIA-288401,TAG-026,11.0,11.0,289: 11,0.0,Asignado completo
+E-ALESSIA-288401,TAG-032,7.0,7.0,291: 7,0.0,Asignado completo
+E-ALESSIA-288401,TAG-035,36.0,36.0,289: 36,0.0,Asignado completo
+E-ALESSIA-288401,TAG-036,13.0,13.0,289: 13,0.0,Asignado completo
+E-ALESSIA-288401,TAG-038,1.0,1.0,291: 1,0.0,Asignado completo
+E-ALESSIA-288401,TAG-039,1.0,1.0,289: 1,0.0,Asignado completo
+E-ALESSIA-288401,TAG-040,15.0,15.0,289: 15,0.0,Asignado completo
+E-ALESSIA-288401,TAG-054,46.0,46.0,289: 46,0.0,Asignado completo
+E-ALESSIA-288401,TAG-056,6.0,6.0,291: 6,0.0,Asignado completo
+E-ALESSIA-288401,TAG-058,4.0,4.0,291: 4,0.0,Asignado completo
+E-ALESSIA-288401,TAG-059,6.0,6.0,289: 6,0.0,Asignado completo
+E-ALESSIA-288401,TAG-062,1.0,1.0,289: 1,0.0,Asignado completo
+E-ALESSIA-288401,TAG-063,10.0,10.0,291: 10,0.0,Asignado completo
+E-ALESSIA-288401,TAG-065,15.0,15.0,291: 15,0.0,Asignado completo
+E-ALESSIA-288401,VAF-015,6.0,6.0,291: 6,0.0,Asignado completo
