@@ -496,6 +496,7 @@ const cjParse=(F,c)=>{if(typeof F==='string')F=DATA.facturas[F];const m=String(c
 const almTxt=p=>p.alm?'Almacén '+p.alm:'almacén por confirmar';
 const cjFmt=(F,c)=>{const p=cjParse(F,c);if(!p)return 'Caja '+c;return `Grupo ${p.g} · ${almTxt(p)} · caja${p.a===p.b?'':'s'} ${p.a===p.b?p.a:p.a+' a '+p.b} de ${p.n}`};
 const cjShort=(F,c)=>{const p=cjParse(F,c);if(!p)return 'Caja '+c;return `${p.alm?'Alm '+p.alm:'Grupo '+p.g} · ${p.a===p.b?p.a:p.a+'-'+p.b}/${p.n}`};
+const cjItemFmt=(F,i)=>{if(typeof F==='string')F=DATA.facturas[F];if(!F.cajas||!F.cajas.globalNumbering)return cjFmt(F,i.caja);const B=F.cajas.blocks.filter(b=>b.code===i.code);if(!B.length)return cjFmt(F,i.caja);return B.map(b=>{const G=F.cajas.groups[b.g],rack=b.rack||(G&&G.alm)||'';return (F.cajas.singleSequence?'':`Grupo ${b.g} · `)+(rack?`Rack 1 ${rack} · `:'')+(b.a===b.b?`caja ${b.a}`:`cajas ${b.a} a ${b.b}`)+(B.length>1&&b.pz>0?` (${fmt(b.pz)} pz)`:'')}).join('; ')};
 const bxName=(b,F)=>{const G=F&&F.cajas&&F.cajas.groups[b.g];const al=G&&G.alm?`Almacén ${G.alm} · `:'';return al+(b.a===b.b?`Caja ${b.a}`:`Cajas ${b.a} a ${b.b}`)+(G?` de ${G.n}`:'')};
 const bxN=b=>b.b-b.a+1;
 function bxState(F,b){const i=F.items.find(x=>x.code===b.code);if(!i)return {st:'na',i:null,go:0,stay:0,envs:[]};const go=i.qty-i.stay;const envs=[...new Set(i.dest.map(d=>d.env))].sort((a,c)=>ord(a)-ord(c));return {st:i.stay>=i.qty?'queda':i.stay>0?'mixta':'va',i,go,stay:i.stay,envs}}
