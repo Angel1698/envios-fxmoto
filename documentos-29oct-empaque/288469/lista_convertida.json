@@ -1,0 +1,5500 @@
+{
+  "factura": "288469",
+  "proforma": "255201",
+  "picking": "CON-184513",
+  "bodega": "Cuernavaca",
+  "pedido_nuestro": "55",
+  "codigos": 258,
+  "piezas": 2845,
+  "detalle": [
+    {
+      "codigo": "KSP-F44",
+      "cantidad_lista": 40,
+      "cajas": "3-6",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 40.0,
+      "descripcion": "KIT DE SPROCKET CADENA REFORZADA 428H-136L SPROCKET 45T/14T V-200 18-21",
+      "grupo": "A",
+      "segments": [
+        [
+          3,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KSP-F21",
+      "cantidad_lista": 100,
+      "cajas": "9-18",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 100.0,
+      "descripcion": "KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-124L SPROCKET 42T/15T FT-180 / DT-200 SPORT /",
+      "grupo": "A",
+      "segments": [
+        [
+          9,
+          18
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KSP-F35",
+      "cantidad_lista": 5,
+      "cajas": "19",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 5.0,
+      "descripcion": "KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-102L 42T/13T DM-150RO 18-21",
+      "grupo": "A",
+      "segments": [
+        [
+          19,
+          19
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KSP-F10",
+      "cantidad_lista": 30,
+      "cajas": "20-22",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 30.0,
+      "descripcion": "KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-118L SPROCKET 41T/14T 150-Z / 150-SZ",
+      "grupo": "A",
+      "segments": [
+        [
+          20,
+          22
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAD-004HOF",
+      "cantidad_lista": 40,
+      "cajas": "23-24",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 40.0,
+      "descripcion": "CADENA 428H x 136 GOLD REFORZADA CON ORING FZ-16/170-Z 16-18/DM-200 07-19/DM-200 SP 19/EX ",
+      "grupo": "A",
+      "segments": [
+        [
+          23,
+          24
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAD-003HF",
+      "cantidad_lista": 20,
+      "cajas": "25",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 20.0,
+      "descripcion": "CADENA KIIRUS 428H x 126 REFORZADA DT-150SP 17/FORZA 150 06-13/FT-150 14-16/FT-150 AZULP 1",
+      "grupo": "A",
+      "segments": [
+        [
+          25,
+          25
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "ESP-106",
+      "cantidad_lista": 32,
+      "cajas": "26",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 32.0,
+      "descripcion": "ESPEJOS NEGROS 150S-Z 16-18/150-Z 14-16/170-Z 16-18/250-Z 14-17/250-ZNE 17-19/125-Z 16-20/",
+      "grupo": "A",
+      "segments": [
+        [
+          26,
+          26
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAL-020",
+      "cantidad_lista": 2,
+      "cajas": "31",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 2.0,
+      "descripcion": "CALAVERA TRASERA LED MICA ROJA/BLANCA 12 Vcc AT-110 RT 12-14 / AT-110RTLED 14-16 / AT-110R",
+      "grupo": "A",
+      "segments": [
+        [
+          31,
+          31
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "TAB-023",
+      "cantidad_lista": 10,
+      "cajas": "31",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 10.0,
+      "descripcion": "TABLERO 12 Vcc HO CGL-125 TOOL",
+      "grupo": "A",
+      "segments": [
+        [
+          31,
+          31
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAL-001",
+      "cantidad_lista": 24,
+      "cajas": "32-33",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 24.0,
+      "descripcion": "CALAVERA MICA ROJA 12 Vcc W-150 17 / WS-150 11-17 / WS-150 NF 13-14 / WS-175 12-16",
+      "grupo": "A",
+      "segments": [
+        [
+          32,
+          33
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAL-061",
+      "cantidad_lista": 40,
+      "cajas": "35-36",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 40.0,
+      "descripcion": "CALAVERA 12 Vcc FT-150TS 19-22",
+      "grupo": "A",
+      "segments": [
+        [
+          35,
+          36
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAL-002",
+      "cantidad_lista": 40,
+      "cajas": "37-38",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 40.0,
+      "descripcion": "CALAVERA MICA ROJA 12 Vcc FT-150GT",
+      "grupo": "A",
+      "segments": [
+        [
+          37,
+          38
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAL-019",
+      "cantidad_lista": 60,
+      "cajas": "39-41",
+      "almacen": "100",
+      "hoja": 2,
+      "foto": 5,
+      "cantidad_factura": 60.0,
+      "descripcion": "CALAVERA MICA ROJA 12 Vcc VN XPRESS-150 20-23/ IT DT-125CL 17-21/ IT DT-125DL 17-24/ IT DT",
+      "grupo": "A",
+      "segments": [
+        [
+          39,
+          41
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 2 / foto_05.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_05.jpg"
+    },
+    {
+      "codigo": "CAL-052",
+      "cantidad_lista": 20,
+      "cajas": "42",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 20.0,
+      "descripcion": "CALAVERA 12 VCC IT DM-250 20 / VN CROSSMAX-250PRO 21-24",
+      "grupo": "A",
+      "segments": [
+        [
+          42,
+          42
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "DIR-208",
+      "cantidad_lista": 31,
+      "cajas": "44",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 31.0,
+      "descripcion": "DIRECCIONALES 12 IT D-125LT 21-22",
+      "grupo": "A",
+      "segments": [
+        [
+          44,
+          44
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "DIR-215",
+      "cantidad_lista": 7,
+      "cajas": "45",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 7.0,
+      "descripcion": "DIRECCIONALES 12 VCC VN ATOM-150 19-24 / VN ATOM-170 22-24",
+      "grupo": "A",
+      "segments": [
+        [
+          45,
+          45
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "FIA-074",
+      "cantidad_lista": 3,
+      "cajas": "47",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 3.0,
+      "descripcion": "FILTRO DE AIRE ELEMENTO D-125 16-18 / X-125 18",
+      "grupo": "A",
+      "segments": [
+        [
+          47,
+          47
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KDC-IR58",
+      "cantidad_lista": 6,
+      "cajas": "47",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 6.0,
+      "descripcion": "KIT DE CILINDRO IT 280-Z 24",
+      "grupo": "A",
+      "segments": [
+        [
+          47,
+          47
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "SPR-A010",
+      "cantidad_lista": 2,
+      "cajas": "47",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 2.0,
+      "descripcion": "SPROCKET TRASERO 41T CON BIRLOS 150-SZ 16-18 / 150-Z 14-20 / 200-Z 19-20",
+      "grupo": "A",
+      "segments": [
+        [
+          47,
+          47
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "SPR-A015",
+      "cantidad_lista": 2,
+      "cajas": "47",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 2.0,
+      "descripcion": "SPROCKET TRASERO 32T CON BIRLOS FT-200 14 / TC-200 14-16 / TC-200 BLANCA 16-18 / TC-200 NE",
+      "grupo": "A",
+      "segments": [
+        [
+          47,
+          47
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "SPR-A023",
+      "cantidad_lista": 1,
+      "cajas": "47",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 1.0,
+      "descripcion": "SPROCKET PLATA TRASERO 42T-428 SIN BIRLOS VN ROCKETMAN-250 18-22/VN ROCKETMAN-250SP 20-22/",
+      "grupo": "A",
+      "segments": [
+        [
+          47,
+          47
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "FIA-026",
+      "cantidad_lista": 1,
+      "cajas": "48",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 1.0,
+      "descripcion": "FILTRO DE AIRE ELEMENTO 150-Z 14-21/150-SZ 16-18/170-Z 16-18/200-Z 19-21/250-Z 14-21/250-Z",
+      "grupo": "A",
+      "segments": [
+        [
+          48,
+          48
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "FIA-093",
+      "cantidad_lista": 1,
+      "cajas": "48",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 1.0,
+      "descripcion": "FILTRO DE AIRE ELEMENTO HE HUNK-150",
+      "grupo": "A",
+      "segments": [
+        [
+          48,
+          48
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KSP-F02",
+      "cantidad_lista": 7,
+      "cajas": "48",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 7.0,
+      "descripcion": "KIT DE SPROCKET KIIRUS CADENA REFORZADA 428H-126L 45T/14T YBR-125",
+      "grupo": "A",
+      "segments": [
+        [
+          48,
+          48
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "BOF-A019",
+      "cantidad_lista": 3,
+      "cajas": "49",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 3.0,
+      "descripcion": "BOMBA DE FRENO CON MANIJA DM-250 16-18",
+      "grupo": "A",
+      "segments": [
+        [
+          49,
+          49
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "ESP-117",
+      "cantidad_lista": 7,
+      "cajas": "49",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 7.0,
+      "descripcion": "ESPEJOS NEGROS BJ NS-200",
+      "grupo": "A",
+      "segments": [
+        [
+          49,
+          49
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "TAB-041",
+      "cantidad_lista": 2,
+      "cajas": "49",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 2.0,
+      "descripcion": "TABLERO 12 Vcc FT-125TS 16-20",
+      "grupo": "A",
+      "segments": [
+        [
+          49,
+          49
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "BOF-A018",
+      "cantidad_lista": 14,
+      "cajas": "50",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 14.0,
+      "descripcion": "BOMBA DE FRENO CON MANIJA AT-125 17-19 / AT-125 RT 20",
+      "grupo": "A",
+      "segments": [
+        [
+          50,
+          50
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "TAB-082",
+      "cantidad_lista": 2,
+      "cajas": "50",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 2.0,
+      "descripcion": "TABLERO 12 VCC VN ROCKETMAN-250SP 22-24/VN ROCKETMAN CARRERA-250 22-24",
+      "grupo": "A",
+      "segments": [
+        [
+          50,
+          50
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KSP-F43",
+      "cantidad_lista": 1,
+      "cajas": "51",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 1.0,
+      "descripcion": "KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-110L SPROCKET 44T/14T VX-250 21/VX-250ADV 16-",
+      "grupo": "A",
+      "segments": [
+        [
+          51,
+          51
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "SPR-002",
+      "cantidad_lista": 3,
+      "cajas": "51",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 3.0,
+      "descripcion": "SPROCKET COMPLETO 38 DIENTES PASO 428 DT-125CL 17-19/DT-125SP 17-20 / FORZA-125 08-12 / FT",
+      "grupo": "A",
+      "segments": [
+        [
+          51,
+          51
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "SPR-009",
+      "cantidad_lista": 4,
+      "cajas": "51",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 4.0,
+      "descripcion": "SPROCKET COMPLETO 41 DIENTES 150-SZ 16-18 / 150-Z 14-20 / 200-Z 19-20",
+      "grupo": "A",
+      "segments": [
+        [
+          51,
+          51
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "SPR-026",
+      "cantidad_lista": 4,
+      "cajas": "51",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 4.0,
+      "descripcion": "SPROCKET COMPLETO 36 DIENTES PASO 428 IT AR-110 15 /IT AT-110 NE 16-18 /IT AX-110 16 /IT X",
+      "grupo": "A",
+      "segments": [
+        [
+          51,
+          51
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "FIA-B002",
+      "cantidad_lista": 12,
+      "cajas": "53",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 12.0,
+      "descripcion": "MANGUERA DE AIRE DS-125 / DS-150 / IZUKA SL-125 / IZUKA-150 / XS-150",
+      "grupo": "A",
+      "segments": [
+        [
+          53,
+          53
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "ARN-008",
+      "cantidad_lista": 17,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 17.0,
+      "descripcion": "ARNES COMPLETO 12 Vcc GS-150LED/ GTS-175 LED 13",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BLC-GYM-01",
+      "cantidad_lista": 7,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 7.0,
+      "descripcion": "BALANCIN SUPERIOR C/SOPORTE IT CS-125 14-18/IT CS-125 LED 13-16/IT D-125 16-20/ VN ATOM-17",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "CDD-012",
+      "cantidad_lista": 1,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 1.0,
+      "descripcion": "CADENA DE DISTRIBUCION 104 ESLABONES ATV-250 C/REVERSA 14-18 /ATV-250 NE 18-20",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "CDD-014",
+      "cantidad_lista": 12,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 12.0,
+      "descripcion": "CADENA DE DISTRIBUCION 102 ESLABONES IT 200-Z 19-21/IT 280-Z 24-25/BAJAJ N-250/VN CROSSMAX",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MAJ-117",
+      "cantidad_lista": 6,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 6.0,
+      "descripcion": "MANIJA IZQUIERDA CON BASE 250-SZ 15 / VORTX 200 18-19",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MAJ-132RO",
+      "cantidad_lista": 3,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 3.0,
+      "descripcion": "MANIJAS ALUMINIO ROJO 150-Z / 170-Z",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MAJ-WO052D",
+      "cantidad_lista": 10,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 10.0,
+      "descripcion": "MANIJA DER CON BASE FT-125 / KURAZAI CLASSIC 125 08 NEGRA",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MAN-006",
+      "cantidad_lista": 6,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 6.0,
+      "descripcion": "MANDO IZQ  12 Vcc NEGRO WS-150 12-18 / WS-150 NF 13-14 / WS-175 12-14",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MAN-050",
+      "cantidad_lista": 4,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 4.0,
+      "descripcion": "MANDO IZQ  12 Vcc AT-110RT CON LED",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAN-060",
+      "cantidad_lista": 20,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 20.0,
+      "descripcion": "MANDO IZQ  12 Vcc W-150 17-18 / WS-175 15-18 / XW-150 18",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAN-100",
+      "cantidad_lista": 2,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "MANDO DER  12 Vcc NEGRO VN CROSSMAX-150 23/VN CROSSMAX-170 24/VN CROSSMAX-200 20-24/VN CRO",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAN-133",
+      "cantidad_lista": 1,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "MANDO IZQ 12VCC VN ROCKETMAN-250 18-24/ VN ROCKETMAN-250SP 20-24/ VN ROCKETMAN-250CR 22-24",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAN-158",
+      "cantidad_lista": 1,
+      "cajas": "1",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "MANDO IZQ 12 Vcc IT 280-Z 24",
+      "grupo": "B",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAN-061",
+      "cantidad_lista": 40,
+      "cajas": "2",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 40.0,
+      "descripcion": "MANDO DER  12 Vcc W-150 17-18 / WS-175 15-18 / XW-150 18",
+      "grupo": "B",
+      "segments": [
+        [
+          2,
+          2
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "ARN-003",
+      "cantidad_lista": 25,
+      "cajas": "3",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 25.0,
+      "descripcion": "ARNES COMPLETO 12 Vcc EX-200 05-08 / RT-200 09-13 / RT-200 NEGRO 13-15",
+      "grupo": "B",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "ARN-035",
+      "cantidad_lista": 5,
+      "cajas": "3",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 5.0,
+      "descripcion": "ARNES COMPLETO 12 Vcc DT-150CL 17-21/DT-150DEL 17-21/DT-125SP 20-21/FT-150DEL 15-18/FT-150",
+      "grupo": "B",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "ARN-044",
+      "cantidad_lista": 4,
+      "cajas": "3",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 4.0,
+      "descripcion": "ARNES COMPLETO 12 Vcc DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / FORZA-125",
+      "grupo": "B",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MAG-001",
+      "cantidad_lista": 8,
+      "cajas": "3",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 8.0,
+      "descripcion": "MAGNETO 8 PUNTAS) CS-125 14-17 / CS-125 LED 13-16 / D-125 16-17 / DS-125 17 / DS-150 14-17",
+      "grupo": "B",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "AJC-006",
+      "cantidad_lista": 3,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 3.0,
+      "descripcion": "AJUSTADOR DE CADENA YA YBR-125/IT FT-110 10-16/IT RC-125 20-23/IT RC-150 16-24/IT RC-200 1",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "ARN-040",
+      "cantidad_lista": 19,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 19.0,
+      "descripcion": "ARNES COMPLETO 12 Vcc DM-200 14-17",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BAF-013F",
+      "cantidad_lista": 1,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 1.0,
+      "descripcion": "BALATAS DE FRENO DELANTERO KIIRUS (DISCO) AT-110 SPORT 11-15/150-SZ 16-18/150-Z 14-19/170-",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BAF-030F",
+      "cantidad_lista": 3,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 3.0,
+      "descripcion": "BALATAS DE FRENO DELANTERO KIIRUS (DISCO) FZ-16 12-13/PULSAR NS-200/PULSAR NS-160/PULSAR N",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BAF-056F",
+      "cantidad_lista": 6,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 6.0,
+      "descripcion": "BALATAS DE FRENO TRASERO KIIRUS (DISCO) IT 170-Z 16-18/IT 200-Z 19-24/IT 250-Z 19-24/IT 25",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BAF-071F",
+      "cantidad_lista": 1,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 1.0,
+      "descripcion": "BALATAS FRENO DELANTERO KIIRUS DISCO BJ DOMINAR-400/ KTM DUKE-250/ KTM DUKE-200/ KTM DUKE-",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BAF-073",
+      "cantidad_lista": 3,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 3.0,
+      "descripcion": "BALATAS DE FRENO TRASERO DISCO VN SCREAMER-250 21-23/VN THUNDERSTAR-250 20-23",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BLC-011",
+      "cantidad_lista": 15,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 15.0,
+      "descripcion": "BALANCIN IT 170-Z 16-18/IT 200-Z 19-24/IT DM-250 16-18/IT RT-250 16-20/IT RT-250SP 20-24/I",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "MNJ-003",
+      "cantidad_lista": 13,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 13.0,
+      "descripcion": "MANDO DER / IZQ 12 VCC VN CYCLONE-150 21-22 / VN CYCLONE-200 21-22 / VN FALKON-250 22",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "TAP-051",
+      "cantidad_lista": 21,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 21.0,
+      "descripcion": "TAPON TANQUE DE GASOLINA VN NITROX-200 20-23/VN NITROX-250 20-23/VN NITROX-250T3 24/VN NIT",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "TPN-008",
+      "cantidad_lista": 1,
+      "cajas": "4",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 1.0,
+      "descripcion": "TAPON DE DRENADO VN ALPINA-300 23-24/VN CROSSMAX-250 20-24/VN CROSSMAX-250PRO 20-24/VN FAL",
+      "grupo": "B",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BLC-006",
+      "cantidad_lista": 10,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 10.0,
+      "descripcion": "BALANCIN 125-Z / 150-Z / 150-SZ / DT-150CLASSIC / FT-150 DELIVERY",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "BOM-015",
+      "cantidad_lista": 7,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 7.0,
+      "descripcion": "BOMBA DE ACEITE COMPLETA 170-Z 16-18/200-Z 19-20/DM-250 16-18/EX-200 05-06",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "CIN-003",
+      "cantidad_lista": 1,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "CINTURON SUJETADOR DE BATERIA DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 /DT",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "GCA-011",
+      "cantidad_lista": 4,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 4.0,
+      "descripcion": "GUIAS DE CADENA DE SINCRONIZACION Y DISTRIBUCION VN ROCKETMAN-250 19-22/VN ROCKETMAN-250SP",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAG-016",
+      "cantidad_lista": 3,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 3.0,
+      "descripcion": "MAGNETO VN NITROX-250 T3 22-24",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "PAL-017",
+      "cantidad_lista": 5,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 5.0,
+      "descripcion": "LEVA DE FRENO DE TAMBOR (PALANCA) DM-200 14-17",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "REG-004",
+      "cantidad_lista": 18,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 18.0,
+      "descripcion": "REGULADOR 4 PUNTAS) 12 Vcc DT-200SP 17-21/FT-180 13-20/FT-180TS 19-22/DT-150SP 20-22/FT-25",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "REG-036",
+      "cantidad_lista": 4,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 4.0,
+      "descripcion": "REGULADOR 12 Vcc VN CROSSMAX-250 20-24 / VN CROSSMAX-250 PRO 22-24",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "SEL-002",
+      "cantidad_lista": 20,
+      "cajas": "5",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 20.0,
+      "descripcion": "SELENOIDE RELEVADOR DE ARRANQUE 12 Vcc DT-200 SPORT / FT-180 / FT-200 AMARILLA / FT-250 / ",
+      "grupo": "B",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "BOB-002",
+      "cantidad_lista": 7,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 7.0,
+      "descripcion": "BOBINA DE ENCENDIDO 12 Vcc ATV-150REV 19-22/ATV-150SP 11-12/ATV-150SP REV 12-19/ ATV-180 1",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "CBO-001",
+      "cantidad_lista": 3,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 3.0,
+      "descripcion": "CADENA BOMBA DE ACEITE 250-SZ 15 / DT-200SP 17-20 / DT-250SP 20 / FIERA 200 18-19 / FIERA ",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "CDI-007",
+      "cantidad_lista": 15,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 15.0,
+      "descripcion": "UNIDAD DE CDI 12 Vcc DC GL-150 CARGO",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "CDI-103",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "UNIDAD DE CDI 12 Vcc AC IT FT-180TS 19-23/IT FT-150GTS 23-25/IT DT-150SP 20-24",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "COP-A003",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "BAQUELITA DE COPLE DE CARBURADOR ATV-150 05-11/CS-125 14-18/CS-125LED 13-16/D-125 16-21/DS",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "DIS-008",
+      "cantidad_lista": 13,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 4,
+      "foto": 1,
+      "cantidad_factura": 13.0,
+      "descripcion": "DISCO DE FRENO TRASERO ATV-150SP 11-12 /ATV-150C/REV 19-23 /ATV-150SP C/REV 12-19 /ATV-180",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 4 / foto_01.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_01.jpg"
+    },
+    {
+      "codigo": "DIS-012",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "DISCO DE FRENO 250-Z/250-Z NEGRA/RT-250/250-SZ 23",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "DIS-061",
+      "cantidad_lista": 5,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 5.0,
+      "descripcion": "DISCO DE FRENO TRASERO VN STORM-300 24",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "EST-022",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "ESTATOR (CORONA) 18 BOBINAS HO CARGO-150",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "EST-050",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "ESTATOR (CORONA) 8 BOBINAS VN NITROX-250 T3 22-24",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "FIG-016",
+      "cantidad_lista": 11,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 11.0,
+      "descripcion": "FILTRO DE GASOLINA UNIVERSAL",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "FIL-045",
+      "cantidad_lista": 15,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 15.0,
+      "descripcion": "FILTRO DE ACEITE (CEDAZO) BJ NS-200 / BJ RS-200",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "LLV-007",
+      "cantidad_lista": 42,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 42.0,
+      "descripcion": "LLAVE DE GASOLINA 125-Z 16-22/125-FL 19-22/DT-125CL 17-21/DT-125DEL 17-22 /DT-125SP 17-21/",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "PIC-IR09",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "PISTON COMPLETO STD ATV-150 05 / DS-150 06-18 / DS-150G 18 / DS-150 VERDE 18 / DS-150 NEGR",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "RCA-003",
+      "cantidad_lista": 4,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 4.0,
+      "descripcion": "REPUESTOS DE CARBURADOR DS-150 NEGRO 13-15 / DS-150 16-17 / GS-150 LED CAJA 14-15 / GS-150",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "RCA-009",
+      "cantidad_lista": 3,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 3.0,
+      "descripcion": "REPUESTOS DE CARBURADOR DM-200 14-17",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "REG-017",
+      "cantidad_lista": 7,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 7.0,
+      "descripcion": "REGULADOR (6 PUNTAS) 12 Vcc ATV-250 C/ REVERSA",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "REG-027",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "REGULADOR (5 PUNTAS) 12 Vcc AC VORTX-200 18-20",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "RES-008",
+      "cantidad_lista": 5,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 5.0,
+      "descripcion": "RESORTE RETORNO PEDAL DE FRENO AT-110 RT / AT-110 / RT-110 LED / AT-110 RT LED",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "RES-015",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "RESORTE DE PARADOR LATERAL NEGRA 125-Z 16-17 / DT-125 CLASICA 17 / DT-125 DELIVERY 17 /DT-",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "RES-018",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "RESORTE DE PARADOR CENTRAL 125-Z/ DT-125 CLASICA/ DT-125 DELIVERY/ DT-125SPORT/ DT-150 CLA",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "TAZ-003",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "TAZAS DE DIRECCION W-150 17 / WS-150 08-17 / WS-150 NF 13-14 / WS-175 12-16",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "TAZ-020",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 2.0,
+      "descripcion": "TAZAS DE DIRECCION D-125 16-23 / X-125 18-23",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "TAZ-025",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 1.0,
+      "descripcion": "TAZAS DE DIRECCION VORTX-200 18-20",
+      "grupo": "B",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "CDI-034",
+      "cantidad_lista": 14,
+      "cajas": "7",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 14.0,
+      "descripcion": "UNIDAD DE CDI 12 Vcc DC VN NITROX-250 T3 22-24",
+      "grupo": "B",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "EST-027",
+      "cantidad_lista": 12,
+      "cajas": "7",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 12.0,
+      "descripcion": "ESTATOR (CORONA) 12 BOBINAS FZ-16",
+      "grupo": "B",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAG-008",
+      "cantidad_lista": 24,
+      "cajas": "8-9",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 24.0,
+      "descripcion": "MAGNETO DM-200 14-17",
+      "grupo": "B",
+      "segments": [
+        [
+          8,
+          9
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "DIS-009",
+      "cantidad_lista": 20,
+      "cajas": "10-11",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 20.0,
+      "descripcion": "DISCO DE FRENO FT-180 13-17 / FT-200 AMARILLA 15-17 / RT-180 11-13 / DT-200 SPORT 17-20/ F",
+      "grupo": "B",
+      "segments": [
+        [
+          10,
+          11
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "CPB-003",
+      "cantidad_lista": 16,
+      "cajas": "12",
+      "almacen": "700",
+      "hoja": 11,
+      "foto": 13,
+      "cantidad_factura": 16.0,
+      "descripcion": "CUBRE POLVO PARA BARRA  largo 200 mm diametro  31 mm FT-150 / FORZA-150 /  KURAZAI CLASSIC",
+      "grupo": "B",
+      "segments": [
+        [
+          12,
+          12
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 11 / foto_13.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_13.jpg"
+    },
+    {
+      "codigo": "KSP-IR02",
+      "cantidad_lista": 2,
+      "cajas": "12",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 2.0,
+      "descripcion": "KIT DE SPROCKET IRON BOX  CADENA REFORZADA 428H-126L SPROCKET 45T/14T YBR-125",
+      "grupo": "B",
+      "segments": [
+        [
+          12,
+          12
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "SLI-041",
+      "cantidad_lista": 2,
+      "cajas": "12",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 2.0,
+      "descripcion": "SLIDER PUNTA NYLON SOPORTE DE INSTALACION BJ NS200",
+      "grupo": "B",
+      "segments": [
+        [
+          12,
+          12
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "MAS-031NE",
+      "cantidad_lista": 15,
+      "cajas": "13-15",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 15.0,
+      "descripcion": "MASA TRASERA NEGRO VC XEVERUS-250",
+      "grupo": "B",
+      "segments": [
+        [
+          13,
+          15
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "KSP-IR25",
+      "cantidad_lista": 7,
+      "cajas": "16",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 7.0,
+      "descripcion": "KIT DE SPROCKET IRON BOX CADENA REFORZADA 428H-120L SPROCKET 48T/14T YA XTZ-125",
+      "grupo": "B",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "KSP-IR57",
+      "cantidad_lista": 3,
+      "cajas": "16",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 3.0,
+      "descripcion": "KIT DE SPROCKET  IRON BOX  CADENA REFORZADA 520H-104L SPROCKET 38T/13T IT DM-300 24-25",
+      "grupo": "B",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "MAS-030",
+      "cantidad_lista": 40,
+      "cajas": "19-21",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 40.0,
+      "descripcion": "MASA TRASERA IT DM-250X 22-24/ IT DM-250 22-24",
+      "grupo": "B",
+      "segments": [
+        [
+          19,
+          21
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "BAT-ALE-009",
+      "cantidad_lista": 6,
+      "cajas": "22",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 6.0,
+      "descripcion": "BATERIA GEL YB5L-BS (POSITIVO A LA DER) 5Ah / Altura 13 cm/ Base 120 cm/ ancho 60 cm AR-11",
+      "grupo": "B",
+      "segments": [
+        [
+          22,
+          22
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "SWI-037",
+      "cantidad_lista": 5,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 5.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO CON JUEGO DE LLAVES TAPON DE GASOLINA 12 Vcc DM-200 16-17",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "SWI-039",
+      "cantidad_lista": 3,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 3.0,
+      "descripcion": "SWITCH INTERRUPTOR CON JUEGO DE LLAVES TAPON DE GASOLINA 12 Vcc 250-Z 14-17 /250-Z NEGRA",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "SWI-063",
+      "cantidad_lista": 6,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 6.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES Y TAPON TANQUE DE GAS 12 Vcc CARGO-150",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-101",
+      "cantidad_lista": 20,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 20.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C /JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 1",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "SWI-A028",
+      "cantidad_lista": 6,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 6.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc 125-Z 16-22/125-FL 19-22/Z125 FL",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-A029",
+      "cantidad_lista": 24,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 24.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc 250-Z 14-17/250-Z NE 17/250-SZ 1",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-A035",
+      "cantidad_lista": 10,
+      "cajas": "1",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 10.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc IT D-125LT 21-23",
+      "grupo": "C",
+      "segments": [
+        [
+          1,
+          1
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-096",
+      "cantidad_lista": 9,
+      "cajas": "2",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 9.0,
+      "descripcion": "CABLE DE VELOCIMETRO VN GT-250 20-23/VN WORKMAN-250 20-24",
+      "grupo": "C",
+      "segments": [
+        [
+          2,
+          2
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-025",
+      "cantidad_lista": 9,
+      "cajas": "2",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 9.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO CON JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO ",
+      "grupo": "C",
+      "segments": [
+        [
+          2,
+          2
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-111",
+      "cantidad_lista": 10,
+      "cajas": "2",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 10.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C /JUEGO DE LLAVES Y SEGURO DE ASIENTO 12 Vcc D-150 19-21/",
+      "grupo": "C",
+      "segments": [
+        [
+          2,
+          2
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-120",
+      "cantidad_lista": 8,
+      "cajas": "2",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 8.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12",
+      "grupo": "C",
+      "segments": [
+        [
+          2,
+          2
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-A006",
+      "cantidad_lista": 8,
+      "cajas": "2",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 8.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/ JUEGO DE LLAVES 12 Vcc FT-180 / FT-200 / FT-200 AMARILL",
+      "grupo": "C",
+      "segments": [
+        [
+          2,
+          2
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "BUJ-ALE-01",
+      "cantidad_lista": 4,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 4.0,
+      "descripcion": "BUJIA ALESSIA A-D8EA MOTOS DE TRABAJO UNIVERSAL MOTOS DE TRABAJO",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-014",
+      "cantidad_lista": 4,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 4.0,
+      "descripcion": "CABLE DE ACELERADOR ATV-150 SPORT/ATV-150 SPORT C/REVERSA/ATV-180",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLA-083",
+      "cantidad_lista": 3,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 3.0,
+      "descripcion": "CABLE DE ACELERADOR VN CROSSMAX-200 19-22/VN CROSSMAX-250 21/VN CROSSMAX-250PRO 21-22/YA X",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-031",
+      "cantidad_lista": 3,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 3.0,
+      "descripcion": "CABLE DE CLUTCH RC-150 / RC-150AI / RC-200 19",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-034",
+      "cantidad_lista": 3,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 3.0,
+      "descripcion": "CABLE DE CLUTCH BJ NS-200",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-044",
+      "cantidad_lista": 1,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "CABLE DE CLUTCH 1040 mm RC-150 09-17 / RC-150 GT 12-15",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-059",
+      "cantidad_lista": 5,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 5.0,
+      "descripcion": "CABLE DE CLUTCH VN NITROX-250 T3 23-25",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-063",
+      "cantidad_lista": 7,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 7.0,
+      "descripcion": "CABLE DE CLUTCH VN CROSSMAX-250 20-24 / VN CROSSMAX-250PRO 22-24 / VN CROSSMAX-300PRO 24",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-066",
+      "cantidad_lista": 6,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 6.0,
+      "descripcion": "CABLE DE CLUTCH IT 280-Z 24",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-067",
+      "cantidad_lista": 1,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "CABLE DE CLUTCH BJ N-160 24/BJ N-250 24",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-073",
+      "cantidad_lista": 2,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE CLUTCH VN ALPINA-300 23-24",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-076",
+      "cantidad_lista": 2,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE CLUTCH 850 mm VN CYCLONE-150 23/VN CYCLONE-190 24/VN CYCLONE-200 22-23/VN CYCLONE",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLC-079",
+      "cantidad_lista": 2,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE CLUTCH IT FT-200GTS 25",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-008",
+      "cantidad_lista": 4,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 4.0,
+      "descripcion": "CABLE DE VELOCIMETRO WS-150 08-17 / WS-150 NF 13-14 / WS-175 12-16 / W-150",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-013",
+      "cantidad_lista": 2,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE VELOCIMETRO TC-200/ TC-200 BLANCA/RC -200/TC-250/C-200 CARABELA/ BG-200 BENGALA 1",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-069",
+      "cantidad_lista": 6,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 6.0,
+      "descripcion": "CABLE DE VELOCIMETRO D-125 16-18 / X-125 18 / CBX150",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-072",
+      "cantidad_lista": 1,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "PAS-CABLE DE VELOCIMETRO DM-125 17-19",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-078",
+      "cantidad_lista": 1,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "CABLE DE VELOCIMETRO 980 mm AT-125 17-19",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CLV-088",
+      "cantidad_lista": 2,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE VELOCIMETRO DT-125 CLASICA 17/DT-125 SPORT 17/DT-150 CLASICA 17/FORZA 125 08-12 /",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "PAC-069",
+      "cantidad_lista": 3,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 3.0,
+      "descripcion": "PARADOR LATERAL HO NAVI-110 24",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "PLA-010",
+      "cantidad_lista": 2,
+      "cajas": "3",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "PLATOS OPRESORES NS-200",
+      "grupo": "C",
+      "segments": [
+        [
+          3,
+          3
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CEN-004",
+      "cantidad_lista": 3,
+      "cajas": "4",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 3.0,
+      "descripcion": "CENTRIFUGO VARIADOR COMPLETO IT ATV-200 20-24",
+      "grupo": "C",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-014",
+      "cantidad_lista": 3,
+      "cajas": "4",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 3.0,
+      "descripcion": "CIGÜEÑAL COMPLETO 170-Z  16-18",
+      "grupo": "C",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-037",
+      "cantidad_lista": 2,
+      "cajas": "4",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "CIGUEÑAL COMPLETO YA FZ-16 11-17/YA FZ-16 2.0 20-22",
+      "grupo": "C",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-127",
+      "cantidad_lista": 7,
+      "cajas": "4",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 7.0,
+      "descripcion": "CABLE DE ACELERADOR VN GLADIATOR-200 23-24/VN REPTILE-150 20-22/VN REPTILE TREK-200 21-24",
+      "grupo": "C",
+      "segments": [
+        [
+          4,
+          4
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "GOM-069",
+      "cantidad_lista": 3,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 3.0,
+      "descripcion": "GOMAS POSAPIE AT-110 14-16/IT ARGENTA-110 05-13/IT DT-110DEL 16-23/IT FT-115 16-19",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "GOM-085",
+      "cantidad_lista": 2,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 2.0,
+      "descripcion": "GOMAS POSAPIE TRASERO 150-SZ 16-18/150-Z 14-16/150-Z 19-20/170-Z 16-18",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "GOM-087",
+      "cantidad_lista": 2,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 2.0,
+      "descripcion": "GOMAS POSAPIE AT-125 17-19 / AT-125 RT 20",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "PED-B001",
+      "cantidad_lista": 10,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 10.0,
+      "descripcion": "PEDAL DE FRENO CROMADO DT-150SP 17/FORZA-150 06-13/FT-150 14-16/FT-150AZ 13-16/FT-150G 16-",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "PED-B012",
+      "cantidad_lista": 19,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 19.0,
+      "descripcion": "PEDAL DE FRENO CROMADO DT-125 CLASICA 17 / DT-125 DELIVERY 17 / DT-125 SPORT 17 / DT-150 C",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "PED-B024",
+      "cantidad_lista": 2,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "PEDAL DE FRENO CROMADO IT RC-150 16-24/IT RC-200 19-25/IT RC-250 24-25",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "POP-104",
+      "cantidad_lista": 10,
+      "cajas": "5",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 10.0,
+      "descripcion": "POSAPIE TRASERO COMPLETO IZQ AT-125 17-20/AT-125RT 20-21",
+      "grupo": "C",
+      "segments": [
+        [
+          5,
+          5
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "CAR-018",
+      "cantidad_lista": 8,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 8.0,
+      "descripcion": "CARBURADOR DT-200 SPORT 17 / FT-200 14-15 / FT-200 AMA 15 / FT-180 13-17 / RT-180 11-13 / ",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CAR-GYG-01",
+      "cantidad_lista": 4,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 4.0,
+      "descripcion": "CARBURADOR DS-150 06-20/DS-150G 18-20/DS-150VE 18-19/DS-150NE 13-15/GS-150 10-13/GS-150LED",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLU-059",
+      "cantidad_lista": 4,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 4.0,
+      "descripcion": "CLUTCH COMPLETO IT DM-300 24-25",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "EJE-130",
+      "cantidad_lista": 2,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 2.0,
+      "descripcion": "EJE DE PEDAL DE ARRANQUE LARGO GSC-175/GTS-175/GTS-175LEDS/GTS-175LED CAJA/MODENA-150/MODE",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "HSO-023",
+      "cantidad_lista": 7,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 7.0,
+      "descripcion": "GUIA DE CADENA IT DM-150SP 19-21/IT DM-200 14-22/IT DM-200SP 19-21/IT DM-250 20-21/IT RISK",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "PAC-047",
+      "cantidad_lista": 5,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 5.0,
+      "descripcion": "PARADOR LATERAL DM-200 14-18",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-012A",
+      "cantidad_lista": 1,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 1.0,
+      "descripcion": "POSAPIES UNIVERSAL ALUMINIO AZUL",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-131",
+      "cantidad_lista": 7,
+      "cajas": "6",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 7.0,
+      "descripcion": "POSAPIE DELANTERO IZQ CON BASE VN ALPINA-300 23-24",
+      "grupo": "C",
+      "segments": [
+        [
+          6,
+          6
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-015",
+      "cantidad_lista": 10,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 10.0,
+      "descripcion": "POSAPIE TRASERO ALUMINIO TC-200/TC-200 BLANCA/ RC -200/TC-250/ C-200 CARABELA/BG-200 BENGA",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-021",
+      "cantidad_lista": 5,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 5.0,
+      "descripcion": "POSAPIE DELANTERO IZQ Y DER DM-150 10-17",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-060",
+      "cantidad_lista": 3,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 3.0,
+      "descripcion": "POSAPIE TRASERO IZQUIERDO COMPLETO BJ NS-200",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-062",
+      "cantidad_lista": 5,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 5.0,
+      "descripcion": "POSAPIE TRASERO IZQUIERDO CON BASE DM-150 10-19",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-086",
+      "cantidad_lista": 12,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 12.0,
+      "descripcion": "POSAPIES TRASEROS DT-150 SPT II 17-10 / FT-180 TS 19-20",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-089",
+      "cantidad_lista": 10,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 10.0,
+      "descripcion": "POSAPIES TRASEROS FIERA-150 18-19 / FT-200 TS 19-23 / 200-Z 19-23",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-092",
+      "cantidad_lista": 4,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 4.0,
+      "descripcion": "POSAPIES DELANTEROS PLATA ALUMINIO 250-Z 14-17 / 250-Z NE 17-19",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-106",
+      "cantidad_lista": 7,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 7.0,
+      "descripcion": "POSAPIE TRASERO COMPLETO IZQ DM-150RO 18-21",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-122",
+      "cantidad_lista": 2,
+      "cajas": "7",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 2.0,
+      "descripcion": "POSAPIES TRASEROS CON BASE DT-150SP 20-22/DT-150SP II 17-20/FT-180TS 19-22",
+      "grupo": "C",
+      "segments": [
+        [
+          7,
+          7
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "CLA-097",
+      "cantidad_lista": 2,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE ACELERADOR 880 mm RC-150 09-17 / RC-150 GT 12-15",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-103",
+      "cantidad_lista": 2,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE ACELERADOR RC-200 19-21",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-106",
+      "cantidad_lista": 1,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 1.0,
+      "descripcion": "CABLE ACELERADOR NS-200",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-119",
+      "cantidad_lista": 5,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 5.0,
+      "descripcion": "CABLE DE ACELERADOR VN NITROX-200 20-22 / VN NITROX-250 T2 20-22 / VN NITROX-250 T3 22-24 ",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-128",
+      "cantidad_lista": 4,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 4.0,
+      "descripcion": "CABLE DE ACELERADOR 772 mm VN STORM-300 24/VN HYPER-280 20-24",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLA-135",
+      "cantidad_lista": 2,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE ACELERADOR VN CYCLONE-150 20-23/VN CYCLONE-200 20-23/VN CYCLONE-210 24/VN FALKON-",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLC-029",
+      "cantidad_lista": 5,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 5.0,
+      "descripcion": "CABLE DE CLUTCH 125-Z 16-17",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLF-006",
+      "cantidad_lista": 6,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CABLE DE FRENO DT-125 CLASICA 17 / DT-125 SPORT 17 / DT-150 CLASICA 17 / FORZA 125 08-12 /",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLF-040",
+      "cantidad_lista": 1,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 1.0,
+      "descripcion": "CABLE DE FRENO DELANTERO 1100 mm AT-110 20-22/AT-110 ROJA 17-20/X-110 17-19/XT-110 20-21/X",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLF-046",
+      "cantidad_lista": 2,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "CABLE DE FRENO DELANTERO DT-125 DELIVERY 17 / DT-150 DELIVERY 17 / FORZA 125 05-07 / FT-12",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLF-055",
+      "cantidad_lista": 5,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 5.0,
+      "descripcion": "CABLE DE FRENO TRASERO VN ATOM-170 24/VN ATOM-150 20-24",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLF-057",
+      "cantidad_lista": 6,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CABLE DE FRENO DELANTERO VN GLADIATOR-200 23-24/VN REPTILE-150 20-22/VN REPTILE TREK-200 2",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLV-061",
+      "cantidad_lista": 9,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 9.0,
+      "descripcion": "CABLE DE VELOCIMETRO 125-Z 16-17",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "PAS-022",
+      "cantidad_lista": 10,
+      "cajas": "8",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 10.0,
+      "descripcion": "PASTAS DE CLUTCH VX-250 ADV 16-18/VX-250 EFI 18-20",
+      "grupo": "C",
+      "segments": [
+        [
+          8,
+          8
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLF-048",
+      "cantidad_lista": 14,
+      "cajas": "9",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 14.0,
+      "descripcion": "CABLE FRENO DELANTERO YA RAY-ZR",
+      "grupo": "C",
+      "segments": [
+        [
+          9,
+          9
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "POP-026",
+      "cantidad_lista": 18,
+      "cajas": "9",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 18.0,
+      "descripcion": "POSAPIE DELANTERO IT DM-200 14-17/VN CROSSMAX-250PRO 21-22/VN CROSSMAX 250 20-22/VN CROSSM",
+      "grupo": "C",
+      "segments": [
+        [
+          9,
+          9
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "CVE-017",
+      "cantidad_lista": 12,
+      "cajas": "10",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 12.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO IT RC-200 19-27/IT SPITFIRE 19-22/IT FT-",
+      "grupo": "C",
+      "segments": [
+        [
+          10,
+          10
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "MAR-008",
+      "cantidad_lista": 18,
+      "cajas": "11",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 18.0,
+      "descripcion": "MARCHA 12 Vcc 250-SZ 23/250-Z 14-17/250-Z NG 17-19/RT-200 15-16/RT-200 GP 17-19/RT-200 20-",
+      "grupo": "C",
+      "segments": [
+        [
+          11,
+          11
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "ALE-112",
+      "cantidad_lista": 4,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 4.0,
+      "descripcion": "EXTRACTOR DE BUJES HORQUILLA TRASERA UNIVERSAL",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "AMO-091",
+      "cantidad_lista": 2,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "AMORTIGUADOR TRASERO AMARILLO 321.5MM IT 280-Z 24",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "MAR-019",
+      "cantidad_lista": 5,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 5.0,
+      "descripcion": "MARCHA 12 Vcc FT-250TS 16-21/FT-250 15-16/DT-250SP 20/250-SZ 15",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "PED-A045",
+      "cantidad_lista": 1,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "PEDAL DE CAMBIOS CROMADO IT VORT-X300 17-27/IT VORT-X300R 21-25/IT VORT-X300R RACING 25-26",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "PED-A055",
+      "cantidad_lista": 3,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 3.0,
+      "descripcion": "PEDAL DE CAMBIOS VN WORKMAN-250 20-24",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "PED-B009",
+      "cantidad_lista": 9,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 9.0,
+      "descripcion": "PEDAL DE FRENO NEGRO IT DM-150 26/IT DM-150GPS 26/IT DM-200SP 19-21/IT DM-250 20-23/IT DM-",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "PIÑ-003",
+      "cantidad_lista": 3,
+      "cajas": "13",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "codigo_impreso": "PIN-003",
+      "cantidad_factura": 3.0,
+      "descripcion": "ENGRANE PIÑON 15T DIENTES IT 125-Z/IT DM-125/IT DM-200 14-17/VN WORKMAN-250 25/IT DT-125 C",
+      "grupo": "C",
+      "segments": [
+        [
+          13,
+          13
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CVE-001",
+      "cantidad_lista": 6,
+      "cajas": "14",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO AT-110 ROJA 17-19 / X-110 17-19 / XT-110",
+      "grupo": "C",
+      "segments": [
+        [
+          14,
+          14
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CVE-006",
+      "cantidad_lista": 3,
+      "cajas": "14",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 3.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO IT FT-110 10-13/VN ZERO 7-125 22/VN INTR",
+      "grupo": "C",
+      "segments": [
+        [
+          14,
+          14
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CVE-011",
+      "cantidad_lista": 2,
+      "cajas": "14",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 2.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO 250-Z",
+      "grupo": "C",
+      "segments": [
+        [
+          14,
+          14
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "MAR-038",
+      "cantidad_lista": 2,
+      "cajas": "14",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 2.0,
+      "descripcion": "MARCHA 12 Vcc BJ RE-4S 200CC",
+      "grupo": "C",
+      "segments": [
+        [
+          14,
+          14
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CVE-026",
+      "cantidad_lista": 8,
+      "cajas": "15",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 8.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO VN NITROX-200 21-22",
+      "grupo": "C",
+      "segments": [
+        [
+          15,
+          15
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CAM-001RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 130/60-13 VALVULA TR4 IT BS-250 07-08/ IT DS-150 14-17/ IT DS-150 NEGRO 13-15/ IT D",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-005RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 3.00-18 VALVULA TR4 DT-200SP 17/FORZA-125 05-12/FORZA-150 06-13/EX-200 05-08/FT-110",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-008RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 3.50-18 VALVULA TR4 FT-125/FT-150/CARGO-125/MOTOCICLETAS RIN 18/ KURAZAI CLASSIC 12",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-010RD",
+      "cantidad_lista": 2,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 2.0,
+      "descripcion": "CAMARA 90/90-18 VALVULA TR4 FT-125/ FT-150/ CARGO-125/ MOTOCICLETAS RIN 18/ YBR-125/ HONDA",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-013RD",
+      "cantidad_lista": 2,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 2.0,
+      "descripcion": "CAMARA 110/90-16 VALVULA TR4 IT RC-200/ IT TC-250/MOTOS CHOPER/MOTOCICLETAS RIN 16",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-017F",
+      "cantidad_lista": 2,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 2.0,
+      "descripcion": "CAMARA KIIRUS 4.10-18 Motorcycle Tube / TR4 DM-200 14-15/DT-200 SPORT 17/FT-200 14-15/ FT-",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-018F",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA KIIRUS 110/70-17 Motorcycle Tube TR4 DM-150 / FASER / FZ-16 / NS-200 / MOTOCICLETAS",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-018RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 110/70-17 VALVULA TR4 DM-150 / FASER / FZ-16 / NS-200 / MOTOCICLETAS RIN 17",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-019F",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA KIIRUS 130/70-17 Motorcycle Tube TR4 FASER/ FZ-16/ NS-200/ MOTOCICLETAS RIN 17",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-021F",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 90/90-21 Motorcycle Tube TR4 DM-200 / MOTOCICLETAS RIN 21",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-022RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 275/300-21 VALVULA TR4 DM-200 / MOTOCICLETAS RIN 21",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-023F",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 325/350-21 Motorcycle Tube TR4 DM-200 / MOTOCICLETAS RIN 21",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-024F",
+      "cantidad_lista": 2,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 2.0,
+      "descripcion": "CAMARA 120/90-18 Motorcycle Tube TR4 DM-200 / MOTOCICLETAS RIN 18",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-026RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 130/90-10 VALVULA TR87 YA BW´S-100/ IT WS-150/ IT WS-175/ MOTOCICLETAS RIN 10",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "CAM-027RD",
+      "cantidad_lista": 1,
+      "cajas": "16",
+      "almacen": "900",
+      "hoja": 12,
+      "foto": 12,
+      "cantidad_factura": 1.0,
+      "descripcion": "CAMARA 90/90-19 VALVULA TR4 IT DM-150",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 12 / foto_12.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_12.jpg"
+    },
+    {
+      "codigo": "MCA-WS202-05",
+      "cantidad_lista": 4,
+      "cajas": "16",
+      "almacen": "500",
+      "hoja": 9,
+      "foto": 6,
+      "cantidad_factura": 4.0,
+      "descripcion": "MICA PARA CASCO DE MOTOCICLISTA WS-202 REVO AZUL TRANSPARENTE COMPATIBLE P-30",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 9 / foto_06.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_06.jpg"
+    },
+    {
+      "codigo": "MCA-WS202-09",
+      "cantidad_lista": 2,
+      "cajas": "16",
+      "almacen": "500",
+      "hoja": 9,
+      "foto": 6,
+      "cantidad_factura": 2.0,
+      "descripcion": "MICA PARA CASCO DE MOTOCICLISTA WS-202 REVO ROSA TRANSPARENTE COMPATIBLE P-30",
+      "grupo": "C",
+      "segments": [
+        [
+          16,
+          16
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 9 / foto_06.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_06.jpg"
+    },
+    {
+      "codigo": "CVE-016",
+      "cantidad_lista": 10,
+      "cajas": "17",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 10.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO AT-110 SPORT/ AT-110 / KURAZAI GALAXY/ G",
+      "grupo": "C",
+      "segments": [
+        [
+          17,
+          17
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "AMO-003",
+      "cantidad_lista": 3,
+      "cajas": "18",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 3.0,
+      "descripcion": "AMORTIGUADOR NEGRO CS-125 14-17 / CS-125 LED 13-16 / D-125 17 / DSG-12517 / CITY-125 05-13",
+      "grupo": "C",
+      "segments": [
+        [
+          18,
+          18
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "AMO-016",
+      "cantidad_lista": 5,
+      "cajas": "18",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 5.0,
+      "descripcion": "AMORTIGUADOR TRASERO ROJO ATV-150 / 30cm CON BUJE",
+      "grupo": "C",
+      "segments": [
+        [
+          18,
+          18
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "AMO-076",
+      "cantidad_lista": 1,
+      "cajas": "18",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "AMORTIGUADOR BUJE-BUJE 335mm NEGRO VN CYCLONE-200 21-22/VN CYCLONE-150 21-22",
+      "grupo": "C",
+      "segments": [
+        [
+          18,
+          18
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "AMO-088",
+      "cantidad_lista": 1,
+      "cajas": "18",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 1.0,
+      "descripcion": "AMORTIGUADOR TRASERO VERDE 300MM IT ATV-180 21-24",
+      "grupo": "C",
+      "segments": [
+        [
+          18,
+          18
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-085",
+      "cantidad_lista": 30,
+      "cajas": "20",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 30.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES TAPON DE GASOLINA  12 Vcc 200-Z 19",
+      "grupo": "C",
+      "segments": [
+        [
+          20,
+          20
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "SWI-084",
+      "cantidad_lista": 30,
+      "cajas": "21",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 30.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES Y SEGURO DE ASIENTO 12 Vcc WS-150 SPORT ",
+      "grupo": "C",
+      "segments": [
+        [
+          21,
+          21
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "SWI-110",
+      "cantidad_lista": 45,
+      "cajas": "22",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 45.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C /JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 1",
+      "grupo": "C",
+      "segments": [
+        [
+          22,
+          22
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-027",
+      "cantidad_lista": 60,
+      "cajas": "23-28",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 60.0,
+      "descripcion": "POSAPIE TRASERO IT DM-200 14-17/ VN CROSSMAX-250PRO 21-22/ VN CROSSMAX 250 20-22/ VN CROSS",
+      "grupo": "C",
+      "segments": [
+        [
+          23,
+          28
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-124",
+      "cantidad_lista": 20,
+      "cajas": "29",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 20.0,
+      "descripcion": "POSAPIE DERECHO TRASERO VN NITROX-250 18-22",
+      "grupo": "C",
+      "segments": [
+        [
+          29,
+          29
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-064",
+      "cantidad_lista": 50,
+      "cajas": "30-34",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 50.0,
+      "descripcion": "BASE POSAPIES DERECHA DT-200 SPORT 17-19/ FT-180 13-18 / FT-200 14-151 / FT-200 AMARILLA 1",
+      "grupo": "C",
+      "segments": [
+        [
+          30,
+          34
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-065",
+      "cantidad_lista": 195,
+      "cajas": "35-54",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 195.0,
+      "descripcion": "BASE POSAPIES IZQUIERDA DT-200 SPORT 17-19 / FT-180 13-18 / FT-200 14-15 / FT-200 AMARILLA",
+      "grupo": "C",
+      "segments": [
+        [
+          35,
+          54
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "POP-087",
+      "cantidad_lista": 125,
+      "cajas": "55-59",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 125.0,
+      "descripcion": "POSAPIES TRASEROS 150-SZ 16-18 / 150-Z 14-16 / 150-Z 19-23 / 170-Z 16-18",
+      "grupo": "C",
+      "segments": [
+        [
+          55,
+          59
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    },
+    {
+      "codigo": "CIG-006",
+      "cantidad_lista": 18,
+      "cajas": "60-62",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 18.0,
+      "descripcion": "CIGÜEÑAL COMPLETO FT-180 13-14 / FT-180 19-20 / RT-180 11-13",
+      "grupo": "C",
+      "segments": [
+        [
+          60,
+          62
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-032",
+      "cantidad_lista": 12,
+      "cajas": "63-64",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 12.0,
+      "descripcion": "CIGUEÑAL COMPLETO IT 200-Z 19-23",
+      "grupo": "C",
+      "segments": [
+        [
+          63,
+          64
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-013",
+      "cantidad_lista": 18,
+      "cajas": "65-67",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 18.0,
+      "descripcion": "CIGUEÑAL COMPLETO CARGO-150",
+      "grupo": "C",
+      "segments": [
+        [
+          65,
+          67
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CAB-025",
+      "cantidad_lista": 16,
+      "cajas": "68-69",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 16.0,
+      "descripcion": "CABEZA DE CILINDRO COMPLETA CARGO-150",
+      "grupo": "C",
+      "segments": [
+        [
+          68,
+          69
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CAB-022",
+      "cantidad_lista": 16,
+      "cajas": "70-71",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 16.0,
+      "descripcion": "CABEZA DE CILINDRO COMPLETA DM-200 14-20/DM-200SP 19-20/TC-200 14-16 /TC-200BL 16-18 /TC-2",
+      "grupo": "C",
+      "segments": [
+        [
+          70,
+          71
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-010",
+      "cantidad_lista": 6,
+      "cajas": "72",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CIGÜEÑAL COMPLETO AT-110 NEGRA 16-18 / AX-110 16 / FT-110 10-16 / XT-110 11-15 / XT-110 GR",
+      "grupo": "C",
+      "segments": [
+        [
+          72,
+          72
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-CGG-01",
+      "cantidad_lista": 6,
+      "cajas": "73",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CIGÜEÑAL COMPLETO FORZA-150cc PERNO 15mm",
+      "grupo": "C",
+      "segments": [
+        [
+          73,
+          73
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CVE-009",
+      "cantidad_lista": 24,
+      "cajas": "76-77",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 24.0,
+      "descripcion": "CAJA DE VELOCIDADES ENGRANE PRIMARIO Y SECUNDARIO DT-200 SPORT 17-18 / FIERA 200 18 / FIER",
+      "grupo": "C",
+      "segments": [
+        [
+          76,
+          77
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CLU-021",
+      "cantidad_lista": 24,
+      "cajas": "80-84",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 24.0,
+      "descripcion": "CLUTCH COMPLETO RT-200 09-16 / FT-180 13-17 / RT-180 11-13 / RT-200 GP 17-18  / RT-200 NEG",
+      "grupo": "C",
+      "segments": [
+        [
+          80,
+          84
+        ]
+      ],
+      "estado": "Capturado",
+      "observacion": "",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "BOF-041",
+      "cantidad_lista": 20,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 20.0,
+      "descripcion": "BOMBA DE FRENO COMPLETA NEGRO WS-150 SPORT 17-20 / WS-175 SPORT 18-20",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "BOF-C005",
+      "cantidad_lista": 50,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 50.0,
+      "descripcion": "BOMBA DE FRENO TRASERA IT DM-250X 22-24/IT DM-250 22-24/VN STORM-300 24",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "CAL-059",
+      "cantidad_lista": 13,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 2,
+      "foto": 5,
+      "cantidad_factura": 13.0,
+      "descripcion": "CALAVERA MICA ROJA 12 VCC FT-150GTS 18-21",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 2 / foto_05.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_05.jpg"
+    },
+    {
+      "codigo": "DIR-034",
+      "cantidad_lista": 50,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 50.0,
+      "descripcion": "DIRECCIONALES TRASERAS 12Vcc VITALIA-125 / VITALIA-150",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "ESP-C03NE",
+      "cantidad_lista": 14,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 14.0,
+      "descripcion": "ESPEJOS REDONDOS CAFE RACER NEGRO ",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KDC-F15",
+      "cantidad_lista": 17,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 17.0,
+      "descripcion": "KIT DE CILINDRO KIIRUS PLATA YBR-125",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KDC-F20",
+      "cantidad_lista": 9,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 9.0,
+      "descripcion": "KIT DE CILINDRO NEGRO JUEGO: CILINDRO, PERNO, PISTON, ANILLOS, SEGURO, EMPAQUE RT-180 / FT",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KDC-IR19",
+      "cantidad_lista": 12,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 12.0,
+      "descripcion": "KIT DE CILINDRO NEGRO 250-Z 14-17/250-Z NE 17-19/250-SZ 23",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KDC-IR40",
+      "cantidad_lista": 18,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 18.0,
+      "descripcion": "KIT DE CILINDRO 125FL 19-20/125FL PARRILLA LARGA 19-20",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "KSP-F17",
+      "cantidad_lista": 3,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 3.0,
+      "descripcion": "KIT DE SPROCKET KIIRUS CADENA REFORZADA 520H-102L SPROCKET 34T/13T 250-Z",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "PSK-004",
+      "cantidad_lista": 4,
+      "cajas": "",
+      "almacen": "100",
+      "hoja": 1,
+      "foto": 4,
+      "cantidad_factura": 4.0,
+      "descripcion": "PORTA SPROCKET TC-200",
+      "grupo": "A",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 1 / foto_04.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_04.jpg"
+    },
+    {
+      "codigo": "EST-029",
+      "cantidad_lista": 9,
+      "cajas": "",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 9.0,
+      "descripcion": "ESTATOR DT-110 DELIVERY 16-18 / FT-115 16-18",
+      "grupo": "B",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "MAS-017",
+      "cantidad_lista": 8,
+      "cajas": "",
+      "almacen": "600",
+      "hoja": 10,
+      "foto": 8,
+      "cantidad_factura": 8.0,
+      "descripcion": "MAZA RIN DELANTERO DT-125 DELIVERY 17 -18 /  DT-150 DELIVERY 17-18 / FT-125 / FORZA-125 05",
+      "grupo": "B",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 10 / foto_08.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_08.jpg"
+    },
+    {
+      "codigo": "REG-033",
+      "cantidad_lista": 3,
+      "cajas": "",
+      "almacen": "300",
+      "hoja": 3,
+      "foto": 2,
+      "cantidad_factura": 3.0,
+      "descripcion": "REGULADOR 12 VCC VN ALPINA-300 22-24",
+      "grupo": "B",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 3 / foto_02.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_02.jpg"
+    },
+    {
+      "codigo": "AMO-063",
+      "cantidad_lista": 7,
+      "cajas": "",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 7.0,
+      "descripcion": "AMORTIGUADOR ROJO BUJE / HORQUILLA 370 mm V-200 18-19",
+      "grupo": "C",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "CAB-042",
+      "cantidad_lista": 6,
+      "cajas": "",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CABEZA DE CILINDRO COMPLETA VN NITROX-300 T3 23-24",
+      "grupo": "C",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CAR-CGG-A",
+      "cantidad_lista": 80,
+      "cajas": "",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 80.0,
+      "descripcion": "CARBURADOR AHOGADOR DE CHICOTE IT DT-150CL 17-24/IT DT-150DEL 17-25/IT FORZA-150 06-13/IT ",
+      "grupo": "C",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "CIG-009",
+      "cantidad_lista": 6,
+      "cajas": "",
+      "almacen": "400",
+      "hoja": 5,
+      "foto": 7,
+      "cantidad_factura": 6.0,
+      "descripcion": "CIGÜEÑAL COMPLETO AT-110 RT 12-14 / AT-11ORTLED 14-16 / AT-110RT CON LED 16-20",
+      "grupo": "C",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 5 / foto_07.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_07.jpg"
+    },
+    {
+      "codigo": "MAR-032",
+      "cantidad_lista": 25,
+      "cajas": "",
+      "almacen": "400",
+      "hoja": 6,
+      "foto": 9,
+      "cantidad_factura": 25.0,
+      "descripcion": "MARCHA 12 Vcc BJ BOXER 150 ( 5 VELOCIDADES)",
+      "grupo": "C",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 6 / foto_09.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_09.jpg"
+    },
+    {
+      "codigo": "SWI-078",
+      "cantidad_lista": 25,
+      "cajas": "",
+      "almacen": "400",
+      "hoja": 7,
+      "foto": 11,
+      "cantidad_factura": 25.0,
+      "descripcion": "SWITCH INTERRUPTOR DE ENCENDIDO C/JUEGO DE LLAVES TAPON DE GASOLINA Y SEGURO DE ASIENTO 12",
+      "grupo": "C",
+      "segments": [],
+      "estado": "Caja por confirmar",
+      "observacion": "Número corregido, sobreescrito o ambiguo. Se conserva sin caja confirmada.",
+      "fuente": "Hoja 7 / foto_11.jpg",
+      "foto_url": "documentos-29oct-empaque/288469/foto_11.jpg"
+    }
+  ],
+  "fotos": [
+    {
+      "archivo": "escaneo_01.jpg",
+      "bytes": 131628,
+      "sha256": "75f54eeecad525878fdcd9635216db591e66d5e91688f24efb4997b7f570c45d",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_02.jpg",
+      "bytes": 245071,
+      "sha256": "63b539723edb3352a9456fbbc7b55bb9710b85276f054b5df232e9cebeb748d1",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_03.jpg",
+      "bytes": 345568,
+      "sha256": "2b6f4b74d5181d238853700869b1e928a6d897a0e067595cb10e0ad745afaf94",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_04.jpg",
+      "bytes": 102985,
+      "sha256": "a69afbbf46f83ff9b7784683776e1cc478b3e5a376e01d18a75e15faa7ff975f",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_05.jpg",
+      "bytes": 316130,
+      "sha256": "e5ee92d4fe57ddb1b88b10e8bf172f53e784586ae0976187f63623ec637364f9",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_06.jpg",
+      "bytes": 83425,
+      "sha256": "d119d23d465af7a5232f6bec74342f171ab45299c2abcef89d6ab5967f060ef9",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_07.jpg",
+      "bytes": 186950,
+      "sha256": "d15beb552df4db4f35ea16e4f88f26f3549a254871f576a074801f600ff47fae",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_08.jpg",
+      "bytes": 347806,
+      "sha256": "95adcc1bd992631b68de3ca93393e0934ce18ecd1e078c972cfdaf859b2cb1a2",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_09.jpg",
+      "bytes": 228966,
+      "sha256": "a40e631b1d3d8b6435dba03bcf11d847169fddcfb4bc526e248452df090c053b",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_10.jpg",
+      "bytes": 83315,
+      "sha256": "cd30f7a67b194a5dd0aa77543b0436026349f955101fcb2bd86f580ed3c125c5",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_11.jpg",
+      "bytes": 299075,
+      "sha256": "976c243fe3eaf278f06a804eb90eba5594434987f59c527cbb0f6935aacb722e",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_12.jpg",
+      "bytes": 62159,
+      "sha256": "6c50bea40679eb52dc7b58166b5f0249bb0269a22b6b1ddd06bb532fe470f9c4",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "escaneo_13.jpg",
+      "bytes": 67593,
+      "sha256": "9ad15832fa14000f8bc5b063cbdb76a107061c616077cc44728a77043f65c5fe",
+      "album": "09:29 / 13 escaneos"
+    },
+    {
+      "archivo": "foto_01.jpg",
+      "bytes": 251245,
+      "sha256": "d39b3f63cd7cdc01bf6483bc7ac75382f3894d8b30b598ce018b16c57a47dad2",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_02.jpg",
+      "bytes": 341281,
+      "sha256": "921daad5e453b4a47a28e7367572616979b368c533a8b396ffd9d009913a4dc8",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_03.jpg",
+      "bytes": 251015,
+      "sha256": "b0a2ab9fdb0d4ca009248f97eed3761dbe5f47dc2e505ec0384c4b36fc156ba1",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_04.jpg",
+      "bytes": 284903,
+      "sha256": "e90984fa85052df693d3ecb1a9ba0cb448bea72653d7f47cc330a5618fdba3a5",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_05.jpg",
+      "bytes": 100654,
+      "sha256": "8e729ff0b2bf674d1f82355654ddacc65bfcc626734fa13622e0ad045932f2aa",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_06.jpg",
+      "bytes": 118796,
+      "sha256": "614a4e1d80f1b3b92900fe59533691331ce5a30cd6ebef831ae12cd4e1170652",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_07.jpg",
+      "bytes": 348626,
+      "sha256": "f1b3825b335d20cb689616478f5a368d2688482f074f9ffef407b61b634fa4f0",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_08.jpg",
+      "bytes": 145758,
+      "sha256": "b1c5dfb160616a8d1284f185fe3afbf7b23ee2f1ce26c338cc2a7d6386d30eb1",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_09.jpg",
+      "bytes": 354019,
+      "sha256": "4b2ef97c1b4f975c72581d0b199934b20127de838b3d99cb166041652a555ae8",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_10.jpg",
+      "bytes": 66637,
+      "sha256": "1b5f7cafc94a83a2dea49cf4961f8b29defb4c39249695c7b6e5a71adebed6d3",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_11.jpg",
+      "bytes": 266687,
+      "sha256": "b97fc1a17c6ed5a6c7781743f906ea5d74195da412ad45266e73bf0b7c91d817",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_12.jpg",
+      "bytes": 163075,
+      "sha256": "ede07826e61570bfa4ad6a5ca8f5160724eb5d6c0d89cc468c039e27ce2a2771",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_13.jpg",
+      "bytes": 81899,
+      "sha256": "f44ac3166128a38455b86712fbf02d98d105059bd70d913cd70061132005e516",
+      "album": "09:30 / 14 fotos"
+    },
+    {
+      "archivo": "foto_14.jpg",
+      "bytes": 187256,
+      "sha256": "209adc2023fcbba63f64a6f2de0e5c40c96c49e296643d614a96690e3a16abff",
+      "album": "09:30 / 14 fotos"
+    }
+  ],
+  "notas": [
+    "13 hojas del picking y una foto de factura; 27 originales conservados de los dos álbumes de Eliezer, 29-oct 09:29 y 09:30.",
+    "Grupos de la hoja 13: A Rack 100; B Rack 300, 600 y 700; C Rack 400, 500 y 900. Numeración propia por grupo. No renumerar cajas.",
+    "La hoja 13 y la foto de factura declaran 155 cajas + 2 atados = 157 bultos. El registro físico conserva 160 declarados y 157 capturados con entrega completa confirmada por Ángel. El total del grupo C no es legible; no se deduce del mayor número de caja.",
+    "Se conservan exactamente las cantidades del envío 248. Los códigos sin caja inequívoca quedan al final."
+  ]
+}
