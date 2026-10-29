@@ -1349,4 +1349,4 @@ document.addEventListener('click',async ev=>{const b=ev.target.closest('.xls');i
   try{if(b.dataset.xk==='f')await exportFactura(b.dataset.xkey);else if(b.dataset.xk==='e')await exportEnvio(b.dataset.xkey);else await exportResumen()}
   catch(e){console.error(e);b.textContent='No se pudo generar';setTimeout(()=>{b.textContent=t;b.disabled=false},2500);return}
   b.textContent=t;b.disabled=false});
-</script></body></html>
+</script><script src="app-page-sync.js"></script></body></html>

@@ -1,0 +1,21 @@
+function route(){
+ const main=document.getElementById('main'),u=FXAPP.user(),nav=document.querySelector('.appnav');
+ window._rlRefresh=null;main.onclick=null;document.body.classList.remove('rlbody');document.body.classList.add('iso');
+ nav.hidden=!u;
+ if(!u){document.body.classList.add('app-login');renderLlegadas(ISO.key,main);return;}
+ document.body.classList.remove('app-login');const h=(location.hash||'#recepcion').slice(1);let tab='recepcion';
+ if(h==='sincronizacion'){tab=h;renderSync(main);}
+ else if(h==='pedidos'){tab=h;main.innerHTML='<div class="docHead"><div><div class="eyebrow">Pedidos · '+esc(ISO.key)+'</div><h1>Facturas y documentos</h1></div></div><div class="sbar"><input type="search" class="q" placeholder="Buscar pedido, proveedor o factura" aria-label="Buscar pedido"></div><div class="app-provider-list"></div>';const list=main.querySelector('.app-provider-list'),q=main.querySelector('.q');const draw=()=>{const term=q.value.trim().toLowerCase();list.innerHTML=Object.entries(DATA.facturas).filter(([k,f])=>(k+' '+f.title+' '+f.pedido).toLowerCase().includes(term)).map(([k,f])=>'<a class="chip" href="#f-'+encodeURIComponent(k)+'"><span class="pedtag sm">Pedido '+esc(f.pedido)+'</span>'+blogo(f.title)+esc(f.title)+'</a>').join('');};q.oninput=draw;draw();}
+ else if(h==='envios'){tab=h;renderEnvios(main);}
+ else if(h.startsWith('e-')&&DATA.envios[decodeURIComponent(h.slice(2))]){tab='envios';renderEnvio(decodeURIComponent(h.slice(2)),main,null);addHelpBtn();}
+ else if(h.startsWith('f-')&&DATA.facturas[decodeURIComponent(h.slice(2))]){tab='pedidos';renderFactura(decodeURIComponent(h.slice(2)),main);addHelpBtn();}
+ else renderLlegadas(ISO.key,main);
+ if(!u.puede.includes('registrar')&&tab!=='recepcion'&&tab!=='sincronizacion')main.querySelectorAll('input[type=checkbox],.oadd,.oedit,.odel').forEach(x=>x.disabled=true);
+ document.querySelectorAll('.appnav a').forEach(a=>{if(a.dataset.v===tab)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});window.scrollTo(0,0);
+}
+async function renderSync(root){const q=await FXAPP.queue();root.innerHTML='<div class="docHead"><h1>Sincronización</h1></div><div class="note app-message">'+(q.length?'<b>'+q.length+' operaciones pendientes.</b> Están guardadas en este teléfono. No borres los datos de la aplicación.':'No hay operaciones pendientes en este teléfono.')+'</div><div class="lrow"><button class="btn pri" id="sync-now">Sincronizar ahora</button><button class="btn" id="backup">Descargar respaldo</button><button class="btn" id="refresh-catalog">Actualizar documentos y envíos</button><button class="btn" id="refresh-progress">Actualizar avance compartido</button><button class="btn" id="logout">Salir</button></div><ul id="sync-list">'+q.map(x=>'<li><b>'+esc(x.action)+'</b> · '+esc(x.receipt||'avance')+(x.error?'<p class="rl-err">'+esc(x.error)+' · Conserva el respaldo y solicita revisión a oficina.</p>':' · pendiente')+'</li>').join('')+'</ul><p class="mini">Antes de salir sin señal, inicia sesión con internet y abre las llegadas y envíos que vas a preparar. Una llegada cerrada localmente sigue pendiente de autorización hasta que el servidor confirme su sincronización.</p>';
+ root.querySelector('#sync-now').onclick=async()=>{await FXAPP.drain();renderSync(root);};root.querySelector('#refresh-catalog').onclick=async()=>{try{await FXAPP.refreshCatalog();alert('Documentos y envíos actualizados.');}catch(e){alert(e.message);}};root.querySelector('#backup').onclick=()=>FXAPP.backup();root.querySelector('#refresh-progress').onclick=async()=>{try{await FXAPP.pullProgress();alert('Avance actualizado desde la página.');}catch(e){alert(e.message);}};root.querySelector('#logout').onclick=async()=>{try{await FXAPP.logout();route();}catch(e){alert(e.message);}};
+}
+new MutationObserver(()=>{document.querySelector('.appnav').hidden=!FXAPP.user();}).observe(document.getElementById('main'),{childList:true});
+addEventListener('hashchange',route);
+FXAPP.init().then(()=>{route();if(FXAPP.user()){FXAPP.drain();FXAPP.pullProgress().catch(()=>{});}}).catch(e=>{document.getElementById('main').textContent='No se pudo preparar el almacenamiento: '+e.message+'. No captures hasta resolverlo.';});

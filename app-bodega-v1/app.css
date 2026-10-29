@@ -1,0 +1,5 @@
+/* Se conserva el CSS original; solo se agrega navegación y estado de la app. */
+body.rlbody nav.appnav{display:block!important}nav.appnav[hidden]{display:none!important}body{margin:0}nav.appnav a{white-space:nowrap}#app-status{position:fixed;bottom:0;left:0;right:0;background:var(--surface);color:var(--ink);border-top:1px solid var(--line);padding:8px 16px;font:500 12px var(--body);z-index:100;text-align:center}#app-status[data-state=error]{background:var(--later-soft);color:var(--later)}body.rlbody .rl-foot{bottom:34px}.wrap{padding-bottom:70px}.app-message{margin:16px 0}.app-login .wrap{max-width:560px}.app-provider-list{display:grid;gap:10px}.app-provider-list .chip{justify-content:flex-start}#sync-list li{margin:10px 0;overflow-wrap:anywhere}
+
+body.rlbody nav.appnav[hidden]{display:none!important}
+body.rlbody nav.appnav .wrap{padding-bottom:10px} @media(max-width:480px){nav.appnav .wrap{gap:2px;padding-inline:8px}nav.appnav a{font-size:12px;padding:9px 8px}}
