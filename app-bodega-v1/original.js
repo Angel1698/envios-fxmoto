@@ -579,7 +579,7 @@ function renderLlegadas(bod,root){
  let view='home',checking=false;
  const checkCapture=async()=>{
   if(!C||checking)return true;checking=true;const id=C.id;
-  try{const d=await getDetalle(id);if(C&&C.id===id&&d.estado&&d.estado!=='En captura'){
+  try{const d=await getDetalle(id);if(window.FXDevice?.other(d.captura)){C=null;saveC();B=[];F=[];detOk=false;toast('Captura en uso por '+d.captura.nombre+' · '+d.captura.equipo);return false;}if(C&&C.id===id&&d.estado&&d.estado!=='En captura'){
    C=null;saveC();B=[];F=[];detOk=false;
    toast(d.estado==='Cancelada'?'Esta captura fue cancelada en otro equipo.':'Esta captura ya fue cerrada.');return false;
   }return true;}finally{checking=false;}
@@ -592,7 +592,7 @@ function renderLlegadas(bod,root){
   else if(st==='error'){x.st='err';x.err=res;if(/ya se registró/.test(res||''))x.dupsrv=true}else x.st=st;
   if(window._rlRefresh)window._rlRefresh()});
  /* ---------- inicio ---------- */
- async function home(){
+ async function home(){await window.FXDevice?.ready;
   view="home";try{await checkCapture();}catch(_){}
   shell(top('Registro de llegadas',`Almacén ${bn} · ${esc(U.nombre)}`)+
    `${C?`<button class="rl-card rl-resume" data-go="cap"><span class="rl-dot"></span><div><b>Captura en curso · ${esc(C.prov)}</b><span class="rl-mini">${C.modo==='cajas'?'Conteo de cajas':'Fotos de tarimas'} · toca para seguir</span></div>${RL_ICO.back.replace('m15 5-7 7 7 7','m9 5 7 7-7 7')}</button>${canR?`<button class="rl-btn" data-cancel="${esc(C.id)}" aria-label="Cancelar captura en curso">✕ Cancelar captura</button>`:''}`:''}
@@ -601,21 +601,21 @@ function renderLlegadas(bod,root){
    <button class="rl-link" data-go="salir">Salir (${esc(U.nombre)})</button>`);
   const lst=root.querySelector('.rl-list');
   try{const L=(await getLlegadas(bod)).slice().reverse();
-   lst.innerHTML=L.length?L.map(x=>{const cap=x.estado==='En captura';const est=cap?'c-stay':lstat(x.estado);
+   lst.innerHTML=L.length?L.map(x=>{const cap=x.estado==='En captura',blocked=window.FXDevice?.other(x.captura);const est=cap?'c-stay':lstat(x.estado);
     return `<article class="rl-card rl-item"><div class="rl-ih"><span class="rl-lg">${logo(x.prov)}</span><span class="status ${est}">${esc(x.estado)}</span></div>
     <b>${esc(x.prov)} · ${esc(x.doc||x.fact||x.cot||'sin documento')}</b>
     <span class="rl-mini">Llegó ${esc(fdt(x.hora))} · ${esc(x.bultos)} ${esc(x.tbultos)} · recibió ${esc(x.recibio)}${x.pedido?' · pedido '+esc(x.pedido):''}</span>
     ${x.pend?`<span class="rl-pend">Falta: ${esc(x.pend)}</span>`:''}${x.autorizo?`<span class="rl-mini">Autorizó ${esc(x.autorizo)} · ${esc(fdt(x.fautoriza))}${x.dif?' · '+esc(x.dif):''}</span>`:''}
-    <div class="rl-acts">${cap&&canR&&(!C||C.id!==x.id)?`<button class="rl-btn sm" data-tomar="${esc(x.id)}">Seguir esta captura</button>`:''}${cap&&canR?`<button class="rl-btn sm" data-cancel="${esc(x.id)}">Cancelar captura</button>`:''}${/DOCUMENTOS/.test(x.pend||'')&&canR?`<button class="rl-btn sm" data-docs="${esc(x.id)}" data-prov="${esc(x.prov)}">Subir hojas de DOCUMENTOS</button>`:''}${!cap&&!x.autorizo&&canA?`<button class="rl-btn sm pri aut" data-id="${esc(x.id)}" data-b="${esc(x.bultos)}">Autorizar llegada</button>`:''}</div></article>`}).join(''):'<p class="rl-mini">No hay llegadas registradas.</p>';
+    ${cap&&x.captura?`<span class="rl-mini">Capturando: ${esc(x.captura.nombre)} · ${esc(x.captura.equipo)}${blocked?' · Solo consulta desde este equipo':''}</span>`:''}<div class="rl-acts">${cap&&!blocked&&canR&&(!C||C.id!==x.id)?`<button class="rl-btn sm" data-tomar="${esc(x.id)}">Seguir esta captura</button>`:''}${cap&&!blocked&&canR?`<button class="rl-btn sm" data-cancel="${esc(x.id)}">Cancelar captura</button>`:''}${/DOCUMENTOS/.test(x.pend||'')&&canR&&!blocked?`<button class="rl-btn sm" data-docs="${esc(x.id)}" data-prov="${esc(x.prov)}">Subir hojas de DOCUMENTOS</button>`:''}${!cap&&!x.autorizo&&canA?`<button class="rl-btn sm pri aut" data-id="${esc(x.id)}" data-b="${esc(x.bultos)}">Autorizar llegada</button>`:''}</div></article>`}).join(''):'<p class="rl-mini">No hay llegadas registradas.</p>';
    window._rlList=L}
   catch(e){lst.innerHTML=`<p class="rl-mini">No se pudieron leer las llegadas (${esc(e.message)}).</p>`}}
  root.onclick=async e=>{const g=e.target.closest('[data-go]');
   if(g){const v=g.dataset.go;if(v==='salir'){FXAPP.logout().then(()=>{ls.set(SK,null);location.hash='#recepcion';route()}).catch(e=>alert(e.message));return}if(v==='home')return home();if(v==='nueva'){N={hora:nowLocal(),fotos:[],cajas:0,tarimas:0,bolsas:0};return paso1()}if(v==='p1')return paso1();if(v==='p2')return paso2();if(v==='cap')return captura();if(v==='res')return resumen();return}
   const t=e.target.closest('[data-tomar]');if(t){const x=(window._rlList||[]).find(z=>z.id===t.dataset.tomar);if(!x)return;if(C&&!confirm('Ya hay otra captura abierta en este teléfono. ¿Cambiar a esta?'))return;
-   C={id:x.id,prov:x.prov,modo:x.modo||rlModo(x.prov,+x.tarimas||0),cajas:+x.cajas||+x.bultos||0,tarimas:+x.tarimas||0,bolsas:+x.bolsas||0,doc:x.doc||x.fact||'',grupos:[],g:-1};saveC();B=[];F=[];detOk=false;return captura()}
+   try{await window.FXDevice?.claim(x.id,cred);}catch(e){toast(e.message);return;}C={id:x.id,prov:x.prov,modo:x.modo||rlModo(x.prov,+x.tarimas||0),cajas:+x.cajas||+x.bultos||0,tarimas:+x.tarimas||0,bolsas:+x.bolsas||0,doc:x.doc||x.fact||'',grupos:[],g:-1};saveC();B=[];F=[];detOk=false;return captura()}
   const d=e.target.closest('[data-docs]');if(d)return docsRefacom(d.dataset.docs,d.dataset.prov);
   const k=e.target.closest('[data-cancel]');if(k){const id=k.dataset.cancel;if(!confirm('¿Cancelar esta captura? Deja de aparecer en la lista (en la hoja queda como "Cancelada").'))return;k.disabled=true;
-   try{await postSync({tipo:'cancelar',...cred,id});if(C&&C.id===id){C=null;saveC()}const q=(await RLQ.all()).filter(x=>x.body.id===id);for(const x of q)await RLQ.del(x.k);toast('Captura cancelada');home()}catch(err){k.disabled=false;toast('No se canceló: '+fail(err))}return}
+   try{await window.FXDevice?.claim(id,cred);await postSync({tipo:'cancelar',...cred,id});if(C&&C.id===id){C=null;saveC()}const q=(await RLQ.all()).filter(x=>x.body.id===id);for(const x of q)await RLQ.del(x.k);toast('Captura cancelada');home()}catch(err){k.disabled=false;toast('No se canceló: '+fail(err))}return}
   const a=e.target.closest('.aut');if(a)return autorizar(a)};
  /* ---------- paso 1: proveedor ---------- */
  function paso1(){shell(top('Registrar llegada',`Almacén ${bn} · paso 1 de 3`,1,3,'home')+
@@ -668,7 +668,7 @@ function renderLlegadas(bod,root){
   if(!detOk){try{const d=await getDetalle(C.id);B=d.cajas.map(c=>({k:c.cid,cid:c.cid,p:String(c.pedido),a:String(c.alm),t:c.total,c:c.caja,mini:c.mini,url:c.foto,st:'ok'}));F=d.fotos.map(f=>({k:f.fid,fid:f.fid,clase:f.clase,n:f.n,url:f.url,st:'ok'}));detOk=true}catch(e){toast('Sin conexión: se muestran solo las cajas de este teléfono')}}
   q.forEach(it=>{const b=it.body;if(b.tipo==='caja'&&!B.some(x=>x.k===it.k))B.push({k:it.k,p:b.pedido,a:b.alm,t:+b.total,c:+b.caja,mini:b.mini,st:it.err?'err':'wait',err:it.err,dupsrv:/ya se registró/.test(it.err||'')});if(b.tipo==='foto'&&!F.some(x=>x.k===it.k))F.push({k:it.k,clase:b.clase,n:+b.n,mini:b.mini,st:it.err?'err':'wait',err:it.err})});
   if(C.modo==='cajas'&&!C.grupos.length){const seen={};B.forEach(x=>{const key=x.p+'|'+x.a;if(!seen[key]){seen[key]=1;C.grupos.push({p:x.p,a:x.a,t:x.t})}});if(C.grupos.length)C.g=C.grupos.length-1;saveC()}}
- async function captura(){try{if(!await checkCapture())return home();}catch(_){}if(!C)return home();view='capture';detOk=false;shell(top(esc(C.prov),'Cargando captura…',0,0,'home'));cargar().then(()=>C.modo==='cajas'?cajas():tarimas())}
+ async function captura(){if(C)try{await window.FXDevice?.claim(C.id,cred);}catch(e){toast(e.message);return home();}try{if(!await checkCapture())return home();}catch(_){}if(!C)return home();view='capture';detOk=false;shell(top(esc(C.prov),'Cargando captura…',0,0,'home'));cargar().then(()=>C.modo==='cajas'?cajas():tarimas())}
  const gKey=g=>g.p+'|'+g.a;const gCol=i=>RL_COL[i%RL_COL.length];
  const subiendo=()=>{const w=B.filter(x=>x.st!=='ok'&&x.st!=='err').length+F.filter(x=>x.st!=='ok'&&x.st!=='err').length,er=B.filter(x=>x.st==='err').length+F.filter(x=>x.st==='err').length;return (w?`<span class="rl-up">${w} guardando…</span>`:'<span class="rl-up ok">guardado en el dispositivo</span>')+(er?` <span class="rl-up err">${er} con error · revisa el resumen</span>`:'')};
  /* ---------- captura de cajas (ALESSIA) ---------- */
