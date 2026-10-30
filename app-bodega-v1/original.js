@@ -597,7 +597,7 @@ function renderLlegadas(bod,root){
   shell(top('Registro de llegadas',`Almacén ${bn} · ${esc(U.nombre)}`)+
    `${C?`<button class="rl-card rl-resume" data-go="cap"><span class="rl-dot"></span><div><b>Captura en curso · ${esc(C.prov)}</b><span class="rl-mini">${C.modo==='cajas'?'Conteo de cajas':'Fotos de tarimas'} · toca para seguir</span></div>${RL_ICO.back.replace('m15 5-7 7 7 7','m9 5 7 7-7 7')}</button>${canR?`<button class="rl-btn" data-cancel="${esc(C.id)}" aria-label="Cancelar captura en curso">✕ Cancelar captura</button>`:''}`:''}
    ${canR?'<button class="rl-btn pri big" data-go="nueva">Registrar llegada</button>':''}
-   <h2 class="rl-h">${canA?'Por autorizar y anteriores':'Llegadas registradas'}</h2><div class="rl-list"><p class="rl-mini">Cargando…</p></div>
+   <h2 class="rl-h">${canA?'Por autorizar y anteriores':'Llegadas registradas'}</h2><button class="rl-btn" data-go="home">Volver a cargar llegadas</button><div class="rl-list"><p class="rl-mini">Cargando…</p></div>
    <button class="rl-link" data-go="salir">Salir (${esc(U.nombre)})</button>`);
   const lst=root.querySelector('.rl-list');
   try{const L=(await getLlegadas(bod)).slice().reverse();
