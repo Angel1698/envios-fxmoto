@@ -573,6 +573,17 @@ function renderLlegadas(bod,root){
  let N=null; /* llegada nueva en preparación */
  let C=ls.get(CK); /* captura en curso: {id,prov,modo,cajas,tarimas,bolsas,doc,grupos:[{p,a,t}],g:índice} */
  const saveC=()=>ls.set(CK,C);
+ /* capture-sync-v2 */
+ let view='home',checking=false;
+ const checkCapture=async()=>{
+  if(!C||checking)return true;checking=true;const id=C.id;
+  try{const d=await getDetalle(id);if(C&&C.id===id&&d.estado&&d.estado!=='En captura'){
+   C=null;saveC();B=[];F=[];detOk=false;
+   toast(d.estado==='Cancelada'?'Esta captura fue cancelada en otro equipo.':'Esta captura ya fue cerrada.');return false;
+  }return true;}finally{checking=false;}
+ };
+ if(window._fxCaptureTimer)clearInterval(window._fxCaptureTimer);
+ window._fxCaptureTimer=setInterval(async()=>{if(document.visibilityState==='hidden'||!document.body.classList.contains('rlbody')||!navigator.onLine||!root.isConnected||!C)return;try{if(!await checkCapture())home();}catch(_){}},15000);
  let B=[],F=[],detOk=false; /* cajas y fotos de la captura (servidor + pendientes) */
  RLQ.on((it,st,res)=>{const b=it.body;const L=b.tipo==='caja'?B:b.tipo==='foto'?F:null;if(!L)return;const x=L.find(z=>z.k===it.k);if(!x)return;
   if(st==='ok'){x.st='ok';if(b.tipo==='caja'&&res&&res.caja){x.url=res.caja.foto}if(b.tipo==='foto'&&res&&res.foto)x.url=res.foto.url}
@@ -580,8 +591,9 @@ function renderLlegadas(bod,root){
   if(window._rlRefresh)window._rlRefresh()});
  /* ---------- inicio ---------- */
  async function home(){
+  view="home";try{await checkCapture();}catch(_){}
   shell(top('Registro de llegadas',`Almacén ${bn} · ${esc(U.nombre)}`)+
-   `${C?`<button class="rl-card rl-resume" data-go="cap"><span class="rl-dot"></span><div><b>Captura en curso · ${esc(C.prov)}</b><span class="rl-mini">${C.modo==='cajas'?'Conteo de cajas':'Fotos de tarimas'} · toca para seguir</span></div>${RL_ICO.back.replace('m15 5-7 7 7 7','m9 5 7 7-7 7')}</button>`:''}
+   `${C?`<button class="rl-card rl-resume" data-go="cap"><span class="rl-dot"></span><div><b>Captura en curso · ${esc(C.prov)}</b><span class="rl-mini">${C.modo==='cajas'?'Conteo de cajas':'Fotos de tarimas'} · toca para seguir</span></div>${RL_ICO.back.replace('m15 5-7 7 7 7','m9 5 7 7-7 7')}</button>${canR?`<button class="rl-btn" data-cancel="${esc(C.id)}" aria-label="Cancelar captura en curso">✕ Cancelar captura</button>`:''}`:''}
    ${canR?'<button class="rl-btn pri big" data-go="nueva">Registrar llegada</button>':''}
    <h2 class="rl-h">${canA?'Por autorizar y anteriores':'Llegadas registradas'}</h2><div class="rl-list"><p class="rl-mini">Cargando…</p></div>
    <button class="rl-link" data-go="salir">Salir (${esc(U.nombre)})</button>`);
@@ -654,7 +666,7 @@ function renderLlegadas(bod,root){
   if(!detOk){try{const d=await getDetalle(C.id);B=d.cajas.map(c=>({k:c.cid,cid:c.cid,p:String(c.pedido),a:String(c.alm),t:c.total,c:c.caja,mini:c.mini,url:c.foto,st:'ok'}));F=d.fotos.map(f=>({k:f.fid,fid:f.fid,clase:f.clase,n:f.n,url:f.url,st:'ok'}));detOk=true}catch(e){toast('Sin conexión: se muestran solo las cajas de este teléfono')}}
   q.forEach(it=>{const b=it.body;if(b.tipo==='caja'&&!B.some(x=>x.k===it.k))B.push({k:it.k,p:b.pedido,a:b.alm,t:+b.total,c:+b.caja,mini:b.mini,st:it.err?'err':'wait',err:it.err,dupsrv:/ya se registró/.test(it.err||'')});if(b.tipo==='foto'&&!F.some(x=>x.k===it.k))F.push({k:it.k,clase:b.clase,n:+b.n,mini:b.mini,st:it.err?'err':'wait',err:it.err})});
   if(C.modo==='cajas'&&!C.grupos.length){const seen={};B.forEach(x=>{const key=x.p+'|'+x.a;if(!seen[key]){seen[key]=1;C.grupos.push({p:x.p,a:x.a,t:x.t})}});if(C.grupos.length)C.g=C.grupos.length-1;saveC()}}
- function captura(){if(!C)return home();shell(top(esc(C.prov),'Cargando captura…',0,0,'home'));cargar().then(()=>C.modo==='cajas'?cajas():tarimas())}
+ async function captura(){try{if(!await checkCapture())return home();}catch(_){}if(!C)return home();view='capture';detOk=false;shell(top(esc(C.prov),'Cargando captura…',0,0,'home'));cargar().then(()=>C.modo==='cajas'?cajas():tarimas())}
  const gKey=g=>g.p+'|'+g.a;const gCol=i=>RL_COL[i%RL_COL.length];
  const subiendo=()=>{const w=B.filter(x=>x.st!=='ok'&&x.st!=='err').length+F.filter(x=>x.st!=='ok'&&x.st!=='err').length,er=B.filter(x=>x.st==='err').length+F.filter(x=>x.st==='err').length;return (w?`<span class="rl-up">${w} guardando…</span>`:'<span class="rl-up ok">guardado en el dispositivo</span>')+(er?` <span class="rl-up err">${er} con error · revisa el resumen</span>`:'')};
  /* ---------- captura de cajas (ALESSIA) ---------- */
@@ -684,10 +696,10 @@ function renderLlegadas(bod,root){
    const dup=B.find(x=>x.p===G.p&&x.a===G.a&&x.c===c);
    if(dup){repetida(dup,{p:G.p,a:G.a,t:G.t,c,foto});return}
    const pasa=tot&&n>=tot;if(pasa){if(C.cajasChofer==null)C.cajasChofer=tot;C.cajas=n+1;saveC()}
-   await guardarCaja({p:G.p,a:G.a,t:G.t,c,foto});if(pasa)toast(`Caja ${c} guardada · el chofer declaró ${C.cajasChofer}; van ${n+1}`);cajas()}}
+   await guardarCaja({p:G.p,a:G.a,t:G.t,c,foto});if(!C)return;if(pasa)toast(`Caja ${c} guardada · el chofer declaró ${C.cajasChofer}; van ${n+1}`);cajas()}}
  const gbar=()=>`<div class="rl-gbar">${C.grupos.length>1?`<div class="rl-gchips">${C.grupos.map((g,i)=>{const [fg]=gCol(i);return `<button class="rl-gchip${i===C.g?' on':''}" data-sw="${i}" style="--g:${fg}"><i></i>${esc(g.p)} · ${esc(g.a)} <small>${B.filter(x=>x.p===g.p&&x.a===g.a).length}/${g.t}</small></button>`}).join('')}</div>`:''}
    <div class="rl-gnew"><button class="rl-btn" data-new="alm">+ Otro almacén</button><button class="rl-btn" data-new="ped">+ Otro pedido</button></div></div>`;
- async function guardarCaja(o){const k=rlId('C');const x={k,p:o.p,a:o.a,t:o.t,c:o.c,mini:o.foto.mini,st:'wait'};B.push(x);
+ async function guardarCaja(o){try{if(!await checkCapture())return home();}catch(_){}const k=rlId('C');const x={k,p:o.p,a:o.a,t:o.t,c:o.c,mini:o.foto.mini,st:'wait'};B.push(x);
   await RLQ.add(k,{tipo:'caja',...cred,id:C.id,cliente:k,pedido:o.p,alm:o.a,total:o.t,caja:o.c,foto:o.foto.full,mini:o.foto.mini,forzar:!!o.forzar});
   if(navigator.vibrate)try{navigator.vibrate(30)}catch(_){}toast(`Caja ${o.c} de ${o.t} guardada`)}
  const boxRow=x=>{const gi=C.grupos.findIndex(g=>g.p===x.p&&g.a===x.a);const [fg]=gCol(Math.max(0,gi));
@@ -762,8 +774,8 @@ function renderLlegadas(bod,root){
   d.querySelectorAll('.rl-vc').forEach(v=>{const x=B.find(z=>z.k===v.dataset.k);const f=v.querySelector('form'),er=v.querySelector('.rl-err');
    const ready=()=>{if(x.st!=='ok'){er.textContent='Esta caja todavía se está subiendo; espera un momento.';return false}return true};
    f.onsubmit=async ev=>{ev.preventDefault();if(!ready())return;const p=f.p.value.trim().toUpperCase(),a=f.a.value.trim().toUpperCase(),c=parseInt(f.c.value,10),t=parseInt(f.t.value,10);if(!(c>0&&t>0&&c<=t)){er.textContent='Revisa caja y total.';return}
-    try{await postSync({tipo:'caja_editar',...cred,id:C.id,cid:x.cid||x.k,pedido:p,alm:a,caja:c,total:t});Object.assign(x,{p,a,c,t});if(!C.grupos.some(g=>g.p===p&&g.a===a)){C.grupos.push({p,a,t});saveC()}toast('Caja corregida');closeDialog();resumen()}catch(err){er.textContent=fail(err)}};
-   v.querySelector('[data-del]').onclick=async()=>{if(!ready())return;if(!confirm(`¿Borrar la caja ${x.c}?`))return;try{await postSync({tipo:'caja_borrar',...cred,id:C.id,cid:x.cid||x.k});B=B.filter(z=>z!==x);toast('Caja borrada');closeDialog();resumen()}catch(err){er.textContent=fail(err)}}})}
+    try{await postSync({tipo:'caja_editar',...cred,id:C.id,cid:x.cid||x.k,base:{pedido:x.p,alm:x.a,caja:x.c,total:x.t},pedido:p,alm:a,caja:c,total:t});Object.assign(x,{p,a,c,t});if(!C.grupos.some(g=>g.p===p&&g.a===a)){C.grupos.push({p,a,t});saveC()}toast('Caja corregida');closeDialog();resumen()}catch(err){er.textContent=fail(err)}};
+   v.querySelector('[data-del]').onclick=async()=>{if(!ready())return;if(!confirm(`¿Borrar la caja ${x.c}?`))return;try{await postSync({tipo:'caja_borrar',...cred,id:C.id,cid:x.cid||x.k,base:{pedido:x.p,alm:x.a,caja:x.c,total:x.t}});B=B.filter(z=>z!==x);toast('Caja borrada');closeDialog();resumen()}catch(err){er.textContent=fail(err)}}})}
  /* ---------- tarimas: etiqueta de paquetería y del proveedor de cada tarima ---------- */
  function tarimas(){const n=C.tarimas||0;const has=(cl,i)=>F.filter(x=>x.clase===cl&&x.n===i);const done=Array.from({length:n},(_,k)=>has('tarima_paq',k+1).length&&has('tarima_prov',k+1).length).filter(Boolean).length;
   const tile=(cl,i,t)=>{const L=has(cl,i);const x=L[L.length-1];return `<label class="rl-tile${x?' ph':' add'}">${x?(x.mini?`<img src="${x.mini}" alt="">`:`<span class="rl-okic">${RL_ICO.ok}</span>`):RL_ICO.cam}<span>${t}</span>${x&&x.st!=='ok'?`<em class="rl-st ${x.st}">${x.st==='err'?'error':'guardando'}</em>`:''}<input type="file" accept="image/*" capture="environment" hidden data-cl="${cl}" data-i="${i}"></label>`};
@@ -800,7 +812,7 @@ function renderLlegadas(bod,root){
   f.onsubmit=async ev=>{ev.preventDefault();if(s2.empty()){d.querySelector('.am').textContent='Falta la firma.';return}const dif=f.d.value.trim()||(+f.c.value!==+b.dataset.b?`Se contaron ${f.c.value} bultos; se registraron ${b.dataset.b}`:'');
    d.querySelector('.am').textContent='Enviando…';try{await postSync({tipo:'autorizar',...cred,id:b.dataset.id,dif,contados:f.c.value,firma:s2.data()});closeDialog();home()}catch(err){d.querySelector('.am').textContent='No se guardó: '+fail(err)}}}
  RLQ.run();
- if(C&&canR)captura();else home();
+ home();
 }
 /* ---------- compartir (solo oficina) ---------- */
 function shareBar(kind,key,title){const url=isoUrl(kind+':'+key);

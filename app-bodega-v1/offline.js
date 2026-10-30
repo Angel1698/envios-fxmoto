@@ -18,7 +18,7 @@ window.FXAPP=(()=>{
  async function session(o){const credentials={usuario:o.usuario,clave:o.clave};const r=await network('sesion',{},credentials);await commit([['meta','validated-'+BOD,{at:Date.now(),usuario:o.usuario}]]);lastError='';await refreshCatalog().catch(()=>{});return r;}
  async function mutateRecord(r,action,data){
   if(action==='llegada'){const id=data.id;r={id,bod:BOD,prov:data.prov,doc:data.doc,pedido:data.pedido,cot:data.cot,fact:data.fact,bultos:data.bultos,tbultos:data.tbultos,hora:data.hora,recibio:user().nombre,modo:data.modo,cajas:data.cajas,tarimas:data.tarimas,bolsas:data.bolsas,obs:data.obs||'',estado:data.borrador?'En captura':'Por autorizar',_local:true,_boxes:[],_photos:[]};}
-  if(!r)throw Error('Descarga primero esta llegada con internet para trabajar sin conexión.');
+  if(!r)throw Error('Descarga primero esta llegada con internet para trabajar sin conexión.');if(r.estado==='Cancelada')throw Error('Esta llegada está cancelada. No se puede seguir capturando.');
   if(action==='caja'){
    const same=r._boxes.find(x=>x.pedido===data.pedido&&x.alm===data.alm&&Number(x.caja)===Number(data.caja));
    if(same&&!data.forzar)throw Error('La caja '+data.caja+' de ese pedido y almacén ya se registró');
@@ -49,13 +49,13 @@ window.FXAPP=(()=>{
   });
  }
  function clean(o){const x=clone(o);for(const k of ['usuario','clave','bod','tipo','_fxAppId'])delete x[k];return x;}
- async function refresh(id){const q=await queue();if(q.some(x=>x.receipt===id))return;const d=await network('detalle',{id});await serial(async()=>{if((await queue()).some(x=>x.receipt===id))return;const old=await get('receipts',id);if(old)await commit([['receipts',id,{...old,_boxes:d.cajas,_photos:d.fotos,_pending:false,_detailCached:true}]]);});}
+ async function refresh(id){const q=await queue();if(q.some(x=>x.receipt===id))return;const d=await network('detalle',{id});await serial(async()=>{if((await queue()).some(x=>x.receipt===id))return;const old=await get('receipts',id);if(old)await commit([['receipts',id,{...old,estado:d.estado||old.estado,_boxes:d.cajas,_photos:d.fotos,_pending:false,_detailCached:true}]]);});}
  async function arrivals(){const pending=await queue();let rows=(await all('receipts')).filter(r=>r.bod===BOD);
-  try{const j=await network('llegadas');await serial(async()=>{const pending=await queue();const writes=[];for(const r of j.llegadas){const old=rows.find(x=>x.id===r.id);if(!pending.some(x=>x.receipt===r.id))writes.push(['receipts',r.id,{...r,_boxes:old?._boxes||[],_photos:old?._photos||[],_detailCached:!!old?._detailCached}]);}if(writes.length)await commit(writes);});lastError='';rows=(await all('receipts')).filter(r=>r.bod===BOD);}catch(e){labelError(e);}
+  try{const j=await network('llegadas');await serial(async()=>{const pending=await queue();const writes=[];for(const r of j.llegadas){const old=await get('receipts',r.id);if(!pending.some(x=>x.receipt===r.id))writes.push(['receipts',r.id,{...r,_boxes:old?._boxes||[],_photos:old?._photos||[],_detailCached:!!old?._detailCached}]);}if(writes.length)await commit(writes);});for(const old of rows){if(old.estado==='En captura'&&!j.llegadas.some(x=>x.id===old.id)&&!(await queue()).some(x=>x.receipt===old.id))await detail(old.id).catch(()=>{});}lastError='';rows=(await all('receipts')).filter(r=>r.bod===BOD);}catch(e){labelError(e);}
   return rows.filter(r=>r.estado!=='Cancelada');
  }
- async function detail(id){let r=await get('receipts',id);if(!(await queue()).some(x=>x.receipt===id)){try{const d=await network('detalle',{id});if(!r)throw Error('Abre primero la lista de llegadas.');await serial(async()=>{const latest=await get('receipts',id);if((await queue()).some(x=>x.receipt===id)){r=latest;return;}r={...latest,_boxes:d.cajas,_photos:d.fotos,_detailCached:true};await commit([['receipts',id,r]]);});}catch(e){labelError(e);}}
-  if(!r||(!r._local&&!r._detailCached))throw Error('Esta captura no se descargó todavía. Ábrela con internet antes de salir.');return{ok:true,cajas:r._boxes||[],fotos:r._photos||[]};
+ async function detail(id){let r=await get('receipts',id);if(navigator.onLine){try{const d=await network('detalle',{id});if(!r)throw Error('Abre primero la lista de llegadas.');await serial(async()=>{const latest=await get('receipts',id);if((await queue()).some(x=>x.receipt===id)){r=latest;if(d.estado&&d.estado!=='En captura'){r={...latest,estado:d.estado};await commit([['receipts',id,r]]);}return;}r={...latest,estado:d.estado||latest.estado,_boxes:d.cajas,_photos:d.fotos,_detailCached:true};await commit([['receipts',id,r]]);});}catch(e){labelError(e);}}
+  if(!r||(!r._local&&!r._detailCached))throw Error('Esta captura no se descargó todavía. Ábrela con internet antes de salir.');return{ok:true,estado:r.estado,cajas:r._boxes||[],fotos:r._photos||[]};
  }
  async function drain(){if(busy||!user())return;busy=true;await status();try{await network('sesion');for(const op of await queue()){
    if(op.error){lastError=op.error;break;}if(op.who!==user().usuario){lastError='Hay operaciones pendientes de otro usuario. Inicia sesión con quien las capturó.';break;}
