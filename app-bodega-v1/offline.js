@@ -38,6 +38,10 @@ window.FXAPP=(()=>{
  function serial(fn){const p=localWrites.then(fn);localWrites=p.catch(()=>{});return p;}
  async function post(o){
   if(o.tipo==='login')return session(o);
+  if(o.tipo==='cancelar'){
+   can('registrar');const motivo=String(o.motivo||'').trim();if(motivo.length<5||motivo.length>500)throw Error('Escribe el motivo de cancelación (de 5 a 500 caracteres).');
+   return serial(async()=>{if((await queue()).some(x=>x.receipt===o.id))throw Error('Primero sincroniza todas las operaciones de esta llegada.');const datos=clean({...o,motivo}),operation=uuid();const result=await network('cancelar',{operacion:operation,datos});nextRead(o.id);const record=await get('receipts',o.id);if(record)await commit([['receipts',o.id,{...record,estado:'Cancelada',_pending:false}]]);return result;});
+  }
   if(o.tipo==='autorizar'){
    can('autorizar');if((await queue()).some(x=>x.receipt===o.id))throw Error('Primero sincroniza todas las operaciones de esta llegada.');
    const datos=clean(o),id=uuid();const r=await network('autorizar',{operacion:id,datos});await refresh(o.id);return r;
