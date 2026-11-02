@@ -1,0 +1,394 @@
+Delivered-To: reyesangel1698@gmail.com
+Received: by 2002:ab3:f783:0:b0:669:e595:535f with SMTP id p3csp5902906qnn;
+        Mon, 2 Nov 2026 09:45:52 -0800 (PST)
+X-Received: by 2002:a05:600c:5246:b0:4a2:1960:6fa with SMTP id 5b1f17b1804b1-4ac16acd947mr262961935e9.4.1793641552712;
+        Mon, 02 Nov 2026 09:45:52 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1793641552; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=TFL/9KoearE9PleQ7YYpiVsOYJhIML+8uv+sonhNnC0cLDEhg4yHrzICosed7OQyIO
+         qsUweDIFyNzoVoW97bjphwPkkZhANghEHSHjN/E0etiyBYSaahzAk13z/md+BWkuDHjP
+         WROk/0n0h7oFnjVSGhnRuBFsndR1XZq9CuDs+GOuGFhags0YC7Gjoqlwz3bLTrmJj7Nx
+         GvKNl4WK3ua6DzTouJCLrHdpaAp/R6PxkjcFGS4VQeZhQ5VkWxkMfYC4H0/i4zNGhD6y
+         o1lYO5boslTqEWCWF3uhrjMwEN06zYKDGrzEWnQwRazLBxzzNx8i12nfvCakSZGmzk7r
+         ZShg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :to:from:feedback-id:dkim-signature:dkim-signature;
+        bh=1FqTRoD9/n4OvUuV+19wMd9kNcXlVcQ7Zw8m25aEuRk=;
+        fh=FJ9l5TmRLVYxt6xQbEVROtf9vMBr15rUG2fXieSQfo4=;
+        b=bNXxdfcx3qcVI5YQBqosYqhg05QjNCNhyNbLwQjvxCRMyDx03xnU0vXTgTB8UDkOVf
+         GTmmwGaO/rE7u/FKVI+P67WB21bKyXzbOgeRtspCp6adZBIkwHPu3qKYK22CoKjHFZjH
+         fKo+R7dM4smF5B3j1zZ2vnmZjPgvrKs8IbKFMWLoq4HzPkBAP7WvUsqWqmrASQHT0+g4
+         7BXrAZ+Mc7ElTgW/nXzfZxgqNi9yfJ4Mf715cHs+SYFkJFH5LFx8C8UZde6TM7ovve/k
+         13yLeYO1jeV6/YVAtmEKP16GbkuZZIGEk6ZWdialGCPyTRLdE70i4dgSY2jlqNUgdqf/
+         8qFw==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@mailc75.carrierzone.com header.s=hmail header.b=bh8SHzA2;
+       dkim=pass header.i=@carrierzone.com header.s=mailmia header.b=TD76PJjW;
+       arc=pass (i=1);
+       spf=none (google.com: facturas@refacomocotlan.com.mx does not designate permitted sender hosts) smtp.mailfrom=facturas@refacomocotlan.com.mx
+Return-Path: <facturas@refacomocotlan.com.mx>
+Received: from mail110c75.carrierzone.com (mail110c75.carrierzone.com. [69.49.113.40])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-48e71bd5722si19944564f8f.451.2026.11.02.09.45.52
+        for <reyesangel1698@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 02 Nov 2026 09:45:52 -0800 (PST)
+Received-SPF: none (google.com: facturas@refacomocotlan.com.mx does not designate permitted sender hosts) client-ip=69.49.113.40;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailc75.carrierzone.com header.s=hmail header.b=bh8SHzA2;
+       dkim=pass header.i=@carrierzone.com header.s=mailmia header.b=TD76PJjW;
+       arc=pass (i=1);
+       spf=none (google.com: facturas@refacomocotlan.com.mx does not designate permitted sender hosts) smtp.mailfrom=facturas@refacomocotlan.com.mx
+X-Authenticated-User: facturas@refacomocotlan.com.mx
+ARC-Seal: i=1; d=carrierzone.com; s=mailmia; a=rsa-sha256; cv=none;
+	t=1793641550;
+	b=fijwP33rS1MMHVi6FCrEYnMuu8R9EN7pM2bI4bYobxWC8uKhtnfMLPX86dX34q6NYrmG
+	 JNt2nqI/4sb/IWyH4ZuHmz7x/pkNkXBCwUZZp1KhwcP4FirvBtqeW2vv6KghUB0ctlhTi
+	 rYtYYXwhdyRqGd45w3SCsG2kJp5vKOcmrw=
+ARC-Message-Signature: i=1; d=carrierzone.com; s=mailmia; a=rsa-sha256;
+	c=relaxed/relaxed; t=1793641550;
+	h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+	bh=1FqTRoD9/n4OvUuV+19wMd9kNcXlVcQ7Zw8m25aEuRk=;
+	b=WxLvQmKNJP3G5Bc90RBQ1DFUiDudW8TDaf1n2Elnoa6iu9tcbNTD3vEQcRMQaAjAzjP3
+	 riDB+zuY3jLeN8pX2OsxeVryfGuHlONj+FlFdj3HFYVCmVaq13WalfoTCzB1JvIjQgCRP
+	 /KJ0YOtxJaiAcm479h1Pw/GnrYiVvNbw6I=
+ARC-Authentication-Results: i=1; mail110c75.carrierzone.com; auth=pass smtp.mailfrom=facturas@refacomocotlan.com.mx;
+	arc=none smtp.remote-ip=187.205.166.53
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=mailc75.carrierzone.com; s=hmail; t=1793641550;
+	bh=vcj0VDqk2Hztn6x1ozlD9BnGWGlZYDu/4nhUlOlt/Po=;
+	h=From:To:Subject:Date;
+	b=bh8SHzA2/dyMUsi23wYF32WwqZlUTHDaxZBWUjMMxdRy5/hd5nimMfqGaEofjzRJg
+	 W9pXlP4kOfV3O23FREClxJs746ZFmkkVfaIKhDlQE9UJDCMrhucLZmB4w1Y2x4UBwM
+	 zl2Xi4TthXVM+DOHhlxol7jrsaojl082Gz57iiu0GXCVdAP+g43jq3qlYq4tfRT146
+	 BVEAwgs2dZUZsXBzMuyf2nOvaEjgyBRn5Vx/qFL9b70cz5mMVG2xBJkG6q0aubGOyS
+	 m3OEFWqB6FRRiJJE1VkbyojAixz9ZU93D8QgXfb7jNpKA8mw6CH4wsPVlpd3Y+DbGF
+	 b8YRT15+/x15g==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=carrierzone.com;
+	s=mailmia; t=1793641550;
+	bh=vcj0VDqk2Hztn6x1ozlD9BnGWGlZYDu/4nhUlOlt/Po=;
+	h=From:To:Subject:Date;
+	b=TD76PJjWVUb52urYdGqfKMfTL+BLKNhhzwM2RU18pTcfMKPQXW46rfAQQZHlDspx7
+	 FIMejSVwkskXecbtcb7uj04w3UEgms2LTzTOoh8/Njtnl1GOrgCFjd6VPEBXyK+ezL
+	 DecEsdiM/a+YVIkQFPVDRfmw4YerlAvEOiRcigtU=
+Feedback-ID: hid-02519:stype-relay:fwd-no:02519-relay
+Authentication-Results: mail110c75.carrierzone.com;
+	 auth=pass smtp.mailfrom=facturas@refacomocotlan.com.mx
+Received: from xp2020oct12 (acceso-187-205-166-53.prod-infinitum.com.mx [187.205.166.53] (may be forged))
+	(authenticated bits=0)
+	by mail110c75.carrierzone.com (8.18.2/8.13.1) with ESMTPA id 6A2HjRNZ992458
+	for <reyesangel1698@gmail.com>; Mon, 2 Nov 2026 17:45:50 +0000
+From: "Guias" <facturas@refacomocotlan.com.mx>
+To: <reyesangel1698@gmail.com>
+Subject: GUIA
+Date: Mon, 2 Nov 2026 11:44:35 -0600
+Message-ID: <008201dd6af1$dcfddc30$96f99490$@com.mx>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0083_01DD6ABF.92636C30"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: Ad1q8dBQIWlefwRoQUelwZFfbnlSHQ==
+Content-Language: es-mx
+X-Rspamd-Result: default: False [0.20 / 6.00];
+	SUBJ_ALL_CAPS(0.30)[4];
+	MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	ARC_NA(0.00)[];
+	RCVD_COUNT_ZERO(0.00)[0];
+	FREEMAIL_TO(0.00)[gmail.com];
+	SCAN_INIT(0.00)[];
+	RCPT_COUNT_ONE(0.00)[1];
+	ASN(0.00)[asn:8151,asn_org:"UNINET",country:MX];
+	MIME_TRACE(0.00)[0:+,1:+,2:~];
+	FREEMAIL_ENVRCPT(0.00)[gmail.com];
+	TO_MATCH_ENVRCPT_ALL(0.00)[];
+	FROM_HAS_DN(0.00)[];
+	SCAN_DONE(0.00)[1ms];
+	FROM_EQ_ENVFROM(0.00)[];
+	TO_DN_NONE(0.00)[];
+	LOCAL_OUTBOUND(0.00)[];
+	VADE_SPAMSTATE(0.00)[clean]
+X-Rspamd-Status: No, score=0.20
+X-VADE-SPAMSTATE: clean
+X-VADE-SPAMSCORE: 0
+X-VADE-SPAMCAUSE: dmFkZTGq09t0t3sLZcrnIr98vQZ93iWPzDCjsBLAIFOqR8dL4jhwYgnG/RGIVXcs4MNc1NeobebkjTFK1xnwG4PrAtQckiDmGY4BEDWeTSKyyk4PfD4ogrNVAZ8gK2VpJxjp+rPUauVAkJjmOKOnBokg17WuMsG/i8ZBcrOhHnDEFdIVuuRwFFjRVr1o0xlXWWZ+wolcQjuBiPuy/TLNj78R0d6APM4XpW5XljREuhn4Tj9qUZZFnrUd1mwT+XmnXBNmuo+U2JOr9QGbXzs+Ywhui0+4Vf0dni2H6hyDQuO5Ev/8mPQAZOFGBIma4i8e98KVQsI6BrOXkKyF98QMuh1sFpw6tuzMU/+A3nO6dTqzJVGWrWuiFfGvaUvBQ+5kdK7f8M4HhLbZ4DhU5JbKQZGSfxDVzGn/fcwJmZx3Xg1+L+H7GxXETDwBTYm6dehcW929MlJg3H89VjxaROEmz8TJ7Useyl6iKrrLj3fvv/UtIYScHgd/5Czea6CggG0UMaqsSSm06NXn1KQNcJbaSh7cXzght3PZV+Rh6YhqX0NJ5e3O2FeLRL9+dBqeDSxbP/DpBw0m87FlzkOb7lWJyN8VKOtvtseFPeJEMSxxqeaaFbBfPwndiN6ryzQqCEJ/rKRZG2EO6Zht5Hrm3+7w78HNbMCfPQfnVtMrSnnn9BBc8cU4og
+X-Origin-Country: MX
+
+Este es un mensaje con varias partes en formato MIME.
+
+------=_NextPart_000_0083_01DD6ABF.92636C30
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+Estimado Cliente ANGEL DANIEL REYES RUIZ,=20
+
+su pedido ha sido enviado el 31/10/26, por : 001 3 GUERRAS
+DOMICILIO  CUERNAVACA
+1TC/54C,1TC/47C,1TC/22C1PAQ,1TC/31C,1TC/29C,
+
+con la gu=EDa #: GLZ03230135,
+
+en el cual van:
+
+=20
+
+  1 TARIMA C/          =20
+
+  1 TARIMA C/           =20
+
+  1 TARIMA C/           =20
+
+  1 TARIMA C/           =20
+
+  1 TARIMA C/         =20
+
+=20
+
+Refacom S. A. de C. V.
+
+Tels.(392) 9251450 =F3 (392) 9234022 al 28
+
+Ocotlan, Jalisco.
+
+=20
+
+
+Si la paqueter=EDa les entrega cajas rotas, abiertas, maltratadas, =
+mojadas,
+cantidad no exacta a la gu=EDa pedir la revisi=F3n a detalle y =
+reportarla en el
+acuse al firmar de recibido, gracias a este reporte oportuno, nosotros
+podemos gestionar la recuperaci=F3n de su material faltante o material =
+en mal
+estado.=20
+
+
+Este mensaje fue generado por un sistema automatizado. Por favor, no
+respondas a este mensaje.
+
+=20
+
+=20
+
+
+------=_NextPart_000_0083_01DD6ABF.92636C30
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-priority:9;
+	mso-style-link:"T=EDtulo 1 Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Ttulo1Car
+	{mso-style-name:"T=EDtulo 1 Car";
+	mso-style-priority:9;
+	mso-style-link:"T=EDtulo 1";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DES link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>=A0<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>Estimado
+Cliente ANGEL DANIEL REYES RUIZ, <o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>su
+pedido ha sido enviado el <b>31/10/26</b>, por : <b>001 3 =
+GUERRAS=A0=A0=A0 =
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=
+=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0DOMICILIO=A0
+CUERNAVACA=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0=A0 =
+1TC/54C,1TC/47C,1TC/22C1PAQ,1TC/31C,1TC/29C</b>,<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>con la
+gu=EDa #: <b>GLZ03230135,<o:p></o:p></b></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>en el
+cual van:<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>=A0=A01 TARIMA
+C/=A0=A0=A0=A0=A0=A0=A0  =A0=A0=A0<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>=A0=A01 TARIMA
+C/ =A0=A0=A0=A0=A0=A0 =A0=A0=A0=A0<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>=A0=A01 TARIMA
+C/ =A0=A0=A0=A0=A0=A0 =A0=A0=A0=A0<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>=A0=A01 TARIMA
+C/ =A0=A0=A0=A0=A0=A0 =A0=A0=A0=A0<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>=A0=A01 TARIMA
+C/=A0=A0=A0=A0=A0=A0=A0  =A0=A0<o:p></o:p></span></p>
+
+<div =
+style=3D'mso-element:para-border-div;border:none;border-bottom:solid =
+windowtext 1.5pt;
+padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=3DMsoNormal style=3D'border:none;padding:0cm'><span =
+style=3D'font-family:
+"Trebuchet MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=3DMsoNormal><b><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>Refacom
+S. A. de C. V.<o:p></o:p></span></b></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>Tels.(392)
+9251450 =F3 (392) 9234022 al 28<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'>Ocotlan,
+Jalisco.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><span style=3D'font-family:"Trebuchet =
+MS","sans-serif"'><o:p>&nbsp;</o:p></span></p>
+
+<h1><em><span style=3D'font-family:"Cambria","serif"'>Si la paqueter=EDa =
+les
+entrega cajas rotas, abiertas, maltratadas, mojadas, cantidad no exacta =
+a la
+gu=EDa pedir la revisi=F3n a detalle y reportarla en el acuse al firmar =
+de
+recibido, gracias a este reporte oportuno, nosotros podemos gestionar la
+recuperaci=F3n de su material faltante o material en mal estado. =
+<o:p></o:p></span></em></h1>
+
+<p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><i><span
+style=3D'font-size:36.0pt;font-family:"Trebuchet =
+MS","sans-serif";color:black'>Este
+mensaje fue generado por un sistema automatizado. Por favor, no =
+respondas a
+este mensaje.<o:p></o:p></span></i></b></p>
+
+<p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'><b><i><span
+style=3D'font-size:36.0pt;font-family:"Trebuchet =
+MS","sans-serif";color:black'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=3DMsoNormal><span =
+style=3D'font-size:36.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0083_01DD6ABF.92636C30--
+
