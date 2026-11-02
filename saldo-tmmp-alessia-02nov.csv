@@ -1,0 +1,711 @@
+﻿bodega,documento,codigo,facturado,asignado,retenido,libre,motivos
+EDOMEX,E-ALESSIA-288617,AJC-023,5.0,5.0,0,0.0,JIIK54084: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,AMO-013,3.0,3.0,0,0.0,THSH12892: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,AMO-090,1.0,1.0,0,0.0,HBSC86912: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,ASI-041,20.0,20.0,0,0.0,NFZG99055: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,BAJ-005,5.0,5.0,0,0.0,ANSX22899: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,BAJ-075,5.0,5.0,0,0.0,VTGN07022: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-CH-K016-XL,11.0,11.0,0,0.0,ENKA28491: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-CH-K019-XL,2.0,2.0,0,0.0,ROHH27496: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-INF-026,3.0,0.0,3.0,0.0,GVWO13334: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-INF-028,4.0,0.0,4.0,0.0,YIHI98835: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-INF-K2002,4.0,4.0,0,0.0,EELE91570: Componentes insuficientes o saldo menor que el factor | WXMQ28491: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-INF-K2004,5.0,5.0,0,0.0,FODY04042: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-INF-K2007,1.0,1.0,0,0.0,GFNT92407: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CAS-INF-K2008,1.0,1.0,0,0.0,AZGJ29202: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CLJ-019,11.0,11.0,0,0.0,UCPQ06093: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CLJ-020,20.0,20.0,0,0.0,KBIM99038: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CLJ-041,8.0,8.0,0,0.0,EWAP74143: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,CLJ-047,9.0,9.0,0,0.0,RCUM99853: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,DIS-042,1.0,1.0,0,0.0,JTXV84489: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,EDI-016,5.0,5.0,0,0.0,RGDY10618: Componentes insuficientes o saldo menor que el factor | RCUM99876: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,EDI-029,16.0,16.0,0,0.0,QJZS23328: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,EDI-033,15.0,15.0,0,0.0,MKTX98202: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,EDI-034,2.0,2.0,0,0.0,VBLJ99721: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,EDI-040,5.0,5.0,0,0.0,NQBK89788: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,EMP-GYG-04,67.0,67.0,0,0.0,KLOS21864: Componentes insuficientes o saldo menor que el factor | ETNE93604: Componentes insuficientes o saldo menor que el factor | HDGP29050: Componentes insuficientes o saldo menor que el factor | ZDKG22016: Componentes insuficientes o saldo menor que el factor | PPPM92448: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-001,19.0,19.0,0,0.0,JMAH13190: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-009,3.0,3.0,0,0.0,YAXU94648: Componentes insuficientes o saldo menor que el factor | YIHI98803: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,FAR-021,1.0,1.0,0,0.0,CHBW12956: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-055NE,4.0,4.0,0,0.0,KKTX99933: Componentes insuficientes o saldo menor que el factor | BCOJ44046: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-085,1.0,1.0,0,0.0,VMTP94607: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-093,2.0,2.0,0,0.0,GGHX15319: Componentes insuficientes o saldo menor que el factor | KOQF93351: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-095,3.0,3.0,0,0.0,YDDW11332: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-104BL,10.0,8.0,2.0,0.0,PUVI36448: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-115,10.0,10.0,0,0.0,VQED06443: Componentes insuficientes o saldo menor que el factor | POQV13208: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,FAR-121,3.0,3.0,0,0.0,OTJQ97155: Componentes insuficientes o saldo menor que el factor | JVIR89726: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-288617,FAR-132,6.0,6.0,0,0.0,NAMX29835: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-133,20.0,20.0,0,0.0,RZLG28381: Componentes insuficientes o saldo menor que el factor | AHII38166: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-143,1.0,1.0,0,0.0,VJTK37491: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-145,12.0,12.0,0,0.0,HUQH87860: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-146,12.0,12.0,0,0.0,YODR23929: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-147,9.0,9.0,0,0.0,HIOV24089: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-151RJ,4.0,4.0,0,0.0,KJAD89449: Componentes insuficientes o saldo menor que el factor | OJIO04602: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,FAR-158,1.0,1.0,0,0.0,LRKN34989: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-160,1.0,1.0,0,0.0,QXNK35508: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,FAR-WO047,20.0,20.0,0,0.0,GPCE33162: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,HOR-028,2.0,2.0,0,0.0,WEUV17118: Componentes insuficientes o saldo menor que el factor | XKAM17125: Componentes insuficientes o saldo menor que el factor | UDOQ13126: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,MIC-004,10.0,10.0,0,0.0,YVEY06443: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,PAC-063,1.0,1.0,0,0.0,PREJ80476: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,PAC-A011,20.0,20.0,0,0.0,YCIM17207: Componentes insuficientes o saldo menor que el factor | LILA16701: Componentes insuficientes o saldo menor que el factor | YGCO99470: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,PAC-A015,1.0,1.0,0,0.0,PJZU98819: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,PAC-A016,7.0,7.0,0,0.0,OUHU35078: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,PAR-077,17.0,17.0,0,0.0,QHWO85731: Componentes insuficientes o saldo menor que el factor | KEIU97186: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,PRM-X001,1.0,1.0,0,0.0,FCOM23804: Componentes insuficientes o saldo menor que el factor | LSGZ32318: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,PRT-X006,2.0,2.0,0,0.0,YSYP37174: Componentes insuficientes o saldo menor que el factor | XCCS68590: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,PRT-X015NR,1.0,1.0,0,0.0,GEDR37347: Componentes insuficientes o saldo menor que el factor | DLTQ31435: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,RAD-008,10.0,10.0,0,0.0,PHKW88354: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,RIN-116,8.0,8.0,0,0.0,QJLO22211: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,RIN-181,3.0,3.0,0,0.0,SGKM89132: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-064NE,40.0,40.0,0,0.0,CITF03260: Componentes insuficientes o saldo menor que el factor | MYDP15666: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-065NR,9.0,9.0,0,0.0,KZIM15763: Componentes insuficientes o saldo menor que el factor | ALKJ32506: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,SAD-072,8.0,8.0,0,0.0,ZUMZ62103: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-073,1.0,1.0,0,0.0,VWHK84807: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-084RN,5.0,5.0,0,0.0,WTHW13040: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-088GR,3.0,3.0,0,0.0,PWMT96524: Componentes insuficientes o saldo menor que el factor | GHCJ37594: Componentes insuficientes o saldo menor que el factor | XZBN34388: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,SAD-093,12.0,12.0,0,0.0,VJJG55699: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-094,2.0,2.0,0,0.0,BABA35937: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-097,1.0,1.0,0,0.0,MMMQ35218: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-105,40.0,40.0,0,0.0,DEBU30642: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-108,10.0,10.0,0,0.0,YNPC35985: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-115,2.0,2.0,0,0.0,HELU34569: Componentes insuficientes o saldo menor que el factor | PNUJ00216: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,SAD-124,21.0,21.0,0,0.0,AMOC89006: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAD-134,2.0,2.0,0,0.0,YNPC35963: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAL-007,6.0,6.0,0,0.0,UHLS16667: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAL-064NE,11.0,11.0,0,0.0,JICD16900: Componentes insuficientes o saldo menor que el factor | DGBY31913: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288617,SAL-066NE,3.0,3.0,0,0.0,FNPO00133: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAL-068NE,5.0,5.0,0,0.0,FTNE13161: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SAL-X001,40.0,40.0,0,0.0,KMKF99848: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288617,SOP-024,2.0,2.0,0,0.0,BXXQ22398: Componentes insuficientes o saldo menor que el factor | FFUA99352: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,ARO-011,1.0,1.0,0,0.0,IASF98874: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,ARO-012,1.0,1.0,0,0.0,VUUO17224: Componentes insuficientes o saldo menor que el factor | CPSM24528: Componentes insuficientes o saldo menor que el factor | YTHH33104: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,ARO-017,5.0,5.0,0,0.0,YGCO36482: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,ARO-026,13.0,0.0,13,0.0,AKYR88088: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,ASI-070,4.0,4.0,0,0.0,SGGT34319: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,BAJ-007,8.0,8.0,0,0.0,"OQUS15763: Componentes insuficientes o saldo menor que el factor | EZPA65164: Sin venta con stock o compromisos | DEBU30657: Restricción vigente en Planificación: No puedes enviar stock hasta que mejores las ventas del producto.
+Más información; Cargo por stock antiguo; Impulsar sin venta; Sin venta con stock o compromisos | KHSA70885: Componentes insuficientes o saldo menor que el factor"
+EDOMEX,E-ALESSIA-288619,BAJ-030,12.0,12.0,0,0.0,TNWG15293: Componentes insuficientes o saldo menor que el factor | WZHT28663: Componentes insuficientes o saldo menor que el factor | RULH99750: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,BAJ-050,3.0,3.0,0,0.0,XYZQ24015: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,BAJ-063,8.0,8.0,0,0.0,SGMT23067: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,BPO-009,12.0,0.0,0,12.0,AKYR12726: Planificación desaconseja reponer: Tu producto dejó de ser Estrella. Vende las unidades que ya tienes antes de enviar más stock.
+EDOMEX,E-ALESSIA-288619,CFA-011,10.0,10.0,0,0.0,TUPW86140: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,CLJ-023,13.0,13.0,0,0.0,DEBD62539: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,CLJ-028,4.0,4.0,0,0.0,SMRL12533: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,CLJ-033,2.0,2.0,0,0.0,OBNV88042: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,CLJ-034,1.0,0.0,1,0.0,JSEO89579: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,CLJ-046,3.0,2.0,0,1.0,"FFUA31248: Cobertura, fechas permitidas o renglón ya comprometido"
+EDOMEX,E-ALESSIA-288619,ESC-008,6.0,6.0,0,0.0,NIBM84556: Componentes insuficientes o saldo menor que el factor | NIQW88832: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,ESC-052,6.0,6.0,0,0.0,NAMX16182: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,ESC-056,4.0,4.0,0,0.0,WMAZ23699: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,ESC-062,6.0,6.0,0,0.0,IRRJ89774: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,HOR-008,11.0,11.0,0,0.0,LRPU64997: Componentes insuficientes o saldo menor que el factor | FTNE13135: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,HOR-035,5.0,5.0,0,0.0,HZNK31881: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,LLA-2031,2.0,0.0,2.0,0.0,QJHI37811: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,LLA-2042,1.0,0.0,1.0,0.0,GFLW54554: Componentes insuficientes o saldo menor que el factor | CZNG31517: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,LLA-2059,1.0,0.0,1.0,0.0,SWBA38215: Componentes insuficientes o saldo menor que el factor | XMJQ85749: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,MAB-001B,3.0,3.0,0,0.0,"MISW34856: Componentes insuficientes o saldo menor que el factor | WXZJ88455: Restricción vigente en Planificación: No puedes enviar stock hasta que mejores las ventas del producto.
+Más información; Impulsar sin venta; Sin venta con stock o compromisos"
+EDOMEX,E-ALESSIA-288619,MAB-007B,3.0,3.0,0,0.0,AZKN34873: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-017,1.0,1.0,0,0.0,CTFU16959: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-018,12.0,0.0,0,12.0,SISC16803: Evitar descarte | OPGH13616: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,MAB-052,34.0,34.0,0,0.0,RPJA17442: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-056,8.0,8.0,0,0.0,PZRB17059: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-064,2.0,2.0,0,0.0,RNTT16531: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-064B,1.0,1.0,0,0.0,MWXT34887: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-065,1.0,1.0,0,0.0,IGZR96201: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-066,4.0,4.0,0,0.0,WSDL59965: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-101,2.0,2.0,0,0.0,VAPE95961: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-104,6.0,6.0,0,0.0,PLHH99933: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-106,1.0,1.0,0,0.0,YSYP99491: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,MAB-113,5.0,5.0,0,0.0,DVZI34970: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,PAR-009,3.0,3.0,0,0.0,JOZH17194: Componentes insuficientes o saldo menor que el factor | BDKS99797: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-079,3.0,3.0,0,0.0,HBEY66003: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-084,10.0,10.0,0,0.0,UNUQ17063: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-095,4.0,4.0,0,0.0,DIEO65210: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-115,16.0,16.0,0,0.0,NTHX17125: Componentes insuficientes o saldo menor que el factor | USVX99876: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,RIN-156,1.0,1.0,0,0.0,NZUM23634: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-159,3.0,3.0,0,0.0,WSDL89386: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-166,1.0,1.0,0,0.0,KJAD13310: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-173,1.0,1.0,0,0.0,XIMQ12735: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,RIN-SH026-GR,2.0,2.0,0,0.0,AGYQ23274: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-019,1.0,1.0,0,0.0,RULH99778: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-033AM,9.0,9.0,0,0.0,NYKC17230: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-037GR,6.0,6.0,0,0.0,THSH12885: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-037RN,20.0,20.0,0,0.0,XSCL96012: Componentes insuficientes o saldo menor que el factor | PSRG32612: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,SAD-041NV,25.0,25.0,0,0.0,CELH98944: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-045RN,20.0,20.0,0,0.0,GTFY16508: Componentes insuficientes o saldo menor que el factor | VZRB85852: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,SAD-051BL,15.0,15.0,0,0.0,PZRB15621: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-062GN,10.0,10.0,0,0.0,DROQ99848: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-067NV,2.0,2.0,0,0.0,CQSA65425: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-068RB,6.0,6.0,0,0.0,BOCR06404: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-078NE,20.0,20.0,0,0.0,JVXF61802: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-087VN,40.0,40.0,0,0.0,LSZF64691: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-101,5.0,5.0,0,0.0,JJHC99979: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAD-106,15.0,15.0,0,0.0,XTCB30814: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,SAL-070NE,12.0,12.0,0,0.0,DENT35084: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,TAG-014,1.0,1.0,0,0.0,JJXG15728: Componentes insuficientes o saldo menor que el factor | SEBO85712: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,TAG-031,2.0,2.0,0,0.0,OJUL06347: Componentes insuficientes o saldo menor que el factor | PRBW22044: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,TAG-050,2.0,2.0,0,0.0,RJSY29304: Componentes insuficientes o saldo menor que el factor | RRDR99721: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-288619,VAF-008,3.0,3.0,0,0.0,SMNX94355: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-288619,VAF-018,1.0,1.0,0,0.0,UVJP41324: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,ASI-040,10.0,10.0,0,0.0,VUGY55154: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,BAJ-003,3.0,3.0,0,0.0,"ZNFP69986: Cobertura, fechas permitidas o renglón ya comprometido | ETKP13525: Sin venta con stock o compromisos"
+EDOMEX,E-ALESSIA-289704,BAJ-038,1.0,1.0,0,0.0,FLJN95259: Componentes insuficientes o saldo menor que el factor | PBJU35842: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,BFA-012,12.0,12.0,0,0.0,RYZS32654: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CAS-CH-K018-M,9.0,9.0,0,0.0,APUX96737: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CAS-CH-K019-M,3.0,3.0,0,0.0,ZTHM29764: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CAS-CH-K021-M,4.0,4.0,0,0.0,QJLZ13905: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CFA-017,80.0,80.0,0,0.0,WBTY97769: Componentes insuficientes o saldo menor que el factor | ARGL17490: Componentes insuficientes o saldo menor que el factor | AKMM16218: Componentes insuficientes o saldo menor que el factor | BMWG33127: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,CFA-026,5.0,5.0,0,0.0,MGIW35111: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CLC-007,3.0,3.0,0,0.0,ETKP13600: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CLJ-013,7.0,7.0,0,0.0,MKTX98124: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CLJ-021,3.0,3.0,0,0.0,ODUV98937: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,CUV-016,3.0,3.0,0,0.0,USVX99951: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,EDI-002,3.0,3.0,0,0.0,WTKL21302: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,EDI-005,30.0,30.0,0,0.0,ZRST17658: Componentes insuficientes o saldo menor que el factor | LQKN99671: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,EDI-010,2.0,2.0,0,0.0,QEIE16971: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,EDI-014,5.0,5.0,0,0.0,ZIKZ17160: Componentes insuficientes o saldo menor que el factor | USPF87763: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,EDI-019,8.0,8.0,0,0.0,WSNO99797: Componentes insuficientes o saldo menor que el factor | SHHF99998: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,EDI-024,16.0,16.0,0,0.0,AUFR86350: Componentes insuficientes o saldo menor que el factor | BWAT93572: Componentes insuficientes o saldo menor que el factor | EMWU32082: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,EDI-026,12.0,12.0,0,0.0,JKRM17295: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,EDI-029,20.0,20.0,0,0.0,QJZS23328: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,EDI-WO008,20.0,20.0,0,0.0,YOKH17572: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,EMP-039,12.0,12.0,0,0.0,SCEX17442: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,FAR-030,4.0,4.0,0,0.0,SRUR54434: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,FAR-035,3.0,3.0,0,0.0,DNTO18411: Componentes insuficientes o saldo menor que el factor | AKMM22823: Componentes insuficientes o saldo menor que el factor | DTDU22932: Componentes insuficientes o saldo menor que el factor | BPLD17806: Componentes insuficientes o saldo menor que el factor | VDCU72710: Componentes insuficientes o saldo menor que el factor | IILC30880: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,FAR-035NE,4.0,4.0,0,0.0,JPJX99502: Componentes insuficientes o saldo menor que el factor | TDUI74002: Evitar descarte
+EDOMEX,E-ALESSIA-289704,FAR-036,5.0,5.0,0,0.0,NZUM06334: Componentes insuficientes o saldo menor que el factor | QCXT19330: Componentes insuficientes o saldo menor que el factor | ICYY12496: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,FAR-055,10.0,10.0,0,0.0,DNGW38420: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,FAR-068NE,4.0,4.0,0,0.0,ZXBW28436: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,FAR-090,2.0,2.0,0,0.0,QSJV06323: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,FAR-103NE,20.0,20.0,0,0.0,VQED37616: Componentes insuficientes o saldo menor que el factor | ZCNC32095: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,FAR-151,3.0,3.0,0,0.0,UDVY34609: Componentes insuficientes o saldo menor que el factor | ISKU04641: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,FAR-162,9.0,9.0,0,0.0,HAIR35256: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,HOR-004,5.0,5.0,0,0.0,HHNW03107: Componentes insuficientes o saldo menor que el factor | TONP32838: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289704,HOR-025,15.0,15.0,0,0.0,ITKT65281: Componentes insuficientes o saldo menor que el factor | ZJAB12892: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,HOR-A001,9.0,9.0,0,0.0,VRZA54327: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,LLA-3016,4.0,4.0,0,0.0,QRHH37671: Componentes insuficientes o saldo menor que el factor | LECW31997: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,MAB-109,2.0,1.0,0,1.0,"BJAF88464: Cobertura, fechas permitidas o renglón ya comprometido"
+EDOMEX,E-ALESSIA-289704,PAC-A001,16.0,16.0,0,0.0,VIMA04417: Evitar descarte | NKIE34507: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,PAC-A013,4.0,4.0,0,0.0,WGVF16651: Componentes insuficientes o saldo menor que el factor | XRQG12790: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,RAD-004,7.0,2.0,0,5.0,"ACRW99038: Cobertura, fechas permitidas o renglón ya comprometido"
+EDOMEX,E-ALESSIA-289704,RIN-080,4.0,4.0,0,0.0,NKWH38505: Componentes insuficientes o saldo menor que el factor | INIR84470: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,RIN-114,1.0,1.0,0,0.0,RJDB65619: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,RIN-148,4.0,4.0,0,0.0,YWSG65186: Componentes insuficientes o saldo menor que el factor | PKQI24223: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAD-029,7.0,7.0,0,0.0,NIQW12757: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAD-036AN,1.0,1.0,0,0.0,RHLZ79758: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAD-040NE,40.0,40.0,0,0.0,ZMJF81294: Componentes insuficientes o saldo menor que el factor | LLTI84296: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,SAD-048AM,1.0,1.0,0,0.0,SDKC14683: Componentes insuficientes o saldo menor que el factor | ZIZG17517: Impulsar sin venta; Sin venta con stock o compromisos | GSSK00167: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,SAD-065NR,6.0,6.0,0,0.0,KZIM15763: Componentes insuficientes o saldo menor que el factor | ALKJ32506: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,SAD-076NA,60.0,60.0,0,0.0,AJUK36836: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAD-086GR,1.0,1.0,0,0.0,JGHG95387: Componentes insuficientes o saldo menor que el factor | GOYN95704: Componentes insuficientes o saldo menor que el factor | DCRG00237: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,SAD-090,3.0,3.0,0,0.0,GEDR99853: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAD-109,7.0,7.0,0,0.0,UVEZ33104: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAD-116,3.0,3.0,0,0.0,MLNA35531: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAL-033,25.0,25.0,0,0.0,DWFO23242: Componentes insuficientes o saldo menor que el factor | HOFB31945: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,SAL-048,3.0,3.0,0,0.0,ZTHM17823: Componentes insuficientes o saldo menor que el factor | BIDJ32961: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289704,SAL-067NE,1.0,1.0,0,0.0,VFVU13745: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAL-X002,10.0,10.0,0,0.0,USVX99946: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAL-X004,2.0,2.0,0,0.0,CHBW12941: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAL-X005,12.0,12.0,0,0.0,JJDG75628: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SAL-X006,1.0,1.0,0,0.0,VENR34962: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,SOP-026,10.0,10.0,0,0.0,PIFY33266: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289704,VAF-017,3.0,3.0,0,0.0,PSBR95575: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AJC-018,5.0,5.0,0,0.0,OWIQ79620: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AJC-019,2.0,2.0,0,0.0,QZNE06616: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ALE-051,5.0,5.0,0,0.0,JJDG08708: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-015,2.0,0.0,0,2.0,LCPO86707: Evitar descarte; Sin venta con stock o compromisos
+CUERNAVACA,C-ALESSIA-289709,AMO-016,4.0,4.0,0,0.0,VFWF53850: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-023,20.0,20.0,0,0.0,QRSG99967: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-047,40.0,34.0,0,6.0,"WXMQ18051: Cobertura, fechas permitidas o renglón ya comprometido | GLVG16764: Impulsar sin venta; Sin venta con stock o compromisos"
+CUERNAVACA,C-ALESSIA-289709,AMO-063,1.0,1.0,0,0.0,LMKJ15264: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-064,4.0,4.0,0,0.0,RTVY33877: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-073,45.0,45.0,0,0.0,BCQP65089: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-077,45.0,45.0,0,0.0,ACRW24186: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-079,3.0,3.0,0,0.0,LXWG23858: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-086,1.0,1.0,0,0.0,FONC83872: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-107,1.0,1.0,0,0.0,KEGC00216: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-111,5.0,5.0,0,0.0,TDBP88832: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,AMO-112,5.0,5.0,0,0.0,NVZV04660: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARB-004,2.0,2.0,0,0.0,QTDA06644: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARB-CGM-01,3.0,3.0,0,0.0,PIRM22474: Componentes insuficientes o saldo menor que el factor | RTKG03944: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARN-008,12.0,12.0,0,0.0,RTNR16937: Componentes insuficientes o saldo menor que el factor | GMTS99334: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,ARN-010,5.0,5.0,0,0.0,AZAP17044: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARN-011,11.0,11.0,0,0.0,RRDR99824: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARN-040,60.0,60.0,0,0.0,GIOK06086: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARN-066,33.0,33.0,0,0.0,EPFI16315: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ARN-080,19.0,19.0,0,0.0,IPYX13811: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BAF-048,1.0,1.0,0,0.0,MEBX12505: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BAF-062,5.0,5.0,0,0.0,YVND80606: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BAF-066,2.0,0.0,0,2.0,PTQD55242: Componentes insuficientes o saldo menor que el factor | YMHO55112: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BAS-019,4.0,4.0,0,0.0,KJKA37142: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BJE-051,1.0,1.0,0,0.0,NJLU98045: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BJE-056,1.0,1.0,0,0.0,XVPZ11908: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BLC-020,6.0,6.0,0,0.0,CSAV88866: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BLC-GYM-01,4.0,4.0,0,0.0,BPUI29176: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BNX-005,2.0,2.0,0,0.0,YNPQ95484: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOB-002,11.0,11.0,0,0.0,SWZF22194: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOB-037,2.0,2.0,0,0.0,VDFB05542: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-009,2.0,2.0,0,0.0,WVSX00114: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-041,10.0,0.0,0,10.0,HGMB17092: Evitar descarte
+CUERNAVACA,C-ALESSIA-289709,BOF-072,1.0,1.0,0,0.0,PJVF04832: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-A007,25.0,25.0,0,0.0,NIFA12742: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-A017,2.0,2.0,0,0.0,PJZI15361: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-A020,3.0,3.0,0,0.0,YINF13231: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-A034,1.0,1.0,0,0.0,DBSB89262: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-B007,16.0,16.0,0,0.0,TQLJ07584: Componentes insuficientes o saldo menor que el factor | DIEO95394: Componentes insuficientes o saldo menor que el factor | SWOH07242: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-B009,2.0,2.0,0,0.0,YSXM99600: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-B024,12.0,12.0,0,0.0,UVVN80363: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOF-C005,10.0,10.0,0,0.0,YINF13220: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOM-015,2.0,2.0,0,0.0,NQUR63546: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOM-SAE-01,1.0,1.0,0,0.0,OOBF94483: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,BOT-012,1.0,1.0,0,0.0,EDEY43058: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAB-022,6.0,6.0,0,0.0,FKJM96199: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAB-025,1.0,1.0,0,0.0,MGNC07392: Componentes insuficientes o saldo menor que el factor | OJXE06135: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAB-037,1.0,1.0,0,0.0,EVJL32608: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAB-043,4.0,4.0,0,0.0,ETKP13560: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAD-003HF,8.0,8.0,0,0.0,UUKH07226: Excedente | CVVJ94034: Componentes insuficientes o saldo menor que el factor | JRFD94579: Componentes insuficientes o saldo menor que el factor | HVPL97402: Impulsar sin venta; Sin venta con stock o compromisos | YTYE94412: Sin venta con stock o compromisos | JUHT95654: Sin venta con stock o compromisos
+CUERNAVACA,C-ALESSIA-289709,CAD-003HGF,260.0,260.0,0,0.0,"DNSB03013: Componentes insuficientes o saldo menor que el factor | FXYJ06296: Cobertura, fechas permitidas o renglón ya comprometido | VIHE18606: Componentes insuficientes o saldo menor que el factor | YPDN18411: Sin venta con stock o compromisos | GGYP98050: Componentes insuficientes o saldo menor que el factor | DNTO02730: Componentes insuficientes o saldo menor que el factor | VIOE99254: Componentes insuficientes o saldo menor que el factor | ORJW99254: Componentes insuficientes o saldo menor que el factor | IAWS98738: Componentes insuficientes o saldo menor que el factor | UQCD75415: Planificación desaconseja reponer: Te sugerimos no enviar unidades. Tu stock apto y en camino excede tu proyección de ventas.; Excedente | WYWO94109: Planificación desaconseja reponer: Te sugerimos no enviar unidades. Tu stock apto y en camino excede tu proyección de ventas.; Excedente | YYXW96020: Sin venta con stock o compromisos | AEJJ33561: Componentes insuficientes o saldo menor que el factor | TEEH99637: Componentes insuficientes o saldo menor que el factor | LJPZ05382: Componentes insuficientes o saldo menor que el factor | XLRM06876: Componentes insuficientes o saldo menor que el factor | ZUFA12859: Sin venta con stock o compromisos | AABI13600: Componentes insuficientes o saldo menor que el factor | WSEI99600: Restricción vigente en Planificación: Dejaste de ofrecer Full. | PUVI98959: Restricción vigente en Planificación: Dejaste de ofrecer Full. | QEFV99663: Restricción vigente en Planificación: Dejaste de ofrecer Full."
+CUERNAVACA,C-ALESSIA-289709,CAD-004HOF,20.0,20.0,0,0.0,AUFR96716: Componentes insuficientes o saldo menor que el factor | WMJD05655: Componentes insuficientes o saldo menor que el factor | RZLG19104: Componentes insuficientes o saldo menor que el factor | EJAB19324: Componentes insuficientes o saldo menor que el factor | ZUHG05266: Componentes insuficientes o saldo menor que el factor | YOKH19865: Impulsar sin venta; Sin venta con stock o compromisos | BJOJ96802: Componentes insuficientes o saldo menor que el factor | MSCE05278: Componentes insuficientes o saldo menor que el factor | SBAW25192: Componentes insuficientes o saldo menor que el factor | BKZV07022: Componentes insuficientes o saldo menor que el factor | AIPY18986: Cargo por stock antiguo; Excedente | BUGA96621: Componentes insuficientes o saldo menor que el factor | DFCK07235: Componentes insuficientes o saldo menor que el factor | LJTH07328: Componentes insuficientes o saldo menor que el factor | YMMB95069: Componentes insuficientes o saldo menor que el factor | TTSC06721: Cargo por stock antiguo; Evitar descarte; Sin venta con stock o compromisos | FSPE07177: Impulsar sin venta; Sin venta con stock o compromisos | HMIB20096: Excedente | TRSX05213: Componentes insuficientes o saldo menor que el factor | CTGV76823: Componentes insuficientes o saldo menor que el factor | QMVJ96595: Componentes insuficientes o saldo menor que el factor | QXZX41115: Componentes insuficientes o saldo menor que el factor | PDLJ05485: Componentes insuficientes o saldo menor que el factor | MUJJ97164: Restricción vigente en Planificación: Dejaste de ofrecer Full. | QBRT26060: Restricción vigente en Planificación: Dejaste de ofrecer Full. | MYXX96744: Componentes insuficientes o saldo menor que el factor | GEII95758: Componentes insuficientes o saldo menor que el factor | DNLA95974: Componentes insuficientes o saldo menor que el factor | XIXB07668: Componentes insuficientes o saldo menor que el factor | JNHV07288: Componentes insuficientes o saldo menor que el factor | OWIQ99933: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,CAD-006F,150.0,150.0,0,0.0,AELM05094: Componentes insuficientes o saldo menor que el factor | GWMS61763: Componentes insuficientes o saldo menor que el factor | LYEO03963: Componentes insuficientes o saldo menor que el factor | BTKN96763: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAD-006HO,7.0,7.0,0,0.0,MJJQ25562: Componentes insuficientes o saldo menor que el factor | DHLI21961: Componentes insuficientes o saldo menor que el factor | ORLU95506: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAD-007,1.0,1.0,0,0.0,WSEI99594: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAL-001,6.0,6.0,0,0.0,KFNF15507: Componentes insuficientes o saldo menor que el factor | COVI38010: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAL-002,7.0,7.0,0,0.0,FBHN11642: Componentes insuficientes o saldo menor que el factor | LLVI13188: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,CAL-013,4.0,4.0,0,0.0,MIXG16554: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAL-052,4.0,4.0,0,0.0,HGMB17085: Componentes insuficientes o saldo menor que el factor | USJD99721: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,CAL-061,8.0,8.0,0,0.0,ZHFI17457: Componentes insuficientes o saldo menor que el factor | USJD99685: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,CAL-066,17.0,17.0,0,0.0,KEAH54241: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAR-018,17.0,17.0,0,0.0,ARLJ11186: Componentes insuficientes o saldo menor que el factor | ZCWC96873: Componentes insuficientes o saldo menor que el factor | RUPO96077: Componentes insuficientes o saldo menor que el factor | AQII07022: Componentes insuficientes o saldo menor que el factor | LXHP06933: Componentes insuficientes o saldo menor que el factor | ZNFP95432: Componentes insuficientes o saldo menor que el factor | GEDR06797: Impulsar sin venta; Sin venta con stock o compromisos | ODOZ95534: Componentes insuficientes o saldo menor que el factor | UUCL33542: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CAR-CGG-A,30.0,30.0,0,0.0,SZAU32736: Componentes insuficientes o saldo menor que el factor | NVMG21926: Componentes insuficientes o saldo menor que el factor | UWNV03729: Evitar descarte | QRSY64538: Excedente | FZZJ22085: Componentes insuficientes o saldo menor que el factor | AAAU32151: Componentes insuficientes o saldo menor que el factor | GJSZ66504: Componentes insuficientes o saldo menor que el factor | EZBV22187: Componentes insuficientes o saldo menor que el factor | MYXX32146: Excedente | VHDQ65206: Componentes insuficientes o saldo menor que el factor | GFQI04061: Impulsar sin venta; Sin venta con stock o compromisos
+CUERNAVACA,C-ALESSIA-289709,CIG-011,30.0,30.0,0,0.0,ZNLH16786: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CIG-014,1.0,0.0,0,1.0,CEIX33245: Evitar descarte
+CUERNAVACA,C-ALESSIA-289709,CIG-019,6.0,6.0,0,0.0,IBHA23610: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CIG-021,6.0,6.0,0,0.0,BRJN23453: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CIG-038,4.0,4.0,0,0.0,SBVQ22966: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CIG-045,6.0,6.0,0,0.0,VDRC34915: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CIG-050,2.0,2.0,0,0.0,IILC88982: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLA-014,4.0,4.0,0,0.0,SMCE95356: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLA-025,2.0,1.0,0,1.0,"ZPDN96569: Cobertura, fechas permitidas o renglón ya comprometido"
+CUERNAVACA,C-ALESSIA-289709,CLA-080,3.0,3.0,0,0.0,CLSN12184: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLA-085,1.0,1.0,0,0.0,DUYQ97494: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLA-121,2.0,2.0,0,0.0,FONC12892: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLC-044,1.0,1.0,0,0.0,UQJC96096: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLC-059,6.0,6.0,0,0.0,RCUM99848: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLC-069,2.0,2.0,0,0.0,JJHC99967: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLF-003,3.0,3.0,0,0.0,LGME11730: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLF-007,2.0,2.0,0,0.0,RPYU12408: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLU-048,12.0,12.0,0,0.0,KVVV24473: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLU-059,2.0,2.0,0,0.0,WZEY89301: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLV-068,2.0,2.0,0,0.0,FUFZ11657: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLV-075,4.0,4.0,0,0.0,QAWY11592: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLV-086,3.0,3.0,0,0.0,IUJY11753: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CLV-090,3.0,3.0,0,0.0,WGJI95988: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CON-010,1.0,1.0,0,0.0,NDBU34498: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CVE-006,1.0,1.0,0,0.0,KJAD13306: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CVE-016,1.0,1.0,0,0.0,WSDL13663: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CVE-030,9.0,9.0,0,0.0,HQNK37616: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CVE-035,4.0,4.0,0,0.0,GRQB36929: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,CVE-039,5.0,5.0,0,0.0,YVZG90143: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DAM-007,2.0,2.0,0,0.0,RRCW98218: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DAM-012,1.0,1.0,0,0.0,YTRQ00167: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DIR-026,30.0,30.0,0,0.0,WEYA17442: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DIR-208,10.0,10.0,0,0.0,POLQ29596: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DIR-215,1.0,1.0,0,0.0,KMKF79612: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DIS-008,9.0,9.0,0,0.0,FTQR17442: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DIS-023,20.0,20.0,0,0.0,NQGE16928: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,DIS-034,4.0,4.0,0,0.0,JGCP61569: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ECD-005,2.0,2.0,0,0.0,CPEQ12166: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EJE-B027,2.0,2.0,0,0.0,VENR34970: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EJE-E003,3.0,3.0,0,0.0,MIZQ06541: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EJE-E020,4.0,4.0,0,0.0,OOZI95838: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMC-019,1.0,1.0,0,0.0,NLRY02920: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMC-040,2.0,2.0,0,0.0,ABRI12023: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMC-043,1.0,1.0,0,0.0,OQJG99882: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-014,1.0,1.0,0,0.0,EABM07098: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-020,44.0,44.0,0,0.0,ELSI16549: Componentes insuficientes o saldo menor que el factor | WSDL13644: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,EMP-023,1.0,1.0,0,0.0,ILQG98508: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-030,29.0,29.0,0,0.0,LBQN94580: Componentes insuficientes o saldo menor que el factor | USAY07108: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-042,8.0,8.0,0,0.0,XNAT85457: Componentes insuficientes o saldo menor que el factor | HQOV96031: Componentes insuficientes o saldo menor que el factor | NQBK13231: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,EMP-044,12.0,4.0,0,8.0,"KGZZ98698: Cobertura, fechas permitidas o renglón ya comprometido | ZMNP87238: Cobertura, fechas permitidas o renglón ya comprometido"
+CUERNAVACA,C-ALESSIA-289709,EMP-050,5.0,5.0,0,0.0,DBVN28895: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-051,12.0,12.0,0,0.0,NEIC29434: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-062,5.0,5.0,0,0.0,RFFM05297: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-GYF-02,1.0,1.0,0,0.0,ISXM12258: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EMP-SAE-04,1.0,1.0,0,0.0,DYKG12483: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ENG-100,1.0,1.0,0,0.0,EBZU04639: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-010,80.0,80.0,0,0.0,BVBJ07290: Evitar descarte | OKYI96818: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-014,2.0,2.0,0,0.0,AZWJ06072: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-020,6.0,6.0,0,0.0,GGHX17059: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-102,30.0,30.0,0,0.0,ONME61106: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-106,200.0,200.0,0,0.0,PMIC20678: Componentes insuficientes o saldo menor que el factor | JPJQ20958: Componentes insuficientes o saldo menor que el factor | NQGE20286: Componentes insuficientes o saldo menor que el factor | TWFA93708: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-117,9.0,9.0,0,0.0,RNMD59688: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,ESP-126,4.0,0.0,0,4.0,IJSZ16861: Cargo por stock antiguo
+CUERNAVACA,C-ALESSIA-289709,ESP-A063NE,2.0,2.0,0,0.0,ZILE90722: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EST-029,2.0,2.0,0,0.0,UCUH13573: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EST-037,15.0,3.0,0,12.0,"JVCW95817: Cobertura, fechas permitidas o renglón ya comprometido"
+CUERNAVACA,C-ALESSIA-289709,EST-050,7.0,7.0,0,0.0,BVET12454: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EST-053,1.0,1.0,0,0.0,PJAG99721: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,EST-GYG-01,20.0,20.0,0,0.0,NAIA94052: Componentes insuficientes o saldo menor que el factor | JRFD93604: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,FIA-041,6.0,6.0,0,0.0,WOMH12178: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,FIA-046,3.0,3.0,0,0.0,RYYY12047: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,FIA-B002,14.0,14.0,0,0.0,IMCQ20825: Componentes insuficientes o saldo menor que el factor | GNYI32893: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,FLO-012,7.0,7.0,0,0.0,WULY32325: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,FLO-015,1.0,1.0,0,0.0,IBMD17984: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,GOM-087,4.0,4.0,0,0.0,MRRX95919: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,GOM-A001,3.0,3.0,0,0.0,YZQE12075: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,GVL-001,2.0,2.0,0,0.0,RNUE97996: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-029,2.0,2.0,0,0.0,WTJE16614: Componentes insuficientes o saldo menor que el factor | MZKM16729: Cargo por stock antiguo; Evitar descarte | DOHU91144: Componentes insuficientes o saldo menor que el factor | TIUO07108: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-F02,2.0,2.0,0,0.0,GFLW07033: Componentes insuficientes o saldo menor que el factor | ADGE94624: Componentes insuficientes o saldo menor que el factor | MEID06979: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-F06,36.0,36.0,0,0.0,MUQP62587: Componentes insuficientes o saldo menor que el factor | PLIP22586: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-F09,1.0,1.0,0,0.0,WEYA15700: Componentes insuficientes o saldo menor que el factor | XYPH96020: Componentes insuficientes o saldo menor que el factor | CZMB06980: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-F19,4.0,4.0,0,0.0,WQQX04042: Componentes insuficientes o saldo menor que el factor | KKQW86690: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-IR25,1.0,1.0,0,0.0,IBHA53694: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-IR26,4.0,4.0,0,0.0,VGYP32076: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-IR44,24.0,24.0,0,0.0,EEHE32053: Componentes insuficientes o saldo menor que el factor | PSKW04116: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-IR46,1.0,1.0,0,0.0,GGSW05588: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-IR49,1.0,1.0,0,0.0,FBOU85754: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KDC-IR58,2.0,2.0,0,0.0,RIUC88734: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-F10,20.0,20.0,0,0.0,JTRD86350: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-F13,5.0,5.0,0,0.0,DPXT83523: Componentes insuficientes o saldo menor que el factor | YVHL31875: Planificación desaconseja reponer: Te sugerimos no enviar unidades. Tu stock apto y en camino excede tu proyección de ventas.; Excedente
+CUERNAVACA,C-ALESSIA-289709,KSP-F44,6.0,6.0,0,0.0,JOTT99404: Componentes insuficientes o saldo menor que el factor | DVIG12624: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-F47,100.0,100.0,0,0.0,NQBK13277: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-F48,80.0,0.0,0,80.0,AABI13518: Evitar descarte
+CUERNAVACA,C-ALESSIA-289709,KSP-IR11,1.0,1.0,0,0.0,BVHQ80634: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-IR19,1.0,1.0,0,0.0,WMDI13212: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-IR46,20.0,20.0,0,0.0,DSNL99208: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,KSP-IR53,2.0,2.0,0,0.0,VRLB36033: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAG-001,8.0,8.0,0,0.0,VXQL16605: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAG-012,2.0,2.0,0,0.0,PNGJ11321: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAG-013,3.0,3.0,0,0.0,UXLM06208: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAG-019,4.0,4.0,0,0.0,DVCK00244: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAJ-002,2.0,2.0,0,0.0,ATTY90883: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAJ-035,3.0,3.0,0,0.0,EAJD06415: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAJ-088,4.0,4.0,0,0.0,YQJG72813: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAJ-132RO,1.0,1.0,0,0.0,PSKW00180: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAJ-139,100.0,100.0,0,0.0,FOWM73841: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAN-031,1.0,1.0,0,0.0,YIZC06283: Componentes insuficientes o saldo menor que el factor | JNQX95285: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAN-050,2.0,2.0,0,0.0,GEII95200: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAN-061,18.0,18.0,0,0.0,XHOC17333: Componentes insuficientes o saldo menor que el factor | ANSX18836: Evitar descarte
+CUERNAVACA,C-ALESSIA-289709,MAN-142,4.0,4.0,0,0.0,VDRC41056: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAN-158,4.0,4.0,0,0.0,VBJI36014: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-008,5.0,5.0,0,0.0,XSIO17442: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-019,18.0,18.0,0,0.0,SVTU37055: Componentes insuficientes o saldo menor que el factor | LQHI16826: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-020,18.0,18.0,0,0.0,HHNW16565: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-023,9.0,9.0,0,0.0,IPYX13797: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-026,11.0,11.0,0,0.0,DENT35097: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-032,3.0,3.0,0,0.0,MXLE30931: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAR-046,18.0,18.0,0,0.0,QOOR75212: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAS-013,60.0,60.0,0,0.0,SWCP31777: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAS-014,5.0,5.0,0,0.0,GFNT32285: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MAS-019,2.0,2.0,0,0.0,HFJR36917: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MCA-WS202-06,2.0,2.0,0,0.0,HOOO12837: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,MCA-WS202-07,5.0,5.0,0,0.0,JTRD13404: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PAC-003,3.0,3.0,0,0.0,PIKD06399: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PAC-017,2.0,2.0,0,0.0,PFBC12902: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PAC-044,2.0,2.0,0,0.0,NRRH96958: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PAS-006,2.0,2.0,0,0.0,ZTTZ06967: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PAS-026,1.0,1.0,0,0.0,FMMK12052: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PED-A013,30.0,30.0,0,0.0,ABUP16786: Componentes insuficientes o saldo menor que el factor | QVVJ12551: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,PED-A017,2.0,2.0,0,0.0,ALND06188: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PED-B001,5.0,5.0,0,0.0,ZNFP61498: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PED-B007,40.0,40.0,0,0.0,WIVH16992: Componentes insuficientes o saldo menor que el factor | FTNE13119: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,PED-B009,3.0,3.0,0,0.0,XVYB17488: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PED-B011,2.0,2.0,0,0.0,HIAI22059: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PED-B024,2.0,2.0,0,0.0,MRYF95146: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PIC-F06,3.0,3.0,0,0.0,QXNK14198: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PIÑ-020,3.0,2.0,0,1.0,"UCUH13556: Cobertura, fechas permitidas o renglón ya comprometido"
+CUERNAVACA,C-ALESSIA-289709,PLA-001,4.0,4.0,0,0.0,KTAT10602: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PLA-004,3.0,3.0,0,0.0,QOOR31071: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PLA-019,3.0,3.0,0,0.0,WCLN23794: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POB-021,4.0,4.0,0,0.0,SLSX64346: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-026,3.0,3.0,0,0.0,BVIG17044: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-060,5.0,5.0,0,0.0,WINA17615: Componentes insuficientes o saldo menor que el factor | OCHA85118: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-062,1.0,1.0,0,0.0,YKMQ17322: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-064,2.0,2.0,0,0.0,OVAK16819: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-065,60.0,60.0,0,0.0,NCJU33896: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-086,13.0,13.0,0,0.0,WAZY28628: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-087,50.0,50.0,0,0.0,SISC16819: Componentes insuficientes o saldo menor que el factor | VAPE85333: Componentes insuficientes o saldo menor que el factor | NSEZ99766: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,POP-089,3.0,3.0,0,0.0,MVIV17636: Componentes insuficientes o saldo menor que el factor | KBIM99055: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,POP-092,2.0,2.0,0,0.0,VBBO17276: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-094,7.0,7.0,0,0.0,ZRST17643: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-104,7.0,7.0,0,0.0,QXQY17426: Componentes insuficientes o saldo menor que el factor | BSOP85085: Impulsar sin venta; Sin venta con stock o compromisos
+CUERNAVACA,C-ALESSIA-289709,POP-106,3.0,3.0,0,0.0,PRBW22037: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-124,2.0,2.0,0,0.0,MWLE16738: Componentes insuficientes o saldo menor que el factor | MBFQ99029: Sin venta con stock o compromisos
+CUERNAVACA,C-ALESSIA-289709,POP-131,2.0,2.0,0,0.0,MUHP36964: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,POP-WO096,2.0,2.0,0,0.0,MZKM16701: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PSK-013,20.0,20.0,0,0.0,PDOM16583: Componentes insuficientes o saldo menor que el factor | TBNF85984: Componentes insuficientes o saldo menor que el factor | RULH99797: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+CUERNAVACA,C-ALESSIA-289709,PSP-001,1.0,1.0,0,0.0,OSBI89420: Restricción vigente en Planificación: Dejaste de ofrecer Full. | MDXZ05018: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PUÑ-115,3.0,3.0,0,0.0,XMWS96110: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PUÑ-128,3.0,3.0,0,0.0,IIBY12052: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PUÑ-168,2.0,2.0,0,0.0,QQZH96524: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PUÑ-169,1.0,1.0,0,0.0,DODV12393: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PUÑ-170,2.0,2.0,0,0.0,UKFV95715: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,PUÑ-194,2.0,2.0,0,0.0,IIBY00151: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,RCA-003,2.0,2.0,0,0.0,SECJ66673: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,REG-036,3.0,3.0,0,0.0,FNPO99086: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,RET-104,1.0,1.0,0,0.0,"REAB04331: Componentes insuficientes o saldo menor que el factor | HJTY72455: Restricción vigente en Planificación: No puedes enviar stock hasta que mejores las ventas del producto.
+Más información; Excedente; Impulsar sin venta; Sin venta con stock o compromisos"
+CUERNAVACA,C-ALESSIA-289709,SIN-SAE-01,2.0,2.0,0,0.0,ZIVO31160: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SLI-030,2.0,2.0,0,0.0,NIYQ05896: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SPR-A003,4.0,4.0,0,0.0,SGKM83122: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SPR-A017,8.0,8.0,0,0.0,TNHL30822: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-017,10.0,10.0,0,0.0,BDZO32122: Componentes insuficientes o saldo menor que el factor | EDXC42423: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-055,1.0,1.0,0,0.0,JSNK05865: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-060,5.0,5.0,0,0.0,JMEQ12902: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-066,12.0,12.0,0,0.0,AKYR12735: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-078,11.0,11.0,0,0.0,WXZJ13220: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-085,21.0,21.0,0,0.0,FHDT11089: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-103,11.0,11.0,0,0.0,DPXT12197: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-111,2.0,2.0,0,0.0,PSBR12859: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-123,16.0,16.0,0,0.0,LIJN80513: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A001,2.0,2.0,0,0.0,MXLE30635: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A006,3.0,3.0,0,0.0,WDVC12607: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A012,29.0,29.0,0,0.0,FBHN62811: Componentes insuficientes o saldo menor que el factor | XNQR63994: Componentes insuficientes o saldo menor que el factor | OTUR27109: Componentes insuficientes o saldo menor que el factor | UXYV95817: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A013,34.0,34.0,0,0.0,KGEM07033: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A017,3.0,3.0,0,0.0,SEKN00325: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A018,1.0,1.0,0,0.0,YMZO00259: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,SWI-A029,4.0,4.0,0,0.0,SPFJ17604: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TAB-035,6.0,6.0,0,0.0,OLMK36235: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TAB-041,2.0,2.0,0,0.0,EPAO17044: Componentes insuficientes o saldo menor que el factor | DEBD33191: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TAB-060,5.0,5.0,0,0.0,ZZJR33191: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TAZ-022,5.0,5.0,0,0.0,GMEO06539: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TAZ-028,7.0,7.0,0,0.0,RBAT13692: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TAZ-WO009,1.0,1.0,0,0.0,XXAF96904: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TOR-006,5.0,5.0,0,0.0,DMDQ11384: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TPN-CGM-01,2.0,2.0,0,0.0,KSMN05877: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-ALESSIA-289709,TUB-002,2.0,2.0,0,0.0,WSEI55120: Componentes insuficientes o saldo menor que el factor | ECAC54888: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ARO-009,14.0,14.0,0,0.0,JIFQ20650: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ARO-014,10.0,10.0,0,0.0,PHKW13220: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ARO-015,10.0,10.0,0,0.0,BHJP85141: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ARO-016,24.0,24.0,0,0.0,GUEM23584: Componentes insuficientes o saldo menor que el factor | RRCW32387: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,ASI-001,6.0,6.0,0,0.0,XACN91953: Componentes insuficientes o saldo menor que el factor | DCBK64564: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ASI-010,280.0,280.0,0,0.0,GUEM37458: Excedente | WEYA15716: Componentes insuficientes o saldo menor que el factor | YODR37055: Componentes insuficientes o saldo menor que el factor | KBIM36739: Componentes insuficientes o saldo menor que el factor | ZUNA04026: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ASI-024,6.0,0.0,0,6.0,BHND17314: Evitar descarte | ZVOL00263: Restricción vigente en Planificación: Dejaste de ofrecer Full.; Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,ASI-036,20.0,0.0,0,20.0,NGMH54842: Cargo por stock antiguo
+EDOMEX,E-ALESSIA-289715,ASI-052,12.0,12.0,0,0.0,WVIV35111: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BAJ-014,1.0,0.0,0,1.0,ANSX05311: Evitar descarte | UBWS31346: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,BAJ-027,1.0,1.0,0,0.0,"SRSV85564: Cobertura, fechas permitidas o renglón ya comprometido"
+EDOMEX,E-ALESSIA-289715,BAJ-037,1.0,1.0,0,0.0,QXPA23532: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BAJ-044,18.0,18.0,0,0.0,TRZF12598: Componentes insuficientes o saldo menor que el factor | KZLL86186: Componentes insuficientes o saldo menor que el factor | DSEI64708: Restricción vigente en Planificación: Dejaste de ofrecer Full. | MPLC13277: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BAJ-045,28.0,28.0,0,0.0,XVYB15632: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BAJ-059,36.0,36.0,0,0.0,OJXE23469: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BAJ-060,2.0,2.0,0,0.0,DYNA23773: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BPO-007,15.0,15.0,0,0.0,FZRS07891: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,BPO-014,6.0,6.0,0,0.0,PICX35358: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,EJE-B004,70.0,70.0,0,0.0,BSRA23955: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ESC-013,28.0,28.0,0,0.0,XWEE36509: Excedente | AXUJ99306: Componentes insuficientes o saldo menor que el factor | XZGG21244: Componentes insuficientes o saldo menor que el factor | SDMD12902: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,ESC-026,4.0,4.0,0,0.0,PFRK98819: Componentes insuficientes o saldo menor que el factor | VWKN99797: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ESC-033,48.0,48.0,0,0.0,LYSO38956: Componentes insuficientes o saldo menor que el factor | WYDT17305: Componentes insuficientes o saldo menor que el factor | JRHX17194: Componentes insuficientes o saldo menor que el factor | QVVJ12496: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,ESC-036,2.0,2.0,0,0.0,GEPK96728: Componentes insuficientes o saldo menor que el factor | YIHI98738: Restricción vigente en Planificación: Dejaste de ofrecer Full.; Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,ESC-037,2.0,2.0,0,0.0,URPV22379: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ESC-049,8.0,8.0,0,0.0,VWAA70837: Componentes insuficientes o saldo menor que el factor | NETJ17028: Componentes insuficientes o saldo menor que el factor | PHKW13188: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,ESC-050,8.0,8.0,0,0.0,OIYD85689: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,FAR-DS-01,10.0,10.0,0,0.0,BZMS22852: Componentes insuficientes o saldo menor que el factor | OKIS99556: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,HOR-003,5.0,5.0,0,0.0,WXVN03169: Componentes insuficientes o saldo menor que el factor | EUXY29078: Sin venta con stock o compromisos | CELH98888: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,HOR-026,5.0,5.0,0,0.0,ATFU05471: Componentes insuficientes o saldo menor que el factor | SFBR12579: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,LLA-066,10.0,10.0,0,0.0,WXRV38477: Componentes insuficientes o saldo menor que el factor | AFHP36453: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-068,2.0,0.0,0,2.0,VWHK95649: Excedente
+EDOMEX,E-ALESSIA-289715,LLA-075,2.0,2.0,0,0.0,OXPB06265: Componentes insuficientes o saldo menor que el factor | POQV91377: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,LLA-080,5.0,5.0,0,0.0,ARDM23739: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-082,50.0,45.0,0,5.0,AKZZ36836: Componentes insuficientes o saldo menor que el factor | JOYB37174: Impulsar sin venta; Sin venta con stock o compromisos | ZVZQ13161: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,LLA-083,45.0,45.0,0,0.0,ILIB60793: Componentes insuficientes o saldo menor que el factor | AKZZ36836: Componentes insuficientes o saldo menor que el factor | RDTU34700: Restricción vigente en Planificación: Dejaste de ofrecer Full. | ZVZQ13161: Restricción vigente en Planificación: Dejaste de ofrecer Full. | BJAF88455: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,LLA-2001,48.0,0.0,0,48.0,TSHC07300: Cargo por stock antiguo | XUNA99933: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,LLA-2010,15.0,15.0,0,0.0,GPCE69668: Componentes insuficientes o saldo menor que el factor | MPLC13220: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,LLA-2015,5.0,5.0,0,0.0,COUF95244: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2020,20.0,15.0,0,5.0,"FDEO36938: Evitar descarte | OLHY37064: Componentes insuficientes o saldo menor que el factor | CPSM38340: Cobertura, fechas permitidas o renglón ya comprometido | SWBA38215: Componentes insuficientes o saldo menor que el factor | XMJQ85749: Restricción vigente en Planificación: Dejaste de ofrecer Full."
+EDOMEX,E-ALESSIA-289715,LLA-2021,15.0,15.0,0,0.0,NIOF37616: Componentes insuficientes o saldo menor que el factor | OLHY37064: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2024,15.0,15.0,0,0.0,DLGV37399: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2028,15.0,15.0,0,0.0,CIWT23917: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2033,10.0,10.0,0,0.0,WSPE37518: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2038,44.0,44.0,0,0.0,SGMT23051: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2052,1.0,1.0,0,0.0,HFJR55242: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2053,30.0,30.0,0,0.0,GXRQ83942: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-2054,2.0,2.0,0,0.0,VJTK06208: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-3014,2.0,2.0,0,0.0,UBBU36804: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-3040,10.0,10.0,0,0.0,LXHP79770: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-3050,2.0,2.0,0,0.0,XUNA23453: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-3055,1.0,1.0,0,0.0,TWDX23430: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-3058,2.0,2.0,0,0.0,AFOV36392: Componentes insuficientes o saldo menor que el factor | EAJZ32024: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,LLA-3059,1.0,0.0,0,1.0,ZUCB37539: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,LLA-3060,25.0,25.0,0,0.0,SWBA38204: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,LLA-3062,3.0,3.0,0,0.0,BFIL37212: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,MAB-001,1.0,1.0,0,0.0,DOHU63653: Componentes insuficientes o saldo menor que el factor | XDJF00198: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,MAB-019,2.0,2.0,0,0.0,GGSW17586: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,MAB-084,2.0,2.0,0,0.0,TZRS95180: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,MAB-099,2.0,2.0,0,0.0,GHMM05981: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,PAR-006M,4.0,4.0,0,0.0,JJXG15737: Componentes insuficientes o saldo menor que el factor | BWFR32024: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,PAR-034,20.0,20.0,0,0.0,SSYH36917: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-004,2.0,2.0,0,0.0,SWOH24397: Componentes insuficientes o saldo menor que el factor | GSCN24193: Sin venta con stock o compromisos | ZMZA23760: Componentes insuficientes o saldo menor que el factor | DUYQ31379: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,RIN-034,1.0,1.0,0,0.0,ZXCF95683: Componentes insuficientes o saldo menor que el factor | OCBC34293: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,RIN-049,6.0,6.0,0,0.0,ROOR96991: Componentes insuficientes o saldo menor que el factor | BVIG15569: Componentes insuficientes o saldo menor que el factor | EIXS99436: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-051,33.0,33.0,0,0.0,ZRVN06766: Componentes insuficientes o saldo menor que el factor | TPKE22810: Componentes insuficientes o saldo menor que el factor | YSYP99470: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-077,20.0,20.0,0,0.0,KGWX64276: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-082,2.0,2.0,0,0.0,YCIM17224: Componentes insuficientes o saldo menor que el factor | VGMP86027: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-083,16.0,16.0,0,0.0,CGGO65138: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-086,15.0,15.0,0,0.0,YIHI06135: Componentes insuficientes o saldo menor que el factor | NEDX98698: Componentes insuficientes o saldo menor que el factor | CYGP23843: Componentes insuficientes o saldo menor que el factor | NFZG98937: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-087,36.0,36.0,0,0.0,JVCW33672: Componentes insuficientes o saldo menor que el factor | CYGP23843: Componentes insuficientes o saldo menor que el factor | SNPO32445: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-097,4.0,4.0,0,0.0,ALWO65402: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-099,2.0,2.0,0,0.0,CNUQ16890: Componentes insuficientes o saldo menor que el factor | NTOD44067: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-102,10.0,10.0,0,0.0,ONOT06231: Componentes insuficientes o saldo menor que el factor | BWRF23972: Componentes insuficientes o saldo menor que el factor | TPKE22823: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-105,10.0,10.0,0,0.0,PRAS17403: Componentes insuficientes o saldo menor que el factor | LYSO24603: Componentes insuficientes o saldo menor que el factor | PKJS31380: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-107,1.0,1.0,0,0.0,XUQV06064: Componentes insuficientes o saldo menor que el factor | FXYJ23623: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-110,6.0,6.0,0,0.0,DEWC66455: Componentes insuficientes o saldo menor que el factor | WSPE37502: Excedente
+EDOMEX,E-ALESSIA-289715,RIN-118,5.0,5.0,0,0.0,DREG24164: Componentes insuficientes o saldo menor que el factor | SOWV17950: Componentes insuficientes o saldo menor que el factor | FXYJ23623: Componentes insuficientes o saldo menor que el factor | KBIM99029: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-120,8.0,8.0,0,0.0,ZIZG17071: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-121,4.0,4.0,0,0.0,GYTH64921: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-123,16.0,16.0,0,0.0,BXXQ23274: Componentes insuficientes o saldo menor que el factor | DREG24155: Componentes insuficientes o saldo menor que el factor | MXRW32259: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-133,28.0,28.0,0,0.0,VYNP24138: Componentes insuficientes o saldo menor que el factor | AAMF27774: Restricción vigente en Planificación: Dejaste de ofrecer Full. | YXNU13539: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-134,20.0,5.0,0,15.0,"ZTHJ23509: Cobertura, fechas permitidas o renglón ya comprometido | PVYB00167: Restricción vigente en Planificación: Dejaste de ofrecer Full."
+EDOMEX,E-ALESSIA-289715,RIN-136,15.0,15.0,0,0.0,OIPJ65402: Componentes insuficientes o saldo menor que el factor | LAVI32445: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-138,40.0,40.0,0,0.0,MYBP23804: Componentes insuficientes o saldo menor que el factor | MROQ23972: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-139,3.0,0.0,0,3.0,XPUE23288: Evitar descarte | MROQ23972: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-145,1.0,1.0,0,0.0,GHCJ23843: Sin venta con stock o compromisos | OZKO07005: Sin venta con stock o compromisos | JNHV24268: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-146,8.0,8.0,0,0.0,GUWD23725: Componentes insuficientes o saldo menor que el factor | UCPQ23739: Cargo por stock antiguo; Excedente; Impulsar sin venta; Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289715,RIN-150,8.0,8.0,0,0.0,RHLZ23482: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-153,4.0,4.0,0,0.0,QJKX23392: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-157,12.0,12.0,0,0.0,PJZU22749: Componentes insuficientes o saldo menor que el factor | YMHO23862: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-160,6.0,6.0,0,0.0,OBNV88061: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-162,2.0,2.0,0,0.0,HKYT88752: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-165,6.0,6.0,0,0.0,MKVH23647: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-169,1.0,1.0,0,0.0,LLVI13208: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-170,6.0,6.0,0,0.0,LQLO13323: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-A001,4.0,4.0,0,0.0,IASF22847: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,RIN-A002,7.0,7.0,0,0.0,YSXM23363: Componentes insuficientes o saldo menor que el factor | AKYR12669: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,RIN-WO026,1.0,1.0,0,0.0,GOYN64643: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAD-021,60.0,60.0,0,0.0,BRNG99310: Cargo por stock antiguo | QSJV20818: Componentes insuficientes o saldo menor que el factor | RQMG32903: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,SAD-024,3.0,3.0,0,0.0,EUXY16861: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAD-026,12.0,12.0,0,0.0,MARS06869: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAD-039NR,8.0,8.0,0,0.0,YHBO16633: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAD-047NE,25.0,25.0,0,0.0,TWUD64921: Componentes insuficientes o saldo menor que el factor | FAZG62573: Componentes insuficientes o saldo menor que el factor | JIFQ17419: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAD-055RJ,20.0,20.0,0,0.0,EIXS99443: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAD-081NA,20.0,20.0,0,0.0,RTVY71226: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAL-056RO,14.0,14.0,0,0.0,RPFI44149: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,SAL-058NE,60.0,60.0,0,0.0,KXUD12546: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-018,5.0,5.0,0,0.0,DKUI03304: Componentes insuficientes o saldo menor que el factor | BLKX99556: Restricción vigente en Planificación: Dejaste de ofrecer Full. | DHQG35336: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-020,5.0,5.0,0,0.0,MEFY86223: Componentes insuficientes o saldo menor que el factor | YGCO03842: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-026,4.0,4.0,0,0.0,PLHH23955: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-032,1.0,1.0,0,0.0,JUIE16327: Componentes insuficientes o saldo menor que el factor | FAXR99882: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,TAG-034,7.0,7.0,0,0.0,XACN84600: Componentes insuficientes o saldo menor que el factor | MFUO98959: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,TAG-035,33.0,33.0,0,0.0,VRUH15576: Componentes insuficientes o saldo menor que el factor | DEXG31913: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,TAG-039,11.0,11.0,0,0.0,HEZE65707: Componentes insuficientes o saldo menor que el factor | RNTT16565: Componentes insuficientes o saldo menor que el factor | AUPP00146: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,TAG-041,4.0,4.0,0,0.0,SWZF15467: Componentes insuficientes o saldo menor que el factor | NFZG98944: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,TAG-052,1.0,1.0,0,0.0,RECS84283: Componentes insuficientes o saldo menor que el factor | RIUC13310: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289715,TAG-059,14.0,14.0,0,0.0,URIH85932: Componentes insuficientes o saldo menor que el factor | FWTX93351: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-062,4.0,4.0,0,0.0,VUGY99093: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-065,22.0,22.0,0,0.0,KXUD12514: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,TAG-066,14.0,14.0,0,0.0,GXDA30101: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289715,VAF-022,2.0,2.0,0,0.0,DBVN31945: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,ASI-017,32.0,32.0,0,0.0,IWMO06628: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,ASI-038,1.0,0.0,0,1.0,HSXK17435: Cargo por stock antiguo
+EDOMEX,E-ALESSIA-289769,ASI-070,1.0,1.0,0,0.0,SGGT34319: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,BAJ-030,8.0,8.0,0,0.0,TNWG15293: Componentes insuficientes o saldo menor que el factor | WZHT28663: Componentes insuficientes o saldo menor que el factor | RULH99750: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,BAJ-041,2.0,2.0,0,0.0,QFXU70364: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,CFA-011,2.0,2.0,0,0.0,TUPW86140: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,CLJ-028,1.0,1.0,0,0.0,SMRL12533: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,CLJ-048,5.0,5.0,0,0.0,NBXJ31691: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,ESC-008,1.0,1.0,0,0.0,NIBM84556: Componentes insuficientes o saldo menor que el factor | NIQW88832: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,ESC-014,4.0,4.0,0,0.0,SXIN43920: Componentes insuficientes o saldo menor que el factor | WMDI13190: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,ESC-022,12.0,12.0,0,0.0,DVMJ23482: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,ESC-060,6.0,6.0,0,0.0,YINF89522: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,MAB-001B,9.0,9.0,0,0.0,"MISW34856: Componentes insuficientes o saldo menor que el factor | WXZJ88455: Restricción vigente en Planificación: No puedes enviar stock hasta que mejores las ventas del producto.
+Más información; Impulsar sin venta; Sin venta con stock o compromisos"
+EDOMEX,E-ALESSIA-289769,MAB-018,6.0,0.0,0,6.0,SISC16803: Evitar descarte | OPGH13616: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,MAB-046,10.0,10.0,0,0.0,IASF98857: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,MAB-048,2.0,2.0,0,0.0,FLJN62188: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,MAB-050,7.0,7.0,0,0.0,JHAY63624: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,MAB-052,11.0,11.0,0,0.0,RPJA17442: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,MAB-106,4.0,4.0,0,0.0,YSYP99491: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,RIN-079,3.0,3.0,0,0.0,HBEY66003: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,RIN-095,2.0,2.0,0,0.0,DIEO65210: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,RIN-127,12.0,12.0,0,0.0,GXGZ23917: Componentes insuficientes o saldo menor que el factor | MHIC23870: Componentes insuficientes o saldo menor que el factor | WMJD12742: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,RIN-140,2.0,2.0,0,0.0,LEJZ23929: Componentes insuficientes o saldo menor que el factor | BHSV23972: Componentes insuficientes o saldo menor que el factor | YTRZ23610: Sin venta con stock o compromisos
+EDOMEX,E-ALESSIA-289769,RIN-SH026-GR,1.0,1.0,0,0.0,AGYQ23274: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-022,2.0,2.0,0,0.0,BHJP65070: Componentes insuficientes o saldo menor que el factor | LGIA86384: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,SAD-037RN,13.0,13.0,0,0.0,XSCL96012: Componentes insuficientes o saldo menor que el factor | PSRG32612: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,SAD-039NR,12.0,12.0,0,0.0,YHBO16633: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-042NR,25.0,25.0,0,0.0,FONC60900: Componentes insuficientes o saldo menor que el factor | OQZH00180: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,SAD-044BL,1.0,1.0,0,0.0,MOQX69681: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-056BL,13.0,13.0,0,0.0,BFME62220: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-062GN,1.0,1.0,0,0.0,DROQ99848: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-077RN,1.0,1.0,0,0.0,WKSZ81596: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-080AM,12.0,12.0,0,0.0,XVSU69955: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-080NN,4.0,4.0,0,0.0,XNQR67024: Componentes insuficientes o saldo menor que el factor | MUKC97027: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,SAD-087VN,2.0,2.0,0,0.0,LSZF64691: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,SAD-100,8.0,0.0,0,8.0,HJTY35985: Evitar descarte
+EDOMEX,E-ALESSIA-289769,TAG-025,3.0,3.0,0,0.0,PZOM15613: Componentes insuficientes o saldo menor que el factor | AVHV99208: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289769,TAG-056,9.0,9.0,0,0.0,FHDT96904: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289769,VAF-008,1.0,1.0,0,0.0,SMNX94355: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,ASI-041,6.0,6.0,0,0.0,NFZG99055: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,BAJ-005,10.0,10.0,0,0.0,ANSX22899: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,BAJ-036,36.0,36.0,0,0.0,BKRX16050: Componentes insuficientes o saldo menor que el factor | PFHA17044: Evitar descarte | USVX99998: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,BAJ-053,5.0,5.0,0,0.0,BUOW43805: Componentes insuficientes o saldo menor que el factor | YQRM30822: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,BAJ-056,4.0,4.0,0,0.0,PDCL23509: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,BAJ-075,1.0,1.0,0,0.0,VTGN07022: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CAS-INF-K2003,16.0,16.0,0,0.0,JGCP92584: Componentes insuficientes o saldo menor que el factor | CITF28323: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CLC-008,2.0,2.0,0,0.0,AEOR99560: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CLJ-019,14.0,14.0,0,0.0,UCPQ06093: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CLJ-020,7.0,7.0,0,0.0,KBIM99038: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CLJ-022,7.0,7.0,0,0.0,VRLB98888: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CLJ-038,2.0,2.0,0,0.0,DENT35078: Componentes insuficientes o saldo menor que el factor | TBLI31564: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,CLJ-041,1.0,1.0,0,0.0,EWAP74143: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CLJ-049,2.0,2.0,0,0.0,HRTN89973: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CUS-004,5.0,5.0,0,0.0,WSDL83743: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,CUS-005,1.0,1.0,0,0.0,TTEI35032: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,DIS-042,1.0,1.0,0,0.0,JTXV84489: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,EDI-023,1.0,1.0,0,0.0,MNCF17125: Componentes insuficientes o saldo menor que el factor | CBQU99399: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,EDI-028,50.0,50.0,0,0.0,BFCQ16959: Componentes insuficientes o saldo menor que el factor | JNTX31643: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,EDI-031,3.0,3.0,0,0.0,ICBA54097: Componentes insuficientes o saldo menor que el factor | DEXG31921: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,EDI-032,4.0,4.0,0,0.0,KBIM36725: Componentes insuficientes o saldo menor que el factor | KXQQ31670: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,EDI-040,1.0,1.0,0,0.0,NQBK89788: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-068B,1.0,1.0,0,0.0,FWEM89408: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-085,2.0,2.0,0,0.0,VMTP94607: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-105NE,1.0,1.0,0,0.0,HHNW03111: Componentes insuficientes o saldo menor que el factor | NDZZ89386: Componentes insuficientes o saldo menor que el factor | YIDU31984: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,FAR-120,20.0,20.0,0,0.0,HTFM97711: Componentes insuficientes o saldo menor que el factor | AFQK12579: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,FAR-122AZ,1.0,1.0,0,0.0,MRCW22555: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-133,20.0,20.0,0,0.0,RZLG28381: Componentes insuficientes o saldo menor que el factor | AHII38166: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-143,2.0,2.0,0,0.0,VJTK37491: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-145,8.0,8.0,0,0.0,HUQH87860: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-146,7.0,7.0,0,0.0,YODR23929: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-147,4.0,4.0,0,0.0,HIOV24089: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-150,1.0,1.0,0,0.0,AABI13541: Componentes insuficientes o saldo menor que el factor | EQIA99415: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,FAR-154,3.0,3.0,0,0.0,PVDC35475: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-159,3.0,3.0,0,0.0,SERU31211: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-160,2.0,2.0,0,0.0,QXNK35508: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,FAR-WO047,6.0,6.0,0,0.0,GPCE33162: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,HOR-028,3.0,3.0,0,0.0,WEUV17118: Componentes insuficientes o saldo menor que el factor | XKAM17125: Componentes insuficientes o saldo menor que el factor | UDOQ13126: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,PAC-063,3.0,3.0,0,0.0,PREJ80476: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,PAC-A006,4.0,4.0,0,0.0,THIA22282: Componentes insuficientes o saldo menor que el factor | JJHC99946: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,PAC-A008,2.0,0.0,2,0.0,ZJUA18014: Componentes insuficientes o saldo menor que el factor | IXRJ99470: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,PAC-A011,2.0,2.0,0,0.0,YCIM17207: Componentes insuficientes o saldo menor que el factor | LILA16701: Componentes insuficientes o saldo menor que el factor | YGCO99470: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,PAR-068,1.0,1.0,0,0.0,RHLZ23495: Componentes insuficientes o saldo menor que el factor | XIMQ12742: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,RAD-009,2.0,2.0,0,0.0,HKYT13072: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,RIN-148,12.0,12.0,0,0.0,YWSG65186: Componentes insuficientes o saldo menor que el factor | PKQI24223: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,RIN-149,12.0,12.0,0,0.0,PLEO69756: Componentes insuficientes o saldo menor que el factor | EOJI00200: Restricción vigente en Planificación: Dejaste de ofrecer Full. | GPGT87962: Restricción vigente en Planificación: Dejaste de ofrecer Full.
+EDOMEX,E-ALESSIA-289770,SAD-030,2.0,2.0,0,0.0,MDWD17187: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-046NE,6.0,6.0,0,0.0,WXMQ16890: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-064NE,40.0,40.0,0,0.0,CITF03260: Componentes insuficientes o saldo menor que el factor | MYDP15666: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-072,1.0,1.0,0,0.0,ZUMZ62103: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-093,3.0,3.0,0,0.0,VJJG55699: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-094,5.0,5.0,0,0.0,BABA35937: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-108,11.0,11.0,0,0.0,YNPC35985: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAD-109,28.0,28.0,0,0.0,UVEZ33104: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAL-043,1.0,1.0,0,0.0,OUAI37436: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,SAL-X001,3.0,3.0,0,0.0,KMKF99848: Componentes insuficientes o saldo menor que el factor
+EDOMEX,E-ALESSIA-289770,VAF-006,3.0,0.0,0,3.0,HJTY43313: Planificación desaconseja reponer: Te sugerimos no reponer ya que tienes stock antiguo afectando tus métricas.
+CUERNAVACA,C-TMMP-R5746,REM2343,2.0,2.0,0,0.0,SAUX20451: Componentes insuficientes o saldo menor que el factor | TTCA84750: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM401,10.0,10.0,0,0.0,DCKD21200: Componentes insuficientes o saldo menor que el factor | YSAF93314: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM1684,8.0,8.0,0,0.0,AVRW21237: Componentes insuficientes o saldo menor que el factor | MQEW17731: Excedente | YSAF96451: Excedente
+CUERNAVACA,C-TMMP-R5746,REM2159,2.0,2.0,0,0.0,ZVWY93932: Componentes insuficientes o saldo menor que el factor | SZCM92940: Impulsar sin venta; Sin venta con stock o compromisos | QKQW32770: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM810,2.0,2.0,0,0.0,KGVC07300: Sin venta con stock o compromisos | FZBB96576: Impulsar sin venta; Sin venta con stock o compromisos | PMLZ07080: Impulsar sin venta; Sin venta con stock o compromisos | IIJH05906: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM3306,1.0,1.0,0,0.0,MRUB32762: Componentes insuficientes o saldo menor que el factor | DZOT96894: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM730,42.0,42.0,0,0.0,EUXY20326: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM2183,2.0,2.0,0,0.0,XSIO42153: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM169,2.0,2.0,0,0.0,QEIE20229: Componentes insuficientes o saldo menor que el factor | QHYZ20083: Componentes insuficientes o saldo menor que el factor | TEIY20319: Evitar descarte | GGHX20576: Sin venta con stock o compromisos | CNEY61548: Componentes insuficientes o saldo menor que el factor | YIQM61700: Componentes insuficientes o saldo menor que el factor | JNVU15123: Componentes insuficientes o saldo menor que el factor | FKXU20958: Evitar descarte | ZNLH20342: Impulsar sin venta; Sin venta con stock o compromisos | TTSC07046: Componentes insuficientes o saldo menor que el factor | HEZE62914: Sin venta con stock o compromisos | RKQY62103: Excedente | PJAG06265: Componentes insuficientes o saldo menor que el factor | CUHN21122: Componentes insuficientes o saldo menor que el factor | TNWG19999: Componentes insuficientes o saldo menor que el factor | ANKE07033: Restricción vigente en Planificación: Dejaste de ofrecer Full. | DNSB21263: Componentes insuficientes o saldo menor que el factor | ONWQ94960: Componentes insuficientes o saldo menor que el factor | STUW34388: Restricción vigente en Planificación: Dejaste de ofrecer Full. | HLHP95292: Componentes insuficientes o saldo menor que el factor | MVBG96553: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM705,2.0,0.0,0,2.0,"XWBH21903: Cargo por stock antiguo | QQSL50028: Cobertura, fechas permitidas o renglón ya comprometido | YRTA06659: Componentes insuficientes o saldo menor que el factor | AUFR86366: Cargo por stock antiguo; Impulsar sin venta; Sin venta con stock o compromisos | NWLR21285: Sin venta con stock o compromisos | RKQY95677: Componentes insuficientes o saldo menor que el factor | QVVJ12514: Sin venta con stock o compromisos | OLHY06659: Sin venta con stock o compromisos"
+CUERNAVACA,C-TMMP-R5746,REM2383,5.0,0.0,0,5.0,"FELG22913: Excedente | DHLI21988: Cobertura, fechas permitidas o renglón ya comprometido | NGZJ21394: Impulsar sin venta; Sin venta con stock o compromisos | GUMO20873: Sin venta con stock o compromisos | ZUMZ33266: Sin venta con stock o compromisos | GEDR99824: Restricción vigente en Planificación: Dejaste de ofrecer Full.; Sin venta con stock o compromisos"
+CUERNAVACA,C-TMMP-R5746,REM803,1.0,1.0,0,0.0,BJOJ96272: Sin venta con stock o compromisos | UXLM07014: Componentes insuficientes o saldo menor que el factor | KSWF95758: Impulsar sin venta; Sin venta con stock o compromisos | EKJF06922: Componentes insuficientes o saldo menor que el factor | GKVM93823: Componentes insuficientes o saldo menor que el factor | UHQS96595: Sin venta con stock o compromisos | TSPR07226: Componentes insuficientes o saldo menor que el factor | GOXW06998: Componentes insuficientes o saldo menor que el factor | JGHG72417: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM3930,2.0,2.0,0,0.0,QWRL00114: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM2915,2.0,2.0,0,0.0,XJFG94761: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM1440,1.0,1.0,0,0.0,DSJC92836: Impulsar sin venta; Sin venta con stock o compromisos | AJRU32292: Sin venta con stock o compromisos | VXZQ04308: Componentes insuficientes o saldo menor que el factor | ILZR32864: Impulsar sin venta; Sin venta con stock o compromisos | FHUP92889: Componentes insuficientes o saldo menor que el factor
+CUERNAVACA,C-TMMP-R5746,REM857,4.0,4.0,0,0.0,VPKP96524: Componentes insuficientes o saldo menor que el factor | GUEM06980: Componentes insuficientes o saldo menor que el factor
