@@ -510,7 +510,7 @@ function renderFactura(key,root){
   ${parcialNote([key])}
   ${ADMIN?shareBar('f',key,'Pedido '+F.pedido+' · '+F.title):''}
   ${obsPanel()}
-  <div class="sbar"><input type="search" class="q" placeholder="Buscar código o descripción" aria-label="Buscar código"></div><div class="tools"><label class="sel">Ordenar <select class="so"><option value="env">Por envío más próximo</option><option value="code">Por código</option><option value="caja">Por caja</option><option value="qmax">Más piezas primero</option><option value="qmin">Menos piezas primero</option></select></label>
+  <div class="sbar"><input type="search" class="q" placeholder="Buscar código o descripción" aria-label="Buscar código">${FXX.scanBtn()}</div><div class="tools"><label class="sel">Ordenar <select class="so"><option value="env">Por envío más próximo</option><option value="code">Por código</option><option value="caja">Por caja</option><option value="qmax">Más piezas primero</option><option value="qmin">Menos piezas primero</option></select></label>
   <div class="seg sg"><button data-s="all" aria-pressed="true">Todos</button><button data-s="pend" aria-pressed="false">Pendientes</button><button data-s="done" aria-pressed="false">Separados</button></div>${F.cajas?'<div class="seg vw"><button data-v="caja" aria-pressed="true">Por caja</button><button data-v="code" aria-pressed="false">Por código</button></div>':''}<span class="mono cnt"></span></div>
   ${F.cajas?boxSummary(F):''}
   ${noVino(F)}
@@ -535,7 +535,7 @@ function renderFactura(key,root){
    <div class="top"><span class="code">${esc(i.code)}</span><span class="qty">${fmt(i.qty)} <small>${DATA.facturas[key]&&DATA.facturas[key].encamino?"facturadas":"llegaron"}</small></span></div>
    ${edo?`<div class="bodtag ${i.bod==='G'?'bg':'bm'}">Bodega asignada: ${i.mixed?'grandes y medianos':bodName(i.bod)}</div>`:''}${i.caja?`<div class="bodtag bc">${esc(cjFmt(F,i.caja))}</div>`:''}
    <div class="desc">${esc(i.desc)}</div>${pcLine(F,i)}<div class="rows">${rows}</div>
-   ${obsView(OB.get(i.code))}<div class="cfoot"><label class="tick"><input type="checkbox" data-c="${esc(i.code)}" ${done[i.code]?'checked':''}> Ya separado</label>${obsBtn(i.code,i.code+' · '+i.desc)}</div></div></article>`}
+   ${obsView(OB.get(i.code))}<div class="cfoot"><label class="tick"><input type="checkbox" data-c="${esc(i.code)}" ${done[i.code]?'checked':''}> Ya separado</label>${obsBtn(i.code,i.code+' · '+i.desc)}${FXX.difBtnF(key,i)}</div></div></article>`}
  function draw(){
   const s=q.value.trim().toUpperCase();const o=so.value;
   const cmp=(x,y)=>o==='code'?x.code.localeCompare(y.code):o==='caja'?(x.caja||'~').localeCompare(y.caja||'~',undefined,{numeric:true}):o==='qmax'?y.qty-x.qty:o==='qmin'?x.qty-y.qty:(first(x)-first(y)||x.code.localeCompare(y.code));
@@ -553,7 +553,7 @@ function renderFactura(key,root){
  lst.onchange=e=>{const x=e.target.dataset.bx;if(x){bdone[x]=e.target.checked;store.set(BK,bdone);e.target.closest('.bx').classList.toggle('done',e.target.checked);return}
   const c=e.target.dataset.c;if(!c)return;done[c]=e.target.checked;store.set(KEY,done);if(show!=='all')draw();else e.target.closest('.card').classList.toggle('done',e.target.checked)};
  OB=setupObs(root,'fx-o-f-'+key,()=>`Factura ${F.title} · pedido ${F.pedido}`,()=>{const d=items.filter(i=>done[i.code]).length;return `Avance: ${d} de ${items.length} códigos separados`},new Set(items.map(i=>i.code)),()=>draw());
- draw();
+ draw();FXX.afterFactura(root,key);
 }
 function typeChips(nT){const t=['C','P','S'].filter(x=>nT(x));if(!t.length)return '<div class="tl" hidden></div>';
  return `<div class="legend tl"><button class="chip" data-t="all" aria-pressed="true">Todos</button>${t.map(x=>`<button class="chip k-${TPC[x]}" data-t="${x}" aria-pressed="false">${TPG[x]} <span class="n">${nT(x)}</span></button>`).join('')}<button class="chip" data-t="I" aria-pressed="false">Individuales <span class="n">${nT('I')}</span></button></div>`}
@@ -561,6 +561,185 @@ function typeChips(nT){const t=['C','P','S'].filter(x=>nT(x));if(!t.length)retur
 const ftitle=fk=>DATA.facturas[fk]?`Pedido ${DATA.facturas[fk].pedido} · ${DATA.facturas[fk].title}`:fk;
 const fab=fk=>DATA.facturas[fk]?DATA.facturas[fk].ab:'';
 const cjn=e=>{const m=String(e.comps[0].caja||'').match(/(\d+)/);return m?+m[1]:9999};
+/* ---------- FXX 1.1.5: funciones por usuario, compartir a almacén, diferencias y escaneo ---------- */
+const FXX=(()=>{
+ const inApp=()=>typeof MODE!=='undefined'&&MODE==='app'&&!!(window.FXAPP&&FXAPP.user);
+ const U=()=>{try{return inApp()?FXAPP.user():null}catch(_){return null}};
+ const has=r=>{const u=U();return !!(u&&(u.puede||[]).includes(r))};
+ const isAdmin=()=>typeof ADMIN!=='undefined'&&ADMIN;
+ const DEST={'ALMACEN-CVC':'Almacén Cuernavaca','ALMACEN-G':'Edo. Méx. · grandes','ALMACEN-M':'Edo. Méx. · medianos'};
+ const DEST_BOD={'ALMACEN-CVC':'CUERNAVACA','ALMACEN-G':'EDOMEX','ALMACEN-M':'EDOMEX'};
+ const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(_){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(_){}}};
+ const hex=()=>{const a=new Uint8Array(16);crypto.getRandomValues(a);return [...a].map(x=>x.toString(16).padStart(2,'0')).join('')};
+ const url=()=>String(window.FX_SYNC_URL||'').trim();
+ const getJ=async q=>{const u=url();if(!u)throw Error('La página no está conectada a la hoja de Google.');const r=await fetch(u+(u.includes('?')?'&':'?')+q,{cache:'no-store'});const j=await r.json();if(!j.ok)throw Error(j.error||'Error del servidor');return j};
+ const postJ=async o=>{const u=url();if(!u)throw Error('La página no está conectada a la hoja de Google.');const r=await fetch(u,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(o)});const j=await r.json();if(!j.ok){const e=Error(j.error||'El servidor rechazó la operación.');e.code=j.code;throw e}return j};
+ const toast=t=>{let d=document.querySelector('.fx-toast');if(!d){d=document.createElement('div');d.className='fx-toast';d.setAttribute('role','status');document.body.appendChild(d)}d.textContent=t;d.classList.add('on');clearTimeout(d._t);d._t=setTimeout(()=>d.classList.remove('on'),3200)};
+ const css=`.fx-toast{position:fixed;left:50%;bottom:72px;transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;z-index:9999;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw}.fx-toast.on{opacity:1}
+ .fxshare{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0;padding:10px 12px;border:1px solid var(--line,#ddd);border-radius:10px;background:var(--card,#fff)}.fxshare .btn[aria-pressed=true]{background:#E0242E;color:#fff;border-color:#E0242E}.fxshare form{display:flex;flex-wrap:wrap;gap:6px;width:100%}.fxshare input{padding:7px;border:1px solid #ccc;border-radius:8px;font:inherit}
+ .fxdif{margin-left:6px}.fxdifm{display:block;margin-top:6px;font-size:12px;color:#b0001c;font-weight:600}
+ .fxscan{white-space:nowrap;margin-left:6px}.sbar{display:flex;gap:6px;align-items:center}.sbar .q{flex:1}
+ .fxov{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9990;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:14px;color:#fff;overflow:auto}.fxov video{width:100%;max-width:560px;max-height:52vh;border-radius:12px;background:#000;object-fit:cover}.fxov .fxmarco{position:relative;width:100%;max-width:560px}.fxov .fxmarco i{position:absolute;left:5%;right:5%;top:30%;bottom:30%;border:3px solid #fff;border-radius:10px;box-shadow:0 0 0 999px rgba(0,0,0,.25)}.fxov .fxmarco.ok i{border-color:#3c3}
+ .fxov .fxrow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0;max-width:560px}.fxov .btn{background:#fff;color:#111}.fxov .fxmsg{max-width:560px;text-align:center;font-size:15px;margin:8px 0}.fxov .fxres{background:#fff;color:#111;border-radius:12px;padding:14px;max-width:560px;width:100%;margin-top:8px}.fxres h3{margin:0 0 6px;font-size:20px}.fxres .big{font-size:22px;font-weight:800;margin:6px 0}.fxres .ok{color:#127a2b}.fxres .warn{color:#b0001c}.fxres .ln{border-top:1px solid #eee;padding:8px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between}.fxres input{padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;width:100%}.fxov input[type=search]{padding:9px;border-radius:8px;border:0;font:inherit;width:100%;max-width:560px}
+ .fxdlg label{display:block;margin:8px 0}.fxdlg .opt{display:flex;gap:8px;align-items:flex-start;padding:8px;border:1px solid #ddd;border-radius:8px;margin:6px 0}.fxdlg input[type=number],.fxdlg input[type=text],.fxdlg textarea,.fxdlg select{width:100%;padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;box-sizing:border-box}.fxdlg .lrow{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}`;
+ let cssOn=false;const addCss=()=>{if(cssOn)return;cssOn=true;const s=document.createElement('style');s.textContent=css;document.head.appendChild(s)};
+ /* ---------- funciones por usuario ---------- */
+ const mine=()=>{const d=[];if(has('almacen'))d.push('ALMACEN-CVC');if(has('almacen-g'))d.push('ALMACEN-G');if(has('almacen-m'))d.push('ALMACEN-M');if(has('etiquetas'))d.push('ALMACEN-G','ALMACEN-M');return [...new Set(d)]};
+ const full=()=>!inApp()||isAdmin()||has('compartir')||has('documentos');
+ const seesEnvios=()=>full()||mine().length>0;
+ const labels=()=>isAdmin()||has('compartir')||has('etiquetas');
+ const canTick=()=>!inApp()||has('registrar')||has('compartir')||has('documentos')||has('almacen')||has('almacen-g')||has('almacen-m');
+ const compKey=b=>'fx-comp-'+b;
+ const compCached=b=>LS.get(compKey(b),{at:0,list:[]});
+ async function compLoad(b){try{const j=inApp()?await FXAPP.compartidos():await getJ('tipo=compartidos&bod='+encodeURIComponent(b));LS.set(compKey(b),{at:Date.now(),list:j.compartidos||[]});return j.compartidos||[]}catch(e){return compCached(b).list}}
+ const sharedTo=(b,list)=>{const L=list||compCached(b).list,M=mine();return new Set(L.filter(x=>M.includes(x.destino)).map(x=>String(x.envio)))};
+ function visibleEnvios(keys){if(full())return keys;const b=ISO&&ISO.key||'';const S=sharedTo(b);return keys.filter(k=>S.has(String(k)))}
+ /* ---------- compartir a almacén ---------- */
+ function shareBox(num){if(!(isAdmin()||has('compartir')))return '';addCss();return `<div class="fxshare" data-env="${esc(num)}"><b>Compartir a almacén</b><span class="mini">Cargando…</span></div>`}
+ const cred=b=>{if(inApp())return null;const a=LS.get('fx-of-'+b,null)||LS.get('fx-lu-'+b,null);return a&&a.usuario&&a.clave?a:null};
+ async function shareFill(root,num){const box=root.querySelector('.fxshare');if(!box)return;const b=DATA.envios[num].bod;
+  const dests=Object.keys(DEST).filter(d=>DEST_BOD[d]===b);
+  const paint=(list,msg)=>{const on=new Set(list.filter(x=>String(x.envio)===String(num)).map(x=>x.destino));
+   box.innerHTML=`<b>Compartir a almacén</b>${dests.map(d=>`<button type="button" class="btn" data-dest="${d}" aria-pressed="${on.has(d)}">${DEST[d]}${on.has(d)?' · compartido':''}</button>`).join('')}<span class="mini">${msg||'Toca para compartir o retirar. Lo compartido a Edo. Méx. también lo ve la cuenta de etiquetas.'}</span>`};
+  paint(compCached(b).list);paint(await compLoad(b));
+  box.onclick=async e=>{const t=e.target.closest('[data-dest]');if(!t)return;const dest=t.dataset.dest,activo=t.getAttribute('aria-pressed')!=='true';
+   const go=async c=>{t.disabled=true;try{const j=inApp()?await FXAPP.compartir(num,dest,activo):await postJ({tipo:'compartir',bod:b,usuario:c.usuario,clave:c.clave,envio:num,destino:dest,activo});
+     LS.set(compKey(b),{at:Date.now(),list:j.compartidos||[]});paint(j.compartidos||[],activo?`Envío ${num} compartido a ${DEST[dest]}.`:`Envío ${num} retirado de ${DEST[dest]}.`)}
+    catch(err){if(!inApp()&&/clave|Usuario/i.test(err.message))LS.set('fx-of-'+b,null);paint(compCached(b).list,'No se pudo: '+err.message)}};
+   if(inApp())return go(null);const c=cred(b);if(c)return go(c);
+   box.insertAdjacentHTML('beforeend',`<form class="fxlog"><span class="mini">Entra una vez con tu usuario de ${b==='EDOMEX'?'Edo. Méx.':'Cuernavaca'} (función compartir):</span><input name="u" placeholder="Usuario" autocomplete="username" required><input name="c" type="password" placeholder="Clave" autocomplete="current-password" required><button class="btn pri">Entrar y compartir</button></form>`);
+   const f=box.querySelector('.fxlog');f.querySelector('[name=u]').focus();f.onsubmit=ev=>{ev.preventDefault();const c2={usuario:f.u.value.trim(),clave:f.c.value.trim()};LS.set('fx-of-'+b,c2);go(c2)}};
+ }
+ /* ---------- diferencias ---------- */
+ const CLASES=[['FALTANTE','No lo encontré: no viene en el pedido'],['DANADO','Viene en mal estado'],['SOBRANTE','Llegó de más o no está en la factura']];
+ const CTXT={FALTANTE:'falta',DANADO:'mal estado',SOBRANTE:'de más'};
+ const difKey=b=>'fx-dif-'+b;
+ const refE=(num,no)=>'E|'+num+'|'+no,refF=(key,code)=>'F|'+key+'|'+code;
+ const marks=(b,ref)=>LS.get(difKey(b),[]).filter(x=>x.ref===ref&&x.estado!=='Encontrado');
+ const markTxt=(b,ref)=>{const m=marks(b,ref);return m.length?`<span class="fxdifm">Reportado: ${m.map(x=>x.cant+' '+CTXT[x.clase]).join(' · ')}</span>`:''};
+ function difBtnE(num,e){addCss();const b=DATA.envios[num].bod,r=refE(num,e.no);return `<button type="button" class="btn fxdif" data-dif="${esc(r)}">Reportar</button>${markTxt(b,r)}`}
+ function difBtnF(key,i){addCss();const b=DATA.facturas[key].bod,r=refF(key,i.code);return `<button type="button" class="btn fxdif" data-dif="${esc(r)}">Reportar</button>${markTxt(b,r)}`}
+ const provOf=fk=>{const F=DATA.facturas[fk];return F?String(F.title).split(' · ')[0]:''};
+ function ctxOf(ref){const [t,k,x]=ref.split('|');
+  if(t==='E'){const E=DATA.envios[k];const e=E&&E.lines.find(l=>String(l.no)===String(x));if(!e)return null;
+   return {bod:E.bod,ref,label:'#'+e.no+' · '+e.cml,titulo:e.tit,envio:k,piezas:e.comps.map(c=>({code:c.code,fk:c.fk,pz:c.pz}))}}
+  if(t==='F'){const F=DATA.facturas[k];const i=F&&F.items.find(z=>z.code===x);if(!i)return null;return {bod:F.bod,ref,label:i.code,titulo:i.desc,envio:'',piezas:[{code:i.code,fk:k,pz:i.qty}]}}
+  if(t==='X'){return {bod:k,ref,label:x,titulo:'',envio:'',piezas:[{code:x,fk:'',pz:1}],libre:true}}
+  return null}
+ const shrinkImg=f=>new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,1280/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);ok(c.toDataURL('image/jpeg',.7))};im.onerror=no;im.src=r.result};r.onerror=no;r.readAsDataURL(f)});
+ function difOpen(ref,opts={}){const C=ctxOf(ref);if(!C)return;addCss();const prev=marks(C.bod,ref);
+  const facts=opts.facts||[...new Set(C.piezas.map(p=>p.fk))].filter(Boolean);
+  const d=dialog(`<div class="fxdlg"><h2 style="margin:0 0 4px">Reportar diferencia</h2><div class="mini"><b>${esc(C.label)}</b>${C.titulo?' · '+esc(C.titulo):''}</div>
+   ${prev.length?`<div class="note" style="margin:8px 0">Ya reportado en este equipo: ${prev.map(p=>`${p.cant} ${CTXT[p.clase]} <button type="button" class="btn" data-found="${esc(p.id)}">Ya lo encontré</button>`).join(' · ')}</div>`:''}
+   ${C.piezas.length>1?`<label>Pieza<select name="pz">${C.piezas.map((p,i)=>`<option value="${i}">${esc(p.code)} · ${fmt(p.pz)} pz · ${esc(provOf(p.fk))}</option>`).join('')}</select></label>`:''}
+   ${C.libre?`<label>Factura<select name="fk">${facts.map(f=>`<option value="${esc(f)}">${esc(ftitle(f))}</option>`).join('')}<option value="">No sé</option></select></label>`:''}
+   ${CLASES.map(([v,t],i)=>`<label class="opt"><input type="radio" name="cl" value="${v}" ${(opts.clase||'FALTANTE')===v?'checked':''}> <span>${t}</span></label>`).join('')}
+   <label>Cantidad de piezas<input type="number" name="n" min="1" step="1" inputmode="numeric" value="${Math.max(1,Math.round(opts.cant||C.piezas[0].pz||1))}" required></label>
+   <label>Nota (opcional)<textarea name="nota" rows="2" maxlength="500" placeholder="Por ejemplo: la caja venía abierta"></textarea></label>
+   <label>Foto (opcional, recomendada si viene en mal estado)<input type="file" name="foto" accept="image/*" capture="environment"></label>
+   ${inApp()?'':`<label>Tu nombre<input type="text" name="who" maxlength="60" required value="${esc(LS.get('fx-who-s','')||(()=>{try{return localStorage.getItem('fx-who')||''}catch(_){return ''}})())}"></label>`}
+   <p class="mini fxerr" style="color:#b0001c"></p>
+   <div class="lrow"><button type="button" class="btn" data-x>Cancelar</button><button type="button" class="btn pri" data-ok>Enviar reporte</button></div></div>`);
+  d.querySelector('[data-x]').onclick=closeDialog;
+  d.querySelectorAll('[data-found]').forEach(bt=>bt.onclick=async()=>{bt.disabled=true;try{await difState(C.bod,bt.dataset.found,'Encontrado',d.querySelector('[name=who]')?.value);closeDialog();toast('Marcado como encontrado.');refresh(ref)}catch(e){d.querySelector('.fxerr').textContent=e.message;bt.disabled=false}});
+  d.querySelector('[data-ok]').onclick=async ev=>{const bt=ev.target,err=d.querySelector('.fxerr');err.textContent='';
+   const p=C.piezas[Number(d.querySelector('[name=pz]')?.value||0)],n=Number(d.querySelector('[name=n]').value),cl=(d.querySelector('[name=cl]:checked')||{}).value;
+   const who=d.querySelector('[name=who]');if(who&&!who.value.trim()){err.textContent='Escribe tu nombre.';return}
+   if(!Number.isInteger(n)||n<1){err.textContent='Revisa la cantidad.';return}
+   bt.disabled=true;bt.textContent='Enviando…';
+   try{const fk=C.libre?(d.querySelector('[name=fk]')?.value||''):p.fk;const F=DATA.facturas[fk];const ff=d.querySelector('[name=foto]').files[0];
+    const o={id:'DF'+hex(),clase:cl,cant:n,prov:fk?provOf(fk):(opts.prov||''),pedido:F?String(F.pedido):'',fact:fk,codigo:p.code,titulo:C.titulo,envio:C.envio,nota:d.querySelector('[name=nota]').value.trim(),foto:ff?await shrinkImg(ff):''};
+    if(who){LS.set('fx-who-s',who.value.trim());try{localStorage.setItem('fx-who',who.value.trim())}catch(_){}}
+    await difSend(C.bod,o,who&&who.value.trim());
+    const L=LS.get(difKey(C.bod),[]);L.push({id:o.id,ref,clase:cl,cant:n,at:Date.now()});LS.set(difKey(C.bod),L.slice(-500));
+    closeDialog();toast('Reporte guardado'+(inApp()?'. Se envía al sincronizar.':'.'));refresh(ref)}
+   catch(e){err.textContent='No se pudo guardar: '+e.message;bt.disabled=false;bt.textContent='Enviar reporte'}};
+ }
+ function refresh(ref){document.querySelectorAll('[data-dif]').forEach(b=>{if(b.dataset.dif!==ref)return;const C=ctxOf(ref);const n=b.nextElementSibling;if(n&&n.classList.contains('fxdifm'))n.remove();b.insertAdjacentHTML('afterend',markTxt(C.bod,ref))})}
+ const QK='fx-difq';
+ async function difSend(bod,o,who){
+  if(inApp())return FXAPP.diferencia(o);
+  const body={tipo:'diferencia',bod,who,...o};
+  try{return await postJ(body)}catch(e){if(e.code)throw e;const q=LS.get(QK,[]);q.push(body);LS.set(QK,q);return {ok:true,pendiente:true}}}
+ async function difFlush(){const q=LS.get(QK,[]);if(!q.length||!url())return;const keep=[];for(const b of q){try{await postJ(b)}catch(e){if(!e.code)keep.push(b)}}LS.set(QK,keep)}
+ async function difState(bod,id,estado,who){if(inApp())return FXAPP.diferenciaEstado(id,estado);await postJ({tipo:'diferencia_estado',bod,who:who||LS.get('fx-who-s','')||'almacén',id,estado});const L=LS.get(difKey(bod),[]);const x=L.find(z=>z.id===id);if(x)x.estado=estado;LS.set(difKey(bod),L)}
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-dif]');if(b){e.preventDefault();difOpen(b.dataset.dif)}});
+ addEventListener('online',()=>difFlush());setTimeout(()=>difFlush().catch(()=>{}),4000);
+ /* ---------- escaneo ---------- */
+ const scanBtn=()=>{addCss();return `<button type="button" class="btn fxscan" aria-label="Escanear código de barras o QR">Escanear</button>`};
+ const esLote=t=>/^S\d{3}[A-Z]?-[A-Z]{3}\d{2}$/.test(t);
+ const tokens=u=>u.split(/[^A-Z0-9\-\.\/]+/).map(x=>x.replace(/^[\-\.\/]+|[\-\.\/]+$/g,'')).filter(Boolean);
+ const MAPK='fx-scanmap';
+ async function mapLoad(){try{const j=inApp()?await FXAPP.scanMap():await getJ('tipo=scan');LS.set(MAPK,j.codigos||{})}catch(_){}}
+ function resolve(t,IDX){const u=String(t).toUpperCase().trim();const M=LS.get(MAPK,{});if(M[u]&&IDX[String(M[u].codigo).toUpperCase()])return String(M[u].codigo).toUpperCase();if(IDX[u])return u;
+  const tk=tokens(u).filter(x=>!esLote(x)&&/[0-9\-]/.test(x));
+  for(const k of tk){for(const v of [k,'W-'+k,'EN'+k,k.replace(/^EN(?=[A-Z]{3}-)/,''),k.replace(/^W-/,'')])if(IDX[v])return v;if(M[k]&&IDX[String(M[k].codigo).toUpperCase()])return String(M[k].codigo).toUpperCase()}
+  for(const k of tk){const s=k.replace(/^0+/,'');if(s.length>3&&IDX[s])return s}return null}
+ const probable=t=>{const tk=tokens(String(t).toUpperCase().trim()).filter(x=>!esLote(x)&&/[0-9]/.test(x)&&x.length>=4);return tk.length?tk[0]:String(t).trim().slice(0,60)};
+ let ZXP=null;const loadZX=()=>ZXP||(ZXP=new Promise(ok=>{if(window.ZXing)return ok(true);const add=(src,next)=>{const s=document.createElement('script');s.src=src;s.onload=()=>ok(!!window.ZXing);s.onerror=next;document.head.appendChild(s)};add('zxing.min.js',()=>add('https://cdn.jsdelivr.net/npm/@zxing/library@0.21.3/umd/index.min.js',()=>ok(false)))}));
+ let BD=null;async function detector(){if(BD!==null)return BD;try{if('BarcodeDetector' in window){const f=await BarcodeDetector.getSupportedFormats();const ok=['code_128','code_39','code_93','qr_code','ean_13','ean_8','upc_a','upc_e','itf','data_matrix','codabar'].filter(x=>f.includes(x));BD=ok.includes('code_128')?new BarcodeDetector({formats:ok}):false}else BD=false}catch(_){BD=false}if(!BD)await loadZX();return BD}
+ async function decode(c){if(BD)return (await BD.detect(c)).map(x=>x.rawValue);if(window.ZXing){try{const rd=new ZXing.MultiFormatReader();const H=new Map();H.set(ZXing.DecodeHintType.TRY_HARDER,true);rd.setHints(H);return [rd.decode(new ZXing.BinaryBitmap(new ZXing.HybridBinarizer(new ZXing.HTMLCanvasElementLuminanceSource(c)))).getText()]}catch(_){return []}}return []}
+ let CV=null;const frame=(v,full)=>{const vw=v.videoWidth,vh=v.videoHeight;if(!vw)return null;let sx=0,sy=0,sw=vw,sh=vh;if(!full){sw=Math.round(vw*.9);sh=Math.round(vh*(vw>vh?.6:.4));sx=(vw-sw)/2;sy=(vh-sh)/2}const k=Math.min(1,1100/Math.max(sw,sh));CV=CV||document.createElement('canvas');CV.width=Math.round(sw*k);CV.height=Math.round(sh*k);CV.getContext('2d',{willReadFrequently:true}).drawImage(v,sx,sy,sw,sh,0,0,CV.width,CV.height);return CV};
+ const vib=p=>{try{navigator.vibrate&&navigator.vibrate(p)}catch(_){}};
+ /* ctx: {title, IDX:{CODE:[...]}, onHit(code,raw,box), onMiss(raw,box)} */
+ function scan(ctx){addCss();mapLoad();let st=null,live=false,t=0,full=false,last='',lastN=0;
+  const ov=document.createElement('div');ov.className='fxov';ov.innerHTML=`<div class="fxmsg"><b>${esc(ctx.title)}</b><br>Apunta al código de barras o QR de la pieza o de la caja.</div><div class="fxmarco"><video playsinline muted></video><i></i></div><div class="fxmsg fxest"></div>
+   <div class="fxrow"><button type="button" class="btn" data-a="torch" hidden>Linterna</button><button type="button" class="btn" data-a="foto">Tomar foto</button><button type="button" class="btn" data-a="close">Cerrar</button></div>
+   <input type="search" class="fxman" placeholder="O escribe el código y presiona Enter" autocapitalize="characters" spellcheck="false"><input type="file" accept="image/*" capture="environment" hidden><div class="fxres" hidden></div>`;
+  document.body.appendChild(ov);const vid=ov.querySelector('video'),est=ov.querySelector('.fxest'),res=ov.querySelector('.fxres'),fin=ov.querySelector('input[type=file]'),man=ov.querySelector('.fxman');
+  const stop=()=>{live=false;clearTimeout(t);if(st)st.getTracks().forEach(x=>{try{x.stop()}catch(_){}});st=null;try{vid.pause();vid.srcObject=null}catch(_){}};
+  const close=()=>{stop();ov.remove();ctx.onClose&&ctx.onClose()};
+  const show=raw=>{stop();ov.querySelector('.fxmarco').hidden=true;res.hidden=false;const code=resolve(raw,ctx.IDX);vib(code?120:[200,100,200]);
+   res.innerHTML='';if(code)ctx.onHit(code,raw,res,again,close);else ctx.onMiss(raw,res,again,close);res.scrollIntoView({block:'nearest'})};
+  const again=()=>{res.hidden=true;ov.querySelector('.fxmarco').hidden=false;man.value='';start()};
+  const pick=r=>{const good=r.filter(x=>resolve(x,ctx.IDX));if(good.length)return good[0];const tk=r.filter(x=>tokens(String(x).toUpperCase()).some(k=>!esLote(k)&&/[0-9]/.test(k)&&k.length>=4));if(!tk.length){est.textContent='Ese código solo trae el lote. Apunta al código de la pieza.';return null}if(tk[0]===last)lastN++;else{last=tk[0];lastN=1}est.textContent='Leyendo: '+String(tk[0]).slice(0,30);return lastN>=2?tk[0]:null};
+  const loop=async()=>{if(!live)return;if(vid.readyState<2){t=setTimeout(loop,100);return}full=!full;const c=frame(vid,full);let r=[];try{r=c?await decode(c):[]}catch(_){}if(!live)return;if(r.length){const p=pick(r);if(p){ov.querySelector('.fxmarco').classList.add('ok');setTimeout(()=>{ov.querySelector('.fxmarco').classList.remove('ok');show(p)},200);return}}t=setTimeout(loop,BD?60:90)};
+  async function start(){est.textContent='Abriendo cámara…';await detector();if(!BD&&!window.ZXing){est.textContent='Este equipo no puede leer códigos sin internet la primera vez. Escribe el código.';return}
+   if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){est.textContent='La cámara en vivo no está disponible. Usa Tomar foto o escribe el código.';return}
+   try{st=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:'environment'},width:{ideal:1920},height:{ideal:1080}}});vid.srcObject=st;await vid.play();live=true;est.textContent='Buscando código…';
+    const tr=st.getVideoTracks()[0];try{const cp=tr.getCapabilities?tr.getCapabilities():{};if(cp.focusMode&&cp.focusMode.includes('continuous'))tr.applyConstraints({advanced:[{focusMode:'continuous'}]}).catch(()=>{});if(cp.torch)ov.querySelector('[data-a=torch]').hidden=false}catch(_){}loop()}
+   catch(e){est.textContent='No se pudo abrir la cámara'+(e&&e.name==='NotAllowedError'?' (falta dar permiso de cámara)':'')+'. Usa Tomar foto o escribe el código.'}}
+  let torch=false;ov.onclick=e=>{const a=e.target.closest('[data-a]');if(!a)return;if(a.dataset.a==='close')close();if(a.dataset.a==='foto'){stop();fin.click()}if(a.dataset.a==='torch'&&st){torch=!torch;st.getVideoTracks()[0].applyConstraints({advanced:[{torch}]}).catch(()=>{});a.textContent=torch?'Apagar luz':'Linterna'}};
+  fin.onchange=async()=>{const f=fin.files[0];if(!f)return;est.textContent='Leyendo foto…';await detector();const im=new Image();im.onload=async()=>{let out=[];for(const m of [1600,1000]){const k=Math.min(2.5,m/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d',{willReadFrequently:true}).drawImage(im,0,0,c.width,c.height);try{out=out.concat(await decode(c))}catch(_){}if(out.some(x=>resolve(x,ctx.IDX)))break}
+    fin.value='';if(!out.length){est.textContent='No se encontró ningún código en la foto. Intenta otra con el código derecho y buena luz, o escríbelo.';return}show(out.find(x=>resolve(x,ctx.IDX))||out[0])};im.src=URL.createObjectURL(f)};
+  man.onkeydown=e=>{if(e.key==='Enter'&&man.value.trim()){e.preventDefault();show(man.value.trim())}};
+  start()}
+ const learnBox=(raw,IDX,bod,after)=>{const opts=Object.keys(IDX).sort();return `<div class="ln" style="display:block"><b>¿Es un código de otro formato?</b><div class="mini">Elige el producto y la próxima vez se reconocerá solo.</div><input type="search" class="fxlq" list="fxll" placeholder="Escribe parte del código"><datalist id="fxll">${opts.slice(0,3000).map(o=>`<option value="${esc(o)}">`).join('')}</datalist><button type="button" class="btn" data-learn="${esc(raw)}">Guardar relación</button></div>`};
+ function wireLearn(box,raw,IDX,bod,onDone){const b=box.querySelector('[data-learn]');if(!b)return;b.onclick=async()=>{const v=box.querySelector('.fxlq').value.trim().toUpperCase();if(!IDX[v]){toast('Elige un código de la lista.');return}
+  const M=LS.get(MAPK,{});M[String(raw).toUpperCase().trim()]={codigo:v,prov:''};LS.set(MAPK,M);b.disabled=true;
+  try{if(inApp())await FXAPP.scanLearn({leido:String(raw).trim(),prov:'',codigo:v});else await postJ({tipo:'scan_aprender',bod,who:LS.get('fx-who-s','')||(()=>{try{return localStorage.getItem('fx-who')}catch(_){return ''}})()||'almacén',leido:String(raw).trim(),prov:'',codigo:v})}catch(e){toast('Se guardó en este equipo; no se pudo enviar: '+e.message)}
+  onDone(v)}}
+ const seen={};const bump=k=>(seen[k]=(seen[k]||0)+1);
+ function afterEnvio(root,num,sec){shareFill(root,num);const btn=root.querySelector('.fxscan');if(!btn)return;const E=DATA.envios[num];const q=root.querySelector('.q');
+  btn.onclick=()=>{const IDX={};E.lines.forEach(e=>{e.comps.forEach(c=>{if(sec&&c.fk!==sec)return;const k=c.code.toUpperCase();(IDX[k]=IDX[k]||[]).push({e,c})});(IDX[e.cml]=IDX[e.cml]||[]).push({e,c:e.comps[0],ml:true})});
+   const facts=[...new Set(E.lines.flatMap(e=>e.comps.map(c=>c.fk)))];const other={};facts.forEach(fk=>{const F=DATA.facturas[fk];if(F)F.items.forEach(i=>{other[i.code.toUpperCase()]={fk,i}})});
+   const ALL=Object.assign({},Object.fromEntries(Object.keys(other).map(k=>[k,1])),IDX);
+   scan({title:`Envío ${num}${sec?' · '+ftitle(sec):''}`,IDX:ALL,
+    onHit:(code,raw,box,again,close)=>{const hits=IDX[code];
+     if(hits){const n=bump(num+'|'+code);const pz=hits.reduce((s,h)=>s+(h.ml?0:h.c.pz),0);
+      box.innerHTML=`<h3 class="ok">Va en este envío</h3><div class="big">${esc(code)}</div><div class="mini">Escaneado ${n} ${n===1?'vez':'veces'} en esta sesión${pz?' · se necesitan '+fmt(pz)+' pz en total':''}</div>`+hits.map(h=>`<div class="ln"><span><b>#${h.e.no}</b> · ${esc(h.e.cml)} · ${fmt(h.e.u)} u. ML${h.ml?'':' · '+esc(h.c.code)+' '+fmt(h.c.pz)+' pz'}${h.c.caja?' · '+esc(cjItemFmt(h.c.fk,h.c)):''}${h.e.tp==='C'?' · <b>compuesto</b>: junta '+esc(h.e.comps.map(c=>c.code).join(' + ')):''}</span><span><button type="button" class="btn" data-go="${h.e.no}">Ver</button></span></div>`).join('')+`<div class="fxrow"><button type="button" class="btn pri" data-a2="again">Escanear otro</button><button type="button" class="btn" data-a2="rep">Reportar</button><button type="button" class="btn" data-a2="close">Cerrar</button></div>`;
+      box.onclick=e=>{const g=e.target.closest('[data-go]');if(g){close();q.value='#'+g.dataset.go;q.dispatchEvent(new Event('input'));return}const a=e.target.closest('[data-a2]');if(!a)return;if(a.dataset.a2==='again')again();if(a.dataset.a2==='close')close();if(a.dataset.a2==='rep'){close();difOpen(refE(num,hits[0].e.no))}};return}
+     const o=other[code],ds=o.i.dest||[];
+     box.innerHTML=`<h3 class="warn">No va en este envío</h3><div class="big">${esc(code)}</div><div class="mini">${esc(ftitle(o.fk))} · ${esc(o.i.desc)}</div>`+(ds.length?ds.map(d=>`<div class="ln"><span>${d.env.startsWith('S')?'Ya salió':'Va en el envío <b>'+esc(d.env)+'</b>'+(EM[d.env]?' · '+esc(EM[d.env].dia):'')}</span><b>${fmt(d.pz)} pz</b></div>`).join(''):'')+(o.i.stay>0?`<div class="ln"><span>Se queda en bodega</span><b>${fmt(o.i.stay)} pz</b></div>`:'')+`<div class="fxrow"><button type="button" class="btn pri" data-a2="again">Escanear otro</button><button type="button" class="btn" data-a2="close">Cerrar</button></div>`;
+     box.onclick=e=>{const a=e.target.closest('[data-a2]');if(!a)return;if(a.dataset.a2==='again')again();else close()}},
+    onMiss:(raw,box,again,close)=>{const p=probable(raw);box.innerHTML=`<h3 class="warn">No está en este envío ni en sus facturas</h3><div class="big">${esc(p)}</div><div class="mini">Leído: ${esc(String(raw).slice(0,120))}</div>`+learnBox(raw,IDX,E.bod)+`<div class="fxrow"><button type="button" class="btn pri" data-a2="again">Escanear otro</button><button type="button" class="btn" data-a2="rep">Reportar: llegó de más</button><button type="button" class="btn" data-a2="close">Cerrar</button></div>`;
+     wireLearn(box,raw,IDX,E.bod,v=>{close();q.value=v;q.dispatchEvent(new Event('input'));toast('Relación guardada: '+v)});
+     box.onclick=e=>{const a=e.target.closest('[data-a2]');if(!a)return;if(a.dataset.a2==='again')again();if(a.dataset.a2==='close')close();if(a.dataset.a2==='rep'){close();difOpen('X|'+E.bod+'|'+p,{clase:'SOBRANTE',cant:1,facts})}}}})}}
+ function afterFactura(root,key){const btn=root.querySelector('.fxscan');if(!btn)return;const F=DATA.facturas[key];const q=root.querySelector('.q');
+  btn.onclick=()=>{const IDX={};F.items.forEach(i=>{(IDX[i.code.toUpperCase()]=IDX[i.code.toUpperCase()]||[]).push(i)});
+   scan({title:F.title+' · pedido '+F.pedido,IDX,
+    onHit:(code,raw,box,again,close)=>{const i=IDX[code][0],n=bump(key+'|'+code),ds=i.dest||[];
+     box.innerHTML=`<h3 class="ok">Viene en esta factura</h3><div class="big">${esc(code)}</div><div class="mini">${esc(i.desc)} · ${fmt(i.qty)} pz · escaneado ${n} ${n===1?'vez':'veces'}${i.caja?' · '+esc(cjItemFmt(F,i)):''}</div>`+ds.map(d=>`<div class="ln"><span>${d.env.startsWith('S')?'Ya salió':'Envío <b>'+esc(d.env)+'</b>'+(EM[d.env]?' · '+esc(EM[d.env].dia)+' · '+esc(EM[d.env].dest):'')}</span><b>${fmt(d.pz)} pz</b></div>`).join('')+(i.stay>0?`<div class="ln"><span>Se queda en bodega</span><b>${fmt(i.stay)} pz</b></div>`:'')+`<div class="fxrow"><button type="button" class="btn pri" data-a2="again">Escanear otro</button><button type="button" class="btn" data-a2="ver">Ver en la lista</button><button type="button" class="btn" data-a2="rep">Reportar</button><button type="button" class="btn" data-a2="close">Cerrar</button></div>`;
+     box.onclick=e=>{const a=e.target.closest('[data-a2]');if(!a)return;const v=a.dataset.a2;if(v==='again')return again();close();if(v==='ver'){q.value=i.code;q.dispatchEvent(new Event('input'))}if(v==='rep')difOpen(refF(key,i.code))}},
+    onMiss:(raw,box,again,close)=>{const p=probable(raw);box.innerHTML=`<h3 class="warn">No viene en esta factura</h3><div class="big">${esc(p)}</div><div class="mini">Leído: ${esc(String(raw).slice(0,120))}</div>`+learnBox(raw,IDX,F.bod)+`<div class="fxrow"><button type="button" class="btn pri" data-a2="again">Escanear otro</button><button type="button" class="btn" data-a2="rep">Reportar: llegó de más</button><button type="button" class="btn" data-a2="close">Cerrar</button></div>`;
+     wireLearn(box,raw,IDX,F.bod,v=>{close();q.value=v;q.dispatchEvent(new Event('input'));toast('Relación guardada: '+v)});
+     box.onclick=e=>{const a=e.target.closest('[data-a2]');if(!a)return;if(a.dataset.a2==='again')again();if(a.dataset.a2==='close')close();if(a.dataset.a2==='rep'){close();difOpen('X|'+F.bod+'|'+p,{clase:'SOBRANTE',cant:1,facts:[key]})}}}})}}
+ const seesRecepcion=()=>!inApp()||has('registrar')||has('autorizar')||has('compartir')||has('documentos');
+ const visSet=()=>new Set(visibleEnvios(Object.keys(DATA.envios)));
+ const envOk=k=>full()||visSet().has(String(k));
+ const factOk=k=>{if(full())return true;const V=visSet();return [...V].some(n=>DATA.envios[n]&&DATA.envios[n].lines.some(e=>e.comps.some(c=>c.fk===k)))};
+ return {has,full,mine,seesEnvios,seesRecepcion,labels,canTick,visibleEnvios,envOk,factOk,compLoad,compCached,shareBox,difBtnE,difBtnF,difOpen,scanBtn,afterEnvio,afterFactura,DEST};
+})();
 function renderEnvio(num,root,sec){
  const E=DATA.envios[num];const m=EM[num];let OB;const KEY='fx-e-'+num;let done=store.get(KEY);let show='all',dfil='all',tfil='all';
  const env=sec?E.lines.filter(e=>e.comps.some(c=>c.fk===sec)):E.lines;
@@ -579,11 +758,11 @@ function renderEnvio(num,root,sec){
  root.innerHTML=`<div class="docHead"><div><div class="eyebrow">Envío a Full · ${edo?'Edo. Méx. · bodega de '+(m.size==='G'?'grandes':'medianos'):'Cuernavaca'}</div><h1>Envío ${num} · ${m.dia}</h1>${sec?`<div class="sechead">Solo esta sección: ${blogo(ftitle(sec))}<b>${esc(ftitle(sec))}</b></div>`:''}</div>
   <div class="meta"><span>Destino <b>${m.dest}</b>${edo?(m.size==='G'?' (grande / extragrande)':' (pequeño / mediano)'):''}</span><span><b>${fmt(tot)}</b> unidades ML${!sec&&m.meta?' de '+fmt(m.meta):''}</span></div></div>
   <div class="prog2"><div class="ptxt"><span><b class="dn">0</b> de <b>${env.length}</b> publicaciones surtidas</span><span><b class="du">0</b> de <b>${fmt(tot)}</b> unidades surtidas</span><b class="dp">0%</b></div><div class="pbar" role="progressbar" aria-label="Avance de surtido" aria-valuemin="0" aria-valuemax="100"><i class="dpi"></i></div></div>
-  ${ADMIN?shareBar('e',num,'Envío '+num+' · '+m.dia+' · '+m.dest)+sectionLinks(num,docs,env):''}
-  <div class="sbar"><div class="stk"><span class="stt"><b>Envío ${num}</b> · ${esc(m.dia)} · ${esc(m.dest)}${sec?` · <b>Sección ${esc(ftitle(sec))}</b>`:''}</span><span class="stsel"></span><span class="stprog mono"></span><span class="stgrp"></span></div><input type="search" class="q" placeholder="Buscar Código ML, código de proveedor, caja o #" aria-label="Buscar código"></div><div class="tools"><label class="sel">Ordenar <select class="so"><option value="fact">Por número de etiqueta</option><option value="caja">Por caja</option><option value="code">Por código de proveedor</option><option value="cml">Por Código ML</option><option value="qmax">Más unidades primero</option><option value="qmin">Menos unidades primero</option></select></label>
+  ${ADMIN?shareBar('e',num,'Envío '+num+' · '+m.dia+' · '+m.dest)+sectionLinks(num,docs,env):''}${FXX.shareBox(num)}
+  <div class="sbar"><div class="stk"><span class="stt"><b>Envío ${num}</b> · ${esc(m.dia)} · ${esc(m.dest)}${sec?` · <b>Sección ${esc(ftitle(sec))}</b>`:''}</span><span class="stsel"></span><span class="stprog mono"></span><span class="stgrp"></span></div><input type="search" class="q" placeholder="Buscar Código ML, código de proveedor, caja o #" aria-label="Buscar código">${FXX.scanBtn()}</div><div class="tools"><label class="sel">Ordenar <select class="so"><option value="fact">Por número de etiqueta</option><option value="caja">Por caja</option><option value="code">Por código de proveedor</option><option value="cml">Por Código ML</option><option value="qmax">Más unidades primero</option><option value="qmin">Menos unidades primero</option></select></label>
   <div class="seg sg"><button data-s="all" aria-pressed="true">Todos</button><button data-s="pend" aria-pressed="false">Pendientes</button><button data-s="done" aria-pressed="false">Surtidos</button></div><span class="mono cnt"></span></div>
   ${obsPanel()}
-  ${ADMIN?labelsPanel(num,scopes):''}
+  ${FXX.labels()?labelsPanel(num,scopes):''}
   ${typeChips(nT)}
   ${!sec&&docs.length>1?`<div class="bar">${docs.map(d=>`<span style="width:${uOf(d)/tot*100}%;background:var(${colr(d)})"></span>`).join('')}</div>
   <div class="legend dl"><button class="chip" data-d="all" aria-pressed="true">Todas las facturas <span class="n">${fmt(tot)} u</span></button>${docs.map(d=>`<button class="chip" data-d="${esc(d)}" aria-pressed="false"><span style="width:10px;height:10px;border-radius:3px;background:var(${colr(d)})"></span>${blogo(ftitle(d))}${esc(ftitle(d))} <span class="n">${fmt(uOf(d))} u</span></button>`).join('')}</div>`:'<div class="dl" hidden></div>'}
@@ -607,7 +786,7 @@ const xnote=e=>{const fks=[...new Set(e.comps.map(c=>c.fk))];if(e.tp!=='C'||fks.
    <div class="desc">${esc(e.tit)}</div>
    <div class="rows">${e.comps.map((c,ix)=>{const other=sec&&c.fk!==sec;return `<div class="row c-next${other?' dim':''}"><span class="lbl mono">${e.tp==='C'?`Pieza ${ix+1}: `:''}${esc(c.code)}</span><span class="det">${c.caja?esc(cjFmt(c.fk,c.caja))+' · ':''}${blogo(ftitle(c.fk))}${esc(ftitle(c.fk))}${other?` · <b class="nohere">NO la saques aquí: se saca en la sección ${esc(fsn(c.fk))}</b>`:''}</span><span class="pz">${fmt(c.pz)} pz</span></div>`}).join('')}</div>
    ${xnote(e)}
-   ${obsView(OB.get(id(e)))}<div class="cfoot"><label class="tick"><input type="checkbox" data-k="${esc(id(e))}" ${done[id(e)]?'checked':''}> Surtido</label>${obsBtn(id(e),'#'+e.no+' '+e.cml+' · '+e.comps.map(c=>c.code).join(' + '))}</div></div></article>`};
+   ${obsView(OB.get(id(e)))}<div class="cfoot"><label class="tick"><input type="checkbox" data-k="${esc(id(e))}" ${done[id(e)]?'checked':''}> Surtido</label>${obsBtn(id(e),'#'+e.no+' '+e.cml+' · '+e.comps.map(c=>c.code).join(' + '))}${FXX.difBtnE(num,e)}</div></div></article>`};
  function draw(){
   const s=q.value.trim().toUpperCase();const sn=s.replace(/^#/,'');
   const rows=env.filter(e=>(dfil==='all'||e.comps.some(c=>c.fk===dfil))&&(tfil==='all'||e.tp===tfil)&&(show==='all'||(show==='done')===!!done[id(e)])&&(!s||e.cml.includes(s)||String(e.no)===sn||e.comps.some(c=>c.code.toUpperCase().includes(s)||String(c.caja).toUpperCase()===s)||String(e.tit).toUpperCase().includes(s))).sort(C[so.value]);
@@ -638,7 +817,7 @@ const xnote=e=>{const fks=[...new Set(e.comps.map(c=>c.fk))];if(e.tp!=='C'||fks.
  window.addEventListener('scroll',stGrp,{passive:true});
  const _draw=draw;draw=function(){_draw();stUpd();stGrp()};const _count=count;
  root.addEventListener('change',()=>setTimeout(stUpd,0));root.addEventListener('click',()=>setTimeout(stUpd,0));
- count();draw();setupLabels(root,num,scopes);
+ count();draw();setupLabels(root,num,scopes);FXX.afterEnvio(root,num,sec);
 }
 function sectionLinks(num,docs,env){
  const rows=[{k:'e:'+num,name:`Todo el envío ${num}`,lines:env,f:null}].concat(docs.map(f=>({k:`e:${num}|${f}`,name:ftitle(f),f,lines:env.filter(e=>e.comps.some(c=>c.fk===f))})));
