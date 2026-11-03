@@ -1,12 +1,13 @@
 function route(){
  const main=document.getElementById('main'),u=FXAPP.user(),nav=document.querySelector('.appnav');
  window._rlRefresh=null;main.onclick=null;document.body.classList.remove('rlbody');document.body.classList.add('iso');
- nav.hidden=!u;if(u)document.querySelectorAll('.appnav a').forEach(a=>{const v=a.dataset.v;a.hidden=(v==='recepcion'&&!FXX.seesRecepcion())||((v==='envios'||v==='pedidos')&&!FXX.seesEnvios());});
+ nav.hidden=!u;if(u)document.querySelectorAll('.appnav a').forEach(a=>{const v=a.dataset.v;a.hidden=(v==='recepcion'&&!FXX.seesRecepcion())||((v==='envios'||v==='pedidos'||v==='inventario')&&!FXX.seesEnvios());});
  if(!u){document.body.classList.add('app-login');renderLlegadas(ISO.key,main);return;}
  document.body.classList.remove('app-login');const h=(location.hash||(FXX.seesRecepcion()?'#recepcion':'#envios')).slice(1);let tab='recepcion';
  if(h==='sincronizacion'){tab=h;renderSync(main);}
  else if(h==='pedidos'){tab=h;renderPedidos(main);}
  else if(h==='envios'&&FXX.seesEnvios()){tab=h;renderEnvios(main);}
+ else if(h==='inventario'&&FXX.seesEnvios()){tab=h;FXI.render(main,ISO.key);}
  else if(h.startsWith('e-')&&DATA.envios[decodeURIComponent(h.slice(2))]&&FXX.envOk(decodeURIComponent(h.slice(2)))){tab='envios';renderEnvio(decodeURIComponent(h.slice(2)),main,null);addHelpBtn();}
  else if(h.startsWith('f-')&&DATA.facturas[decodeURIComponent(h.slice(2))]&&FXX.factOk(decodeURIComponent(h.slice(2)))){tab='pedidos';renderFactura(decodeURIComponent(h.slice(2)),main);addHelpBtn();}
  else if(FXX.seesRecepcion())renderLlegadas(ISO.key,main);else{tab='envios';renderEnvios(main);}
