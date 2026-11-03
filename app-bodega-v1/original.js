@@ -691,7 +691,7 @@ function alertsBlock(compact){const A=DATA.alerts||[];if(!A.length)return '';
  return `<section class="alrts"><div class="group"><h2>Alertas de llegadas y facturas</h2><span class="mono">${A.length} abiertas${compact&&L.length<A.length?' · aquí solo las urgentes; todas en Recepción':''}</span></div>${L.map(one).join('')}${compact&&L.length<A.length?`<a class="btn" href="#facturas">Ver todas en Recepción</a>`:''}</section>`}
 /* ---------- llegadas registradas por almacén ---------- */
 const SYNC=()=>String(window.FX_SYNC_URL||'').trim();
-async function getLlegadas(bod){return FXAPP.arrivals(bod)}
+async function getLlegadas(bod,o){return FXAPP.arrivals(bod,o)}
 async function postSync(o){return FXAPP.post(o)}
 const fdt=v=>{v=String(v||'');if(/^\d{4}-\d\d-\d\dT/.test(v)){const d=new Date(v);if(!isNaN(d))return d.toLocaleString('es-MX',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}return v.replace('T',' ')};
 const lstat=e=>e==='Autorizada'?'c-now':e==='Autorizada con diferencias'?'c-later':'c-stay';
@@ -804,7 +804,7 @@ function renderLlegadas(bod,root){
    <h2 class="rl-h">${canA?'Por autorizar y anteriores':'Llegadas registradas'}</h2><button class="rl-btn" data-go="home">Volver a cargar llegadas</button><div class="rl-flt" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin:8px 0"><input type="search" data-f="q" placeholder="Buscar proveedor, documento, pedido, quién recibió" style="grid-column:1/-1;padding:9px;border:1px solid #ccc;border-radius:8px;font:inherit"><select style="padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff;color:#222" data-f="prov"><option value="">Todos los proveedores</option></select><select style="padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff;color:#222" data-f="rec"><option value="">Todos los usuarios</option></select><select style="padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff;color:#222" data-f="est"><option value="">Todos los estados</option></select><select style="padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff;color:#222" data-f="per"><option value="">Cualquier fecha</option><option value="0">Hoy</option><option value="7">Últimos 7 días</option><option value="30">Últimos 30 días</option></select><select style="padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff;color:#222" data-f="ord"><option value="new">Más recientes primero</option><option value="old">Más antiguas primero</option><option value="prov">Proveedor A-Z</option><option value="bul">Más bultos primero</option><option value="est">Por estado</option></select><button class="rl-btn sm" data-fclr="1" type="button">Quitar filtros</button></div><p class="rl-mini rl-fcnt"></p><div class="rl-list"><p class="rl-mini">Cargando…</p></div>
    <button class="rl-link" data-go="salir">Salir (${esc(U.nombre)})</button>`);
   const lst=root.querySelector('.rl-list');
-  try{const L=(await getLlegadas(bod)).slice().reverse();
+  try{const L=(await getLlegadas(bod,{fast:true})).slice().reverse();
    const card=x=>{const cap=x.estado==='En captura',blocked=window.FXDevice?.other(x.captura);const est=cap?'c-stay':lstat(x.estado);
     return `<article class="rl-card rl-item"><div class="rl-ih"><span class="rl-lg">${logo(x.prov)}</span><span class="status ${est}">${esc(x.estado)}</span></div>
     <b>${esc(x.prov)} · ${esc(x.doc||x.fact||x.cot||'sin documento')}</b>

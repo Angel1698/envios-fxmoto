@@ -18,4 +18,5 @@ async function renderSync(root){await window.FXDevice?.ready;const q=await FXAPP
 }
 new MutationObserver(()=>{document.querySelector('.appnav').hidden=!FXAPP.user();}).observe(document.getElementById('main'),{childList:true});
 addEventListener('hashchange',route);
-FXAPP.init().then(()=>{route();if(FXAPP.user()){FXAPP.drain();FXAPP.pullProgress().catch(()=>{});}}).catch(e=>{document.getElementById('main').textContent='No se pudo preparar el almacenamiento: '+e.message+'. No captures hasta resolverlo.';});
+const fxRoles=()=>FXAPP.checkRoles().then(ch=>{if(ch)route();}).catch(()=>{});addEventListener('online',fxRoles);document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')fxRoles();});
+FXAPP.init().then(()=>{route();if(FXAPP.user()){FXAPP.drain();FXAPP.pullProgress().catch(()=>{});fxRoles();}}).catch(e=>{document.getElementById('main').textContent='No se pudo preparar el almacenamiento: '+e.message+'. No captures hasta resolverlo.';});
