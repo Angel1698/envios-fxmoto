@@ -5,7 +5,7 @@ function route(){
  if(!u){document.body.classList.add('app-login');renderLlegadas(ISO.key,main);return;}
  document.body.classList.remove('app-login');const h=(location.hash||(FXX.seesRecepcion()?'#recepcion':'#envios')).slice(1);let tab='recepcion';
  if(h==='sincronizacion'){tab=h;renderSync(main);}
- else if(h==='pedidos'){tab=h;main.innerHTML='<div class="docHead"><div><div class="eyebrow">Pedidos · '+esc(ISO.key)+'</div><h1>Facturas y documentos</h1></div></div><div class="sbar"><input type="search" class="q" placeholder="Buscar pedido, proveedor o factura" aria-label="Buscar pedido"></div><div class="app-provider-list"></div>';const list=main.querySelector('.app-provider-list'),q=main.querySelector('.q');const draw=()=>{const term=q.value.trim().toLowerCase();list.innerHTML=Object.entries(DATA.facturas).filter(([k,f])=>FXX.factOk(k)&&(k+' '+f.title+' '+f.pedido).toLowerCase().includes(term)).map(([k,f])=>'<a class="chip" href="#f-'+encodeURIComponent(k)+'"><span class="pedtag sm">Pedido '+esc(f.pedido)+'</span>'+blogo(f.title)+esc(f.title)+'</a>').join('');};q.oninput=draw;draw();}
+ else if(h==='pedidos'){tab=h;renderPedidos(main);}
  else if(h==='envios'&&FXX.seesEnvios()){tab=h;renderEnvios(main);}
  else if(h.startsWith('e-')&&DATA.envios[decodeURIComponent(h.slice(2))]&&FXX.envOk(decodeURIComponent(h.slice(2)))){tab='envios';renderEnvio(decodeURIComponent(h.slice(2)),main,null);addHelpBtn();}
  else if(h.startsWith('f-')&&DATA.facturas[decodeURIComponent(h.slice(2))]&&FXX.factOk(decodeURIComponent(h.slice(2)))){tab='pedidos';renderFactura(decodeURIComponent(h.slice(2)),main);addHelpBtn();}
@@ -20,3 +20,20 @@ new MutationObserver(()=>{document.querySelector('.appnav').hidden=!FXAPP.user()
 addEventListener('hashchange',route);
 const fxRoles=()=>FXAPP.checkRoles().then(ch=>{if(ch)route();}).catch(()=>{});addEventListener('online',fxRoles);document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')fxRoles();});
 FXAPP.init().then(()=>{route();if(FXAPP.user()){FXAPP.drain();FXAPP.pullProgress().catch(()=>{});fxRoles();}}).catch(e=>{document.getElementById('main').textContent='No se pudo preparar el almacenamiento: '+e.message+'. No captures hasta resolverlo.';});
+
+function renderPedidos(main){let st={};try{st=JSON.parse(localStorage.getItem('fx-ped-f-'+ISO.key)||'{}')}catch(_){}
+ const all=Object.entries(DATA.facturas).filter(([k])=>FXX.factOk(k)).map(([k,f])=>({k,f,prov:String(f.title).split(' · ')[0],ped:String(f.pedido||''),pn:parseFloat(f.pedido)||0,pz:(f.items||[]).reduce((s,i)=>s+(+i.qty||0),0)}));
+ const provs=[...new Set(all.map(x=>x.prov))].sort();const peds=[...new Set(all.map(x=>x.ped))].filter(p=>/^\d/.test(p)).sort((a,b)=>(parseFloat(b)||0)-(parseFloat(a)||0));
+ const sel=(n,opts,v)=>'<select data-p="'+n+'" style="padding:8px;border:1px solid #ccc;border-radius:8px;font:inherit;background:#fff;color:#222">'+opts.map(([val,t])=>'<option value="'+esc(val)+'"'+(String(v||'')===String(val)?' selected':'')+'>'+esc(t)+'</option>').join('')+'</select>';
+ main.innerHTML='<div class="docHead"><div><div class="eyebrow">Pedidos · '+esc(ISO.key==='EDOMEX'?'Edo. Méx.':'Cuernavaca')+'</div><h1>Facturas y documentos</h1></div></div><div class="sbar"><input type="search" class="q" placeholder="Buscar pedido, proveedor, factura o código" aria-label="Buscar pedido" value="'+esc(st.q||'')+'"></div>'+
+  '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin:8px 0">'+sel('ped',[['','Todos los pedidos']].concat(peds.map(p=>[p,'Pedido '+p])),st.ped)+sel('prov',[['','Todos los proveedores']].concat(provs.map(p=>[p,p])),st.prov)+sel('est',[['','Recibidas y en camino'],['rec','Solo recibidas'],['cam','Solo en camino']],st.est)+sel('ord',[['new','Pedido más nuevo primero'],['old','Pedido más antiguo primero'],['prov','Proveedor A-Z'],['pz','Más piezas primero']],st.ord||'new')+'</div><p class="mini pcnt"></p><div class="app-provider-list"></div>';
+ const list=main.querySelector('.app-provider-list'),q=main.querySelector('.q');
+ const v=n=>main.querySelector('[data-p="'+n+'"]').value;
+ const draw=()=>{const term=q.value.trim().toLowerCase(),o=v('ord');const s={q:q.value,ped:v('ped'),prov:v('prov'),est:v('est'),ord:o};try{localStorage.setItem('fx-ped-f-'+ISO.key,JSON.stringify(s))}catch(_){}
+  let L=all.filter(x=>(!s.ped||x.ped===s.ped)&&(!s.prov||x.prov===s.prov)&&(!s.est||(s.est==='cam')===!!x.f.encamino)&&(!term||(x.k+' '+x.f.title+' '+x.ped+' '+(x.f.doc||'')).toLowerCase().includes(term)||(term.length>2&&(x.f.items||[]).some(i=>String(i.code).toLowerCase().includes(term)))));
+  L.sort(o==='old'?(a,b)=>a.pn-b.pn||a.prov.localeCompare(b.prov):o==='prov'?(a,b)=>a.prov.localeCompare(b.prov)||b.pn-a.pn:o==='pz'?(a,b)=>b.pz-a.pz:(a,b)=>b.pn-a.pn||a.prov.localeCompare(b.prov));
+  main.querySelector('.pcnt').textContent=L.length+' de '+all.length+' documentos';
+  let last=null,h='';for(const x of L){if((o==='new'||o==='old')&&x.ped!==last){last=x.ped;h+='<div class="group"><h2>Pedido '+esc(x.ped)+'</h2></div>';}
+   h+='<a class="chip" style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0" href="#f-'+encodeURIComponent(x.k)+'"><span class="pedtag sm">Pedido '+esc(x.ped)+'</span>'+blogo(x.f.title)+'<b>'+esc(x.f.title)+'</b><span class="mini">'+(x.f.encamino?'En camino':'Llegó '+esc(x.f.llego||''))+' · '+fmt(x.pz)+' pz</span></a>';}
+  list.innerHTML=h||'<p class="mini">No hay documentos con ese filtro.</p>';};
+ q.oninput=draw;main.querySelectorAll('[data-p]').forEach(x=>x.onchange=draw);draw();}

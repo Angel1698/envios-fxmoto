@@ -3,3 +3,6 @@ body.rlbody nav.appnav{display:block!important}nav.appnav[hidden]{display:none!i
 
 body.rlbody nav.appnav[hidden]{display:none!important}
 body.rlbody nav.appnav .wrap{padding-bottom:10px} @media(max-width:480px){nav.appnav .wrap{gap:2px;padding-inline:8px}nav.appnav a{font-size:12px;padding:9px 8px}}
+
+/* fx-integral: misma barra superior en todas las pestañas */
+body.rlbody .brandbar{display:block!important}

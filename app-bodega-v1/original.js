@@ -796,8 +796,8 @@ function renderLlegadas(bod,root){
   if(o==='old')R.sort((a,b)=>h(a).localeCompare(h(b)));else if(o==='prov')R.sort((a,b)=>String(a.prov).localeCompare(String(b.prov),'es')||h(b).localeCompare(h(a)));else if(o==='bul')R.sort((a,b)=>(Number(b.bultos)||0)-(Number(a.bultos)||0));else if(o==='est')R.sort((a,b)=>String(a.estado).localeCompare(String(b.estado),'es')||h(b).localeCompare(h(a)));else R.sort((a,b)=>h(b).localeCompare(h(a)));
   return R}
  addEventListener('fx-arrivals-ok',()=>{if(view==='home')home().catch(()=>{})});
- async function home(){await window.FXDevice?.ready;
-  view="home";try{await checkCapture();}catch(_){}
+ async function home(){view="home";if(!root.querySelector('.rl-list'))shell(top('Registro de llegadas',`Almacén ${bn} · ${esc(U.nombre)}`)+'<div class="rl-list"><p class="rl-mini">Cargando…</p></div>');await window.FXDevice?.ready;
+  view="home";try{await Promise.race([checkCapture(),new Promise(r=>setTimeout(r,1200))]);}catch(_){}
   shell(top('Registro de llegadas',`Almacén ${bn} · ${esc(U.nombre)}`)+
    `${C?`<button class="rl-card rl-resume" data-go="cap"><span class="rl-dot"></span><div><b>Captura en curso · ${esc(C.prov)}</b><span class="rl-mini">${C.modo==='cajas'?'Conteo de cajas':'Fotos de tarimas'} · toca para seguir</span></div>${RL_ICO.back.replace('m15 5-7 7 7 7','m9 5 7 7-7 7')}</button>${canR?`<button class="rl-btn" data-cancel="${esc(C.id)}" aria-label="Cancelar captura en curso">✕ Cancelar captura</button>`:''}`:''}
    ${canR?'<button class="rl-btn pri big" data-go="nueva">Registrar llegada</button>':''}
