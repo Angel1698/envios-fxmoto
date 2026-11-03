@@ -616,6 +616,7 @@ function renderLlegadas(bod,root){
   const h=x=>String(x.hora||x.reg||'');R=R.slice();
   if(o==='old')R.sort((a,b)=>h(a).localeCompare(h(b)));else if(o==='prov')R.sort((a,b)=>String(a.prov).localeCompare(String(b.prov),'es')||h(b).localeCompare(h(a)));else if(o==='bul')R.sort((a,b)=>(Number(b.bultos)||0)-(Number(a.bultos)||0));else if(o==='est')R.sort((a,b)=>String(a.estado).localeCompare(String(b.estado),'es')||h(b).localeCompare(h(a)));else R.sort((a,b)=>h(b).localeCompare(h(a)));
   return R}
+ addEventListener('fx-arrivals-ok',()=>{if(view==='home')home().catch(()=>{})});
  async function home(){await window.FXDevice?.ready;
   view="home";try{await checkCapture();}catch(_){}
   shell(top('Registro de llegadas',`Almacén ${bn} · ${esc(U.nombre)}`)+
