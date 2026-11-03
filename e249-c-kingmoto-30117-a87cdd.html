@@ -615,7 +615,7 @@ const FXX=(()=>{
    box.innerHTML=`<b>Compartir a almacén</b>${dests.map(d=>`<button type="button" class="btn" data-dest="${d}" aria-pressed="${on.has(d)}">${DEST[d]}${on.has(d)?' · compartido':''}</button>`).join('')}<span class="mini">${msg||'Toca para compartir o retirar. Lo compartido a Edo. Méx. también lo ve la cuenta de etiquetas.'}</span>`};
   paint(compCached(b).list);paint(await compLoad(b));
   box.onclick=async e=>{const t=e.target.closest('[data-dest]');if(!t)return;const dest=t.dataset.dest,activo=t.getAttribute('aria-pressed')!=='true';
-   const go=async c=>{t.disabled=true;try{const j=inApp()?await FXAPP.compartir(num,dest,activo):await postJ({tipo:'compartir',bod:b,usuario:c.usuario,clave:c.clave,envio:num,destino:dest,activo});
+   const go=async c=>{t.disabled=true;try{const j=inApp()?await FXAPP.compartir(num,dest,activo):await postJ({tipo:'compartir',bod:b,usuario:c.usuario,clave:c.clave,envio:num,destino:dest,activo});if(!j.compartidos)throw Error('el servidor aún no tiene la actualización; avisa a oficina');
      LS.set(compKey(b),{at:Date.now(),list:j.compartidos||[]});paint(j.compartidos||[],activo?`Envío ${num} compartido a ${DEST[dest]}.`:`Envío ${num} retirado de ${DEST[dest]}.`)}
     catch(err){if(!inApp()&&/clave|Usuario/i.test(err.message))LS.set('fx-of-'+b,null);paint(compCached(b).list,'No se pudo: '+err.message)}};
    if(inApp())return go(null);const c=cred(b);if(c)return go(c);
@@ -672,8 +672,8 @@ const FXX=(()=>{
  async function difSend(bod,o,who){
   if(inApp())return FXAPP.diferencia(o);
   const body={tipo:'diferencia',bod,who,...o};
-  try{return await postJ(body)}catch(e){if(e.code)throw e;const q=LS.get(QK,[]);q.push(body);LS.set(QK,q);return {ok:true,pendiente:true}}}
- async function difFlush(){const q=LS.get(QK,[]);if(!q.length||!url())return;const keep=[];for(const b of q){try{await postJ(b)}catch(e){if(!e.code)keep.push(b)}}LS.set(QK,keep)}
+  try{const j=await postJ(body);if(!j.id)throw Error('pendiente');return j}catch(e){if(e.code)throw e;const q=LS.get(QK,[]);q.push(body);LS.set(QK,q);return {ok:true,pendiente:true}}}
+ async function difFlush(){const q=LS.get(QK,[]);if(!q.length||!url())return;const keep=[];for(const b of q){try{const j=await postJ(b);if(!j.id)keep.push(b)}catch(e){if(!e.code)keep.push(b)}}LS.set(QK,keep)}
  async function difState(bod,id,estado,who){if(inApp())return FXAPP.diferenciaEstado(id,estado);await postJ({tipo:'diferencia_estado',bod,who:who||LS.get('fx-who-s','')||'almacén',id,estado});const L=LS.get(difKey(bod),[]);const x=L.find(z=>z.id===id);if(x)x.estado=estado;LS.set(difKey(bod),L)}
  document.addEventListener('click',e=>{const b=e.target.closest('[data-dif]');if(b){e.preventDefault();difOpen(b.dataset.dif)}});
  addEventListener('online',()=>difFlush());setTimeout(()=>difFlush().catch(()=>{}),4000);
