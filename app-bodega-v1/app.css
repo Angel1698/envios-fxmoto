@@ -6,3 +6,7 @@ body.rlbody nav.appnav .wrap{padding-bottom:10px} @media(max-width:480px){nav.ap
 
 /* fx-integral: misma barra superior en todas las pestañas */
 body.rlbody .brandbar{display:block!important}
+/* fx-integral-2: barra y pestañas idénticas en todas las pestañas */
+body.rlbody .brandbar .wrap{max-width:1100px;padding-block:12px}
+body.rlbody nav.appnav .wrap{max-width:1100px;padding-block:10px;display:flex}
+body.rlbody .rl-top .rl-fx{display:none}
