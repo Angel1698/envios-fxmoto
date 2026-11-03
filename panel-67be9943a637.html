@@ -758,6 +758,7 @@ function labelsPanel(num,scopes){const S=scopes[0];
   ${scopes.length>1?`<label class="sel">Qué imprimir <select class="lsc">${scopes.map((s,i)=>`<option value="${i}">${s.grp?'\u00a0\u00a0\u00a0↳ ':''}${esc(s.grp?s.name.replace(/^.*? · (Grupo )/,'$1'):s.name)}${s.short?' ('+esc(s.short)+')':''} · ${fmt(s.n)} etiquetas</option>`).join('')}</select></label>`:`<div><b>${esc(S.name)}</b> <span class="mono">· ${fmt(S.n)} etiquetas</span></div>`}
   <div class="lrow lrng" hidden><span class="mini">Cajas del grupo:</span><label class="sel">de la <input type="number" class="lra" min="1" step="1" inputmode="numeric"></label><label class="sel">a la <input type="number" class="lrb" min="1" step="1" inputmode="numeric"></label><span class="mini lrn"></span><button class="btn lrall" type="button">Grupo completo</button></div><div class="lrbx"></div>
   <div class="lrow"><span class="mini">Dividir en lotes de</span><div class="seg lseg"><button data-k="0" aria-pressed="false">Sin dividir</button><button data-k="50" aria-pressed="false">50</button><button data-k="100" aria-pressed="true">100</button></div><label class="sel">Otro <input type="number" class="lk" min="1" step="1" inputmode="numeric" placeholder="Ej. 30"></label><label class="tick" style="margin:0"><input type="checkbox" class="lsep" checked> Etiqueta separadora al inicio de cada lote</label></div>
+  <div class="lone"><label class="sel" style="flex:1">Reimprimir una sola etiqueta <input type="search" class="l1q" placeholder="Número de etiqueta (#), código ML, SKU o título" style="min-width:240px"></label><div class="l1res"></div></div>
   <div class="lots"></div><div class="lmsg mini" role="status"></div><div class="lprev"></div>
   <p class="mini">Imprimir abre la ventana de impresión del navegador: elige la impresora de etiquetas, tamaño 2 x 1 pulgadas (50.8 x 25.4 mm) y márgenes en cero. Descargar ZPL da el archivo en el mismo formato de la plantilla full, para mandarlo directo a la impresora.</p></div></details>`}
 function setupLabels(root,num,scopes){const P=root.querySelector('.labs');if(!P)return;let sci=0,k=100,L=[],ra=0,rb=0;
@@ -788,6 +789,14 @@ function setupLabels(root,num,scopes){const P=root.querySelector('.labs');if(!P)
   else if(a==='imp')printLot(L[i],sep.checked?sepL(i):null,msg);
   else if(a==='zpl'){await saveText(fname(i),zplLot(i));msg.textContent=`Lote ${i+1}: archivo ZPL generado.`}
   else if(a==='cpz'){try{await navigator.clipboard.writeText(zplLot(i));msg.textContent=`Lote ${i+1}: ZPL copiado.`}catch(_){msg.textContent='No se pudo copiar; usa Descargar ZPL.'}}};
+ const l1q=P.querySelector('.l1q'),l1r=P.querySelector('.l1res');const ALLL=(scopes[0]&&scopes[0].lines)||[];
+ if(l1q){l1q.oninput=()=>{const q=l1q.value.trim().replace(/^#/,'').toLowerCase();if(!q){l1r.innerHTML='';return}
+  const hits=ALLL.filter(e=>/^\d+$/.test(q)?String(e.no)===q:((e.cml||'')+' '+(e.sku||'')+' '+(e.tit||'')+' '+e.comps.map(c=>c.code).join(' ')).toLowerCase().includes(q)).slice(0,12);
+  l1r.innerHTML=hits.length?hits.map((e,i)=>`<div class="lot"><div><b>#${e.no}</b> <span class="mono">· ${esc(e.cml)} · ${fmt(e.u)} pz</span><div class="mini">${esc(trunc(e.tit,70))}</div></div><div class="lbtn"><label class="sel">Pieza <select class="l1s" data-i="${i}">${Array.from({length:e.u},(_,s)=>`<option value="${s+1}">${s+1} de ${e.u}</option>`).join('')}</select></label><button class="btn" data-l1="ver" data-i="${i}">Ver</button><button class="btn pri" data-l1="imp" data-i="${i}">Imprimir</button><button class="btn" data-l1="zpl" data-i="${i}">ZPL</button></div></div>`).join(''):'<p class="mini">No se encontró esa etiqueta en este envío.</p>';
+  l1r.onclick=async ev=>{const b=ev.target.closest('[data-l1]');if(!b)return;const e=hits[+b.dataset.i];const s=+l1r.querySelector(`.l1s[data-i="${b.dataset.i}"]`).value;const g={e,from:s,to:s};
+   if(b.dataset.l1==='ver'){prev.innerHTML=`<div class="lp">${labelSVG(e,s,false)}</div>`;prev.scrollIntoView({block:'nearest',behavior:'smooth'})}
+   else if(b.dataset.l1==='imp')printLot([g],null,msg);
+   else{await saveText(`Etiqueta_Envio${num}_${e.no}_${s}de${e.u}.zpl`,zplSeg(g));msg.textContent=`Etiqueta #${e.no} (${s} de ${e.u}): archivo ZPL generado.`}}}}
  setRng();drawLots()}
 function printLot(lot,sepL,msg){const pa=document.getElementById('printArea');if(!pa)return;
  const codes=[...new Set(lot.map(g=>g.e.cml))];
