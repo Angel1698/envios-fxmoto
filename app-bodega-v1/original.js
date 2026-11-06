@@ -851,7 +851,7 @@ function renderLlegadas(bod,root){
    window._rlList=L;const notice=window.FXAPP?.arrivalStatus?.().error;if(notice)lst.insertAdjacentHTML('afterbegin',`<p class="rl-err">${esc(notice)}. Mostrando la copia guardada en este equipo.</p>`);}
   catch(e){lst.innerHTML=`<p class="rl-mini">No se pudieron leer las llegadas (${esc(e.message)}).</p>`}}
  root.onclick=async e=>{const review=e.target.closest('[data-review]');if(review)return verLlegada(review.dataset.review);const g=e.target.closest('[data-go]');
-  if(g){const v=g.dataset.go;if(v==='salir'){FXAPP.logout().then(()=>{ls.set(SK,null);location.hash='#recepcion';route()}).catch(e=>alert(e.message));return}if(v==='home')return home();if(v==='nueva'){N={hora:nowLocal(),fotos:[],cajas:0,tarimas:0,bolsas:0};return paso1()}if(v==='p1')return paso1();if(v==='p2')return paso2();if(v==='cap')return captura();if(v==='res')return resumen();return}
+  if(g){const v=g.dataset.go;if(v==='salir'){FXAPP.logout().then(()=>{ls.set(SK,null);location.hash='#recepcion';route()}).catch(e=>alert(e.message));return}if(v==='home')return home();if(v==='nueva'){N={hora:nowLocal(),fotos:[],cajas:0,tarimas:0,bolsas:0};return paso1()}if(v==='p1')return paso1();if(v==='p2')return paso2();if(v==='cap')return captura();if(v==='raf')return rafaga();if(v==='res')return resumen();return}
   const t=e.target.closest('[data-tomar]');if(t){const x=(window._rlList||[]).find(z=>z.id===t.dataset.tomar);if(!x)return;if(C&&!confirm('Ya hay otra captura abierta en este teléfono. ¿Cambiar a esta?'))return;
    try{await window.FXDevice?.claim(x.id,cred);}catch(e){toast(e.message);return;}C={id:x.id,prov:x.prov,modo:x.modo||rlModo(x.prov,+x.tarimas||0),cajas:+x.cajas||+x.bultos||0,tarimas:+x.tarimas||0,bolsas:+x.bolsas||0,doc:x.doc||x.fact||'',grupos:[],g:-1};saveC();B=[];F=[];detOk=false;return captura()}
   const d=e.target.closest('[data-docs]');if(d)return docsRefacom(d.dataset.docs,d.dataset.prov);
@@ -916,18 +916,73 @@ function renderLlegadas(bod,root){
  const gKey=g=>g.p+'|'+g.a;const gCol=i=>RL_COL[i%RL_COL.length];
  const subiendo=()=>{const w=B.filter(x=>x.st!=='ok'&&x.st!=='err').length+F.filter(x=>x.st!=='ok'&&x.st!=='err').length,er=B.filter(x=>x.st==='err').length+F.filter(x=>x.st==='err').length;return (w?`<span class="rl-up">${w} guardando…</span>`:'<span class="rl-up ok">guardado en el dispositivo</span>')+(er?` <span class="rl-up err">${er} con error · revisa el resumen</span>`:'')};
  /* ---------- captura de cajas (ALESSIA) ---------- */
+ /* ---------- modo ráfaga: fotos seguidas y lectura automática de la etiqueta (sin internet) ---------- */
+ const OCRB='https://envios.motofix.com.mx/ocr/';let RQ=[],rBusy=false,rStat='',rStream=null;
+ const ocrLib=()=>window.FXOCR?Promise.resolve(window.FXOCR):(window._fxOcrP=window._fxOcrP||new Promise((ok,ko)=>{const s=document.createElement('script');s.src=OCRB+'fx-ocr.js';s.onload=()=>ok(window.FXOCR);s.onerror=()=>{window._fxOcrP=null;ko(new Error('Sin internet para bajar el lector la primera vez'))};document.head.appendChild(s)}));
+ const rGrp=(p,a)=>C.grupos.findIndex(g=>g.p===p&&g.a===a);
+ function rDecide(it){const r=it.r||{};const cj=r.caja;if(!cj)return 'No se leyó el número de caja';const c=cj[0],t=cj[1];
+  let p=r.ped||'';if(!p){const gs=C.grupos.filter(g=>g.t===t);if(gs.length===1)p=gs[0].p;else{const L=RQ.filter(x=>x.ok&&x.t===t);if(L.length)p=L[L.length-1].p}}
+  if(!p)return 'No se leyó el pedido';
+  let a=r.alm||'';if(!a){const gs=C.grupos.filter(g=>g.p===p&&g.t===t);if(gs.length===1)a=gs[0].a;else if(!C.grupos.some(g=>g.p===p))a='SIN ALMACEN';else return 'No se leyó el almacén'}
+  const i=rGrp(p,a);if(i>=0&&C.grupos[i].t!==t)return `Dice ${c}/${t}, pero ese grupo tiene ${C.grupos[i].t} cajas`;
+  if(c>t)return 'Número mayor que el total';
+  if(B.find(x=>x.p===p&&x.a===a&&x.c===c)||RQ.some(x=>x!==it&&x.ok&&x.p===p&&x.a===a&&x.c===c))return `La caja ${c} ya estaba registrada`;
+  Object.assign(it,{p,a,t,c});return ''}
+ async function rGuardar(it){let i=rGrp(it.p,it.a);if(i<0){C.grupos.push({p:it.p,a:it.a,t:it.t});i=C.grupos.length-1}C.g=i;saveC();
+  const tot=C.cajas||0;if(tot&&B.length>=tot){if(C.cajasChofer==null)C.cajasChofer=tot;C.cajas=B.length+1;saveC()}
+  await guardarCaja({p:it.p,a:it.a,t:it.t,c:it.c,foto:it.foto});it.ok=true;it.st='ok'}
+ async function rLoop(){if(rBusy)return;rBusy=true;try{const lib=await ocrLib();rStat='Preparando lector…';rDraw();
+   await lib.init(OCRB,f=>{rStat='Bajando lector: '+f;rDraw()});rStat='';
+   for(let it;(it=RQ.find(x=>x.st==='cola'));){it.st='leyendo';rDraw();try{it.r=await lib.read(it.foto.full,OCRB,{max:1100,maxTries:5})}catch(e){it.r=null}
+    const why=rDecide(it);if(why){it.st='rev';it.why=why}else{try{await rGuardar(it)}catch(e){it.st='rev';it.why='No se pudo guardar: '+(e.message||e)}}rDraw()}
+  }catch(e){rStat=e.message||String(e)}rBusy=false;rDraw()}
+ async function rAdd(fl){try{const full=await shrink(fl,1400,.7),mini=await shrink(fl,240,.55);RQ.push({id:rlId('R'),foto:{full,mini},st:'cola'});rDraw();rLoop()}catch(_){toast('No se pudo leer una foto')}}
+ function rStop(){if(rStream){rStream.getTracks().forEach(t=>t.stop());rStream=null}}
+ function rDraw(){const el=root.querySelector('.rf-stat');if(!el)return;const n=k=>RQ.filter(x=>x.st===k).length;
+  el.innerHTML=`<b>${n('ok')}</b> guardadas · <b>${n('cola')+n('leyendo')}</b> por leer · <b class="${n('rev')?'rf-red':''}">${n('rev')}</b> por revisar${rStat?`<br><span class="rl-mini">${esc(rStat)}</span>`:''}${n('cola')+n('leyendo')?'<br><span class="rl-mini rf-red">No cierres esta pantalla mientras haya fotos por leer.</span>':''}`;
+  const L=root.querySelector('.rf-list');if(L)L.innerHTML=RQ.slice().reverse().slice(0,40).map(x=>`<button class="rf-it ${x.st}" data-rid="${x.id}"><img src="${x.foto.mini}" alt=""><span>${x.st==='ok'?`Caja <b>${x.c}/${x.t}</b> · ped. ${esc(x.p)} · alm. ${esc(x.a)}`:x.st==='rev'?`<b>Revisar:</b> ${esc(x.why||'')}`:x.st==='leyendo'?'Leyendo…':'En espera'}</span></button>`).join('');
+  L&&L.querySelectorAll('[data-rid]').forEach(b=>b.onclick=()=>{const it=RQ.find(x=>x.id===b.dataset.rid);if(it&&it.st==='rev')rRev(it)})}
+ function rRev(it){const r=it.r||{};const cj=r.caja||[];const exp=rlExp();const gs=C.grupos;
+  const d=dialog(`<div class="rl rl-dlg"><h2>Revisar caja</h2><p class="rl-mini">${esc(it.why||'')}</p><img src="${it.foto.full}" alt="Etiqueta" style="width:100%;border-radius:10px;max-height:46vh;object-fit:contain;background:#000">
+   <form class="rl-form rv" autocomplete="off"><div class="rl-pq">${[...new Set(gs.map(g=>g.p).concat(exp.map(x=>x.p)))].map(p=>`<button type="button" class="rl-chip sm" data-vp="${esc(p)}">${esc(p)}</button>`).join('')}</div>
+   <label class="rl-fl">Pedido (PEDIDO(S) de la etiqueta)<input name="p" inputmode="numeric" value="${esc(it.p||r.ped||'')}"></label>
+   <div class="rl-pq">${['100','200','300','400','500','600','700','800','SIN ALMACEN'].map(a=>`<button type="button" class="rl-chip sm" data-va="${a}">${a}</button>`).join('')}</div>
+   <label class="rl-fl">Almacén<input name="a" value="${esc(it.a||r.alm||'')}"></label>
+   <label class="rl-fl">Número de caja<input name="c" inputmode="numeric" value="${esc(cj[0]||'')}"></label><label class="rl-fl">Total de cajas (después de la diagonal)<input name="t" inputmode="numeric" value="${esc(cj[1]||'')}"></label>
+   <p class="rl-err" role="alert"></p><div class="rl-acts"><button class="rl-btn pri" type="submit">Guardar caja</button><button class="rl-btn" type="button" data-del>Quitar foto</button><button class="rl-btn" type="button" data-x>Después</button></div></form></div>`);
+  const f=d.querySelector('.rv');d.querySelectorAll('[data-vp]').forEach(b=>b.onclick=()=>{f.p.value=b.dataset.vp});d.querySelectorAll('[data-va]').forEach(b=>b.onclick=()=>{f.a.value=b.dataset.va});
+  d.querySelector('[data-x]').onclick=closeDialog;d.querySelector('[data-del]').onclick=()=>{if(confirm('¿Quitar esta foto sin guardarla?')){RQ.splice(RQ.indexOf(it),1);closeDialog();rDraw()}};
+  f.onsubmit=async ev=>{ev.preventDefault();const er=f.querySelector('.rl-err');const p=f.p.value.trim().toUpperCase(),a=f.a.value.trim().toUpperCase(),c=parseInt(f.c.value,10),t=parseInt(f.t.value,10);
+   if(!p||!a||!(c>0)||!(t>0)){er.textContent='Llena pedido, almacén, número y total.';return}if(c>t){er.textContent='El número no puede ser mayor que el total.';return}
+   const i=rGrp(p,a);if(i>=0&&C.grupos[i].t!==t&&!confirm(`Ese pedido y almacén tenían ${C.grupos[i].t} cajas. ¿Cambiar a ${t}?`))return;if(i>=0)C.grupos[i].t=t;
+   if(B.find(x=>x.p===p&&x.a===a&&x.c===c)&&!confirm(`La caja ${c} de ese grupo ya está registrada. ¿Guardarla de todos modos?`))return;
+   Object.assign(it,{p,a,c,t});try{await rGuardar(it);closeDialog();rDraw()}catch(e){er.textContent='No se guardó: '+(e.message||e)}}}
+ function rafaga(){rStat='';shell(top(`${esc(C.prov)} · ráfaga`,'Solo toma las fotos; el teléfono lee cada etiqueta',0,0,'cap')+
+   `<div class="rl-card rf-cam"><video playsinline muted autoplay hidden></video><div class="rf-btns"><button class="rl-btn pri big rf-shot" hidden>Tomar foto</button>
+   <label class="rl-btn pri big">Cámara del teléfono<input type="file" accept="image/*" capture="environment" hidden class="rf-in1"></label>
+   <label class="rl-btn big">Elegir fotos de la galería<input type="file" accept="image/*" multiple hidden class="rf-inN"></label></div>
+   <p class="rl-mini">Toma la foto solo a la etiqueta blanca de ALESSIA, completa, sin flash ni reflejo. No importa si está de lado. También puedes tomar todas las fotos con la cámara y después elegirlas de la galería.</p></div>
+   <div class="rl-card rf-stat"></div><h2 class="rl-h">Fotos</h2><div class="rf-list"></div>`,
+   `<button class="rl-btn big" data-go="cap">Volver al conteo</button><button class="rl-btn big" data-go="res">Resumen</button>`);
+  const v=root.querySelector('video'),sh=root.querySelector('.rf-shot');
+  root.querySelector('.rf-in1').onchange=ev=>{[...ev.target.files].forEach(rAdd);ev.target.value=''};
+  root.querySelector('.rf-inN').onchange=ev=>{[...ev.target.files].forEach(rAdd);ev.target.value=''};
+  if(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia){navigator.mediaDevices.getUserMedia({video:{facingMode:'environment',width:{ideal:1920},height:{ideal:1440}},audio:false}).then(s=>{rStream=s;v.srcObject=s;v.hidden=false;sh.hidden=false}).catch(()=>{})}
+  sh.onclick=()=>{if(!v.videoWidth)return;const c=document.createElement('canvas');c.width=v.videoWidth;c.height=v.videoHeight;c.getContext('2d').drawImage(v,0,0);c.toBlob(b=>{if(b){rAdd(b);if(navigator.vibrate)try{navigator.vibrate(25)}catch(_){}v.style.opacity=.3;setTimeout(()=>v.style.opacity=1,120)}},'image/jpeg',.85)};
+  root.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',rStop,{once:true}));
+  rDraw();ocrLib().then(l=>l.ready(OCRB)).then(ok=>{if(!ok){rStat='La primera vez se baja el lector (unos 40 MB). Hazlo con internet; después funciona sin internet.';rDraw()}rLoop()}).catch(e=>{rStat=e.message;rDraw()})}
  function cajas(foto){const G=C.grupos[C.g];const tot=C.cajas||0;const n=B.length;
   const band=G?(()=>{const [fg,bg]=gCol(C.g);const k=B.filter(x=>x.p===G.p&&x.a===G.a).length;return `<button class="rl-band" style="--g:${fg};--gb:${bg}" data-grp><span class="rl-mini">Etiqueta que estás capturando · toca para cambiar</span><span class="rl-bandrow"><span><small>Pedido</small><b>${esc(G.p)}</b></span><span><small>Almacén</small><b>${esc(G.a)}</b></span><span><small>Llevas</small><b>${k} de ${G.t}</b></span></span></button>`})():'';
   shell(top(`${esc(C.prov)} · conteo de cajas`,`${esc(C.doc||'')} · ${esc(U.nombre)}`,0,0,'home')+
    `<div class="rl-prog"><div><b>${n}</b> de ${tot||'?'} cajas${C.cajasChofer!=null?` <span class="rl-over">el chofer declaró ${C.cajasChofer}</span>`:''}</div>${subiendo()}<span class="rl-bar"><i style="width:${tot?Math.min(100,n/tot*100):0}%"></i></span></div>
-   ${G?band+gbar()+`<div class="rl-card rl-capt">
+   ${C.prov==='ALESSIA'?'<button class="rl-btn pri big rf-go" data-go="raf" style="width:100%;margin:8px 0">Ráfaga: solo fotos, lectura automática</button>':''}${G?band+gbar()+`<div class="rl-card rl-capt">
      <label class="rl-shot${foto?' has':''}">${foto?`<img src="${foto.mini}" alt="Foto de la etiqueta">`:`${RL_ICO.cam}<b>1. Foto de la etiqueta</b><span class="rl-mini">obligatoria</span>`}<input type="file" accept="image/*" capture="environment" hidden></label>
      <label class="rl-num"><span>2. Número de caja</span><span class="rl-numrow"><input class="cnum" inputmode="numeric" pattern="[0-9]*" placeholder="—" aria-label="Número de caja"><em>de ${G.t}</em></span></label>
-     <p class="rl-err" role="alert"></p></div>`:`<div class="rl-card rl-note">Escribe los datos de la etiqueta de la primera caja.</div>`}
+     <p class="rl-err" role="alert"></p></div>`:`<div class="rl-card rl-note">Escribe los datos de la etiqueta de la primera caja.${C.prov==='ALESSIA'?' O usa la ráfaga y el teléfono los lee solo.':''}<br><button class="rl-btn" data-grp style="margin-top:8px">Escribir datos de la etiqueta</button></div>`}
    <h2 class="rl-h">Últimas cajas</h2><div class="rl-last">${B.slice(-6).reverse().map(x=>boxRow(x)).join('')||'<p class="rl-mini">Todavía no hay cajas.</p>'}</div>`,
    G?`<button class="rl-btn big" data-go="res">Resumen</button><button class="rl-btn pri big gu">Guardar caja</button>`:`<button class="rl-btn big" data-go="res">Resumen</button>`);
   window._rlRefresh=()=>{const p=root.querySelector('.rl-prog');if(p){p.querySelector('.rl-up')&&(p.querySelectorAll('.rl-up').forEach(z=>z.remove()),p.querySelector('div').insertAdjacentHTML('afterend',subiendo()))}const l=root.querySelector('.rl-last');if(l)l.innerHTML=B.slice(-6).reverse().map(x=>boxRow(x)).join('')};
-  if(!G){grupo(true);return}
+  if(!G){const gb=root.querySelector('[data-grp]');if(gb)gb.onclick=()=>grupo(true);if(C.prov!=='ALESSIA')grupo(true);return}
   root.querySelector('[data-grp]').onclick=()=>grupo(false);
   root.querySelectorAll('[data-sw]').forEach(b=>b.onclick=()=>{C.g=+b.dataset.sw;saveC();cajas(foto)});
   root.querySelector('[data-new=alm]').onclick=()=>grupo(false,'alm',foto);root.querySelector('[data-new=ped]').onclick=()=>grupo(false,'ped',foto);
