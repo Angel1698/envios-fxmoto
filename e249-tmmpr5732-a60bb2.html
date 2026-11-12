@@ -869,7 +869,7 @@ function shipmentComponents(e){
 }
 
 function typeLine(e){const c=e.comps[0];
- if(e.tp==='I'&&e.nf===1&&e.comps.length>1&&e.comps.reduce((s,c)=>s+c.pz,0)===e.u)return {rev:1,text:'INDIVIDUAL · 1 PZ POR UNIDAD'};
+ if(e.tp==='I'&&e.nf===1&&e.comps.length>1&&e.comps.reduce((s,c)=>s+c.pz,0)===e.u)return {rev:0,text:'INDIVIDUAL'};
  if(e.tp==='C')return {rev:1,text:`COMPUESTO · ${shipmentComponents(e).length} PIEZAS`};
  if(e.tp==='P')return {rev:1,text:`POR ${e.nf} · ${e.nf} PZ POR UNIDAD`};
  if(e.tp==='S')return {rev:1,text:`SOBRE ${e.nf} · 1 PZ = ${e.nf} UNIDADES`};

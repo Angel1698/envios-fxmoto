@@ -834,7 +834,7 @@ const trunc=(s,n)=>{s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s};
 function wrapT(t,max,lines){const w=String(t||'').split(/\s+/).filter(Boolean);const out=[];let cur='';for(const x of w){if((cur+' '+x).trim().length<=max)cur=(cur+' '+x).trim();else{out.push(cur);cur=x;if(out.length===lines)break}}if(out.length<lines&&cur)out.push(cur);
  const used=out.join(' ').length;if(used<String(t||'').trim().length&&out.length)out[out.length-1]=trunc(out[out.length-1]+' ',max);return out.slice(0,lines)}
 function typeLine(e){const c=e.comps[0];
- if(e.tp==='I'&&e.nf===1&&e.comps.length>1&&e.comps.reduce((s,c)=>s+c.pz,0)===e.u)return {rev:1,text:'INDIVIDUAL · 1 PZ POR UNIDAD'};
+ if(e.tp==='I'&&e.nf===1&&e.comps.length>1&&e.comps.reduce((s,c)=>s+c.pz,0)===e.u)return {rev:0,text:'INDIVIDUAL'};
  if(e.tp==='C')return {rev:1,text:`COMPUESTO · ${new Set(e.comps.map(c=>c.code)).size} PIEZAS`};
  if(e.tp==='P')return {rev:1,text:`POR ${e.nf} · ${e.nf} PZ POR UNIDAD`};
  if(e.tp==='S')return {rev:1,text:`SOBRE ${e.nf} · 1 PZ = ${e.nf} UNIDADES`};
