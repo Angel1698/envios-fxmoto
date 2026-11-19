@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow">
+<title>Gestión Motofix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: barra superior con pestañas, tarjetas de resumen, filtros y tabla con panel de edición */
+:root{
+  --bg:#F4F5F7; --card:#FFFFFF; --line:#E3E6EB; --line2:#D0D5DD;
+  --fg:#1B2230; --fg2:#4A5565; --red:#C81E1E; --redh:#8F1414; --onred:#FFFFFF;
+  --ok-bg:#E3F4E8; --ok:#17643A; --warn-bg:#FFF1D6; --warn:#8A4B00; --bad-bg:#FDE4E4; --bad:#A51B1B;
+  --blue-bg:#E4ECFF; --blue:#1E46B4; --pur-bg:#EFE6FA; --pur:#5E3696; --gray-bg:#ECEEF2; --gray:#3B4453;
+  --row:#FAFBFC;
+  --f-body:"Barlow",system-ui,sans-serif; --f-head:"Barlow Condensed","Arial Narrow",sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12151B; --card:#1B1F27; --line:#2A303B; --line2:#3A4250; --fg:#E8EAEE; --fg2:#A3ABB8; --red:#E0403F; --redh:#F2605F; --onred:#FFFFFF;
+  --ok-bg:#163A25; --ok:#8FE0AE; --warn-bg:#3D2C0C; --warn:#F5C77A; --bad-bg:#40191A; --bad:#F4A3A3;
+  --blue-bg:#18264A; --blue:#A9BFFF; --pur-bg:#2D2140; --pur:#CDB4F2; --gray-bg:#2A2F38; --gray:#C4CAD4; --row:#1F242D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12151B; --card:#1B1F27; --line:#2A303B; --line2:#3A4250; --fg:#E8EAEE; --fg2:#A3ABB8; --red:#E0403F; --redh:#F2605F; --onred:#FFFFFF;
+  --ok-bg:#163A25; --ok:#8FE0AE; --warn-bg:#3D2C0C; --warn:#F5C77A; --bad-bg:#40191A; --bad:#F4A3A3;
+  --blue-bg:#18264A; --blue:#A9BFFF; --pur-bg:#2D2140; --pur:#CDB4F2; --gray-bg:#2A2F38; --gray:#C4CAD4; --row:#1F242D; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45}
+.wrap{max-width:1400px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 40px}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-bottom:14px}
+.brand{font-family:var(--f-head);font-size:30px;font-weight:700;letter-spacing:.5px}
+.brand b{color:var(--red)}
+.sub{color:var(--fg2);font-size:14px}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+nav a{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--line2);background:var(--card);color:var(--fg);text-decoration:none;font-weight:600}
+nav a[aria-current="page"]{background:var(--red);border-color:var(--red);color:var(--onred)}
+nav a .n{font-size:12px;padding:1px 8px;border-radius:999px;background:var(--gray-bg);color:var(--gray)}
+nav a[aria-current="page"] .n{background:rgba(255,255,255,.22);color:var(--onred)}
+h1{font-family:var(--f-head);font-size:34px;margin:6px 0 2px;text-wrap:balance}
+.src{color:var(--fg2);font-size:13px;margin-bottom:12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:10px 0 14px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;color:var(--fg);font:inherit}
+.tile .v{font-family:var(--f-head);font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.tile .l{color:var(--fg2);font-size:13px}
+.tile[aria-pressed="true"]{outline:2px solid var(--red);outline-offset:-2px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.bar input[type=search],.bar select{height:40px;border:1px solid var(--line2);border-radius:10px;background:var(--card);color:var(--fg);font:inherit;padding:0 10px;min-width:0}
+.bar input[type=search]{flex:1 1 260px}
+.btn{height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--line2);background:var(--card);color:var(--fg);font:inherit;font-weight:600;cursor:pointer}
+.btn.pri{background:var(--red);border-color:var(--red);color:var(--onred)}
+.btn.pri:hover{background:var(--redh)}
+.btn:focus-visible,nav a:focus-visible,.tile:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.sm{height:30px;padding:0 10px;font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{position:sticky;top:0;background:var(--card);text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--fg2);padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:var(--row)}
+tbody tr.click{cursor:pointer}
+tbody tr.click:hover td{background:var(--blue-bg)}
+.mono{font-family:var(--f-mono);font-size:13px;white-space:nowrap}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tt{min-width:240px;max-width:420px}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600;white-space:nowrap}
+.p-ok{background:var(--ok-bg);color:var(--ok)}.p-warn{background:var(--warn-bg);color:var(--warn)}.p-bad{background:var(--bad-bg);color:var(--bad)}
+.p-blue{background:var(--blue-bg);color:var(--blue)}.p-pur{background:var(--pur-bg);color:var(--pur)}.p-gray{background:var(--gray-bg);color:var(--gray)}
+.more{display:flex;justify-content:center;padding:12px;gap:10px;align-items:center;color:var(--fg2);font-size:14px}
+.note{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:9px 12px;font-size:14px;margin-bottom:10px}
+.subtabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.subtabs button{height:36px;border-radius:999px;border:1px solid var(--line2);background:var(--card);color:var(--fg);font:inherit;font-weight:600;padding:0 14px;cursor:pointer}
+.subtabs button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+/* panel lateral */
+.scrim{position:fixed;inset:0;background:rgba(10,12,16,.35);z-index:20}
+.panel{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--card);border-left:1px solid var(--line);z-index:21;overflow-y:auto;padding:18px max(18px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) 18px;padding-top:calc(18px + env(safe-area-inset-top,0px))}
+.panel h2{font-family:var(--f-head);font-size:26px;margin:0 0 4px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:520px){.grid2{grid-template-columns:1fr}}
+.fld label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:var(--fg2);margin-bottom:3px}
+.fld input,.fld select,.fld textarea{width:100%;height:38px;border:1px solid var(--line2);border-radius:8px;background:var(--card);color:var(--fg);font:inherit;padding:0 9px}
+.fld textarea{height:64px;padding:8px 9px;resize:vertical}
+.fld.chg input,.fld.chg select,.fld.chg textarea{border-color:var(--pur);background:var(--pur-bg)}
+.fld .was{font-size:12px;color:var(--pur);margin-top:2px}
+.hist{margin-top:16px}
+.hist .it{border-top:1px solid var(--line);padding:9px 0;font-size:14px}
+.hist .it .meta{color:var(--fg2);font-size:13px}
+.row-act{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center}
+.msg{font-size:14px;color:var(--fg2)}
+.th{display:block;width:52px;height:52px;object-fit:contain;border-radius:8px;background:var(--card);border:1px solid var(--line)}
+.big{display:block;width:100%;max-height:280px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#fff;margin:8px 0}
+.empty{padding:28px;text-align:center;color:var(--fg2)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head><body>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand"><b>FX</b>MOTO · Gestión</div>
+      <div class="sub">Pantallas provisionales mientras se termina Motofix</div>
+    </div>
+    <nav aria-label="Pantallas">
+      <a href="#rgp" id="nav-rgp">Características del RGP <span class="n" id="n-rgp">…</span></a>
+      <a href="#sustitutos" id="nav-sustitutos">Sustitutos <span class="n" id="n-sus">…</span></a>
+      <a href="#activos" id="nav-activos">Productos activos <span class="n" id="n-act">…</span></a>
+    </nav>
+  </header>
+
+  <!-- CARACTERISTICAS -->
+  <section id="v-rgp" hidden>
+    <h1>Características del RGP para envíos</h1>
+    <div class="src" id="rgp-src"></div>
+    <div class="note" id="rgp-note">Cargando las 19,589 publicaciones…</div>
+    <div class="tiles" id="rgp-tiles"></div>
+    <div class="bar">
+      <input type="search" id="rgp-q" placeholder="Buscar MLM, Código ML, código de proveedor, SKU o título" aria-label="Buscar">
+      <select id="rgp-tipo" aria-label="Tipo"><option value="">Todos los tipos</option></select>
+      <select id="rgp-bod" aria-label="Bodega"><option value="">Todas las bodegas</option><option>CUERNAVACA</option><option>EDOMEX</option><option value="-">Sin bodega</option></select>
+      <button class="btn" id="rgp-alta">Dar de alta publicación</button>
+    </div>
+    <div class="card tbl"><table><thead><tr>
+      <th>Foto</th><th>MLM</th><th>Código ML</th><th>Título</th><th>Códigos</th><th>Tipo</th><th>÷</th><th>×</th><th>Pasillo</th><th>Bodega</th><th>SKU</th><th>Estado</th>
+    </tr></thead><tbody id="rgp-body"></tbody></table>
+    <div class="more" id="rgp-more"></div></div>
+  </section>
+
+  <!-- SUSTITUTOS -->
+  <section id="v-sustitutos" hidden>
+    <h1>Sustitutos de ALESSIA</h1>
+    <div class="src" id="sus-src"></div>
+    <div class="subtabs" id="sus-sub">
+      <button data-s="det" aria-pressed="true">Confirmados por código</button>
+      <button data-s="rep">Pedido 59 · para reparto</button>
+      <button data-s="sin">ALESSIA en 0 sin sustituto</button>
+    </div>
+    <div class="note" id="sus-rule">Regla: se pide primero el código original de ALESSIA. El sustituto solo cuando ALESSIA tiene 0 (o por la diferencia si tiene menos). Al llegar, la pieza se asigna a la publicación para la que se pidió; el código de la publicación no se cambia.</div>
+    <div class="tiles" id="sus-tiles"></div>
+    <div class="bar">
+      <input type="search" id="sus-q" placeholder="Buscar código ALESSIA, código sustituto, Código ML o título" aria-label="Buscar">
+      <select id="sus-marca" aria-label="Marca"><option value="">Todas las marcas</option></select>
+      <select id="sus-bod" aria-label="Bodega"><option value="">Todas las bodegas</option><option>CUERNAVACA</option><option>EDOMEX</option></select>
+    </div>
+    <div class="card tbl"><table><thead id="sus-head"></thead><tbody id="sus-body"></tbody></table><div class="more" id="sus-more"></div></div>
+  </section>
+
+  <!-- ACTIVOS -->
+  <section id="v-activos" hidden>
+    <h1>Productos activos de la empresa</h1>
+    <div class="src" id="act-src"></div>
+    <div class="tiles" id="act-tiles"></div>
+    <div class="bar">
+      <input type="search" id="act-q" placeholder="Buscar MLM, Código ML, SKU o título" aria-label="Buscar">
+      <select id="act-orig" aria-label="Origen"><option value="">Todos los orígenes</option></select>
+      <select id="act-bod" aria-label="Bodega"><option value="">Todas las bodegas</option></select>
+      <select id="act-cla" aria-label="Opiniones"><option value="">Todas las opiniones</option></select>
+      <select id="act-ord" aria-label="Orden"><option value="d30">Mayor venta $ 30 días</option><option value="u6m">Más unidades 6 meses</option><option value="opin">Más opiniones</option><option value="titulo">Título A–Z</option></select>
+    </div>
+    <div class="card tbl"><table><thead><tr>
+      <th>Foto</th><th>MLM</th><th>Código ML</th><th>Título</th><th>SKU</th><th>Bodega</th><th>Tamaño</th><th>Origen</th><th>Opiniones</th><th class="num">u 30 d</th><th class="num">$ 30 d</th><th class="num">u 6 m</th><th class="num">Meses</th><th>Sugerencia</th>
+    </tr></thead><tbody id="act-body"></tbody></table><div class="more" id="act-more"></div></div>
+  </section>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="panel" id="panel" hidden aria-label="Editar publicación"></aside>
+
+<script src="sync-config.js"></script>
+<script src="fxsync.js"></script>
+<script>
+const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>Number(n||0).toLocaleString('es-MX'), money=n=>'$'+Math.round(n||0).toLocaleString('es-MX');
+const PAGE=150;const DV='20261119a';
+let RGP=null,SUS=null,ACT=null;
+const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
+
+/* ---------- Routing ---------- */
+const VIEWS=['rgp','sustitutos','activos'];
+function route(){const h=(location.hash||'#rgp').slice(1);const v=VIEWS.includes(h)?h:'rgp';
+  VIEWS.forEach(x=>{$('#v-'+x).hidden=x!==v;const a=$('#nav-'+x);if(x===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  closePanel();ensure(v);}
+window.addEventListener('hashchange',route);
+const loaded={};
+function ensure(v){if(loaded[v])return;loaded[v]=1;
+  if(v==='rgp')load('gestion-data/rgp.json?v='+DV).then(d=>{RGP=d;initRGP()}).catch(()=>{$('#rgp-note').textContent='No se pudieron cargar los datos del RGP.'});
+  if(v==='sustitutos')load('gestion-data/sust.json?v='+DV).then(d=>{SUS=d;initSUS()});
+  if(v==='activos')load('gestion-data/activos.json?v='+DV).then(d=>{ACT=d;initACT()});}
+
+/* ---------- Registro compartido (hoja de Google de la página de envíos) ---------- */
+const KEY='fx-gm-rgp';const HAS=!!window.FXS&&/^https:/.test(window.FX_SYNC_URL||'');
+let CH=[];const LSg=(k,d)=>{try{const v=localStorage.getItem(k);return v==null?d:v}catch(e){return d}},LSs=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+if(location.hash==='#direccion'){LSs('fx-gm-dir','1');history.replaceState(null,'','#rgp')}
+const owner=LSg('fx-gm-dir','')==='1';
+let me=LSg('fx-who','');
+function readCH(){const o=HAS?FXS.get(KEY):{};CH=Object.entries(o||{}).map(([id,v])=>({id,...v})).sort((x,y)=>String(x.fecha).localeCompare(String(y.fecha)));applyChanges();if(panelMLM!==null&&!$('#panel').hidden)openPanel(panelMLM)}
+function writeCH(id,obj){const o=FXS.get(KEY)||{};o[id]=obj;FXS.set(KEY,o);readCH()}
+if(HAS){FXS.on(KEY,readCH)}
+function setDbNote(t){const n=$('#rgp-note');if(n){n.hidden=false;n.textContent=t}}
+const who=n=>n||'—';
+const IMG=u=>u?'https://http2.mlstatic.com/'+u:'';
+const th=u=>u?`<img class="th" loading="lazy" src="${esc(IMG(u))}" alt="" onerror="this.style.visibility='hidden'">`:'<span class="th"></span>';
+
+/* ---------- CARACTERISTICAS ---------- */
+const EDIT=[['c1','Código 1'],['c2','Código 2'],['c3','Código 3'],['c4','Código 4'],['c5','Código 5'],['c6','Código 6'],['tipo','Tipo'],['divide','Divide sobre'],['multiplica','Multiplica por'],['kit','Kit de arrastre'],['pasillo','Pasillo'],['bodega','Bodega asignada'],['lognueva','Logística nueva'],['sku','SKU'],['obs','Observaciones']];
+let base={},eff={},pend={},ord=[],altas=new Set(),rgpF='',rgpN=PAGE,rgpTile='';
+function initRGP(){const C=RGP.cols;
+  RGP.rows.forEach(r=>{const o={};C.forEach((c,i)=>o[c]=r[i]);if(base[o.num])return;base[o.num]=o;ord.push(o.num)});
+  $('#rgp-src').textContent='Fuente: '+RGP.fuente+'. Cada cambio queda registrado con quién, cuándo y por qué; los cambios se aplican al aprobarlos Dirección.';
+  const tipos=[...new Set(RGP.rows.map(r=>r[C.indexOf('tipo')]))].filter(Boolean).sort();
+  $('#rgp-tipo').insertAdjacentHTML('beforeend',tipos.map(t=>`<option>${esc(t)}</option>`).join(''));
+  $('#rgp-note').hidden=!0; if(!HAS)setDbNote('Sin conexión con la hoja compartida: puedes consultar, pero los cambios no se guardan.');
+  ['#rgp-q','#rgp-tipo','#rgp-bod'].forEach(s=>$(s).addEventListener('input',()=>{rgpN=PAGE;renderRGP()}));
+  $('#rgp-alta').onclick=()=>openPanel(null);
+  readCH();}
+function applyChanges(){if(!RGP)return;eff={};pend={};altas=new Set();
+  for(const k in base)eff[k]={...base[k]};
+  for(const c of CH){const K=c.clave||c.mlm;
+    if(c.tipo==='alta'){ if(c.estado==='aprobado'){eff[K]={...(c.datos||{}),mlm:c.mlm};altas.add(K);} else if(c.estado==='pendiente'){(pend[K]=pend[K]||[]).push(c); if(!eff[K]){eff[K]={...(c.datos||{}),mlm:c.mlm,_nueva:1}}} continue;}
+    if(!eff[K])continue;
+    if(c.estado==='aprobado')eff[K][c.campo]=c.despues;
+    else if(c.estado==='pendiente')(pend[K]=pend[K]||[]).push(c);}
+  $('#n-rgp').textContent=fmt(Object.keys(eff).length);
+  tilesRGP();renderRGP();}
+function tilesRGP(){const v=Object.values(eff);const np=Object.keys(pend).length;const ap=CH.filter(c=>c.estado==='aprobado').length;
+  const T=[['', 'Publicaciones',v.length],['pend','Con cambio pendiente',np],['comp','Compuestos',v.filter(o=>o.tipo==='COMPUESTO').length],['sinbod','Sin bodega asignada',v.filter(o=>!o.bodega).length],['hist','Cambios aprobados',ap]];
+  $('#rgp-tiles').innerHTML=T.map(([k,l,n])=>`<button class="tile" data-k="${k}" aria-pressed="${rgpTile===k}"><div class="v">${fmt(n)}</div><div class="l">${l}</div></button>`).join('');
+  $('#rgp-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{rgpTile=b.dataset.k;rgpN=PAGE;tilesRGP();renderRGP()});}
+function codes(o){return ['c1','c2','c3','c4','c5','c6'].map(k=>o[k]).filter(Boolean)}
+function rgpList(){const q=$('#rgp-q').value.trim().toUpperCase(),t=$('#rgp-tipo').value,b=$('#rgp-bod').value;
+  const keys=[...ord,...Object.keys(eff).filter(k=>!base[k])];
+  const aprob=new Set(CH.filter(c=>c.estado==='aprobado').map(c=>c.clave||c.mlm));
+  return keys.filter(k=>{const o=eff[k];if(!o)return false;
+    if(rgpTile==='pend'&&!pend[k])return false; if(rgpTile==='comp'&&o.tipo!=='COMPUESTO')return false; if(rgpTile==='sinbod'&&o.bodega)return false; if(rgpTile==='hist'&&!aprob.has(k))return false;
+    if(t&&o.tipo!==t)return false; if(b==='-'&&o.bodega)return false; if(b&&b!=='-'&&o.bodega!==b)return false;
+    if(q){const s=(o.mlm+' '+o.codml+' '+o.sku+' '+codes(o).join(' ')+' '+o.titulo).toUpperCase();if(!q.split(/\s+/).every(w=>s.includes(w)))return false}
+    return true});}
+function renderRGP(){if(!RGP)return;const L=rgpList();const show=L.slice(0,rgpN);
+  $('#rgp-body').innerHTML=show.length?show.map(k=>{const o=eff[k];const p=pend[k];
+    const st=o._nueva?'<span class="pill p-pur">Alta pendiente</span>':p?`<span class="pill p-pur">${p.length} pendiente${p.length>1?'s':''}</span>`:altas.has(k)?'<span class="pill p-blue">Alta</span>':'<span class="pill p-ok">Vigente</span>';
+    return `<tr class="click" data-k="${esc(k)}"><td>${th(o.img)}</td><td class="mono">${esc(o.mlm)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.titulo)}</td><td class="mono">${codes(o).map(esc).join('<br>')}</td><td>${esc(o.tipo)}</td><td class="num">${esc(o.divide)}</td><td class="num">${esc(o.multiplica)}</td><td>${esc(o.pasillo)}</td><td>${esc(o.bodega)||'<span class="pill p-warn">Falta</span>'}</td><td class="mono">${esc(o.sku)}</td><td>${st}</td></tr>`}).join(''):`<tr><td colspan="12" class="empty">Ninguna publicación coincide con la búsqueda.</td></tr>`;
+  $('#rgp-body').querySelectorAll('tr.click').forEach(tr=>tr.onclick=()=>openPanel(tr.dataset.k));
+  moreBar('#rgp-more',show.length,L.length,()=>{rgpN+=PAGE*4;renderRGP()});}
+function moreBar(sel,n,tot,fn){const m=$(sel);m.innerHTML=`<span>${fmt(n)} de ${fmt(tot)}</span>`+(n<tot?' <button class="btn sm">Mostrar más</button>':'');const b=m.querySelector('button');if(b)b.onclick=fn;}
+
+let panelMLM=null;
+function openPanel(k,refresh){panelMLM=k;const P=$('#panel');const isNew=!k;const o=isNew?{}:eff[k];const b=isNew?{}:(base[k]||{});
+  const p=isNew?[]:(pend[k]||[]);const hist=isNew?[]:CH.filter(c=>(c.clave||c.mlm)===k).slice().reverse();
+  const pv={};p.forEach(c=>{if(c.campo)pv[c.campo]=c});
+  const canW=HAS;
+  P.innerHTML=`<div class="row-act" style="margin:0 0 8px;justify-content:space-between"><span class="pill ${isNew?'p-pur':'p-gray'}">${isNew?'Alta nueva':'Publicación'}</span><button class="btn sm" id="pclose">Cerrar</button></div>
+  <h2>${isNew?'Dar de alta publicación':esc(o.titulo)}</h2>
+  ${isNew?`<div class="grid2"><div class="fld"><label for="f-mlm">MLM</label><input id="f-mlm" placeholder="MLM…"></div><div class="fld"><label for="f-codml">Código ML</label><input id="f-codml"></div></div><div class="fld" style="margin-top:10px"><label for="f-titulo">Título</label><input id="f-titulo"></div>`:
+   `${o.img?`<a href="${esc(IMG(o.img))}" target="_blank" rel="noopener"><img class="big" src="${esc(IMG(o.img))}" alt="Foto de la publicación"></a>`:''}<div class="msg"><span class="mono">${esc(o.mlm)}</span> · Código ML <span class="mono">${esc(o.codml)}</span>${o.num?' · Producto <span class="mono">'+esc(o.num)+'</span>':''}</div>`}
+  <div class="grid2" style="margin-top:12px">${EDIT.map(([f,l])=>{const v=pv[f]?pv[f].despues:(o[f]??'');const big=f==='obs';
+    return `<div class="fld ${pv[f]?'chg':''}" ${big?'style="grid-column:1/-1"':''}><label for="f-${f}">${l}</label>${f==='bodega'?`<select id="f-${f}"><option value=""></option>${['CUERNAVACA','EDOMEX'].map(x=>`<option ${v===x?'selected':''}>${x}</option>`).join('')}</select>`:big?`<textarea id="f-${f}">${esc(v)}</textarea>`:`<input id="f-${f}" value="${esc(v)}">`}${pv[f]?`<div class="was">Pendiente: antes “${esc(pv[f].antes)||'vacío'}” · ${esc(who(pv[f].por))}</div>`:''}</div>`}).join('')}</div>
+  <div class="grid2" style="margin-top:10px"><div class="fld"><label for="f-who">Quién registra</label><input id="f-who" value="${esc(me)}" placeholder="Tu nombre"></div><div class="fld"><label for="f-motivo">Motivo del cambio</label><input id="f-motivo" placeholder="Ej. llega en bolsa de 10; divide sobre 10"></div></div>
+  <div class="row-act"><button class="btn pri" id="psave" ${canW?'':'disabled'}>${isNew?'Registrar alta':'Registrar cambios'}</button><span class="msg" id="pmsg">${canW?(owner?'Este equipo está marcado como Dirección: tus cambios quedan aprobados al registrarlos.':'Tus cambios quedan pendientes hasta que Dirección los apruebe.'):'Sin conexión con la hoja compartida; no se puede registrar.'}</span></div>
+  ${p.length&&owner?`<div class="row-act"><button class="btn" id="papr">Aprobar ${p.length} pendiente${p.length>1?'s':''}</button><button class="btn" id="prej">Rechazar</button></div>`:''}
+  <div class="hist"><div class="fld"><label>Registro</label></div>${hist.length?hist.map(c=>`<div class="it"><b>${c.tipo==='alta'?'Alta de publicación':esc(labelOf(c.campo))}</b>${c.tipo==='alta'?'':`: “${esc(c.antes)||'vacío'}” → “${esc(c.despues)||'vacío'}”`} <span class="pill ${c.estado==='aprobado'?'p-ok':c.estado==='rechazado'?'p-bad':'p-pur'}">${esc(c.estado)}</span><div class="meta">${esc(who(c.por))} · ${fd(c.fecha)}${c.motivo?' · '+esc(c.motivo):''}${c.revisadoPor?' · revisó '+esc(who(c.revisadoPor))+' '+fd(c.revisadoFecha):''}</div></div>`).join(''):'<div class="msg">Sin cambios registrados. Los datos vienen del RGP NUEVO 05-10-26.</div>'}</div>`;
+  P.hidden=false;$('#scrim').hidden=false;
+  $('#pclose').onclick=closePanel;
+  $('#psave').onclick=()=>save(k,o,b);
+  if($('#papr'))$('#papr').onclick=()=>review(p,'aprobado');
+  if($('#prej'))$('#prej').onclick=()=>review(p,'rechazado');}
+const labelOf=f=>(EDIT.find(e=>e[0]===f)||[f,f])[1];
+const fd=s=>{if(!s)return'';const d=new Date(s);return d.toLocaleDateString('es-MX',{day:'2-digit',month:'short'})+' '+d.toLocaleTimeString('es-MX',{hour:'2-digit',minute:'2-digit'})};
+function closePanel(){$('#panel').hidden=true;$('#scrim').hidden=true;panelMLM=null}
+$('#scrim').onclick=closePanel;document.addEventListener('keydown',e=>{if(e.key==='Escape')closePanel()});
+function save(k,o,b){const msg=$('#pmsg');const motivo=$('#f-motivo').value.trim();const nm=$('#f-who').value.trim();
+  if(!nm){msg.textContent='Escribe tu nombre: queda en el registro.';return}
+  if(!motivo){msg.textContent='Escribe el motivo del cambio: queda en el registro.';return}
+  me=nm;LSs('fx-who',nm);
+  const now=new Date().toISOString(),estado=owner?'aprobado':'pendiente',extra=owner?{revisadoPor:nm,revisadoFecha:now}:{};
+  const nid=()=>'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  if(!k){const mlm=$('#f-mlm').value.trim().toUpperCase();if(!/^MLM\d+$/.test(mlm)){msg.textContent='Escribe el MLM completo (MLM y números).';return}
+    if(Object.values(eff).some(x=>x.mlm===mlm&&!x._nueva)){msg.textContent='Esa publicación ya existe: búscala y edítala.';return}
+    const datos={codml:$('#f-codml').value.trim().toUpperCase(),titulo:$('#f-titulo').value.trim()};EDIT.forEach(([f])=>datos[f]=$('#f-'+f).value.trim());
+    writeCH(nid(),{tipo:'alta',clave:mlm,mlm,datos,motivo,por:nm,fecha:now,estado,...extra});closePanel();return}
+  const o2=FXS.get(KEY)||{};let n=0;
+  for(const [f] of EDIT){const nv=$('#f-'+f).value.trim();const cur=String(o[f]??'');const pp=(pend[k]||[]).find(c=>c.campo===f);
+    if(nv===cur&&!pp)continue; if(pp&&pp.despues===nv)continue;
+    if(pp){o2[pp.id]={...pp,estado:'reemplazado'};delete o2[pp.id].id}
+    if(nv!==cur){o2[nid()+f]={tipo:'cambio',clave:k,mlm:o.mlm,codml:o.codml,campo:f,antes:cur,despues:nv,motivo,por:nm,fecha:now,estado,...extra};n++}}
+  FXS.set(KEY,o2);readCH();
+  $('#pmsg')&&($('#pmsg').textContent=n?`${n} cambio${n>1?'s':''} registrado${n>1?'s':''}${owner?' y aplicado'+(n>1?'s':''):' como pendiente'+(n>1?'s':'')}. Ya lo ven todos.`:'No hay cambios que registrar.');}
+function review(list,estado){const o=FXS.get(KEY)||{};const now=new Date().toISOString();for(const c of list){const {id,...v}=c;o[id]={...v,estado,revisadoPor:me||'Dirección',revisadoFecha:now}}FXS.set(KEY,o);readCH()}
+
+/* ---------- SUSTITUTOS ---------- */
+let susSub='det',susN=PAGE,susTile='';
+const ESTADO={CON:['Confirmado','p-ok'],CONF:['Confirmado','p-ok'],AUTO:['Confirmado auto','p-ok'],LIDER:['Confirmado','p-ok'],PARCIAL:['Parcial','p-warn'],COTIZAR:['Por cotizar','p-blue'],PROB:['Por revisar','p-warn'],'':['—','p-gray']};
+function initSUS(){$('#sus-src').textContent='Fuente: '+SUS.fuente+'.';
+  const D=SUS.det,R=SUS.rep,S=SUS.sin;
+  $('#n-sus').textContent=fmt(D.length);
+  const marcas=[...new Set([...D.map(r=>r[2]),...R.map(r=>r[1])])].filter(Boolean).sort();
+  $('#sus-marca').insertAdjacentHTML('beforeend',marcas.map(m=>`<option>${esc(m)}</option>`).join(''));
+  $('#sus-sub').querySelectorAll('button').forEach(b=>b.onclick=()=>{susSub=b.dataset.s;susTile='';susN=PAGE;$('#sus-sub').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderSUS()});
+  ['#sus-q','#sus-marca','#sus-bod'].forEach(s=>$(s).addEventListener('input',()=>{susN=PAGE;renderSUS()}));
+  renderSUS();}
+function renderSUS(){const q=$('#sus-q').value.trim().toUpperCase(),m=$('#sus-marca').value,bd=$('#sus-bod').value;
+  $('#sus-marca').hidden=susSub==='sin';$('#sus-bod').hidden=susSub==='det';
+  const match=s=>!q||q.split(/\s+/).every(w=>s.toUpperCase().includes(w));
+  let head,rows,tiles;
+  if(susSub==='det'){const D=SUS.det;
+    tiles=[['','Sustitutos confirmados',D.length],['si','Se piden esta semana',D.filter(r=>r[5]==='Sí').length],['no','Marca que no se pide aún',D.filter(r=>r[5]!=='Sí').length]];
+    rows=D.filter(r=>(!m||r[2]===m)&&(susTile!=='si'||r[5]==='Sí')&&(susTile!=='no'||r[5]!=='Sí')&&match(r.join(' '))).sort((a,b)=>b[4]-a[4]);
+    head='<tr><th>Foto</th><th>Código ALESSIA</th><th>Título de la publicación</th><th>Marca sustituto</th><th>Código sustituto</th><th class="num">Venta $/mes</th><th>Esta semana</th></tr>';
+    var cell=r=>`<td>${th(r[7])}</td><td class="mono">${esc(r[0])}</td><td class="tt">${esc(r[1])}</td><td>${esc(r[2])}</td><td class="mono">${esc(r[3])}</td><td class="num">${money(r[4])}</td><td>${r[5]==='Sí'?'<span class="pill p-ok">Sí</span>':'<span class="pill p-gray">No (marca no regular)</span>'}</td>`;}
+  else if(susSub==='rep'){const R=SUS.rep;const pz=R.reduce((a,r)=>a+Number(r[3]||0),0);
+    tiles=[['','Renglones pedidos',R.length],['','Piezas pedidas',Math.round(pz)],['','Publicaciones',new Set(R.map(r=>r[5])).size]];
+    rows=R.filter(r=>(!m||r[1]===m)&&(!bd||r[0]===bd)&&match(r.join(' ')));
+    head='<tr><th>Foto</th><th>Bodega del pedido</th><th>Marca</th><th>Código sustituto</th><th class="num">Piezas</th><th>En lugar de (ALESSIA)</th><th>Asignar a Código ML</th><th class="num">u ML</th><th>Bodega publicación</th><th>Nota</th></tr>';
+    var cell=r=>`<td>${th(r[9])}</td><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="mono">${esc(r[2])}</td><td class="num">${esc(r[3])}</td><td class="mono">${esc(r[4])}</td><td class="mono">${esc(r[5])}</td><td class="num">${esc(r[6])}</td><td>${esc(r[7])}</td><td>${esc(r[8])}</td>`;}
+  else{const S=SUS.sin;const u=S.reduce((a,r)=>a+Number(r[5]||0),0);
+    tiles=[['','Publicaciones sin pedir',S.length],['','u ML que hacían falta',Math.round(u)],['','Códigos ALESSIA',new Set(S.map(r=>r[3])).size]];
+    rows=S.filter(r=>(!bd||r[0]===bd)&&match(r.join(' '))).sort((a,b)=>b[4]-a[4]);
+    head='<tr><th>Foto</th><th>Bodega</th><th>Código ML</th><th>Título</th><th>Código ALESSIA</th><th class="num">Venta/mes (u)</th><th class="num">u ML faltantes</th><th>Motivo</th></tr>';
+    var cell=r=>`<td>${th(r[7])}</td><td>${esc(r[0])}</td><td class="mono">${esc(r[1])}</td><td class="tt">${esc(r[2])}</td><td class="mono">${esc(r[3])}</td><td class="num">${esc(r[4])}</td><td class="num">${esc(r[5])}</td><td>${esc(r[6])}</td>`;}
+  $('#sus-tiles').innerHTML=tiles.map(([k,l,n])=>`<button class="tile" data-k="${k}" aria-pressed="${susTile===k&&k!==''}" ${susSub==='det'?'':'tabindex="-1"'}><div class="v">${fmt(n)}</div><div class="l">${l}</div></button>`).join('');
+  if(susSub==='det')$('#sus-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{susTile=susTile===b.dataset.k?'':b.dataset.k;susN=PAGE;renderSUS()});
+  $('#sus-head').innerHTML=head;const show=rows.slice(0,susN);
+  $('#sus-body').innerHTML=show.length?show.map(r=>`<tr>${cell(r)}</tr>`).join(''):'<tr><td colspan="10" class="empty">Nada coincide con la búsqueda.</td></tr>';
+  moreBar('#sus-more',show.length,rows.length,()=>{susN+=PAGE*4;renderSUS()});}
+
+/* ---------- ACTIVOS ---------- */
+let actN=PAGE,actTile='';
+const SUG={'1. Migrar':'p-ok','1. Migrar (ligar a catálogo)':'p-ok','2. Migrar en segunda etapa':'p-blue','3. Dejar en física':'p-gray','4. Revisar (no está en la física)':'p-warn'};
+function initACT(){const C=ACT.cols;ACT.o=ACT.rows.map(r=>{const o={};C.forEach((c,i)=>o[c]=r[i]);return o});
+  $('#act-src').textContent='Fuente: '+ACT.fuente+'. Venta y opiniones de la cuenta física.';
+  $('#n-act').textContent=fmt(ACT.o.length);
+  const opts=(k,sel)=>$(sel).insertAdjacentHTML('beforeend',[...new Set(ACT.o.map(o=>o[k]))].filter(Boolean).sort().map(v=>`<option>${esc(v)}</option>`).join(''));
+  opts('origen','#act-orig');opts('bodega','#act-bod');opts('clasif','#act-cla');
+  ['#act-q','#act-orig','#act-bod','#act-cla','#act-ord'].forEach(s=>$(s).addEventListener('input',()=>{actN=PAGE;renderACT()}));
+  renderACT();}
+function renderACT(){const q=$('#act-q').value.trim().toUpperCase(),og=$('#act-orig').value,bd=$('#act-bod').value,cl=$('#act-cla').value,od=$('#act-ord').value;
+  const sugs=[...new Set(ACT.o.map(o=>o.sug))].sort();
+  const T=[['','Activos de empresa',ACT.o.length,ACT.o.reduce((a,o)=>a+o.d30,0)],...sugs.map(s=>[s,s,ACT.o.filter(o=>o.sug===s).length,ACT.o.filter(o=>o.sug===s).reduce((a,o)=>a+o.d30,0)])];
+  $('#act-tiles').innerHTML=T.map(([k,l,n,d])=>`<button class="tile" data-k="${esc(k)}" aria-pressed="${actTile===k&&k!==''}"><div class="v">${fmt(n)}</div><div class="l">${esc(l)} · ${money(d)} en 30 d</div></button>`).join('');
+  $('#act-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{actTile=actTile===b.dataset.k?'':b.dataset.k;actN=PAGE;renderACT()});
+  let L=ACT.o.filter(o=>(!actTile||o.sug===actTile)&&(!og||o.origen===og)&&(!bd||o.bodega===bd)&&(!cl||o.clasif===cl)&&(!q||q.split(/\s+/).every(w=>(o.mlm+' '+o.codml+' '+o.sku+' '+o.titulo).toUpperCase().includes(w))));
+  L.sort(od==='titulo'?(a,b)=>a.titulo.localeCompare(b.titulo):(a,b)=>b[od]-a[od]);
+  const show=L.slice(0,actN);
+  $('#act-body').innerHTML=show.length?show.map(o=>`<tr><td>${th(o.img)}</td><td class="mono">${esc(o.mlm)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.titulo)}</td><td class="mono">${esc(o.sku)}</td><td>${esc(o.bodega)}</td><td>${esc(o.tam)}</td><td style="white-space:nowrap">${esc(o.origen.replace(' (RGP 05-10-26)',''))}</td><td>${esc(o.clasif)}${o.opin?' · '+fmt(o.opin):''}</td><td class="num">${fmt(o.u30)}</td><td class="num">${money(o.d30)}</td><td class="num">${fmt(o.u6m)}</td><td class="num">${o.meses}</td><td><span class="pill ${SUG[o.sug]||'p-gray'}">${esc(o.sug)}</span></td></tr>`).join(''):'<tr><td colspan="14" class="empty">Nada coincide con la búsqueda.</td></tr>';
+  moreBar('#act-more',show.length,L.length,()=>{actN+=PAGE*4;renderACT()});}
+
+route();
+load('gestion-data/sust.json?v='+DV).then(d=>{if(!SUS){$('#n-sus').textContent=fmt(d.det.length)}}).catch(()=>{});
+</script>
+
+</body></html>
