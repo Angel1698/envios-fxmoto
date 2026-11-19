@@ -18,12 +18,12 @@ print('rgp',len(rows), collections.Counter(x[11] for x in rows).most_common(8))
 st=pickle.load(open('/tmp/claude-0/s3/c9/status952i.pkl','rb'))
 wb=openpyxl.load_workbook('/mnt/user-data/outputs/Sustitutos_por_marca_18nov.xlsx',read_only=True)
 det=[[cl(x) for x in t] for t in list(wb['Detalle 529'].iter_rows(values_only=True))[1:] if t[0]]
-wb2=openpyxl.load_workbook('/mnt/user-data/outputs/59 POR MARCA/PEDIDO_59_RESUMEN_18-11-2026.xlsx',read_only=True)
+wb2=openpyxl.load_workbook('/tmp/claude-0/p59o/out/59 POR MARCA/PEDIDO_59_RESUMEN_18-11-2026.xlsx',read_only=True)
 rep=[[cl(x) for x in t] for t in list(wb2['Sustitutos para reparto'].iter_rows(values_only=True))[1:] if t[0]]
 sin=[[cl(x) for x in t] for t in list(wb2['ALESSIA en 0 sin sustituto'].iter_rows(values_only=True))[1:] if t[0]]
 REG={'REFACOM','SAYTO','MRM','KINGMOTO','WINMEX','TMMP','MOTO AZCAPOTZALCO','ITALIKA'}
 for d in det: d.append(st.get(d[0],''))
-json.dump({'fuente':'Sustitutos confirmados 18-nov (529) · Pedido 59 hojas "Sustitutos para reparto" y "ALESSIA en 0 sin sustituto"',
+json.dump({'fuente':'Sustitutos confirmados 18-nov (529) · Pedido 59 recalculado 19-nov 07:00, hojas "Sustitutos para reparto" y "ALESSIA en 0 sin sustituto"',
  'det_cols':['ale','titulo','marca','codigo','venta','semana','estado'],'det':det,
  'rep_cols':['bodped','marca','codigo','pz','ale','codml','uml','bodpub','nota'],'rep':rep,
  'sin_cols':['bod','codml','titulo','ale','vmes','uml','motivo'],'sin':sin},open('sust.json','w'),ensure_ascii=False,separators=(',',':'))
