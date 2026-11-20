@@ -208,6 +208,23 @@ for k,f in D['facturas'].items():
         for i in f['items']:
             q=(i.get('qty') or 0)-sum(x.get('pz',0) for x in i.get('dest',[]))
             if q>0: EC[(f['bod'],N(i['code']))]+=q; ECSRC.append([f['bod'],m,k,N(i['code']),q])
+# documentos del seguimiento de pedidos que todavía no están en la página de envíos (cotización/proforma/OV confirmada, factura sin subir)
+SEG=json.load(open(os.path.join(HERE,'seguimiento.json'),encoding='utf-8')) if os.path.exists(os.path.join(HERE,'seguimiento.json')) else {'pedidos':{}}
+TXTF=' '.join([k+' '+json.dumps({kk:vv for kk,vv in f.items() if kk not in ('items',)},ensure_ascii=False) for k,f in D['facturas'].items()])
+SEGEC=[]; SEGSIN=[]; YA=set()
+for pn,pp in SEG['pedidos'].items():
+    for m_,pv in pp['proveedores'].items():
+        for doc in pv.get('docs',[]):
+            if doc.get('estado') not in ('confirmada','facturada','en camino') or doc.get('llego') or doc.get('en_pagina'): continue
+            if doc.get('numero') and doc['numero'].lstrip('0') in TXTF: continue   # ya está en la página: se cuenta desde DATA
+            bod_=('CUERNAVACA' if doc.get('archivo','').startswith('CUERNAVACA') else 'EDOMEX')
+            items=doc.get('items') or []
+            if not items:   # sin detalle todavía: se cuenta lo pedido en ese archivo y se marca para revisar
+                ka=(pn,m_,doc.get('archivo'))
+                items=[] if ka in YA else [[l[1],l[2]] for l in pv['lineas'] if l[0]==doc.get('archivo')]; YA.add(ka)
+                SEGSIN.append(f"{m_} {doc.get('tipo')} {doc.get('numero')} (pedido {pn})")
+            for c_,q_ in items:
+                if q_>0: EC[(bod_,N(c_))]+=q_; ECSRC.append([bod_,m_,f"seguimiento {pn} {doc.get('tipo')} {doc.get('numero')}",N(c_),q_]); SEGEC.append(q_)
 NC=REG.get('bodega_no_contar',{}); AJ=REG.get('bodega_ajustes',{})
 BOD=collections.defaultdict(float); BSRC=[]; NOCU=[]
 for k,f in D['facturas'].items():
@@ -327,6 +344,7 @@ CHK.append(['Compuestos completos (ninguna pieza pedida sin la otra)',not inc,('
 CHK.append([f'Reportes de ML del día ({FREP})',FREP==hoy,RP['archivos']['planificacion'][2]])
 vie=[f'{m} {LPMETA[m][0]}' for m in SEMANA if m in LPMETA and (datetime.date.today()-datetime.date.fromisoformat(LPMETA[m][0])).days>30]
 CHK.append(['Listas de precios con menos de 30 días',not vie,('Pedir lista nueva: '+', '.join(vie)) if vie else 'OK'])
+CHK.append(['En camino del seguimiento con detalle por código',not SEGSIN,('Sin detalle, se contó lo pedido: '+'; '.join(SEGSIN[:10])) if SEGSIN else f'{round(sum(SEGEC))} pz de documentos aún no subidos a la página'])
 CHK.append(['Marca de piezas corregida contra listas',True,f'{len(MARCAFIX)} piezas tomadas de la lista donde sí aparecen' if MARCAFIX else 'OK'])
 
 # ---------- salida ----------
@@ -348,7 +366,7 @@ out={'pedido':PEDIDO,'calculado':datetime.datetime.now().isoformat(timespec='min
  'sust_cols':['bod','ale','marca','codigo','pz','codml','bodpub'],'sust':SUBLOG,'split':SPLIT,
  'excl_cols':['bod','marca','codigo','pz','motivo'],'excl':EXCL,
  'nopid_cols':['bod','codml','titulo','motivo','v30','aptas','img'],'nopid':nopid,'por_que':dict(WHY),
- 'envios_cols':['envio','bod','fecha','u','en_pendientes_ml','estado'],'envios':ENVLOG,
+ 'envios_cols':['envio','bod','fecha','u','en_pendientes_ml','estado'],'envios':ENVLOG,'encamino_cols':['bod','marca','documento','codigo','pz'],'encamino':ECSRC,
  'marcafix':MARCAFIX,'checks':CHK}
 json.dump(out,open(os.path.join(HERE,'pedido.json'),'w'),ensure_ascii=False,separators=(',',':'))
 print('pubs',len(OUT),'renglones',len(lineas),'pz',sum(PED.values()),'importe',round(sum(l[6] for l in lineas)))

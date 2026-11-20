@@ -1,0 +1,196 @@
+{
+"pedido": "60 prueba",
+"fecha": "20-11-2026",
+"carpeta": "archivos/60-prueba",
+"archivos": [
+{
+"marca": "ALESSIA",
+"archivo": "CUERNAVACA",
+"nombre": "1-ALESSIA-F 60 prueba CUERNAVACA 20-11-2026.xlsm",
+"codigos": 11,
+"piezas": 72,
+"ok": true,
+"errores": []
+},
+{
+"marca": "ALESSIA",
+"archivo": "EDOMEX GRANDE-XG",
+"nombre": "1-ALESSIA-F 60 prueba EDOMEX GRANDE-XG 20-11-2026.xlsm",
+"codigos": 8,
+"piezas": 161,
+"ok": true,
+"errores": []
+},
+{
+"marca": "ITALIKA",
+"archivo": "CUERNAVACA",
+"nombre": "10-ITALIKA-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 181,
+"piezas": 969,
+"ok": true,
+"errores": []
+},
+{
+"marca": "ITALIKA",
+"archivo": "EDOMEX",
+"nombre": "10-ITALIKA-F 60 prueba EDOMEX 20-11-2026.xlsx",
+"codigos": 11,
+"piezas": 77,
+"ok": true,
+"errores": []
+},
+{
+"marca": "KINGMOTO",
+"archivo": "CUERNAVACA",
+"nombre": "5-KINGMOTO-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 107,
+"piezas": 1101,
+"ok": true,
+"errores": []
+},
+{
+"marca": "KINGMOTO",
+"archivo": "EDOMEX GRANDE-XG",
+"nombre": "5-KINGMOTO-F 60 prueba EDOMEX GRANDE-XG 20-11-2026.xlsx",
+"codigos": 4,
+"piezas": 4,
+"ok": true,
+"errores": []
+},
+{
+"marca": "KINGMOTO",
+"archivo": "EDOMEX PEQ-MED",
+"nombre": "5-KINGMOTO-F 60 prueba EDOMEX PEQ-MED 20-11-2026.xlsx",
+"codigos": 10,
+"piezas": 43,
+"ok": true,
+"errores": []
+},
+{
+"marca": "MOTO AZCAPOTZALCO",
+"archivo": "CUERNAVACA",
+"nombre": "8-MOTOAZCAPO-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 88,
+"piezas": 553,
+"ok": true,
+"errores": []
+},
+{
+"marca": "MOTO AZCAPOTZALCO",
+"archivo": "EDOMEX GRANDE-XG",
+"nombre": "8-MOTOAZCAPO-F 60 prueba EDOMEX GRANDE-XG 20-11-2026.xlsx",
+"codigos": 13,
+"piezas": 83,
+"ok": true,
+"errores": []
+},
+{
+"marca": "MOTO AZCAPOTZALCO",
+"archivo": "EDOMEX PEQ-MED",
+"nombre": "8-MOTOAZCAPO-F 60 prueba EDOMEX PEQ-MED 20-11-2026.xlsx",
+"codigos": 20,
+"piezas": 105,
+"ok": true,
+"errores": []
+},
+{
+"marca": "MRM",
+"archivo": "CUERNAVACA",
+"nombre": "4-MRM-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 2,
+"piezas": 8,
+"ok": true,
+"errores": []
+},
+{
+"marca": "REFACOM",
+"archivo": "CUERNAVACA",
+"nombre": "2-REFACOM-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 592,
+"piezas": 8605,
+"ok": true,
+"errores": []
+},
+{
+"marca": "REFACOM",
+"archivo": "EDOMEX GRANDE-XG",
+"nombre": "2-REFACOM-F 60 prueba EDOMEX GRANDE-XG 20-11-2026.xlsx",
+"codigos": 47,
+"piezas": 675,
+"ok": true,
+"errores": []
+},
+{
+"marca": "REFACOM",
+"archivo": "EDOMEX PEQ-MED",
+"nombre": "2-REFACOM-F 60 prueba EDOMEX PEQ-MED 20-11-2026.xlsx",
+"codigos": 61,
+"piezas": 818,
+"ok": true,
+"errores": []
+},
+{
+"marca": "SAYTO",
+"archivo": "CUERNAVACA",
+"nombre": "3-SAYTO-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 296,
+"piezas": 2219,
+"ok": true,
+"errores": []
+},
+{
+"marca": "SAYTO",
+"archivo": "EDOMEX GRANDE-XG",
+"nombre": "3-SAYTO-F 60 prueba EDOMEX GRANDE-XG 20-11-2026.xlsx",
+"codigos": 53,
+"piezas": 315,
+"ok": true,
+"errores": []
+},
+{
+"marca": "SAYTO",
+"archivo": "EDOMEX PEQ-MED",
+"nombre": "3-SAYTO-F 60 prueba EDOMEX PEQ-MED 20-11-2026.xlsx",
+"codigos": 56,
+"piezas": 306,
+"ok": true,
+"errores": []
+},
+{
+"marca": "TMMP",
+"archivo": "CUERNAVACA",
+"nombre": "7-TMMP-F 60 prueba CUERNAVACA 20-11-2026.xlsx",
+"codigos": 68,
+"piezas": 385,
+"ok": true,
+"errores": []
+},
+{
+"marca": "TMMP",
+"archivo": "EDOMEX",
+"nombre": "7-TMMP-F 60 prueba EDOMEX 20-11-2026.xlsx",
+"codigos": 9,
+"piezas": 65,
+"ok": true,
+"errores": []
+},
+{
+"marca": "WINMEX",
+"archivo": "EDOMEX GRANDE-XG",
+"nombre": "6-WINMEX-F 60 prueba EDOMEX GRANDE-XG 20-11-2026.xlsx",
+"codigos": 40,
+"piezas": 435,
+"ok": true,
+"errores": []
+},
+{
+"marca": "WINMEX",
+"archivo": "EDOMEX PEQ-MED",
+"nombre": "6-WINMEX-F 60 prueba EDOMEX PEQ-MED 20-11-2026.xlsx",
+"codigos": 149,
+"piezas": 1310,
+"ok": true,
+"errores": []
+}
+]
+}

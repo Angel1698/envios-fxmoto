@@ -101,7 +101,7 @@ tbody tr.click:hover td{background:var(--blue-bg)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 .pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .pcard h3{font-family:var(--f-head);font-size:24px;margin:0}
-.pcard table{font-size:13px}.pcard td{padding:5px 6px}
+.pcard table{font-size:13px}.pcard td,.pcard th{padding:5px 5px}.pcard th{position:static}
 .steps{display:flex;gap:4px;flex-wrap:wrap}
 .steps span{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--gray-bg);color:var(--gray)}
 .steps span.on{background:var(--ok-bg);color:var(--ok);font-weight:600}
@@ -131,6 +131,7 @@ tbody tr.click:hover td{background:var(--blue-bg)}
       <a href="#descontinuados" id="nav-descontinuados">Descontinuados <span class="n" id="n-desc">…</span></a>
       <a href="#pedido" id="nav-pedido">Cálculo <span class="n" id="n-ped">…</span></a>
       <a href="#aprobacion" id="nav-aprobacion">Aprobación</a>
+      <a href="#seguimiento" id="nav-seguimiento">Seguimiento <span class="n" id="n-seg">…</span></a>
     </nav>
   </header>
 
@@ -276,6 +277,19 @@ tbody tr.click:hover td{background:var(--blue-bg)}
     <div class="card tbl"><table><thead id="pd-head"></thead><tbody id="pd-body"></tbody></table><div class="more" id="pd-more"></div></div>
   </section>
 
+  <!-- SEGUIMIENTO -->
+  <section id="v-seguimiento" hidden>
+    <h1>Seguimiento de pedidos</h1>
+    <div class="src" id="sg-src"></div>
+    <div class="note">Por proveedor: qué se pidió, qué cotizó, qué facturó y qué ya llegó, con sus documentos. Lo revisa una sesión automática cada 2 horas (WhatsApp, correo y la página de envíos). Lo que no surtieron pasa a Descontinuados; los documentos que no están en la página de envíos se avisan para subirlos.</div>
+    <div class="checks" id="sg-al"></div>
+    <div class="subtabs" id="sg-ped"></div>
+    <div class="cards" id="sg-cards"></div>
+    <h2 style="font-family:var(--f-head);font-size:24px;margin:16px 0 8px">Códigos del pedido</h2>
+    <div class="bar"><input type="search" id="sg-q" placeholder="Buscar código" aria-label="Buscar código"><select id="sg-m" aria-label="Proveedor"><option value="">Todos los proveedores</option></select><select id="sg-f" aria-label="Filtro"><option value="">Todos</option><option value="ns">No surtido</option><option value="fl">Falta por llegar</option></select></div>
+    <div class="card tbl"><table><thead><tr><th>Proveedor</th><th>Archivo</th><th>Código</th><th class="num">Pedido</th><th class="num">Cotizado</th><th class="num">Facturado</th><th class="num">Llegó</th><th>Estado</th></tr></thead><tbody id="sg-body"></tbody></table><div class="more" id="sg-more"></div></div>
+  </section>
+
   <!-- APROBACION -->
   <section id="v-aprobacion" hidden>
     <h1 id="ap-h1">Aprobación y envío</h1>
@@ -294,12 +308,12 @@ tbody tr.click:hover td{background:var(--blue-bg)}
 <script>
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>Number(n||0).toLocaleString('es-MX'), money=n=>'$'+Math.round(n||0).toLocaleString('es-MX');
-const PAGE=150;const DV='20261120a';
+const PAGE=150;const DV='20261120c';
 let RGP=null,SUS=null,ACT=null;
 const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
 
 /* ---------- Routing ---------- */
-const VIEWS=['rgp','sustitutos','activos','piezas','listas','reportes','reglas','descontinuados','pedido','aprobacion'];
+const VIEWS=['rgp','sustitutos','activos','piezas','listas','reportes','reglas','descontinuados','pedido','aprobacion','seguimiento'];
 function route(){const h=(location.hash||'#rgp').slice(1);const v=VIEWS.includes(h)?h:'rgp';
   VIEWS.forEach(x=>{$('#v-'+x).hidden=x!==v;const a=$('#nav-'+x);if(x===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   closePanel();ensure(v);}
@@ -315,7 +329,9 @@ function ensure(v){if(loaded[v])return;loaded[v]=1;
   if(v==='reglas')load(PD_+'reglas.json?v='+DV).then(d=>{RGL=d;initRG()});
   if(v==='descontinuados')getPED().then(initDS);
   if(v==='pedido')getPED().then(initPD);
-  if(v==='aprobacion')getPED().then(initAP);}
+  if(v==='aprobacion')getPED().then(initAP);
+  if(v==='seguimiento')load(PD_+'seguimiento.json?t='+Date.now()).then(d=>{SEG=d;initSG()});}
+let SEG=null,sgP='',sgN=PAGE;
 const PD_='gestion-data/pedido/';let PZD=null,RGL=null,PED=null,_ped=null;
 const getPED=()=>_ped||(_ped=load(PD_+'pedido.json?v='+DV).then(d=>{PED=d;$('#n-ped').textContent=fmt(d.lineas.reduce((a,l)=>a+l[3],0))+' pz';return d}));
 
@@ -512,7 +528,7 @@ function tilesPZ(){const v=Object.values(PZE);
   const T=[['','Códigos ML',v.length],['C','Compuestos',v.filter(o=>o.tp==='C').length],['fix','Pieza tomada de otra lista (revisar)',v.filter(o=>o.p.some(p=>p[3]==='corregida')).length],['bad','Pieza en ninguna lista',v.filter(o=>o.p.some(p=>p[3]==='sin lista')).length],['pend','Cambios pendientes',Object.keys(PZP).length]];
   $('#pz-tiles').innerHTML=T.map(([k,l,n])=>`<button class="tile" data-k="${k}" aria-pressed="${pzTile===k&&k!==''}"><div class="v">${fmt(n)}</div><div class="l">${l}</div></button>`).join('');
   $('#pz-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{pzTile=pzTile===b.dataset.k?'':b.dataset.k;pzN=PAGE;tilesPZ();renderPZ()});}
-const chip=p=>`<span class="chip ${p[3]==='ok'?'ok':p[3]==='corregida'?'fix':p[3]==='manual'?'man':'bad'}" title="${p[3]==='corregida'?'En el RGP decía '+esc(p[4]):p[3]==='sin lista'?'No está en ninguna lista vigente':''}">${esc(p[1])} <span class="mono">${esc(p[0])}</span>${+p[2]!==1?' ×'+(+p[2]).toFixed(+p[2]<1?3:0):''}</span>`;
+const chip=p=>`<span class="chip ${p[3]==='ok'||p[3]==='verificada'?'ok':p[3]==='corregida'?'fix':p[3]==='manual'?'man':'bad'}" title="${p[3]==='verificada'?'Revisada 20-nov: el código es de este proveedor (en el RGP decía '+esc(p[4]||'nada')+')':p[3]==='corregida'?'En el RGP decía '+esc(p[4]):p[3]==='sin lista'?'No está en ninguna lista vigente':''}">${esc(p[1])} <span class="mono">${esc(p[0])}</span>${+p[2]!==1?' ×'+(+p[2]).toFixed(+p[2]<1?3:0):''}</span>`;
 function renderPZ(){const q=$('#pz-q').value.trim().toUpperCase(),m=$('#pz-marca').value,b=$('#pz-bod').value;
   const L=pzOrd.filter(k=>{const o=PZE[k];if(!o)return false;
     if(pzTile==='C'&&o.tp!=='C')return false;if(pzTile==='fix'&&!o.p.some(p=>p[3]==='corregida'))return false;if(pzTile==='bad'&&!o.p.some(p=>p[3]==='sin lista'))return false;if(pzTile==='pend'&&!PZP[k])return false;
@@ -559,6 +575,9 @@ function initLP(){if(lpInit)return;lpInit=1;getLPX().then(ix=>{const t=new Date(
   $('#lp-m').insertAdjacentHTML('beforeend',ix.listas.map(x=>`<option>${esc(x.marca)}</option>`).join(''));
   $('#lp-tiles').innerHTML=ix.listas.map(x=>{const dd=Math.floor((t-new Date(x.fecha+'T12:00'))/864e5);return `<button class="tile" data-m="${esc(x.marca)}"><div class="v">${fmt(x.codigos)}</div><div class="l"><b>${esc(x.marca)}</b> · ${esc(x.fecha)} · <span class="pill ${dd>30?'p-bad':dd>14?'p-warn':'p-ok'}">${dd} días</span></div><div class="l">${esc(x.archivo)}</div></button>`}).join('');
   $('#lp-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{$('#lp-m').value=b.dataset.m;lpN=PAGE;renderLP()});
+  const pe=Object.entries(ix.pendientes||{});
+  if(pe.length)$('#lp-tiles').insertAdjacentHTML('beforebegin',`<div class="checks">${pe.map(([m,r])=>`<div class="check"><span class="pill p-bad">Lista nueva sin aprobar</span><div><div class="t">${esc(m)} · ${esc(r.archivo)} (${esc(r.fecha)})</div><div class="d">Se sigue pidiendo con la vigente. Revisión ${esc(String(r.revisado).replace('T',' '))}:</div>${r.checks.map(c=>`<div class="d">${c[1]?'✓':'✗'} ${esc(c[0])}: ${esc(c[2])}</div>`).join('')}</div></div>`).join('')}</div>`);
+  $('#lp-src').textContent+=' Cada lista se usa solo después de pasar la revisión de columnas y filas; la fecha de cada tarjeta es la de la lista vigente.';
   ['#lp-q','#lp-m'].forEach(s=>$(s).addEventListener('input',()=>{lpN=PAGE;renderLP()}));})}
 function renderLP(){const q=$('#lp-q').value.trim().toUpperCase(),m=$('#lp-m').value;
   if(!q&&!m){$('#lp-head').innerHTML='';$('#lp-body').innerHTML='<tr><td class="empty">Escribe un código o elige una lista.</td></tr>';$('#lp-more').innerHTML='';return}
@@ -651,7 +670,7 @@ function openDS(g){const isReg=!!g.sust_codigo&&!g.pubs;const c0=isReg?{codigo:g
 let pdSub='lin',pdN=PAGE,pdInit=0;
 function initPD(P){if(pdInit)return;pdInit=1;
   $('#pd-h1').textContent='Cálculo del pedido '+P.pedido;
-  if(/prueba/i.test(P.pedido))$('#pd-checks').insertAdjacentHTML('beforebegin','<div class="note">Recálculo de prueba del pedido 59 con los datos de hoy, hecho solo desde la página (sin RGP ni Excel). Lo que se mandó a proveedores el 19-nov no cambia. El primer pedido real con este cálculo será el 60.</div>');
+  if(/prueba/i.test(P.pedido))$('#pd-checks').insertAdjacentHTML('beforebegin','<div class="note">Prueba del pedido 60 con los datos de hoy, hecha solo desde la página (sin RGP ni Excel). Ya descuenta lo del pedido 59 que está confirmado (seguimiento). No se manda nada desde aquí.</div>');
   $('#pd-src').textContent=`Calculado ${String(P.calculado).replace('T',' ')} · Planificación: ${P.reportes.planificacion[2]||P.reportes.planificacion[1]} · Listas: ${Object.entries(P.listas).map(([m,v])=>m+' '+v[0]).join(', ')}.`;
   $('#pd-checks').innerHTML=P.checks.map(c=>`<div class="check"><span class="pill ${c[1]?'p-ok':'p-bad'}">${c[1]?'Bien':'Revisar'}</span><div><div class="t">${esc(c[0])}</div><div class="d">${esc(c[2])}</div></div></div>`).join('');
   const tot=P.resumen.reduce((a,r)=>[a[0]+r[2],a[1]+r[3],a[2]+r[4]],[0,0,0]);
@@ -682,7 +701,13 @@ function renderPD(){const P=PED,q=$('#pd-q').value.trim().toUpperCase(),m=$('#pd
 
 /* ---------- APROBACION ---------- */
 const KAP='fx-gm-pedido';const STE=['por aprobar','aprobado','enviado','cotizado','proforma confirmada','pagado'];
-function initAP(P){$('#ap-h1').textContent='Aprobación y envío · pedido '+P.pedido;if(HAS)FXS.on(KAP,renderAP);renderAP()}
+let ARCH=null;
+function initAP(P){$('#ap-h1').textContent='Aprobación y envío · pedido '+P.pedido;if(HAS)FXS.on(KAP,renderAP);
+  const pn=String(P.pedido).replace(/[^0-9A-Za-z]+/g,'-').replace(/^-|-$/g,'');
+  load(PD_+'archivos/'+pn+'/index.json?v='+DV).then(d=>{ARCH=d;renderAP()}).catch(()=>{ARCH={archivos:[]};renderAP()});renderAP()}
+function msgFor(m,rs){const cv=rs.some(r=>r[1]==='CUERNAVACA'),em=rs.filter(r=>r[1]!=='CUERNAVACA').length;
+  const partes=[cv?'uno de Cuernavaca':'',em===1?'uno de Estado de México':em>1?`${em===2?'dos':em} de Estado de México`:''].filter(Boolean).join(' y ');
+  return `Hola, buen día. Envío ${rs.length>1?'los pedidos':'el pedido'} de esta semana: ${partes}.`+(em>1?' Los de Estado de México favor de facturarlos por separado; no importa si se entregan juntos.':rs.length>1?' Favor de facturarlos por separado.':'')}
 function apState(m){const o=(HAS?FXS.get(KAP):{})||{};return o[PED.pedido+'|'+m]||{estado:'por aprobar',hist:[]}}
 function renderAP(){const P=PED;const by={};for(const r of P.resumen){(by[r[0]]=by[r[0]]||[]).push(r)}
   const S=Object.keys(by).map(m=>apState(m));const cnt=e=>S.filter(s=>s.estado===e).length;
@@ -691,7 +716,9 @@ function renderAP(){const P=PED;const by={};for(const r of P.resumen){(by[r[0]]=
   $('#ap-cards').innerHTML=Object.entries(by).map(([m,rs])=>{const s=apState(m);const pz=rs.reduce((a,r)=>a+r[3],0),imp=rs.reduce((a,r)=>a+r[4],0);const i=STE.indexOf(s.estado);
     return `<div class="pcard"><div class="row-act" style="margin:0;justify-content:space-between"><h3>${esc(m)}</h3><span class="pill ${s.estado==='por aprobar'?'p-warn':s.estado==='no se manda'?'p-gray':'p-ok'}">${esc(s.estado)}</span></div>
      <div class="steps">${STE.map((e,j)=>`<span class="${j<=i&&i>=0?'on':''}">${esc(e)}</span>`).join('')}</div>
-     <table>${rs.map(r=>`<tr><td>${esc(r[1])}</td><td class="num">${fmt(r[2])} códigos</td><td class="num">${fmt(r[3])} pz</td><td class="num">${money(r[4])}</td></tr>`).join('')}<tr><td><b>Total</b></td><td></td><td class="num"><b>${fmt(pz)} pz</b></td><td class="num"><b>${money(imp)}</b></td></tr></table>
+     <div class="tbl"><table>${rs.map(r=>`<tr><td>${esc(r[1])}</td><td class="num">${fmt(r[2])} códigos</td><td class="num">${fmt(r[3])} pz</td><td class="num">${money(r[4])}</td></tr>`).join('')}<tr><td><b>Total</b></td><td></td><td class="num"><b>${fmt(pz)} pz</b></td><td class="num"><b>${money(imp)}</b></td></tr></table></div>
+     ${ARCH?`<div class="msg">${ARCH.archivos.filter(a=>a.marca===m).map(a=>a.ok?`<a href="${PD_}${esc(ARCH.carpeta)}/${encodeURIComponent(a.nombre)}" download>${esc(a.nombre)}</a> <span class="pill p-ok">filtrado verificado</span>`:`<span class="pill p-bad">${esc(a.archivo)}: no se generó</span> ${esc(a.errores.join('; '))}`).join('<br>')||'Archivos aún no generados.'}</div>`:''}
+     ${m!=='ITALIKA'?`<details><summary class="msg">Mensaje para el proveedor</summary><div class="note" style="margin:6px 0 0">${esc(msgFor(m,rs))}</div></details>`:'<div class="msg">ITALIKA: carga masiva en su página (sin mensaje).</div>'}
      ${s.total?`<div class="kv"><b>Total proforma</b><span>${money(s.total)}</span></div>`:''}${s.nota?`<div class="msg">${esc(s.nota)}</div>`:''}
      <div class="row-act" style="margin-top:4px"><button class="btn sm ${s.estado==='por aprobar'&&owner?'pri':''}" data-m="${esc(m)}" ${HAS?'':'disabled'}>Actualizar estado</button>${s.hist&&s.hist.length?`<span class="msg">${esc(s.hist[s.hist.length-1].por)} · ${fd(s.hist[s.hist.length-1].fecha)}</span>`:''}</div></div>`}).join('');
   $('#ap-cards').querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>openAP(b.dataset.m));}
@@ -705,6 +732,33 @@ function openAP(m){const s=apState(m);const opts=owner?STE.concat(['no se manda'
   $('#a-ok').onclick=()=>{const nm=$('#f-who').value.trim();if(!nm){$('#a-msg').textContent='Escribe tu nombre.';return}me=nm;LSs('fx-who',nm);const now=new Date().toISOString();
     const e=$('#a-e').value,t=parseFloat(String($('#a-t').value).replace(/[$,]/g,''))||0,n=$('#a-n').value.trim();
     const o=FXS.get(KAP)||{};o[PED.pedido+'|'+m]={pedido:PED.pedido,marca:m,estado:e,total:t,nota:n,por:nm,fecha:now,hist:[...(s.hist||[]),{estado:e,total:t,nota:n,por:nm,fecha:now}]};FXS.set(KAP,o);closePanel();renderAP()};}
+
+
+/* ---------- SEGUIMIENTO ---------- */
+const sum=(a,i)=>a.reduce((s,l)=>s+(l[i]==null?0:+l[i]),0), has=(a,i)=>a.some(l=>l[i]!=null);
+function initSG(){const ks=Object.keys(SEG.pedidos).sort((a,b)=>b.localeCompare(a,undefined,{numeric:true}));sgP=ks[0]||'';
+  $('#sg-src').textContent='Actualizado '+String(SEG.actualizado).replace('T',' ')+'.';
+  $('#sg-ped').innerHTML=ks.map(k=>`<button data-p="${esc(k)}" aria-pressed="${k===sgP}">Pedido ${esc(k)}</button>`).join('');
+  $('#sg-ped').querySelectorAll('button').forEach(b=>b.onclick=()=>{sgP=b.dataset.p;$('#sg-ped').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));sgN=PAGE;renderSG()});
+  const al=SEG.alertas||[];$('#n-seg').textContent=al.length?al.length+' avisos':ks.length;
+  $('#sg-al').innerHTML=al.map(a=>`<div class="check"><span class="pill ${a.nivel==='alta'?'p-bad':'p-warn'}">${esc(a.tipo)}</span><div><div class="t">Pedido ${esc(a.pedido)} · ${esc(a.marca)}</div><div class="d">${esc(a.detalle)}</div></div></div>`).join('');
+  ['#sg-q','#sg-m','#sg-f'].forEach(s=>$(s).addEventListener('input',()=>{sgN=PAGE;renderSG()}));renderSG()}
+function renderSG(){const P=SEG.pedidos[sgP];if(!P){$('#sg-cards').innerHTML='<div class="empty">Sin pedidos en seguimiento.</div>';return}
+  const pv=P.proveedores;
+  if($('#sg-m').options.length<2)$('#sg-m').insertAdjacentHTML('beforeend',Object.keys(pv).sort().map(m=>`<option>${esc(m)}</option>`).join(''));
+  $('#sg-cards').innerHTML=Object.entries(pv).map(([m,v])=>{const L=v.lineas;const pz=sum(L,2);
+    const cell=(i,t)=>has(L,i)?`<td class="num">${fmt(sum(L,i))}</td>`:`<td class="num msg">—</td>`;
+    return `<div class="pcard"><div class="row-act" style="margin:0;justify-content:space-between"><h3>${esc(m)}</h3><span class="pill ${/llegó|completo/.test(v.estado)?'p-ok':/confirmada|cotizado|facturado/.test(v.estado)?'p-blue':'p-warn'}">${esc(v.estado)}</span></div>
+     <div class="tbl"><table><tr><th>Pedido</th><th>Cotizado</th><th>Facturado</th><th>Llegó</th></tr><tr><td class="num">${fmt(pz)}</td>${cell(3)}${cell(4)}${cell(5)}</tr></table></div>
+     ${v.nota?`<div class="msg">${esc(v.nota)}</div>`:''}
+     <div>${(v.docs||[]).map(d=>`<div class="msg"><b>${esc(d.tipo)} ${esc(d.numero)}</b> · ${esc(d.archivo||'')} · ${esc(d.estado)}${d.total?' · '+money(d.total):''}${d.items&&d.items.length?' · '+d.items.length+' códigos':' · <span class="pill p-warn">sin detalle</span>'} ${d.en_pagina?'<span class="pill p-ok">en la página</span>':'<span class="pill p-gray">no está en la página</span>'}</div>`).join('')||'<div class="msg">Sin documentos todavía.</div>'}</div></div>`}).join('');
+  const q=$('#sg-q').value.trim().toUpperCase(),mm=$('#sg-m').value,f=$('#sg-f').value;const R=[];
+  for(const [m,v] of Object.entries(pv))for(const l of v.lineas){if(mm&&m!==mm)continue;if(q&&!l[1].includes(q))continue;
+    const sur=l[4]!=null?l[4]:l[3];const ns=sur!=null&&sur<l[2];const fl=(l[4]||0)>(l[5]||0);
+    if(f==='ns'&&!ns)continue;if(f==='fl'&&!fl)continue;R.push([m,...l,ns,fl])}
+  const show=R.slice(0,sgN);
+  $('#sg-body').innerHTML=show.length?show.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="mono">${esc(r[2])}</td><td class="num">${fmt(r[3])}</td><td class="num">${r[4]==null?'—':fmt(r[4])}</td><td class="num">${r[5]==null?'—':fmt(r[5])}</td><td class="num">${r[6]==null?'—':fmt(r[6])}</td><td>${r[7]?'<span class="pill p-bad">No surtido</span>':''}${r[8]?' <span class="pill p-warn">Falta llegar</span>':''}</td></tr>`).join(''):'<tr><td colspan="8" class="empty">Nada coincide.</td></tr>';
+  moreBar('#sg-more',show.length,R.length,()=>{sgN+=PAGE*4;renderSG()})}
 
 route();
 getLPX().catch(()=>{});
