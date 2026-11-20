@@ -38,7 +38,7 @@ h1{font-family:var(--f-head);font-size:34px;margin:6px 0 2px;text-wrap:balance}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:10px 0 14px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;color:var(--fg);font:inherit}
 .tile .v{font-family:var(--f-head);font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
-.tile .l{color:var(--fg2);font-size:13px}
+.tile .l{color:var(--fg2);font-size:13px;overflow-wrap:anywhere}
 .tile[aria-pressed="true"]{outline:2px solid var(--red);outline-offset:-2px}
 .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
 .bar input[type=search],.bar select{height:40px;border:1px solid var(--line2);border-radius:10px;background:var(--card);color:var(--fg);font:inherit;padding:0 10px;min-width:0}
@@ -87,6 +87,26 @@ tbody tr.click:hover td{background:var(--blue-bg)}
 .th{display:block;width:52px;height:52px;object-fit:contain;border-radius:8px;background:var(--card);border:1px solid var(--line)}
 .big{display:block;width:100%;max-height:280px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#fff;margin:8px 0}
 .empty{padding:28px;text-align:center;color:var(--fg2)}
+.nav2{flex-basis:100%;margin-left:0;justify-content:flex-end}
+.navlbl{font-family:var(--f-head);font-size:15px;text-transform:uppercase;letter-spacing:.6px;color:var(--fg2);align-self:center;margin-right:2px}
+.chip{display:inline-flex;gap:6px;align-items:center;border-radius:8px;padding:2px 8px;font-size:13px;margin:1px 4px 1px 0;white-space:nowrap;border:1px solid var(--line)}
+.chip.ok{background:var(--ok-bg);color:var(--ok);border-color:transparent}.chip.fix{background:var(--warn-bg);color:var(--warn);border-color:transparent}.chip.bad{background:var(--bad-bg);color:var(--bad);border-color:transparent}.chip.man{background:var(--pur-bg);color:var(--pur);border-color:transparent}
+.chip .mono{font-size:12px}
+.prow{display:grid;grid-template-columns:1.3fr 1.2fr .6fr auto;gap:8px;align-items:end;margin-top:8px}
+@media (max-width:520px){.prow{grid-template-columns:1fr 1fr}}
+.prow .val{grid-column:1/-1;font-size:13px;margin-top:-2px}
+.checks{display:grid;gap:8px;margin:8px 0 14px}
+.check{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.check .t{font-weight:600}.check .d{color:var(--fg2);font-size:14px;overflow-wrap:anywhere}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.pcard h3{font-family:var(--f-head);font-size:24px;margin:0}
+.pcard table{font-size:13px}.pcard td{padding:5px 6px}
+.steps{display:flex;gap:4px;flex-wrap:wrap}
+.steps span{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--gray-bg);color:var(--gray)}
+.steps span.on{background:var(--ok-bg);color:var(--ok);font-weight:600}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.kv b{font-weight:600}
+.pinput{width:110px;height:34px;border:1px solid var(--line2);border-radius:8px;background:var(--card);color:var(--fg);font:inherit;padding:0 8px;text-align:right}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head><body>
@@ -101,6 +121,16 @@ tbody tr.click:hover td{background:var(--blue-bg)}
       <a href="#rgp" id="nav-rgp">Características del RGP <span class="n" id="n-rgp">…</span></a>
       <a href="#sustitutos" id="nav-sustitutos">Sustitutos <span class="n" id="n-sus">…</span></a>
       <a href="#activos" id="nav-activos">Productos activos <span class="n" id="n-act">…</span></a>
+    </nav>
+    <nav aria-label="Pedido a proveedor" class="nav2">
+      <span class="navlbl">Pedido</span>
+      <a href="#piezas" id="nav-piezas">Piezas <span class="n" id="n-pz">…</span></a>
+      <a href="#listas" id="nav-listas">Listas de precios <span class="n" id="n-lp">…</span></a>
+      <a href="#reportes" id="nav-reportes">Reportes ML <span class="n" id="n-rep">…</span></a>
+      <a href="#reglas" id="nav-reglas">Reglas</a>
+      <a href="#descontinuados" id="nav-descontinuados">Descontinuados <span class="n" id="n-desc">…</span></a>
+      <a href="#pedido" id="nav-pedido">Cálculo <span class="n" id="n-ped">…</span></a>
+      <a href="#aprobacion" id="nav-aprobacion">Aprobación</a>
     </nav>
   </header>
 
@@ -157,6 +187,103 @@ tbody tr.click:hover td{background:var(--blue-bg)}
       <th>Foto</th><th>MLM</th><th>Código ML</th><th>Título</th><th>SKU</th><th>Bodega</th><th>Tamaño</th><th>Origen</th><th>Opiniones</th><th class="num">u 30 d</th><th class="num">$ 30 d</th><th class="num">u 6 m</th><th class="num">Meses</th><th>Sugerencia</th>
     </tr></thead><tbody id="act-body"></tbody></table><div class="more" id="act-more"></div></div>
   </section>
+
+  <!-- PIEZAS -->
+  <section id="v-piezas" hidden>
+    <h1>Piezas por publicación</h1>
+    <div class="src" id="pz-src"></div>
+    <div class="note">Qué se le pide a cada proveedor por cada Código ML: código de proveedor, proveedor y factor (piezas de proveedor por unidad de Mercado Libre). El proveedor de cada pieza se revisa contra las listas de precios vigentes: verde = el código está en la lista de ese proveedor; amarillo = se tomó de otra lista donde sí aparece (revísalo); rojo = no aparece en ninguna lista (descontinuado o falta lista).</div>
+    <div class="tiles" id="pz-tiles"></div>
+    <div class="bar">
+      <input type="search" id="pz-q" placeholder="Buscar Código ML, MLM, código de proveedor o título" aria-label="Buscar">
+      <select id="pz-marca" aria-label="Proveedor"><option value="">Todos los proveedores</option></select>
+      <select id="pz-bod" aria-label="Bodega"><option value="">Todas las bodegas</option><option>CUERNAVACA</option><option>EDOMEX</option></select>
+      <button class="btn" id="pz-alta">Agregar Código ML</button>
+    </div>
+    <div class="card tbl"><table><thead><tr><th>Foto</th><th>Código ML</th><th>Título</th><th>Bodega</th><th>Tipo</th><th>Piezas (proveedor · código · factor)</th><th>Estado</th></tr></thead><tbody id="pz-body"></tbody></table><div class="more" id="pz-more"></div></div>
+  </section>
+
+  <!-- LISTAS -->
+  <section id="v-listas" hidden>
+    <h1>Listas de precios</h1>
+    <div class="src" id="lp-src"></div>
+    <div class="note">Para actualizar una lista: guarda el archivo del proveedor en <span class="mono">C:\FXMOTO\muestras\listas\&lt;PROVEEDOR&gt;\</span> y pídele a Claude «carga la lista de &lt;proveedor&gt;». Al cargarla se revisan otra vez las piezas de todas las publicaciones.</div>
+    <div class="tiles" id="lp-tiles"></div>
+    <div class="bar">
+      <input type="search" id="lp-q" placeholder="Buscar un código o descripción en todas las listas" aria-label="Buscar en listas">
+      <select id="lp-m" aria-label="Lista"><option value="">Todas las listas</option></select>
+    </div>
+    <div class="card tbl"><table><thead id="lp-head"></thead><tbody id="lp-body"><tr><td class="empty">Escribe un código o elige una lista.</td></tr></tbody></table><div class="more" id="lp-more"></div></div>
+  </section>
+
+  <!-- REPORTES -->
+  <section id="v-reportes" hidden>
+    <h1>Reportes de Mercado Libre</h1>
+    <div class="src">El pedido usa siempre los reportes del día: Planificación, Stock general y Cargos por stock antiguo. Se descargan a las 7 a. m. y se cargan con <span class="mono">cargar_reportes.py</span>.</div>
+    <div class="checks" id="rep-files"></div>
+    <div class="tiles" id="rep-tiles"></div>
+  </section>
+
+  <!-- REGLAS -->
+  <section id="v-reglas" hidden>
+    <h1>Reglas del pedido</h1>
+    <div class="src">Lo que usa el cálculo. Cualquier cambio queda registrado y se aplica cuando Dirección lo aprueba.</div>
+    <div class="note" id="rg-pend" hidden></div>
+    <div class="card tbl" style="margin-bottom:14px"><table><thead><tr><th>Parámetro</th><th>Qué hace</th><th class="num">Valor</th><th></th></tr></thead><tbody id="rg-par"></tbody></table></div>
+    <h2 style="font-family:var(--f-head);font-size:24px;margin:8px 0">Proveedores</h2>
+    <div class="card tbl" style="margin-bottom:14px"><table><thead><tr><th>Proveedor</th><th>Se pide esta semana</th><th>Bodegas donde entrega</th><th>Edo. Méx. en un solo archivo</th></tr></thead><tbody id="rg-prov"></tbody></table></div>
+    <h2 style="font-family:var(--f-head);font-size:24px;margin:8px 0">Inventario en bodega que no se cuenta</h2>
+    <div class="card tbl"><table><thead><tr><th>Documento</th><th>Motivo</th></tr></thead><tbody id="rg-nc"></tbody></table></div>
+  </section>
+
+  <!-- DESCONTINUADOS -->
+  <section id="v-descontinuados" hidden>
+    <h1>Descontinuados y sin sustituto</h1>
+    <div class="src" id="ds-src"></div>
+    <div class="subtabs" id="ds-sub">
+      <button data-s="cod" aria-pressed="true">No están en ninguna lista</button>
+      <button data-s="ale">ALESSIA en 0 sin sustituto</button>
+      <button data-s="sus">Sustitutos propuestos</button>
+    </div>
+    <div class="note">Toca un código para proponer su sustituto (proveedor que se pide cada semana y código que exista en su lista). Al aprobarlo Dirección, el siguiente cálculo ya lo pide; el código de la publicación no cambia.</div>
+    <div class="tiles" id="ds-tiles"></div>
+    <div class="bar">
+      <input type="search" id="ds-q" placeholder="Buscar código, Código ML o título" aria-label="Buscar">
+      <select id="ds-marca" aria-label="Proveedor"><option value="">Todos los proveedores</option></select>
+      <select id="ds-pri" aria-label="Prioridad"><option value="">Todas las prioridades</option><option>ALTA</option><option>MEDIA</option><option>BAJA</option></select>
+    </div>
+    <div class="card tbl"><table><thead id="ds-head"></thead><tbody id="ds-body"></tbody></table><div class="more" id="ds-more"></div></div>
+  </section>
+
+  <!-- CALCULO -->
+  <section id="v-pedido" hidden>
+    <h1 id="pd-h1">Cálculo del pedido</h1>
+    <div class="src" id="pd-src"></div>
+    <div class="checks" id="pd-checks"></div>
+    <div class="card tbl" style="margin-bottom:14px"><table><thead><tr><th>Proveedor</th><th>Archivo</th><th class="num">Códigos</th><th class="num">Piezas</th><th class="num">Importe lista</th></tr></thead><tbody id="pd-res"></tbody></table></div>
+    <div class="subtabs" id="pd-sub">
+      <button data-s="lin" aria-pressed="true">Renglones por proveedor</button>
+      <button data-s="pub">Por publicación</button>
+      <button data-s="nop">No se pidió (con venta)</button>
+      <button data-s="env">Envíos contados</button>
+      <button data-s="exc">Excluidos</button>
+    </div>
+    <div class="bar">
+      <input type="search" id="pd-q" placeholder="Buscar código, Código ML o título" aria-label="Buscar">
+      <select id="pd-marca" aria-label="Proveedor"><option value="">Todos los proveedores</option></select>
+      <select id="pd-arch" aria-label="Archivo"><option value="">Todos los archivos</option></select>
+    </div>
+    <div class="card tbl"><table><thead id="pd-head"></thead><tbody id="pd-body"></tbody></table><div class="more" id="pd-more"></div></div>
+  </section>
+
+  <!-- APROBACION -->
+  <section id="v-aprobacion" hidden>
+    <h1 id="ap-h1">Aprobación y envío</h1>
+    <div class="src">Dirección aprueba por proveedor. Después se lleva el estado de cada uno: enviado, cotizado, proforma confirmada y pagado, con el total de la proforma. Los mensajes a proveedores solo salen con la aprobación de Angel y nunca en domingo.</div>
+    <div class="note" id="ap-note" hidden></div>
+    <div class="tiles" id="ap-tiles"></div>
+    <div class="cards" id="ap-cards"></div>
+  </section>
 </div>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -167,12 +294,12 @@ tbody tr.click:hover td{background:var(--blue-bg)}
 <script>
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>Number(n||0).toLocaleString('es-MX'), money=n=>'$'+Math.round(n||0).toLocaleString('es-MX');
-const PAGE=150;const DV='20261119b';
+const PAGE=150;const DV='20261120a';
 let RGP=null,SUS=null,ACT=null;
 const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
 
 /* ---------- Routing ---------- */
-const VIEWS=['rgp','sustitutos','activos'];
+const VIEWS=['rgp','sustitutos','activos','piezas','listas','reportes','reglas','descontinuados','pedido','aprobacion'];
 function route(){const h=(location.hash||'#rgp').slice(1);const v=VIEWS.includes(h)?h:'rgp';
   VIEWS.forEach(x=>{$('#v-'+x).hidden=x!==v;const a=$('#nav-'+x);if(x===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   closePanel();ensure(v);}
@@ -181,7 +308,16 @@ const loaded={};
 function ensure(v){if(loaded[v])return;loaded[v]=1;
   if(v==='rgp')load('gestion-data/rgp.json?v='+DV).then(d=>{RGP=d;initRGP()}).catch(()=>{$('#rgp-note').textContent='No se pudieron cargar los datos del RGP.'});
   if(v==='sustitutos')load('gestion-data/sust.json?v='+DV).then(d=>{SUS=d;initSUS()});
-  if(v==='activos')load('gestion-data/activos.json?v='+DV).then(d=>{ACT=d;initACT()});}
+  if(v==='activos')load('gestion-data/activos.json?v='+DV).then(d=>{ACT=d;initACT()});
+  if(v==='piezas')load(PD_+'piezas.json?v='+DV).then(d=>{PZD=d;initPZ()}).catch(()=>{$('#pz-src').textContent='No se pudieron cargar las piezas.'});
+  if(v==='listas')initLP();
+  if(v==='reportes')load(PD_+'reportes_meta.json?v='+DV).then(initREP);
+  if(v==='reglas')load(PD_+'reglas.json?v='+DV).then(d=>{RGL=d;initRG()});
+  if(v==='descontinuados')getPED().then(initDS);
+  if(v==='pedido')getPED().then(initPD);
+  if(v==='aprobacion')getPED().then(initAP);}
+const PD_='gestion-data/pedido/';let PZD=null,RGL=null,PED=null,_ped=null;
+const getPED=()=>_ped||(_ped=load(PD_+'pedido.json?v='+DV).then(d=>{PED=d;$('#n-ped').textContent=fmt(d.lineas.reduce((a,l)=>a+l[3],0))+' pz';return d}));
 
 /* ---------- Registro compartido (hoja de Google de la página de envíos) ---------- */
 const KEY='fx-gm-rgp';const HAS=!!window.FXS&&/^https:/.test(window.FX_SYNC_URL||'');
@@ -339,7 +475,239 @@ function renderACT(){const q=$('#act-q').value.trim().toUpperCase(),og=$('#act-o
   $('#act-body').innerHTML=show.length?show.map(o=>`<tr><td>${th(o.img)}</td><td class="mono">${esc(o.mlm)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.titulo)}</td><td class="mono">${esc(o.sku)}</td><td>${esc(o.bodega)}</td><td>${esc(o.tam)}</td><td style="white-space:nowrap">${esc(o.origen.replace(' (RGP 05-10-26)',''))}</td><td>${esc(o.clasif)}${o.opin?' · '+fmt(o.opin):''}</td><td class="num">${fmt(o.u30)}</td><td class="num">${money(o.d30)}</td><td class="num">${fmt(o.u6m)}</td><td class="num">${o.meses}</td><td><span class="pill ${SUG[o.sug]||'p-gray'}">${esc(o.sug)}</span></td></tr>`).join(''):'<tr><td colspan="14" class="empty">Nada coincide con la búsqueda.</td></tr>';
   moreBar('#act-more',show.length,L.length,()=>{actN+=PAGE*4;renderACT()});}
 
+/* ================= PEDIDO A PROVEEDOR ================= */
+const ORDEN=['ALESSIA','REFACOM','SAYTO','MRM','KINGMOTO','WINMEX','TMMP','MOTO AZCAPOTZALCO','ITALIKA'];
+const nid=()=>'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+const regList=k=>{const o=HAS?FXS.get(k):{};return Object.entries(o||{}).map(([id,v])=>({id,...v})).sort((a,b)=>String(a.fecha).localeCompare(String(b.fecha)))};
+function regPut(k,id,obj){const o=FXS.get(k)||{};o[id]=obj;FXS.set(k,o)}
+function regReview(k,list,estado){const o=FXS.get(k)||{};const now=new Date().toISOString();for(const c of list){const {id,...v}=c;o[id]={...v,estado,revisadoPor:me||'Dirección',revisadoFecha:now}}FXS.set(k,o)}
+const stPill=e=>`<span class="pill ${e==='aprobado'?'p-ok':e==='rechazado'?'p-bad':'p-pur'}">${esc(e)}</span>`;
+function whoMotivo(){return `<div class="grid2" style="margin-top:10px"><div class="fld"><label for="f-who">Quién registra</label><input id="f-who" value="${esc(me)}" placeholder="Tu nombre"></div><div class="fld"><label for="f-motivo">Motivo</label><input id="f-motivo" placeholder="Por qué se cambia"></div></div>`}
+function readWM(msg){const nm=$('#f-who').value.trim(),mo=$('#f-motivo').value.trim();if(!nm){msg.textContent='Escribe tu nombre: queda en el registro.';return null}if(!mo){msg.textContent='Escribe el motivo: queda en el registro.';return null}me=nm;LSs('fx-who',nm);return {nm,mo}}
+function showPanel(html){const P=$('#panel');P.innerHTML=`<div class="row-act" style="margin:0 0 8px;justify-content:flex-end"><button class="btn sm" id="pclose">Cerrar</button></div>`+html;P.hidden=false;$('#scrim').hidden=false;$('#pclose').onclick=closePanel}
+/* listas en memoria (para validar códigos) */
+let LPX=null,LPD={},_lpi=null;
+const getLPX=()=>_lpi||(_lpi=load(PD_+'lp/index.json?v='+DV).then(d=>{LPX=d;$('#n-lp').textContent=d.listas.length;return d}));
+const getLP=m=>LPD[m]?Promise.resolve(LPD[m]):getLPX().then(ix=>load(PD_+ix.listas.find(x=>x.marca===m).file+'?v='+DV)).then(d=>{d.map={};d.rows.forEach(r=>d.map[r[0]]=r);LPD[m]=d;return d});
+const getAllLP=()=>getLPX().then(ix=>Promise.all(ix.listas.map(x=>getLP(x.marca))));
+const NC=s=>{s=String(s||'').trim().toUpperCase();if(s.startsWith('W-'))s=s.slice(2);if(s.endsWith('-EST'))s=s.slice(0,-4);return s};
+function inLP(m,c){const d=LPD[m];if(!d)return null;c=NC(c);if(d.map[c])return d.map[c];if(m==='MRM'&&d.equivalencias&&d.equivalencias[c])return d.map[d.equivalencias[c]]||null;return null}
+function ownersOf(c){return ORDEN.filter(m=>inLP(m,c))}
+
+/* ---------- PIEZAS ---------- */
+const KPZ='fx-gm-piezas';let PZE={},PZP={},pzN=PAGE,pzTile='',pzOrd=[];
+function initPZ(){$('#pz-src').textContent='Fuente: '+PZD.fuente+' Actualizado '+PZD.actualizado+'.';
+  pzOrd=Object.keys(PZD.rows).sort((a,b)=>(PZD.rows[b][4].some(p=>p[3]!=='ok')-PZD.rows[a][4].some(p=>p[3]!=='ok'))||a.localeCompare(b));
+  $('#pz-marca').insertAdjacentHTML('beforeend',ORDEN.concat(['SIN LISTA']).map(m=>`<option>${m}</option>`).join(''));
+  ['#pz-q','#pz-marca','#pz-bod'].forEach(s=>$(s).addEventListener('input',()=>{pzN=PAGE;renderPZ()}));
+  $('#pz-alta').onclick=()=>openPZ(null);
+  if(HAS)FXS.on(KPZ,applyPZ);applyPZ();getLPX();}
+function applyPZ(){if(!PZD)return;PZE={};PZP={};
+  for(const k in PZD.rows){const r=PZD.rows[k];PZE[k]={t:r[0],b:r[1],tp:r[2],p:r[4].map(x=>x.slice()),o:r[5],mlm:r[6],img:r[7]}}
+  for(const c of regList(KPZ)){let pz;try{pz=JSON.parse(c.despues)}catch(e){continue}
+    if(c.estado==='aprobado'){PZE[c.cml]={...(PZE[c.cml]||{t:c.titulo||'',o:'PÁGINA',mlm:'',img:''}),b:c.bodega||(PZE[c.cml]||{}).b||'',p:pz.map(x=>[x[0],x[1],+x[2]||1,'manual',x[1]]),tp:pz.length>1?'C':'I'};if(!pzOrd.includes(c.cml))pzOrd.unshift(c.cml)}
+    else if(c.estado==='pendiente'){(PZP[c.cml]=PZP[c.cml]||[]).push(c);if(!PZE[c.cml]){PZE[c.cml]={t:c.titulo||'',b:c.bodega||'',p:pz.map(x=>[x[0],x[1],+x[2]||1,'manual',x[1]]),tp:pz.length>1?'C':'I',o:'PÁGINA',mlm:'',img:'',_n:1};pzOrd.unshift(c.cml)}}}
+  $('#n-pz').textContent=fmt(Object.keys(PZE).length);tilesPZ();renderPZ()}
+function tilesPZ(){const v=Object.values(PZE);
+  const T=[['','Códigos ML',v.length],['C','Compuestos',v.filter(o=>o.tp==='C').length],['fix','Pieza tomada de otra lista (revisar)',v.filter(o=>o.p.some(p=>p[3]==='corregida')).length],['bad','Pieza en ninguna lista',v.filter(o=>o.p.some(p=>p[3]==='sin lista')).length],['pend','Cambios pendientes',Object.keys(PZP).length]];
+  $('#pz-tiles').innerHTML=T.map(([k,l,n])=>`<button class="tile" data-k="${k}" aria-pressed="${pzTile===k&&k!==''}"><div class="v">${fmt(n)}</div><div class="l">${l}</div></button>`).join('');
+  $('#pz-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{pzTile=pzTile===b.dataset.k?'':b.dataset.k;pzN=PAGE;tilesPZ();renderPZ()});}
+const chip=p=>`<span class="chip ${p[3]==='ok'?'ok':p[3]==='corregida'?'fix':p[3]==='manual'?'man':'bad'}" title="${p[3]==='corregida'?'En el RGP decía '+esc(p[4]):p[3]==='sin lista'?'No está en ninguna lista vigente':''}">${esc(p[1])} <span class="mono">${esc(p[0])}</span>${+p[2]!==1?' ×'+(+p[2]).toFixed(+p[2]<1?3:0):''}</span>`;
+function renderPZ(){const q=$('#pz-q').value.trim().toUpperCase(),m=$('#pz-marca').value,b=$('#pz-bod').value;
+  const L=pzOrd.filter(k=>{const o=PZE[k];if(!o)return false;
+    if(pzTile==='C'&&o.tp!=='C')return false;if(pzTile==='fix'&&!o.p.some(p=>p[3]==='corregida'))return false;if(pzTile==='bad'&&!o.p.some(p=>p[3]==='sin lista'))return false;if(pzTile==='pend'&&!PZP[k])return false;
+    if(m&&!o.p.some(p=>p[1]===m))return false;if(b&&o.b!==b)return false;
+    if(q){const s=(k+' '+o.mlm+' '+o.t+' '+o.p.map(p=>p[0]).join(' ')).toUpperCase();if(!q.split(/\s+/).every(w=>s.includes(w)))return false}return true});
+  const show=L.slice(0,pzN);
+  $('#pz-body').innerHTML=show.length?show.map(k=>{const o=PZE[k];const st=o._n?'<span class="pill p-pur">Alta pendiente</span>':PZP[k]?'<span class="pill p-pur">Cambio pendiente</span>':o.p.some(p=>p[3]==='sin lista')?'<span class="pill p-bad">Sin lista</span>':o.p.some(p=>p[3]==='corregida')?'<span class="pill p-warn">Revisar</span>':'<span class="pill p-ok">Bien</span>';
+    return `<tr class="click" data-k="${esc(k)}"><td>${th(o.img)}</td><td class="mono">${esc(k)}</td><td class="tt">${esc(o.t)}</td><td>${esc(o.b)||'<span class="pill p-warn">Falta</span>'}</td><td>${o.tp==='C'?'Compuesto':'Individual'}</td><td>${o.p.map(chip).join('')}</td><td>${st}</td></tr>`}).join(''):'<tr><td colspan="7" class="empty">Nada coincide con la búsqueda.</td></tr>';
+  $('#pz-body').querySelectorAll('tr.click').forEach(tr=>tr.onclick=()=>openPZ(tr.dataset.k));
+  moreBar('#pz-more',show.length,L.length,()=>{pzN+=PAGE*4;renderPZ()});}
+function openPZ(k){const isNew=!k;const o=isNew?{t:'',b:'',p:[['','ALESSIA',1,'manual','']]}:PZE[k];const pend=isNew?[]:(PZP[k]||[]);
+  const cur=pend.length?JSON.parse(pend[pend.length-1].despues):o.p.map(p=>[p[0],p[1],p[2]]);
+  const hist=isNew?[]:regList(KPZ).filter(c=>c.cml===k).reverse();
+  showPanel(`<h2>${isNew?'Agregar Código ML':esc(o.t)}</h2>${o.img?`<img class="big" src="${esc(IMG(o.img))}" alt="Foto de la publicación">`:''}
+   ${isNew?`<div class="grid2"><div class="fld"><label for="z-cml">Código ML</label><input id="z-cml" placeholder="ABCD12345"></div><div class="fld"><label for="z-tit">Título</label><input id="z-tit"></div></div>`:`<div class="msg">Código ML <span class="mono">${esc(k)}</span>${o.mlm?' · <span class="mono">'+esc(o.mlm)+'</span>':''} · origen ${esc(o.o)}</div>`}
+   <div class="fld" style="margin-top:10px"><label for="z-bod">Bodega asignada</label><select id="z-bod"><option value=""></option>${['CUERNAVACA','EDOMEX'].map(x=>`<option ${o.b===x?'selected':''}>${x}</option>`).join('')}</select></div>
+   <div id="z-rows"></div><div class="row-act"><button class="btn sm" id="z-add">Agregar pieza</button><span class="msg">Factor = piezas de proveedor por cada unidad de Mercado Libre (bolsa de 10 que se vende por pieza: 0.1; juego de 2: 2).</span></div>
+   ${whoMotivo()}
+   <div class="row-act"><button class="btn pri" id="z-save" ${HAS?'':'disabled'}>Registrar</button><span class="msg" id="z-msg">${owner?'Equipo de Dirección: queda aprobado al registrarlo.':'Queda pendiente hasta que Dirección lo apruebe.'}</span></div>
+   ${pend.length&&owner?`<div class="row-act"><button class="btn" id="z-apr">Aprobar cambio pendiente</button><button class="btn" id="z-rej">Rechazar</button></div>`:''}
+   <div class="hist"><div class="fld"><label>Registro</label></div>${hist.length?hist.map(c=>`<div class="it">${(()=>{try{return JSON.parse(c.despues).map(p=>esc(p[1]+' '+p[0]+' ×'+p[2])).join(' + ')}catch(e){return ''}})()} ${stPill(c.estado)}<div class="meta">${esc(c.por)} · ${fd(c.fecha)} · ${esc(c.motivo)}${c.revisadoPor?' · revisó '+esc(c.revisadoPor):''}</div></div>`).join(''):'<div class="msg">Sin cambios registrados en la página.</div>'}</div>`);
+  let rows=cur.map(p=>[p[0],p[1],p[2]]);
+  const draw=()=>{$('#z-rows').innerHTML=rows.map((p,i)=>`<div class="prow"><div class="fld"><label>Código ${i+1}</label><input data-i="${i}" data-f="0" value="${esc(p[0])}"></div><div class="fld"><label>Proveedor</label><select data-i="${i}" data-f="1">${ORDEN.concat(['SIN LISTA']).map(m=>`<option ${p[1]===m?'selected':''}>${m}</option>`).join('')}</select></div><div class="fld"><label>Factor</label><input data-i="${i}" data-f="2" inputmode="decimal" value="${esc(p[2])}"></div><button class="btn sm" data-del="${i}" aria-label="Quitar pieza">Quitar</button><div class="val msg" id="zv-${i}">Revisando en las listas…</div></div>`).join('');
+    $('#z-rows').querySelectorAll('input,select').forEach(el=>el.oninput=()=>{const i=+el.dataset.i,f=+el.dataset.f;rows[i][f]=f===0?el.value.trim().toUpperCase():el.value;val()});
+    $('#z-rows').querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{rows.splice(+b.dataset.del,1);draw()});val()};
+  const val=()=>getAllLP().then(()=>rows.forEach((p,i)=>{const el=$('#zv-'+i);if(!el)return;if(!p[0]){el.textContent='';return}const r=inLP(p[1],p[0]);const ow=ownersOf(p[0]);
+    el.innerHTML=r?`<span class="pill p-ok">Está en la lista de ${esc(p[1])}</span> ${esc(r[1])} · $${(+r[2]).toFixed(2)}${p[1]==='ALESSIA'?' · existencia '+fmt(r[3]):''}`:ow.length?`<span class="pill p-warn">No está en ${esc(p[1])}; sí en ${ow.map(esc).join(', ')}</span>`:'<span class="pill p-bad">No está en ninguna lista vigente</span>'}));
+  draw();$('#z-add').onclick=()=>{rows.push(['','ALESSIA',1]);draw()};
+  $('#z-save').onclick=()=>{const msg=$('#z-msg');const wm=readWM(msg);if(!wm)return;
+    const cml=isNew?$('#z-cml').value.trim().toUpperCase():k;if(!/^[A-Z]{4}\d{5}$/.test(cml)){msg.textContent='El Código ML son 4 letras y 5 números.';return}
+    if(isNew&&PZE[cml]){msg.textContent='Ese Código ML ya existe: búscalo y edítalo.';return}
+    const clean=rows.filter(p=>p[0]).map(p=>[NC(p[0]),p[1],Math.round((parseFloat(String(p[2]).replace(',','.'))||1)*10000)/10000]);
+    if(!clean.length){msg.textContent='Agrega al menos una pieza.';return}
+    const now=new Date().toISOString();
+    regPut(KPZ,nid(),{tipo:'piezas',cml,titulo:isNew?$('#z-tit').value.trim():o.t,bodega:$('#z-bod').value,antes:JSON.stringify(isNew?[]:o.p.map(p=>[p[0],p[1],p[2]])),despues:JSON.stringify(clean),motivo:wm.mo,por:wm.nm,fecha:now,estado:owner?'aprobado':'pendiente',...(owner?{revisadoPor:wm.nm,revisadoFecha:now}:{})});
+    applyPZ();closePanel();};
+  if($('#z-apr'))$('#z-apr').onclick=()=>{regReview(KPZ,pend,'aprobado');applyPZ();closePanel()};
+  if($('#z-rej'))$('#z-rej').onclick=()=>{regReview(KPZ,pend,'rechazado');applyPZ();closePanel()};}
+
+/* ---------- LISTAS ---------- */
+let lpN=PAGE,lpInit=0;
+function initLP(){if(lpInit)return;lpInit=1;getLPX().then(ix=>{const t=new Date();
+  $('#lp-src').textContent='Orden cuando un código está en varias listas: '+ix.orden.join(', ')+'.';
+  $('#lp-m').insertAdjacentHTML('beforeend',ix.listas.map(x=>`<option>${esc(x.marca)}</option>`).join(''));
+  $('#lp-tiles').innerHTML=ix.listas.map(x=>{const dd=Math.floor((t-new Date(x.fecha+'T12:00'))/864e5);return `<button class="tile" data-m="${esc(x.marca)}"><div class="v">${fmt(x.codigos)}</div><div class="l"><b>${esc(x.marca)}</b> · ${esc(x.fecha)} · <span class="pill ${dd>30?'p-bad':dd>14?'p-warn':'p-ok'}">${dd} días</span></div><div class="l">${esc(x.archivo)}</div></button>`}).join('');
+  $('#lp-tiles').querySelectorAll('.tile').forEach(b=>b.onclick=()=>{$('#lp-m').value=b.dataset.m;lpN=PAGE;renderLP()});
+  ['#lp-q','#lp-m'].forEach(s=>$(s).addEventListener('input',()=>{lpN=PAGE;renderLP()}));})}
+function renderLP(){const q=$('#lp-q').value.trim().toUpperCase(),m=$('#lp-m').value;
+  if(!q&&!m){$('#lp-head').innerHTML='';$('#lp-body').innerHTML='<tr><td class="empty">Escribe un código o elige una lista.</td></tr>';$('#lp-more').innerHTML='';return}
+  $('#lp-body').innerHTML='<tr><td class="empty">Cargando listas…</td></tr>';
+  (m?getLP(m).then(d=>[d]):getAllLP()).then(ds=>{let R=[];
+    for(const d of ds)for(const r of d.rows){if(q&&!q.split(/\s+/).every(w=>(r[0]+' '+r[1]).toUpperCase().includes(w)))continue;R.push([d.marca,...r,d.cols])}
+    $('#lp-head').innerHTML='<tr><th>Proveedor</th><th>Código</th><th>Descripción</th><th class="num">Precio</th><th>Existencia / empaque</th></tr>';
+    const show=R.slice(0,lpN);
+    $('#lp-body').innerHTML=show.length?show.map(r=>{const cols=r[r.length-1];const ex=cols.includes('existencia')?'Existencia '+fmt(r[4]):cols.includes('empaque')?('Empaque '+r[4]+(r[5]?'':' · inactivo')):'';return `<tr><td>${esc(r[0])}</td><td class="mono">${esc(r[1])}</td><td class="tt">${esc(r[2])}</td><td class="num">$${(+r[3]).toFixed(2)}</td><td>${esc(ex)}</td></tr>`}).join(''):'<tr><td colspan="5" class="empty">No aparece en ninguna lista.</td></tr>';
+    moreBar('#lp-more',show.length,R.length,()=>{lpN+=PAGE*4;renderLP()});})}
+
+/* ---------- REPORTES ---------- */
+function initREP(M){const today=new Date().toISOString().slice(0,10);const A=M.archivos;
+  const f=(t,a)=>{const d=String(a[1]||'').slice(0,10);return `<div class="check"><span class="pill ${d===today?'p-ok':'p-bad'}">${d===today?'De hoy':'No es de hoy'}</span><div><div class="t">${t}</div><div class="d">${esc(a[0])} · ${esc(String(a[1]).replace('T',' '))}${a[2]?' · '+esc(a[2]):''}</div></div></div>`};
+  $('#rep-files').innerHTML=f('Planificación',A.planificacion)+f('Stock general',A.stock_general)+f('Cargos por stock antiguo',A.cargos)+`<div class="check"><span class="pill p-gray">Cargado</span><div><div class="d">${esc(String(M.cargado).replace('T',' '))}</div></div></div>`;
+  $('#n-rep').textContent=String(A.planificacion[1]).slice(5,10).split('-').reverse().join('/');
+  const T=[['Publicaciones en Planificación',M.publicaciones],['Venta 30 días (u)',M.v30],['Aptas en Full',M.aptas],['Pendientes de ingreso',M.pendientes],['En 0 con venta',M.en_cero_con_venta],['Para impulsar ventas',M.impulsar],['Para evitar descarte',M.descarte],['Con cargo por stock antiguo',M.cargo_antiguo]].concat(Object.entries(M.urgencia).map(([k,v])=>['Urgencia: '+k,v]));
+  $('#rep-tiles').innerHTML=T.map(([l,n])=>`<div class="tile"><div class="v">${fmt(n)}</div><div class="l">${esc(l)}</div></div>`).join('');}
+
+/* ---------- REGLAS ---------- */
+const KRG='fx-gm-reglas';
+const PARD={Z:['Factor de seguridad (nivel de servicio)','Más alto = más inventario de seguridad'],revision_dias:['Días entre pedidos',''],seguridad_dias:['Días de seguridad',''],seguridad_top_dias:['Días de seguridad de lo que más vende',''],pct_top:['Qué cuenta como "lo que más vende"','Parte de la venta total (0.8 = el 80%)'],min_meses_6:['Meses con venta (de 6) para ser REGULAR',''],min_meses_24:['Meses con venta (de 24) para RESCATE',''],unidades_rescate:['Unidades de prueba en RESCATE',''],tope_cobertura_dias:['Tope de cobertura (días)','Nada se pide arriba de esto (salvo NUEVO y ESTRELLA)'],sin_urgencia_dias:['"Sin urgencia" se salta si aptas + pendientes cubren (días)',''],italika_max_empaque:['ITALIKA: empaque máximo ($)','Más caro se borra'],empaque_extra_max_dias:['Lo extra por empaque cabe en (días de venta)',''],envios_cobertura_creado:['Envío ya creado en ML si sus piezas ya están en pendientes (proporción)','']};
+function initRG(){if(HAS)FXS.on(KRG,renderRG);renderRG()}
+function rgEff(){const R=JSON.parse(JSON.stringify(RGL));const P=[];for(const c of regList(KRG)){if(c.estado==='aprobado'){const [s,k]=c.campo.split('.');let v;try{v=JSON.parse(c.despues)}catch(e){v=c.despues}if(k)(R[s]=R[s]||{})[k]=v;else R[s]=v}else if(c.estado==='pendiente')P.push(c)}return [R,P]}
+function renderRG(){const [R,P]=rgEff();const pk=new Set(P.map(c=>c.campo));
+  const pn=$('#rg-pend');pn.hidden=!P.length;if(P.length)pn.innerHTML=`${P.length} cambio${P.length>1?'s':''} pendiente${P.length>1?'s':''}: ${P.map(c=>esc(c.campo)+' → '+esc(c.despues)+' ('+esc(c.por)+')').join('; ')} ${owner?'<button class="btn sm" id="rg-apr">Aprobar</button> <button class="btn sm" id="rg-rej">Rechazar</button>':''}`;
+  if($('#rg-apr')){$('#rg-apr').onclick=()=>{regReview(KRG,P,'aprobado');renderRG()};$('#rg-rej').onclick=()=>{regReview(KRG,P,'rechazado');renderRG()}}
+  $('#rg-par').innerHTML=Object.entries(R.parametros).map(([k,v])=>`<tr><td><b>${esc((PARD[k]||[k])[0])}</b>${pk.has('parametros.'+k)?' <span class="pill p-pur">pendiente</span>':''}</td><td class="msg">${esc((PARD[k]||['',''])[1])}</td><td class="num"><input class="pinput" data-k="${k}" value="${esc(v)}" inputmode="decimal" aria-label="${esc((PARD[k]||[k])[0])}"></td><td><button class="btn sm" data-save="${k}" ${HAS?'':'disabled'}>Registrar</button></td></tr>`).join('');
+  $('#rg-par').querySelectorAll('[data-save]').forEach(b=>b.onclick=()=>{const k=b.dataset.save;const nv=$(`.pinput[data-k="${k}"]`).value.trim();if(String(R.parametros[k])===nv)return;
+    rgChange('parametros.'+k,String(R.parametros[k]),nv)});
+  $('#rg-prov').innerHTML=Object.entries(R.proveedores).map(([m,v])=>`<tr><td><b>${esc(m)}</b></td><td><label><input type="checkbox" data-m="${esc(m)}" ${v.semana?'checked':''} ${HAS?'':'disabled'}> ${v.semana?'Sí':'No'}</label></td><td>${esc(v.bodegas.join(', '))}</td><td>${v.archivo_unico_edomex?'Sí':'No'}</td></tr>`).join('')+`<tr><td colspan="4" class="msg">No regulares (no se piden): ${esc((R.no_regulares||[]).join(', '))}</td></tr>`;
+  $('#rg-prov').querySelectorAll('input[type=checkbox]').forEach(c=>c.onchange=()=>{const m=c.dataset.m;const v={...R.proveedores[m],semana:c.checked};rgChange('proveedores.'+m,JSON.stringify(R.proveedores[m]),JSON.stringify(v))});
+  $('#rg-nc').innerHTML=Object.entries(R.bodega_no_contar||{}).map(([k,v])=>`<tr><td class="mono">${esc(k)}</td><td>${esc(v)}</td></tr>`).join('');}
+function rgChange(campo,antes,despues){showPanel(`<h2>Cambio de regla</h2><div class="kv"><b>Regla</b><span class="mono">${esc(campo)}</span><b>Antes</b><span>${esc(antes)}</span><b>Después</b><span>${esc(despues)}</span></div>${whoMotivo()}<div class="row-act"><button class="btn pri" id="rc-ok">Registrar</button><span class="msg" id="rc-msg">${owner?'Equipo de Dirección: queda aprobado.':'Queda pendiente hasta que Dirección lo apruebe.'}</span></div>`);
+  $('#rc-ok').onclick=()=>{const wm=readWM($('#rc-msg'));if(!wm)return;const now=new Date().toISOString();regPut(KRG,nid(),{campo,antes,despues,motivo:wm.mo,por:wm.nm,fecha:now,estado:owner?'aprobado':'pendiente',...(owner?{revisadoPor:wm.nm,revisadoFecha:now}:{})});closePanel();renderRG()};
+  $('#pclose').addEventListener('click',renderRG)}
+
+/* ---------- DESCONTINUADOS ---------- */
+const KSU='fx-gm-sust';let dsSub='cod',dsN=PAGE,DSC=[];
+const prio=(v30,vm)=>v30>=3||vm>=3?'ALTA':(v30>0||vm>=1?'MEDIA':'BAJA');
+function initDS(){const P=PED;const C=P.nolp_cols;const G={};
+  for(const r of P.nolp){if(r[9]==='Proveedor que no se pide esta semana')continue;const o={};C.forEach((c,i)=>o[c]=r[i]);const k=o.marca+'|'+o.codigo;const g=G[k]=G[k]||{marca:o.marca,codigo:o.codigo,pubs:[],v30:0,vm:0,tit:o.titulo,img:o.img,motivo:o.motivo,bods:new Set()};g.pubs.push(o.codml);g.v30+=+o.v30||0;g.vm+=+o.vmes||0;g.bods.add(o.bod);if(!g.img)g.img=o.img}
+  DSC=Object.values(G).map(g=>({...g,pri:prio(g.v30,g.vm)})).sort((a,b)=>b.v30-a.v30||b.vm-a.vm);
+  $('#n-desc').textContent=fmt(DSC.length);
+  $('#ds-src').textContent=`Pedido ${P.pedido} calculado ${String(P.calculado).replace('T',' ')}: publicaciones que necesitaban mercancía y cuyo código no está en ninguna lista vigente.`;
+  $('#ds-marca').insertAdjacentHTML('beforeend',[...new Set(DSC.map(g=>g.marca).concat(P.ale0.length?['ALESSIA']:[]))].sort().map(m=>`<option>${esc(m)}</option>`).join(''));
+  $('#ds-sub').querySelectorAll('button').forEach(b=>b.onclick=()=>{dsSub=b.dataset.s;dsN=PAGE;$('#ds-sub').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderDS()});
+  ['#ds-q','#ds-marca','#ds-pri'].forEach(s=>$(s).addEventListener('input',()=>{dsN=PAGE;renderDS()}));
+  if(HAS)FXS.on(KSU,renderDS);renderDS();}
+function susOf(c){const L=regList(KSU).filter(x=>x.codigo===c&&x.estado!=='rechazado');return L[L.length-1]}
+function renderDS(){if(!PED)return;const q=$('#ds-q').value.trim().toUpperCase(),m=$('#ds-marca').value,pr=$('#ds-pri').value;const match=s=>!q||q.split(/\s+/).every(w=>s.toUpperCase().includes(w));
+  let head,rows,cell,tiles;
+  if(dsSub==='cod'){rows=DSC.filter(g=>(!m||g.marca===m)&&(!pr||g.pri===pr)&&match(g.codigo+' '+g.tit+' '+g.pubs.join(' ')));
+    tiles=[['Códigos sin lista',DSC.length],['Prioridad alta',DSC.filter(g=>g.pri==='ALTA').length],['Prioridad media',DSC.filter(g=>g.pri==='MEDIA').length],['Publicaciones',DSC.reduce((a,g)=>a+g.pubs.length,0)],['Con sustituto propuesto',DSC.filter(g=>susOf(g.codigo)).length]];
+    head='<tr><th>Foto</th><th>Prioridad</th><th>Proveedor</th><th>Código</th><th>Título de ejemplo</th><th class="num">Venta 30 d</th><th class="num">Venta/mes est.</th><th class="num">Publicaciones</th><th>Bodegas</th><th>Sustituto</th></tr>';
+    cell=g=>{const s=susOf(g.codigo);return `<td>${th(g.img)}</td><td><span class="pill ${g.pri==='ALTA'?'p-bad':g.pri==='MEDIA'?'p-warn':'p-gray'}">${g.pri}</span></td><td>${esc(g.marca)}</td><td class="mono">${esc(g.codigo)}</td><td class="tt">${esc(g.tit)}</td><td class="num">${fmt(g.v30)}</td><td class="num">${g.vm.toFixed(1)}</td><td class="num">${g.pubs.length}</td><td>${esc([...g.bods].join(', '))}</td><td>${s?esc(s.sust_marca+' '+s.sust_codigo)+' '+stPill(s.estado):'<span class="pill p-gray">Falta</span>'}</td>`}}
+  else if(dsSub==='ale'){const C=PED.ale0_cols;const A={};for(const r of PED.ale0){const o={};C.forEach((c,i)=>o[c]=r[i]);const g=A[o.codigo]=A[o.codigo]||{marca:'ALESSIA',codigo:o.codigo,tit:o.titulo,img:o.img,pubs:[],uml:0,v30:0,vm:0};g.pubs.push(o.codml);g.uml+=+o.uml||0}
+    rows=Object.values(A).filter(g=>match(g.codigo+' '+g.tit+' '+g.pubs.join(' '))).sort((a,b)=>b.uml-a.uml);
+    tiles=[['Códigos ALESSIA en 0',Object.keys(A).length],['Piezas que hacían falta',Math.round(Object.values(A).reduce((a,g)=>a+g.uml,0))],['Con sustituto propuesto',Object.values(A).filter(g=>susOf(g.codigo)).length]];
+    head='<tr><th>Foto</th><th>Código ALESSIA</th><th>Título</th><th class="num">Piezas que hacían falta</th><th class="num">Publicaciones</th><th>Sustituto</th></tr>';
+    cell=g=>{const s=susOf(g.codigo);return `<td>${th(g.img)}</td><td class="mono">${esc(g.codigo)}</td><td class="tt">${esc(g.tit)}</td><td class="num">${fmt(Math.round(g.uml))}</td><td class="num">${g.pubs.length}</td><td>${s?esc(s.sust_marca+' '+s.sust_codigo)+' '+stPill(s.estado):'<span class="pill p-gray">Falta</span>'}</td>`}}
+  else{const L=regList(KSU).slice().reverse();rows=L.filter(c=>(!m||c.marca===m)&&match(c.codigo+' '+c.sust_codigo+' '+(c.titulo||'')));
+    tiles=[['Propuestos',L.length],['Pendientes',L.filter(c=>c.estado==='pendiente').length],['Aprobados',L.filter(c=>c.estado==='aprobado').length]];
+    head='<tr><th>Código original</th><th>Proveedor original</th><th>Sustituto</th><th>Título</th><th>Quién</th><th>Estado</th></tr>';
+    cell=c=>`<td class="mono">${esc(c.codigo)}</td><td>${esc(c.marca)}</td><td class="mono">${esc(c.sust_marca+' '+c.sust_codigo)}</td><td class="tt">${esc(c.titulo||'')}</td><td>${esc(c.por)} · ${fd(c.fecha)}<div class="msg">${esc(c.motivo)}</div></td><td>${stPill(c.estado)}</td>`}
+  $('#ds-tiles').innerHTML=tiles.map(([l,n])=>`<div class="tile"><div class="v">${fmt(n)}</div><div class="l">${l}</div></div>`).join('');
+  $('#ds-head').innerHTML=head;const show=rows.slice(0,dsN);
+  $('#ds-body').innerHTML=show.length?show.map((r,i)=>`<tr class="click" data-i="${i}">${cell(r)}</tr>`).join(''):'<tr><td colspan="10" class="empty">Nada coincide.</td></tr>';
+  $('#ds-body').querySelectorAll('tr.click').forEach(tr=>tr.onclick=()=>openDS(show[+tr.dataset.i]));
+  moreBar('#ds-more',show.length,rows.length,()=>{dsN+=PAGE*4;renderDS()});}
+function openDS(g){const isReg=!!g.sust_codigo&&!g.pubs;const c0=isReg?{codigo:g.codigo,marca:g.marca,tit:g.titulo,pubs:[]}:g;const pend=isReg&&g.estado==='pendiente'?[g]:regList(KSU).filter(x=>x.codigo===c0.codigo&&x.estado==='pendiente');
+  getLPX().then(ix=>{const semana=RGL?Object.keys(RGL.proveedores).filter(m=>RGL.proveedores[m].semana):ix.orden;
+  showPanel(`<h2>Sustituto para ${esc(c0.codigo)}</h2>${c0.img?`<img class="big" src="${esc(IMG(c0.img))}" alt="">`:''}<div class="msg">${esc(c0.marca)} · ${esc(c0.tit||c0.titulo||'')}${c0.pubs&&c0.pubs.length?' · Códigos ML: <span class="mono" style="white-space:normal;overflow-wrap:anywhere">'+c0.pubs.map(esc).join(', ')+'</span>':''}</div>
+   <div class="grid2" style="margin-top:12px"><div class="fld"><label for="s-m">Proveedor del sustituto</label><select id="s-m">${semana.map(m=>`<option>${esc(m)}</option>`).join('')}</select></div><div class="fld"><label for="s-c">Código del sustituto</label><input id="s-c" placeholder="Código exacto de su lista"></div></div>
+   <div class="msg" id="s-v" style="margin-top:6px"></div>
+   <div class="bar" style="margin-top:10px"><input type="search" id="s-q" placeholder="Buscar en las listas por descripción (ej. kit arrastre ft125)"><button class="btn" id="s-go">Buscar</button></div><div id="s-res"></div>
+   ${whoMotivo()}<div class="row-act"><button class="btn pri" id="s-save" ${HAS?'':'disabled'}>Registrar sustituto</button><span class="msg" id="s-msg">${owner?'Equipo de Dirección: queda aprobado.':'Queda pendiente hasta que Dirección lo apruebe.'}</span></div>
+   ${pend.length&&owner?`<div class="row-act"><button class="btn" id="s-apr">Aprobar ${esc(pend[pend.length-1].sust_marca+' '+pend[pend.length-1].sust_codigo)}</button><button class="btn" id="s-rej">Rechazar</button></div>`:''}`);
+  const v=()=>getLP($('#s-m').value).then(()=>{const r=inLP($('#s-m').value,$('#s-c').value);$('#s-v').innerHTML=!$('#s-c').value?'':r?`<span class="pill p-ok">Está en la lista</span> ${esc(r[1])} · $${(+r[2]).toFixed(2)}${$('#s-m').value==='ALESSIA'?' · existencia '+fmt(r[3]):''}`:'<span class="pill p-bad">Ese código no está en la lista de '+esc($('#s-m').value)+'</span>'});
+  $('#s-m').oninput=v;$('#s-c').oninput=v;
+  $('#s-go').onclick=()=>{const q=$('#s-q').value.trim().toUpperCase();if(!q)return;$('#s-res').innerHTML='<div class="msg">Buscando…</div>';Promise.all(semana.map(getLP)).then(ds=>{const R=[];for(const d of ds)for(const r of d.rows){if(q.split(/\s+/).every(w=>(r[0]+' '+r[1]).toUpperCase().includes(w)))R.push([d.marca,r])}
+    $('#s-res').innerHTML=R.length?`<div class="card tbl" style="max-height:260px;overflow:auto"><table>${R.slice(0,80).map(([m,r],i)=>`<tr class="click" data-i="${i}"><td>${esc(m)}</td><td class="mono">${esc(r[0])}</td><td>${esc(r[1])}</td><td class="num">$${(+r[2]).toFixed(2)}</td></tr>`).join('')}</table></div>`:'<div class="msg">Sin resultados.</div>';
+    $('#s-res').querySelectorAll('tr.click').forEach(tr=>tr.onclick=()=>{const [m,r]=R[+tr.dataset.i];$('#s-m').value=m;$('#s-c').value=r[0];v()})})};
+  $('#s-save').onclick=()=>{const msg=$('#s-msg');const sm=$('#s-m').value,sc=NC($('#s-c').value);if(!sc){msg.textContent='Escribe el código del sustituto.';return}
+    getLP(sm).then(()=>{if(!inLP(sm,sc)){msg.textContent='Ese código no está en la lista de '+sm+'.';return}const wm=readWM(msg);if(!wm)return;const now=new Date().toISOString();
+      regPut(KSU,nid(),{codigo:c0.codigo,marca:c0.marca,titulo:c0.tit||c0.titulo||'',codml:(c0.pubs||[]).join(','),sust_marca:sm,sust_codigo:sc,motivo:wm.mo,por:wm.nm,fecha:now,estado:owner?'aprobado':'pendiente',...(owner?{revisadoPor:wm.nm,revisadoFecha:now}:{})});closePanel();renderDS()})};
+  if($('#s-apr')){$('#s-apr').onclick=()=>{regReview(KSU,[pend[pend.length-1]],'aprobado');closePanel();renderDS()};$('#s-rej').onclick=()=>{regReview(KSU,pend,'rechazado');closePanel();renderDS()}}})}
+
+/* ---------- CALCULO ---------- */
+let pdSub='lin',pdN=PAGE,pdInit=0;
+function initPD(P){if(pdInit)return;pdInit=1;
+  $('#pd-h1').textContent='Cálculo del pedido '+P.pedido;
+  if(/prueba/i.test(P.pedido))$('#pd-checks').insertAdjacentHTML('beforebegin','<div class="note">Recálculo de prueba del pedido 59 con los datos de hoy, hecho solo desde la página (sin RGP ni Excel). Lo que se mandó a proveedores el 19-nov no cambia. El primer pedido real con este cálculo será el 60.</div>');
+  $('#pd-src').textContent=`Calculado ${String(P.calculado).replace('T',' ')} · Planificación: ${P.reportes.planificacion[2]||P.reportes.planificacion[1]} · Listas: ${Object.entries(P.listas).map(([m,v])=>m+' '+v[0]).join(', ')}.`;
+  $('#pd-checks').innerHTML=P.checks.map(c=>`<div class="check"><span class="pill ${c[1]?'p-ok':'p-bad'}">${c[1]?'Bien':'Revisar'}</span><div><div class="t">${esc(c[0])}</div><div class="d">${esc(c[2])}</div></div></div>`).join('');
+  const tot=P.resumen.reduce((a,r)=>[a[0]+r[2],a[1]+r[3],a[2]+r[4]],[0,0,0]);
+  $('#pd-res').innerHTML=P.resumen.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="num">${fmt(r[2])}</td><td class="num">${fmt(r[3])}</td><td class="num">${money(r[4])}</td></tr>`).join('')+`<tr><td><b>Total</b></td><td></td><td class="num"><b>${fmt(tot[0])}</b></td><td class="num"><b>${fmt(tot[1])}</b></td><td class="num"><b>${money(tot[2])}</b></td></tr>`;
+  $('#pd-marca').insertAdjacentHTML('beforeend',[...new Set(P.lineas.map(l=>l[1]))].sort().map(m=>`<option>${esc(m)}</option>`).join(''));
+  $('#pd-arch').insertAdjacentHTML('beforeend',[...new Set(P.lineas.map(l=>l[0]))].sort().map(m=>`<option>${esc(m)}</option>`).join(''));
+  $('#pd-sub').querySelectorAll('button').forEach(b=>b.onclick=()=>{pdSub=b.dataset.s;pdN=PAGE;$('#pd-sub').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));renderPD()});
+  ['#pd-q','#pd-marca','#pd-arch'].forEach(s=>$(s).addEventListener('input',()=>{pdN=PAGE;renderPD()}));renderPD()}
+function renderPD(){const P=PED,q=$('#pd-q').value.trim().toUpperCase(),m=$('#pd-marca').value,a=$('#pd-arch').value;const match=s=>!q||q.split(/\s+/).every(w=>s.toUpperCase().includes(w));
+  $('#pd-marca').hidden=!['lin','exc'].includes(pdSub);$('#pd-arch').hidden=pdSub!=='lin';
+  let head,rows,cell;
+  if(pdSub==='lin'){rows=P.lineas.filter(l=>(!m||l[1]===m)&&(!a||l[0]===a)&&match(l[2]+' '+l[4]+' '+l[8].join(' ')+' '+l[7]));
+    head='<tr><th>Archivo</th><th>Proveedor</th><th>Código</th><th>Descripción</th><th class="num">Piezas</th><th class="num">Precio</th><th class="num">Importe</th><th class="num">En camino desc.</th><th class="num">Bodega desc.</th><th>Para Códigos ML</th><th>Nota</th></tr>';
+    cell=l=>`<td>${esc(l[0])}</td><td>${esc(l[1])}</td><td class="mono">${esc(l[2])}</td><td class="tt">${esc(l[4])}</td><td class="num"><b>${fmt(l[3])}</b></td><td class="num">$${(+l[5]).toFixed(2)}</td><td class="num">${money(l[6])}</td><td class="num">${l[9]?fmt(l[9]):''}</td><td class="num">${l[10]?fmt(l[10]):''}</td><td class="mono" style="white-space:normal">${l[8].map(esc).join(' ')}</td><td>${esc(l[7])}</td>`}
+  else if(pdSub==='pub'){rows=P.pubs.filter(p=>match(p[1]+' '+p[2]+' '+p[12]));
+    head='<tr><th>Foto</th><th>Bodega</th><th>Código ML</th><th>Título</th><th>Clase</th><th>Urgencia ML</th><th class="num">Venta 30 d</th><th class="num">Venta/mes</th><th class="num">Aptas</th><th class="num">Pend. ML</th><th class="num">Envíos</th><th class="num">Objetivo</th><th class="num">Se piden (u ML)</th><th>Piezas</th></tr>';
+    cell=p=>`<td>${th(p[14])}</td><td>${esc(p[0])}</td><td class="mono">${esc(p[1])}</td><td class="tt">${esc(p[2])}</td><td>${esc(p[3])}</td><td>${esc(p[4])}</td><td class="num">${fmt(p[5])}</td><td class="num">${p[6]}</td><td class="num">${fmt(p[7])}</td><td class="num">${fmt(p[8])}</td><td class="num">${fmt(p[9])}</td><td class="num">${p[10]}</td><td class="num"><b>${fmt(p[11])}</b></td><td class="mono" style="white-space:normal">${esc(p[12])}</td>`}
+  else if(pdSub==='nop'){rows=P.nopid.filter(p=>match(p[1]+' '+p[2]+' '+p[3])).sort((x,y)=>y[4]-x[4]);
+    head='<tr><th>Foto</th><th>Bodega</th><th>Código ML</th><th>Título</th><th>Por qué no se pidió</th><th class="num">Venta 30 d</th><th class="num">Aptas</th></tr>';
+    cell=p=>`<td>${th(p[6])}</td><td>${esc(p[0])}</td><td class="mono">${esc(p[1])}</td><td class="tt">${esc(p[2])}</td><td>${esc(p[3])}</td><td class="num">${fmt(p[4])}</td><td class="num">${fmt(p[5])}</td>`}
+  else if(pdSub==='env'){rows=P.envios;head='<tr><th>Envío</th><th>Bodega</th><th>Fecha</th><th class="num">u</th><th class="num">Ya en pendientes de ML</th><th>Cómo se contó</th></tr>';
+    cell=e=>`<td class="mono">${esc(e[0])}</td><td>${esc(e[1])}</td><td>${esc(e[2])}</td><td class="num">${fmt(e[3])}</td><td class="num">${fmt(e[4])}</td><td>${esc(e[5])}</td>`}
+  else{rows=P.excl.filter(e=>(!m||e[1]===m)&&match(e.join(' ')));head='<tr><th>Bodega</th><th>Proveedor</th><th>Código</th><th class="num">Piezas</th><th>Motivo</th></tr>';
+    cell=e=>`<td>${esc(e[0])}</td><td>${esc(e[1])}</td><td class="mono">${esc(e[2])}</td><td class="num">${fmt(e[3])}</td><td>${esc(e[4])}</td>`}
+  $('#pd-head').innerHTML=head;const show=rows.slice(0,pdN);
+  $('#pd-body').innerHTML=show.length?show.map(r=>`<tr>${cell(r)}</tr>`).join(''):'<tr><td colspan="14" class="empty">Nada coincide.</td></tr>';
+  moreBar('#pd-more',show.length,rows.length,()=>{pdN+=PAGE*4;renderPD()});}
+
+/* ---------- APROBACION ---------- */
+const KAP='fx-gm-pedido';const STE=['por aprobar','aprobado','enviado','cotizado','proforma confirmada','pagado'];
+function initAP(P){$('#ap-h1').textContent='Aprobación y envío · pedido '+P.pedido;if(HAS)FXS.on(KAP,renderAP);renderAP()}
+function apState(m){const o=(HAS?FXS.get(KAP):{})||{};return o[PED.pedido+'|'+m]||{estado:'por aprobar',hist:[]}}
+function renderAP(){const P=PED;const by={};for(const r of P.resumen){(by[r[0]]=by[r[0]]||[]).push(r)}
+  const S=Object.keys(by).map(m=>apState(m));const cnt=e=>S.filter(s=>s.estado===e).length;
+  $('#ap-tiles').innerHTML=[['Proveedores',Object.keys(by).length],['Por aprobar',cnt('por aprobar')],['Aprobados sin enviar',cnt('aprobado')],['Enviados / cotizados',cnt('enviado')+cnt('cotizado')],['Proforma confirmada o pagado',cnt('proforma confirmada')+cnt('pagado')],['No se manda',cnt('no se manda')]].map(([l,n])=>`<div class="tile"><div class="v">${fmt(n)}</div><div class="l">${l}</div></div>`).join('');
+  const fails=P.checks.filter(c=>!c[1]);$('#ap-note').hidden=!fails.length&&!/prueba/i.test(P.pedido);$('#ap-note').textContent=(/prueba/i.test(P.pedido)?'Recálculo de prueba: no se aprueba ni se manda nada desde aquí. ':'')+(fails.length?'Antes de aprobar revisa en Cálculo: '+fails.map(c=>c[0]).join('; ')+'.':'');
+  $('#ap-cards').innerHTML=Object.entries(by).map(([m,rs])=>{const s=apState(m);const pz=rs.reduce((a,r)=>a+r[3],0),imp=rs.reduce((a,r)=>a+r[4],0);const i=STE.indexOf(s.estado);
+    return `<div class="pcard"><div class="row-act" style="margin:0;justify-content:space-between"><h3>${esc(m)}</h3><span class="pill ${s.estado==='por aprobar'?'p-warn':s.estado==='no se manda'?'p-gray':'p-ok'}">${esc(s.estado)}</span></div>
+     <div class="steps">${STE.map((e,j)=>`<span class="${j<=i&&i>=0?'on':''}">${esc(e)}</span>`).join('')}</div>
+     <table>${rs.map(r=>`<tr><td>${esc(r[1])}</td><td class="num">${fmt(r[2])} códigos</td><td class="num">${fmt(r[3])} pz</td><td class="num">${money(r[4])}</td></tr>`).join('')}<tr><td><b>Total</b></td><td></td><td class="num"><b>${fmt(pz)} pz</b></td><td class="num"><b>${money(imp)}</b></td></tr></table>
+     ${s.total?`<div class="kv"><b>Total proforma</b><span>${money(s.total)}</span></div>`:''}${s.nota?`<div class="msg">${esc(s.nota)}</div>`:''}
+     <div class="row-act" style="margin-top:4px"><button class="btn sm ${s.estado==='por aprobar'&&owner?'pri':''}" data-m="${esc(m)}" ${HAS?'':'disabled'}>Actualizar estado</button>${s.hist&&s.hist.length?`<span class="msg">${esc(s.hist[s.hist.length-1].por)} · ${fd(s.hist[s.hist.length-1].fecha)}</span>`:''}</div></div>`}).join('');
+  $('#ap-cards').querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>openAP(b.dataset.m));}
+function openAP(m){const s=apState(m);const opts=owner?STE.concat(['no se manda']):STE.filter(e=>!['aprobado','por aprobar'].includes(e));
+  showPanel(`<h2>${esc(m)} · pedido ${esc(PED.pedido)}</h2><div class="msg">Estado actual: ${esc(s.estado)}</div>
+   <div class="grid2" style="margin-top:12px"><div class="fld"><label for="a-e">Nuevo estado</label><select id="a-e">${opts.map(e=>`<option ${e===s.estado?'selected':''}>${esc(e)}</option>`).join('')}</select></div><div class="fld"><label for="a-t">Total proforma (con IVA)</label><input id="a-t" inputmode="decimal" value="${esc(s.total||'')}" placeholder="0.00"></div></div>
+   <div class="fld" style="margin-top:10px"><label for="a-n">Nota</label><textarea id="a-n" placeholder="Ej. OV 000452261 confirmada; faltan 3 códigos">${esc(s.nota||'')}</textarea></div>
+   <div class="grid2" style="margin-top:10px"><div class="fld"><label for="f-who">Quién registra</label><input id="f-who" value="${esc(me)}" placeholder="Tu nombre"></div></div>
+   <div class="row-act"><button class="btn pri" id="a-ok">Guardar</button><span class="msg" id="a-msg">${owner?'':'Aprobar o marcar "no se manda" solo lo hace Dirección.'}</span></div>
+   <div class="hist"><div class="fld"><label>Registro</label></div>${(s.hist||[]).slice().reverse().map(h=>`<div class="it"><b>${esc(h.estado)}</b>${h.total?' · '+money(h.total):''}<div class="meta">${esc(h.por)} · ${fd(h.fecha)}${h.nota?' · '+esc(h.nota):''}</div></div>`).join('')||'<div class="msg">Sin movimientos.</div>'}</div>`);
+  $('#a-ok').onclick=()=>{const nm=$('#f-who').value.trim();if(!nm){$('#a-msg').textContent='Escribe tu nombre.';return}me=nm;LSs('fx-who',nm);const now=new Date().toISOString();
+    const e=$('#a-e').value,t=parseFloat(String($('#a-t').value).replace(/[$,]/g,''))||0,n=$('#a-n').value.trim();
+    const o=FXS.get(KAP)||{};o[PED.pedido+'|'+m]={pedido:PED.pedido,marca:m,estado:e,total:t,nota:n,por:nm,fecha:now,hist:[...(s.hist||[]),{estado:e,total:t,nota:n,por:nm,fecha:now}]};FXS.set(KAP,o);closePanel();renderAP()};}
+
 route();
+getLPX().catch(()=>{});
 load('gestion-data/sust.json?v='+DV).then(d=>{if(!SUS){$('#n-sus').textContent=fmt(d.det.length)}}).catch(()=>{});
 </script>
 

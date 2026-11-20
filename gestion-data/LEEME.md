@@ -1,6 +1,6 @@
 # Gestión (gestion-236ef9.html): reglas para todas las sesiones
 
-Pantallas: #rgp (Características del RGP), #sustitutos, #activos. Las fotos salen del LINK IMAGEN del RGP (mlstatic).
+Pantallas: #rgp (Características del RGP), #sustitutos, #activos y, del pedido a proveedor (ver pedido/LEEME.md): #piezas, #listas, #reportes, #reglas, #descontinuados, #pedido, #aprobacion. Las fotos salen del LINK IMAGEN del RGP (mlstatic).
 
 ## Dónde vive cada dato
 - gestion-data/rgp.json: CARACTERISTICAS + BODEGA del RGP NUEVO 05-10-26 (base). Llave = NUMERO DE PRODUCTO.

@@ -1,0 +1,36 @@
+{
+"cargado": "2026-11-20T01:50",
+"archivos": {
+"planificacion": [
+"Reporte de Planificacion - 19-11-2026 0703.xlsx",
+"2026-11-19T07:03",
+"Descargado el 19 de noviembre a las 07:02 hs."
+],
+"stock_general": [
+"stock_general_full_19-11-2026_0703.xlsx",
+"2026-11-19T07:03"
+],
+"cargos": [
+"19-11-2026_Cargos_por_stock_antiguo.xlsx",
+"2026-11-19T07:06"
+]
+},
+"publicaciones": 19724,
+"urgencia": {
+"-": 7807,
+"Sin urgencia": 5975,
+"Urgente": 3947,
+"En 2 semanas": 775,
+"Próxima semana": 535,
+"Esta semana": 404,
+"Excedente": 281
+},
+"v30": 63715,
+"aptas": 57354,
+"pendientes": 11283,
+"en_cero_con_venta": 1476,
+"impulsar": 1419,
+"descarte": 108,
+"cargo_antiguo": 306,
+"cargo_total": 32402
+}
