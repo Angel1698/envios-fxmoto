@@ -251,6 +251,8 @@ def put(o,bod,c,m,q,orig=None):
 for o in OUT:
     for c0,m,f,est,mr in o['piezas']:
         c=code(m,c0)
+        if est=='condicional':   # regla de Angel 20-nov: WINMEX ya no la trae; ITALIKA solo si es el mismo producto y deja utilidad
+            NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'ITALIKA en lugar de '+mr+': falta revisar utilidad con el precio de ML','',o['img']]); continue
         if m not in LP or c not in LP[m]:
             ot=[b for b in owners(c0) if b!=m]
             NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],('Sin proveedor en lista' if m not in LP else 'Código ya no aparece en la lista vigente'),','.join(ot),o['img']])
