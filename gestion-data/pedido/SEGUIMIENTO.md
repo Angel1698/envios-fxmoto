@@ -26,8 +26,11 @@ Objetivo: que nunca se pierda qué se pidió, qué cotizó cada proveedor, qué 
 6. Guarda seguimiento.json, commit y push a production del repo envios-fxmoto (solo ese archivo y los originales; nunca tocar all.json ni build.py: eso es del chat de envíos).
 7. Solo si hay alertas nuevas de nivel alta, manda a Angel un mensaje corto (SendUserMessage). Si no hay nada nuevo, no escribe.
 
-## Lo que nunca hace
-No escribe a proveedores ni al personal, no confirma cotizaciones ni proformas (eso lo autoriza Angel en el chat), no escribe contraseñas, no toca Mercado Libre ni la base de Motofix, no trabaja en domingo.
+## Aprobar proformas y mandar mensajes (autorización permanente de Angel, 20-nov)
+- Aprueba proformas, cotizaciones, OV y presupuestos que pasan el cotejo: todos los códigos están en el pedido de esa bodega; cantidades iguales o menores (más solo por redondeo a la caja o empaque, máximo un empaque por código); precios dentro de ±2% de la lista vigente; dirección de envío de la bodega correcta. Mensaje: "<contacto>, confirmamos la proforma <número> (<bodega>). Gracias." y se anota en APROBACION_PEDIDO.md y en seguimiento.json con el cotejo.
+- Si no pasa el cotejo (duplicadas, piezas de más, precios distintos, otra bodega): no aprueba; avisa a Angel con su recomendación.
+- Puede mandar: acuses de documentos recibidos, confirmaciones que pasan el cotejo, y pedir lo que falta (proforma o cotización después de 2 días hábiles, número de factura, factura, lista de empaque, documento ilegible).
+- No puede: hablar de pagos, precios, cancelaciones, reclamos o cambios de pedido; mandar pedidos ni complementos; escribir contraseñas; tocar Mercado Libre ni la base de Motofix; trabajar en domingo o fuera de 9:00 a 19:00.
 
 ## Cómo lo usa el cálculo del pedido
 `calc_pedido.py` cuenta como en camino los documentos confirmados/facturados/en camino que todavía no están en la página (por código). Si un documento no tiene detalle, cuenta lo pedido en ese archivo y la verificación "En camino del seguimiento con detalle por código" sale en Revisar hasta que se lea el documento.
