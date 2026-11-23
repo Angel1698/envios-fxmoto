@@ -50,6 +50,7 @@ for c in aprob('fx-gm-reglas'):
     if k: REG.setdefault(sec,{})[k]=val
     else: REG[sec]=val
 P_=REG['parametros']
+MIN0=P_.get('minimo_stock0',1)   # unidades ML mínimas para un Código ML con stock 0 en Full (aptas + pendientes + envíos) que no esté excluido
 Z,REV,SEGG,SEGA,PCT,MIN6,MIN24,UPR,TOPE,SINURG=(P_['Z'],P_['revision_dias'],P_['seguridad_dias'],P_['seguridad_top_dias'],P_['pct_top'],P_['min_meses_6'],P_['min_meses_24'],P_['unidades_rescate'],P_['tope_cobertura_dias'],P_['sin_urgencia_dias'])
 PROV=REG['proveedores']; SEMANA={m for m,v in PROV.items() if v.get('semana')}
 
@@ -189,14 +190,17 @@ for x in rows:
     elif x['nuevo']: clase='NUEVO'
     elif x['c6']>=MIN6 or (x['sprom']<1 and x['c6']>=1): clase='REGULAR'
     elif x['c24']>=MIN24 and x['full']<=0: clase='RESCATE'
+    elif MIN0>0 and x['full']<=0: clase='STOCK 0'
     else: m_=f'Venta en menos de {MIN6} de 6 meses'; WHY[m_]+=1; WHYP.append((x,m_)); continue
     if clase=='RESCATE': uml=UPR; s=UPR; h=0
+    elif clase=='STOCK 0': uml=MIN0; s=MIN0; h=0
     else:
         seg=SEGA if (x['d']>=umb and x['d']>0) else SEGG; h=x['tf']+REV+seg
         s=x['d']*h+Z*x['sdm']/math.sqrt(30)*math.sqrt(h)
         if not x['nuevo'] and not x['est']: s=min(s,max(int(x['d']*TOPE),1))
         if x['est']: s=max(s,x['minML']+x['d']*(x['tf']+REV))
         uml=max(0,math.ceil(s-x['full']-1e-9))
+    if uml<=0 and MIN0>0 and x['full']<=0: uml=MIN0; clase='STOCK 0'   # regla de Angel 22-nov: con stock 0 en Full se pide al menos una unidad
     if uml<=0: WHY['Full ya alcanza']+=1; WHYP.append((x,'Full ya alcanza')); continue
     x.update(clase=clase,uml=uml,obj=s,h=h,top=x['d']>=umb); OUT.append(x)
 
