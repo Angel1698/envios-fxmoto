@@ -251,6 +251,12 @@ for r in SU['det']:
 for c in aprob('fx-gm-sust'):
     if c.get('codigo') and c.get('sust_marca') and c.get('sust_codigo'): SUBM[N(c['codigo'])]=(c['sust_marca'],N(c['sust_codigo']),'página')
 
+# ---------- códigos que el proveedor no surte (regla de Angel 23-nov) ----------
+# 2 o más pedidos sin surtir ni cotizar en esa bodega = ya no se le pide ahí. ALESSIA: se va al sustituto mientras esté en 0;
+# demás proveedores: cambio de código permanente (no se sabe cuándo vuelven a tener). Se recalcula con no_surte.py.
+_NSD=json.load(open(os.path.join(HERE,'no_surte.json'),encoding='utf-8')) if os.path.exists(os.path.join(HERE,'no_surte.json')) else {'cols':[],'rows':[]}
+NS={(r[0],r[1],N(r[2])) for r in _NSD['rows']}
+def nosurte(m,bod,c): return (m,'CUERNAVACA' if bod=='CUERNAVACA' else 'EDOMEX',c) in NS
 # ---------- piezas de proveedor ----------
 DEM=collections.defaultdict(float); SRC=collections.defaultdict(list); NOLP=[]; ALE0=[]; SUBLOG=[]
 def put(o,bod,c,m,q,orig=None):
@@ -266,6 +272,15 @@ for o in OUT:
             continue
         if m not in SEMANA: NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'Proveedor que no se pide esta semana','',o['img']]); continue
         bod=o['bod']
+        if m=='ALESSIA' and EXA.get(c,0)>0:   # ALESSIA con existencia: si el sustituto es más económico se sigue con el sustituto (Angel 23-nov)
+            s_=SUBM.get(c)
+            if s_ and s_[0] in SEMANA and s_[0]!='ALESSIA':
+                sb,sc=s_[0],code(s_[0],s_[1]); pa=(LP['ALESSIA'].get(c) or ('',0))[1] or 0; ps=(LP.get(sb,{}).get(sc) or ('',0))[1] or 0
+                b2=bod
+                if 'CUERNAVACA' not in PROV.get(sb,{}).get('bodegas',[]) and bod=='CUERNAVACA':
+                    b2=None if o['tam'] in ('Grande','Extragrande') else 'EDOMEX'
+                if ps and pa and ps<pa and b2 and not nosurte(sb,b2,sc):
+                    put(o,b2,sc,sb,f,orig=c); SUBLOG.append([b2,c,sb,sc,f*o['uml'],o['cml'],bod]); continue
         if m=='ALESSIA' and EXA.get(c,0)<=0:
             s=SUBM.get(c); done=False
             if s and s[0] in SEMANA:
@@ -277,9 +292,14 @@ for o in OUT:
                     if b2:
                         put(o,b2,sc,sb,f,orig=c); SUBLOG.append([b2,c,sb,sc,f*o['uml'],o['cml'],bod]); done=True
             if not done:
-                ALE0.append([o['bod'],o['cml'],o['tit'],c,f*o['uml'],'ALESSIA en 0 y sin sustituto que se pueda pedir',o['img']])
-                if REG.get('ale0_pedir_igual',True): put(o,bod,c,'ALESSIA',f)
+                if nosurte('ALESSIA',bod,c):   # en 0 y 2+ pedidos sin surtir: ya no se le pide; buscar sustituto
+                    ALE0.append([o['bod'],o['cml'],o['tit'],c,f*o['uml'],'ALESSIA en 0 y sin surtir en 2+ pedidos: no se pide, buscar sustituto',o['img']])
+                else:
+                    ALE0.append([o['bod'],o['cml'],o['tit'],c,f*o['uml'],'ALESSIA en 0 y sin sustituto que se pueda pedir',o['img']])
+                    if REG.get('ale0_pedir_igual',True): put(o,bod,c,'ALESSIA',f)
             continue
+        if m!='ALESSIA' and nosurte(m,bod,c):   # cambio de código permanente (Angel 23-nov)
+            NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'No lo surte: 2+ pedidos sin surtir ni cotizar, buscar cambio de código','',o['img']]); continue
         put(o,bod,c,m,f)
 
 # ---------- empaques y pedido ----------

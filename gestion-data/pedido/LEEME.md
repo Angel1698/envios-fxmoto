@@ -25,6 +25,10 @@ En camino, inventario en bodega y envíos salen del DATA de `panel-67be9943a637.
 6. Angel aprueba en Aprobación o en el chat. Solo entonces se manda (nunca en domingo).
 
 ## Reglas que ya trae el cálculo
+- **Códigos que el proveedor no surte (Angel 23-nov):** `python3 no_surte.py` antes de calcular. Si un código se pidió en 2 o más pedidos a una bodega y el proveedor no surtió ni cotizó nada, va a `no_surte.json`.
+  - ALESSIA: mientras esté en existencia 0 se va al sustituto; si no hay sustituto ya no se pide (sale en ALESSIA en 0 para buscarlo). Cuando ALESSIA vuelve a tener existencia se le pide a ella, salvo que el sustituto sea más barato.
+  - Demás proveedores: no se les vuelve a pedir y sale en "no en lista" con motivo "buscar cambio de código". El cambio de código es permanente (se cambia la pieza en Piezas), porque su lista no dice existencia.
+  - Al mandar un pedido nuevo, sus renglones y lo cotizado quedan en seguimiento.json; los pedidos 53-58 están en historial_pedidos.json.
 - La marca de cada pieza es la de la lista donde aparece su código (error del pedido 59: compuestos de dos proveedores).
 - Verificaciones: nada G/XG a Cuernavaca; cada proveedor solo a sus bodegas; ningún "no en lista" que esté en otra lista; compuestos completos; reportes del día; listas con menos de 30 días.
 - Envíos de la página: los de fecha anterior al reporte ya salieron; los que ya están ≥90% en pendientes de ML ya están creados; el resto se suma.
