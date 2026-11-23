@@ -39,6 +39,9 @@ for t in L[1:]:
     act.append([cl(t[0]),cl(t[1]),cl(t[2]),cl(t[3]),cl(t[4]),cl(t[5]),cl(t[6]),N(t[7]),N(t[8]),round(N(t[9])),N(t[10]),N(t[11]),cl(t[13]),sku.get(t[0],'')])
 json.dump({'fuente':'ACTIVOS_EMPRESA_16-11-2026.xlsx y OPINIONES_ACTIVOS_EMPRESA_16-11-2026.xlsx (hoja LISTA)',
  'cols':['mlm','codml','origen','titulo','bodega','tam','clasif','opin','u30','d30','u6m','meses','sug','sku'],'rows':act},open('activos.json','w'),ensure_ascii=False,separators=(',',':'))
+_B=json.load(open('activos_bajas.json')); _bm={b[0] for b in _B['rows']}
+_a=json.load(open('activos.json')); _a['rows']=[x for x in _a['rows'] if x[0] not in _bm]; _a['fuente']+=f" · menos {len(_bm)} bajas (activos_bajas.json)"
+json.dump(_a,open('activos.json','w'),ensure_ascii=False,separators=(',',':')); act=_a['rows']
 print('act',len(act), collections.Counter(a[2] for a in act), collections.Counter(a[12] for a in act))
 # imagenes
 R=r['RGP']; img={}; imgml={}

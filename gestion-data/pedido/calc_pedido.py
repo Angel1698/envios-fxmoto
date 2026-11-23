@@ -51,7 +51,7 @@ for c in aprob('fx-gm-reglas'):
     else: REG[sec]=val
 P_=REG['parametros']
 MIN0=P_.get('minimo_stock0',1)   # unidades ML mínimas para un Código ML con stock 0 en Full (aptas + pendientes + envíos) que no esté excluido
-_A=json.load(open(os.path.join(HERE,'..','activos.json'),encoding='utf-8')); ACT={r[_A['cols'].index('codml')] for r in _A['rows'] if r[_A['cols'].index('codml')]}   # Productos activos: solo a estos se les aplica el mínimo por stock 0
+_A=json.load(open(os.path.join(HERE,'..','activos.json'),encoding='utf-8')); ACT={r[_A['cols'].index('codml')] for r in _A['rows'] if r[_A['cols'].index('codml')]}   # Productos activos (menos bajas): solo se pide lo que está aquí
 Z,REV,SEGG,SEGA,PCT,MIN6,MIN24,UPR,TOPE,SINURG=(P_['Z'],P_['revision_dias'],P_['seguridad_dias'],P_['seguridad_top_dias'],P_['pct_top'],P_['min_meses_6'],P_['min_meses_24'],P_['unidades_rescate'],P_['tope_cobertura_dias'],P_['sin_urgencia_dias'])
 PROV=REG['proveedores']; SEMANA={m for m,v in PROV.items() if v.get('semana')}
 
@@ -174,24 +174,26 @@ def bloquea(o):
 OUT=[]; WHY=collections.Counter(); WHYP=[]
 for x in rows:
     cml=x['cml']; mot=''; car=CARx.get(cml)
-    if not x['inpl']: mot='No está en planificación'
-    elif bloquea(x['obs']): mot='Bloqueado por Mercado Libre'
-    elif any(p[0]=='DESCONTINUADO' for p in x['piezas']) or str(x['marca']).upper()=='DESCONTINUADO': mot='Descontinuado'
+    sug=('te sugerimos no reponer' in str(x['obs']).lower())
+    if cml not in ACT: mot='No está en Productos activos'
+    elif not x['inpl']: mot='No está en planificación'
+    elif bloquea(x['obs']) and not (sug and x['full']<=0): mot='Bloqueado por Mercado Libre'   # 'Te sugerimos no reponer' con stock 0 sí se repone (Angel 23-nov)
+    elif (any(p[0]=='DESCONTINUADO' for p in x['piezas']) or str(x['marca']).upper()=='DESCONTINUADO') and x['full']>0: mot='Descontinuado'   # con stock 0 se pide y sale en 'no en lista' para buscar sustituto
     elif car is not None:
         t=str(car.get('tipo') or '').upper(); log=str(car.get('lognueva') or '').upper()
         if 'DSC' in t and 'CHAMARRA' in str(car.get('titulo') or '').upper(): mot='No reabastecer (chamarra)'
-        elif any(k in log for k in ('SALIO DE FULL','SACADO DE FULL','QUITA DE FULL')) or log.startswith('COLECTA'): mot='Salió de Full / colecta'
+        # Ya no se usa la marca de retiro/colecta del RGP: la base es Productos activos (los retiros se dan de baja ahí, activos_bajas.json)
     if not mot and not x['est'] and cml in IMP and x['v30']==0: mot='Impulsar ventas sin ventas en 30 días'
     if not mot and not x['est'] and not x['nuevo'] and CARGO.get(cml,{}).get('u',0)>0 and x['c6']<MIN6: mot='Con cargo por stock antiguo'
     if not mot and cml in DES and x['aptas']>0: mot='Para evitar descarte (ML) con aptas en Full'
     if not mot and str(x['urg']).lower()=='excedente': mot='Excedente (ML)'
-    if not mot and str(x['urg']).lower()=='sin urgencia' and (x['aptas']+x['pend'])>=x['d']*SINURG: mot=f'ML: sin urgencia y aptas + pendientes cubren ≥{SINURG} días'
+    if not mot and str(x['urg']).lower()=='sin urgencia' and x['full']>0 and (x['aptas']+x['pend'])>=x['d']*SINURG: mot=f'ML: sin urgencia y aptas + pendientes cubren ≥{SINURG} días'
     if mot: WHY[mot]+=1; WHYP.append((x,mot)); continue
     if x['est']: clase='ESTRELLA'
     elif x['nuevo']: clase='NUEVO'
     elif x['c6']>=MIN6 or (x['sprom']<1 and x['c6']>=1): clase='REGULAR'
     elif x['c24']>=MIN24 and x['full']<=0: clase='RESCATE'
-    elif MIN0>0 and x['full']<=0 and cml in ACT: clase='STOCK 0'
+    elif MIN0>0 and x['full']<=0: clase='STOCK 0'
     else: m_=f'Venta en menos de {MIN6} de 6 meses'; WHY[m_]+=1; WHYP.append((x,m_)); continue
     if clase=='RESCATE': uml=UPR; s=UPR; h=0
     elif clase=='STOCK 0': uml=MIN0; s=MIN0; h=0
@@ -201,7 +203,7 @@ for x in rows:
         if not x['nuevo'] and not x['est']: s=min(s,max(int(x['d']*TOPE),1))
         if x['est']: s=max(s,x['minML']+x['d']*(x['tf']+REV))
         uml=max(0,math.ceil(s-x['full']-1e-9))
-    if uml<=0 and MIN0>0 and x['full']<=0 and cml in ACT: uml=MIN0; clase='STOCK 0'   # regla de Angel 22-nov: con stock 0 en Full se pide al menos una unidad
+    if uml<=0 and MIN0>0 and x['full']<=0: uml=MIN0; clase='STOCK 0'   # regla de Angel 22-nov: con stock 0 en Full se pide al menos una unidad
     if uml<=0: WHY['Full ya alcanza']+=1; WHYP.append((x,'Full ya alcanza')); continue
     x.update(clase=clase,uml=uml,obj=s,h=h,top=x['d']>=umb); OUT.append(x)
 
