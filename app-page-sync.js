@@ -61,3 +61,34 @@
  if(window.FXS){connect();return;}
  const script=document.createElement('script');script.src='fxsync.js';script.onload=connect;script.onerror=()=>console.error('No se pudo conectar el avance compartido.');document.head.appendChild(script);
 })();
+/* Reparación 24-nov-2026 (reporte de Yuri y Angel, etiquetas):
+   1) "SOBRE n" (pieza individual que el proveedor vende en paquete): la leyenda decía "1 PZ = n UNIDADES" y confundía;
+      ahora dice cuántas piezas se toman por etiqueta (según la instrucción del SKU, normalmente 1).
+      "POR n" queda como "TOMAR n PZ POR ETIQUETA".
+   2) Sustitutos: en la etiqueta el SKU sale con el código de la pieza que se surte (sustituto), no con el código original. */
+(()=>{
+ if(window.__fxRep24)return;window.__fxRep24=true;
+ const AB={ALESSIA:'ALM',REFACOM:'MTM',ITALIKA:'ITK',MRM:'MRM',KINGMOTO:'KM',TMMP:'TMMP',MAZ:'MAM',SAYTO:'SYM'};
+ const tomar=e=>{const m=String(e.sku||'').match(/TOMA[RN]?\s+(?:SOLO\s+)?(\d+)\s*PZ/i);return m?+m[1]:1};
+ const has=(s,c)=>(' '+s.toUpperCase()+' ').includes(' '+String(c).toUpperCase()+' ');
+ function skuReal(e){
+  let s=String(e.sku||'').trim();const cs=e.comps||[];
+  if(!s)return cs.map(c=>c.code).join(' + ');
+  for(const c of cs){
+   if(has(s,c.code))continue;
+   const m=String(c.sust||'').match(/^en lugar de\s+(.+)$/i);
+   if(m&&has(s,m[1].trim())){s=(' '+s+' ').replace(' '+m[1].trim()+' ',' '+c.code+' ').trim();continue}
+   if(cs.length===1){const t=s.split(/\s+/);if(t.length>=3){const sup=String(c.fk||'').split('-')[1]||'';if(AB[sup])t[1]=AB[sup];t[2]=c.code;s=t.join(' ')}}
+  }
+  return s;
+ }
+ const fix=e=>e?Object.assign({},e,{sku:skuReal(e)}):e;
+ try{
+  if(typeof typeLine==='function'){const o=typeLine;window.typeLine=function(e){
+   if(e&&e.tp==='S'){const n=tomar(e);return {rev:1,text:`INDIVIDUAL · TOMAR ${n} PZ`}}
+   if(e&&e.tp==='P')return {rev:1,text:`TOMAR ${e.nf} PZ POR ETIQUETA`};
+   return o.apply(this,arguments)}}
+  if(typeof zplSeg==='function'){const o=zplSeg;window.zplSeg=function(g){return o.call(this,Object.assign({},g,{e:fix(g.e)}))}}
+  if(typeof labelSVG==='function'){const o=labelSVG;window.labelSVG=function(e,sn,ref){return o.call(this,fix(e),sn,ref)}}
+ }catch(err){console.error('fx rep24',err)}
+})();
