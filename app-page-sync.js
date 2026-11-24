@@ -68,19 +68,18 @@
    2) Sustitutos: en la etiqueta el SKU sale con el código de la pieza que se surte (sustituto), no con el código original. */
 (()=>{
  if(window.__fxRep24)return;window.__fxRep24=true;
- const AB={ALESSIA:'ALM',REFACOM:'MTM',ITALIKA:'ITK',MRM:'MRM',KINGMOTO:'KM',TMMP:'TMMP',MAZ:'MAM',SAYTO:'SYM'};
+ const AB={ALESSIA:'ALM',REFACOM:'MTM',ITALIKA:'ITK',MRM:'MRM',KINGMOTO:'KM',TMMP:'TMMP',MAZ:'MAM',SAYTO:'SYM',WINMEX:'WIN'};
  const tomar=e=>{const m=String(e.sku||'').match(/TOMA[RN]?\s+(?:SOLO\s+)?(\d+)\s*PZ/i);return m?+m[1]:1};
- const has=(s,c)=>(' '+s.toUpperCase()+' ').includes(' '+String(c).toUpperCase()+' ');
  function skuReal(e){
-  let s=String(e.sku||'').trim();const cs=e.comps||[];
-  if(!s)return cs.map(c=>c.code).join(' + ');
-  for(const c of cs){
-   if(has(s,c.code))continue;
-   const m=String(c.sust||'').match(/^en lugar de\s+(.+)$/i);
-   if(m&&has(s,m[1].trim())){s=(' '+s+' ').replace(' '+m[1].trim()+' ',' '+c.code+' ').trim();continue}
-   if(cs.length===1){const t=s.split(/\s+/);if(t.length>=3){const sup=String(c.fk||'').split('-')[1]||'';if(AB[sup])t[1]=AB[sup];t[2]=c.code;s=t.join(' ')}}
-  }
-  return s;
+  /* SKU de la etiqueta = piezas que de verdad se surten (misma regla que verificar_etiquetas.py del programa de reparto):
+     posición + proveedor + código(s) + tipo. Nunca el código original de un sustituto ni un SKU viejo de Mercado Libre. */
+  const t=String(e.sku||'').trim().split(/\s+/);const cs=e.comps||[];
+  const pos=t[0]&&/^P\d/i.test(t[0])?t[0].toUpperCase():'';
+  const codes=[...new Set(cs.map(c=>c.code))];
+  const sups=[...new Set(cs.map(c=>(String(c.fk||'').split('-')[1]||'')))];
+  const ab=sups.length===1?(AB[sups[0]]||''):'';
+  const nf=e.nf||1;const tipo=e.tp==='C'?'COMPUESTO':e.tp==='P'?'INDIVIDUALX'+nf:e.tp==='S'?'INDIVIDUAL/'+nf:'INDIVIDUAL';
+  return [pos,ab,codes.join(e.tp==='C'?' Y ':' / '),tipo].filter(Boolean).join(' ');
  }
  const fix=e=>e?Object.assign({},e,{sku:skuReal(e)}):e;
  try{
