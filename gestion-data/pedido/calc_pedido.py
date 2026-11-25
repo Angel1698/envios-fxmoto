@@ -126,7 +126,17 @@ for e,E in D['envios'].items():
         for l in E['lines']: sent[l['cml']]+=l['u']; SENTSRC['envío '+e]+=l['u']
 
 # ---------- historia ----------
-H=L('historia.json')['rows']
+_HJ=L('historia.json'); H=_HJ['rows']
+# 25-nov (Angel): detectar si falta cargar en la página (pantalla Ventas por mes) el último mes cerrado.
+# Último mes cerrado = el mes pasado; el último día del mes ya cuenta el mes en curso. Si falta, se usa la venta de 30 días del reporte de Planificación del día en su lugar.
+_MESA=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC']; _hoy=datetime.date.today()
+_ult=(datetime.date(_hoy.year+(_hoy.month==12),_hoy.month%12+1,1)-datetime.timedelta(days=1)).day
+_m,_y=_hoy.month,_hoy.year
+if _hoy.day!=_ult:
+    _m-=1
+    if _m==0: _m,_y=12,_y-1
+MES_ESPERADO=f'{_MESA[_m-1]} {_y}'; FALTA_MES=_HJ['meses'][-1]!=MES_ESPERADO
+if FALTA_MES: print(f'AVISO: falta cargar las ventas de {MES_ESPERADO} en la página (último mes cargado: {_HJ["meses"][-1]}); se usa la venta de 30 días del reporte de Planificación en su lugar.')
 def serie(cml):
     h=H.get(cml)
     if not h: return [0.0]*23
@@ -141,6 +151,7 @@ rows=[]
 for cml,v in PZ.items():
     p=PL.get(cml,{}); v30=p.get('v30',0.0)
     vv=[v30]+serie(cml)
+    if FALTA_MES: vv=[v30,v30]+vv[1:23]   # 25-nov: mes cerrado sin cargar: la venta de 30 días del reporte toma su lugar
     c6=sum(1 for x in vv[:6] if x>0); c24=sum(1 for x in vv[:24] if x>0)
     prim=-1
     for k in range(23,-1,-1):
@@ -378,6 +389,7 @@ CHK.append(['En camino del seguimiento con detalle por código',not SEGSIN,('Sin
 _inv=collections.defaultdict(float)
 for b_,k_,c_,s_ in BSRC: _inv[('inventario '+k_) if 'STOCK' in k_ or 'CONTEO' in k_ else ('sobrante de facturas '+b_)]+=s_
 CHK.append(['Inventario de bodega restado del pedido',True,'; '.join(f'{k}: {round(v):,} pz' for k,v in sorted(_inv.items(),key=lambda x:-x[1])) or 'nada'])
+CHK.append([f'Ventas del último mes cerrado cargadas en la página ({MES_ESPERADO})',not FALTA_MES,(f'Falta cargar {MES_ESPERADO} en Ventas por mes (último: {_HJ["meses"][-1]}); se usó la venta de 30 días del reporte en su lugar') if FALTA_MES else 'OK'])
 CHK.append(['Marca de piezas corregida contra listas',True,f'{len(MARCAFIX)} piezas tomadas de la lista donde sí aparecen' if MARCAFIX else 'OK'])
 
 # ---------- salida ----------
