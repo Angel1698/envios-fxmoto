@@ -150,6 +150,7 @@ h1{font-weight:300;letter-spacing:-.03em;line-height:1.05}
       <a href="#piezas" id="nav-piezas">Piezas <span class="n" id="n-pz">…</span></a>
       <a href="#listas" id="nav-listas">Listas de precios <span class="n" id="n-lp">…</span></a>
       <a href="#reportes" id="nav-reportes">Reportes ML <span class="n" id="n-rep">…</span></a>
+      <a href="#ventas" id="nav-ventas">Ventas por mes <span class="n" id="n-ven">…</span></a>
       <a href="#reglas" id="nav-reglas">Reglas</a>
       <a href="#descontinuados" id="nav-descontinuados">Descontinuados <span class="n" id="n-desc">…</span></a>
       <a href="#pedido" id="nav-pedido">Cálculo <span class="n" id="n-ped">…</span></a>
@@ -210,6 +211,21 @@ h1{font-weight:300;letter-spacing:-.03em;line-height:1.05}
     <div class="card tbl"><table><thead><tr>
       <th>Foto</th><th>MLM</th><th>Código ML</th><th>Título</th><th>SKU</th><th>Bodega</th><th>Tamaño</th><th>Origen</th><th>Opiniones</th><th class="num">u 30 d</th><th class="num">$ 30 d</th><th class="num">u 6 m</th><th class="num">Meses</th><th>Sugerencia</th>
     </tr></thead><tbody id="act-body"></tbody></table><div class="more" id="act-more"></div></div>
+  </section>
+
+  <!-- VENTAS POR MES -->
+  <section id="v-ventas" hidden>
+    <h1>Ventas por mes (Full)</h1>
+    <div class="src" id="ven-src"></div>
+    <div class="note" id="ven-note">Unidades vendidas por Código ML en cada mes cerrado, los últimos 25 meses. Es la fuente única de ventas por mes para el pedido a proveedor y el reparto a envíos de Full. Cada fin de mes (o el día 1) se agrega el mes con el reporte de Planificación de ML y sale el mes más viejo.</div>
+    <div class="tiles" id="ven-tiles"></div>
+    <div class="bar">
+      <input type="search" id="ven-q" placeholder="Buscar Código ML o título" aria-label="Buscar">
+      <select id="ven-bod" aria-label="Bodega"><option value="">Todas las bodegas</option></select>
+      <select id="ven-ord" aria-label="Orden"><option value="t12">Más vendidas 12 meses</option><option value="u1">Más vendidas último mes</option><option value="m24">Más meses con venta</option><option value="codml">Código ML</option></select>
+    </div>
+    <div class="card tbl"><table><thead><tr id="ven-head"></tr></thead><tbody id="ven-body"></tbody></table></div>
+    <div id="ven-more"></div>
   </section>
 
   <!-- PIEZAS -->
@@ -331,12 +347,12 @@ h1{font-weight:300;letter-spacing:-.03em;line-height:1.05}
 <script>
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>Number(n||0).toLocaleString('es-MX'), money=n=>'$'+Math.round(n||0).toLocaleString('es-MX');
-const PAGE=150;const DV='20261124a';
+const PAGE=150;const DV='20261125v';
 let RGP=null,SUS=null,ACT=null;
 const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
 
 /* ---------- Routing ---------- */
-const VIEWS=['rgp','sustitutos','activos','piezas','listas','reportes','reglas','descontinuados','pedido','aprobacion','seguimiento'];
+const VIEWS=['rgp','sustitutos','activos','ventas','piezas','listas','reportes','reglas','descontinuados','pedido','aprobacion','seguimiento'];
 function route(){const h=(location.hash||'#rgp').slice(1);const v=VIEWS.includes(h)?h:'rgp';
   VIEWS.forEach(x=>{$('#v-'+x).hidden=x!==v;const a=$('#nav-'+x);if(x===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
   closePanel();ensure(v);}
@@ -346,6 +362,7 @@ function ensure(v){if(loaded[v])return;loaded[v]=1;
   if(v==='rgp')load('gestion-data/rgp.json?v='+DV).then(d=>{RGP=d;initRGP()}).catch(()=>{$('#rgp-note').textContent='No se pudieron cargar los datos del RGP.'});
   if(v==='sustitutos')load('gestion-data/sust.json?v='+DV).then(d=>{SUS=d;initSUS()});
   if(v==='activos')load('gestion-data/activos.json?v='+DV).then(d=>{ACT=d;initACT()});
+  if(v==='ventas')Promise.all([load('gestion-data/pedido/historia.json?v='+DV),load('gestion-data/pedido/piezas.json?v='+DV)]).then(([h,p])=>{VEN=h;VENP=p;initVEN()}).catch(()=>{$('#ven-note').textContent='No se pudieron cargar las ventas por mes.'});
   if(v==='piezas')load(PD_+'piezas.json?v='+DV).then(d=>{PZD=d;initPZ()}).catch(()=>{$('#pz-src').textContent='No se pudieron cargar las piezas.'});
   if(v==='listas')initLP();
   if(v==='reportes')load(PD_+'reportes_meta.json?v='+DV).then(initREP);
@@ -513,6 +530,25 @@ function renderACT(){const q=$('#act-q').value.trim().toUpperCase(),og=$('#act-o
   const show=L.slice(0,actN);
   $('#act-body').innerHTML=show.length?show.map(o=>`<tr><td>${th(o.img)}</td><td class="mono">${esc(o.mlm)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.titulo)}</td><td class="mono">${esc(o.sku)}</td><td>${esc(o.bodega)}</td><td>${esc(o.tam)}</td><td style="white-space:nowrap">${esc(o.origen.replace(' (RGP 05-10-26)',''))}</td><td>${esc(o.clasif)}${o.opin?' · '+fmt(o.opin):''}</td><td class="num">${fmt(o.u30)}</td><td class="num">${money(o.d30)}</td><td class="num">${fmt(o.u6m)}</td><td class="num">${o.meses}</td><td><span class="pill ${SUG[o.sug]||'p-gray'}">${esc(o.sug)}</span></td></tr>`).join(''):'<tr><td colspan="14" class="empty">Nada coincide con la búsqueda.</td></tr>';
   moreBar('#act-more',show.length,L.length,()=>{actN+=PAGE*4;renderACT()});}
+
+/* ================= VENTAS POR MES ================= */
+let VEN=null,VENP=null,venN=PAGE;
+function initVEN(){const M=VEN.meses,P=VENP.rows;
+  VEN.o=Object.entries(VEN.rows).map(([c,v])=>{const p=P[c]||[];const s=v.map(x=>+x||0);return {codml:c,tit:p[0]||'',bod:p[1]||'',img:p[7]||'',s,u1:s[s.length-1],t12:s.slice(-12).reduce((a,b)=>a+b,0),m24:s.slice(-24).filter(x=>x>0).length}});
+  $('#ven-src').textContent='Fuente: '+VEN.fuente+'. Último mes cargado: '+M[M.length-1]+'.';
+  $('#n-ven').textContent=fmt(VEN.o.length);
+  [...new Set(VEN.o.map(o=>o.bod))].filter(Boolean).sort().forEach(b=>$('#ven-bod').insertAdjacentHTML('beforeend',`<option>${esc(b)}</option>`));
+  $('#ven-head').innerHTML='<th>Foto</th><th>Código ML</th><th>Título</th><th>Bodega</th>'+M.map(m=>`<th class="num" style="white-space:nowrap">${esc(m.slice(0,3)+' '+m.slice(-2))}</th>`).join('')+'<th class="num">12 m</th><th class="num">Meses con venta (24)</th>';
+  const u1=VEN.o.reduce((a,o)=>a+o.u1,0),c1=VEN.o.filter(o=>o.u1>0).length;
+  $('#ven-tiles').innerHTML=`<div class="tile"><div class="v">${fmt(VEN.o.length)}</div><div class="l">Códigos ML con historial</div></div><div class="tile"><div class="v">${fmt(c1)}</div><div class="l">Con venta en ${esc(M[M.length-1])}</div></div><div class="tile"><div class="v">${fmt(u1)}</div><div class="l">Unidades en ${esc(M[M.length-1])}</div></div>`;
+  ['#ven-q','#ven-bod','#ven-ord'].forEach(s=>$(s).addEventListener('input',()=>{venN=PAGE;renderVEN()}));
+  renderVEN()}
+function renderVEN(){const q=$('#ven-q').value.trim().toUpperCase(),bd=$('#ven-bod').value,od=$('#ven-ord').value;
+  let L=VEN.o.filter(o=>(!bd||o.bod===bd)&&(!q||q.split(/\s+/).every(w=>(o.codml+' '+o.tit).toUpperCase().includes(w))));
+  L.sort(od==='codml'?(a,b)=>a.codml.localeCompare(b.codml):(a,b)=>b[od]-a[od]||a.codml.localeCompare(b.codml));
+  const show=L.slice(0,venN);
+  $('#ven-body').innerHTML=show.length?show.map(o=>`<tr><td>${th(o.img)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.tit)}</td><td>${esc(o.bod)}</td>${o.s.map(x=>`<td class="num">${x?fmt(x):'<span style="opacity:.35">0</span>'}</td>`).join('')}<td class="num"><b>${fmt(o.t12)}</b></td><td class="num">${o.m24}</td></tr>`).join(''):`<tr><td colspan="${VEN.meses.length+6}" class="empty">Nada coincide con la búsqueda.</td></tr>`;
+  moreBar('#ven-more',show.length,L.length,()=>{venN+=PAGE*4;renderVEN()});}
 
 /* ================= PEDIDO A PROVEEDOR ================= */
 const ORDEN=['ALESSIA','REFACOM','SAYTO','MRM','KINGMOTO','WINMEX','TMMP','MOTO AZCAPOTZALCO','ITALIKA'];

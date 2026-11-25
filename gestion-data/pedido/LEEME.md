@@ -8,7 +8,7 @@ Desde el 20-nov-2026 el pedido semanal se calcula con estos datos. El RGP ya no 
 | piezas.json | Por Código ML: bodega, tipo, días a Full y sus piezas [código, proveedor, factor, estado, marca que decía el RGP] | Pantalla **Piezas** (hoja compartida, clave `fx-gm-piezas`, pendiente → aprobado por Dirección). `cargar_lista.py` revalida el estado de cada pieza |
 | lp/*.json, lp/index.json | Listas de precios vigentes (ALESSIA con existencias, ITALIKA con empaque/activo, MRM con equivalencias) | `python3 cargar_lista.py <PROVEEDOR> <archivo.xlsx> [fecha]` |
 | reportes.json, reportes_meta.json | Planificación, Stock general y Cargos por stock antiguo de ML | `python3 cargar_reportes.py <carpeta>` cada mañana (7 a. m.) |
-| historia.json | Ventas por mes (24 meses + oct-2026) por Código ML | Al cerrar cada mes, agregar el mes desde el reporte de ventas de ML |
+| historia.json | Ventas por mes por Código ML, últimos 25 meses (pantalla Ventas por mes). Fuente única de ventas por mes para el pedido y el reparto (25-nov, Angel) | Cada último día de mes o el día 1: `python3 ventas_mes.py "Reporte de Planificacion - <fecha>.xlsx"` (agrega el mes y saca el más viejo) |
 | reglas.json | Parámetros, proveedores de la semana, bodegas, inventario que no se cuenta | Pantalla **Reglas** (clave `fx-gm-reglas`) |
 | ../sust.json + clave `fx-gm-sust` | Sustitutos confirmados + los aprobados en **Descontinuados** | Pantalla Descontinuados |
 | pedido.json | Resultado: renglones por proveedor y archivo, por publicación, no en lista, ALESSIA en 0, verificaciones | `python3 calc_pedido.py <n>` |
