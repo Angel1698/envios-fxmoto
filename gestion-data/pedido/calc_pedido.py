@@ -186,7 +186,8 @@ OUT=[]; WHY=collections.Counter(); WHYP=[]
 for x in rows:
     cml=x['cml']; mot=''; car=CARx.get(cml)
     sug=('te sugerimos no reponer' in str(x['obs']).lower())
-    if cml not in ACT: mot='No está en Productos activos'
+    if not re.fullmatch(r'[A-Z]{4}\d{5}',str(cml or '')): mot='Sin Código ML: no se pide hasta que la publicación tenga Código ML en Full'   # Angel 25-nov
+    elif cml not in ACT: mot='No está en Productos activos'
     elif not x['inpl']: mot='No está en planificación'
     elif bloquea(x['obs']) and not (sug and x['full']<=0): mot='Bloqueado por Mercado Libre'   # 'Te sugerimos no reponer' con stock 0 sí se repone (Angel 23-nov)
     elif (any(p[0]=='DESCONTINUADO' for p in x['piezas']) or str(x['marca']).upper()=='DESCONTINUADO') and x['full']>0: mot='Descontinuado'   # con stock 0 se pide y sale en 'no en lista' para buscar sustituto
@@ -397,6 +398,8 @@ lineas=[]
 for k,q in sorted(PED.items(),key=lambda x:(archivo(x[0]),x[0][1],x[0][2])):
     b,m,c=k; pr=(LP[m].get(c) or ('',0))[1] or 0
     lineas.append([archivo(k),m,c,q,(LP[m].get(c) or ('',''))[0],pr,round(pr*q,2),NOTE.get(k,''),sorted({s[0] for s in SRC.get(k,[])}),DED.get(k,(0,0))[0],DED.get(k,(0,0))[1],b])
+_scm=[l for l in lineas if any(not re.fullmatch(r'[A-Z]{4}\d{5}',str(c or '')) for c in l[8])]
+CHK.append(['Nada se pide para publicaciones sin Código ML',not _scm,(f'{len(_scm)} renglones: '+', '.join(f'{l[1]} {l[2]}' for l in _scm[:10])) if _scm else 'OK'])
 res=collections.defaultdict(lambda:[0,0,0.0])
 for l in lineas: r=res[(l[1],l[0])]; r[0]+=1; r[1]+=l[3]; r[2]+=l[6]
 por_pub=[[o['bod'],o['cml'],o['tit'],o['clase'],o['urg'],o['v30'],round(o['d']*30,1),o['aptas'],o['pend'],o['sent'],round(o['obj'],1),o['uml'],' + '.join(f"{p[1]} {p[0]}×{p[2]:g}" for p in o['piezas']),o['tam'],o['img']] for o in OUT]
