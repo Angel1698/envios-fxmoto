@@ -41,6 +41,9 @@ json.dump({'fuente':'ACTIVOS_EMPRESA_16-11-2026.xlsx y OPINIONES_ACTIVOS_EMPRESA
  'cols':['mlm','codml','origen','titulo','bodega','tam','clasif','opin','u30','d30','u6m','meses','sug','sku'],'rows':act},open('activos.json','w'),ensure_ascii=False,separators=(',',':'))
 _B=json.load(open('activos_bajas.json')); _bm={b[0] for b in _B['rows']}
 _a=json.load(open('activos.json')); _a['rows']=[x for x in _a['rows'] if x[0] not in _bm]; _a['fuente']+=f" · menos {len(_bm)} bajas (activos_bajas.json)"
+_C=json.load(open('codml_altas.json'))['rows']; _j=_a['cols'].index('codml')
+for x in _a['rows']:
+    if x[0] in _C and not x[_j].strip(): x[_j]=_C[x[0]]
 json.dump(_a,open('activos.json','w'),ensure_ascii=False,separators=(',',':')); act=_a['rows']
 print('act',len(act), collections.Counter(a[2] for a in act), collections.Counter(a[12] for a in act))
 # imagenes
