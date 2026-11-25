@@ -374,6 +374,10 @@ CHK.append([f'Reportes de ML del día ({FREP})',FREP==hoy,RP['archivos']['planif
 vie=[f'{m} {LPMETA[m][0]}' for m in SEMANA if m in LPMETA and (datetime.date.today()-datetime.date.fromisoformat(LPMETA[m][0])).days>30]
 CHK.append(['Listas de precios con menos de 30 días',not vie,('Pedir lista nueva: '+', '.join(vie)) if vie else 'OK'])
 CHK.append(['En camino del seguimiento con detalle por código',not SEGSIN,('Sin detalle, se contó lo pedido: '+'; '.join(SEGSIN[:10])) if SEGSIN else f'{round(sum(SEGEC))} pz de documentos aún no subidos a la página'])
+# 25-nov (Angel): el inventario de bodega (sobrantes contados y excedentes del recorrido, registros E-/C-STOCK de la página) se resta del pedido
+_inv=collections.defaultdict(float)
+for b_,k_,c_,s_ in BSRC: _inv[('inventario '+k_) if 'STOCK' in k_ or 'CONTEO' in k_ else ('sobrante de facturas '+b_)]+=s_
+CHK.append(['Inventario de bodega restado del pedido',True,'; '.join(f'{k}: {round(v):,} pz' for k,v in sorted(_inv.items(),key=lambda x:-x[1])) or 'nada'])
 CHK.append(['Marca de piezas corregida contra listas',True,f'{len(MARCAFIX)} piezas tomadas de la lista donde sí aparecen' if MARCAFIX else 'OK'])
 
 # ---------- salida ----------
