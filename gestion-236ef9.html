@@ -127,6 +127,8 @@ header.brandbar{display:block;margin:0;gap:0}
 header.gh{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:14px}
 header.gh .navlbl{color:var(--fg2)}
 h1{font-weight:300;letter-spacing:-.03em;line-height:1.05}
+body.wide .wrap{max-width:none}
+#v-ventas table{font-size:12px}#v-ventas th,#v-ventas td{padding:6px 7px}#v-ventas td.num,#v-ventas th.num{white-space:nowrap}#v-ventas .tt{min-width:220px}#v-ventas .sum{background:rgba(255,200,0,.10);font-weight:700}#ven-warn{margin:8px 0}
 </style>
 </head><body>
 
@@ -218,6 +220,7 @@ h1{font-weight:300;letter-spacing:-.03em;line-height:1.05}
     <h1>Ventas por mes (Full)</h1>
     <div class="src" id="ven-src"></div>
     <div class="note" id="ven-note">Unidades vendidas por Código ML en cada mes cerrado, los últimos 25 meses. Es la fuente única de ventas por mes para el pedido a proveedor y el reparto a envíos de Full. Cada fin de mes (o el día 1) se agrega el mes con el reporte de Planificación de ML y sale el mes más viejo.</div>
+    <div class="note" id="ven-warn" hidden style="background:#fde2e1;border-color:#f5a3a0;color:#8a1c17"></div>
     <div class="tiles" id="ven-tiles"></div>
     <div class="bar">
       <input type="search" id="ven-q" placeholder="Buscar Código ML o título" aria-label="Buscar">
@@ -347,7 +350,7 @@ h1{font-weight:300;letter-spacing:-.03em;line-height:1.05}
 <script>
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>Number(n||0).toLocaleString('es-MX'), money=n=>'$'+Math.round(n||0).toLocaleString('es-MX');
-const PAGE=150;const DV='20261125v';
+const PAGE=150;const DV='20261125w';
 let RGP=null,SUS=null,ACT=null;
 const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
 
@@ -355,6 +358,7 @@ const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
 const VIEWS=['rgp','sustitutos','activos','ventas','piezas','listas','reportes','reglas','descontinuados','pedido','aprobacion','seguimiento'];
 function route(){const h=(location.hash||'#rgp').slice(1);const v=VIEWS.includes(h)?h:'rgp';
   VIEWS.forEach(x=>{$('#v-'+x).hidden=x!==v;const a=$('#nav-'+x);if(x===v)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  document.body.classList.toggle('wide',v==='ventas');
   closePanel();ensure(v);}
 window.addEventListener('hashchange',route);
 const loaded={};
@@ -533,21 +537,28 @@ function renderACT(){const q=$('#act-q').value.trim().toUpperCase(),og=$('#act-o
 
 /* ================= VENTAS POR MES ================= */
 let VEN=null,VENP=null,venN=PAGE;
-function initVEN(){const M=VEN.meses,P=VENP.rows;
-  VEN.o=Object.entries(VEN.rows).map(([c,v])=>{const p=P[c]||[];const s=v.map(x=>+x||0);return {codml:c,tit:p[0]||'',bod:p[1]||'',img:p[7]||'',s,u1:s[s.length-1],t12:s.slice(-12).reduce((a,b)=>a+b,0),m24:s.slice(-24).filter(x=>x>0).length}});
-  $('#ven-src').textContent='Fuente: '+VEN.fuente+'. Último mes cargado: '+M[M.length-1]+'.';
+const MESA=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+function venEsperado(){/* último mes cerrado: el mes pasado; el último día del mes ya cuenta el mes en curso */
+  const d=new Date(),ult=new Date(d.getFullYear(),d.getMonth()+1,0).getDate();let m=d.getMonth(),y=d.getFullYear();if(d.getDate()!==ult){m-=1;if(m<0){m=11;y-=1}}return MESA[m]+' '+y}
+function initVEN(){const M=VEN.meses,P=VENP.rows,n=M.length;
+  VEN.o=Object.entries(VEN.rows).map(([c,v])=>{const p=P[c]||[];const s=v.map(x=>+x||0);return {codml:c,tit:p[0]||'',bod:p[1]||'',img:p[7]||'',s,u1:s[n-1],t12:s.slice(-12).reduce((a,b)=>a+b,0),t24:s.slice(-24).reduce((a,b)=>a+b,0),m24:s.slice(-24).filter(x=>x>0).length}});
+  $('#ven-src').textContent='Fuente: '+VEN.fuente+'. Último mes cargado: '+M[n-1]+'.';
+  const esp=venEsperado();
+  if(M[n-1]!==esp){$('#ven-warn').hidden=false;$('#ven-warn').textContent='Falta cargar las ventas de '+esp+' (el último mes cargado es '+M[n-1]+'). Manda el reporte de Planificación del último día del mes o del día 1 para agregarlo. Mientras tanto, el pedido y el reparto toman la venta de 30 días del reporte de Planificación del día.'}
   $('#n-ven').textContent=fmt(VEN.o.length);
   [...new Set(VEN.o.map(o=>o.bod))].filter(Boolean).sort().forEach(b=>$('#ven-bod').insertAdjacentHTML('beforeend',`<option>${esc(b)}</option>`));
-  $('#ven-head').innerHTML='<th>Foto</th><th>Código ML</th><th>Título</th><th>Bodega</th>'+M.map(m=>`<th class="num" style="white-space:nowrap">${esc(m.slice(0,3)+' '+m.slice(-2))}</th>`).join('')+'<th class="num">12 m</th><th class="num">Meses con venta (24)</th>';
+  const MR=[...M].reverse();
+  $('#ven-head').innerHTML='<th>Foto</th><th>Código ML</th><th>Título</th><th>Bodega</th><th class="num sum">Meses con venta (24)</th><th class="num sum">Venta 12 m</th><th class="num sum">Venta 24 m</th>'+MR.map(m=>`<th class="num">${esc(m.slice(0,3)+' '+m.slice(-2))}</th>`).join('');
   const u1=VEN.o.reduce((a,o)=>a+o.u1,0),c1=VEN.o.filter(o=>o.u1>0).length;
-  $('#ven-tiles').innerHTML=`<div class="tile"><div class="v">${fmt(VEN.o.length)}</div><div class="l">Códigos ML con historial</div></div><div class="tile"><div class="v">${fmt(c1)}</div><div class="l">Con venta en ${esc(M[M.length-1])}</div></div><div class="tile"><div class="v">${fmt(u1)}</div><div class="l">Unidades en ${esc(M[M.length-1])}</div></div>`;
+  $('#ven-tiles').innerHTML=`<div class="tile"><div class="v">${fmt(VEN.o.length)}</div><div class="l">Códigos ML con historial</div></div><div class="tile"><div class="v">${fmt(c1)}</div><div class="l">Con venta en ${esc(M[n-1])}</div></div><div class="tile"><div class="v">${fmt(u1)}</div><div class="l">Unidades en ${esc(M[n-1])}</div></div>`;
+  $('#ven-ord').innerHTML='<option value="t12">Más vendidas 12 meses</option><option value="t24">Más vendidas 24 meses</option><option value="u1">Más vendidas último mes</option><option value="m24">Más meses con venta</option><option value="codml">Código ML</option>';
   ['#ven-q','#ven-bod','#ven-ord'].forEach(s=>$(s).addEventListener('input',()=>{venN=PAGE;renderVEN()}));
   renderVEN()}
 function renderVEN(){const q=$('#ven-q').value.trim().toUpperCase(),bd=$('#ven-bod').value,od=$('#ven-ord').value;
   let L=VEN.o.filter(o=>(!bd||o.bod===bd)&&(!q||q.split(/\s+/).every(w=>(o.codml+' '+o.tit).toUpperCase().includes(w))));
   L.sort(od==='codml'?(a,b)=>a.codml.localeCompare(b.codml):(a,b)=>b[od]-a[od]||a.codml.localeCompare(b.codml));
   const show=L.slice(0,venN);
-  $('#ven-body').innerHTML=show.length?show.map(o=>`<tr><td>${th(o.img)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.tit)}</td><td>${esc(o.bod)}</td>${o.s.map(x=>`<td class="num">${x?fmt(x):'<span style="opacity:.35">0</span>'}</td>`).join('')}<td class="num"><b>${fmt(o.t12)}</b></td><td class="num">${o.m24}</td></tr>`).join(''):`<tr><td colspan="${VEN.meses.length+6}" class="empty">Nada coincide con la búsqueda.</td></tr>`;
+  $('#ven-body').innerHTML=show.length?show.map(o=>`<tr><td>${th(o.img)}</td><td class="mono">${esc(o.codml)}</td><td class="tt">${esc(o.tit)}</td><td>${esc(o.bod)}</td><td class="num sum">${o.m24}</td><td class="num sum">${fmt(o.t12)}</td><td class="num sum">${fmt(o.t24)}</td>${[...o.s].reverse().map(x=>`<td class="num">${x?fmt(x):'<span style="opacity:.35">0</span>'}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${VEN.meses.length+7}" class="empty">Nada coincide con la búsqueda.</td></tr>`;
   moreBar('#ven-more',show.length,L.length,()=>{venN+=PAGE*4;renderVEN()});}
 
 /* ================= PEDIDO A PROVEEDOR ================= */
