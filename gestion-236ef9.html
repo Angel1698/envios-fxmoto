@@ -350,7 +350,7 @@ body.wide .wrap{max-width:none}
 <script>
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>Number(n||0).toLocaleString('es-MX'), money=n=>'$'+Math.round(n||0).toLocaleString('es-MX');
-const PAGE=150;const DV='20261126b';
+const PAGE=150;const DV='20261126c';
 let RGP=null,SUS=null,ACT=null;
 const load=(u)=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()});
 
