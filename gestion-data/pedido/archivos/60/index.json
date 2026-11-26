@@ -7,8 +7,8 @@
 "marca": "ALESSIA",
 "archivo": "CUERNAVACA",
 "nombre": "1-ALESSIA-F 60 CUERNAVACA 26-11-2026.xlsm",
-"codigos": 1044,
-"piezas": 6693,
+"codigos": 1043,
+"piezas": 6690,
 "ok": true,
 "errores": []
 },
@@ -25,8 +25,8 @@
 "marca": "ALESSIA",
 "archivo": "EDOMEX PEQ-MED",
 "nombre": "1-ALESSIA-F 60 EDOMEX PEQ-MED 26-11-2026.xlsm",
-"codigos": 160,
-"piezas": 1181,
+"codigos": 159,
+"piezas": 1169,
 "ok": true,
 "errores": []
 },
@@ -80,7 +80,7 @@
 "archivo": "CUERNAVACA",
 "nombre": "8-MOTOAZCAPO-F 60 CUERNAVACA 26-11-2026.xlsx",
 "codigos": 111,
-"piezas": 287,
+"piezas": 289,
 "ok": true,
 "errores": []
 },
@@ -106,8 +106,8 @@
 "marca": "MRM",
 "archivo": "CUERNAVACA",
 "nombre": "4-MRM-F 60 CUERNAVACA 26-11-2026.xlsx",
-"codigos": 232,
-"piezas": 1029,
+"codigos": 235,
+"piezas": 1037,
 "ok": true,
 "errores": []
 },
@@ -133,8 +133,8 @@
 "marca": "REFACOM",
 "archivo": "CUERNAVACA",
 "nombre": "2-REFACOM-F 60 CUERNAVACA 26-11-2026.xlsx",
-"codigos": 424,
-"piezas": 4636,
+"codigos": 428,
+"piezas": 4643,
 "ok": true,
 "errores": []
 },
@@ -142,8 +142,8 @@
 "marca": "REFACOM",
 "archivo": "EDOMEX GRANDE-XG",
 "nombre": "2-REFACOM-F 60 EDOMEX GRANDE-XG 26-11-2026.xlsx",
-"codigos": 38,
-"piezas": 374,
+"codigos": 41,
+"piezas": 379,
 "ok": true,
 "errores": []
 },
@@ -151,8 +151,8 @@
 "marca": "REFACOM",
 "archivo": "EDOMEX PEQ-MED",
 "nombre": "2-REFACOM-F 60 EDOMEX PEQ-MED 26-11-2026.xlsx",
-"codigos": 39,
-"piezas": 190,
+"codigos": 40,
+"piezas": 191,
 "ok": true,
 "errores": []
 },
@@ -160,8 +160,8 @@
 "marca": "SAYTO",
 "archivo": "CUERNAVACA",
 "nombre": "3-SAYTO-F 60 CUERNAVACA 26-11-2026.xlsx",
-"codigos": 208,
-"piezas": 936,
+"codigos": 209,
+"piezas": 937,
 "ok": true,
 "errores": []
 },
@@ -187,8 +187,8 @@
 "marca": "TMMP",
 "archivo": "CUERNAVACA",
 "nombre": "7-TMMP-F 60 CUERNAVACA 26-11-2026.xlsx",
-"codigos": 75,
-"piezas": 427,
+"codigos": 82,
+"piezas": 434,
 "ok": true,
 "errores": []
 },
@@ -196,8 +196,8 @@
 "marca": "TMMP",
 "archivo": "EDOMEX",
 "nombre": "7-TMMP-F 60 EDOMEX 26-11-2026.xlsx",
-"codigos": 18,
-"piezas": 80,
+"codigos": 21,
+"piezas": 95,
 "ok": true,
 "errores": []
 },
@@ -214,8 +214,8 @@
 "marca": "WINMEX",
 "archivo": "EDOMEX PEQ-MED",
 "nombre": "6-WINMEX-F 60 EDOMEX PEQ-MED 26-11-2026.xlsx",
-"codigos": 85,
-"piezas": 308,
+"codigos": 86,
+"piezas": 309,
 "ok": true,
 "errores": []
 }
