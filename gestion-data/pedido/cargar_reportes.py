@@ -16,10 +16,23 @@ def n(x):
     except: return 0.0
 fp,fs,fc=last('Reporte de Planificacion*.xlsx'),last('stock_general_full*.xlsx'),last('*Cargos_por_stock_antiguo*.xlsx')
 wb=openpyxl.load_workbook(fp,read_only=True,data_only=True);ws=wb.worksheets[0];PL={};desc=''
+# 26-nov-2026: ML cambió el formato (sin "Fecha límite", "Nivel de stock" en lugar de "Urgencia de envío"); las columnas se ubican por encabezado
+H=None
 for i,r in enumerate(ws.iter_rows(values_only=True)):
     if i==2: desc=str(r[1] or '')
-    if i<9 or not r or len(r)<21 or not r[1]: continue
-    PL[r[1]]=[str(r[3] or ''),str(r[5] or '')[:90],r[9] or '',r[11] or '',n(r[13]),n(r[14]),n(r[15]),n(r[16]),(n(r[17]) if r[17] not in ('-',None) else 0),r[19] or '',str(r[20] or '')[:160]]
+    if H is None:
+        if r and r[1]=='Código ML':
+            hs=[str(x or '').lower() for x in r]
+            def col(*keys):
+                for k in keys:
+                    for j,h in enumerate(hs):
+                        if k in h: return j
+                raise SystemExit('Planificación: no encuentro la columna '+keys[0])
+            H=dict(sku=col('sku'),tit=col('producto'),tam=col('tamaño'),est=col('estrella','clasificación de p'),v30=col('unidades vendidas'),apt=col('aptas'),pend=col('pendiente','en camino'),mini=col('mínimas'),sug=col('sugeridas'),urg=col('urgencia de envío','nivel de stock'),obs=col('observaciones'))
+        continue
+    if not r or not r[1]: continue
+    g=lambda k:r[H[k]] if H[k]<len(r) else None
+    PL[r[1]]=[str(g('sku') or ''),str(g('tit') or '')[:90],g('tam') or '',g('est') or '',n(g('v30')),n(g('apt')),n(g('pend')),n(g('mini')),(n(g('sug')) if g('sug') not in ('-',None) else 0),g('urg') or '',str(g('obs') or '')[:160]]
 wb=openpyxl.load_workbook(fs,read_only=True,data_only=True)
 IMP={};DES={};SPROM={}
 for i,r in enumerate(wb['Para impulsar ventas'].iter_rows(values_only=True)):
