@@ -412,7 +412,8 @@ CHK.append(['Listas de precios con menos de 30 días',not vie,('Pedir lista nuev
 CHK.append(['En camino del seguimiento con detalle por código',not SEGSIN,('Sin detalle, se contó lo pedido: '+'; '.join(SEGSIN[:10])) if SEGSIN else f'{round(sum(SEGEC))} pz de documentos aún no subidos a la página'])
 # 25-nov (Angel): el inventario de bodega (sobrantes contados y excedentes del recorrido, registros E-/C-STOCK de la página) se resta del pedido
 _inv=collections.defaultdict(float)
-for b_,k_,c_,s_ in BSRC: _inv[('inventario '+k_) if 'STOCK' in k_ or 'CONTEO' in k_ else ('sobrante de facturas '+b_)]+=s_
+_sinrep={k for k,f in D['facturas'].items() if not any(i.get('dest') for i in f['items'])}   # 26-nov: factura que llegó y no se ha repartido no es sobrante
+for b_,k_,c_,s_ in BSRC: _inv[('inventario '+k_) if 'STOCK' in k_ or 'CONTEO' in k_ else (('llegadas sin repartir ' if k_ in _sinrep else 'sobrante de facturas ')+b_)]+=s_
 CHK.append(['Inventario de bodega restado del pedido',True,'; '.join(f'{k}: {round(v):,} pz' for k,v in sorted(_inv.items(),key=lambda x:-x[1])) or 'nada'])
 CHK.append([f'Ventas del último mes cerrado cargadas en la página ({MES_ESPERADO})',not FALTA_MES,(f'Falta cargar {MES_ESPERADO} en Ventas por mes (último: {_HJ["meses"][-1]}); se usó la venta de 30 días del reporte en su lugar') if FALTA_MES else 'OK'])
 CHK.append(['Marca de piezas corregida contra listas',True,f'{len(MARCAFIX)} piezas tomadas de la lista donde sí aparecen' if MARCAFIX else 'OK'])
