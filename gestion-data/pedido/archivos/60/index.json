@@ -7,8 +7,8 @@
 "marca": "ALESSIA",
 "archivo": "CUERNAVACA",
 "nombre": "1-ALESSIA-F 60 CUERNAVACA 26-11-2026.xlsm",
-"codigos": 1044,
-"piezas": 6665,
+"codigos": 1045,
+"piezas": 6674,
 "ok": true,
 "errores": []
 },
@@ -35,7 +35,7 @@
 "archivo": "CUERNAVACA",
 "nombre": "10-ITALIKA-F 60 CUERNAVACA 26-11-2026.xlsx",
 "codigos": 163,
-"piezas": 346,
+"piezas": 355,
 "ok": true,
 "errores": []
 },
@@ -107,7 +107,7 @@
 "archivo": "CUERNAVACA",
 "nombre": "4-MRM-F 60 CUERNAVACA 26-11-2026.xlsx",
 "codigos": 234,
-"piezas": 1132,
+"piezas": 1144,
 "ok": true,
 "errores": []
 },
@@ -134,7 +134,7 @@
 "archivo": "CUERNAVACA",
 "nombre": "2-REFACOM-F 60 CUERNAVACA 26-11-2026.xlsx",
 "codigos": 425,
-"piezas": 4640,
+"piezas": 4703,
 "ok": true,
 "errores": []
 },
