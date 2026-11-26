@@ -54,7 +54,33 @@
  function connect(){
   if(typeof store==='undefined'||!window.FXS)return;
   let button;
-  function changed(){if(document.body.classList.contains('rlbody'))return;if(!button){button=document.createElement('button');button.type='button';button.className='btn';button.style.cssText='position:fixed;right:12px;bottom:12px;z-index:9998';button.textContent='Hay avance nuevo · actualizar vista';button.onclick=()=>{button.remove();button=null;if(typeof route==='function')route();};document.body.appendChild(button);}}
+  /* Reparación 26-nov-2026 (reporte de Angel, envío 260): el avance de otros equipos sí llegaba, pero la vista no se actualizaba
+     hasta tocar "Hay avance nuevo"; cada laptop veía solo lo suyo (48% y 28%) aunque lo compartido iba en 75%.
+     Ahora las palomitas y el contador se actualizan solos, sin recargar ni mover la pantalla. */
+  function inPlace(){
+   let iso,D;try{iso=ISO;D=DATA}catch(e){return false}
+   if(!iso||!D)return false;
+   if(iso.k==='e'){
+    const E=D.envios&&D.envios[iso.key];if(!E)return false;
+    const done=window.FXS.get('fx-e-'+iso.key)||{};
+    document.querySelectorAll('input[type=checkbox][data-k]').forEach(x=>{const v=!!done[x.dataset.k];if(x.checked!==v){x.checked=v;const c=x.closest('.card');if(c)c.classList.toggle('done',v)}});
+    const id=e=>e.cml+'|'+e.comps.map(c=>c.code).join('+');
+    const dn=document.querySelector('.dn'),du=document.querySelector('.du'),dp=document.querySelector('.dp'),pi=document.querySelector('.dpi');
+    const totEl=dn&&dn.parentNode.querySelectorAll('b')[1];
+    if(!dn||!totEl||+String(totEl.textContent).replace(/\D/g,'')!==E.lines.length)return true;
+    const d=E.lines.filter(e=>done[id(e)]);const u=d.reduce((s,e)=>s+e.u,0);const tot=E.lines.reduce((s,e)=>s+e.u,0);const p=tot?Math.floor(u/tot*100):0;
+    dn.textContent=d.length;if(du)du.textContent=Math.round(u).toLocaleString('es-MX');if(dp)dp.textContent=p+'%';
+    if(pi){pi.style.width=p+'%';pi.parentNode.setAttribute('aria-valuenow',p);pi.classList.toggle('ok',p>=100)}
+    return true;
+   }
+   if(iso.k==='f'){
+    const done=window.FXS.get('fx-f-'+iso.key)||{};
+    document.querySelectorAll('input[type=checkbox][data-c]').forEach(x=>{const v=!!done[x.dataset.c];if(x.checked!==v){x.checked=v;const c=x.closest('.card');if(c)c.classList.toggle('done',v)}});
+    return true;
+   }
+   return false;
+  }
+  function changed(){if(document.body.classList.contains('rlbody'))return;try{if(inPlace())return}catch(e){console.error('fx avance',e)}if(!button){button=document.createElement('button');button.type='button';button.className='btn';button.style.cssText='position:fixed;right:12px;bottom:12px;z-index:9998';button.textContent='Hay avance nuevo · actualizar vista';button.onclick=()=>{button.remove();button=null;if(typeof route==='function')route();};document.body.appendChild(button);}}
   const watched=new Set();store.get=k=>{const value=window.FXS.get(k);if(!watched.has(k)){watched.add(k);window.FXS.on(k,changed);}return value;};store.set=(k,v)=>window.FXS.set(k,v);
   if(typeof route==='function'&&!document.body.classList.contains('rlbody'))route();
  }
