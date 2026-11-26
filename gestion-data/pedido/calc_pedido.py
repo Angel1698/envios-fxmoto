@@ -165,6 +165,7 @@ for cml,v in PZ.items():
         if alt>mes: cens=alt
     sx=sum(vv[:6]); sxx=sum(x*x for x in vv[:6]); sdm=math.sqrt(max((sxx-sx*sx/6)/5,mes))
     marca=v[4][0][1]; bod=v[1] or ('EDOMEX' if p.get('tam') in ('Grande','Extragrande') else 'CUERNAVACA')
+    if bod=='CUERNAVACA' and p.get('tam') in ('Grande','Extragrande'): bod='EDOMEX'   # 26-nov: Cuernavaca no manda grandes/extragrandes a Full; se piden para Edo. Méx.
     tf=v[3] or TFm.get((marca,bod),12)
     ap=p.get('aptas',0)
     rows.append(dict(cml=cml,piezas=v[4],tipo=v[2],marca=marca,bod=bod,v30=v30,c6=c6,c24=c24,nuevo=nuevo,d=mes/30,sdm=sdm,tf=tf,cens=cens,
@@ -234,12 +235,20 @@ SEGEC=[]; SEGSIN=[]; YA=set()
 for pn,pp in SEG['pedidos'].items():
     for m_,pv in pp['proveedores'].items():
         for doc in pv.get('docs',[]):
-            if doc.get('estado') not in ('confirmada','facturada','en camino') or doc.get('llego') or doc.get('en_pagina'): continue
-            if doc.get('numero') and doc['numero'].lstrip('0') in TXTF: continue   # ya está en la página: se cuenta desde DATA
+            _forz=f"{pn} {m_}" in REG.get('seguimiento_contar',{})   # 26-nov: documentos que se cuentan aunque no estén confirmados (decisión anotada en reglas.json)
+            if (doc.get('estado') not in ('confirmada','facturada','en camino','pagada') and not _forz) or doc.get('llego') or doc.get('en_pagina'): continue
+            _num=re.sub(r'^[A-Za-z]+','',str(doc.get('numero') or '')).lstrip('0')
+            if _num and _num in TXTF: continue   # ya está en la página: se cuenta desde DATA (26-nov: 'FACT256580' en el seguimiento = '256580' en la página)
             bod_=('CUERNAVACA' if doc.get('archivo','').startswith('CUERNAVACA') else 'EDOMEX')
             items=doc.get('items') or []
             if not items:   # sin detalle todavía: se cuenta lo pedido en ese archivo y se marca para revisar
                 ka=(pn,m_,doc.get('archivo'))
+                if doc.get('estado')=='pagada':   # ITALIKA: solicitud pagada sin detalle; se cuenta todo lo pedido una sola vez, cada renglón en su bodega
+                    ka=(pn,m_,'*')
+                    for l in ([] if ka in YA else pv['lineas']):
+                        if (l[2] or 0)>0:
+                            b2=('CUERNAVACA' if str(l[0]).startswith('CUERNAVACA') else 'EDOMEX'); EC[(b2,N(l[1]))]+=l[2]; ECSRC.append([b2,m_,f"seguimiento {pn} pedido pagado",N(l[1]),l[2]]); SEGEC.append(l[2])
+                    YA.add(ka); SEGSIN.append(f"{m_} {doc.get('tipo')} {doc.get('numero')} (pedido {pn}, pagado: se contó lo pedido)"); continue
                 items=[] if ka in YA else [[l[1],l[2]] for l in pv['lineas'] if l[0]==doc.get('archivo')]; YA.add(ka)
                 SEGSIN.append(f"{m_} {doc.get('tipo')} {doc.get('numero')} (pedido {pn})")
             for c_,q_ in items:
@@ -313,6 +322,20 @@ for o in OUT:
         if m!='ALESSIA' and nosurte(m,bod,c):   # cambio de código permanente (Angel 23-nov)
             NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'No lo surte: 2+ pedidos sin surtir ni cotizar, buscar cambio de código','',o['img']]); continue
         put(o,bod,c,m,f)
+# 26-nov: compuesto con una pieza que no se puede pedir (fuera de lista, no la surte, proveedor que no se pide): no se piden sus otras piezas
+CINC=[]
+_nl={(r[0],r[1]) for r in NOLP}
+for o in OUT:
+    if o['tipo']!='C' or (o['bod'],o['cml']) not in _nl: continue
+    quit_=0
+    for k in list(SRC):
+        keep=[]
+        for e in SRC[k]:
+            if e[0]==o['cml']: DEM[k]-=e[4]*e[1]; quit_+=e[4]*e[1]
+            else: keep.append(e)
+        SRC[k]=keep
+        if DEM[k]<=1e-9 and not keep: DEM.pop(k,None); SRC.pop(k,None)
+    if quit_: CINC.append([o['bod'],o['cml'],o['tit'],round(quit_),'; '.join(f"{r[4]} {r[9]}" for r in NOLP if r[0]==o['bod'] and r[1]==o['cml'])])
 
 # ---------- empaques y pedido ----------
 PACK={}
@@ -371,7 +394,7 @@ def archivo(k):
 # ---------- verificaciones ----------
 CHK=[]
 gx=[k for k in PED if k[0]=='CUERNAVACA' and size(k)=='GRANDE-XG']
-CHK.append(['Nada grande/extragrande para Cuernavaca',not gx,f'{len(gx)} renglones' if gx else 'OK'])
+CHK.append(['Nada grande/extragrande para Cuernavaca',not gx,(f'{len(gx)} renglones: '+'; '.join(f"{k[1]} {k[2]} ({', '.join(sorted({str(s[0]) for s in SRC.get(k,[])}))})" for k in gx[:12])) if gx else 'OK'])
 wb=[k for k in PED if k[0] not in PROV.get(k[1],{}).get('bodegas',['CUERNAVACA','EDOMEX'])]
 CHK.append(['Cada proveedor solo a las bodegas donde entrega',not wb,f'{len(wb)} renglones' if wb else 'OK'])
 otra=[r for r in NOLP if r[10]]
@@ -380,7 +403,8 @@ inc=[]
 for o in OUT:
     if o['tipo']!='C': continue
     falt=[r[4] for r in NOLP if r[1]==o['cml'] and r[0]==o['bod']]
-    if falt and len(falt)<len(o['piezas']): inc.append(f"{o['cml']} (falta {', '.join(falt)})")
+    pedida=any(e[0]==o['cml'] for k_,v_ in SRC.items() if k_ in PED for e in v_)
+    if falt and pedida: inc.append(f"{o['cml']} (falta {', '.join(falt)})")
 CHK.append(['Compuestos completos (ninguna pieza pedida sin la otra)',not inc,('; '.join(inc[:15])+(f' y {len(inc)-15} más' if len(inc)>15 else '')) if inc else 'OK'])
 CHK.append([f'Reportes de ML del día ({FREP})',FREP==hoy,RP['archivos']['planificacion'][2]])
 vie=[f'{m} {LPMETA[m][0]}' for m in SEMANA if m in LPMETA and (datetime.date.today()-datetime.date.fromisoformat(LPMETA[m][0])).days>30]
@@ -412,7 +436,7 @@ out={'pedido':PEDIDO,'calculado':datetime.datetime.now().isoformat(timespec='min
  'nolp_cols':['bod','codml','titulo','marca','codigo','v30','vmes','aptas','tipo','motivo','en_otra_lista','img'],'nolp':NOLP,
  'ale0_cols':['bod','codml','titulo','codigo','uml','motivo','img'],'ale0':ALE0,
  'sust_cols':['bod','ale','marca','codigo','pz','codml','bodpub'],'sust':SUBLOG,'split':SPLIT,
- 'excl_cols':['bod','marca','codigo','pz','motivo'],'excl':EXCL,
+ 'excl_cols':['bod','marca','codigo','pz','motivo'],'excl':EXCL,'cinc_cols':['bod','codml','titulo','pz_no_pedidas','pieza_que_falta'],'cinc':CINC,
  'nopid_cols':['bod','codml','titulo','motivo','v30','aptas','img'],'nopid':nopid,'por_que':dict(WHY),
  'envios_cols':['envio','bod','fecha','u','en_pendientes_ml','estado'],'envios':ENVLOG,'encamino_cols':['bod','marca','documento','codigo','pz'],'encamino':ECSRC,
  'marcafix':MARCAFIX,'checks':CHK}
