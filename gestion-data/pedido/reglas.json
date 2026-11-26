@@ -121,5 +121,55 @@
  "seguimiento_contar": {
   "_que_es": "Pedido y marca cuyos documentos se cuentan en camino aunque el seguimiento no los tenga confirmados",
   "59 KINGMOTO": "26-nov: Sofía Liu mandó cotizaciones 30535/30536/30537 el 24-nov y avisó que el 25-nov ya podían recogerse; pendiente que Angel confirme (diferencia de precio MZ-807)"
+ },
+ "sust_excluir": {
+  "GOM-013": {
+   "v": "no",
+   "motivo": "el original son las gomas (par); el sustituto es una goma",
+   "sust": "REFACOM F11010021",
+   "titulo": "Gomas Posapies Italika Ft110 10-16 At110 13-18 Ax110 Xt110"
+  },
+  "DIR-171": {
+   "v": "no",
+   "motivo": "el original es el par; el sustituto es caja de 4 (2 izq + 2 der)",
+   "sust": "SAYTO LUCN87",
+   "titulo": "Direccionales Traseras Italika Rc150 16-24 Par Alta Calidad"
+  },
+  "MAN-068": {
+   "v": "no",
+   "motivo": "pieza distinta: mando izquierdo vs switch completo",
+   "sust": "TMMP REM4068",
+   "titulo": "Mando Interruptor Izquierdo Italika Rc150 16-24 Rc200 19-24"
+  },
+  "RIN-031": {
+   "v": "no",
+   "motivo": "color distinto (negro vs dorado)",
+   "sust": "MOTO AZCAPOTZALCO 73-965",
+   "titulo": "Rin Trasero Italika Ft180 Ts Rt180 Ft200 Ft250 Dt200 2.15 18"
+  },
+  "POP-113": {
+   "v": "no",
+   "motivo": "el original es solo el izquierdo; el sustituto es el set der/izq",
+   "sust": "MRM 50-5075-001",
+   "titulo": "Posapie Delantero Izq Con Base Italika Rt250 Rt250sp Calidad"
+  },
+  "MNJ-015": {
+   "v": "no",
+   "motivo": "el original es el juego der/izq; el sustituto es solo el derecho",
+   "sust": "REFACOM MAN-1110-0175D",
+   "titulo": "Mandos Vento Crossmax 220 Crossmax 250 Crossmax 300 Pro"
+  },
+  "CLF-052": {
+   "v": "duda",
+   "motivo": "el sustituto dice (2); confirmar si son 2 cables",
+   "sust": "MOTO AZCAPOTZALCO 67-708",
+   "titulo": "Chicote Cable Freno Delantero Para Honda Dio110"
+  },
+  "BLC-015": {
+   "v": "duda",
+   "motivo": "el sustituto es par de balancines; confirmar que el original también",
+   "sust": "TMMP REM3118",
+   "titulo": "Balancines Escape Punteria Bajaj Ns200 Fi Ns200 Rs200 As200"
+  }
  }
 }

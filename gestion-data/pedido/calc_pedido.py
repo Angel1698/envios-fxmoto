@@ -268,6 +268,7 @@ SU=json.load(open(os.path.join(GD,'sust.json'),encoding='utf-8')); dc=SU['det_co
 SUBM={}
 for r in SU['det']:
     o=dict(zip(dc,r))
+    if o['ale'] in REG.get('sust_excluir',{}): continue   # 26-nov: contenido distinto (par/juego/lado/color) revisado con Angel
     if o.get('codigo') and o.get('estado') in ('CON','CONF','AUTO','LIDER',''): SUBM[N(o['ale'])]=(o['marca'],N(o['codigo']),'confirmado')
 # 26-nov (Angel): búsqueda nueva de sustitutos (texto en todas las listas + revisión con foto). Solo entran los de "mismo producto" (confianza Alta);
 # los dudosos y los que no se encontraron quedan en sust_26nov.json / resumen para revisión. ALESSIA en 0 → sustituto; descontinuado o "no surte" → cambio de código.
