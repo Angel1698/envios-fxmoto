@@ -29,17 +29,19 @@ def leer(fn,c):
     try: ws=hoja(wb,c['hoja'] if c['hoja'] is not None else 0)
     except Exception: return None,None,'no existe la hoja '+str(c['hoja'])
     rows=list(ws.iter_rows(values_only=True)); hr=c['fila_encabezado']; head=[str(x or '').strip() for x in (rows[hr-1] if len(rows)>=hr else [])]
-    low=[h.lower() for h in head]
+    low=[re.sub(r'\s+','',h.lower()) for h in head]   # 26-nov: la Lista Master de ALESSIA trae "N O M B R E" espaciado
     pc=next((j for j,t in enumerate(low) if re.search(r'precio|p\.? ?unit|costo|distribuidor|mayorista',t)),None)
     dc=next((j for j,t in enumerate(low) if re.search(r'descrip|nombre|producto',t)),None)
     ec=next((j for j,t in enumerate(low) if re.search(r'existen|stock|disponib',t)),None)
     out={}
+    # 26-nov: la Lista Master .xlsm de ALESSIA no trae columna de existencia: son dos columnas, "Alessia" (bodega) y "Vesta" (almacén Vesta), que se suman
+    ae=[j for j,t in enumerate(low) if t in ('alessia','vesta')] if ec is None else []
     for r in rows[hr:]:
         cc=c['col_codigo']-1
         if cc>=len(r): continue
         k=N(r[cc])
         if not k: continue
-        out[k]=[k,str(r[dc] or '')[:90] if dc is not None and dc<len(r) else '',num(r[pc]) if pc is not None and pc<len(r) else None,(num(r[ec]) or 0) if ec is not None and ec<len(r) else None]
+        out[k]=[k,str(r[dc] or '')[:90] if dc is not None and dc<len(r) else '',num(r[pc]) if pc is not None and pc<len(r) else None,(num(r[ec]) or 0) if ec is not None and ec<len(r) else (sum((num(r[j]) or 0) for j in ae if j<len(r)) if ae else None)]
     return head,out,None
 
 if __name__=='__main__':

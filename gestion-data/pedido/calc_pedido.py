@@ -269,6 +269,16 @@ SUBM={}
 for r in SU['det']:
     o=dict(zip(dc,r))
     if o.get('codigo') and o.get('estado') in ('CON','CONF','AUTO','LIDER',''): SUBM[N(o['ale'])]=(o['marca'],N(o['codigo']),'confirmado')
+# 26-nov (Angel): búsqueda nueva de sustitutos (texto en todas las listas + revisión con foto). Solo entran los de "mismo producto" (confianza Alta);
+# los dudosos y los que no se encontraron quedan en sust_26nov.json / resumen para revisión. ALESSIA en 0 → sustituto; descontinuado o "no surte" → cambio de código.
+SUBN={}
+if REG.get('usar_sust_26nov',True) and os.path.exists(os.path.join(HERE,'sust_26nov.json')):
+    _s26=json.load(open(os.path.join(HERE,'sust_26nov.json'),encoding='utf-8'))
+    for r_ in _s26['rows']:
+        o_=dict(zip(_s26['cols'],r_))
+        if o_['conf']!='Alta' or not o_.get('usar',True): continue   # solo mismo producto que deja 6% o más
+        if o_['grupo']=='ALE0': SUBM.setdefault(N(o_['codigo']),(o_['sust_marca'],N(o_['sust_codigo']),'búsqueda 26-nov'))
+        else: SUBN[(o_['codml'],N(o_['codigo']))]=(o_['sust_marca'],N(o_['sust_codigo']))
 for c in aprob('fx-gm-sust'):
     if c.get('codigo') and c.get('sust_marca') and c.get('sust_codigo'): SUBM[N(c['codigo'])]=(c['sust_marca'],N(c['sust_codigo']),'página')
 
@@ -287,13 +297,25 @@ for o in OUT:
         c=code(m,c0)
         if est=='condicional':   # regla de Angel 20-nov: WINMEX ya no la trae; ITALIKA solo si es el mismo producto y deja utilidad
             NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'ITALIKA en lugar de '+mr+': falta revisar utilidad con el precio de ML','',o['img']]); continue
+        def _sub26():   # 26-nov: cambio de código por la búsqueda de sustitutos
+            sb_=SUBN.get((o['cml'],N(c0)))
+            if not sb_ or sb_[0] not in SEMANA: return False
+            sb,sc=sb_[0],code(sb_[0],sb_[1])
+            if sc not in LP.get(sb,{}): return False
+            b2=o['bod']
+            if 'CUERNAVACA' not in PROV.get(sb,{}).get('bodegas',[]) and b2=='CUERNAVACA':
+                b2=None if o['tam'] in ('Grande','Extragrande') else 'EDOMEX'
+            if 'EDOMEX' not in PROV.get(sb,{}).get('bodegas',['EDOMEX']) and b2=='EDOMEX': b2=None
+            if not b2 or nosurte(sb,b2,sc): return False
+            put(o,b2,sc,sb,f,orig=c); SUBLOG.append([b2,c,sb,sc,f*o['uml'],o['cml'],o['bod']]); return True
         if m not in LP or c not in LP[m]:
+            if _sub26(): continue
             ot=[b for b in owners(c0) if b!=m]
             NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],('Sin proveedor en lista' if m not in LP else 'Código ya no aparece en la lista vigente'),','.join(ot),o['img']])
             continue
         if m not in SEMANA: NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'Proveedor que no se pide esta semana','',o['img']]); continue
         bod=o['bod']
-        if m=='ALESSIA' and EXA.get(c,0)>0:   # ALESSIA con existencia: si el sustituto es más económico se sigue con el sustituto (Angel 23-nov)
+        if m=='ALESSIA' and EXA.get(c,0)>0 and REG.get('sust_si_mas_barato',False):   # 26-nov (Angel): si ALESSIA tiene existencia se le pide a ALESSIA, ya no al sustituto (antes 23-nov: seguía el sustituto si era más barato)
             s_=SUBM.get(c)
             if s_ and s_[0] in SEMANA and s_[0]!='ALESSIA':
                 sb,sc=s_[0],code(s_[0],s_[1]); pa=(LP['ALESSIA'].get(c) or ('',0))[1] or 0; ps=(LP.get(sb,{}).get(sc) or ('',0))[1] or 0
@@ -320,6 +342,7 @@ for o in OUT:
                     if REG.get('ale0_pedir_igual',True): put(o,bod,c,'ALESSIA',f)
             continue
         if m!='ALESSIA' and nosurte(m,bod,c):   # cambio de código permanente (Angel 23-nov)
+            if _sub26(): continue
             NOLP.append([o['bod'],o['cml'],o['tit'],m,c0,o['v30'],round(o['d']*30,1),o['aptas'],o['tipo'],'No lo surte: 2+ pedidos sin surtir ni cotizar, buscar cambio de código','',o['img']]); continue
         put(o,bod,c,m,f)
 # 26-nov: compuesto con una pieza que no se puede pedir (fuera de lista, no la surte, proveedor que no se pide): no se piden sus otras piezas

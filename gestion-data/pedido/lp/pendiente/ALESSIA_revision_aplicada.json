@@ -1,0 +1,49 @@
+{
+"marca": "ALESSIA",
+"archivo": "Lista_Master_Alessia_25_Noviembre.xlsm",
+"fecha": "2026-11-25",
+"revisado": "2026-11-26T02:35",
+"checks": [
+[
+"Encabezados iguales columna por columna",
+true,
+"iguales"
+],
+[
+"Columna de código y de cantidad en el mismo lugar",
+true,
+"código col 4 «Codigo», cantidad col 1 «»"
+],
+[
+"Precios: ninguno vacío o en 0 en códigos que ya venían o que usamos (y menos de 2% en total)",
+false,
+"39 de los que usamos o ya venían sin precio: ['CAS-ABA-H053-L', 'CAS-ABA-H053-XL', 'CAS-ABA-H055-XL', 'CAS-ABA-H056-L', 'CAS-ABA-H056-S', 'CAS-ABA-H056-XL']; 49 sin precio en total"
+],
+[
+"Conserva al menos 85% de los códigos",
+true,
+"100% (12 ya no vienen, 114 nuevos)"
+],
+[
+"Número de filas sin cambio mayor a 20%",
+true,
+"7906 códigos (antes 7804, +1%)"
+],
+[
+"Cambio de precio razonable",
+true,
+"mediana +0.0%; 0% cambian más de 25%"
+],
+[
+"Códigos de nuestras publicaciones que dejan de venir",
+true,
+"3 (pasan a Descontinuados): ['CAS-ABA-H052-XL', 'CAS-CER-A005-M', 'CAS-CER-A005-XL']"
+]
+],
+"codigos_que_dejan_de_venir": [
+"CAS-ABA-H052-XL",
+"CAS-CER-A005-M",
+"CAS-CER-A005-XL"
+],
+"resultado": "PENDIENTE: no pasó la revisión; se sigue pidiendo con la lista vigente"
+}
