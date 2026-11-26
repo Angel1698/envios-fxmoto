@@ -308,7 +308,8 @@ for o in OUT:
                 b2=None if o['tam'] in ('Grande','Extragrande') else 'EDOMEX'
             if 'EDOMEX' not in PROV.get(sb,{}).get('bodegas',['EDOMEX']) and b2=='EDOMEX': b2=None
             if not b2 or nosurte(sb,b2,sc): return False
-            put(o,b2,sc,sb,f,orig=c); SUBLOG.append([b2,c,sb,sc,f*o['uml'],o['cml'],o['bod']]); return True
+            f2=f*float(REG.get('sust_mult',{}).get(o['cml']+'|'+N(c0),1))   # 26-nov: el original viene por paquete y el sustituto es pieza suelta
+            put(o,b2,sc,sb,f2,orig=c); SUBLOG.append([b2,c,sb,sc,f2*o['uml'],o['cml'],o['bod']]); return True
         if m not in LP or c not in LP[m]:
             if _sub26(): continue
             ot=[b for b in owners(c0) if b!=m]
@@ -334,7 +335,8 @@ for o in OUT:
                     if 'CUERNAVACA' not in PROV.get(sb,{}).get('bodegas',[]) and bod=='CUERNAVACA':
                         b2=None if o['tam'] in ('Grande','Extragrande') else 'EDOMEX'
                     if b2:
-                        put(o,b2,sc,sb,f,orig=c); SUBLOG.append([b2,c,sb,sc,f*o['uml'],o['cml'],bod]); done=True
+                        f2=f*float(REG.get('sust_mult',{}).get(o['cml']+'|'+N(c),1))   # 26-nov: ALESSIA es paquete y el sustituto pieza suelta
+                        put(o,b2,sc,sb,f2,orig=c); SUBLOG.append([b2,c,sb,sc,f2*o['uml'],o['cml'],bod]); done=True
             if not done:
                 if nosurte('ALESSIA',bod,c):   # en 0 y 2+ pedidos sin surtir: ya no se le pide; buscar sustituto
                     ALE0.append([o['bod'],o['cml'],o['tit'],c,f*o['uml'],'ALESSIA en 0 y sin surtir en 2+ pedidos: no se pide, buscar sustituto',o['img']])

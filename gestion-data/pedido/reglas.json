@@ -171,5 +171,11 @@
    "sust": "TMMP REM3118",
    "titulo": "Balancines Escape Punteria Bajaj Ns200 Fi Ns200 Rs200 As200"
   }
+ },
+ "sust_mult": {
+  "AMOC13040|BAL-103": 10,
+  "IGZC12121|CPB-004": 10,
+  "IRRJ13306|BAL-124": 10,
+  "SUUI37489|EJE-B024": 5
  }
 }
