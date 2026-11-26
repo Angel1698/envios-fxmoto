@@ -80,7 +80,7 @@
 "archivo": "CUERNAVACA",
 "nombre": "8-MOTOAZCAPO-F 60 CUERNAVACA 26-11-2026.xlsx",
 "codigos": 111,
-"piezas": 289,
+"piezas": 299,
 "ok": true,
 "errores": []
 },
@@ -98,7 +98,7 @@
 "archivo": "EDOMEX PEQ-MED",
 "nombre": "8-MOTOAZCAPO-F 60 EDOMEX PEQ-MED 26-11-2026.xlsx",
 "codigos": 31,
-"piezas": 71,
+"piezas": 82,
 "ok": true,
 "errores": []
 },
@@ -107,7 +107,7 @@
 "archivo": "CUERNAVACA",
 "nombre": "4-MRM-F 60 CUERNAVACA 26-11-2026.xlsx",
 "codigos": 235,
-"piezas": 1037,
+"piezas": 1181,
 "ok": true,
 "errores": []
 },
@@ -125,7 +125,7 @@
 "archivo": "EDOMEX PEQ-MED",
 "nombre": "4-MRM-F 60 EDOMEX PEQ-MED 26-11-2026.xlsx",
 "codigos": 17,
-"piezas": 117,
+"piezas": 127,
 "ok": true,
 "errores": []
 },
