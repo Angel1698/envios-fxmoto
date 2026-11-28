@@ -266,10 +266,21 @@ for k,f in D['facturas'].items():
 # ---------- sustitutos ----------
 SU=json.load(open(os.path.join(GD,'sust.json'),encoding='utf-8')); dc=SU['det_cols']
 SUBM={}
+# 27-nov (Angel): candado de sustitutos. Un ARO nunca sustituye a un rin completo.
+import re as _re
+def _sust_mal(tit,desc):
+    T=(tit or '').upper(); S=(desc or '').upper()
+    if _re.search(r'\bARO\b',S) and not _re.search(r'\bARO\b',T): return 'aro en lugar de rin completo'
+    # juego/par contra pieza suelta: se revisa a mano (la regla por texto marcaba 42 sustitutos buenos)
+    return ''
+SUST_RECH=[]
 for r in SU['det']:
     o=dict(zip(dc,r))
     if o['ale'] in REG.get('sust_excluir',{}): continue   # 26-nov: contenido distinto (par/juego/lado/color) revisado con Angel
-    if o.get('codigo') and o.get('estado') in ('CON','CONF','AUTO','LIDER',''): SUBM[N(o['ale'])]=(o['marca'],N(o['codigo']),'confirmado')
+    if o.get('codigo') and o.get('estado') in ('CON','CONF','AUTO','LIDER',''):
+        _m=_sust_mal(o.get('titulo'),(LP.get(o['marca'],{}).get(N(o['codigo'])) or ('',))[0])
+        if _m: SUST_RECH.append([o['ale'],o['marca'],o['codigo'],_m]); continue
+        SUBM[N(o['ale'])]=(o['marca'],N(o['codigo']),'confirmado')
 # 26-nov (Angel): búsqueda nueva de sustitutos (texto en todas las listas + revisión con foto). Solo entran los de "mismo producto" (confianza Alta);
 # los dudosos y los que no se encontraron quedan en sust_26nov.json / resumen para revisión. ALESSIA en 0 → sustituto; descontinuado o "no surte" → cambio de código.
 SUBN={}
@@ -278,6 +289,8 @@ if REG.get('usar_sust_26nov',True) and os.path.exists(os.path.join(HERE,'sust_26
     for r_ in _s26['rows']:
         o_=dict(zip(_s26['cols'],r_))
         if o_['conf']!='Alta' or not o_.get('usar',True): continue   # solo mismo producto que deja 6% o más
+        _m=_sust_mal(o_.get('titulo'),o_.get('sust_desc'))
+        if _m: SUST_RECH.append([o_['codigo'],o_['sust_marca'],o_['sust_codigo'],_m]); continue
         if o_['grupo']=='ALE0': SUBM.setdefault(N(o_['codigo']),(o_['sust_marca'],N(o_['sust_codigo']),'búsqueda 26-nov'))
         else: SUBN[(o_['codml'],N(o_['codigo']))]=(o_['sust_marca'],N(o_['sust_codigo']))
 for c in aprob('fx-gm-sust'):
